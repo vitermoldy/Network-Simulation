@@ -475,3 +475,5 @@ export class Simulator {
     this.flights = [];
     this.holds = [];
     this.lost = [];
+    this.retx.clear();
+    this.arpPending.clear();
