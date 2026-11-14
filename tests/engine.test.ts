@@ -319,3 +319,5 @@ describe('ping and nslookup', () => {
   });
 
   it('answers nslookup with the record or NXDOMAIN', () => {
+    const sim = withScenario('normal');
+    sim.startLookup('pc', 'www.jaringan.test', 3);
