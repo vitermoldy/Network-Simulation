@@ -585,3 +585,5 @@ export class Stage {
   fitView(animate = true): void {
     this.follow = false;
     const boxes = this.footprints();
+    if (!boxes.length) boxes.push({ x0: -4, x1: 4, z0: -3, z1: 3 });
+    // The zones reach 0.75 past the devices and their labels sit in front; tags float above.
