@@ -628,3 +628,5 @@ export class Simulator {
   }
 
   private topologyChanged(): void {
+    // A switch forgets addresses learned on a port that went dark.
+    for (const [sw, table] of this.macTables) {
