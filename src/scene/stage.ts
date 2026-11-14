@@ -813,3 +813,5 @@ export class Stage {
       const tan = cable.curve.getTangentAt(k);
       if (f.from !== cable.a) tan.negate();
       pos.y += 0.15;
+      v.mesh.position.copy(pos);
+      const flat = new THREE.Vector3(tan.x, 0, tan.z);
