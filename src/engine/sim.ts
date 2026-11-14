@@ -802,3 +802,5 @@ export class Simulator {
       how = `MAC tujuan ${BROADCAST} artinya broadcast, jadi frame disalin ke semua port yang tersambung kecuali ${inName}`;
     } else if (table.has(p.eth.dst)) {
       const o = table.get(p.eth.dst)!;
+      outs = o === inPort ? [] : [o];
+      how = `MAC tujuan ${p.eth.dst} sudah ada di tabel MAC (port ${this.topo.port(o).name}), jadi frame hanya diteruskan ke port itu`;
