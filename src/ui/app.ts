@@ -1066,3 +1066,5 @@ export class App {
       $(`pane-${t}`).hidden = t !== tab;
     }
     this.packetKey = '';
+    this.deviceKey = '';
+    if (tab === 'riwayat') void this.refreshDb();
