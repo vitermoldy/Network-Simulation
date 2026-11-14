@@ -234,3 +234,5 @@ export class App {
       this.playing = true;
       this.stepOnce = true;
     });
+    $('reset').addEventListener('click', () => {
+      this.sim.stop();
