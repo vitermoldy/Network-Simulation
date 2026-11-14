@@ -54,3 +54,5 @@ export interface DnsBody {
 }
 
 export interface AppBody {
+  proto: 'DNS' | 'HTTP';
+  lines: string[];
