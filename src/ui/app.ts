@@ -987,3 +987,5 @@ export class App {
     if (!p) {
       tip.hidden = true;
       return;
+    }
+    const topo = this.sim.topo;
