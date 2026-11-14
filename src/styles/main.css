@@ -2097,3 +2097,5 @@ tbody th {
 /* Terminal: Command Prompt and CLI keep a dark screen in both themes, like the real thing. */
 
 .term {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
