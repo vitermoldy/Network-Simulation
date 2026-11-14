@@ -257,3 +257,5 @@ export class IosShell implements Shell {
     if (this.mode === 'config') {
       const list: Command[] = [
         {
+          words: ['hostname'], help: 'hostname <nama>: ganti nama perangkat',
+          run: (args) => {
