@@ -548,3 +548,5 @@ export class Topology {
       while (parent.get(c) !== r) {
         const n = parent.get(c)!;
         parent.set(c, r);
+        c = n;
+      }
