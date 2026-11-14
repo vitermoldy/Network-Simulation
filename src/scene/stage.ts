@@ -27,3 +27,5 @@ interface CableView {
   linkId: string;
   a: string;
   b: string;
+  group: THREE.Group;
+  mesh: THREE.Mesh;
