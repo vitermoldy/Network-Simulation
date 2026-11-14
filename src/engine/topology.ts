@@ -182,3 +182,5 @@ export class Topology {
 
   private makeDevice(kind: DeviceKind, id: string, name: string, x: number, z: number): Device {
     const base = (this.nextMac++).toString(16).padStart(2, '0');
+    const d: Device = {
+      id, kind, name, powered: true, x, z,
