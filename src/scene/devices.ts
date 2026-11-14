@@ -437,3 +437,5 @@ function buildServer(dev: Device): Build {
     p.text(services, 0, 1.05, services.length > 8 ? 0.075 : 0.11, { weight: 650, color: '#1f2de6' });
     p.text(dev.ports[0].ip ?? 'IP belum diatur', 0, 0.9, 0.06, { mono: true, weight: 500, color: '#3b4048' });
     p.text('Fa0', 0, 0.58, 0.05, { mono: true, weight: 500, color: '#2a2e35' });
+    p.text('POWER', 0.3, h - 0.34, 0.04, { color: '#2a2e35' });
+    p.text('HDD', 0.06, h - 0.28, 0.035, { color: '#2a2e35' });
