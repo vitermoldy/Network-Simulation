@@ -48,3 +48,5 @@ export interface DeviceView {
   hits: THREE.Mesh[];
   tagAnchor: THREE.Object3D;
   topLocal: THREE.Vector3;
+  half: { x: number; z0: number; z1: number };
+  screen?: { ctx: CanvasRenderingContext2D; texture: THREE.CanvasTexture; key: string };
