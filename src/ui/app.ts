@@ -341,3 +341,5 @@ export class App {
       const power = t.closest<HTMLButtonElement>('button[data-power]');
       if (power) {
         this.togglePower(power.dataset.power!);
+        return;
+      }
