@@ -22,3 +22,5 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
   memindahkan; klik port kosong lalu port lain untuk memasang kabel; klik kabel untuk mencabutnya;
   tekan tombol power untuk mematikan perangkat.
 - **Jendela perangkat seperti di Packet Tracer.** Klik perangkat untuk membukanya:
+  - Fisik: perangkat itu saja dalam 3D, bisa diputar dan diperbesar.
+  - Config: nama, IP per port, port aktif atau shutdown, gateway, DNS, layanan server, catatan DNS.
