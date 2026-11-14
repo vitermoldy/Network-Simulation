@@ -490,3 +490,5 @@ export class Topology {
 
   /** Replaces the whole network with a saved one. Throws with a readable reason on bad data. */
   load(data: unknown): void {
+    const t = data as TopologyData;
+    if (!t || t.version !== 1 || !Array.isArray(t.devices) || !Array.isArray(t.links)) throw new Error('Berkas rancangan tidak dikenali.');
