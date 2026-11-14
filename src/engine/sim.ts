@@ -197,3 +197,6 @@ interface ServerState {
   synAckAt: number;
   lastAck: number;
   responded: boolean;
+}
+
+function mulberry32(seed: number): () => number {
