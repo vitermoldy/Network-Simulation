@@ -1026,3 +1026,5 @@ export class App {
     tip.style.transform = `translate(${Math.round(left)}px, ${Math.round(Math.max(8, top))}px)`;
   }
 
+  private confirm(title: string, action: string, run: () => void, onCancel?: () => void): void {
+    $('popover-title').textContent = title;
