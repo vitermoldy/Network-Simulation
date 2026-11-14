@@ -215,3 +215,5 @@ function buildRoundButton(deviceId: string, r = 0.075) {
 
 const rounded = (w: number, h: number, d: number, mat: THREE.Material, r = 0.04) => mesh(new RoundedBoxGeometry(w, h, d, 3, r), mat);
 
+/** An opaque printed front panel: background colours, labels, vents. */
+function frontPanel(w: number, h: number, draw: (p: FacePrinter) => void): THREE.Mesh {
