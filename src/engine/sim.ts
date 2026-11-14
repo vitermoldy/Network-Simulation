@@ -299,3 +299,6 @@ export class Simulator {
     }
     this.queue.splice(lo, 0, task);
     return task;
+  }
+
+  /** Moves the clock forward. Returns 'step' when step mode stopped it at a decision. */
