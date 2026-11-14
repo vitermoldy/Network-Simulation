@@ -228,3 +228,5 @@ export class Topology {
   }
 
   peer(portId: string): string | undefined {
+    const link = this.linkOf(portId);
+    if (!link) return undefined;
