@@ -2296,3 +2296,5 @@ tbody th {
     flex-wrap: wrap;
   }
 
+  .palette {
+    top: 66px;
