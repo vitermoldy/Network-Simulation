@@ -203,3 +203,5 @@ export class DeviceViewer {
 
   reset(): void {
     if (!this.home) return;
+    this.controls.target.copy(this.home.target);
+    this.camera.position.copy(this.home.position);
