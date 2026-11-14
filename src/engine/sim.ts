@@ -542,3 +542,5 @@ export class Simulator {
       this.browser.state = 'idle';
     }
     if (this.status === 'running') {
+      this.note('change', deviceId, on ? 'Perangkat dinyalakan' : 'Perangkat dimatikan', on
+        ? `${dev.name} menyala lagi. Lampu link di port yang berkabel kembali hidup.`
