@@ -40,3 +40,6 @@ Terminal tetap gelap di kedua tema, seperti terminal sungguhan.
 | Switch | Panel sistem abu kebiruan, 24 port Fa dalam tiga blok berisi delapan (dua baris), dua uplink Gi0/1 dan Gi0/2, LED SYST, STAT, DUPLX, SPEED, tombol MODE | Satu LED per port seperti switch Cisco: hijau saat link, kuning saat ada data. |
 | Router | Bezel hitam, ventilasi, dua plat slot modul kosong, G0/0 sampai G0/3, port console biru | LED PWR, SYS, ACT. Router baru mulai dengan semua port shutdown, seperti di Packet Tracer. |
 | PC | Tower abu muda dan monitor | Layar monitor menampilkan browser kalau PC ini pengirimnya. |
+| Laptop | Lid terbuka dengan layar hidup, port di sisi kanan, tombol power di atas keyboard | |
+| Server | Tower dengan drive bay; layanan (DNS, HTTP) dan IP tercetak di depan | |
+
