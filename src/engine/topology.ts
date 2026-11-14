@@ -340,3 +340,5 @@ export class Topology {
     const n = ipToInt(clean);
     const net = (n & maskOf(prefix)) >>> 0;
     const bcast = (net | (~maskOf(prefix) >>> 0)) >>> 0;
+    if (n === net) return { ok: false, reason: `${clean} adalah alamat jaringan ${networkOf(clean, prefix)}, tidak bisa dipakai perangkat.` };
+    if (n === bcast) return { ok: false, reason: `${clean} adalah alamat broadcast jaringan ${networkOf(clean, prefix)}, tidak bisa dipakai perangkat.` };
