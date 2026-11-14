@@ -607,3 +607,5 @@ export class Simulator {
     this.arpCaches.delete(id);
     const wasClient = this.status === 'running' && id === this.client.deviceId;
     this.topo.removeDevice(id);
+    if (wasClient) this.fail(this.activePhase() ?? 'input', `${dev.name} dihapus, jadi tidak ada lagi yang menunggu jawaban.`);
+    else if (this.status === 'running') this.note('change', undefined, 'Perangkat dihapus', `${dev.name} dan kabelnya diangkat dari meja.`);
