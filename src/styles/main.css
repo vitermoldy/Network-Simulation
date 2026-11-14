@@ -1804,3 +1804,5 @@ tbody th {
 }
 
 .run.is-failed .run-result,
+.run-reason {
+  color: var(--bad);
