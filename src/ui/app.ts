@@ -1106,3 +1106,5 @@ export class App {
     box.addEventListener('change', (e) => {
       const input = e.target as HTMLInputElement;
       if (input.dataset.portUp) {
+        const pid = input.dataset.portUp;
+        this.sim.edit((t) => t.setPortDown(pid, !input.checked));
