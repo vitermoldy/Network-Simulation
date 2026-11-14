@@ -918,3 +918,5 @@ export class Simulator {
     }
     if (!p.ip || p.ip.dst !== nic.ip) {
       this.discard(p, dev.id, 'IP tujuan bukan miliknya.');
+      return;
+    }
