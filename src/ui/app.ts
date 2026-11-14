@@ -1464,3 +1464,5 @@ export class App {
     }).join('') || '<li class="empty">Meja kosong. Tambahkan perangkat dari palet di kiri meja.</li>';
     const ul = $('devices');
     if (ul.dataset.html !== html) {
+      ul.innerHTML = html;
+      ul.dataset.html = html;
