@@ -429,3 +429,5 @@ export class App {
     this.renderAll();
   }
 
+  /** ping or nslookup typed into a Command Prompt or CLI. */
+  private shellRun(kind: 'ping' | 'lookup', deviceId: string, target: string): string | undefined {
