@@ -179,3 +179,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
     ['MAC tujuan', p.eth.dst === BROADCAST ? `${BROADCAST} (broadcast)` : p.eth.dst],
     ['Jenis isi', p.eth.type],
   ]);
+  row(1, 'Kabel UTP', [
+    ['Ukuran frame', `${p.size} byte`],
