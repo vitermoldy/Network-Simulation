@@ -145,3 +145,5 @@ export type BrowserState = 'idle' | 'resolving' | 'connecting' | 'loading' | 'do
 export interface BrowserView {
   /** The PC or laptop whose screen shows this browser. */
   deviceId: string;
+  url: string;
+  state: BrowserState;
