@@ -135,3 +135,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     ctx.fillText('Kirim permintaan', W / 2, body(262));
     return;
   }
+  if (view.state === 'error') {
+    ctx.fillStyle = '#0b0c0e';
