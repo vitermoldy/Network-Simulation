@@ -2150,3 +2150,5 @@ tbody th {
   font-size: 12.5px;
 }
 
+.switch-small .switch-track {
+  width: 32px;
