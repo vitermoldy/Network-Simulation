@@ -40,3 +40,5 @@ export const PAGE_PARTS: { lines: string[]; shows: string }[] = [
     shows: 'judul dan isi',
   },
   {
+    lines: ['<footer>Dikirim dalam 3 segmen TCP</footer>', '</html>'],
+    shows: 'kaki halaman',
