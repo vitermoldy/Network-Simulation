@@ -1623,3 +1623,5 @@ export class App {
     const prevField = (layer: number, name: string) => prevRows.find((r) => r.layer === layer)?.fields.find((f) => f[0] === name)?.[1];
     const reader = hold && this.sim.topo.has(hold.deviceId) ? this.sim.topo.device(hold.deviceId) : undefined;
     const reads = reader ? readsUpTo(reader.kind) : undefined;
+    const rows = layersOf(p, where);
+    const trace = (this.sim.trace.get(p.id) ?? []).map((id) => this.deviceName(id));
