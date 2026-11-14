@@ -392,3 +392,5 @@ export class Stage {
       group.add(label);
       this.zoneLabels.push({ ctx, tex, w: c.width, h: c.height, role });
       this.scene.add(group);
+      this.zones.push({ role, group, edge });
+    }
