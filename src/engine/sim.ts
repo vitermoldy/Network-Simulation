@@ -492,3 +492,6 @@ export class Simulator {
     if (p.status === 'done' && status === 'active') return;
     p.status = status;
     this.version++;
+  }
+
+  private fail(phase: PhaseId, reason: string, deviceId?: string): void {
