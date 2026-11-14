@@ -161,3 +161,5 @@ export interface TimerView {
   tries: number;
 }
 
+interface Retx {
+  key: string;
