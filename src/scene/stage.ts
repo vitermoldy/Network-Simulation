@@ -162,3 +162,5 @@ export class Stage {
     const sc = sun.shadow.camera;
     sc.left = -22;
     sc.right = 22;
+    sc.top = 16;
+    sc.bottom = -16;
