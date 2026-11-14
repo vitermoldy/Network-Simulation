@@ -182,3 +182,5 @@ p {
 
 .ctl {
   display: grid;
+  gap: 4px;
+  min-width: 0;
