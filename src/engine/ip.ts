@@ -28,3 +28,6 @@ export function inNetwork(ip: string, network: string): boolean {
 }
 
 export function sameSubnet(a: string, b: string, prefix: number): boolean {
+  return networkOf(a, prefix) === networkOf(b, prefix);
+}
+
