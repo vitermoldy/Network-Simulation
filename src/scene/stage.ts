@@ -293,3 +293,5 @@ export class Stage {
       if (!v || v.signature !== signatureOf(dev)) this.rebuildDevice(dev.id);
       else if (this.drag?.id !== dev.id) v.group.position.set(dev.x, 0, dev.z);
     }
+    for (const v of this.devices.values()) v.group.updateMatrixWorld(true);
+    this.rebuildCables();
