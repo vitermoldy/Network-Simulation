@@ -269,3 +269,5 @@ describe('simulator', () => {
   it('fails cleanly when the sending PC is removed mid-run', () => {
     const sim = withScenario('normal');
     sim.start('www.jaringan.test', 3);
+    while (sim.time < 6) sim.advance(0.05);
+    sim.removeDevice('pc');
