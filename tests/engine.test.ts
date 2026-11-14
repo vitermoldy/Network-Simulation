@@ -203,3 +203,5 @@ describe('simulator', () => {
     expect(sim.log.some((l) => l.title === 'SYN dikirim ulang')).toBe(true);
   });
 
+  it('recovers from random loss on every cable', () => {
+    const sim = withScenario('normal');
