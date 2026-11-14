@@ -393,3 +393,6 @@ select {
 }
 
 .stage-canvas:focus-visible {
+  outline-offset: -3px;
+}
+
