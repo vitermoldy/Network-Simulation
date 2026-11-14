@@ -124,3 +124,5 @@ describe('simulator', () => {
     const sim = withScenario('normal');
     run(sim);
     expect(sim.status).toBe('done');
+    expect(sim.phases.every((p) => p.status === 'done')).toBe(true);
+    expect(sim.browser.state).toBe('done');
