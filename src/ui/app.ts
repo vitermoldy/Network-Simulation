@@ -334,3 +334,6 @@ export class App {
         this.packetKey = '';
         this.renderPacket();
       }
+    });
+
+    $('devices').addEventListener('click', (e) => {
