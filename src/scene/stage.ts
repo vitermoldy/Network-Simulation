@@ -912,3 +912,5 @@ export class Stage {
     } else {
       const v = this.devices.get(target.id);
       if (!v) return undefined;
+      if (target.type === 'power') v.powerHit.getWorldPosition(p);
+      else v.hits[0].getWorldPosition(p);
