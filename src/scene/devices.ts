@@ -415,3 +415,5 @@ function buildServer(dev: Device): Build {
   const w = 1.1;
   const h = 2.0;
   const d = 1.6;
+  const group = new THREE.Group();
+  const body = rounded(w, h, d, shared.server, 0.05);
