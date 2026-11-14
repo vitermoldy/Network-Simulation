@@ -1664,3 +1664,6 @@ tbody th {
 .ip-form input.prefix {
   flex: none;
   width: 54px;
+}
+
+.ip-form input:focus,
