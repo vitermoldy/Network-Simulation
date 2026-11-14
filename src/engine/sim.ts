@@ -634,3 +634,5 @@ export class Simulator {
         this.macTables.delete(sw);
         continue;
       }
+      for (const [mac, port] of table) if (!this.topo.hasPort(port) || !this.topo.carrier(port)) table.delete(mac);
+    }
