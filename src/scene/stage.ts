@@ -633,3 +633,5 @@ export class Stage {
         const mid = (lo + hi) / 2;
         const bb = bounds(mid);
         const fits = bb.r - bb.l <= free.right - free.left && bb.t - bb.b <= free.top - free.bottom;
+        if (fits) hi = mid;
+        else lo = mid;
