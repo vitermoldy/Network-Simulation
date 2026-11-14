@@ -711,3 +711,5 @@ export class Simulator {
   private planDrop(p: Packet): { u: number; reason: string } | undefined {
     if (this.scenario === 'loss' && !this.fired.has('loss') && p.app?.part === 2 && p.retry === 0 && p.hops === 2) {
       this.fired.add('loss');
+      return { u: 0.55, reason: 'Segmen 2 rusak oleh gangguan di kabel. Router penerima menghitung ulang FCS (cek kesalahan di ujung frame), hasilnya tidak cocok, jadi frame dibuang.' };
+    }
