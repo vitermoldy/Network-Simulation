@@ -181,3 +181,6 @@ describe('simulator', () => {
     run(sim);
     expect(sim.status).toBe('failed');
     expect(sim.phases.find((p) => p.id === 'arp')!.status).toBe('failed');
+  });
+
+  it('loses a packet on a cable pulled mid-flight and recovers on the other path', () => {
