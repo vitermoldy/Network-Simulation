@@ -96,3 +96,5 @@ export function setLed(m: THREE.Mesh, color: number | null): void {
   const mat = m.material as THREE.MeshStandardMaterial;
   if (color === null) {
     mat.color.setHex(MATERIAL.ledOff);
+    mat.emissive.setHex(0x000000);
+    mat.emissiveIntensity = 0;
