@@ -393,3 +393,5 @@ export class App {
     const err = $('url-error');
     const source = $<HTMLSelectElement>('source').value;
     if (!source) {
+      err.textContent = 'Belum ada PC atau laptop di meja. Tambahkan satu dari palet, sambungkan kabelnya, lalu kirim lagi.';
+      err.hidden = false;
