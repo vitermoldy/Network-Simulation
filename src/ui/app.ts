@@ -1239,3 +1239,5 @@ export class App {
       const sent = await api.flushQueue();
       const [runs, layouts] = await Promise.all([api.listRuns(), api.listLayouts()]);
       text.textContent = `Tersambung ke MySQL, database ${h.database}.${sent ? ` ${sent} percobaan yang tertunda baru saja terkirim.` : ''}`;
+      $('db-status').dataset.state = 'ok';
+      this.renderLayouts(layouts);
