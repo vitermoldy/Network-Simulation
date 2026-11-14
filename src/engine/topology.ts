@@ -235,3 +235,5 @@ export class Topology {
 
   /** A port has carrier when a cable is in it and the devices at both ends are on. */
   carrier(portId: string): boolean {
+    const peer = this.peer(portId);
+    if (!peer) return false;
