@@ -409,3 +409,6 @@ export class App {
     this.sim.scenario = scenario === 'bad-domain' ? 'normal' : scenario;
     this.sim.start(host, (Math.random() * 1e9) | 0, source);
     this.beginRun(step);
+  }
+
+  /** Common bookkeeping once any run (web, ping, nslookup) has started. */
