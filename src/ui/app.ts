@@ -648,3 +648,5 @@ export class App {
     }
     if (this.desktopApp === 'ip') {
       const nic = d.ports[0];
+      box.innerHTML = `${back('IP Configuration')}
+        <form class="ipconf" data-desk="ip" novalidate>
