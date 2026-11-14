@@ -1406,3 +1406,5 @@ export class Simulator {
       flow: 'icmp', label: `Balas ${req.seq}`, title: `ICMP echo reply ${req.seq} ke ${p.ip!.src}`,
       eth: { src: '', dst: BROADCAST, type: 'IPv4' },
       ip: { src: p.ip!.dst, dst: p.ip!.src, ttl: dev.kind === 'router' ? 255 : 128, proto: 'ICMP' },
+      icmp: { type: 'echo-reply', id: req.id, seq: req.seq },
+      size: 74,
