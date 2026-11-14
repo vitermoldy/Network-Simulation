@@ -50,3 +50,6 @@ dan rancangan tersimpan.
 
 ### Server MySQL (riwayat dan rancangan)
 
+1. Salin `.env.example` menjadi `.env`, lalu isi `DB_USER` dan `DB_PASSWORD` MySQL kamu.
+2. Jalankan server di terminal kedua:
+
