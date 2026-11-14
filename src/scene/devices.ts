@@ -66,3 +66,5 @@ const shared = {
   bezel: std(MATERIAL.bezel, { roughness: 0.5 }),
   hole: new THREE.MeshStandardMaterial({ color: MATERIAL.hole, roughness: 0.95 }),
   pin: std(MATERIAL.pin, { metalness: 0.9, roughness: 0.3 }),
+  rocker: std(MATERIAL.rocker, { roughness: 0.4 }),
+  plate: std(MATERIAL.plate, { metalness: 0.6, roughness: 0.35 }),
