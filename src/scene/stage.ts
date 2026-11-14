@@ -453,3 +453,5 @@ export class Stage {
   }
 
   private onMove(e: PointerEvent): void {
+    if (this.ghost) {
+      const p = this.floorPoint(e);
