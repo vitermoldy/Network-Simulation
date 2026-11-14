@@ -1049,3 +1049,5 @@ select {
   color: var(--muted);
 }
 
+.phase-state {
+  grid-column: 3;
