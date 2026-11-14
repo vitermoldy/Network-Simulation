@@ -658,3 +658,5 @@ export class App {
           <label for="ic-dns">DNS Server</label><input id="ic-dns" name="dns" class="mono" value="${esc(d.dnsServer ?? '')}" inputmode="decimal" autocomplete="off" />
           <div class="ipconf-actions"><button type="submit" class="btn btn-primary btn-small">Simpan</button></div>
           <p class="form-error" hidden></p>
+        </form>`;
+      return;
