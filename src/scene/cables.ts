@@ -3,3 +3,6 @@
 
 import * as THREE from 'three';
 import type { PortView } from './devices';
+import { MATERIAL } from './theme';
+
+export interface Box2 {
