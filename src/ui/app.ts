@@ -1336,3 +1336,5 @@ export class App {
   private renderStatus(): void {
     const s = this.sim;
     const el = $('run-status');
+    let text: string;
+    if (s.status === 'idle') text = `${SCENARIO_TEXT[$<HTMLSelectElement>('scenario').value as Scenario]} Pilih pengirim, ketik alamat web, lalu tekan Kirim permintaan.`;
