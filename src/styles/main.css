@@ -2099,3 +2099,5 @@ tbody th {
 .term {
   display: grid;
   grid-template-rows: minmax(0, 1fr) auto;
+  height: clamp(320px, 56vh, 560px);
+  border-radius: var(--r);
