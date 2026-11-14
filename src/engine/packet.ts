@@ -183,3 +183,6 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
     ['Ukuran frame', `${p.size} byte`],
     ['Di kabel', wire],
   ]);
+  return rows;
+}
+
