@@ -958,3 +958,6 @@ select {
 
 .tabs [role="tab"]:hover {
   color: var(--ink);
+}
+
+.tabs [role="tab"][aria-selected="true"] {
