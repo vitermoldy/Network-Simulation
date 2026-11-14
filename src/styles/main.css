@@ -2160,3 +2160,5 @@ tbody th {
   height: 12px;
 }
 
+.switch-small input:checked + .switch-track::after {
+  transform: translateX(14px);
