@@ -367,3 +367,6 @@ export class Topology {
     if (clean && !validIp(clean)) return { ok: false, reason: `${clean} bukan alamat IPv4.` };
     d[field] = clean || undefined;
     this.rev++;
+    return { ok: true };
+  }
+
