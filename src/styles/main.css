@@ -1096,3 +1096,5 @@ select {
   gap: 8px;
 }
 
+.timers li {
+  display: grid;
