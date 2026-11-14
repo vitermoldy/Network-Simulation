@@ -611,3 +611,5 @@ export class Stage {
       cam.position.copy(target).addScaledVector(dir, dist);
       cam.lookAt(target);
       cam.updateMatrixWorld(true);
+      let l = Infinity;
+      let r = -Infinity;
