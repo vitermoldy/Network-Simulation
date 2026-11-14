@@ -1892,3 +1892,5 @@ tbody th {
 }
 
 .viewer {
+  position: relative;
+  height: clamp(260px, 42vh, 420px);
