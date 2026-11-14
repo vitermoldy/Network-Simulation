@@ -173,3 +173,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
       ['IP yang dicari', p.arp.targetIp],
       ['MAC yang dicari', p.arp.op === 'request' ? 'belum diketahui' : p.arp.targetMac],
     ]);
+  }
+  row(2, 'Ethernet', [
