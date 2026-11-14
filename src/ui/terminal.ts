@@ -309,3 +309,5 @@ export class IosShell implements Shell {
           topo.setPortDown(port!.id, true);
           this.host.changed();
           return [`%LINK-5-CHANGED: Interface ${longPortName(port!.name)}, changed state to administratively down`];
+        },
+      },
