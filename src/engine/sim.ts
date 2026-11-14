@@ -1258,3 +1258,5 @@ export class Simulator {
       this.browser.state = 'loading';
       this.browser.message = `Memuat ${this.browser.parts.filter(Boolean).length} dari ${PAGE_PARTS.length} bagian`;
       this.setPhase('output', 'active');
+    } else if (t.seq > c.rcvNext) {
+      c.buffer.set(t.seq, p);
