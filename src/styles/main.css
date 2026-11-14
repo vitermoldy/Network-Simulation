@@ -2337,3 +2337,5 @@ tbody th {
     grid-column: 1;
   }
 
+  .tool {
+    min-width: 40px;
