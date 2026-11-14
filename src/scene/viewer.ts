@@ -85,3 +85,5 @@ export class DeviceViewer {
       if (e.key === '+' || e.key === '=') this.zoom(0.8);
       else if (e.key === '-') this.zoom(1.25);
       else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+        const off = this.camera.position.clone().sub(this.controls.target);
+        off.applyAxisAngle(new THREE.Vector3(0, 1, 0), e.key === 'ArrowLeft' ? -0.25 : 0.25);
