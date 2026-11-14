@@ -41,3 +41,5 @@ const KIND_CHIP: Partial<Record<LogEntry['kind'], string>> = { loss: 'Hilang', r
 
 const SCENARIO_TEXT: Record<Scenario, string> = {
   normal: 'Skenario normal: semua kabel dan perangkat bekerja.',
+  loss: 'Skenario paket hilang: segmen kedua dari server rusak di kabel kedua yang dilewatinya, lalu dikirim ulang.',
+  'router-down': 'Skenario router mati: saat server mengirim halaman, router di tengah jalur padam dan router lain mencari jalan memutar.',
