@@ -421,3 +421,5 @@ select {
 
 .tag {
   display: flex;
+  align-items: baseline;
+  gap: 6px;
