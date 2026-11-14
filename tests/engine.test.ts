@@ -256,3 +256,5 @@ describe('simulator', () => {
   it('reaches a new web server once DNS knows its name', () => {
     const sim = withScenario('normal');
     const srv = sim.addDevice('server', 12, 6);
+    expect(sim.edit((t) => t.setPortIp('r4.3', '198.51.100.1', 24)).ok).toBe(true);
+    sim.connect('r4.3', srv.ports[0].id);
