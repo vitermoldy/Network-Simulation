@@ -1473,3 +1473,6 @@ export class App {
     if (!rows.length) return `<p class="empty">${esc(empty)}</p>`;
     return `<div class="table-wrap"><table><thead><tr>${head.map((h) => `<th scope="col">${esc(h)}</th>`).join('')}</tr></thead>
       <tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  }
+
+  private renderDevice(): void {
