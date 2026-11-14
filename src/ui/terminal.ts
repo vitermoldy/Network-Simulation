@@ -366,3 +366,5 @@ export class IosShell implements Shell {
       const used = cmd.words.length;
       if (!best.length || used > best[0].used) best = [{ cmd, used }];
       else if (used === best[0].used) best.push({ cmd, used });
+    }
+    // "show mac address-table" and "show mac-address-table" both work.
