@@ -44,3 +44,5 @@ function makeCode(): string {
   return [...bytes].map((b) => ALPHABET[b % ALPHABET.length]).join('');
 }
 
+export function clientCode(): string {
+  try {
