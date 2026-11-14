@@ -1408,3 +1408,5 @@ tbody th {
   color: var(--muted);
 }
 
+.plug-row {
+  display: flex;
