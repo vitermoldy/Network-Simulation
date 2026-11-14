@@ -616,3 +616,5 @@ select {
   transform: translateY(1px);
 }
 
+.pal[aria-pressed="true"] {
+  border-color: var(--accent);
