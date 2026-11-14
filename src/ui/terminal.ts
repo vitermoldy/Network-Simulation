@@ -265,3 +265,5 @@ export class IosShell implements Shell {
             return r.ok ? [] : [`% ${r.reason}`];
           },
         },
+        {
+          words: ['interface'], help: `interface <port>, misalnya ${d.ports[0].name}`,
