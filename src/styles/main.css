@@ -1873,3 +1873,5 @@ tbody th {
 }
 
 .dw-pane {
+  flex: 1;
+  min-height: 0;
