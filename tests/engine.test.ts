@@ -163,3 +163,6 @@ describe('simulator', () => {
     expect(sim.log.some((l) => l.kind === 'route' && l.title === 'Rute dihitung ulang')).toBe(true);
     const resent = [...sim.history.entries()].filter(([, v]) => v[0].app?.part && v[0].retry > 0);
     expect(resent.length).toBeGreaterThan(0);
+    for (const [id] of resent) expect(sim.trace.get(id)).toContain('r3');
+  });
+
