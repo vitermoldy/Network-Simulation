@@ -49,3 +49,5 @@ export class PromptShell implements Shell {
     return [`Command Prompt di ${this.dev.name}`, 'Ketik help untuk melihat perintah yang tersedia.', ''];
   }
 
+  exec(raw: string): string[] {
+    const line = raw.trim();
