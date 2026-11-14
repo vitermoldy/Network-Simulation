@@ -55,3 +55,6 @@ export interface DeviceView {
 }
 
 const std = (color: number, extra: Partial<THREE.MeshStandardMaterialParameters> = {}) =>
+  new THREE.MeshStandardMaterial({ color, roughness: 0.62, metalness: 0.05, ...extra });
+
+const shared = {
