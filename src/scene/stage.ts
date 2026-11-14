@@ -323,3 +323,5 @@ export class Stage {
       const curve = cableCurve(pa, pb, boxes, lane % 3);
       const mat = cableMaterial();
       const tubeMesh = new THREE.Mesh(tube(curve), mat);
+      tubeMesh.castShadow = true;
+      tubeMesh.receiveShadow = true;
