@@ -63,3 +63,5 @@ export interface AppBody {
 }
 
 export interface Packet {
+  id: number;
+  flow: Flow;
