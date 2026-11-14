@@ -291,3 +291,6 @@ describe('ping and nslookup', () => {
     expect(sim.output.some((l) => l.includes('Lost = 0 (0% loss)'))).toBe(true);
     expect(sim.phases.find((p) => p.id === 'dns')!.status).toBe('skipped');
     expect(sim.output.find((l) => l.startsWith('Reply'))).toContain('TTL=125');
+  });
+
+  it('looks a name up before pinging it', () => {
