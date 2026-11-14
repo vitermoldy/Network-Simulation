@@ -32,3 +32,5 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
 - **Lihat jaringan memperbaiki diri.** Skenario "router mati" mematikan router di tengah jalur saat data
   dikirim: paket hilang, router menghitung ulang rute (link-state, seperti OSPF), dan TCP mengirim ulang
   lewat jalur lain. Skenario "paket hilang" merusak satu segmen di kabel sehingga terlihat ACK duplikat
+  dan kirim ulang.
+- **Riwayat dan rancangan di MySQL.** Setiap percobaan (berhasil atau gagal) tercatat, dan susunan
