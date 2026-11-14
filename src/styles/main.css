@@ -2019,3 +2019,5 @@ tbody th {
 
 .ipconf {
   display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  align-items: center;
