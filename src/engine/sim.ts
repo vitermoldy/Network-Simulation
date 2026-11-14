@@ -176,3 +176,5 @@ interface Retx {
 
 interface ClientState {
   deviceId: string;
+  host: string;
+  serverIp?: string;
