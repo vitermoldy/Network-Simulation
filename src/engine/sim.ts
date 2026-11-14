@@ -934,3 +934,5 @@ export class Simulator {
       if (dev.kind !== 'server') {
         this.discard(p, dev.id, 'paket ini ditujukan ke perangkat ini, tapi tidak ada program yang menunggunya.');
         return;
+      }
+      if (p.udp?.dst === 53) {
