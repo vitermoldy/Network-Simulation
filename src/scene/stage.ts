@@ -48,3 +48,5 @@ interface ZoneView {
 }
 
 const ZONE_TEXT: Record<Role, [string, string]> = {
+  input: ['INPUT', 'Alamat diketik di sini'],
+  process: ['PROSES', 'Paket diteruskan'],
