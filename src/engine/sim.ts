@@ -341,3 +341,5 @@ export class Simulator {
     this.servers.clear();
   }
 
+  /** Opens a web page from a PC or laptop: ARP, DNS, TCP, HTTP, and the page on its screen. */
+  start(rawHost: string, seed?: number, sourceId = 'pc'): void {
