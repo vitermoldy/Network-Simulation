@@ -497,3 +497,5 @@ export class Stage {
   private onUp(e: PointerEvent): void {
     const down = this.down;
     this.down = undefined;
+    if (this.drag) {
+      const d = this.drag;
