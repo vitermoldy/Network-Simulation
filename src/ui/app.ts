@@ -1316,3 +1316,5 @@ export class App {
     this.renderLog();
     this.renderTimers();
     this.renderDeviceList();
+    if (this.tab === 'paket') this.renderPacket();
+    this.renderDeviceWindow();
