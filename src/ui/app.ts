@@ -938,3 +938,5 @@ export class App {
       }
       this.closePopover();
       return;
+    }
+    if (p.type === 'power') {
