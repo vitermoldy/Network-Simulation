@@ -1613,3 +1613,5 @@ tbody th {
   border-bottom: 1px solid var(--line);
 }
 
+.port-row:last-child {
+  border-bottom: 0;
