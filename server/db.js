@@ -9,3 +9,5 @@ import mysql from 'mysql2/promise'
  */
 const TABLES = [
   `CREATE TABLE IF NOT EXISTS clients (
+    id CHAR(12) PRIMARY KEY,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
