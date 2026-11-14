@@ -1007,3 +1007,5 @@ select {
   flex: none;
 }
 
+.phase {
+  display: grid;
