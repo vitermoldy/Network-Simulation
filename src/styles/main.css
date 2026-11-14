@@ -1031,3 +1031,6 @@ select {
   stroke-width: 1.6;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.phase .mark .fill {
