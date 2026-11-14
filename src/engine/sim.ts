@@ -1034,3 +1034,5 @@ export class Simulator {
     entry.packets.forEach((p, i) => {
       this.schedule(this.time + i * 0.25, () => {
         if (!dev.powered || this.status !== 'running') return;
+        p.eth = { src: nic.mac, dst: mac, type: 'IPv4' };
+        this.emit(nic.id, p);
