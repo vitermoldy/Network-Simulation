@@ -983,3 +983,5 @@ select {
   padding-bottom: 10px;
 }
 
+.run-status[data-state="failed"] {
+  color: var(--bad);
