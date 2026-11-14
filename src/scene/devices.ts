@@ -566,3 +566,6 @@ function buildLaptop(dev: Device): Build {
     m.position.set(w / 2 + 0.01, baseH / 2, 0.22 + dz);
     group.add(m);
   }
+  b.ports.push({ id: port.id, deviceId: dev.id, anchor: p.anchor, frameMat: p.frameMat, frameColor: MATERIAL.metal, hit: p.hit, holeW: 0.15, holeH: 0.09, link, act });
+
+  const button = buildRoundButton(dev.id, 0.06);
