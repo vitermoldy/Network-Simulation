@@ -152,3 +152,5 @@ export class App {
 
   private tick(now: number): void {
     const dt = Math.min(0.1, (now - this.last) / 1000);
+    this.last = now;
+    const sim = this.sim;
