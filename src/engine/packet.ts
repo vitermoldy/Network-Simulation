@@ -165,3 +165,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
       ['Protokol', p.ip.proto],
     ]);
   }
+  if (p.arp) {
+    row(3, 'ARP', [
