@@ -1652,3 +1652,5 @@ tbody th {
   border: 1px solid var(--line-strong);
   border-radius: var(--r-sm);
   background: var(--bg);
+  font-size: 13px;
+  min-width: 0;
