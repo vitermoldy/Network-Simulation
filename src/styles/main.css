@@ -419,3 +419,5 @@ select {
   margin: auto;
 }
 
+.tag {
+  display: flex;
