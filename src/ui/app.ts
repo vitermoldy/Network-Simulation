@@ -1596,3 +1596,5 @@ export class App {
     </div>`;
   }
 
+  private currentPacket(): Packet | undefined {
+    if (!this.followLatest && this.selectedPacket !== null) return this.sim.packet(this.selectedPacket);
