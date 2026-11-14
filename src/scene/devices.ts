@@ -411,3 +411,5 @@ function buildRouter(dev: Device): Build {
 }
 
 /** Tower server: drive bays, round power button, the services it runs printed large. */
+function buildServer(dev: Device): Build {
+  const w = 1.1;
