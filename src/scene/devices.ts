@@ -603,3 +603,5 @@ export function buildDevice(dev: Device): DeviceView {
   b.group.updateMatrixWorld(true);
   return {
     device: dev,
+    group: b.group,
+    height: b.height,
