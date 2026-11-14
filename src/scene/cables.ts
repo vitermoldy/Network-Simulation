@@ -152,3 +152,5 @@ export function cableMaterial(): THREE.MeshStandardMaterial {
   return new THREE.MeshStandardMaterial({ color: MATERIAL.cable, roughness: 0.55, metalness: 0.05 });
 }
 
+export function tube(curve: THREE.Curve<THREE.Vector3>, radius = 0.038): THREE.TubeGeometry {
+  const len = curve.getLength();
