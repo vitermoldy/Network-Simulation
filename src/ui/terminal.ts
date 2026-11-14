@@ -17,3 +17,5 @@ export interface ShellHost {
 
 export interface Shell {
   prompt(): string;
+  exec(line: string): string[];
+  banner(): string[];
