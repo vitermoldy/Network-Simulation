@@ -54,3 +54,5 @@ describe('topology', () => {
     const t = new Topology();
     expect(t.setPortIp('r2.2', '10.9.0.0', 24).ok).toBe(false);
     expect(t.setPortIp('r2.2', '10.9.0.255', 24).ok).toBe(false);
+    expect(t.setPortIp('r2.2', '192.168.1.10', 24).ok).toBe(false);
+    expect(t.setPortIp('r2.2', '10.0.12.5', 24).ok).toBe(false);
