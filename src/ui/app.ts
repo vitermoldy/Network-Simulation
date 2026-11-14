@@ -1637,3 +1637,5 @@ export class App {
       ${reader && reads ? `<p class="reads">${esc(reader.name)} membuka paket ini sampai lapisan ${reads}${reads === 2 ? ' (alamat MAC saja)' : reads === 3 ? ' (sampai alamat IP)' : ' (semua lapisan)'}.</p>` : ''}
       <ol class="layers">${rows.map((r) => {
         const read = reads !== undefined && r.layer <= reads;
+        return `<li class="layer${read ? ' is-read' : ''}">
+          <div class="layer-head"><span class="layer-num">${r.layer}</span><span class="layer-name">${esc(r.osi)}</span><span class="layer-proto">${esc(r.proto)}</span></div>
