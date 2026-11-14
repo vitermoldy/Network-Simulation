@@ -75,3 +75,5 @@ export class PromptShell implements Shell {
       out.push(`   IPv4 Address....................: ${nic.ip ?? '0.0.0.0'}`);
       out.push(`   Subnet Mask.....................: ${nic.prefix !== undefined ? prefixToMask(nic.prefix) : '0.0.0.0'}`);
       out.push(`   Default Gateway.................: ${d.gateway ?? '0.0.0.0'}`);
+      if (all) out.push(`   DNS Servers.....................: ${d.dnsServer ?? '0.0.0.0'}`);
+      if (!this.host.sim.topo.carrier(nic.id)) out.push('', '   Media State.....................: Media disconnected');
