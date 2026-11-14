@@ -171,3 +171,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   } else placeholder(ctx, 48, body(118), W - 96, 170, 2);
   if (footer) {
     ctx.fillStyle = '#e4e7eb';
+    ctx.fillRect(0, H - 76, W, 76);
+    ctx.fillStyle = '#5d6470';
