@@ -1100,3 +1100,5 @@ export class App {
           sel?.focus();
           return;
         }
+        this.plug(b.dataset.port!, sel.value);
+      }
