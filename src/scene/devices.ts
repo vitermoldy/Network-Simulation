@@ -124,3 +124,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
   ];
   for (const [x, y, w, h] of bars) {
     const b = mesh(new THREE.BoxGeometry(w, h, 0.03), frameMat, false);
+    b.position.set(x, y, 0.015);
+    group.add(b);
