@@ -348,3 +348,5 @@ export class IosShell implements Shell {
       cmds = this.commands();
       this.mode = saved;
       tokens = tokens.slice(1);
+    }
+    if (tokens[tokens.length - 1] === '?' && tokens.length > 1) {
