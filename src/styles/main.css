@@ -566,3 +566,5 @@ select {
   top: 50%;
   transform: translateY(-50%);
   display: grid;
+  gap: 4px;
+  padding: 6px;
