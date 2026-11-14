@@ -43,3 +43,6 @@ Butuh Node.js 22 atau lebih baru.
 ```bash
 npm install
 npm run dev
+```
+
+Buka http://localhost:5181. Simulasinya berjalan penuh di browser; server MySQL hanya untuk riwayat
