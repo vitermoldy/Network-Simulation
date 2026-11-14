@@ -71,3 +71,5 @@ export class DeviceViewer {
     canvas.addEventListener('pointerup', (e) => {
       const d = this.down;
       this.down = undefined;
+      if (!d || Math.hypot(e.clientX - d.x, e.clientY - d.y) > 6) return;
+      const pick = this.cast(e);
