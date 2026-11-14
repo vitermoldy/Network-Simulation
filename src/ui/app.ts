@@ -297,3 +297,6 @@ export class App {
       this.confirm('Kembalikan jaringan ke delapan perangkat awal? Perangkat yang kamu tambah dan semua pengaturan akan hilang, kecuali yang sudah disimpan sebagai rancangan.', 'Kembalikan', () => {
         this.sim.resetTopology();
         this.afterTopologySwap('Jaringan kembali ke susunan awal.');
+      });
+    });
+
