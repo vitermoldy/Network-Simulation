@@ -936,3 +936,5 @@ export class Simulator {
         return;
       }
       if (p.udp?.dst === 53) {
+        if (dev.services?.dns) this.dnsReceive(dev, p);
+        else this.discard(p, dev.id, 'layanan DNS tidak aktif di server ini, jadi pertanyaan DNS tidak dijawab.');
