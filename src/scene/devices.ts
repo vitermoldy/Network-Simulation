@@ -306,3 +306,5 @@ function buildSwitch(dev: Device): Build {
       p.ctx.fillRect(bx0, by - 0.002 * p.scale, 0.006 * p.scale, 0.004 * p.scale);
     }
     p.text('Gi0/1', 1.8, 0.42, 0.03, { color: '#c9d0d8', mono: true, weight: 500 });
+    p.text('Gi0/2', 2.04, 0.42, 0.03, { color: '#c9d0d8', mono: true, weight: 500 });
+    p.text('10/100', 0.35, 0.25, 0.022, { color: 'rgba(201,208,216,0.55)', weight: 500 });
