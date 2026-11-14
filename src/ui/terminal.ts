@@ -55,3 +55,5 @@ export class PromptShell implements Shell {
     const [cmd, ...args] = line.split(/\s+/);
     const c = cmd.toLowerCase();
     const d = this.dev;
+    const nic = d.ports[0];
+    if (!d.powered) return ['Perangkat mati. Nyalakan dulu lewat tombol power.'];
