@@ -336,3 +336,5 @@ export class IosShell implements Shell {
   }
 
   exec(raw: string): string[] {
+    const line = raw.trim();
+    if (!this.dev.powered) return ['% Perangkat mati. Nyalakan dulu lewat tombol power.'];
