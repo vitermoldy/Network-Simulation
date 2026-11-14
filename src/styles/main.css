@@ -1236,3 +1236,5 @@ select {
   color: var(--muted);
 }
 
+.empty {
+  color: var(--muted);
