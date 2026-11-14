@@ -1333,3 +1333,5 @@ export class Simulator {
     if (this.kind === 'web') this.setPhase('tcp-close', 'done');
     this.status = 'done';
     for (const r of this.retx.values()) if (r.timer) r.timer.cancelled = true;
+    this.retx.clear();
+    this.note('ok', undefined, 'Selesai', text);
