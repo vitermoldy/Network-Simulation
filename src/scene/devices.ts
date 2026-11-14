@@ -250,3 +250,5 @@ function addPort(b: Build, dev: Device, index: number, x: number, y: number, z: 
   const link = led(0.02);
   const ledY = o.ledY ?? y - o.h / 2 - 0.055;
   if (o.act === false) {
+    link.position.set(x, ledY, z + 0.012);
+    b.group.add(link);
