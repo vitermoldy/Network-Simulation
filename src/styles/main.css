@@ -1929,3 +1929,5 @@ tbody th {
 }
 
 .led-legend {
+  list-style: none;
+  margin: 0;
