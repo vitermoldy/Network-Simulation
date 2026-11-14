@@ -922,3 +922,5 @@ export class Simulator {
     }
     this.hold(p, dev, inPort, [], TIMING.host, () => {
       if (this.status !== 'running') return;
+      if (p.icmp) {
+        if (p.icmp.type === 'echo-request') this.icmpReply(dev, p);
