@@ -989,3 +989,5 @@ export class App {
       return;
     }
     const topo = this.sim.topo;
+    let text = '';
+    if (p.type === 'port' && topo.hasPort(p.portId)) {
