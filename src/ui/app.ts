@@ -1196,3 +1196,5 @@ export class App {
         void this.refreshDb();
       } catch (ex) {
         err.textContent = `Belum tersimpan: ${(ex as Error).message} Jalankan npm run server, lalu coba lagi.`;
+        err.hidden = false;
+      }
