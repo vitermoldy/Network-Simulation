@@ -1104,3 +1104,5 @@ export class App {
       }
     });
     box.addEventListener('change', (e) => {
+      const input = e.target as HTMLInputElement;
+      if (input.dataset.portUp) {
