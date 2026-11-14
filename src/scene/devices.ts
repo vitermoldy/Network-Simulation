@@ -560,3 +560,5 @@ function buildLaptop(dev: Device): Build {
   p.group.rotation.y = Math.PI / 2;
   group.add(p.group);
   const link = led(0.017);
+  const act = led(0.017);
+  for (const [m, dz] of [[link, -0.15], [act, 0.15]] as const) {
