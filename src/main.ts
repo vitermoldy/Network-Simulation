@@ -21,3 +21,5 @@ void app.init(async () => {
   const fonts = Promise.all([
     document.fonts.load('600 32px "Host Grotesk Variable"'),
     document.fonts.load('500 32px "JetBrains Mono Variable"'),
+  ]).catch(() => undefined);
+  await Promise.race([fonts, new Promise((r) => setTimeout(r, 1500))]);
