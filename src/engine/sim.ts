@@ -1492,3 +1492,5 @@ export class Simulator {
         s.rcvNext = t.seq + 1;
         this.note('info', dev.id, 'Server ikut menutup', `FIN diterima. Server juga sudah selesai mengirim, jadi membalas FIN dan ACK ${s.rcvNext} dalam satu paket.`, 4, p.id);
         this.reliable('finack', 'FIN-ACK', dev, (retry) => this.tcpPacket(dev, s.clientIp!, 80, CLIENT_PORT, ['FIN', 'ACK'], SERVER_ISS + 1 + RESPONSE_LEN, s.rcvNext, 'FIN-ACK', 'TCP FIN-ACK: server juga selesai', retry),
+          this.rto(), MAX_TCP_TRIES, () => this.finish('ACK terakhir tidak sampai, tapi server menutup sambungan setelah menunggu.'));
+      } else if (s.state === 'last-ack') {
