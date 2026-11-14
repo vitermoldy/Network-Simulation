@@ -256,3 +256,5 @@ function addPort(b: Build, dev: Device, index: number, x: number, y: number, z: 
     return;
   }
   const act = led(0.02);
+  link.position.set(x - o.w * 0.3, ledY, z + 0.012);
+  act.position.set(x + o.w * 0.3, ledY, z + 0.012);
