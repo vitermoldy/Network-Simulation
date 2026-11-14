@@ -10,3 +10,7 @@ export interface Box2 {
   x1: number;
   z0: number;
   z1: number;
+}
+
+type V2 = [number, number];
+
