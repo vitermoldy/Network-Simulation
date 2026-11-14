@@ -12,3 +12,6 @@ export interface ShellHost {
   /** Starts a ping or nslookup run from this device; returns a reason when it cannot. */
   run: (kind: 'ping' | 'lookup', deviceId: string, target: string) => string | undefined;
   /** Any change to settings goes through the simulator so routes are recomputed. */
+  changed: () => void;
+}
+
