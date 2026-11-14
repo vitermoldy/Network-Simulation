@@ -20,3 +20,5 @@ export class DeviceViewer {
   private raycaster = new THREE.Raycaster();
   private pointer = new THREE.Vector2();
   private home?: { target: THREE.Vector3; position: THREE.Vector3 };
+  private key = '';
+  private down?: { x: number; y: number };
