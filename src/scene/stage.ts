@@ -631,3 +631,5 @@ export class Stage {
       let hi = 120;
       for (let i = 0; i < 28; i++) {
         const mid = (lo + hi) / 2;
+        const bb = bounds(mid);
+        const fits = bb.r - bb.l <= free.right - free.left && bb.t - bb.b <= free.top - free.bottom;
