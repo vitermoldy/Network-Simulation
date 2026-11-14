@@ -96,3 +96,7 @@ export function clonePacket(p: Packet): Packet {
     tcp: p.tcp && { ...p.tcp, flags: [...p.tcp.flags] },
     app: p.app && { ...p.app, lines: [...p.app.lines], dns: p.app.dns && { ...p.app.dns } },
   };
+}
+
+export type LayerId = 7 | 4 | 3 | 2 | 1;
+
