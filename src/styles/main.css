@@ -811,3 +811,5 @@ select {
   position: relative;
   width: 38px;
   height: 22px;
+  border-radius: 11px;
+  background: var(--surface);
