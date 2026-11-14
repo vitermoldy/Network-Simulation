@@ -183,3 +183,5 @@ function buildRocker(deviceId: string, scale = 1) {
 
 /** A round push button with a light ring. Local +z points out. */
 function buildRoundButton(deviceId: string, r = 0.075) {
+  const group = new THREE.Group();
+  const seat = mesh(new THREE.CylinderGeometry(r * 1.45, r * 1.45, 0.016, 32).rotateX(Math.PI / 2), shared.bezel, false);
