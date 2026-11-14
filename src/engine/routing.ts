@@ -40,3 +40,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
   for (const r of routers) {
     const list: Edge[] = [];
     for (const p of r.ports) {
+      if (!p.ip || p.prefix === undefined || !topo.carrier(p.id)) continue;
+      const s = seg.get(p.id);
