@@ -615,3 +615,5 @@ export class Stage {
       let r = -Infinity;
       let b = Infinity;
       let t = -Infinity;
+      for (const c of corners) {
+        const p = c.clone().project(cam);
