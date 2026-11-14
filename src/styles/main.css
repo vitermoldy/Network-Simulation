@@ -2061,3 +2061,5 @@ tbody th {
 .browser-bar {
   display: flex;
   align-items: center;
+  gap: 6px;
+  padding: 4px 4px 4px 12px;
