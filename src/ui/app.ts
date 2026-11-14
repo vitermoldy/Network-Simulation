@@ -248,3 +248,5 @@ export class App {
         this.speed = Number(r.value);
       }),
     );
+    $<HTMLSelectElement>('loss').addEventListener('change', (e) => {
+      this.sim.lossRate = Number((e.target as HTMLSelectElement).value);
