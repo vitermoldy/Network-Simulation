@@ -1860,3 +1860,6 @@ tbody th {
 
 .devwin-head p {
   font-size: 13px;
+  color: var(--muted);
+}
+
