@@ -1084,3 +1084,5 @@ select {
   color: var(--bad);
 }
 
+.timers {
+  flex: none;
