@@ -1641,3 +1641,6 @@ tbody th {
   flex-wrap: wrap;
   align-items: center;
   gap: 6px;
+}
+
+.ip-form input,
