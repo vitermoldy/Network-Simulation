@@ -663,3 +663,5 @@ export class Stage {
   focusDevice(id: string): void {
     const v = this.devices.get(id);
     if (!v) return;
+    const target = new THREE.Vector3(v.group.position.x, Math.max(0.3, v.height * 0.45), v.group.position.z + 0.5);
+    const dir = new THREE.Vector3(0.1, 0.5, 1).normalize();
