@@ -362,3 +362,5 @@ export class App {
         else if (this.dwOpen()) this.closeDevice();
         return;
       }
+      if (typing) return;
+      if (e.key === 'Enter' && this.placing && this.stage && !(e.target as HTMLElement).closest('button')) {
