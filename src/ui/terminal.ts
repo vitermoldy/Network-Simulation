@@ -122,3 +122,6 @@ export class IosShell implements Shell {
 
   private get hostname(): string {
     return this.dev.name.replace(/\s+/g, '') || 'Router';
+  }
+
+  prompt(): string {
