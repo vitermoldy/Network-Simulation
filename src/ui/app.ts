@@ -1247,3 +1247,5 @@ export class App {
       text.textContent = `Server MySQL belum tersambung (${(ex as Error).message}). Jalankan npm run server di folder proyek, pastikan .env berisi user dan password MySQL, lalu tekan Coba lagi.${waiting ? ` ${waiting} percobaan menunggu dikirim.` : ''}`;
       $('db-status').dataset.state = 'error';
       retry.hidden = false;
+      $('layouts').innerHTML = '';
+      $('runs').innerHTML = '<p class="empty">Riwayat tampil di sini setelah server tersambung. Simulasinya tetap bisa dipakai tanpa server.</p>';
