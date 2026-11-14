@@ -818,3 +818,5 @@ export class App {
       }
       el.querySelector('.term-prompt')!.textContent = t.shell.prompt();
     });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowUp' && t.history.length) {
