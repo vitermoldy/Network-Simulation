@@ -281,3 +281,5 @@ export class App {
       try {
         localStorage.setItem('netsim-hint-seen', '1');
       } catch {
+        /* shown again next visit */
+      }
