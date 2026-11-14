@@ -575,3 +575,6 @@ export class Stage {
     return { x: this.controls.target.x, z: this.controls.target.z };
   }
 
+  // ------------------------------------------------------------------ camera
+
+  private animateTo(target: THREE.Vector3, position: THREE.Vector3, dur = 0.75): void {
