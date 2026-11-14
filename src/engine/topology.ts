@@ -100,3 +100,6 @@ interface DeviceSpec {
 
 export const DEFAULT_RECORDS: Record<string, string> = {
   'www.jaringan.test': '203.0.113.80',
+  'jaringan.test': '203.0.113.80',
+};
+
