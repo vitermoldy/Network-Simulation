@@ -286,3 +286,6 @@ select {
 .btn:disabled {
   opacity: 0.5;
   border-style: dashed;
+  border-color: var(--line-strong);
+}
+
