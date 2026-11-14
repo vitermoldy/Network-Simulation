@@ -245,3 +245,5 @@ describe('simulator', () => {
   });
 
   it('gets a RST from a server with HTTP turned off', () => {
+    const sim = withScenario('normal');
+    sim.edit((t) => t.setServices('web', { dns: false, http: false }));
