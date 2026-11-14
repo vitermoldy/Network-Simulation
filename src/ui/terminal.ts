@@ -299,3 +299,5 @@ export class IosShell implements Shell {
         words: ['no', 'ip', 'address'], help: 'hapus IP port ini',
         run: () => {
           topo.setPortIp(port!.id, '', 24);
+          this.host.changed();
+          return [];
