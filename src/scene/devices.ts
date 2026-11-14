@@ -508,3 +508,5 @@ function buildPc(dev: Device): Build {
   group.add(stand, neck);
   const mon = rounded(1.62, 1.06, 0.07, shared.bezel, 0.02);
   mon.position.set(0.55, 0.95, 0.05);
+  mon.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
+  group.add(mon);
