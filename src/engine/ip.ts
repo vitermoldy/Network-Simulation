@@ -10,3 +10,6 @@ export function ipToInt(ip: string): number {
 
 export function intToIp(n: number): string {
   return [(n >>> 24) & 255, (n >>> 16) & 255, (n >>> 8) & 255, n & 255].join('.');
+}
+
+export function maskOf(prefix: number): number {
