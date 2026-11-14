@@ -517,3 +517,6 @@ export class Stage {
       this.events.place(this.ghost.kind, p.x, p.z);
       return;
     }
+    this.events.pick(this.cast(e));
+  }
+
