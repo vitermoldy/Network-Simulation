@@ -416,3 +416,5 @@ export class Simulator {
         this.fail('input', 'Router di simulasi ini hanya bisa ping ke alamat IP, bukan ke nama.', dev.id);
         return undefined;
       }
+      return dev;
+    }
