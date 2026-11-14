@@ -761,3 +761,5 @@ select {
 }
 
 .flow-now {
+  position: absolute;
+  left: 12px;
