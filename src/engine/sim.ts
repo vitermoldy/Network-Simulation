@@ -1057,3 +1057,6 @@ export class Simulator {
     this.hostSend(r.dev, p);
     if (r.timer) r.timer.cancelled = true;
     r.timer = this.schedule(this.time + r.rto, () => this.timeout(r), true);
+  }
+
+  private timeout(r: Retx): void {
