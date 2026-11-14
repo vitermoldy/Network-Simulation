@@ -1516,3 +1516,5 @@ export class Simulator {
       if (t.seq === s.rcvNext) {
         s.rcvNext += t.len;
         this.setPhase('http-req', 'done');
+        this.note('info', dev.id, 'GET diterima', `Server menerima GET / untuk ${p.app?.lines[1]?.replace('Host: ', '') ?? 'halaman utama'}. Halamannya ${RESPONSE_LEN} byte, terlalu besar untuk satu segmen di simulasi ini, jadi dipotong menjadi ${PAGE_PARTS.length} segmen TCP masing-masing ${SEGMENT} byte.`, 7, p.id);
+        this.respond(dev);
