@@ -283,3 +283,5 @@ export class App {
       } catch {
         /* shown again next visit */
       }
+    });
+    document.querySelectorAll<HTMLButtonElement>('[data-add]').forEach((b) =>
