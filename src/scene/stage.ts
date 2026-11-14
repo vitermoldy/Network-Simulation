@@ -406,3 +406,5 @@ export class Stage {
       tex.needsUpdate = true;
       const arrow = new THREE.Mesh(new THREE.PlaneGeometry(0.8, 0.4), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false }));
       arrow.rotation.x = -Math.PI / 2;
+      arrow.position.set((a.x1 + b.x0) / 2, 0.006, allZ1 + 1.4 + 0.6);
+      this.zones[0].group.add(arrow);
