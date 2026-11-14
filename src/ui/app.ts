@@ -1355,3 +1355,5 @@ export class App {
     const ol = $('phases');
     if (ol.dataset.html !== html) {
       ol.innerHTML = html;
+      ol.dataset.html = html;
+    }
