@@ -1527,3 +1527,5 @@ export class Simulator {
 
   private respond(dev: Device): void {
     const s = this.server(dev.id);
+    if (s.responded) return;
+    s.responded = true;
