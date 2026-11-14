@@ -107,3 +107,5 @@ export class App {
   private desktopKey = '';
   private browserCanvas?: { canvas: HTMLCanvasElement; ctx: CanvasRenderingContext2D; key: string };
   private last = performance.now();
+  private timerTick = 0;
+  private lastStatus: Simulator['status'] = 'idle';
