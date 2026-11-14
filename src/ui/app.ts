@@ -1015,3 +1015,5 @@ export class App {
     if (!text) {
       tip.hidden = true;
       return;
+    }
+    tip.textContent = text;
