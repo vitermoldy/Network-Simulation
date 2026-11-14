@@ -674,3 +674,5 @@ export class App {
         <input id="br-url" name="url" class="mono" value="${esc(url)}" autocomplete="off" spellcheck="false" />
         <button type="submit" class="btn btn-primary btn-small">Go</button>
       </form>
+      <div class="browser-view" id="browser-view"></div>`;
+    const [canvas, ctx] = makeCanvas(SCREEN_W, SCREEN_H);
