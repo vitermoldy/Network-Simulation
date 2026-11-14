@@ -968,3 +968,5 @@ export class Simulator {
     }
     const nextHop = local ? dst : dev.gateway!;
     if (dev.id === this.client.deviceId) {
+      const mac = this.arpCache(dev.id).get(nextHop);
+      if (mac) {
