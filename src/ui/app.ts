@@ -978,3 +978,5 @@ export class App {
       this.selectedPacket = p.packetId;
       this.followLatest = false;
       this.packetKey = '';
+      this.showTab('paket');
+    }
