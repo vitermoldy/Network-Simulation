@@ -2,3 +2,6 @@
 // labs and Packet Tracer: a Catalyst-style access switch (24 FastEthernet ports in blocks of
 // eight, two Gigabit uplinks), an ISR-style router (black bezel, module slots, console port),
 // tower PCs and servers, and a laptop. No maker's logo or name is printed on them.
+// Every port is a real socket (metal frame, dark hole, gold pins) with its own LED, and every
+// device has a power control you can press, placed on the front so it is easy to find.
+
