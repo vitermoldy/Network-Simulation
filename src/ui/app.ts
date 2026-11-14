@@ -412,3 +412,5 @@ export class App {
   }
 
   /** Common bookkeeping once any run (web, ping, nslookup) has started. */
+  private beginRun(step = false): void {
+    this.lastStatus = 'running';
