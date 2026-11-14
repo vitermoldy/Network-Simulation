@@ -2286,3 +2286,6 @@ tbody th {
   .stage-wrap {
     height: 56svh;
     min-height: 400px;
+  }
+
+  .stage-tools {
