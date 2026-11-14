@@ -377,3 +377,5 @@ export class Topology {
     this.rev++;
   }
 
+  setDnsRecord(id: string, name: string, ip: string): Result {
+    const d = this.device(id);
