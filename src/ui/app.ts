@@ -1264,3 +1264,6 @@ export class App {
       <button type="button" class="btn btn-small btn-secondary" data-layout="${l.id}" data-op="load" data-name="${esc(l.name)}">Muat</button>
       <button type="button" class="btn btn-small btn-ghost" data-layout="${l.id}" data-op="delete" data-name="${esc(l.name)}">Hapus</button>
     </li>`).join('');
+  }
+
+  private renderRuns(runs: api.SavedRun[]): void {
