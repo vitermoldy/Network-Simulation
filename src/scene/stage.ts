@@ -714,3 +714,5 @@ export class Stage {
     this.updatePackets();
     for (const z of this.zones) z.edge.color.setHex(z.role === this.activeRole ? this.theme.zoneActive : this.theme.zoneEdge);
     this.updateMarker();
+    if (this.follow && this.leadPacket && !this.tween) {
+      const view = this.packets.get(this.leadPacket.id);
