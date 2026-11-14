@@ -1530,3 +1530,5 @@ export class App {
 
     let extra = '';
     if (d.kind === 'pc' || d.kind === 'laptop' || d.kind === 'server') {
+      extra += `<h3 class="sub">Gateway${isClient(d) ? ' dan DNS' : ''}</h3>
+        <form class="host-form" data-form="host" novalidate>
