@@ -159,3 +159,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
   }
   if (p.ip) {
     row(3, 'IPv4', [
+      ['IP asal', p.ip.src],
+      ['IP tujuan', p.ip.dst],
