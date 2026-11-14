@@ -61,3 +61,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
     const dist = new Map<string, number>([[r.id, 0]]);
     const first = new Map<string, Edge>();
     const done = new Set<string>();
+    while (true) {
+      let cur: string | undefined;
