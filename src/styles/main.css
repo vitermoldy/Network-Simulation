@@ -2079,3 +2079,6 @@ tbody th {
 }
 
 .browser-bar input:focus {
+  outline: none;
+}
+
