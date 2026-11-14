@@ -1618,3 +1618,5 @@ tbody th {
 }
 
 .port-top {
+  display: flex;
+  align-items: center;
