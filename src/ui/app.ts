@@ -1138,3 +1138,5 @@ export class App {
         const port = form.dataset.port!;
         res = this.sim.edit((t) => t.setPortIp(port, String(f.get('ip') ?? ''), Number(f.get('prefix'))));
         done = `IP ${this.sim.topo.portLabel(port)} disimpan.`;
+      } else if (kind === 'host') {
+        const gw = this.sim.edit((t) => t.setHostField(id, 'gateway', String(f.get('gateway') ?? '')));
