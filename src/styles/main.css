@@ -963,3 +963,6 @@ select {
 .tabs [role="tab"][aria-selected="true"] {
   color: var(--ink);
   border-bottom-color: var(--accent);
+}
+
+.pane {
