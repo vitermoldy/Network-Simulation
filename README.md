@@ -61,3 +61,6 @@ dan rancangan tersimpan.
    Selama `npm run dev` jalan, alamat `/api` diteruskan ke server ini (port 8797).
 
 Kalau server mati, simulator tetap bisa dipakai. Percobaan yang selesai disimpan dulu di browser dan
+dikirim begitu server tersambung lagi.
+
+Untuk versi jadi: `npm run build`, lalu `npm start` menyajikan folder `dist` sekaligus API-nya di
