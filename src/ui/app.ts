@@ -1047,3 +1047,5 @@ export class App {
     this.selectedLink = null;
   }
 
+  private toast(text: string): void {
+    const t = $('toast');
