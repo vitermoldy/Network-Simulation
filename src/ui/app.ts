@@ -1271,3 +1271,5 @@ export class App {
     if (!runs.length) {
       box.innerHTML = '<p class="empty">Belum ada percobaan tersimpan. Setiap permintaan yang selesai atau gagal akan dicatat di sini.</p>';
       return;
+    }
+    box.innerHTML = `<ol class="runs">${runs.map((r) => `<li class="run is-${r.status}">
