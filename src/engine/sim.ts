@@ -328,3 +328,6 @@ export class Simulator {
   private pruneLost(): void {
     const before = this.lost.length;
     this.lost = this.lost.filter((l) => this.time - l.t < 2.2);
+    if (this.lost.length !== before) this.version++;
+  }
+
