@@ -659,3 +659,5 @@ select {
   left: 0;
   max-width: 300px;
   padding: 8px 10px;
+  border-radius: var(--r);
+  background: var(--tip-bg);
