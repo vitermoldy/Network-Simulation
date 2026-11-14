@@ -469,3 +469,5 @@ export class Stage {
       }
     }
     if (this.drag) {
+      const p = this.floorPoint(e);
+      const v = this.devices.get(this.drag.id);
