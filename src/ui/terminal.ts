@@ -319,3 +319,5 @@ export class IosShell implements Shell {
           const up = topo.carrier(port!.id);
           return [`%LINK-5-CHANGED: Interface ${longPortName(port!.name)}, changed state to ${up ? 'up' : 'down'}`, ...(up ? [`%LINEPROTO-5-UPDOWN: Line protocol on Interface ${longPortName(port!.name)}, changed state to up`] : [])];
         },
+      },
+      {
