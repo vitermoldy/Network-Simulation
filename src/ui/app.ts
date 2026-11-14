@@ -240,3 +240,5 @@ export class App {
       this.selectedPacket = null;
       this.followLatest = true;
       this.renderedLog = 0;
+      $('log').innerHTML = '';
+      this.renderAll();
