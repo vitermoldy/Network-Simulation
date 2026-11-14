@@ -1585,3 +1585,5 @@ export function describeRouteChanges(topo: Topology, before: Map<string, Route[]
         out.push(`${topo.device(rid).name}: ke ${r.network} sekarang lewat ${topo.device(r.viaRouter!).name}.`);
       }
     }
+    for (const o of before.get(rid) ?? []) {
+      if (o.type !== 'C' && !routes.some((r) => r.network === o.network)) out.push(`${topo.device(rid).name}: rute ke ${o.network} hilang.`);
