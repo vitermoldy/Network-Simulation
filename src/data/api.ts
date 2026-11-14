@@ -23,3 +23,6 @@ export interface RunRecord {
   path: string[];
   devices: number;
   finishedAt: string;
+}
+
+export interface SavedRun extends RunRecord {
