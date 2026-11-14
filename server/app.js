@@ -145,3 +145,5 @@ export function createApi(getPool, database) {
     const name = text(req.body?.name, 60).trim().replace(/\s+/g, ' ')
     if (!name) return res.status(400).json({ error: 'Beri nama rancangannya dulu.' })
     const data = req.body?.data
+    if (typeof data !== 'string' || Buffer.byteLength(data) > MAX_LAYOUT) return res.status(413).json({ error: 'Rancangan terlalu besar.' })
+    let parsed
