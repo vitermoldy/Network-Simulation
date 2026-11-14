@@ -251,3 +251,6 @@ describe('simulator', () => {
     expect(sim.status).toBe('failed');
     expect(sim.log.some((l) => l.title === 'Port 80 tertutup')).toBe(true);
     expect(sim.browser.message).toContain('RST');
+  });
+
+  it('reaches a new web server once DNS knows its name', () => {
