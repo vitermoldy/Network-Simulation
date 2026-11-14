@@ -85,3 +85,5 @@ export class PromptShell implements Shell {
       if (!cache.length) return ['No ARP Entries Found'];
       return ['  Internet Address      Physical Address      Type', ...cache.map(([ip, mac]) => `  ${pad(ip, 22)}${pad(mac.replace(/:/g, '-'), 22)}dynamic`)];
     }
+    if (c === 'ping') {
+      if (!args[0]) return ['Gunakan: ping <alamat IP atau nama>, misalnya ping 192.168.1.1'];
