@@ -541,3 +541,5 @@ export class Stage {
       this.scene.add(this.dangling);
     } else {
       this.dangling.geometry.dispose();
+      this.dangling.geometry = geo;
+    }
