@@ -301,3 +301,5 @@ export class IosShell implements Shell {
           topo.setPortIp(port!.id, '', 24);
           this.host.changed();
           return [];
+        },
+      },
