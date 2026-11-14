@@ -23,3 +23,5 @@ export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
     zoneEdge: 0xc3c8d0,
     zoneActive: 0x1f2de6,
     label: '#0b0c0e',
+    labelMuted: '#5d6470',
+    arrow: '#8b929d',
