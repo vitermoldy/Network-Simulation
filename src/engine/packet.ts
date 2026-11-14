@@ -104,3 +104,5 @@ export interface LayerRow {
   layer: LayerId;
   osi: string;
   tcpip: string;
+  proto: string;
+  fields: [string, string][];
