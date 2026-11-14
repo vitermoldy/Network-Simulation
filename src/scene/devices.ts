@@ -170,3 +170,5 @@ function buildRocker(deviceId: string, scale = 1) {
   group.add(housing);
   rockerTex ??= rockerTexture();
   const glow = std(MATERIAL.rocker, { roughness: 0.35 });
+  const face = new THREE.MeshStandardMaterial({ map: rockerTex, roughness: 0.4 });
+  const paddle = new THREE.Group();
