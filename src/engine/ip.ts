@@ -21,3 +21,5 @@ export function networkOf(ip: string, prefix: number): string {
   return `${intToIp((ipToInt(ip) & maskOf(prefix)) >>> 0)}/${prefix}`;
 }
 
+export function inNetwork(ip: string, network: string): boolean {
+  const [base, p] = network.split('/');
