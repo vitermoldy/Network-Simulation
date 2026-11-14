@@ -445,3 +445,5 @@ export class Topology {
     if (pa.deviceId === pb.deviceId) {
       return { ok: false, reason: `Kedua port ada di ${this.device(pa.deviceId).name}. Kabel harus menghubungkan dua perangkat.` };
     }
+    if (this.portLink.has(a)) return { ok: false, reason: `${this.portLabel(a)} sudah terisi kabel.` };
+    if (this.portLink.has(b)) return { ok: false, reason: `${this.portLabel(b)} sudah terisi kabel.` };
