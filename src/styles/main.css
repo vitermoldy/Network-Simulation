@@ -942,3 +942,6 @@ select {
   display: flex;
   border-bottom: 1px solid var(--line);
   padding: 0 8px;
+  flex: none;
+}
+
