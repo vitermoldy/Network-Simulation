@@ -103,3 +103,5 @@ export class DeviceViewer {
 
   private resize(): void {
     const w = Math.max(1, this.host.clientWidth);
+    const h = Math.max(1, this.host.clientHeight);
+    this.renderer.setSize(w, h);
