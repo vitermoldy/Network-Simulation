@@ -1351,3 +1351,5 @@ export class App {
       <span class="phase-title">${esc(p.title)}</span>
       <span class="phase-meta">${esc(p.layer)}</span>
       <span class="phase-state">${STATUS_WORD[p.status]}</span>
+    </li>`).join('');
+    const ol = $('phases');
