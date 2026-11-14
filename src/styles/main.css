@@ -1578,3 +1578,5 @@ tbody th {
   border-color: var(--line);
 }
 
+.dev-title-input:focus {
+  outline: none;
