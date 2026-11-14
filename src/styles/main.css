@@ -1908,3 +1908,6 @@ tbody th {
 }
 
 .viewer-canvas:focus-visible {
+  outline-offset: -3px;
+}
+
