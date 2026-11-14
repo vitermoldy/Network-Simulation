@@ -183,3 +183,5 @@ export class Stage {
     this.syncTopology();
 
     canvas.addEventListener('pointermove', (e) => this.onMove(e));
+    canvas.addEventListener('pointerdown', (e) => this.onDown(e));
+    canvas.addEventListener('pointerup', (e) => this.onUp(e));
