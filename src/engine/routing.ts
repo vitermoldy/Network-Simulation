@@ -88,3 +88,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
       if (other === r.id) continue;
       const hop = first.get(other)!;
       for (const a of attached.get(other) ?? []) {
+        const cur = best.get(a.network);
+        const cand: Route = {
