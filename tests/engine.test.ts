@@ -220,3 +220,6 @@ describe('simulator', () => {
     expect(sim.time).toBeLessThan(1);
     r = sim.advance(100);
     expect(r).toBe('step');
+  });
+
+  it('runs from a PC added by hand that got its address automatically', () => {
