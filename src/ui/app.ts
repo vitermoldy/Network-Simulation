@@ -610,3 +610,5 @@ export class App {
     else if (this.dwTab === 'desktop') this.renderDesktop();
   }
 
+  private renderPorts(): void {
+    const topo = this.sim.topo;
