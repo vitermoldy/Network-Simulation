@@ -198,3 +198,5 @@ export class Topology {
     for (const p of d.ports) this.portIndex.set(p.id, p);
   }
 
+  device(id: string): Device {
+    const d = this.devices.get(id);
