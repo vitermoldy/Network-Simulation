@@ -235,3 +235,5 @@ export function drawZoneLabel(ctx: CanvasRenderingContext2D, w: number, h: numbe
 
 export function drawArrow(ctx: CanvasRenderingContext2D, w: number, h: number, color: string): void {
   ctx.clearRect(0, 0, w, h);
+  ctx.strokeStyle = color;
+  ctx.lineWidth = h * 0.12;
