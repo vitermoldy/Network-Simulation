@@ -1245,3 +1245,5 @@ export class App {
     } catch (ex) {
       const waiting = api.queuedRuns();
       text.textContent = `Server MySQL belum tersambung (${(ex as Error).message}). Jalankan npm run server di folder proyek, pastikan .env berisi user dan password MySQL, lalu tekan Coba lagi.${waiting ? ` ${waiting} percobaan menunggu dikirim.` : ''}`;
+      $('db-status').dataset.state = 'error';
+      retry.hidden = false;
