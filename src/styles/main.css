@@ -403,3 +403,5 @@ select {
 }
 
 .stage-state {
+  position: absolute;
+  inset: 0;
