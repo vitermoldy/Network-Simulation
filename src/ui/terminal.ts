@@ -269,3 +269,5 @@ export class IosShell implements Shell {
           words: ['interface'], help: `interface <port>, misalnya ${d.ports[0].name}`,
           run: (args) => {
             const p = this.findPort(args.join(''));
+            if (!p) return [`% Port tidak dikenal. Port di perangkat ini: ${d.ports.map((x) => x.name).join(', ')}`];
+            this.iface = p.id;
