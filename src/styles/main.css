@@ -485,3 +485,5 @@ select {
   pointer-events: none;
 }
 
+.ptag.is-lost {
+  background: var(--bad);
