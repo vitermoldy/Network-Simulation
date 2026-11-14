@@ -400,3 +400,5 @@ export class Stage {
       const a = rects.get(present[i])!;
       const b = rects.get(present[i + 1])!;
       if (a.x1 + 0.75 >= b.x0 - 0.75) continue;
+      const [c, ctx] = makeCanvas(256, 128);
+      const tex = canvasTexture(c);
