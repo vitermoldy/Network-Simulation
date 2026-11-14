@@ -110,3 +110,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   ctx.fillRect(0, 0, W, 78);
   ctx.fillStyle = '#ffffff';
   ctx.beginPath();
+  ctx.roundRect(24, 16, W - 48, 46, 23);
+  ctx.fill();
