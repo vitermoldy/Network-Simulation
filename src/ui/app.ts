@@ -1456,3 +1456,5 @@ export class App {
         <button type="button" class="dev-pick" data-pick="${d.id}" aria-pressed="${d.id === this.selectedDevice}">
           <span class="dev-name">${esc(d.name)}</span>
           <span class="dev-meta">${KIND_LABEL[d.kind]}, ${role === 'input' ? 'input' : role === 'output' ? 'output' : 'proses'}, ${used} dari ${d.ports.length} port berkabel</span>
+        </button>
+        <button type="button" class="power ${d.powered ? 'is-on' : 'is-off'}" data-power="${d.id}" aria-pressed="${d.powered}" aria-label="${d.powered ? 'Matikan' : 'Nyalakan'} ${esc(d.name)}">
