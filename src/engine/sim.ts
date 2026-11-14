@@ -84,3 +84,5 @@ const PHASE_SETS: Record<RunKind, Omit<Phase, 'status'>[]> = {
     { id: 'dns', title: 'DNS: menanyakan alamat IP', layer: 'Aplikasi, UDP', role: 'process' },
     { id: 'output', title: 'Jawaban tampil', layer: 'Aplikasi', role: 'input' },
   ],
+};
+const PHASES = PHASE_SETS.web;
