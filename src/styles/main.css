@@ -2110,3 +2110,5 @@ tbody th {
 
 .term-out {
   margin: 0;
+  padding: 12px 14px 4px;
+  overflow-y: auto;
