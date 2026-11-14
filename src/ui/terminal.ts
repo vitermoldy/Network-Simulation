@@ -24,3 +24,5 @@ export interface Shell {
 function maskToPrefix(mask: string): number | undefined {
   const m = /^(\d+)\.(\d+)\.(\d+)\.(\d+)$/.exec(mask.trim());
   if (!m) return undefined;
+  const n = ((Number(m[1]) << 24) | (Number(m[2]) << 16) | (Number(m[3]) << 8) | Number(m[4])) >>> 0;
+  for (let p = 0; p <= 32; p++) if (maskOf(p) === n) return p;
