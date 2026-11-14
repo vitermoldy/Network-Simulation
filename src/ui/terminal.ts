@@ -67,3 +67,5 @@ export class PromptShell implements Shell {
         '  nslookup <nama>     tanya server DNS',
         '  cls                 bersihkan layar',
       ];
+    }
+    if (c === 'ipconfig') {
