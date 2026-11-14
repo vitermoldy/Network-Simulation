@@ -749,3 +749,5 @@ export class Simulator {
     this.holds.push(h);
     this.schedule(h.t1, () => {
       if (!this.holds.includes(h)) return;
+      this.holds = this.holds.filter((x) => x !== h);
+      if (!dev.powered) return;
