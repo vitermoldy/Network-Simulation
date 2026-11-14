@@ -1801,3 +1801,6 @@ tbody th {
 
 .run.is-done .run-result {
   color: var(--ok);
+}
+
+.run.is-failed .run-result,
