@@ -874,3 +874,5 @@ export class Stage {
     v.mat.emissive.setHex(color);
     if (state === 'fly' || state === 'hold') v.mat.opacity = 1;
     const selected = this.selected.packetId === p.id;
+    v.mesh.scale.setScalar(selected ? 1.45 : 1);
+    const text = state === 'lost' ? `${p.label} hilang` : state === 'discard' ? `${p.label} dibuang` : p.label;
