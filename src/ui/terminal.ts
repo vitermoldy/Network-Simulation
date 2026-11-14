@@ -97,3 +97,6 @@ export class PromptShell implements Shell {
     }
     if (c === 'tracert' || c === 'telnet' || c === 'ssh' || c === 'ftp') return [`${cmd} belum ada di simulasi ini. Coba ping atau nslookup.`];
     return [`Invalid Command. Ketik help untuk melihat perintah.`];
+  }
+}
+
