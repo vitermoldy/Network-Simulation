@@ -949,3 +949,6 @@ export class Simulator {
   private refuse(dev: Device, p: Packet): void {
     if (!p.tcp || p.tcp.flags.includes('RST')) return;
     this.note('error', dev.id, 'Port 80 tertutup', `${dev.name} tidak menjalankan layanan HTTP. Server membalas RST, artinya "tidak ada yang menerima sambungan di port ini".`, 4, p.id);
+    this.hostSend(dev, this.tcpPacket(dev, p.ip!.src, 80, p.tcp.src, ['RST', 'ACK'], 0, p.tcp.seq + Math.max(1, p.tcp.len), 'RST', 'TCP RST: sambungan ditolak', 0));
+  }
+
