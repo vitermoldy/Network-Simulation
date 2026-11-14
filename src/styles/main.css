@@ -730,3 +730,5 @@ select {
 }
 
 .flow li + li::before {
+  content: "";
+  position: absolute;
