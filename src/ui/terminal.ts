@@ -214,3 +214,5 @@ export class IosShell implements Shell {
         run: () => {
           const cache = [...sim.arpCache(d.id)];
           return ['Protocol  Address          Hardware Addr       Interface', ...cache.map(([ip, mac]) => `Internet  ${pad(ip, 17)}${pad(mac, 20)}-`), ...(cache.length ? [] : ['(kosong)'])];
+        },
+      });
