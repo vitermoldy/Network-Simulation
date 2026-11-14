@@ -1069,3 +1069,5 @@ select {
   background: var(--accent-soft);
 }
 
+.phase.is-active .mark,
+.phase.is-active .phase-state {
