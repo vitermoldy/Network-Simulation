@@ -1307,3 +1307,5 @@ export class Simulator {
   private sendGet(dev: Device): void {
     const c = this.client;
     if (this.status !== 'running') return;
+    const lines = ['GET / HTTP/1.1', `Host: ${c.host}`, 'Accept: text/html'];
+    c.getLen = lines.join('\r\n').length + 4;
