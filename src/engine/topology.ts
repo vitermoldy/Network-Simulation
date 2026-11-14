@@ -514,3 +514,5 @@ export class Topology {
             ip: ok ? src.ip : undefined, prefix: ok ? src.prefix : undefined, down: src?.down ? true : undefined,
           };
         }),
+      };
+      if (raw.kind === 'server') {
