@@ -500,3 +500,5 @@ select {
   border: 1px solid var(--line-strong);
 }
 
+.ptag.is-selected {
+  box-shadow: 0 0 0 2px var(--panel), 0 0 0 4px var(--accent);
