@@ -1165,3 +1165,5 @@ export class Simulator {
         this.fail('dns', `Nama tidak ditemukan. Server DNS menjawab bahwa ${c.host} tidak ada (NXDOMAIN), jadi tidak ada IP yang bisa dihubungi.`, this.clientId);
         return;
       }
+      c.serverIp = p.app.dns.answer;
+      this.dnsCache.set(c.host, c.serverIp);
