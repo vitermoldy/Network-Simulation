@@ -583,3 +583,5 @@ export class Topology {
     const seg = this.segments();
     const mine = seg.get(fromPort);
     if (mine === undefined) return undefined;
+    for (const [portId, s] of seg) {
+      if (s !== mine || portId === fromPort) continue;
