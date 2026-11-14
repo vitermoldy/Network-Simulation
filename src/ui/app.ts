@@ -397,3 +397,5 @@ export class App {
       err.hidden = false;
       return;
     }
+    if (!host || !/^[a-z0-9.-]+$/.test(host) || host.startsWith('.') || host.endsWith('.')) {
+      err.textContent = host ? 'Alamat hanya boleh berisi huruf, angka, titik, dan tanda minus, misalnya www.jaringan.test.' : 'Ketik alamat web dulu, misalnya www.jaringan.test.';
