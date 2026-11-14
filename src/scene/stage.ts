@@ -645,3 +645,5 @@ export class Stage {
       const halfH = dist * Math.tan(((cam.fov * Math.PI) / 180) / 2);
       target.x -= dx * halfW;
       target.z += (dy * halfH) / dir.y;
+    }
+    dist *= 1.03;
