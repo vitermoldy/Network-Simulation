@@ -921,3 +921,5 @@ export class Stage {
   }
 
   /** Client pixels to a point on the bench, for the same checks. */
+  floorAt(x: number, y: number): { x: number; z: number } | undefined {
+    const rect = this.renderer.domElement.getBoundingClientRect();
