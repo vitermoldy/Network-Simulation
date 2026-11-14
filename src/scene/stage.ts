@@ -84,3 +84,5 @@ function outlineGeometry(x0: number, z0: number, x1: number, z1: number, r: numb
 function disposeTree(o: THREE.Object3D): void {
   o.traverse((c) => {
     const m = c as THREE.Mesh;
+    if (m.geometry && m.geometry !== packetGeo) m.geometry.dispose();
+  });
