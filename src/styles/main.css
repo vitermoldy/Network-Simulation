@@ -1838,3 +1838,6 @@ tbody th {
 
 .devwin[open] {
   display: flex;
+}
+
+.devwin-head {
