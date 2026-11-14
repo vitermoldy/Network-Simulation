@@ -397,3 +397,5 @@ export class Topology {
   }
 
   /**
+   * Hands a host an address the way a DHCP server would: the first free IP in the network of
+   * the router port it can reach, that router port as gateway, and the first DNS server found.
