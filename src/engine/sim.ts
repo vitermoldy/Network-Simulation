@@ -1470,3 +1470,5 @@ export class Simulator {
 
     if (s.state === 'syn-rcvd' && has('ACK') && t.ack === SERVER_ISS + 1) {
       this.acked('synack');
+      s.state = 'established';
+      this.note('ok', dev.id, 'Sambungan terbuka', `ACK ${t.ack} sampai di server. Kedua pihak sekarang sepakat soal nomor urut, sambungan TCP siap dipakai.`, 4, p.id);
