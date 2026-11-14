@@ -260,3 +260,6 @@ function addPort(b: Build, dev: Device, index: number, x: number, y: number, z: 
   act.position.set(x + o.w * 0.3, ledY, z + 0.012);
   b.group.add(link, act);
   b.ports.push({ id: port.id, deviceId: dev.id, anchor: p.anchor, frameMat: p.frameMat, frameColor, hit: p.hit, holeW: o.w, holeH: o.h, link, act });
+}
+
+/** Catalyst-style access switch: steel-blue system panel, 24 ports in three blocks, two uplinks. */
