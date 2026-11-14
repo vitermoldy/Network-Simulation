@@ -158,3 +158,5 @@ export class Stage {
     const sun = new THREE.DirectionalLight(0xffffff, 1.45);
     sun.position.set(6, 18, 11);
     sun.castShadow = true;
+    sun.shadow.mapSize.set(2048, 2048);
+    const sc = sun.shadow.camera;
