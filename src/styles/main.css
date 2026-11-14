@@ -1724,3 +1724,6 @@ tbody th {
 }
 
 .db-status[data-state="ok"] p {
+  color: var(--ok);
+}
+
