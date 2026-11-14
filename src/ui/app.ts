@@ -574,3 +574,5 @@ export class App {
     if (!this.viewer && !this.viewerLoading) {
       this.viewerLoading = true;
       const { DeviceViewer } = await import('../scene/viewer');
+      this.viewer = new DeviceViewer($('viewer'), this.sim, {
+        power: (id) => this.togglePower(id),
