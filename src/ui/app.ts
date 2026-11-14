@@ -905,3 +905,5 @@ export class App {
     });
   }
 
+  private unplug(linkId: string): void {
+    const link = this.sim.topo.links.get(linkId);
