@@ -330,3 +330,5 @@ export class App {
     $('packet').addEventListener('click', (e) => {
       if ((e.target as HTMLElement).closest('#follow-latest')) {
         this.followLatest = true;
+        this.selectedPacket = null;
+        this.packetKey = '';
