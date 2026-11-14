@@ -130,3 +130,5 @@ p {
   text-decoration: none;
 }
 
+.skip:focus {
+  top: 10px;
