@@ -1702,3 +1702,5 @@ tbody th {
 }
 
 .services {
+  display: flex;
+  flex-wrap: wrap;
