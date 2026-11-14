@@ -218,3 +218,5 @@ describe('simulator', () => {
     let r = sim.advance(100);
     expect(r).toBe('step');
     expect(sim.time).toBeLessThan(1);
+    r = sim.advance(100);
+    expect(r).toBe('step');
