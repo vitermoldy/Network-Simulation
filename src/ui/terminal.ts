@@ -81,3 +81,5 @@ export class PromptShell implements Shell {
     }
     if (c === 'arp') {
       if (args[0] !== '-a') return ['Gunakan: arp -a'];
+      const cache = [...this.host.sim.arpCache(d.id)];
+      if (!cache.length) return ['No ARP Entries Found'];
