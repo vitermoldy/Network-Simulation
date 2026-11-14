@@ -72,3 +72,5 @@ Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan r
 
 - Setiap tindakan di meja 3D punya jalan lewat DOM: daftar perangkat dengan tombol power, tab Config
   untuk kabel (pilih port, Pasang, Cabut), IP, dan shutdown, serta tombol kamera.
+- Kanvas bisa difokus; panah memutar dan memiringkan, plus dan minus mendekatkan.
+- Tab memakai pola tablist dengan panah kiri dan kanan; dialog dan popover tertutup dengan Esc.
