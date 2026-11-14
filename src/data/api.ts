@@ -19,3 +19,5 @@ export interface RunRecord {
   simSeconds: number;
   packetsLost: number;
   resends: number;
+  routeChanges: number;
+  path: string[];
