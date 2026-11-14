@@ -86,3 +86,5 @@ function writeQueue(list: RunRecord[]): void {
   try {
     localStorage.setItem(QUEUE_KEY, JSON.stringify(list.slice(-50)));
   } catch {
+    /* the run is lost if storage is blocked; the history is a convenience */
+  }
