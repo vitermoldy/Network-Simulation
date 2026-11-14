@@ -44,3 +44,5 @@ export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
 export const MATERIAL = {
   /** Catalyst-style switch chassis. */
   slate: 0x3b424a,
+  /** ISR-style router chassis. */
+  graphite: 0x2c3137,
