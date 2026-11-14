@@ -198,3 +198,5 @@ describe('simulator', () => {
       }
     }
     expect(pulled).toBe(true);
+    expect(sim.status).toBe('done');
+    expect(sim.log.some((l) => l.kind === 'loss')).toBe(true);
