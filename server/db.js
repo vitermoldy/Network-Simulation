@@ -54,3 +54,4 @@ export async function connect(db) {
   const pool = mysql.createPool({ ...db, connectionLimit: 8, timezone: 'Z' })
   for (const sql of TABLES) await pool.query(sql)
   return pool
+}
