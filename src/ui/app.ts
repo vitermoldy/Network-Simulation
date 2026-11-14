@@ -1118,3 +1118,5 @@ export class App {
         const next = { dns: !!d.services?.dns, http: !!d.services?.http, [input.dataset.service]: input.checked };
         this.sim.edit((t) => t.setServices(d.id, next));
         this.toast(`${d.name}: layanan ${input.dataset.service.toUpperCase()} ${input.checked ? 'aktif' : 'dimatikan'}.`);
+        this.deviceKey = '';
+        this.renderAll();
