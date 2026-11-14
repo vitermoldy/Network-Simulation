@@ -329,3 +329,5 @@ export class IosShell implements Shell {
           return [];
         },
       },
+      { words: ['exit'], help: 'kembali ke mode konfigurasi', run: () => ((this.mode = 'config'), []) },
+      { words: ['end'], help: 'kembali ke mode privileged (#)', run: () => ((this.mode = 'priv'), []) },
