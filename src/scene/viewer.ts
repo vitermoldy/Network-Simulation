@@ -39,3 +39,5 @@ export class DeviceViewer {
     canvas.setAttribute('role', 'img');
     host.appendChild(canvas);
     this.controls = new OrbitControls(this.camera, canvas);
+    this.controls.enableDamping = true;
+    this.controls.dampingFactor = 0.1;
