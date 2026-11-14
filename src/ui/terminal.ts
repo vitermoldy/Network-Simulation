@@ -93,3 +93,5 @@ export class PromptShell implements Shell {
     if (c === 'nslookup') {
       if (!args[0]) return ['Gunakan: nslookup <nama>, misalnya nslookup www.jaringan.test'];
       const why = this.host.run('lookup', d.id, args[0]);
+      return why ? [why] : [''];
+    }
