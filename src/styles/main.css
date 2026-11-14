@@ -2412,3 +2412,6 @@ tbody th {
 
   .select-inline {
     width: 100%;
+  }
+
+  .select-inline select {
