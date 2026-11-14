@@ -55,3 +55,6 @@ dan rancangan tersimpan.
 
    ```bash
    npm run server
+   ```
+
+   Server membuat database `network_simulation` dan tabelnya sendiri saat pertama kali tersambung.
