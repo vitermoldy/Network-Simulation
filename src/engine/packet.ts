@@ -137,3 +137,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
   if (p.tcp) {
     row(4, 'TCP', [
       ['Port asal', String(p.tcp.src)],
+      ['Port tujuan', String(p.tcp.dst)],
+      ['Flag', p.tcp.flags.join(', ')],
