@@ -115,3 +115,5 @@ export class App {
 
   async init(createStage: () => Promise<Stage>): Promise<void> {
     this.bindControls();
+    this.renderAll();
+    void this.refreshDb();
