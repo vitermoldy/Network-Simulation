@@ -41,3 +41,5 @@ interface PacketView {
   last: THREE.Vector3;
 }
 
+interface ZoneView {
+  role: Role;
