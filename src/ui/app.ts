@@ -140,3 +140,5 @@ export class App {
   }
 
   stageEvents(): StageEvents {
+    return {
+      pick: (p) => this.onPick(p),
