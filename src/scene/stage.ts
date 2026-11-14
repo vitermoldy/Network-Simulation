@@ -356,3 +356,5 @@ export class Stage {
     for (const v of this.devices.values()) {
       const f = footprintOf(v);
       const r = roleOf(v.device);
+      const cur = rects.get(r);
+      rects.set(r, cur ? { x0: Math.min(cur.x0, f.x0), x1: Math.max(cur.x1, f.x1), z0: Math.min(cur.z0, f.z0), z1: Math.max(cur.z1, f.z1) } : { ...f });
