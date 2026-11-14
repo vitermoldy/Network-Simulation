@@ -1034,3 +1034,5 @@ select {
 }
 
 .phase .mark .fill {
+  fill: currentColor;
+  stroke: none;
