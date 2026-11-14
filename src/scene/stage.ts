@@ -702,3 +702,5 @@ export class Stage {
       this.rebuildZones();
     }
     if (this.tween) {
+      const tw = this.tween;
+      tw.t = Math.min(tw.dur, tw.t + dt);
