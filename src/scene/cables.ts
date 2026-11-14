@@ -59,3 +59,5 @@ export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
   let bestLen = Infinity;
   for (const c of corners) {
     if (clear(a, c) && clear(c, b)) {
+      const len = dist(a, c) + dist(c, b);
+      if (len < bestLen) {
