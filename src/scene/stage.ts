@@ -712,3 +712,5 @@ export class Stage {
     this.updateDevices();
     this.updateCables();
     this.updatePackets();
+    for (const z of this.zones) z.edge.color.setHex(z.role === this.activeRole ? this.theme.zoneActive : this.theme.zoneEdge);
+    this.updateMarker();
