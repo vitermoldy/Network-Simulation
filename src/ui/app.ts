@@ -706,3 +706,5 @@ export class App {
       b.addEventListener('keydown', (e) => {
         const dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
         if (!dir) return;
+        e.preventDefault();
+        const visible = DW_TABS.filter((x) => !$(`dwt-${x}`).hidden);
