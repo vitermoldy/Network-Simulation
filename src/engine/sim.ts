@@ -1531,3 +1531,5 @@ export class Simulator {
     s.responded = true;
     s.lastAck = SERVER_ISS + 1;
     this.setPhase('http-res', 'active');
+    PAGE_PARTS.forEach((part, i) => {
+      this.schedule(this.time + i * 0.3, () => {
