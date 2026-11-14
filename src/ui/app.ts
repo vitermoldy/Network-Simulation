@@ -1160,3 +1160,5 @@ export class App {
       this.deviceDirty = false;
       this.deviceKey = '';
       (document.activeElement as HTMLElement | null)?.blur();
+      this.renderAll();
+    });
