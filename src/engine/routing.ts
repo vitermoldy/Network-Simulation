@@ -59,3 +59,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
   for (const r of routers) {
     // Dijkstra with unit costs; the first hop rides along with each distance.
     const dist = new Map<string, number>([[r.id, 0]]);
+    const first = new Map<string, Edge>();
+    const done = new Set<string>();
