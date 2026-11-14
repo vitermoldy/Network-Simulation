@@ -185,3 +185,5 @@ export class Stage {
     canvas.addEventListener('pointermove', (e) => this.onMove(e));
     canvas.addEventListener('pointerdown', (e) => this.onDown(e));
     canvas.addEventListener('pointerup', (e) => this.onUp(e));
+    canvas.addEventListener('pointerleave', () => this.setHover(null, 0, 0));
+    canvas.addEventListener('keydown', (e) => this.onKey(e));
