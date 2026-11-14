@@ -308,3 +308,5 @@ function buildSwitch(dev: Device): Build {
     p.text('Gi0/1', 1.8, 0.42, 0.03, { color: '#c9d0d8', mono: true, weight: 500 });
     p.text('Gi0/2', 2.04, 0.42, 0.03, { color: '#c9d0d8', mono: true, weight: 500 });
     p.text('10/100', 0.35, 0.25, 0.022, { color: 'rgba(201,208,216,0.55)', weight: 500 });
+  });
+  panel.position.set(0, h / 2, d / 2 + 0.002);
