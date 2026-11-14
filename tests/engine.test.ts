@@ -21,3 +21,5 @@ describe('ip', () => {
   it('works out networks and membership', () => {
     expect(networkOf('192.168.1.10', 24)).toBe('192.168.1.0/24');
     expect(networkOf('10.0.12.2', 30)).toBe('10.0.12.0/30');
+    expect(inNetwork('203.0.113.80', '203.0.113.0/24')).toBe(true);
+    expect(inNetwork('203.0.114.80', '203.0.113.0/24')).toBe(false);
