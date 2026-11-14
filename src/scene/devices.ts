@@ -258,3 +258,5 @@ function addPort(b: Build, dev: Device, index: number, x: number, y: number, z: 
   const act = led(0.02);
   link.position.set(x - o.w * 0.3, ledY, z + 0.012);
   act.position.set(x + o.w * 0.3, ledY, z + 0.012);
+  b.group.add(link, act);
+  b.ports.push({ id: port.id, deviceId: dev.id, anchor: p.anchor, frameMat: p.frameMat, frameColor, hit: p.hit, holeW: o.w, holeH: o.h, link, act });
