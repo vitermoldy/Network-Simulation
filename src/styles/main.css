@@ -1133,3 +1133,6 @@ select {
 .timer-bar span {
   display: block;
   height: 100%;
+  background: var(--warn);
+}
+
