@@ -968,3 +968,5 @@ select {
 .pane {
   flex: 1;
   min-height: 0;
+  overflow-y: auto;
+  padding: 14px 16px 18px;
