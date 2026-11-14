@@ -406,3 +406,5 @@ function buildRouter(dev: Device): Build {
   group.add(pwr, sys, act);
   rocker.group.position.y = 0.24;
   b.power = { hit: rocker.hit, glow: rocker.glow, rocker: rocker.paddle, leds: [pwr, sys] };
+  b.busy.push(act);
+  return b;
