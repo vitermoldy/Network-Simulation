@@ -67,3 +67,5 @@ export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
     }
   }
   if (best) return best;
+  for (const c1 of corners) {
+    if (!clear(a, c1)) continue;
