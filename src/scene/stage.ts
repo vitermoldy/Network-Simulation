@@ -115,3 +115,5 @@ export class Stage {
   private danglingMat = new THREE.MeshStandardMaterial({ color: MATERIAL.accent, roughness: 0.5, transparent: true, opacity: 0.75 });
   private ghost?: { kind: DeviceKind; group: THREE.Group };
   private marker?: THREE.Mesh;
+  private markerMat = new THREE.MeshBasicMaterial({ color: MATERIAL.accent });
+  private markerKey = '';
