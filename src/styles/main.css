@@ -159,3 +159,5 @@ p {
   flex: 1;
   max-width: 640px;
   margin-left: auto;
+  display: grid;
+  gap: 4px;
