@@ -958,3 +958,5 @@ export class Simulator {
     const nic = dev.ports[0];
     const dst = p.ip!.dst;
     if (!nic.ip || nic.prefix === undefined) {
+      this.loseAt(p, dev.id, `${dev.name} belum punya alamat IP, jadi tidak bisa mengirim paket IP.`);
+      return;
