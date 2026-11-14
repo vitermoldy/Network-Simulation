@@ -56,3 +56,6 @@ export function clientCode(): string {
     memoryCode ??= makeCode();
     return memoryCode;
   }
+}
+
+async function call<T>(path: string, init?: RequestInit): Promise<T> {
