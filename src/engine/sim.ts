@@ -387,3 +387,5 @@ export class Simulator {
   startLookup(sourceId: string, rawName: string, seed?: number): void {
     const name = rawName.trim().toLowerCase();
     this.kind = 'lookup';
+    this.resetRun(name, sourceId, seed);
+    this.setPhase('input', 'active');
