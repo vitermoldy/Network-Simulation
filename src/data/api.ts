@@ -94,3 +94,5 @@ export function queuedRuns(): number {
   return readQueue().length;
 }
 
+/** Sends a run now, or keeps it for later when the server does not answer. */
+export async function saveRun(run: RunRecord): Promise<boolean> {
