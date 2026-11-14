@@ -61,3 +61,5 @@ export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
     if (clear(a, c) && clear(c, b)) {
       const len = dist(a, c) + dist(c, b);
       if (len < bestLen) {
+        bestLen = len;
+        best = [a, c, b];
