@@ -186,3 +186,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
   return rows;
 }
 
+/** How far up the stack a device opens a packet to make its decision. */
+export function readsUpTo(kind: string): LayerId {
