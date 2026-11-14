@@ -94,3 +94,5 @@ function wrap(ctx: CanvasRenderingContext2D, text: string, maxW: number): string
 export const SCREEN_W = 960;
 export const SCREEN_H = 600;
 
+/** Draws what the laptop's browser shows. The page appears part by part as TCP delivers it. */
+export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): void {
