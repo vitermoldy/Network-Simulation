@@ -878,3 +878,5 @@ export class App {
     this.setPending(null);
     this.stopPlacing();
     this.renderedLog = 0;
+    $('log').innerHTML = '';
+    if (!this.sim.topo.has(this.selectedDevice)) this.selectedDevice = [...this.sim.topo.devices.keys()][0] ?? '';
