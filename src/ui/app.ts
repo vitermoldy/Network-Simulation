@@ -117,3 +117,5 @@ export class App {
     this.bindControls();
     this.renderAll();
     void this.refreshDb();
+    try {
+      this.stage = await createStage();
