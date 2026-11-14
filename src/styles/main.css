@@ -736,3 +736,5 @@ select {
   top: 50%;
   width: 7px;
   height: 7px;
+  border-top: 1.6px solid var(--muted);
+  border-right: 1.6px solid var(--muted);
