@@ -343,3 +343,5 @@ export class App {
         this.togglePower(power.dataset.power!);
         return;
       }
+      const pick = t.closest<HTMLButtonElement>('button[data-pick]');
+      if (pick) this.openDevice(pick.dataset.pick!);
