@@ -186,3 +186,5 @@ export function drawDesktop(ctx: CanvasRenderingContext2D, name: string, ip: str
     ctx.fillStyle = '#060708';
     ctx.fillRect(0, 0, W, H);
     return;
+  }
+  const g = ctx.createLinearGradient(0, 0, 0, H);
