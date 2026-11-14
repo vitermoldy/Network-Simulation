@@ -68,3 +68,5 @@ function roundedRectShape(x0: number, z0: number, x1: number, z1: number, r: num
   s.lineTo(x0 + r, -z1);
   s.quadraticCurveTo(x0, -z1, x0, -z1 + r);
   s.lineTo(x0, -z0 - r);
+  s.quadraticCurveTo(x0, -z0, x0 + r, -z0);
+  return s;
