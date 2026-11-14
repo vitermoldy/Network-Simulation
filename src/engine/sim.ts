@@ -1472,3 +1472,6 @@ export class Simulator {
       this.acked('synack');
       s.state = 'established';
       this.note('ok', dev.id, 'Sambungan terbuka', `ACK ${t.ack} sampai di server. Kedua pihak sekarang sepakat soal nomor urut, sambungan TCP siap dipakai.`, 4, p.id);
+    }
+
+    if (has('ACK') && s.responded) {
