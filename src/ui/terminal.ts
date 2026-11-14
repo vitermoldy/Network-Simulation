@@ -253,3 +253,5 @@ export class IosShell implements Shell {
         { words: ['exit'], help: 'kembali ke mode user (>)', run: () => ((this.mode = 'user'), []) },
       ];
       return [...list, { words: ['?'], help: '', run: help(list) }];
+    }
+    if (this.mode === 'config') {
