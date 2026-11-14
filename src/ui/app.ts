@@ -519,3 +519,5 @@ export class App {
     return $<HTMLDialogElement>('devwin').open;
   }
 
+  /** Opens a device's own window, the way a click on a device does in Packet Tracer. */
+  openDevice(id: string, tab: DwTab = 'fisik'): void {
