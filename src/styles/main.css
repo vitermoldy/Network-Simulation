@@ -1131,3 +1131,5 @@ select {
 }
 
 .timer-bar span {
+  display: block;
+  height: 100%;
