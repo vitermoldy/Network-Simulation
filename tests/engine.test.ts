@@ -316,3 +316,6 @@ describe('ping and nslookup', () => {
     expect(sim.status).toBe('failed');
     expect(sim.output.filter((l) => l === 'Request timed out.')).toHaveLength(4);
     expect(sim.output.some((l) => l.includes('100% loss'))).toBe(true);
+  });
+
+  it('answers nslookup with the record or NXDOMAIN', () => {
