@@ -207,3 +207,5 @@ export class App {
     $('theme').addEventListener('click', () => {
       const next: ThemeName = this.theme() === 'dark' ? 'light' : 'dark';
       document.documentElement.dataset.theme = next;
+      try {
+        localStorage.setItem('netsim-theme', next);
