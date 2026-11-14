@@ -22,3 +22,5 @@ export interface Shell {
 }
 
 function maskToPrefix(mask: string): number | undefined {
+  const m = /^(\d+)\.(\d+)\.(\d+)\.(\d+)$/.exec(mask.trim());
+  if (!m) return undefined;
