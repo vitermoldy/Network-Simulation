@@ -567,3 +567,6 @@ export class Stage {
       this.scene.add(group);
       this.ghost = { kind, group };
     }
+    this.renderer.domElement.style.cursor = kind ? 'copy' : '';
+  }
+
