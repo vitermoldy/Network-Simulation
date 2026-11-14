@@ -510,3 +510,6 @@ export class App {
       return false;
     }
     this.sim.moveDevice(id, x, z);
+    return true;
+  }
+
