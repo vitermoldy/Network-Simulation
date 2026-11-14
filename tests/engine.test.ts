@@ -73,3 +73,6 @@ describe('topology', () => {
     expect(t.overlaps('router', 20, 20)).toBeUndefined();
     t.removeDevice(a.id);
     expect(t.has(a.id)).toBe(false);
+  });
+
+  it('saves and loads the whole network', () => {
