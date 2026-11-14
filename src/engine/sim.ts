@@ -1284,3 +1284,6 @@ export class Simulator {
       ip: { src: from.ports[0].ip!, dst: toIp, ttl: 64, proto: 'TCP' },
       tcp: { src: srcPort, dst: dstPort, seq, ack, flags, len },
       app, size: 54 + len, retry,
+    });
+  }
+
