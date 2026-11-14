@@ -237,3 +237,5 @@ interface Build {
 function newBuild(group: THREE.Group, w: number, h: number, d: number, body: THREE.Mesh): Build {
   return {
     group, height: h, ports: [], busy: [], hits: [body], tagY: h + 0.45, top: new THREE.Vector3(0, h + 0.15, 0),
+    power: { hit: body, glow: shared.slate, leds: [] }, half: { x: w / 2, z0: -d / 2, z1: d / 2 },
+  };
