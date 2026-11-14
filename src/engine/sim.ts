@@ -128,3 +128,6 @@ export interface Hold {
   inPort: string;
   outPorts: string[];
   t0: number;
+  t1: number;
+}
+
