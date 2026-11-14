@@ -129,3 +129,6 @@ export class IosShell implements Shell {
     if (this.mode === 'user') return `${h}>`;
     if (this.mode === 'priv') return `${h}#`;
     if (this.mode === 'config') return `${h}(config)#`;
+    return `${h}(config-if)#`;
+  }
+
