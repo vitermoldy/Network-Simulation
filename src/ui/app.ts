@@ -209,3 +209,5 @@ export class App {
       document.documentElement.dataset.theme = next;
       try {
         localStorage.setItem('netsim-theme', next);
+      } catch {
+        /* the theme still applies for this visit */
