@@ -557,3 +557,5 @@ export class App {
       b.tabIndex = t === tab ? 0 : -1;
       $(`dw-${t}`).hidden = t !== tab;
     }
+    if (this.viewer) this.viewer.active = tab === 'fisik';
+    if (tab === 'fisik') void this.ensureViewer();
