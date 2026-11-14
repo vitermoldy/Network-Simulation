@@ -107,3 +107,5 @@ export class Stage {
   private floorPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
   private topoRev = -1;
   private layoutKey = '';
+  private theme: SceneTheme = SCENE_THEMES.light;
+  private themeName: ThemeName = 'light';
