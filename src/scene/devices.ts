@@ -352,3 +352,5 @@ function buildRouter(dev: Device): Build {
   const z = d / 2 + 0.006;
   const portX = (i: number) => 0.3 + i * 0.25;
 
+  const panel = frontPanel(w, h, (p) => {
+    p.ctx.fillStyle = '#17191c';
