@@ -903,3 +903,6 @@ select {
 .clock {
   margin-left: auto;
   font-size: 13.5px;
+  font-variant-numeric: tabular-nums;
+}
+
