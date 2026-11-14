@@ -1329,3 +1329,5 @@ export class Simulator {
   }
 
   private finish(text: string): void {
+    if (this.status !== 'running') return;
+    if (this.kind === 'web') this.setPhase('tcp-close', 'done');
