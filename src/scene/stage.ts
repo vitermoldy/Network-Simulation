@@ -432,3 +432,5 @@ export class Stage {
   }
 
   private cast(e: PointerEvent): Pick | null {
+    this.setPointer(e);
+    for (const h of this.raycaster.intersectObjects(this.pickables(), true)) {
