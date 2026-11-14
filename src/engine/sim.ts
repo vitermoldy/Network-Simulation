@@ -1463,3 +1463,5 @@ export class Simulator {
       } else if (s.state === 'syn-rcvd') {
         const r = this.retx.get('synack');
         this.note('info', dev.id, 'SYN ulang', 'SYN datang lagi, tanda SYN-ACK tadi tidak sampai. Server langsung mengirim SYN-ACK ulang.', 4, p.id);
+        if (r) this.fire(r);
+      }
