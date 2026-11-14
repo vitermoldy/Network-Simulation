@@ -532,3 +532,5 @@ export class Simulator {
         if (h.deviceId === deviceId) this.loseHold(h, `${dev.name} dimatikan saat paket sedang diproses di dalamnya.`);
       }
       this.macTables.delete(deviceId);
+      this.arpCaches.delete(deviceId);
+      if (deviceId === this.browser.deviceId) {
