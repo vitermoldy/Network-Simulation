@@ -22,3 +22,5 @@ export class DeviceViewer {
   private home?: { target: THREE.Vector3; position: THREE.Vector3 };
   private key = '';
   private down?: { x: number; y: number };
+  private observer: ResizeObserver;
+  deviceId = '';
