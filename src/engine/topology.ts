@@ -334,3 +334,5 @@ export class Topology {
       p.prefix = undefined;
       this.rev++;
       return { ok: true };
+    }
+    if (!validIp(clean)) return { ok: false, reason: `${clean} bukan alamat IPv4. Contoh yang benar: 192.168.1.20.` };
