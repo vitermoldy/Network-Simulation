@@ -109,3 +109,5 @@ const SPECS: DeviceSpec[] = [
   { id: 'dns', kind: 'server', name: 'Server DNS', x: -2.9, z: -3.1, ips: { 0: ['172.16.0.53', 24] }, gateway: '172.16.0.1', services: { dns: true, http: false }, dnsRecords: { ...DEFAULT_RECORDS } },
   { id: 'r1', kind: 'router', name: 'Router Kampus', x: -0.8, z: 1.3, ips: { 0: ['192.168.1.1', 24], 1: ['10.0.12.1', 30], 2: ['10.0.13.1', 30], 3: ['172.16.0.1', 24] } },
   { id: 'r2', kind: 'router', name: 'Router A', x: 2.9, z: -3.0, ips: { 0: ['10.0.12.2', 30], 1: ['10.0.24.1', 30] } },
+  { id: 'r3', kind: 'router', name: 'Router B', x: 2.9, z: 5.3, ips: { 0: ['10.0.13.2', 30], 1: ['10.0.34.1', 30] } },
+  { id: 'r4', kind: 'router', name: 'Router Pusat Data', x: 6.7, z: 1.3, ips: { 0: ['10.0.24.2', 30], 1: ['10.0.34.2', 30], 2: ['203.0.113.1', 24] } },
