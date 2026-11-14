@@ -2029,3 +2029,5 @@ tbody th {
   color: var(--muted);
 }
 
+.ipconf input {
+  min-height: 40px;
