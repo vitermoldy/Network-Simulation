@@ -104,3 +104,5 @@ describe('routing', () => {
 
   it('goes around a router that is off or removed', () => {
     const t = new Topology();
+    t.setPower('r2', false);
+    expect(lookup(computeRoutes(t).get('r1'), '203.0.113.80')!.viaRouter).toBe('r3');
