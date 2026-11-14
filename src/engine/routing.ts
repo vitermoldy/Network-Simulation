@@ -105,3 +105,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
 /** Longest prefix match. */
 export function lookup(routes: Route[] | undefined, ip: string): Route | undefined {
   let found: Route | undefined;
+  for (const r of routes ?? []) {
+    if (!inNetwork(ip, r.network)) continue;
