@@ -15,3 +15,5 @@ export interface Route {
   cost: number;
 }
 
+interface Edge {
+  to: string;
