@@ -1110,3 +1110,5 @@ export class App {
         this.sim.edit((t) => t.setPortDown(pid, !input.checked));
         this.toast(`${this.sim.topo.portLabel(pid)} ${input.checked ? 'aktif (no shutdown)' : 'dimatikan (shutdown)'}.`);
         this.deviceKey = '';
+        this.renderAll();
+        return;
