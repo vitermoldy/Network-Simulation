@@ -29,3 +29,5 @@ export interface SavedRun extends RunRecord {
   id: number;
 }
 
+export interface LayoutSummary {
+  id: number;
