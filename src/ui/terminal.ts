@@ -188,3 +188,5 @@ export class IosShell implements Shell {
           return [...out, 'end'];
         },
       },
+      {
+        words: ['show', 'version'], help: 'jenis perangkat dan jumlah port',
