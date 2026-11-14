@@ -234,3 +234,6 @@ export class IosShell implements Shell {
         const why = this.host.run('ping', d.id, args[0]);
         return why ? [why] : [''];
       },
+    };
+    const help = (list: Command[]) => (): string[] => list.map((c) => `  ${pad(c.words.join(' '), 32)}${c.help}`);
+
