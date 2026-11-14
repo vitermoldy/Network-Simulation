@@ -1275,3 +1275,6 @@ select {
   border: 1px solid transparent;
   border-radius: var(--r);
   background: transparent;
+  transition: background-color 0.15s ease;
+}
+
