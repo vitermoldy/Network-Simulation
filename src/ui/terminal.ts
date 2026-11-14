@@ -206,3 +206,5 @@ export class IosShell implements Shell {
           }
           if (!routes.length) out.push('(kosong: belum ada port yang up dengan alamat IP)');
           if (sim.converging) out.push('', '% Rute sedang dihitung ulang setelah ada perubahan.');
+          return out;
+        },
