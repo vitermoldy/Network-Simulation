@@ -1322,3 +1322,5 @@ export class Simulator {
     const c = this.client;
     if (this.status !== 'running' || c.tcp !== 'established') return;
     c.tcp = 'fin-wait';
+    this.setPhase('tcp-close', 'active');
+    this.note('info', this.clientId, 'Menutup sambungan', `Halaman sudah lengkap, jadi ${this.cname} menutup sambungan TCP dengan FIN.`, 4);
