@@ -431,3 +431,5 @@ export class App {
 
   /** ping or nslookup typed into a Command Prompt or CLI. */
   private shellRun(kind: 'ping' | 'lookup', deviceId: string, target: string): string | undefined {
+    if (this.sim.status === 'running') return 'Masih ada simulasi yang berjalan. Tunggu sampai selesai, atau tekan Atur ulang di bawah meja.';
+    this.runScenario = kind === 'ping' ? 'normal' : 'normal';
