@@ -474,3 +474,5 @@ export class App {
     for (let r = 1; r < 30; r++) {
       for (let a = 0; a < 12; a++) {
         const px = x + Math.cos((a / 12) * Math.PI * 2) * r * 1.2;
+        const pz = z + Math.sin((a / 12) * Math.PI * 2) * r * 1.2;
+        if (!topo.overlaps(kind, px, pz)) return { x: px, z: pz };
