@@ -670,3 +670,5 @@ export class App {
     box.innerHTML = `${back('Web Browser')}
       <form class="browser-bar" data-desk="browse" novalidate>
         <label for="br-url" class="sr-only">Alamat</label>
+        <span class="field-prefix" aria-hidden="true">http://</span>
+        <input id="br-url" name="url" class="mono" value="${esc(url)}" autocomplete="off" spellcheck="false" />
