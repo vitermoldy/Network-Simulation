@@ -315,3 +315,5 @@ function buildSwitch(dev: Device): Build {
   for (let i = 0; i < 24; i++) {
     const top = i % 2 === 0;
     addPort(b, dev, i, colX(i), rowY(i), z, { w: holeW, h: holeH, flip: top, act: false, ledY: top ? 0.452 : 0.048 });
+    b.ports[i].link.position.x = colX(i) - 0.035;
+  }
