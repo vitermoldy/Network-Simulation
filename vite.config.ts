@@ -12,3 +12,5 @@ export default defineConfig({
   // Relative asset paths, so the built simulator runs from any folder or static host.
   base: './',
   server: { port: 5181, proxy: api },
+  preview: { port: 5181, proxy: api },
+  build: {
