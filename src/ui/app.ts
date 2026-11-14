@@ -662,3 +662,5 @@ export class App {
       return;
     }
     if (this.desktopApp === 'prompt') {
+      box.innerHTML = `${back('Command Prompt')}<div class="term" id="prompt-term"></div>`;
+      this.renderTerm($('prompt-term'), d.id);
