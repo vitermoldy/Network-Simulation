@@ -1415,3 +1415,5 @@ export class Simulator {
   private icmpReceive(dev: Device, p: Packet): void {
     const pg = this.ping;
     if (!pg || p.icmp?.type !== 'echo-reply' || p.icmp.id !== pg.id || p.icmp.seq !== pg.seq || this.status !== 'running') return;
+    if (pg.timer) pg.timer.cancelled = true;
+    pg.received++;
