@@ -27,3 +27,6 @@ perangkat Cisco, dial **ENERGY 2 / RHYTHM 2 / MOTION 2**.
 | --- | --- | --- |
 | Kind | software (developer tool) | Produknya alat kerja; tampilannya adalah alat itu sendiri. |
 | Palet | cool-grey-cobalt: bg `#eef0f3`, surface `#e2e5ea`, ink `#0b0c0e`, muted `#4f5662`, aksen `#1f2de6` | Meja abu terang membuat perangkat gelap gaya Cisco dan lubang port hitam paling kontras; kobalt hanya untuk paket yang bergerak dan status aktif. Dipilih pemilik. |
+| Huruf | Host Grotesk (teks dan judul) + JetBrains Mono (alamat IP, MAC, CLI) | Pasangan pertama dari dealer. Digit mono membuat alamat dan tabel rata; terminal terasa seperti terminal. |
+| Radius | soft (6, 8, 14 px) | Dealer untuk software; tidak ada bentuk pil kecuali sakelar. |
+
