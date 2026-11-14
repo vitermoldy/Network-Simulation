@@ -452,3 +452,5 @@ export class Simulator {
     this.macTables.clear();
     this.arpCaches.clear();
     this.dnsCache.clear();
+    this.activity.clear();
+    this.history.clear();
