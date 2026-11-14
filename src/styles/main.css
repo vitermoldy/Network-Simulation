@@ -1885,3 +1885,5 @@ tbody th {
   gap: 10px;
 }
 
+.viewer-tools {
+  display: flex;
