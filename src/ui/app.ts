@@ -572,3 +572,5 @@ export class App {
       return;
     }
     if (!this.viewer && !this.viewerLoading) {
+      this.viewerLoading = true;
+      const { DeviceViewer } = await import('../scene/viewer');
