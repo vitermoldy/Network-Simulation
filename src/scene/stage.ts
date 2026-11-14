@@ -89,3 +89,5 @@ function disposeTree(o: THREE.Object3D): void {
 }
 
 export class Stage {
+  readonly renderer: THREE.WebGLRenderer;
+  readonly labels: CSS2DRenderer;
