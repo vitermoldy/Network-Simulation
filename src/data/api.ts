@@ -82,3 +82,5 @@ function readQueue(): RunRecord[] {
   }
 }
 
+function writeQueue(list: RunRecord[]): void {
+  try {
