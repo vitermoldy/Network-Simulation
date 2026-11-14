@@ -1398,3 +1398,5 @@ export class App {
     box.hidden = timers.length === 0;
     if (!timers.length) return;
     const html = timers.map((t) => {
+      const frac = Math.max(0, Math.min(1, t.remaining / t.rto));
+      return `<li><span class="timer-name">${esc(t.label)}</span><span class="timer-dev">${esc(this.deviceName(t.deviceId))}, percobaan ${t.tries}</span>
