@@ -67,3 +67,6 @@ body {
   background: var(--bg);
   color: var(--ink);
   font: 400 15px/1.5 var(--font-text);
+}
+
+button,
