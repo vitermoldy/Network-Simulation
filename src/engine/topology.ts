@@ -385,3 +385,6 @@ export class Topology {
     d.dnsRecords = { ...(d.dnsRecords ?? {}), [host]: ip.trim() };
     this.rev++;
     return { ok: true };
+  }
+
+  removeDnsRecord(id: string, name: string): void {
