@@ -1919,3 +1919,5 @@ tbody th {
   padding: 6px 10px;
   border-radius: var(--r-sm);
   background: var(--tip-bg);
+  color: var(--tip-ink);
+  font-size: 13px;
