@@ -422,3 +422,5 @@ export class App {
     this.renderedLog = 0;
     this.stream = { deviceId: this.sim.outputDevice, printed: 0 };
     $('log').innerHTML = '';
+    this.closePopover();
+    this.setPending(null);
