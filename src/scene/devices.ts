@@ -25,3 +25,5 @@ export interface PortView {
   anchor: THREE.Object3D;
   frameMat: THREE.MeshStandardMaterial;
   frameColor: number;
+  link: THREE.Mesh;
+  /** Missing on switch ports: Cisco switches use one LED per port for link and activity. */
