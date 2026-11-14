@@ -680,3 +680,5 @@ export class App {
     canvas.setAttribute('role', 'img');
     canvas.setAttribute('aria-label', 'Layar browser');
     $('browser-view').appendChild(canvas);
+    this.browserCanvas = { canvas, ctx, key: '' };
+    this.paintBrowser();
