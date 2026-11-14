@@ -1514,3 +1514,5 @@ export class Simulator {
         s.state = 'established';
       }
       if (t.seq === s.rcvNext) {
+        s.rcvNext += t.len;
+        this.setPhase('http-req', 'done');
