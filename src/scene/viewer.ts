@@ -205,3 +205,6 @@ export class DeviceViewer {
     if (!this.home) return;
     this.controls.target.copy(this.home.target);
     this.camera.position.copy(this.home.position);
+  }
+
+  frame(): void {
