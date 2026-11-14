@@ -1466,3 +1466,6 @@ export class App {
     if (ul.dataset.html !== html) {
       ul.innerHTML = html;
       ul.dataset.html = html;
+    }
+  }
+
