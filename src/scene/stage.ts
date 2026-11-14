@@ -223,3 +223,5 @@ export class Stage {
   }
 
   private resize(): void {
+    const w = Math.max(1, this.container.clientWidth);
+    const h = Math.max(1, this.container.clientHeight);
