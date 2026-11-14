@@ -1528,3 +1528,5 @@ export class App {
       </li>`;
     }).join('');
 
+    let extra = '';
+    if (d.kind === 'pc' || d.kind === 'laptop' || d.kind === 'server') {
