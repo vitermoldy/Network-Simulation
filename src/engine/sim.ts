@@ -706,3 +706,6 @@ export class Simulator {
       }, true);
     }
     this.version++;
+  }
+
+  private planDrop(p: Packet): { u: number; reason: string } | undefined {
