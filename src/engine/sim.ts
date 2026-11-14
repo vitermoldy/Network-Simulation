@@ -1124,3 +1124,5 @@ export class Simulator {
     }), DNS_RTO, MAX_DNS_TRIES, () => this.fail('dns', `Server DNS tidak menjawab setelah ${MAX_DNS_TRIES} kali bertanya. Periksa jalur dari ${pc.name} ke server DNS.`, this.clientId));
   }
 
+  private dnsReceive(dev: Device, p: Packet): void {
+    const q = p.app?.dns;
