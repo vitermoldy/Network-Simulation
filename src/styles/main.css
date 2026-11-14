@@ -1177,3 +1177,5 @@ select {
 }
 
 .entry-time {
+  font-family: var(--font-mono);
+  color: var(--muted);
