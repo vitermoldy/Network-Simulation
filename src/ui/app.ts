@@ -691,3 +691,5 @@ export class App {
     const b = this.sim.browser;
     const mine = b.deviceId === d.id;
     const view = !d.powered ? { ...b, state: 'off' as const } : mine ? b : { deviceId: d.id, url: $<HTMLInputElement>('br-url')?.value ?? '', state: 'idle' as const, parts: [false, false, false] };
+    const key = JSON.stringify(view);
+    if (key === bc.key) return;
