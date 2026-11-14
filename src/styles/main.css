@@ -184,3 +184,6 @@ p {
   display: grid;
   gap: 4px;
   min-width: 0;
+}
+
+.ctl-source {
