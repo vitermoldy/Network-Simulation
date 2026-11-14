@@ -588,3 +588,6 @@ export class App {
       if (this.viewer.deviceId !== this.selectedDevice) this.viewer.show(this.selectedDevice);
       this.viewer.active = this.dwOpen() && this.dwTab === 'fisik';
     }
+  }
+
+  private renderDeviceWindow(): void {
