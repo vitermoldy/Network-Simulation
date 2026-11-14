@@ -551,3 +551,5 @@ export class Simulator {
 
   connect(a: string, b: string): { ok: true } | { ok: false; reason: string } {
     const res = this.topo.connect(a, b);
+    if (!res.ok) return res;
+    if (this.status === 'running') {
