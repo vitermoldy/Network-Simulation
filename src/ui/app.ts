@@ -976,3 +976,5 @@ export class App {
     }
     if (p.type === 'packet') {
       this.selectedPacket = p.packetId;
+      this.followLatest = false;
+      this.packetKey = '';
