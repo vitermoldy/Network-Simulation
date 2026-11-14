@@ -258,3 +258,6 @@ export class Stage {
     set('.tag-ip', ip);
     el.dataset.role = role;
     el.classList.toggle('is-off', !d.powered);
+    el.classList.toggle('is-selected', this.selected.deviceId === d.id);
+  }
+
