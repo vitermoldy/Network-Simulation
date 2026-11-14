@@ -1836,3 +1836,5 @@ tbody th {
   overflow: hidden;
 }
 
+.devwin[open] {
+  display: flex;
