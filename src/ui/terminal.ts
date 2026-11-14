@@ -385,3 +385,5 @@ export class IosShell implements Shell {
   }
 }
 
+/** Router port network, for messages. */
+export function networkLabel(p: Port): string {
