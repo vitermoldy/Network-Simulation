@@ -269,3 +269,6 @@ export class Simulator {
 
   /** The PC or laptop that sends the request in this run. */
   get clientId(): string {
+    return this.client.deviceId;
+  }
+
