@@ -222,3 +222,5 @@ export class App {
       if (this.sim.status === 'idle' || ((this.sim.status === 'done' || this.sim.status === 'failed') && this.sim.quiet)) {
         this.send();
         return;
+      }
+      this.playing = !this.playing;
