@@ -499,3 +499,5 @@ export class Stage {
     this.down = undefined;
     if (this.drag) {
       const d = this.drag;
+      this.drag = undefined;
+      this.controls.enabled = true;
