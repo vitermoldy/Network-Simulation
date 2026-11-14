@@ -1362,3 +1362,5 @@ export class Simulator {
       this.loseAt(p, dev.id, `${dev.name} tidak menemukan ${nextHop} di port ${out.name}: kabel atau perangkat berikutnya putus.`);
       return;
     }
+    p.eth = { src: out.mac, dst: target.mac, type: 'IPv4' };
+    this.emit(route.portId, p);
