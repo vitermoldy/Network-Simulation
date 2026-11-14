@@ -173,3 +173,5 @@ export class Topology {
       for (const [i, [ip, prefix]] of Object.entries(s.ips ?? {})) Object.assign(d.ports[Number(i)], { ip, prefix });
       d.gateway = s.gateway;
       d.dnsServer = s.dnsServer;
+      if (s.services) d.services = { ...s.services };
+      if (s.dnsRecords) d.dnsRecords = { ...s.dnsRecords };
