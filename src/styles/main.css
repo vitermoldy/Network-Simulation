@@ -1410,3 +1410,6 @@ tbody th {
 
 .plug-row {
   display: flex;
+  gap: 6px;
+}
+
