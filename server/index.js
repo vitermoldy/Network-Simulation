@@ -27,3 +27,5 @@ async function connectLoop() {
   try {
     pool = await connect(config.db)
     console.log(`${config.name}: database ${config.db.database} terhubung`)
+  } catch (err) {
+    console.error(`${config.name}: database belum bisa dihubungi (${err.code ?? err.message}), mencoba lagi dalam 5 detik`)
