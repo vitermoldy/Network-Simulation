@@ -79,3 +79,5 @@ export class PromptShell implements Shell {
       if (!this.host.sim.topo.carrier(nic.id)) out.push('', '   Media State.....................: Media disconnected');
       return [...out, ''];
     }
+    if (c === 'arp') {
+      if (args[0] !== '-a') return ['Gunakan: arp -a'];
