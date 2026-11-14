@@ -333,3 +333,6 @@ export class IosShell implements Shell {
       { words: ['end'], help: 'kembali ke mode privileged (#)', run: () => ((this.mode = 'priv'), []) },
     ];
     return [...list, { words: ['?'], help: '', run: help(list) }];
+  }
+
+  exec(raw: string): string[] {
