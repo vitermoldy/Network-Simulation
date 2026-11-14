@@ -78,3 +78,5 @@ const PHASE_SETS: Record<RunKind, Omit<Phase, 'status'>[]> = {
     { id: 'icmp', title: 'ICMP: echo request dan echo reply', layer: 'Jaringan', role: 'process' },
     { id: 'output', title: 'Hasil ping tampil', layer: 'Aplikasi', role: 'input' },
   ],
+  lookup: [
+    { id: 'input', title: 'Perintah nslookup diketik', layer: 'Aplikasi', role: 'input' },
