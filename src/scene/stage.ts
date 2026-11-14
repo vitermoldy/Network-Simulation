@@ -45,3 +45,6 @@ interface ZoneView {
   role: Role;
   group: THREE.Group;
   edge: THREE.MeshBasicMaterial;
+}
+
+const ZONE_TEXT: Record<Role, [string, string]> = {
