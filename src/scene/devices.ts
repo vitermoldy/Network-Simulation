@@ -80,3 +80,5 @@ function mesh(geo: THREE.BufferGeometry, mat: THREE.Material | THREE.Material[],
 }
 
 function hitBox(w: number, h: number, d: number, pick: Pick): THREE.Mesh {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), shared.invisible);
+  m.userData.pick = pick;
