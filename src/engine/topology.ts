@@ -464,3 +464,6 @@ export class Topology {
     this.portLink.delete(link.a);
     this.portLink.delete(link.b);
     this.rev++;
+    return link;
+  }
+
