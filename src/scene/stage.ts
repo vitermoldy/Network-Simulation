@@ -43,3 +43,5 @@ interface PacketView {
 
 interface ZoneView {
   role: Role;
+  group: THREE.Group;
+  edge: THREE.MeshBasicMaterial;
