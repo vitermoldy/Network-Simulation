@@ -228,3 +228,5 @@ interface Build {
   power: { hit: THREE.Mesh; glow: THREE.MeshStandardMaterial; rocker?: THREE.Object3D; button?: THREE.Object3D; leds: THREE.Mesh[] };
   busy: THREE.Mesh[];
   hits: THREE.Mesh[];
+  tagY: number;
+  top: THREE.Vector3;
