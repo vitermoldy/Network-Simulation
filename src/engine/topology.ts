@@ -458,3 +458,5 @@ export class Topology {
   }
 
   disconnect(linkId: string): Link | undefined {
+    const link = this.links.get(linkId);
+    if (!link) return undefined;
