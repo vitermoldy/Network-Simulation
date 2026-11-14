@@ -525,3 +525,5 @@ function buildLaptop(dev: Device): Build {
   const w = 2.2;
   const baseH = 0.18;
   const d = 1.45;
+  const group = new THREE.Group();
+  const base = rounded(w, baseH, d, shared.laptop, 0.05);
