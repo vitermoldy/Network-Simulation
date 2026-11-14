@@ -865,3 +865,5 @@ export class Simulator {
     const route = lookup(this.routes.get(dev.id), p.ip.dst);
     if (!route) {
       this.note('info', dev.id, `${dev.name} memeriksa tabel routing`, `IP tujuan ${p.ip.dst} tidak cocok dengan rute mana pun di tabel routing.`, 3, p.id);
+      this.hold(p, dev, inPort, [], TIMING.router, () => this.loseAt(p, dev.id, `${dev.name} tidak punya rute ke ${p.ip!.dst}, jadi paket dibuang.`));
+      return;
