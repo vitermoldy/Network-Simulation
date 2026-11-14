@@ -242,3 +242,6 @@ describe('simulator', () => {
     run(sim, 'www.jaringan.test', 600, pc.id);
     expect(sim.status).toBe('failed');
     expect(sim.browser.message).toContain('alamat IP');
+  });
+
+  it('gets a RST from a server with HTTP turned off', () => {
