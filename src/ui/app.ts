@@ -1492,3 +1492,5 @@ export class App {
     if (key === this.deviceKey) return;
     // Never pull a form out from under someone typing in it; redraw once they leave.
     if (box.contains(document.activeElement) && (document.activeElement as HTMLElement).matches('input, select')) {
+      this.deviceDirty = true;
+      return;
