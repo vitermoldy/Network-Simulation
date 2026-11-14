@@ -597,3 +597,5 @@ export function buildDevice(dev: Device): DeviceView {
           : buildRouter(dev);
   b.group.position.set(dev.x, 0, dev.z);
   b.group.userData.deviceId = dev.id;
+  const tagAnchor = new THREE.Object3D();
+  tagAnchor.position.set(0, b.tagY, 0);
