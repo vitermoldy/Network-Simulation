@@ -1497,3 +1497,5 @@ export class App {
     }
     this.deviceKey = key;
 
+    const free = topo.freePorts().filter((p) => p.deviceId !== d.id);
+    const editable = d.kind !== 'switch';
