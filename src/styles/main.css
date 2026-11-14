@@ -381,3 +381,5 @@ select {
 }
 
 .stage {
+  position: absolute;
+  inset: 0;
