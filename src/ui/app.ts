@@ -980,3 +980,6 @@ export class App {
       this.packetKey = '';
       this.showTab('paket');
     }
+  }
+
+  private onHover(p: Pick | null, x: number, y: number): void {
