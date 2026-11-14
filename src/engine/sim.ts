@@ -709,3 +709,5 @@ export class Simulator {
   }
 
   private planDrop(p: Packet): { u: number; reason: string } | undefined {
+    if (this.scenario === 'loss' && !this.fired.has('loss') && p.app?.part === 2 && p.retry === 0 && p.hops === 2) {
+      this.fired.add('loss');
