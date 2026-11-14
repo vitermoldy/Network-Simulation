@@ -39,3 +39,5 @@ describe('topology', () => {
     expect(t.connect('sw.3', 'r2.2').ok).toBe(true);
   });
 
+  it('puts every port of a working switch in one broadcast domain', () => {
+    const t = new Topology();
