@@ -1398,3 +1398,5 @@ export class Simulator {
     }, true);
   }
 
+  /** Any host or router answers an echo request addressed to it. */
+  private icmpReply(dev: Device, p: Packet): void {
