@@ -133,3 +133,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
       if (p.app.part) f.push(['Bagian', `${p.app.part} dari ${p.app.parts}`]);
     }
     row(7, p.app.proto, f);
+  }
+  if (p.tcp) {
