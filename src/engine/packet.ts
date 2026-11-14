@@ -175,3 +175,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
     ]);
   }
   row(2, 'Ethernet', [
+    ['MAC asal', p.eth.src],
+    ['MAC tujuan', p.eth.dst === BROADCAST ? `${BROADCAST} (broadcast)` : p.eth.dst],
