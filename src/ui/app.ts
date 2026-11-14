@@ -632,3 +632,5 @@ export class App {
     const key = JSON.stringify([d.id, this.desktopApp, this.desktopApp === 'ip' ? this.sim.topo.rev : 0]);
     if (key === this.desktopKey && box.childElementCount) {
       if (this.desktopApp === 'browser') this.paintBrowser();
+      return;
+    }
