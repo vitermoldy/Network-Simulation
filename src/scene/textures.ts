@@ -192,3 +192,5 @@ export function drawDesktop(ctx: CanvasRenderingContext2D, name: string, ip: str
   g.addColorStop(1, '#16202e');
   ctx.fillStyle = g;
   ctx.fillRect(0, 0, W, H);
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
