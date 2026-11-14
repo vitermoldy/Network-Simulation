@@ -305,3 +305,5 @@ describe('ping and nslookup', () => {
     const sim = withScenario('normal');
     runPing(sim, 'r1', '203.0.113.80');
     expect(sim.status).toBe('done');
+    const sim2 = withScenario('normal');
+    runPing(sim2, 'pc', '10.0.24.2');
