@@ -248,3 +248,5 @@ export class Stage {
     if (!el) return;
     const d = view.device;
     const role = roleOf(d);
+    const ip = d.kind === 'switch' ? '' : d.kind === 'router' ? '' : d.ports[0].ip ?? 'tanpa IP';
+    const set = (sel: string, text: string) => {
