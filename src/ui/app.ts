@@ -170,3 +170,5 @@ export class App {
     if (this.lastStatus === 'running' && (sim.status === 'done' || sim.status === 'failed')) void this.recordRun();
     this.lastStatus = sim.status;
     if (this.stage) {
+      this.stage.selected = { deviceId: this.selectedDevice, linkId: this.selectedLink ?? undefined, packetId: this.selectedPacket ?? undefined };
+      this.stage.frame(dt);
