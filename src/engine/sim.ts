@@ -1232,3 +1232,5 @@ export class Simulator {
         this.note(first ? 'ok' : 'info', this.clientId, first ? 'Langkah terakhir: ACK' : 'FIN ulang', first
           ? `Server juga menutup (FIN). ${this.cname} membalas ACK ${c.rcvNext}. Dari sisi pengirim sambungan sudah selesai.`
           : `FIN dari server datang lagi, berarti ACK terakhir hilang. ${this.cname} membalas ACK sekali lagi.`, 4, p.id);
+        this.sendAck(dev, 'ACK');
+      }
