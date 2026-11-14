@@ -669,3 +669,5 @@ export class Simulator {
 
   private record(p: Packet, deviceId: string, outgoing: boolean): void {
     if (outgoing) {
+      const versions = this.history.get(p.id) ?? [];
+      versions.push(clonePacket(p));
