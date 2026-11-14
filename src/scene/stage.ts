@@ -481,3 +481,5 @@ export class Stage {
     }
     const pick = this.cast(e);
     this.setHover(pick, e.clientX, e.clientY);
+    if (this.pendingPort) {
+      const point = new THREE.Vector3();
