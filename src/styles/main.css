@@ -945,3 +945,5 @@ select {
   flex: none;
 }
 
+.tabs [role="tab"] {
+  min-height: 48px;
