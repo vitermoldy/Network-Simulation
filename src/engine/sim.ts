@@ -522,3 +522,5 @@ export class Simulator {
   setPower(deviceId: string, on: boolean): void {
     const dev = this.topo.device(deviceId);
     if (dev.powered === on) return;
+    this.topo.setPower(deviceId, on);
+    if (!on) {
