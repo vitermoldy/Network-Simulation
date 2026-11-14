@@ -735,3 +735,5 @@ export class Simulator {
   }
 
   private discard(packet: Packet, deviceId: string, reason: string): void {
+    this.lost.push({ packet, t: this.time, reason, kind: 'discard', deviceId });
+    this.note('info', deviceId, 'Frame diabaikan', `${this.topo.device(deviceId).name}: ${reason}`, 2, packet.id);
