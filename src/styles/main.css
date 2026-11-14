@@ -1646,3 +1646,5 @@ tbody th {
 .ip-form input,
 .host-form input,
 .record-form input,
+.inline-form input {
+  min-height: 40px;
