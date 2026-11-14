@@ -256,3 +256,5 @@ export class Stage {
     set('.tag-role', role === 'input' ? 'Input' : role === 'output' ? 'Output' : 'Proses');
     set('.tag-name', d.name);
     set('.tag-ip', ip);
+    el.dataset.role = role;
+    el.classList.toggle('is-off', !d.powered);
