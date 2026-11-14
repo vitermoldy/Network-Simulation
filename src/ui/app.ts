@@ -861,3 +861,5 @@ export class App {
     this.confirm(`Hapus ${d.name} dari meja?${cables ? ` ${cables} kabelnya ikut dicabut.` : ''}`, 'Hapus perangkat', () => {
       if (this.dwOpen() && this.selectedDevice === id) this.closeDevice();
       this.sim.removeDevice(id);
+      this.terms.delete(id);
+      if (this.selectedDevice === id) this.selectedDevice = [...this.sim.topo.devices.keys()][0] ?? '';
