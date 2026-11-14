@@ -172,3 +172,6 @@ describe('simulator', () => {
     expect(sim.status).toBe('failed');
     expect(sim.phases.find((p) => p.id === 'dns')!.status).toBe('failed');
     expect(sim.browser.state).toBe('error');
+    expect(sim.browser.message).toContain('NXDOMAIN');
+  });
+
