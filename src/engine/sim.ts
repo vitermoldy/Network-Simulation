@@ -1064,3 +1064,5 @@ export class Simulator {
     if (r.tries >= r.maxTries) {
       this.retx.delete(r.key);
       r.onGiveUp();
+      return;
+    }
