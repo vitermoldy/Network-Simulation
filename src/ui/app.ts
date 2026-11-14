@@ -790,3 +790,5 @@ export class App {
   }
 
   private renderTerm(el: HTMLElement, deviceId: string): void {
+    const t = this.term(deviceId);
+    el.dataset.device = deviceId;
