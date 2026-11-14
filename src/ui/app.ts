@@ -203,3 +203,5 @@ export class App {
       else if (url.value === 'www.tidakada.test') url.value = 'www.jaringan.test';
       if (this.sim.status === 'idle') this.renderStatus();
       this.toast(this.sim.status === 'running' ? 'Skenario baru berlaku saat permintaan berikutnya dikirim.' : SCENARIO_TEXT[v]);
+    });
+    $('theme').addEventListener('click', () => {
