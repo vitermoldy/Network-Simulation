@@ -884,3 +884,5 @@ select {
   background: var(--surface);
 }
 
+.speed input:checked + span {
+  background: var(--ink);
