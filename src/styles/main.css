@@ -2076,3 +2076,6 @@ tbody th {
   border: 0;
   background: transparent;
   font-size: 13.5px;
+}
+
+.browser-bar input:focus {
