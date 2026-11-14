@@ -214,3 +214,5 @@ const fmt = (s: number) => `${Number.isInteger(s) ? s : s.toFixed(1)} s`;
 
 export class Simulator {
   readonly topo: Topology;
+  time = 0;
+  status: 'idle' | 'running' | 'done' | 'failed' = 'idle';
