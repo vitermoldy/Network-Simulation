@@ -6,3 +6,6 @@ import type { TopologyData } from '../engine/topology';
 
 const CODE_KEY = 'netsim-client';
 const QUEUE_KEY = 'netsim-unsent-runs';
+const ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+
+export interface RunRecord {
