@@ -205,3 +205,5 @@ export class App {
       this.toast(this.sim.status === 'running' ? 'Skenario baru berlaku saat permintaan berikutnya dikirim.' : SCENARIO_TEXT[v]);
     });
     $('theme').addEventListener('click', () => {
+      const next: ThemeName = this.theme() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
