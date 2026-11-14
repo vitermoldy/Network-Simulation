@@ -167,3 +167,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
   }
   if (p.arp) {
     row(3, 'ARP', [
+      ['Jenis', p.arp.op === 'request' ? 'Permintaan (request)' : 'Balasan (reply)'],
+      ['IP pengirim', p.arp.senderIp],
