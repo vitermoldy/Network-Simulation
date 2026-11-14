@@ -33,3 +33,4 @@ export function sameSubnet(a: string, b: string, prefix: number): boolean {
 
 export function prefixOf(network: string): number {
   return Number(network.split('/')[1]);
+}
