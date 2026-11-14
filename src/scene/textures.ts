@@ -82,3 +82,5 @@ function wrap(ctx: CanvasRenderingContext2D, text: string, maxW: number): string
   let cur = '';
   for (const w of words) {
     const t = cur ? `${cur} ${w}` : w;
+    if (ctx.measureText(t).width > maxW && cur) {
+      lines.push(cur);
