@@ -928,3 +928,5 @@ export class Simulator {
         return;
       }
       if (dev.id === this.client.deviceId) {
+        this.clientReceive(dev, p);
+        return;
