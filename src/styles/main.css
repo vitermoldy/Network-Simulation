@@ -1511,3 +1511,5 @@ tbody th {
 
 .layer-tcpip {
   font-size: 12px;
+  color: var(--muted);
+  margin: 2px 0 6px 26px;
