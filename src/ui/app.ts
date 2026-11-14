@@ -740,3 +740,5 @@ export class App {
       const f = new FormData(form);
       const id = this.selectedDevice;
       if (form.dataset.desk === 'browse') {
+        this.browse(id, String(f.get('url') ?? ''));
+        return;
