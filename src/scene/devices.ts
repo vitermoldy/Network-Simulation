@@ -500,3 +500,5 @@ function buildPc(dev: Device): Build {
   group.add(button.group);
   addPort(b, dev, 0, -0.85, 0.36, z, { w: 0.17, h: 0.13 });
 
+  // Monitor.
+  const stand = mesh(new THREE.BoxGeometry(0.5, 0.03, 0.4), shared.bezel);
