@@ -732,3 +732,5 @@ export class App {
         this.toast(r.ok ? `DHCP: ${r.value}.` : r.reason);
         this.desktopKey = '';
         this.renderAll();
+      }
+    });
