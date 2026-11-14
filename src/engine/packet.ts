@@ -120,3 +120,6 @@ export const LAYER_NAMES: Record<LayerId, { osi: string; tcpip: string }> = {
 export function layersOf(p: Packet, wire: string): LayerRow[] {
   const rows: LayerRow[] = [];
   const row = (layer: LayerId, proto: string, fields: [string, string][]) =>
+    rows.push({ layer, ...LAYER_NAMES[layer], proto, fields });
+
+  if (p.app) {
