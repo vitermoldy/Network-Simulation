@@ -51,3 +51,5 @@ export interface Device {
 }
 
 export interface Link {
+  id: string;
+  a: string;
