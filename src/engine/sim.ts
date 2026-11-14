@@ -816,3 +816,5 @@ export class Simulator {
         this.discard(p, dev.id, 'tidak ada port lain yang tersambung untuk frame ini.');
         return;
       }
+      outs.forEach((o, i) => {
+        if (i === 0) this.emit(o, p);
