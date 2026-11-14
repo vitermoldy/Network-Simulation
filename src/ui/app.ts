@@ -666,3 +666,5 @@ export class App {
       this.renderTerm($('prompt-term'), d.id);
       return;
     }
+    const url = this.sim.browser.deviceId === d.id ? this.sim.browser.url : $<HTMLInputElement>('url').value;
+    box.innerHTML = `${back('Web Browser')}
