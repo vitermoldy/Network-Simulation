@@ -1138,3 +1138,5 @@ export class Simulator {
       udp: { src: 53, dst: p.udp.src },
       app: {
         proto: 'DNS', lines: [answer ? `Jawaban: ${q.question} A ${answer}` : `Jawaban: ${q.question} tidak ada`],
+        dns: { txid: q.txid, question: q.question, answer, rcode: answer ? 'NOERROR' : 'NXDOMAIN' },
+      },
