@@ -1441,3 +1441,5 @@ export class App {
     else label = this.playing ? 'Jeda' : 'Lanjutkan';
     if (play.textContent !== label) play.textContent = label;
     play.setAttribute('aria-pressed', String(this.playing));
+    const v = `${num(s.time)} s`;
+    const cv = $('clock-value');
