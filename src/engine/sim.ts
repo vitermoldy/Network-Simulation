@@ -464,3 +464,5 @@ export class Simulator {
       this.browser = { deviceId: sourceId, url: host, state: 'resolving', parts: PAGE_PARTS.map(() => false), message: 'Mencari alamat IP' };
     }
     this.outputDevice = sourceId;
+    this.status = 'running';
+    this.version++;
