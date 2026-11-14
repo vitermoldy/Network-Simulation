@@ -1407,3 +1407,5 @@ export class App {
     if (ul.innerHTML !== html) ul.innerHTML = html;
   }
 
+  private renderFlow(): void {
+    const role = this.stage?.activeRole ?? this.roleFromLog();
