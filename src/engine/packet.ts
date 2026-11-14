@@ -73,3 +73,5 @@ export interface Packet {
   arp?: ArpBody;
   ip?: IpHeader;
   icmp?: IcmpBody;
+  udp?: UdpHeader;
+  tcp?: TcpHeader;
