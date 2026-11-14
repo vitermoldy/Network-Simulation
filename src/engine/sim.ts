@@ -260,3 +260,5 @@ export class Simulator {
   private srtt = 0;
   private ping?: { target: string; ip?: string; count: number; seq: number; sent: number; received: number; times: number[]; id: number; timer?: Task; sentAt?: number };
 
+  constructor(topo = new Topology(), seed = 7) {
+    this.topo = topo;
