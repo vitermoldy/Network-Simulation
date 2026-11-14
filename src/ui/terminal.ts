@@ -202,3 +202,5 @@ export class IosShell implements Shell {
           for (const r of routes) {
             if (!topo.hasPort(r.portId)) continue;
             const port = longPortName(topo.port(r.portId).name);
+            out.push(r.type === 'C' ? `C    ${r.network} is directly connected, ${port}` : `O    ${r.network} [110/${r.cost}] via ${r.nextHop}, ${port}`);
+          }
