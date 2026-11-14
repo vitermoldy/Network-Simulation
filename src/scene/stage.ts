@@ -164,3 +164,5 @@ export class Stage {
     sc.right = 22;
     sc.top = 16;
     sc.bottom = -16;
+    sc.near = 1;
+    sc.far = 50;
