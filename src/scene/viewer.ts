@@ -120,3 +120,6 @@ export class DeviceViewer {
       if (pick) return pick;
     }
     return null;
+  }
+
+  private describe(pick: Pick | null): string {
