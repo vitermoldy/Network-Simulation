@@ -512,3 +512,5 @@ function buildPc(dev: Device): Build {
   group.add(mon);
   b.hits.push(mon);
   const holder = new THREE.Object3D();
+  holder.position.set(0.55, 0, 0.088);
+  group.add(holder);
