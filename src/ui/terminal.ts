@@ -194,3 +194,5 @@ export class IosShell implements Shell {
       },
     ];
     if (isRouter) {
+      show.push({
+        words: ['show', 'ip', 'route'], help: 'tabel routing',
