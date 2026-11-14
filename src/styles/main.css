@@ -143,3 +143,5 @@ p {
   padding: 14px var(--gutter) 12px;
 }
 
+.brand h1 {
+  font-size: 22px;
