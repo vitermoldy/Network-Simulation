@@ -1486,3 +1486,5 @@ export class Simulator {
       s.lastAck = Math.max(s.lastAck, t.ack);
     }
 
+    if (has('FIN')) {
+      if (s.state === 'established' || s.state === 'syn-rcvd') {
