@@ -873,3 +873,5 @@ export class Simulator {
     const nextHop = route.nextHop ?? p.ip.dst;
     const source = route.type === 'C' ? `terhubung langsung di ${out.name}` : `dipelajari dari ${this.topo.device(route.viaRouter!).name}, biaya ${route.cost}`;
     const stale = this.converging ? ' Router belum selesai menghitung ulang rute, jadi tabel lama masih dipakai.' : '';
+    this.note('route', dev.id, `${dev.name} memilih jalan`, `Router membuka sampai header IP (lapisan 3). IP tujuan ${p.ip.dst} cocok dengan ${route.network} (${source}). Paket keluar lewat ${out.name} menuju ${nextHop}. Header Ethernet diganti dengan MAC baru, TTL turun dari ${p.ip.ttl} menjadi ${ttl}.${stale}`, 3, p.id);
+    this.hold(p, dev, inPort, [route.portId], TIMING.router, () => {
