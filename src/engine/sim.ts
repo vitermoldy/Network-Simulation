@@ -1410,3 +1410,6 @@ export class Simulator {
       size: 74,
     });
     this.sendFrom(dev, reply);
+  }
+
+  private icmpReceive(dev: Device, p: Packet): void {
