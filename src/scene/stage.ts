@@ -623,3 +623,5 @@ export class Stage {
         t = Math.max(t, p.y);
       }
       return { l, r, b, t };
+    };
+    let dist = 20;
