@@ -666,3 +666,5 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
       if (mine) drawBrowser(v.screen.ctx, on ? b : { ...b, state: 'off' });
       else drawDesktop(v.screen.ctx, d.name, d.ports[0].ip, on);
       v.screen.texture.needsUpdate = true;
+    }
+  }
