@@ -1545,3 +1545,5 @@ export class Simulator {
       this.schedule(this.time + 1.5, () => {
         const victim = this.middleRouter(dev);
         if (!victim) {
+          this.note('info', undefined, 'Skenario: tidak ada router tengah', 'Jalur ini tidak punya router di tengah yang bisa dimatikan tanpa memutus pengirim atau server sepenuhnya, jadi skenario dilewati.');
+          return;
