@@ -327,3 +327,5 @@ export class Stage {
       tubeMesh.receiveShadow = true;
       const pick: Pick = { type: 'cable', linkId: link.id };
       const group = new THREE.Group();
+      group.add(tubeMesh);
+      for (const p of [pa, pb]) group.add(buildPlug(p, mat));
