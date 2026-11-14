@@ -1260,3 +1260,5 @@ select {
 
 .devices li {
   display: flex;
+  align-items: stretch;
+  gap: 6px;
