@@ -269,3 +269,5 @@ export class Stage {
     });
     this.scene.remove(v.group);
     disposeTree(v.group);
+    this.devices.delete(id);
+    this.tags.delete(id);
