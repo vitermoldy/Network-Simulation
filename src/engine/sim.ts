@@ -1209,3 +1209,5 @@ export class Simulator {
       if (c.tcp === 'syn-sent') {
         this.acked('syn');
         if (!c.synRetried) this.srtt = this.time - c.synSentAt;
+        c.rcvNext = t.seq + 1;
+        c.sndNext = CLIENT_ISS + 1;
