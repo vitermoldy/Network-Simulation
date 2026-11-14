@@ -68,3 +68,5 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
   return body as T;
 }
 
+export async function health(): Promise<{ ok: boolean; database: string }> {
+  return call('health');
