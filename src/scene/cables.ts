@@ -119,3 +119,6 @@ export function danglingCurve(a: PortView, to: THREE.Vector3): THREE.CatmullRomC
 }
 
 const plugBody = new THREE.MeshStandardMaterial({ color: MATERIAL.plug, transparent: true, opacity: 0.62, roughness: 0.18 });
+const plugPins = new THREE.MeshStandardMaterial({ color: MATERIAL.pin, metalness: 0.9, roughness: 0.3 });
+
+/** An RJ45 plug pushed into a socket. Local +z points away from the device. */
