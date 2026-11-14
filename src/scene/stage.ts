@@ -97,3 +97,5 @@ export class Stage {
   readonly devices = new Map<string, DeviceView>();
   private cables = new Map<string, CableView>();
   private packets = new Map<number, PacketView>();
+  private zones: ZoneView[] = [];
+  private zoneLabels: { ctx: CanvasRenderingContext2D; tex: THREE.CanvasTexture; w: number; h: number; role: Role }[] = [];
