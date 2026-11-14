@@ -414,3 +414,5 @@ select {
 }
 
 .stage-state.is-error {
+  color: var(--bad);
+  max-width: 560px;
