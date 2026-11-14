@@ -554,3 +554,5 @@ function buildLaptop(dev: Device): Build {
   b.tagY = 1.8;
   addScreen(b, hinge, w - 0.2, lidH / 2 + 0.02, 0.028, dev);
 
+  const port = dev.ports[0];
+  const p = buildPort(port.id, 0.15, 0.09, MATERIAL.metal);
