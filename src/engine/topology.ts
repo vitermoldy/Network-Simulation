@@ -27,3 +27,5 @@ export function longPortName(name: string): string {
 }
 
 export interface Services {
+  dns: boolean;
+  http: boolean;
