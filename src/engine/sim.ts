@@ -1273,3 +1273,5 @@ export class Simulator {
       this.browser.state = 'done';
       this.browser.message = undefined;
       this.note('ok', this.clientId, 'Output: halaman tampil', `Semua ${RESPONSE_LEN} byte sudah lengkap dan urut. Browser menyusun HTML-nya, dan halaman ${c.host} tampil di layar ${this.cname}.`, 7);
+      this.schedule(this.time + 1.2, () => this.tcpClose(dev));
+    }
