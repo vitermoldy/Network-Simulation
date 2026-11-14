@@ -141,3 +141,5 @@ describe('simulator', () => {
     const versions = syn[1];
     expect(versions[0].ip!.ttl).toBe(64);
     expect(versions[versions.length - 1].ip!.ttl).toBe(61);
+    expect(versions[0].eth.src).not.toBe(versions[versions.length - 1].eth.src);
+    expect(versions[versions.length - 1].ip!.src).toBe('192.168.1.10');
