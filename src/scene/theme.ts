@@ -46,3 +46,5 @@ export const MATERIAL = {
   slate: 0x3b424a,
   /** ISR-style router chassis. */
   graphite: 0x2c3137,
+  plate: 0x9aa3ad,
+  tower: 0xd6dadf,
