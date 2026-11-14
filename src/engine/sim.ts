@@ -104,3 +104,5 @@ export interface LogEntry {
 export type Scenario = 'normal' | 'loss' | 'router-down' | 'bad-domain';
 
 export interface Task {
+  t: number;
+  seq: number;
