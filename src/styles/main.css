@@ -1777,3 +1777,5 @@ tbody th {
 
 .run {
   display: grid;
+  gap: 2px;
+  padding: 8px 10px;
