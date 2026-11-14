@@ -267,3 +267,5 @@ select {
   gap: 8px;
   min-height: 44px;
   padding: 0 16px;
+  border-radius: var(--r);
+  border: 1px solid transparent;
