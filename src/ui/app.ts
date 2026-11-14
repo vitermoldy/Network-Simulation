@@ -774,3 +774,5 @@ export class App {
     if (!t) {
       const d = this.sim.topo.device(deviceId);
       const host = { sim: this.sim, run: (k: 'ping' | 'lookup', id: string, target: string) => this.shellRun(k, id, target), changed: () => this.afterShellEdit() };
+      const shell = d.kind === 'router' || d.kind === 'switch' ? new IosShell(deviceId, host) : new PromptShell(deviceId, host);
+      t = { shell, lines: [...shell.banner()], history: [], index: 0 };
