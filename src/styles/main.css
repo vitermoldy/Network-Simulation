@@ -818,3 +818,5 @@ select {
 }
 
 .switch-track::after {
+  content: "";
+  position: absolute;
