@@ -75,3 +75,5 @@ export interface Packet {
   icmp?: IcmpBody;
   udp?: UdpHeader;
   tcp?: TcpHeader;
+  app?: AppBody;
+  size: number;
