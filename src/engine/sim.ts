@@ -86,3 +86,7 @@ const PHASE_SETS: Record<RunKind, Omit<Phase, 'status'>[]> = {
   ],
 };
 const PHASES = PHASE_SETS.web;
+const PING_RTO = 18;
+
+export type LogKind = 'info' | 'route' | 'loss' | 'retry' | 'ok' | 'error' | 'change';
+
