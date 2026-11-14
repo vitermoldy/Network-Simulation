@@ -1413,3 +1413,5 @@ tbody th {
   gap: 6px;
 }
 
+.plug-row select {
+  max-width: 150px;
