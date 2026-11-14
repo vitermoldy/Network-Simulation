@@ -925,3 +925,5 @@ export class Stage {
     const rect = this.renderer.domElement.getBoundingClientRect();
     this.pointer.set(((x - rect.left) / rect.width) * 2 - 1, -((y - rect.top) / rect.height) * 2 + 1);
     this.raycaster.setFromCamera(this.pointer, this.camera);
+    const out = new THREE.Vector3();
+    return this.raycaster.ray.intersectPlane(this.floorPlane, out) ? { x: out.x, z: out.z } : undefined;
