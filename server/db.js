@@ -21,3 +21,5 @@ const TABLES = [
     scenario VARCHAR(16) NOT NULL,
     loss_rate DECIMAL(4,2) NOT NULL DEFAULT 0,
     status ENUM('done','failed') NOT NULL,
+    failed_phase VARCHAR(16) NULL,
+    reason VARCHAR(400) NULL,
