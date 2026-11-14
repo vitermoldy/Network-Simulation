@@ -1275,3 +1275,5 @@ export class App {
     box.innerHTML = `<ol class="runs">${runs.map((r) => `<li class="run is-${r.status}">
       <div class="run-head"><span class="run-host mono">${esc(r.host)}</span><span class="run-result">${r.status === 'done' ? 'Berhasil' : 'Gagal'}</span></div>
       <p class="run-meta">${esc(new Date(r.finishedAt).toLocaleString('id-ID', { dateStyle: 'medium', timeStyle: 'short' }))}, dari ${esc(r.source)}, skenario ${esc(SCENARIO_SHORT[r.scenario] ?? r.scenario)}${r.lossRate ? `, gangguan ${Math.round(r.lossRate * 100)}%` : ''}</p>
+      <p class="run-stats">${num(r.simSeconds)} s simulasi, ${r.packetsLost} paket hilang, ${r.resends} kirim ulang, ${r.routeChanges} kali rute dihitung ulang, ${r.devices} perangkat</p>
+      ${r.path.length ? `<p class="run-path">Jalur SYN: ${esc(r.path.join(', '))}</p>` : ''}
