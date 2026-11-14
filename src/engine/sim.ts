@@ -839,3 +839,5 @@ export class Simulator {
             eth: { src: port.mac, dst: p.arp!.senderMac, type: 'ARP' },
             arp: { op: 'reply', senderMac: port.mac, senderIp: port.ip!, targetMac: p.arp!.senderMac, targetIp: p.arp!.senderIp },
             size: 42,
+          });
+          this.emit(inPort, reply);
