@@ -1311,3 +1311,5 @@ export class Simulator {
     c.getLen = lines.join('\r\n').length + 4;
     c.sndNext = CLIENT_ISS + 1 + c.getLen;
     this.setPhase('http-req', 'active');
+    this.browser.state = 'loading';
+    this.browser.message = 'Menunggu jawaban server';
