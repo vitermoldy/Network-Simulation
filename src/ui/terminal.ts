@@ -46,3 +46,6 @@ export class PromptShell implements Shell {
   }
 
   banner(): string[] {
+    return [`Command Prompt di ${this.dev.name}`, 'Ketik help untuk melihat perintah yang tersedia.', ''];
+  }
+
