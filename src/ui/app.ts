@@ -907,3 +907,5 @@ export class App {
 
   private unplug(linkId: string): void {
     const link = this.sim.topo.links.get(linkId);
+    if (!link) return;
+    const text = `Kabel ${this.sim.topo.portLabel(link.a)} ke ${this.sim.topo.portLabel(link.b)} dicabut.`;
