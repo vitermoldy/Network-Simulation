@@ -1480,3 +1480,5 @@ export class App {
     const topo = sim.topo;
     const box = $('device');
     if (!topo.has(this.selectedDevice)) {
+      box.innerHTML = '';
+      this.deviceKey = '';
