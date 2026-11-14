@@ -1009,3 +1009,5 @@ select {
 
 .phase {
   display: grid;
+  grid-template-columns: 22px minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
