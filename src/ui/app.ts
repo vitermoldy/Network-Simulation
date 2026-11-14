@@ -1484,3 +1484,5 @@ export class App {
       this.deviceKey = '';
       return;
     }
+    const d = topo.device(this.selectedDevice);
+    const routes = d.kind === 'router' ? sim.routes.get(d.id) ?? [] : [];
