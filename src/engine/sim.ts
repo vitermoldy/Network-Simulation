@@ -673,3 +673,5 @@ export class Simulator {
       versions.push(clonePacket(p));
       this.history.set(p.id, versions);
     }
+    const tr = this.trace.get(p.id) ?? [];
+    if (tr[tr.length - 1] !== deviceId) tr.push(deviceId);
