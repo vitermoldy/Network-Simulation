@@ -584,3 +584,5 @@ export class App {
       this.viewer.setTheme(this.theme());
       this.viewerLoading = false;
     }
+    if (this.viewer) {
+      if (this.viewer.deviceId !== this.selectedDevice) this.viewer.show(this.selectedDevice);
