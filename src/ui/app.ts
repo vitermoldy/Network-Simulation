@@ -356,3 +356,5 @@ export class App {
         if (!$('popover').hidden) this.closePopover();
         else if (this.placing) this.stopPlacing('Batal menaruh perangkat.');
         else if (this.pendingPort) {
+          this.setPending(null);
+          this.toast('Pemasangan kabel dibatalkan.');
