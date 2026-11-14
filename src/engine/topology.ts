@@ -175,3 +175,5 @@ export class Topology {
       d.dnsServer = s.dnsServer;
       if (s.services) d.services = { ...s.services };
       if (s.dnsRecords) d.dnsRecords = { ...s.dnsRecords };
+      this.insert(d);
+    }
