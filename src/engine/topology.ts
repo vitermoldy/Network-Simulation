@@ -556,3 +556,5 @@ export class Topology {
       const rx = find(x);
       const ry = find(y);
       if (rx !== ry) parent.set(rx, ry);
+    };
+    for (const d of this.devices.values()) {
