@@ -321,3 +321,5 @@ export class App {
       this.openEntry = this.openEntry === entry.id ? null : entry.id;
       $('log').querySelectorAll('.entry').forEach((el) => el.classList.toggle('is-open', Number((el as HTMLElement).dataset.id) === this.openEntry));
       if (entry.packetId) {
+        this.selectedPacket = entry.packetId;
+        this.followLatest = false;
