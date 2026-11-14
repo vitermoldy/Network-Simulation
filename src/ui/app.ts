@@ -1325,3 +1325,5 @@ export class App {
     const key = clients.map((c) => `${c.id}:${c.name}`).join('|');
     if (key === this.sourceKey) return;
     this.sourceKey = key;
+    const sel = $<HTMLSelectElement>('source');
+    const keep = sel.value;
