@@ -1639,3 +1639,5 @@ export class App {
         const read = reads !== undefined && r.layer <= reads;
         return `<li class="layer${read ? ' is-read' : ''}">
           <div class="layer-head"><span class="layer-num">${r.layer}</span><span class="layer-name">${esc(r.osi)}</span><span class="layer-proto">${esc(r.proto)}</span></div>
+          <p class="layer-tcpip">Model TCP/IP: ${esc(r.tcpip)}${read ? '. Dibaca perangkat ini.' : ''}</p>
+          <dl>${r.fields.map(([k, v]) => {
