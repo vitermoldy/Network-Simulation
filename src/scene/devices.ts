@@ -75,3 +75,5 @@ const shared = {
 function mesh(geo: THREE.BufferGeometry, mat: THREE.Material | THREE.Material[], shadow = true): THREE.Mesh {
   const m = new THREE.Mesh(geo, mat);
   m.castShadow = shadow;
+  m.receiveShadow = true;
+  return m;
