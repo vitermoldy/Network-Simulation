@@ -462,3 +462,5 @@ export class Topology {
     if (!link) return undefined;
     this.links.delete(linkId);
     this.portLink.delete(link.a);
+    this.portLink.delete(link.b);
+    this.rev++;
