@@ -1220,3 +1220,5 @@ select {
   color: var(--bad);
 }
 
+.chip-retry {
+  color: var(--warn);
