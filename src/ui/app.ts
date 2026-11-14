@@ -527,3 +527,5 @@ export class App {
     this.selectedDevice = id;
     if (changed) this.desktopApp = 'home';
     const client = d.kind === 'pc' || d.kind === 'laptop';
+    const cli = d.kind === 'router' || d.kind === 'switch';
+    $('dwt-desktop').hidden = !client;
