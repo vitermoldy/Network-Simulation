@@ -884,3 +884,5 @@ export class App {
     this.sourceKey = '';
     this.stage?.syncTopology(true);
     this.stage?.fitView(true);
+    this.toast(message);
+    this.renderAll();
