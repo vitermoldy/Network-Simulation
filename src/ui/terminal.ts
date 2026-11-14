@@ -151,3 +151,5 @@ export class IosShell implements Shell {
     if (!m) return undefined;
     const giga = m[1].startsWith('g');
     return this.dev.ports.find((p) => {
+      const n = p.name.toLowerCase();
+      return giga ? (n === `g${m[2]}` || n === `gi${m[2]}`) : n === `fa${m[2]}`;
