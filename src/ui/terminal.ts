@@ -162,3 +162,5 @@ export class IosShell implements Shell {
     const topo = sim.topo;
     const isRouter = d.kind === 'router';
     const show: Command[] = [
+      {
+        words: ['show', 'ip', 'interface', 'brief'], help: 'ringkasan port, IP, dan statusnya',
