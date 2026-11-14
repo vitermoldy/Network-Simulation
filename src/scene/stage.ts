@@ -559,3 +559,5 @@ export class Stage {
     if (this.ghost) {
       this.scene.remove(this.ghost.group);
       disposeTree(this.ghost.group);
+      this.ghost = undefined;
+    }
