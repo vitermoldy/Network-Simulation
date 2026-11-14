@@ -491,3 +491,5 @@ function buildPc(dev: Device): Build {
     p.ctx.fillStyle = '#2b2e33';
     p.ctx.fillRect(sx, sy, 0.56 * p.scale, 0.06 * p.scale);
     p.text('POWER', 0.0, th - 0.3, 0.04, { color: '#2a2e35' });
+    p.text('Fa0', 0, 0.5, 0.05, { mono: true, weight: 500, color: '#2a2e35' });
+  });
