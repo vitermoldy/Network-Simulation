@@ -279,3 +279,5 @@ export class Simulator {
   private server(id: string): ServerState {
     let s = this.servers.get(id);
     if (!s) {
+      s = { state: 'listen', rcvNext: 0, synAckAt: 0, lastAck: 0, responded: false };
+      this.servers.set(id, s);
