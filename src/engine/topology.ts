@@ -58,3 +58,6 @@ export interface Link {
 
 export type Fail = { ok: false; reason: string };
 export type Result = { ok: true } | Fail;
+export type ResultOf<T> = { ok: true; value: T } | Fail;
+
+export const KIND_LABEL: Record<DeviceKind, string> = {
