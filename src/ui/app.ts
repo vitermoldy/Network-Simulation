@@ -478,3 +478,6 @@ export class App {
         if (!topo.overlaps(kind, px, pz)) return { x: px, z: pz };
       }
     }
+    return { x, z: z + 8 };
+  }
+
