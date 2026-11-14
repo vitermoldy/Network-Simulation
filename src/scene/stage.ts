@@ -822,3 +822,5 @@ export class Stage {
     }
 
     for (const h of this.sim.holds) {
+      const dev = this.devices.get(h.deviceId);
+      if (!dev) continue;
