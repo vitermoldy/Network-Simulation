@@ -950,3 +950,5 @@ export class App {
           this.setPending(null);
           this.toast('Pemasangan kabel dibatalkan.');
           return;
+        }
+        const from = this.pendingPort;
