@@ -11,3 +11,5 @@ import { connect } from './db.js'
  */
 let pool = null
 const app = express()
+app.disable('x-powered-by')
+app.use((_req, res, next) => {
