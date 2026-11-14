@@ -72,3 +72,5 @@ body {
 button,
 input,
 select {
+  font: inherit;
+  color: inherit;
