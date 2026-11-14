@@ -524,3 +524,5 @@ export class Stage {
     const k = e.key;
     if (k === 'ArrowLeft') this.rotate(-0.22);
     else if (k === 'ArrowRight') this.rotate(0.22);
+    else if (k === 'ArrowUp') this.tilt(-0.12);
+    else if (k === 'ArrowDown') this.tilt(0.12);
