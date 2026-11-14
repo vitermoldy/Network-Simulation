@@ -671,3 +671,5 @@ export class Simulator {
     if (outgoing) {
       const versions = this.history.get(p.id) ?? [];
       versions.push(clonePacket(p));
+      this.history.set(p.id, versions);
+    }
