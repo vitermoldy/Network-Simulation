@@ -65,3 +65,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
       let cur: string | undefined;
       for (const [id, d] of dist) {
         if (done.has(id)) continue;
+        if (cur === undefined || d < dist.get(cur)! || (d === dist.get(cur)! && id < cur)) cur = id;
+      }
