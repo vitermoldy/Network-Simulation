@@ -1084,3 +1084,5 @@ export class Simulator {
     const f = this.flights.find((x) => x.packet.id === packetId);
     if (f) return `${this.topo.portLabel(f.from)} ke ${this.topo.portLabel(f.to)}`;
     const h = this.holds.find((x) => x.packet.id === packetId);
+    if (h) return `di dalam ${this.topo.device(h.deviceId).name}`;
+    return 'sudah tidak di kabel';
