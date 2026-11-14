@@ -132,3 +132,5 @@ export function buildPlug(port: PortView, cableMat: THREE.Material): THREE.Group
   const contacts = new THREE.Mesh(new THREE.BoxGeometry(w * 0.7, h * 0.12, 0.08), plugPins);
   contacts.position.set(0, h * 0.32, -0.0);
   g.add(contacts);
+  const latch = new THREE.Mesh(new THREE.BoxGeometry(w * 0.4, h * 0.14, 0.18), plugBody);
+  latch.position.set(0, -h * 0.55, 0.12);
