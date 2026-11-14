@@ -1579,3 +1579,5 @@ export function describeRouteChanges(topo: Topology, before: Map<string, Route[]
   for (const [rid, routes] of after) {
     const old = new Map((before.get(rid) ?? []).map((r) => [r.network, r]));
     for (const r of routes) {
+      const o = old.get(r.network);
+      if (r.type === 'C') continue;
