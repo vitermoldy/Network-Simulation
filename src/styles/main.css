@@ -1153,3 +1153,5 @@ select {
   display: grid;
   gap: 2px;
   padding: 8px 10px;
+  text-align: left;
+  border: 1px solid transparent;
