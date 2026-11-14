@@ -549,3 +549,5 @@ function buildLaptop(dev: Device): Build {
   hinge.add(bezel);
   const b = newBuild(group, w, baseH, d, base);
   b.hits.push(lid);
+  b.half = { x: w / 2, z0: -d / 2 - 0.3, z1: d / 2 };
+  b.top.set(0, baseH + 0.2, 0.1);
