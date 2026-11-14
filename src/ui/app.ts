@@ -822,3 +822,5 @@ export class App {
       if (e.key === 'ArrowUp' && t.history.length) {
         t.index = Math.max(0, t.index - 1);
         input.value = t.history[t.index] ?? '';
+        e.preventDefault();
+      } else if (e.key === 'ArrowDown' && t.history.length) {
