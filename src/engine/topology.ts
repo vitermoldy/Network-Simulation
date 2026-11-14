@@ -508,3 +508,5 @@ export class Topology {
         ports: names.map((n, i) => {
           const src = raw.ports?.[i];
           const ok = src && typeof src.ip === 'string' && validIp(src.ip) && Number.isInteger(src.prefix);
+          return {
+            id: `${raw.id}.${i}`, deviceId: raw.id, name: n,
