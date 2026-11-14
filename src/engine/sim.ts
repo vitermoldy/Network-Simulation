@@ -345,3 +345,5 @@ export class Simulator {
   start(rawHost: string, seed?: number, sourceId = 'pc'): void {
     const host = rawHost.trim().replace(/^https?:\/\//i, '').replace(/\/.*$/, '').toLowerCase() || 'www.jaringan.test';
     this.kind = 'web';
+    this.resetRun(host, sourceId, seed);
+    this.setPhase('input', 'active');
