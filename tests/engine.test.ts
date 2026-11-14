@@ -276,3 +276,5 @@ describe('simulator', () => {
   });
 });
 
+function runPing(sim: Simulator, source: string, target: string): void {
+  sim.startPing(source, target, 3);
