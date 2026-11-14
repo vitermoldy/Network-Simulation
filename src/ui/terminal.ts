@@ -77,3 +77,5 @@ export class PromptShell implements Shell {
       out.push(`   Default Gateway.................: ${d.gateway ?? '0.0.0.0'}`);
       if (all) out.push(`   DNS Servers.....................: ${d.dnsServer ?? '0.0.0.0'}`);
       if (!this.host.sim.topo.carrier(nic.id)) out.push('', '   Media State.....................: Media disconnected');
+      return [...out, ''];
+    }
