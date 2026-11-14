@@ -597,3 +597,5 @@ export class App {
       this.closeDevice();
       return;
     }
+    const d = topo.device(this.selectedDevice);
+    const title = $('devwin-title');
