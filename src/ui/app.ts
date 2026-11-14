@@ -1572,3 +1572,5 @@ export class App {
     if (isClient(d) || d.kind === 'router') {
       extra += `<h3 class="sub">Cache ARP</h3>${this.table(['IP', 'MAC'], arp, isClient(d) ? 'Kosong sampai perangkat ini bertanya lewat ARP.' : 'Kosong. Router mencatat MAC yang bertanya ARP kepadanya.')}`;
     }
+    if (isClient(d) && d.id === sim.clientId && sim.dnsCache.size) {
+      extra += `<h3 class="sub">Cache DNS</h3>${this.table(['Nama', 'IP'], [...sim.dnsCache], '')}`;
