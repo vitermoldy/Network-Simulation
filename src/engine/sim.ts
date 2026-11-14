@@ -908,3 +908,5 @@ export class Simulator {
             size: 42,
           });
           this.emit(inPort, reply);
+        });
+      } else if (p.arp.op === 'reply' && p.arp.targetIp === nic.ip && dev.id === this.client.deviceId) {
