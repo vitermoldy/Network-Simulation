@@ -100,3 +100,7 @@ export class PromptShell implements Shell {
   }
 }
 
+// ------------------------------------------------------------------ IOS-style CLI (router, switch)
+
+type Mode = 'user' | 'priv' | 'config' | 'if';
+
