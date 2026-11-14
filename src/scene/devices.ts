@@ -569,3 +569,5 @@ function buildLaptop(dev: Device): Build {
   b.ports.push({ id: port.id, deviceId: dev.id, anchor: p.anchor, frameMat: p.frameMat, frameColor: MATERIAL.metal, hit: p.hit, holeW: 0.15, holeH: 0.09, link, act });
 
   const button = buildRoundButton(dev.id, 0.06);
+  button.group.rotation.x = -Math.PI / 2;
+  button.group.position.set(w / 2 - 0.22, baseH + 0.002, -0.52);
