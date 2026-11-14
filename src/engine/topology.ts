@@ -311,3 +311,6 @@ export class Topology {
     }
     this.device(id).name = clean;
     this.rev++;
+    return { ok: true };
+  }
+
