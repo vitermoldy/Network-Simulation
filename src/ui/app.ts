@@ -746,3 +746,5 @@ export class App {
       if (form.dataset.desk === 'ip') {
         const err = form.querySelector<HTMLElement>('.form-error')!;
         const mask = String(f.get('mask') ?? '').trim();
+        const prefix = [...Array(23)].map((_, i) => i + 8).find((p) => prefixToMask(p) === mask);
+        const ip = String(f.get('ip') ?? '');
