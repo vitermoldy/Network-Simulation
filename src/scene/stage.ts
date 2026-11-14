@@ -908,3 +908,5 @@ export class Stage {
     } else if (target.type === 'cable') {
       const c = this.cables.get(target.id);
       if (!c) return undefined;
+      p.copy(c.curve.getPointAt(0.5));
+    } else {
