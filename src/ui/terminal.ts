@@ -291,3 +291,5 @@ export class IosShell implements Shell {
           const prefix = maskToPrefix(args[1]);
           if (prefix === undefined) return [`% ${args[1]} bukan subnet mask yang sah. Contoh: 255.255.255.0`];
           const r = topo.setPortIp(port!.id, args[0], prefix);
+          this.host.changed();
+          return r.ok ? [] : [`% ${r.reason}`];
