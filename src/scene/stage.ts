@@ -368,3 +368,5 @@ export class Stage {
       if (!r) continue;
       const x0 = r.x0 - 0.75;
       const x1 = r.x1 + 0.75;
+      const z0 = allZ0 - 0.8;
+      const z1 = allZ1 + 1.4;
