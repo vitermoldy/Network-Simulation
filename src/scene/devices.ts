@@ -537,3 +537,5 @@ function buildLaptop(dev: Device): Build {
   group.add(deck);
   const hinge = new THREE.Group();
   hinge.position.set(0, baseH, -d / 2 + 0.04);
+  hinge.rotation.x = -0.2;
+  group.add(hinge);
