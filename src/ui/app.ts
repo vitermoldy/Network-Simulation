@@ -1591,3 +1591,5 @@ export class App {
         <button type="button" class="btn btn-small btn-danger" data-act="remove">Hapus perangkat</button>
       </div>
       <h3 class="sub">Port${editable ? ' dan IP' : ''}</h3>
+      <ul class="ports">${portRows}</ul>
+      ${extra}
