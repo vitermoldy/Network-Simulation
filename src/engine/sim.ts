@@ -1044,3 +1044,5 @@ export class Simulator {
 
   private reliable(key: string, label: string, dev: Device, make: (retry: number) => Packet, rto: number, maxTries: number, onGiveUp: () => void): void {
     const old = this.retx.get(key);
+    if (old?.timer) old.timer.cancelled = true;
+    const r: Retx = { key, label, dev, make, tries: 0, maxTries, rto, firedAt: 0, onGiveUp };
