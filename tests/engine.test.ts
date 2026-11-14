@@ -88,3 +88,6 @@ describe('topology', () => {
     expect(u.device(pc.id).ports[0].ip).toBe(t.device(pc.id).ports[0].ip);
     expect(() => u.load({ version: 2 })).toThrow();
   });
+});
+
+describe('routing', () => {
