@@ -131,3 +131,6 @@ export const SIZE: Record<DeviceKind, { w: number; d: number }> = {
   laptop: { w: 2.2, d: 1.9 },
   switch: { w: 4.6, d: 1.6 },
   router: { w: 2.8, d: 1.6 },
+  server: { w: 1.1, d: 1.6 },
+};
+
