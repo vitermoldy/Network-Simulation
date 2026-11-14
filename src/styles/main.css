@@ -1533,3 +1533,5 @@ tbody th {
 }
 
 .layer dd {
+  margin: 0;
+  font-family: var(--font-mono);
