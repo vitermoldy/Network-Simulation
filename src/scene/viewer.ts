@@ -140,3 +140,5 @@ export class DeviceViewer {
 
   /** Shows one device; called when its window opens or the device changes. */
   show(deviceId: string): void {
+    this.deviceId = deviceId;
+    this.key = '';
