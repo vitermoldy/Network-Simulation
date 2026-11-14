@@ -224,3 +224,5 @@ function frontPanel(w: number, h: number, draw: (p: FacePrinter) => void): THREE
 interface Build {
   group: THREE.Group;
   height: number;
+  ports: PortView[];
+  power: { hit: THREE.Mesh; glow: THREE.MeshStandardMaterial; rocker?: THREE.Object3D; button?: THREE.Object3D; leds: THREE.Mesh[] };
