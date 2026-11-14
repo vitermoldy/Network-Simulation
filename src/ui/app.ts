@@ -1124,3 +1124,5 @@ export class App {
     });
     box.addEventListener('submit', (e) => {
       e.preventDefault();
+      const form = e.target as HTMLFormElement;
+      const id = this.selectedDevice;
