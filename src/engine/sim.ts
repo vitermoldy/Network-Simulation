@@ -226,3 +226,5 @@ export class Simulator {
   /** Why the last run failed, in words, for every kind of run. */
   failReason = '';
   phases: Phase[] = PHASES.map((p) => ({ ...p, status: 'waiting' }));
+  log: LogEntry[] = [];
+  flights: Flight[] = [];
