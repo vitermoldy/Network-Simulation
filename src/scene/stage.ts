@@ -789,3 +789,6 @@ export class Stage {
     pv.anchor.getWorldPosition(pos);
     pv.anchor.getWorldDirection(dir);
     return pos.addScaledVector(dir, out).add(new THREE.Vector3(0, 0.14, 0));
+  }
+
+  private updatePackets(): void {
