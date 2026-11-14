@@ -1136,3 +1136,5 @@ select {
   background: var(--warn);
 }
 
+.log {
+  list-style: none;
