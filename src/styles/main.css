@@ -836,3 +836,6 @@ select {
 
 .switch input:checked + .switch-track::after {
   transform: translateX(16px);
+  background: var(--accent-ink);
+}
+
