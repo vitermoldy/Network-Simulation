@@ -423,3 +423,5 @@ export class Topology {
     for (let i = 2; i < Math.min(10, size - 1) && !pick; i++) {
       const cand = [(net + i) >>> 24 & 255, (net + i) >>> 16 & 255, (net + i) >>> 8 & 255, (net + i) & 255].join('.');
       if (!used.has(cand)) pick = cand;
+    }
+    if (!pick) return { ok: false, reason: `Jaringan ${networkOf(gw.ip, gw.prefix)} sudah penuh.` };
