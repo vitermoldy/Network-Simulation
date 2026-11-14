@@ -7,3 +7,5 @@ import { connect } from './db.js'
 /**
  * `npm run server` in development (Vite forwards /api here), `npm start` after a build
  * (this also serves dist/). The simulator works with the server off: finished runs wait in
+ * the browser and go out once the server answers again.
+ */
