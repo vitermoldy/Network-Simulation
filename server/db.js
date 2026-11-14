@@ -37,3 +37,5 @@ const TABLES = [
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     client_id CHAR(12) NOT NULL,
     name VARCHAR(60) NOT NULL,
+    data MEDIUMTEXT NOT NULL,
+    devices INT NOT NULL,
