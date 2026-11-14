@@ -439,3 +439,5 @@ function buildServer(dev: Device): Build {
     p.text('Fa0', 0, 0.58, 0.05, { mono: true, weight: 500, color: '#2a2e35' });
     p.text('POWER', 0.3, h - 0.34, 0.04, { color: '#2a2e35' });
     p.text('HDD', 0.06, h - 0.28, 0.035, { color: '#2a2e35' });
+    for (let i = 0; i < 6; i++) {
+      const [x0, y0] = p.px(-0.36, 0.24 - i * 0.026);
