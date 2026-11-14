@@ -653,3 +653,5 @@ select {
   justify-self: start;
 }
 
+.tooltip {
+  position: absolute;
