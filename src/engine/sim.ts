@@ -1161,3 +1161,5 @@ export class Simulator {
           this.setPhase('output', 'done');
         } else if (this.kind === 'ping') {
           this.say(`Ping request could not find host ${c.host}. Please check the name and try again.`);
+        }
+        this.fail('dns', `Nama tidak ditemukan. Server DNS menjawab bahwa ${c.host} tidak ada (NXDOMAIN), jadi tidak ada IP yang bisa dihubungi.`, this.clientId);
