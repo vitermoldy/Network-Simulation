@@ -17,3 +17,5 @@ function withScenario(s: Scenario): Simulator {
   return sim;
 }
 
+describe('ip', () => {
+  it('works out networks and membership', () => {
