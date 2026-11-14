@@ -252,3 +252,5 @@ function addPort(b: Build, dev: Device, index: number, x: number, y: number, z: 
   if (o.act === false) {
     link.position.set(x, ledY, z + 0.012);
     b.group.add(link);
+    b.ports.push({ id: port.id, deviceId: dev.id, anchor: p.anchor, frameMat: p.frameMat, frameColor, hit: p.hit, holeW: o.w, holeH: o.h, link });
+    return;
