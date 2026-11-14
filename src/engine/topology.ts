@@ -114,3 +114,5 @@ const SPECS: DeviceSpec[] = [
   { id: 'web', kind: 'server', name: 'Server Web', x: 10.6, z: 1.1, ips: { 0: ['203.0.113.80', 24] }, gateway: '203.0.113.1', services: { dns: false, http: true } },
 ];
 
+const DEFAULT_LINKS: [string, string][] = [
+  ['pc.0', 'sw.0'],
