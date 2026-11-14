@@ -1134,3 +1134,5 @@ export class App {
         res = this.sim.edit((t) => t.rename(id, String(f.get('name') ?? '')));
         done = 'Nama disimpan.';
         this.sourceKey = '';
+      } else if (kind === 'ip') {
+        const port = form.dataset.port!;
