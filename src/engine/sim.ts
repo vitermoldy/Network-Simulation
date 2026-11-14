@@ -1346,3 +1346,5 @@ export class Simulator {
   }
 
   /** A packet a router makes itself (a ping, a reply to a ping). */
+  private routerOriginate(dev: Device, p: Packet): void {
+    if (!dev.powered || this.status !== 'running') return;
