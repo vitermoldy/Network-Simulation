@@ -970,3 +970,5 @@ export class Simulator {
     if (dev.id === this.client.deviceId) {
       const mac = this.arpCache(dev.id).get(nextHop);
       if (mac) {
+        p.eth = { src: nic.mac, dst: mac, type: 'IPv4' };
+        this.emit(nic.id, p);
