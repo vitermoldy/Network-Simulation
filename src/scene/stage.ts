@@ -688,3 +688,5 @@ export class Stage {
   zoom(factor: number): void {
     const offset = this.camera.position.clone().sub(this.controls.target);
     offset.setLength(Math.min(60, Math.max(3, offset.length() * factor)));
+    this.camera.position.copy(this.controls.target).add(offset);
+    this.controls.update();
