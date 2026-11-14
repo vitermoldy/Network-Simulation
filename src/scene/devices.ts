@@ -675,3 +675,5 @@ export function buildGhost(kind: Device['kind']): THREE.Group {
   const sizes: Record<Device['kind'], [number, number, number]> = {
     pc: [2.6, 1.55, 1.5], laptop: [2.2, 1.3, 1.45], switch: [4.4, 0.5, 1.5], router: [2.9, 0.6, 1.5], server: [1.1, 2.0, 1.6],
   };
+  const [w, h, d] = sizes[kind];
+  const g = new THREE.Group();
