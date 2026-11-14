@@ -63,3 +63,5 @@ type DwTab = 'fisik' | 'config' | 'desktop' | 'cli';
 const DW_TABS: DwTab[] = ['fisik', 'config', 'desktop', 'cli'];
 
 interface TermState {
+  shell: Shell;
+  lines: string[];
