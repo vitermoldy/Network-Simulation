@@ -319,3 +319,5 @@ export class App {
       const entry = this.sim.log.find((l) => l.id === Number(btn.dataset.id));
       if (!entry) return;
       this.openEntry = this.openEntry === entry.id ? null : entry.id;
+      $('log').querySelectorAll('.entry').forEach((el) => el.classList.toggle('is-open', Number((el as HTMLElement).dataset.id) === this.openEntry));
+      if (entry.packetId) {
