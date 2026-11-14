@@ -313,3 +313,5 @@ export class IosShell implements Shell {
       },
       {
         words: ['no', 'shutdown'], help: 'nyalakan port ini',
+        run: () => {
+          topo.setPortDown(port!.id, false);
