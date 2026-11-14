@@ -1623,3 +1623,5 @@ tbody th {
   gap: 10px;
 }
 
+.port-name {
+  min-width: 46px;
