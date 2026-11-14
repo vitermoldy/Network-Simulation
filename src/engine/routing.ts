@@ -98,3 +98,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
       }
     }
     tables.set(r.id, [...best.values()].sort((a, b) => a.network.localeCompare(b.network, 'en', { numeric: true })));
+  }
+  return tables;
