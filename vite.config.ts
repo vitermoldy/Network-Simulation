@@ -16,3 +16,5 @@ export default defineConfig({
   build: {
     target: 'es2022',
     assetsDir: 'build',
+    // three.js alone is about 600 kB; one bundle keeps the module order simple.
+    chunkSizeWarningLimit: 1200,
