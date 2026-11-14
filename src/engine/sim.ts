@@ -1391,3 +1391,5 @@ export class Simulator {
     pg.sentAt = this.time;
     this.sendFrom(dev, p);
     pg.timer = this.schedule(this.time + PING_RTO, () => {
+      if (this.status !== 'running' || this.ping !== pg || pg.seq !== seq) return;
+      this.say('Request timed out.');
