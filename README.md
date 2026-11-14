@@ -82,3 +82,7 @@ src/ui/       panel, jendela perangkat, Command Prompt, dan CLI gaya IOS
 src/data/     pemanggil API MySQL dan antrean riwayat
 server/       server Express + mysql2
 tests/        tes Vitest untuk mesinnya
+```
+
+## Batasan
+
