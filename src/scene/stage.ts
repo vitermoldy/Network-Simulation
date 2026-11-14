@@ -441,3 +441,5 @@ export class Stage {
     return null;
   }
 
+  private floorPoint(e: PointerEvent): THREE.Vector3 | undefined {
+    this.setPointer(e);
