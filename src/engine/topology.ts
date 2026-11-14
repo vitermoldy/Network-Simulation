@@ -195,3 +195,6 @@ export class Topology {
 
   private insert(d: Device): void {
     this.devices.set(d.id, d);
+    for (const p of d.ports) this.portIndex.set(p.id, p);
+  }
+
