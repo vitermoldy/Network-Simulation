@@ -132,3 +132,5 @@ export class IosShell implements Shell {
     return `${h}(config-if)#`;
   }
 
+  banner(): string[] {
+    const d = this.dev;
