@@ -23,3 +23,5 @@ function segmentHitsBox(a: V2, b: V2, box: Box2): boolean {
   let t1 = 1;
   const d = [b[0] - a[0], b[1] - a[1]];
   const lo = [box.x0, box.z0];
+  const hi = [box.x1, box.z1];
+  for (let i = 0; i < 2; i++) {
