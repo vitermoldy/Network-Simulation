@@ -166,3 +166,5 @@ export class IosShell implements Shell {
         words: ['show', 'ip', 'interface', 'brief'], help: 'ringkasan port, IP, dan statusnya',
         run: () => [
           'Interface              IP-Address      OK? Method Status                Protocol',
+          ...d.ports.map((p) => {
+            const status = p.down ? 'administratively down' : topo.carrier(p.id) ? 'up' : 'down';
