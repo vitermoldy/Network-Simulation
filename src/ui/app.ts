@@ -1362,3 +1362,6 @@ export class App {
   private deviceName(id?: string): string {
     if (!id) return 'Jaringan';
     return this.sim.topo.has(id) ? this.sim.topo.device(id).name : 'Perangkat yang dihapus';
+  }
+
+  private renderLog(): void {
