@@ -214,3 +214,5 @@ export class DeviceViewer {
       const live = topo.device(this.deviceId);
       const key = `${topo.rev}|${signatureOf(live)}`;
       if (key !== this.key) this.rebuild();
+      if (this.view) refreshLive(this.view, live, this.sim);
+    }
