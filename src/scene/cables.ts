@@ -55,3 +55,5 @@ export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
       if (!boxes.some((o) => inside(c, o))) corners.push(c);
     }
   }
+  let best: V2[] | undefined;
+  let bestLen = Infinity;
