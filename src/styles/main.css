@@ -1046,3 +1046,6 @@ select {
 .phase-meta {
   grid-column: 2;
   font-size: 12px;
+  color: var(--muted);
+}
+
