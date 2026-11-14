@@ -12,3 +12,5 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
 
 ## Yang bisa dilakukan
 
+- **Ikuti satu permintaan web.** ARP mencari MAC gateway, DNS menerjemahkan nama, TCP berjabat tangan
+  tiga langkah, HTTP meminta halaman, server mengirimnya dalam tiga segmen, lalu sambungan ditutup.
