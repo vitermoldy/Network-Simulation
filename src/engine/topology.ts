@@ -516,3 +516,5 @@ export class Topology {
         }),
       };
       if (raw.kind === 'server') {
+        d.services = { dns: !!raw.services?.dns, http: !!raw.services?.http };
+        d.dnsRecords = {};
