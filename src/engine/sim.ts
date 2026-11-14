@@ -347,3 +347,5 @@ export class Simulator {
     this.kind = 'web';
     this.resetRun(host, sourceId, seed);
     this.setPhase('input', 'active');
+    const pc = this.checkSource(sourceId, true);
+    if (!pc) return;
