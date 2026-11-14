@@ -27,3 +27,5 @@ function segmentHitsBox(a: V2, b: V2, box: Box2): boolean {
   for (let i = 0; i < 2; i++) {
     if (Math.abs(d[i]) < 1e-9) {
       if (a[i] < lo[i] || a[i] > hi[i]) return false;
+    } else {
+      let ta = (lo[i] - a[i]) / d[i];
