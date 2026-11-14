@@ -605,3 +605,5 @@ export class Stage {
       bottom: -1 + (2 * (narrow ? 80 : 104)) / h,
     };
     const dir = new THREE.Vector3(0.0, 0.66, 1).normalize();
+    const target = new THREE.Vector3((x0 + x1) / 2, 0.3, (z0 + z1) / 2);
+    const cam = this.camera.clone();
