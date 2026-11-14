@@ -702,3 +702,5 @@ export class Simulator {
       }, true);
     } else {
       this.schedule(f.t1, () => {
+        if (this.flights.includes(f)) this.arrive(f);
+      }, true);
