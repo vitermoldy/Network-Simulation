@@ -710,3 +710,5 @@ select {
 .flow {
   position: absolute;
   left: 12px;
+  bottom: 42px;
+  margin: 0;
