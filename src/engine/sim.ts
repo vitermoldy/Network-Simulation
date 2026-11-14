@@ -678,3 +678,5 @@ export class Simulator {
     this.trace.set(p.id, tr);
   }
 
+  private emit(portId: string, packet: Packet): void {
+    const dev = this.topo.deviceOf(portId);
