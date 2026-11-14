@@ -1913,3 +1913,5 @@ tbody th {
 
 .viewer-hover {
   position: absolute;
+  left: 10px;
+  right: 10px;
