@@ -195,3 +195,5 @@ export class App {
       this.send();
     });
     $('url').addEventListener('input', () => this.clearUrlError());
+    $('source').addEventListener('change', () => this.clearUrlError());
+    $<HTMLSelectElement>('scenario').addEventListener('change', (e) => {
