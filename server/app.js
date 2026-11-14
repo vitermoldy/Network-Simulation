@@ -72,3 +72,5 @@ function cleanRun(run) {
       JSON.stringify(path),
       count(run.devices),
       at,
+    ],
+  }
