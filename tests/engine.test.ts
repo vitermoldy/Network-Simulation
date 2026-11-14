@@ -190,3 +190,5 @@ describe('simulator', () => {
     while (sim.status === 'running' && sim.time < 600) {
       sim.advance(0.05);
       if (!pulled) {
+        const f = sim.flights.find((x) => x.packet.tcp?.flags.join() === 'SYN' && x.linkId === sim.topo.linkOf('r1.1')?.id);
+        if (f) {
