@@ -1485,3 +1485,5 @@ tbody th {
 
 .layer-num {
   font: 600 13px var(--font-mono);
+  min-width: 18px;
+  height: 22px;
