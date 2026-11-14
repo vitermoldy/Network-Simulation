@@ -809,3 +809,5 @@ export class Stage {
       seen.add(f.packet.id);
       const u = clamp01((t - f.t0) / (f.t1 - f.t0));
       const k = f.from === cable.a ? u : 1 - u;
+      const pos = cable.curve.getPointAt(k);
+      const tan = cable.curve.getTangentAt(k);
