@@ -505,3 +505,5 @@ select {
 }
 
 .stage-tools {
+  position: absolute;
+  top: 12px;
