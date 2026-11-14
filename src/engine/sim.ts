@@ -1115,3 +1115,5 @@ export class Simulator {
     this.setPhase('dns', 'active');
     this.note('info', this.clientId, `${pc.name} bertanya ke DNS`, `${pc.name} menanyakan "berapa IP ${c.host}?" ke server DNS ${pc.dnsServer}. Pertanyaan DNS dibungkus UDP ke port 53, lalu IP, lalu Ethernet.`, 7);
     this.reliable('dns', 'DNS?', pc, (retry) => this.newPacket({
+      flow: 'dns', label: retry ? 'DNS? (ulang)' : 'DNS?', title: `DNS: berapa IP ${c.host}?`,
+      eth: { src: pc.ports[0].mac, dst: BROADCAST, type: 'IPv4' },
