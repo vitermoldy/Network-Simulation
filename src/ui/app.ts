@@ -1296,3 +1296,5 @@ export class App {
       reason: s.status === 'failed' ? s.browser.message : undefined,
       simSeconds: Math.round(s.time * 10) / 10,
       packetsLost: s.log.filter((l) => l.kind === 'loss').length,
+      resends: s.log.filter((l) => l.kind === 'retry' && l.title.endsWith('dikirim ulang')).length,
+      routeChanges: s.log.filter((l) => l.kind === 'route' && l.title === 'Rute dihitung ulang').length,
