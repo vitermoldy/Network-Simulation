@@ -100,3 +100,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   const H = SCREEN_H;
   if (view.state === 'off') {
     ctx.fillStyle = '#060708';
+    ctx.fillRect(0, 0, W, H);
+    return;
