@@ -465,3 +465,6 @@ export class App {
     this.stage?.setPlacing(null);
     document.querySelectorAll<HTMLButtonElement>('[data-add]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
     if (message) this.toast(message);
+  }
+
+  /** Nearest spot to (x, z) where a device of `kind` does not sit on another one. */
