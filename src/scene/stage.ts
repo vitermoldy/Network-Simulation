@@ -354,3 +354,5 @@ export class Stage {
     this.arrows = [];
     const rects = new Map<Role, Box2>();
     for (const v of this.devices.values()) {
+      const f = footprintOf(v);
+      const r = roleOf(v.device);
