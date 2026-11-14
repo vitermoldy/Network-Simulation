@@ -2418,3 +2418,5 @@ tbody th {
     flex: 1;
   }
 
+  .clock {
+    margin-left: 0;
