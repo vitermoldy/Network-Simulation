@@ -541,3 +541,5 @@ function buildLaptop(dev: Device): Build {
   group.add(hinge);
   const lidH = 1.36;
   const lid = rounded(w, lidH, 0.05, shared.laptop, 0.02);
+  lid.position.set(0, lidH / 2, 0);
+  lid.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
