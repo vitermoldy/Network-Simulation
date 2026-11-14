@@ -140,3 +140,6 @@ p {
   display: flex;
   align-items: flex-end;
   gap: 20px;
+  padding: 14px var(--gutter) 12px;
+}
+
