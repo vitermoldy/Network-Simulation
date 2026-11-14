@@ -427,3 +427,5 @@ export class Simulator {
     return dev;
   }
 
+  /** One line of text for the Command Prompt or CLI that started the run. */
+  private say(line: string): void {
