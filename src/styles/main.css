@@ -592,3 +592,5 @@ select {
   border: 1px solid transparent;
   border-radius: var(--r);
   background: transparent;
+  font-size: 11.5px;
+  font-weight: 500;
