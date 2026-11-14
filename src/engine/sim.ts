@@ -1171,3 +1171,5 @@ export class Simulator {
       this.note('ok', this.clientId, 'IP diketahui', `Jawaban DNS: ${c.host} ada di ${c.serverIp}.${this.kind === 'web' ? ` Sekarang ${this.cname} tahu ke mana harus menyambung.` : ''}`, 7, p.id);
       if (this.kind === 'lookup') {
         this.say(`Server:  ${server}`);
+        this.say(`Address: ${server}`);
+        this.say('');
