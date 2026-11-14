@@ -1829,3 +1829,5 @@ tbody th {
   flex-direction: column;
   background: var(--panel);
   color: var(--ink);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-lg);
