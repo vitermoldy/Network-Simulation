@@ -825,3 +825,5 @@ export class Simulator {
 
   private routerIn(dev: Device, inPort: string, p: Packet): void {
     const port = this.topo.port(inPort);
+    if (p.eth.dst !== port.mac && p.eth.dst !== BROADCAST) {
+      this.discard(p, dev.id, `MAC tujuan ${p.eth.dst} bukan milik port ${port.name}, frame dibuang.`);
