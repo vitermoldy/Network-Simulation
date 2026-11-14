@@ -504,3 +504,5 @@ export class App {
 
   private move(id: string, x: number, z: number): boolean {
     const d = this.sim.topo.device(id);
+    const hit = this.sim.topo.overlaps(d.kind, x, z, id);
+    if (hit) {
