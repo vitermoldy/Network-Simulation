@@ -52,3 +52,5 @@ function cleanRun(run) {
   if (!run || typeof run !== 'object') return { error: 'Data percobaan kosong.' }
   const host = text(run.host, 253).toLowerCase()
   if (!/^[a-z0-9.-]+$/.test(host)) return { error: 'Alamat web tidak sah.' }
+  if (run.status !== 'done' && run.status !== 'failed') return { error: 'Status percobaan tidak dikenal.' }
+  const at = new Date(run.finishedAt)
