@@ -1611,3 +1611,5 @@ export class App {
       if (box.innerHTML !== html) box.innerHTML = html;
       this.packetKey = '';
       return;
+    }
+    const hold = this.sim.holds.find((h) => h.packet.id === p.id);
