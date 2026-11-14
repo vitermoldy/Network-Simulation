@@ -389,3 +389,5 @@ export class App {
 
   private send(step = false): void {
     const input = $<HTMLInputElement>('url');
+    const host = input.value.trim().replace(/^https?:\/\//i, '').replace(/\/.*$/, '').toLowerCase();
+    const err = $('url-error');
