@@ -93,3 +93,5 @@ export class App {
   private popoverAction: (() => void) | null = null;
   private deviceKey = '';
   private deviceDirty = false;
+  private packetKey = '';
+  private sourceKey = '';
