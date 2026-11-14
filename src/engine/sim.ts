@@ -871,3 +871,5 @@ export class Simulator {
     const ttl = p.ip.ttl - 1;
     const out = this.topo.port(route.portId);
     const nextHop = route.nextHop ?? p.ip.dst;
+    const source = route.type === 'C' ? `terhubung langsung di ${out.name}` : `dipelajari dari ${this.topo.device(route.viaRouter!).name}, biaya ${route.cost}`;
+    const stale = this.converging ? ' Router belum selesai menghitung ulang rute, jadi tabel lama masih dipakai.' : '';
