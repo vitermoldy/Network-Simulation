@@ -138,3 +138,5 @@ export async function loadLayout(id: number): Promise<{ name: string; data: unkn
 }
 
 export async function deleteLayout(id: number): Promise<void> {
+  await call(`layouts/${clientCode()}/${id}`, { method: 'DELETE' });
+}
