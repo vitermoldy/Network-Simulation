@@ -1187,3 +1187,5 @@ export class Simulator {
       }
       this.browser.serverIp = c.serverIp;
       this.browser.state = 'connecting';
+      this.browser.message = `Menghubungi ${c.serverIp}`;
+      this.tcpConnect(dev);
