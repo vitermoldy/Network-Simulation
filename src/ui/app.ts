@@ -997,3 +997,5 @@ export class App {
       const ip = kind === 'switch' ? '' : port.ip ? `, IP ${port.ip}/${port.prefix}` : ', belum diberi IP';
       text = peer
         ? `${topo.portLabel(p.portId)}${ip}. Tersambung ke ${topo.portLabel(peer)}.${topo.carrier(p.portId) ? '' : ' Tidak ada sinyal karena salah satu perangkat mati.'}`
+        : this.pendingPort
+          ? `${topo.portLabel(p.portId)}${ip}. Klik untuk memasang ujung kabel di sini.`
