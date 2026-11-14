@@ -162,3 +162,5 @@ export function createApi(getPool, database) {
     res.json({ ok: true })
   })
 
+  api.delete('/layouts/:client/:id', async (req, res) => {
+    const client = codeOf(req.params.client)
