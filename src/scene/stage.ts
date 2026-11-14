@@ -815,3 +815,5 @@ export class Stage {
       pos.y += 0.15;
       v.mesh.position.copy(pos);
       const flat = new THREE.Vector3(tan.x, 0, tan.z);
+      if (flat.lengthSq() > 1e-6) v.mesh.lookAt(pos.clone().add(flat.normalize()));
+      v.last.copy(pos);
