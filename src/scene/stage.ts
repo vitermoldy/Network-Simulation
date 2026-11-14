@@ -384,3 +384,5 @@ export class Stage {
       const lh = lw * 0.3;
       const [c, ctx] = makeCanvas(900, 270);
       const tex = canvasTexture(c);
+      drawZoneLabel(ctx, c.width, c.height, ZONE_TEXT[role][0], ZONE_TEXT[role][1], this.theme.label, this.theme.labelMuted);
+      tex.needsUpdate = true;
