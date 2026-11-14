@@ -676,3 +676,5 @@ select {
   width: min(420px, calc(100% - 24px));
   padding: 14px;
   background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
