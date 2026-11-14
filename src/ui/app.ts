@@ -279,3 +279,5 @@ export class App {
     $('hint-close').addEventListener('click', () => {
       $('hint').hidden = true;
       try {
+        localStorage.setItem('netsim-hint-seen', '1');
+      } catch {
