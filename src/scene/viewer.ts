@@ -167,3 +167,5 @@ export class DeviceViewer {
       if (!topo.linkOf(p.id)) continue;
       this.leads.add(buildPlug(p, mat));
       const pos = new THREE.Vector3();
+      const dir = new THREE.Vector3();
+      p.anchor.getWorldPosition(pos);
