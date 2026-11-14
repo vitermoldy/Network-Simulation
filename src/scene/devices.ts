@@ -70,3 +70,6 @@ const shared = {
   plate: std(MATERIAL.plate, { metalness: 0.6, roughness: 0.35 }),
   screw: std(0x6c737c, { metalness: 0.8, roughness: 0.3 }),
   invisible: new THREE.MeshBasicMaterial({ visible: false }),
+};
+
+function mesh(geo: THREE.BufferGeometry, mat: THREE.Material | THREE.Material[], shadow = true): THREE.Mesh {
