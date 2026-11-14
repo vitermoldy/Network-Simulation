@@ -81,3 +81,5 @@ export class App {
   private stepOnce = false;
   private speed = 1;
   private tab: Tab = 'alur';
+  private renderedVersion = -1;
+  private renderedLog = 0;
