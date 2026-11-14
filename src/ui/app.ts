@@ -1435,3 +1435,5 @@ export class App {
   private renderPlaybar(): void {
     const s = this.sim;
     const play = $('play');
+    let label: string;
+    if (s.status === 'idle') label = 'Mulai';
