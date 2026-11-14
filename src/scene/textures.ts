@@ -182,3 +182,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
 export function drawDesktop(ctx: CanvasRenderingContext2D, name: string, ip: string | undefined, on: boolean): void {
   const W = SCREEN_W;
   const H = SCREEN_H;
+  if (!on) {
+    ctx.fillStyle = '#060708';
