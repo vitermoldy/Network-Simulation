@@ -533,3 +533,6 @@ export class Topology {
     this.rev++;
   }
 
+  // ------------------------------------------------------------------ broadcast domains
+
+  /**
