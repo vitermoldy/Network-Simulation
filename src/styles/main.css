@@ -423,3 +423,5 @@ select {
   display: flex;
   align-items: baseline;
   gap: 6px;
+  padding: 3px 8px;
+  border-radius: var(--r-sm);
