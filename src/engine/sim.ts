@@ -557,3 +557,6 @@ export class Simulator {
     }
     this.topologyChanged();
     return { ok: true };
+  }
+
+  disconnect(linkId: string): void {
