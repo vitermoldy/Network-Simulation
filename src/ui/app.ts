@@ -638,3 +638,5 @@ export class App {
     this.desktopKey = key;
     const back = (title: string) => `<div class="app-bar"><button type="button" class="btn btn-small btn-ghost" data-app="home">Kembali ke Desktop</button><h3>${title}</h3></div>`;
     if (this.desktopApp === 'home') {
+      box.innerHTML = `<div class="apps">
+        <button type="button" class="app-tile" data-app="ip">${APP_ICONS.ip}<span>IP Configuration</span></button>
