@@ -215,3 +215,6 @@ export class Topology {
   }
 
   hasPort(id: string): boolean {
+    return this.portIndex.has(id);
+  }
+
