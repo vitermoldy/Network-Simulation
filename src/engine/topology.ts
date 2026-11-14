@@ -186,3 +186,5 @@ export class Topology {
       id, kind, name, powered: true, x, z,
       ports: portNames(kind).map((n, i) => ({ id: `${id}.${i}`, deviceId: id, name: n, mac: `aa:${base}:00:00:00:${(i + 1).toString(16).padStart(2, '0')}` })),
     };
+    if (kind === 'server') {
+      d.services = { dns: false, http: true };
