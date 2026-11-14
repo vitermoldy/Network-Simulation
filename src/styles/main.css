@@ -668,3 +668,5 @@ select {
   z-index: 6;
 }
 
+.popover {
+  position: absolute;
