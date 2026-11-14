@@ -300,3 +300,5 @@ export class Stage {
   private footprints(): Box2[] {
     return [...this.devices.values()].map((v) => {
       const { x, z } = v.group.position;
+      return { x0: x - v.half.x, x1: x + v.half.x, z0: z + v.half.z0, z1: z + v.half.z1 };
+    });
