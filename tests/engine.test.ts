@@ -12,3 +12,5 @@ function run(sim: Simulator, host = 'www.jaringan.test', limit = 600, source = '
 }
 
 function withScenario(s: Scenario): Simulator {
+  const sim = new Simulator(new Topology(), 3);
+  sim.scenario = s;
