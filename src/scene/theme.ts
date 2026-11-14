@@ -64,3 +64,5 @@ export const MATERIAL = {
   cableHover: 0x1f2de6,
   plug: 0xe6ebf0,
   packet: 0x1f2de6,
+  packetDark: 0x5b8cff,
+  lost: 0xd93a2b,
