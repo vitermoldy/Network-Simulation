@@ -479,3 +479,5 @@ export class Topology {
     return {
       version: 1,
       devices: [...this.devices.values()].map((d) => ({
+        ...d,
+        services: d.services && { ...d.services },
