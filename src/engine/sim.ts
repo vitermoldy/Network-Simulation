@@ -234,3 +234,5 @@ export class Simulator {
   converging = false;
   macTables = new Map<string, Map<string, string>>();
   arpCaches = new Map<string, Map<string, string>>();
+  dnsCache = new Map<string, string>();
+  browser: BrowserView = { deviceId: 'pc', url: 'www.jaringan.test', state: 'idle', parts: PAGE_PARTS.map(() => false) };
