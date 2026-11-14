@@ -788,3 +788,6 @@ select {
 }
 
 .btn-play {
+  min-width: 112px;
+}
+
