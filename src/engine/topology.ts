@@ -278,3 +278,5 @@ export class Topology {
       const l = this.linkOf(p.id);
       if (l) this.disconnect(l.id);
       this.portIndex.delete(p.id);
+    }
+    this.devices.delete(id);
