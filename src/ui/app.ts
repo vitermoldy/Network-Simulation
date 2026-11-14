@@ -454,3 +454,5 @@ export class App {
     this.setPending(null);
     this.closePopover();
     this.placing = kind;
+    this.stage.setPlacing(kind);
+    document.querySelectorAll<HTMLButtonElement>('[data-add]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.add === kind)));
