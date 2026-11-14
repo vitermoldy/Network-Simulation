@@ -1194,3 +1194,5 @@ export class App {
         input.value = '';
         this.toast(`Rancangan ${name} disimpan di MySQL.`);
         void this.refreshDb();
+      } catch (ex) {
+        err.textContent = `Belum tersimpan: ${(ex as Error).message} Jalankan npm run server, lalu coba lagi.`;
