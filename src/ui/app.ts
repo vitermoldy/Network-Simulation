@@ -1011,3 +1011,5 @@ export class App {
     } else if (p.type === 'packet') {
       const pk = this.sim.packet(p.packetId);
       if (pk) text = `${pk.title}. Klik untuk membuka header-nya.`;
+    }
+    if (!text) {
