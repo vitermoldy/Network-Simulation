@@ -52,3 +52,6 @@ export interface DeviceView {
   screen?: { ctx: CanvasRenderingContext2D; texture: THREE.CanvasTexture; key: string };
   /** What the model was built from; a change rebuilds it. */
   signature: string;
+}
+
+const std = (color: number, extra: Partial<THREE.MeshStandardMaterialParameters> = {}) =>
