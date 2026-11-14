@@ -991,3 +991,5 @@ export class App {
     const topo = this.sim.topo;
     let text = '';
     if (p.type === 'port' && topo.hasPort(p.portId)) {
+      const port = topo.port(p.portId);
+      const peer = topo.peer(p.portId);
