@@ -228,3 +228,5 @@ export class App {
     });
     $('step').addEventListener('click', () => {
       if (this.sim.status === 'idle') {
+        this.send(true);
+        return;
