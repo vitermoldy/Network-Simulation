@@ -304,3 +304,5 @@ function buildSwitch(dev: Device): Build {
       const [bx0, by] = p.px(-0.95 + blk * 0.86 - 0.1, 0.25);
       p.ctx.fillStyle = 'rgba(201,208,216,0.18)';
       p.ctx.fillRect(bx0, by - 0.002 * p.scale, 0.006 * p.scale, 0.004 * p.scale);
+    }
+    p.text('Gi0/1', 1.8, 0.42, 0.03, { color: '#c9d0d8', mono: true, weight: 500 });
