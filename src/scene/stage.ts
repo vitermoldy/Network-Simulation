@@ -265,3 +265,5 @@ export class Stage {
     const v = this.devices.get(id);
     if (!v) return;
     v.group.traverse((o) => {
+      if (o instanceof CSS2DObject) o.element.remove();
+    });
