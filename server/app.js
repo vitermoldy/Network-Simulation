@@ -108,3 +108,5 @@ export function createApi(getPool, database) {
     const [rows] = await getPool().query(
       `SELECT id, host, source, scenario, loss_rate AS lossRate, status, failed_phase AS failedPhase, reason,
         sim_seconds AS simSeconds, packets_lost AS packetsLost, resends, route_changes AS routeChanges, path, devices,
+        finished_at AS finishedAt FROM runs WHERE client_id = ? ORDER BY finished_at DESC, id DESC LIMIT 50`,
+      [client],
