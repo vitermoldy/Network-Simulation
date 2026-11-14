@@ -21,3 +21,5 @@ export interface ArpBody {
 
 export interface IpHeader {
   src: string;
+  dst: string;
+  ttl: number;
