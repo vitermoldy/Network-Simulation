@@ -1256,3 +1256,5 @@ export class App {
     const ul = $('layouts');
     if (!list.length) {
       ul.innerHTML = '<li class="empty">Belum ada rancangan. Susun jaringan di meja, beri nama, lalu tekan Simpan rancangan.</li>';
+      return;
+    }
