@@ -289,3 +289,5 @@ export class Stage {
     const topo = this.sim.topo;
     for (const id of [...this.devices.keys()]) if (!topo.devices.has(id)) this.removeDeviceView(id);
     for (const dev of topo.devices.values()) {
+      const v = this.devices.get(dev.id);
+      if (!v || v.signature !== signatureOf(dev)) this.rebuildDevice(dev.id);
