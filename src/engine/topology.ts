@@ -550,3 +550,5 @@ export class Topology {
         parent.set(c, r);
         c = n;
       }
+      return r;
+    };
