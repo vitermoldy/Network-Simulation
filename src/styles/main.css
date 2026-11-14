@@ -215,3 +215,6 @@ p {
   font-family: var(--font-mono);
   font-size: 14px;
   color: var(--muted);
+}
+
+.field input {
