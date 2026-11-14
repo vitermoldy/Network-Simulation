@@ -376,3 +376,5 @@ select {
   min-height: 420px;
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--bg);
