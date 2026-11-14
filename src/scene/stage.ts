@@ -706,3 +706,5 @@ export class Stage {
       tw.t = Math.min(tw.dur, tw.t + dt);
       const k = ease(tw.t / tw.dur);
       this.camera.position.lerpVectors(tw.fromPos, tw.toPos, k);
+      this.controls.target.lerpVectors(tw.fromTarget, tw.toTarget, k);
+      if (tw.t >= tw.dur) this.tween = undefined;
