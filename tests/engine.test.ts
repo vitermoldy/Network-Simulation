@@ -192,3 +192,5 @@ describe('simulator', () => {
       if (!pulled) {
         const f = sim.flights.find((x) => x.packet.tcp?.flags.join() === 'SYN' && x.linkId === sim.topo.linkOf('r1.1')?.id);
         if (f) {
+          sim.disconnect(f.linkId);
+          pulled = true;
