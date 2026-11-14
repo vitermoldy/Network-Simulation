@@ -155,3 +155,5 @@ function rockerTexture(): THREE.CanvasTexture {
   ctx.fillStyle = '#f2f3f5';
   ctx.fillRect(29, 12, 6, 26);
   ctx.strokeStyle = '#f2f3f5';
+  ctx.lineWidth = 5;
+  ctx.beginPath();
