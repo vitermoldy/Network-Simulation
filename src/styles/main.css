@@ -1637,3 +1637,5 @@ tbody th {
 
 .ip-form,
 .inline-form {
+  display: flex;
+  flex-wrap: wrap;
