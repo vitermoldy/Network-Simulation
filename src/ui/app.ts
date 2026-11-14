@@ -689,3 +689,5 @@ export class App {
     if (!bc || !bc.canvas.isConnected) return;
     const d = this.sim.topo.device(this.selectedDevice);
     const b = this.sim.browser;
+    const mine = b.deviceId === d.id;
+    const view = !d.powered ? { ...b, state: 'off' as const } : mine ? b : { deviceId: d.id, url: $<HTMLInputElement>('br-url')?.value ?? '', state: 'idle' as const, parts: [false, false, false] };
