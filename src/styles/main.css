@@ -1258,3 +1258,5 @@ select {
   gap: 4px;
 }
 
+.devices li {
+  display: flex;
