@@ -240,3 +240,5 @@ export class Simulator {
   activity = new Map<string, number>();
   /** Every header version a packet has had, oldest first; routers add one per hop. */
   history = new Map<number, Packet[]>();
+  /** Device ids each packet has passed through, for tests and the path view. */
+  trace = new Map<number, string[]>();
