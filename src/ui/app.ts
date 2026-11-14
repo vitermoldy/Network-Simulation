@@ -1284,3 +1284,5 @@ export class App {
   private async recordRun(): Promise<void> {
     const s = this.sim;
     const topo = s.topo;
+    const syn = [...s.history.entries()].find(([, v]) => v[0].tcp?.flags.join() === 'SYN');
+    const path = syn ? (s.trace.get(syn[0]) ?? []).map((id) => (topo.has(id) ? topo.device(id).name : id)) : [];
