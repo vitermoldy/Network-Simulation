@@ -312,3 +312,5 @@ export class Simulator {
       this.version++;
       if (this.stepMode && task.stop) {
         this.pruneLost();
+        return 'step';
+      }
