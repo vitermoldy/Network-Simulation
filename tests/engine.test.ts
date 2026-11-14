@@ -65,3 +65,5 @@ describe('topology', () => {
   it('adds and names devices like Packet Tracer, and refuses overlaps', () => {
     const t = new Topology();
     const a = t.addDevice('pc', -12, 7);
+    const b = t.addDevice('pc', -8, 7);
+    expect(a.name).toBe('PC 1');
