@@ -134,3 +134,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
   for (let i = 0; i < 8; i++) {
     const pin = mesh(new THREE.BoxGeometry(holeW * 0.045, holeH * 0.3, 0.004), shared.pin, false);
     pin.position.set(-holeW * 0.35 + (i * holeW * 0.7) / 7, s * holeH * 0.3, 0.006);
+    group.add(pin);
+  }
