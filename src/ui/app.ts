@@ -544,3 +544,5 @@ export class App {
   private closeDevice(): void {
     const dialog = $<HTMLDialogElement>('devwin');
     if (!dialog.open) return;
+    dialog.close();
+    if (this.viewer) this.viewer.active = false;
