@@ -576,3 +576,5 @@ export class App {
       const { DeviceViewer } = await import('../scene/viewer');
       this.viewer = new DeviceViewer($('viewer'), this.sim, {
         power: (id) => this.togglePower(id),
+        hover: (text) => {
+          const el = $('viewer-hover');
