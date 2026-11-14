@@ -1564,3 +1564,5 @@ export class Simulator {
     for (let i = 0; at && i < 16; i++) {
       const r = lookup(this.routes.get(at), clientIp);
       if (!r || r.type === 'C' || !r.viaRouter) break;
+      chain.push(r.viaRouter);
+      at = r.viaRouter;
