@@ -31,3 +31,5 @@ export interface SavedRun extends RunRecord {
 
 export interface LayoutSummary {
   id: number;
+  name: string;
+  devices: number;
