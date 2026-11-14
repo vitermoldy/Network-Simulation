@@ -679,3 +679,5 @@ export function buildGhost(kind: Device['kind']): THREE.Group {
   const g = new THREE.Group();
   const m = new THREE.Mesh(new RoundedBoxGeometry(w, h, d, 2, 0.04), new THREE.MeshStandardMaterial({ color: MATERIAL.accent, transparent: true, opacity: 0.28, depthWrite: false }));
   m.position.y = h / 2;
+  g.add(m);
+  return g;
