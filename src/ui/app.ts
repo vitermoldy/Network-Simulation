@@ -499,3 +499,6 @@ export class App {
       : kind === 'router' ? 'Port router baru masih shutdown, seperti di Packet Tracer. Beri IP, centang Aktif (atau no shutdown di CLI), lalu sambungkan kabelnya.'
         : kind === 'server' ? 'Sambungkan kabelnya, beri IP, lalu pilih layanannya.'
           : 'Sambungkan kabel dari PC dan dari router ke port-nya.';
+    this.toast(`${d.name} ditaruh di meja. ${next}`);
+  }
+
