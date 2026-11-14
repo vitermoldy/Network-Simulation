@@ -1174,3 +1174,6 @@ select {
   align-items: center;
   gap: 8px;
   font-size: 12px;
+}
+
+.entry-time {
