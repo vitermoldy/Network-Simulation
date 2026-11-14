@@ -983,3 +983,5 @@ export class App {
   }
 
   private onHover(p: Pick | null, x: number, y: number): void {
+    const tip = $('tooltip');
+    if (!p) {
