@@ -22,3 +22,6 @@ interface Edge {
 }
 
 export function computeRoutes(topo: Topology): Map<string, Route[]> {
+  const seg = topo.segments();
+  const routers = [...topo.devices.values()].filter((d) => d.kind === 'router' && d.powered);
+
