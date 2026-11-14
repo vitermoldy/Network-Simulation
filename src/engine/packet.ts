@@ -169,3 +169,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
     row(3, 'ARP', [
       ['Jenis', p.arp.op === 'request' ? 'Permintaan (request)' : 'Balasan (reply)'],
       ['IP pengirim', p.arp.senderIp],
+      ['MAC pengirim', p.arp.senderMac],
+      ['IP yang dicari', p.arp.targetIp],
