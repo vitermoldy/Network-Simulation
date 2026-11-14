@@ -1313,3 +1313,5 @@ export class Simulator {
     this.setPhase('http-req', 'active');
     this.browser.state = 'loading';
     this.browser.message = 'Menunggu jawaban server';
+    this.note('info', this.clientId, 'Permintaan HTTP', `${this.cname} mengirim GET / ke ${c.host} (${c.getLen} byte) di atas sambungan TCP tadi. Ini yang sebenarnya diminta pengguna: halaman utamanya.`, 7);
+    this.reliable('get', 'GET /', dev, (retry) => this.tcpPacket(dev, c.serverIp!, CLIENT_PORT, 80, ['PSH', 'ACK'], CLIENT_ISS + 1, c.rcvNext, 'GET /', 'HTTP GET /: minta halaman', retry, { proto: 'HTTP', lines }, c.getLen),
