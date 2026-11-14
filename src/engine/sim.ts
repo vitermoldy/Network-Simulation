@@ -1055,3 +1055,5 @@ export class Simulator {
     r.tries++;
     r.firedAt = this.time;
     this.hostSend(r.dev, p);
+    if (r.timer) r.timer.cancelled = true;
+    r.timer = this.schedule(this.time + r.rto, () => this.timeout(r), true);
