@@ -1290,3 +1290,5 @@ export class App {
       host: s.browser.url,
       source: topo.has(s.clientId) ? topo.device(s.clientId).name : s.clientId,
       scenario: s.kind === 'web' ? this.runScenario : s.kind === 'ping' ? 'ping' : 'lookup',
+      lossRate: s.lossRate,
+      status: s.status === 'done' ? 'done' : 'failed',
