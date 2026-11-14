@@ -651,3 +651,5 @@ export class Simulator {
     const before = this.routes;
     this.routes = computeRoutes(this.topo);
     this.converging = false;
+    const lines = describeRouteChanges(this.topo, before, this.routes);
+    this.note('route', undefined, 'Rute dihitung ulang', lines.length
