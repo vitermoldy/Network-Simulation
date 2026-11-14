@@ -2142,3 +2142,6 @@ tbody th {
 
 .term-in input:focus {
   outline: none;
+  border-bottom-color: #8fb4ff;
+}
+
