@@ -418,3 +418,5 @@ export class Simulator {
       }
       return dev;
     }
+    const nic = dev.ports[0];
+    const missing = !nic.ip ? 'alamat IP' : !dev.gateway ? 'gateway' : needDns && !dev.dnsServer ? 'server DNS' : '';
