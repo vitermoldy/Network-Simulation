@@ -2356,3 +2356,6 @@ tbody th {
 
   .tool-text {
     padding: 0;
+    justify-content: center;
+  }
+
