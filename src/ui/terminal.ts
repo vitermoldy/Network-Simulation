@@ -218,3 +218,5 @@ export class IosShell implements Shell {
       });
     } else {
       show.push({
+        words: ['show', 'mac', 'address-table'], help: 'tabel MAC switch',
+        run: () => {
