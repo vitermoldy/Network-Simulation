@@ -693,3 +693,5 @@ export class App {
     const view = !d.powered ? { ...b, state: 'off' as const } : mine ? b : { deviceId: d.id, url: $<HTMLInputElement>('br-url')?.value ?? '', state: 'idle' as const, parts: [false, false, false] };
     const key = JSON.stringify(view);
     if (key === bc.key) return;
+    bc.key = key;
+    drawBrowser(bc.ctx, view);
