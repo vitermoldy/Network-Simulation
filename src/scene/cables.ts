@@ -19,3 +19,5 @@ const MARGIN = 0.28;
 
 function segmentHitsBox(a: V2, b: V2, box: Box2): boolean {
   // Slab test on the segment a..b.
+  let t0 = 0;
+  let t1 = 1;
