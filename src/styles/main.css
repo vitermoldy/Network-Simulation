@@ -1480,3 +1480,6 @@ tbody th {
 .layer-head {
   display: flex;
   align-items: baseline;
+  gap: 8px;
+}
+
