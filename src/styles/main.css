@@ -988,3 +988,6 @@ select {
 }
 
 .run-status[data-state="done"] {
+  color: var(--ok);
+}
+
