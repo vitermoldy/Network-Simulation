@@ -200,3 +200,6 @@ describe('simulator', () => {
     expect(pulled).toBe(true);
     expect(sim.status).toBe('done');
     expect(sim.log.some((l) => l.kind === 'loss')).toBe(true);
+    expect(sim.log.some((l) => l.title === 'SYN dikirim ulang')).toBe(true);
+  });
+
