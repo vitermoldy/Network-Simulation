@@ -1074,3 +1074,5 @@ select {
   color: var(--accent);
 }
 
+.phase.is-done .mark,
+.phase.is-done .phase-state {
