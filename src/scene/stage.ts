@@ -578,3 +578,6 @@ export class Stage {
   // ------------------------------------------------------------------ camera
 
   private animateTo(target: THREE.Vector3, position: THREE.Vector3, dur = 0.75): void {
+    this.tween = { t: 0, dur, fromPos: this.camera.position.clone(), toPos: position, fromTarget: this.controls.target.clone(), toTarget: target };
+  }
+
