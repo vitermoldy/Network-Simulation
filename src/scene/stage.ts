@@ -601,3 +601,5 @@ export class Stage {
     const free = {
       left: -1 + (2 * (narrow ? 52 : 150)) / w,
       right: 1 - (2 * (narrow ? 52 : 70)) / w,
+      top: 1 - (2 * (narrow ? 150 : 72)) / h,
+      bottom: -1 + (2 * (narrow ? 80 : 104)) / h,
