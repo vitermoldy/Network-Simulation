@@ -121,3 +121,5 @@ p {
 .skip {
   position: absolute;
   left: var(--gutter);
+  top: -60px;
+  z-index: 50;
