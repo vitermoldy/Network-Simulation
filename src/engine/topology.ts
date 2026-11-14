@@ -242,3 +242,5 @@ export class Topology {
   }
 
   /** "shutdown" / "no shutdown" on one port. */
+  setPortDown(portId: string, down: boolean): void {
+    const p = this.port(portId);
