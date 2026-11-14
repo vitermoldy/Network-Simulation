@@ -228,3 +228,5 @@ export class Simulator {
   phases: Phase[] = PHASES.map((p) => ({ ...p, status: 'waiting' }));
   log: LogEntry[] = [];
   flights: Flight[] = [];
+  holds: Hold[] = [];
+  lost: LostMark[] = [];
