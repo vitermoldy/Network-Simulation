@@ -956,3 +956,5 @@ export class Simulator {
   private hostSend(dev: Device, p: Packet): void {
     if (!dev.powered || this.status !== 'running') return;
     const nic = dev.ports[0];
+    const dst = p.ip!.dst;
+    if (!nic.ip || nic.prefix === undefined) {
