@@ -1448,3 +1448,5 @@ export class App {
   }
 
   private renderDeviceList(): void {
+    const topo = this.sim.topo;
+    const html = [...topo.devices.values()].map((d) => {
