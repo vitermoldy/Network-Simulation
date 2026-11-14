@@ -54,3 +54,5 @@ Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan r
 | Keputusan | Alasan |
 | --- | --- |
 | Mesin simulasi berbasis event, sendiri, di TypeScript | Setiap keputusan perangkat (switch membaca MAC, router mencocokkan rute, TCP mengirim ulang) harus bisa diceritakan dan bereaksi saat kabel dicabut di tengah jalan. |
+| Routing link-state otomatis dengan jeda konvergensi 2,5 detik | Memperlihatkan paket yang hilang selama router belum sepakat, lalu jalur baru. |
+| Zona Input, Proses, Output di lantai, dihitung dari posisi perangkat | Pemilik meminta alur input proses output; zona ikut bergeser saat perangkat dipindah atau ditambah. |
