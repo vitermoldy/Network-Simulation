@@ -196,3 +196,5 @@ describe('simulator', () => {
           pulled = true;
         }
       }
+    }
+    expect(pulled).toBe(true);
