@@ -1676,3 +1676,5 @@ tbody th {
 }
 
 .slash {
+  color: var(--muted);
+  font-family: var(--font-mono);
