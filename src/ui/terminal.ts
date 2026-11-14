@@ -372,3 +372,5 @@ export class IosShell implements Shell {
       const c = cmds.find((x) => x.words.join(' ') === 'show mac address-table');
       if (c) return c.run([]);
     }
+    if (!best.length) {
+      return [`% Invalid input detected at '^' marker.`, `  ${' '.repeat(this.prompt().length)}^`, 'Ketik ? untuk melihat perintah di mode ini.'];
