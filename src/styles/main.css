@@ -456,3 +456,5 @@ select {
   color: var(--accent);
 }
 
+.tag-off {
+  display: none;
