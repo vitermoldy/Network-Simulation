@@ -37,3 +37,5 @@ export class DeviceViewer {
     canvas.className = 'viewer-canvas';
     canvas.tabIndex = 0;
     canvas.setAttribute('role', 'img');
+    host.appendChild(canvas);
+    this.controls = new OrbitControls(this.camera, canvas);
