@@ -26,3 +26,5 @@ describe('ip', () => {
   });
 });
 
+describe('topology', () => {
+  it('starts with the default cables, Cisco-style port names, and refuses bad plugs', () => {
