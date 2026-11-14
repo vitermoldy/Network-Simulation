@@ -20,3 +20,5 @@ export interface Port {
 
 /** Cisco-style long names for the CLI: Fa0/1 is FastEthernet0/1, G0/0 is GigabitEthernet0/0. */
 export function longPortName(name: string): string {
+  if (/^Fa/i.test(name)) return name.replace(/^Fa/i, 'FastEthernet');
+  if (/^Gi/i.test(name)) return name.replace(/^Gi/i, 'GigabitEthernet');
