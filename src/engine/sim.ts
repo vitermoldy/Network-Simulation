@@ -1300,3 +1300,5 @@ export class Simulator {
     this.note('info', this.clientId, 'Langkah 1: SYN', `${this.cname} membuka sambungan TCP ke ${c.serverIp} port 80. Langkah 1 dari 3: kirim SYN dengan nomor urut ${CLIENT_ISS}. Kalau tidak dibalas dalam ${fmt(RTO_INIT)}, SYN dikirim ulang.`, 4);
     this.reliable('syn', 'SYN', dev, (retry) => {
       if (retry) c.synRetried = true;
+      return this.tcpPacket(dev, c.serverIp!, CLIENT_PORT, 80, ['SYN'], CLIENT_ISS, 0, 'SYN', 'TCP SYN: minta sambungan', retry);
+    }, RTO_INIT, MAX_TCP_TRIES, () => this.fail('tcp-open', `Server web tidak membalas SYN setelah ${MAX_TCP_TRIES} kali. Mungkin server mati atau tidak ada jalur ke sana.`, this.clientId));
