@@ -232,3 +232,5 @@ export class IosShell implements Shell {
         if (!isRouter) return ['% Switch di simulasi ini tidak punya alamat IP, jadi tidak bisa ping. Coba dari router atau PC.'];
         if (!args[0] || !/^\d+\.\d+\.\d+\.\d+$/.test(args[0])) return ['% Gunakan: ping <alamat IP>, misalnya ping 10.0.12.2'];
         const why = this.host.run('ping', d.id, args[0]);
+        return why ? [why] : [''];
+      },
