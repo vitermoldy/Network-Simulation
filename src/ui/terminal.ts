@@ -178,3 +178,5 @@ export class IosShell implements Shell {
         run: () => {
           const out = ['Building configuration...', '', 'Current configuration:', '!', `hostname ${this.hostname}`, '!'];
           for (const p of d.ports) {
+            out.push(`interface ${longPortName(p.name)}`);
+            if (p.ip && p.prefix !== undefined) out.push(` ip address ${p.ip} ${prefixToMask(p.prefix)}`);
