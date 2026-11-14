@@ -647,3 +647,5 @@ export class Simulator {
     this.version++;
   }
 
+  private converge(): void {
+    const before = this.routes;
