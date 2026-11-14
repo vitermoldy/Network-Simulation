@@ -722,3 +722,5 @@ export class Stage {
         this.controls.target.add(delta);
         this.camera.position.add(delta);
       }
+    }
+    this.controls.update();
