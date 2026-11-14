@@ -1244,3 +1244,5 @@ export class Simulator {
     if (t.seq === c.rcvNext) {
       c.rcvNext += t.len;
       this.browser.parts[part - 1] = true;
+      const delivered = [part];
+      while (c.buffer.has(c.rcvNext)) {
