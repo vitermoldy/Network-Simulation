@@ -74,3 +74,6 @@ function cleanRun(run) {
       at,
     ],
   }
+}
+
+/** The pool appears once MySQL answers; until then the API says so instead of hanging. */
