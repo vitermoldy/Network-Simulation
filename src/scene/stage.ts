@@ -883,3 +883,5 @@ export class Stage {
   private updateMarker(): void {
     const id = this.selected.deviceId;
     const v = id ? this.devices.get(id) : undefined;
+    const key = v ? `${id}:${v.group.position.x.toFixed(2)}:${v.group.position.z.toFixed(2)}` : '';
+    if (key === this.markerKey) return;
