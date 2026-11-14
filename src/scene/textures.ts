@@ -112,3 +112,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   ctx.beginPath();
   ctx.roundRect(24, 16, W - 48, 46, 23);
   ctx.fill();
+  ctx.fillStyle = '#5d6470';
+  ctx.font = `500 22px ${FONT_MONO}`;
