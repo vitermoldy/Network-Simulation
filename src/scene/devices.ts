@@ -377,3 +377,5 @@ function buildRouter(dev: Device): Build {
   group.add(panel);
 
   // Two blank module plates with screws.
+  for (const px of [-0.42, 0.0]) {
+    const plate = mesh(new THREE.BoxGeometry(0.36, 0.3, 0.02), shared.plate, false);
