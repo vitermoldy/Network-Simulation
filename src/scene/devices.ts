@@ -356,3 +356,5 @@ function buildRouter(dev: Device): Build {
     p.ctx.fillStyle = '#17191c';
     p.ctx.fillRect(0, 0, w * p.scale, h * p.scale);
     // Honeycomb vents on the left.
+    p.ctx.fillStyle = '#2b2f35';
+    for (let r = 0; r < 6; r++) {
