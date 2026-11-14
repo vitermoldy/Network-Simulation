@@ -30,3 +30,5 @@ export interface FacePrinter {
 }
 
 /** A transparent texture laid over a device face for its printed labels. */
+export function printFace(w: number, h: number, draw: (p: FacePrinter) => void): THREE.CanvasTexture {
+  const scale = Math.min(420, 1600 / w);
