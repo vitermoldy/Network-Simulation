@@ -2185,3 +2185,6 @@ tbody th {
   /* One screen tall on desktop; clip (not hidden) so focus and scrollIntoView can never shift it. */
   html,
   body {
+    overflow: clip;
+  }
+
