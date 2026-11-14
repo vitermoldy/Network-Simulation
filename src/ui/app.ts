@@ -1055,3 +1055,6 @@ export class App {
     this.toastTimer = window.setTimeout(() => {
       t.hidden = true;
     }, 4800);
+  }
+
+  private showTab(tab: Tab): void {
