@@ -191,3 +191,5 @@ export class DeviceViewer {
       this.home = { target: centre, position: centre.clone().addScaledVector(dir, dist) };
       this.controls.target.copy(this.home.target);
       this.camera.position.copy(this.home.position);
+    }
+    this.key = `${topo.rev}|${signatureOf(live)}`;
