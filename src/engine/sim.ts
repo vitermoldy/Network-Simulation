@@ -1400,3 +1400,5 @@ export class Simulator {
 
   /** Any host or router answers an echo request addressed to it. */
   private icmpReply(dev: Device, p: Packet): void {
+    const req = p.icmp!;
+    this.note('info', dev.id, `${dev.name} membalas ping`, `Echo request ${req.seq} dari ${p.ip!.src} sampai. ${dev.name} membalas dengan echo reply bernomor sama.`, 3, p.id);
