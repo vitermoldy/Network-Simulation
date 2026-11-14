@@ -118,3 +118,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   ctx.textAlign = 'left';
   ctx.fillText(`http://${view.url}/`, 50, 40);
   const busy = view.state === 'resolving' || view.state === 'connecting' || view.state === 'loading';
+  if (busy) {
+    const done = view.parts.filter(Boolean).length;
