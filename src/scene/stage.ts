@@ -218,3 +218,5 @@ export class Stage {
 
   refreshText(): void {
     this.layoutKey = '';
+    for (const v of this.devices.values()) if (v.screen) v.screen.key = '';
+    for (const v of [...this.devices.values()]) this.rebuildDevice(v.device.id);
