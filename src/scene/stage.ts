@@ -485,3 +485,6 @@ export class Stage {
       const point = new THREE.Vector3();
       if (this.raycaster.ray.intersectPlane(this.floorPlane, point)) this.drawDangling(point);
     }
+  }
+
+  private setHover(pick: Pick | null, x: number, y: number): void {
