@@ -1388,3 +1388,5 @@ td {
   border-bottom: 1px solid var(--line);
 }
 
+thead th {
+  font-size: 12px;
