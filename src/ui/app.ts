@@ -1426,3 +1426,5 @@ export class App {
 
   private roleFromLog(): Role | undefined {
     for (let i = this.sim.log.length - 1; i >= 0; i--) {
+      const id = this.sim.log[i].deviceId;
+      if (id && this.sim.topo.has(id)) return roleOf(this.sim.topo.device(id));
