@@ -232,3 +232,6 @@ export class Stage {
     this.camera.updateProjectionMatrix();
   }
 
+  // ------------------------------------------------------------------ devices and cables
+
+  private addTag(view: DeviceView): void {
