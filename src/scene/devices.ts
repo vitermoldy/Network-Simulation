@@ -391,3 +391,6 @@ function buildRouter(dev: Device): Build {
   // Console port: real looking, not part of the data network.
   const con = buildPort(`${dev.id}.con`, 0.15, 0.115, 0x6aa5d8);
   con.group.remove(con.hit);
+  con.group.position.set(1.32, 0.3, z);
+  group.add(con.group);
+
