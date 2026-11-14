@@ -479,3 +479,5 @@ export class Stage {
       }
       return;
     }
+    const pick = this.cast(e);
+    this.setHover(pick, e.clientX, e.clientY);
