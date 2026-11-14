@@ -527,3 +527,5 @@ select {
   transition: background-color 0.15s ease, transform 0.12s ease;
 }
 
+.tool:hover {
+  background: var(--surface);
