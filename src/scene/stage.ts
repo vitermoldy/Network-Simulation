@@ -418,3 +418,5 @@ export class Stage {
     const out: THREE.Object3D[] = [];
     for (const v of this.devices.values()) {
       out.push(v.powerHit, ...v.hits);
+      for (const p of v.ports.values()) out.push(p.hit);
+    }
