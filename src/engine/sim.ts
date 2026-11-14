@@ -540,3 +540,5 @@ export class Simulator {
       }
     } else if (deviceId === this.browser.deviceId && this.browser.state === 'off') {
       this.browser.state = 'idle';
+    }
+    if (this.status === 'running') {
