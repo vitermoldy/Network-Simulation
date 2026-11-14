@@ -1583,3 +1583,5 @@ export class App {
         <button type="submit" class="btn btn-small btn-ghost">Ganti nama</button>
         <p class="form-error" hidden></p>
       </form>
+      <p class="dev-role">${KIND_LABEL[d.kind]}. ${ROLE_TEXT[roleOf(d)]}</p>
+      <p class="dev-kind">${KIND_TEXT[d.kind]}</p>
