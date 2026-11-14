@@ -1413,3 +1413,5 @@ export class App {
       const on = li.dataset.role === role && this.sim.status !== 'idle';
       li.classList.toggle('is-now', on);
       if (on) li.setAttribute('aria-current', 'step');
+      else li.removeAttribute('aria-current');
+    });
