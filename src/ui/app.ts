@@ -1342,3 +1342,6 @@ export class App {
     else if (s.status === 'done') text = `Selesai. Halaman ${s.browser.url} tampil di layar pengirim.`;
     else text = `Berhenti: ${s.browser.message ?? 'permintaan gagal.'}`;
     if (el.textContent !== text) el.textContent = text;
+    el.dataset.state = s.status;
+  }
+
