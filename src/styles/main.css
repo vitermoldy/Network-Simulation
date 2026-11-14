@@ -1625,3 +1625,5 @@ tbody th {
 
 .port-name {
   min-width: 46px;
+  font-size: 13px;
+  font-weight: 600;
