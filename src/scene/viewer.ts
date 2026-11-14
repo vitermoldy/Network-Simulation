@@ -198,3 +198,6 @@ export class DeviceViewer {
   zoom(factor: number): void {
     const off = this.camera.position.clone().sub(this.controls.target);
     off.setLength(Math.min(14, Math.max(0.8, off.length() * factor)));
+    this.camera.position.copy(this.controls.target).add(off);
+  }
+
