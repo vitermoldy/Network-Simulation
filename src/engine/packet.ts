@@ -69,3 +69,5 @@ export interface Packet {
   label: string;
   /** One line for the log and the inspector. */
   title: string;
+  eth: EthHeader;
+  arp?: ArpBody;
