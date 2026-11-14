@@ -601,3 +601,5 @@ export class Simulator {
       const link = this.topo.linkOf(p.id);
       if (link) this.cutLink(link.id, `${dev.name} diangkat dari meja saat paket masih di kabel.`);
     }
+    for (const h of [...this.holds]) if (h.deviceId === id) this.loseHold(h, `${dev.name} diangkat dari meja.`);
+    this.lost = this.lost.filter((l) => l.deviceId !== id);
