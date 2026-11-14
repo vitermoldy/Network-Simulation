@@ -366,3 +366,5 @@ export class Stage {
     for (const role of order) {
       const r = rects.get(role);
       if (!r) continue;
+      const x0 = r.x0 - 0.75;
+      const x1 = r.x1 + 0.75;
