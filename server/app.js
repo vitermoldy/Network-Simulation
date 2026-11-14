@@ -23,3 +23,5 @@ const MAX_LAYOUT = 512 * 1024
 function sameOriginWrites(req, res, next) {
   if (req.method === 'GET' || req.method === 'HEAD') return next()
   if (req.method !== 'DELETE' && !req.is('application/json')) return res.status(415).json({ error: 'Kirim data sebagai JSON.' })
+  const origin = req.headers.origin
+  if (origin && req.headers.host && new URL(origin).host !== req.headers.host) return res.status(403).json({ error: 'Asal permintaan tidak dikenal.' })
