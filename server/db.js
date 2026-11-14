@@ -43,3 +43,6 @@ const TABLES = [
     updated_at DATETIME NOT NULL,
     UNIQUE KEY layouts_name (client_id, name),
     CONSTRAINT layouts_client FOREIGN KEY (client_id) REFERENCES clients(id) ON DELETE CASCADE
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
+]
+
