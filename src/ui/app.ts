@@ -199,3 +199,5 @@ export class App {
     $<HTMLSelectElement>('scenario').addEventListener('change', (e) => {
       const v = (e.target as HTMLSelectElement).value as Scenario;
       const url = $<HTMLInputElement>('url');
+      if (v === 'bad-domain') url.value = 'www.tidakada.test';
+      else if (url.value === 'www.tidakada.test') url.value = 'www.jaringan.test';
