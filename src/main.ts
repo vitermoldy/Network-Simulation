@@ -25,3 +25,5 @@ void app.init(async () => {
   await Promise.race([fonts, new Promise((r) => setTimeout(r, 1500))]);
   const { Stage } = await import('./scene/stage');
   stage = new Stage(document.getElementById('stage')!, sim, app.stageEvents());
+  return stage;
+});
