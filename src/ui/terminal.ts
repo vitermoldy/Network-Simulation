@@ -285,3 +285,5 @@ export class IosShell implements Shell {
     const list: Command[] = [
       {
         words: ['ip', 'address'], help: 'ip address <IP> <subnet mask>',
+        run: (args) => {
+          if (!isRouter) return ['% Port switch tidak diberi IP di simulasi ini.'];
