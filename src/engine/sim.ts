@@ -1007,3 +1007,5 @@ export class Simulator {
       flow: 'arp', label: retry ? 'ARP? (ulang)' : 'ARP?', title: `ARP: siapa punya ${ip}?`,
       eth: { src: nic.mac, dst: BROADCAST, type: 'ARP' },
       arp: { op: 'request', senderMac: nic.mac, senderIp: nic.ip!, targetMac: '00:00:00:00:00:00', targetIp: ip },
+      size: 42, retry,
+    });
