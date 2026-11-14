@@ -10,3 +10,5 @@
     <script>
       try {
         const t = localStorage.getItem('netsim-theme');
+        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      } catch {}
