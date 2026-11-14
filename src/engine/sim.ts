@@ -528,3 +528,5 @@ export class Simulator {
         const link = this.topo.linkOf(p.id);
         if (link) this.cutLink(link.id, `${dev.name} dimatikan saat paket masih di kabel.`);
       }
+      for (const h of [...this.holds]) {
+        if (h.deviceId === deviceId) this.loseHold(h, `${dev.name} dimatikan saat paket sedang diproses di dalamnya.`);
