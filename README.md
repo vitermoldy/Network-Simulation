@@ -26,3 +26,5 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
   - Config: nama, IP per port, port aktif atau shutdown, gateway, DNS, layanan server, catatan DNS.
   - Desktop (PC, laptop): IP Configuration, Command Prompt (`ipconfig`, `ping`, `arp -a`, `nslookup`),
     Web Browser.
+  - CLI (router, switch): `enable`, `configure terminal`, `interface`, `ip address`, `shutdown`,
+    `no shutdown`, `hostname`, `show ip interface brief`, `show ip route`, `show mac address-table`,
