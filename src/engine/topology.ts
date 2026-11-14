@@ -417,3 +417,5 @@ export class Topology {
     const size = 2 ** (32 - gw.prefix);
     let pick: string | undefined;
     for (let i = 10; i < size - 1 && !pick; i++) {
+      const cand = [(net + i) >>> 24 & 255, (net + i) >>> 16 & 255, (net + i) >>> 8 & 255, (net + i) & 255].join('.');
+      if (!used.has(cand)) pick = cand;
