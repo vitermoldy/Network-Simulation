@@ -1246,3 +1246,5 @@ export class Simulator {
       this.browser.parts[part - 1] = true;
       const delivered = [part];
       while (c.buffer.has(c.rcvNext)) {
+        const b = c.buffer.get(c.rcvNext)!;
+        c.buffer.delete(c.rcvNext);
