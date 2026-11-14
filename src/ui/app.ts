@@ -595,3 +595,5 @@ export class App {
     const topo = this.sim.topo;
     if (!topo.has(this.selectedDevice)) {
       this.closeDevice();
+      return;
+    }
