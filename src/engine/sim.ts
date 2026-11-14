@@ -21,3 +21,5 @@ export const TIMING = {
 const RTO_INIT = 16;
 const DNS_RTO = 11;
 const ARP_RTO = 5;
+const MAX_TCP_TRIES = 5;
+const MAX_DNS_TRIES = 3;
