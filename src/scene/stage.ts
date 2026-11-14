@@ -239,3 +239,5 @@ export class Stage {
     el.className = 'tag';
     el.setAttribute('aria-hidden', 'true');
     el.innerHTML = '<span class="tag-role"></span><span class="tag-name"></span><span class="tag-ip"></span><span class="tag-off">Mati</span>';
+    view.tagAnchor.add(new CSS2DObject(el));
+    this.tags.set(view.device.id, el);
