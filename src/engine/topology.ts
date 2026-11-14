@@ -98,3 +98,5 @@ interface DeviceSpec {
   dnsRecords?: Record<string, string>;
 }
 
+export const DEFAULT_RECORDS: Record<string, string> = {
+  'www.jaringan.test': '203.0.113.80',
