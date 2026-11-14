@@ -175,3 +175,5 @@ export class Stage {
 
     this.floorMat = new THREE.MeshStandardMaterial({ color: this.theme.floor, roughness: 0.95 });
     const floor = new THREE.Mesh(new THREE.PlaneGeometry(140, 140), this.floorMat);
+    floor.rotation.x = -Math.PI / 2;
+    floor.receiveShadow = true;
