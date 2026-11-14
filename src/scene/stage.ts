@@ -581,3 +581,5 @@ export class Stage {
     this.tween = { t: 0, dur, fromPos: this.camera.position.clone(), toPos: position, fromTarget: this.controls.target.clone(), toTarget: target };
   }
 
+  /** Frames every device on the bench. */
+  fitView(animate = true): void {
