@@ -542,3 +542,5 @@ export class Topology {
   segments(): Map<string, number> {
     const parent = new Map<string, string>();
     const find = (x: string): string => {
+      let r = x;
+      while (parent.get(r) !== r) r = parent.get(r)!;
