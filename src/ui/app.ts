@@ -332,3 +332,5 @@ export class App {
         this.followLatest = true;
         this.selectedPacket = null;
         this.packetKey = '';
+        this.renderPacket();
+      }
