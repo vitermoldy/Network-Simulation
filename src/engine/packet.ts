@@ -81,3 +81,5 @@ export interface Packet {
   retry: number;
   /** Cables travelled so far. */
   hops: number;
+  /** Set on the extra copies a switch makes when it floods. */
+  copyOf?: number;
