@@ -1339,3 +1339,5 @@ export class Simulator {
 
   // ------------------------------------------------------------------ ping (ICMP)
 
+  /** Sends from whatever the device is: a host through its card, a router through its routing table. */
+  private sendFrom(dev: Device, p: Packet): void {
