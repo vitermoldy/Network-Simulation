@@ -526,3 +526,5 @@ export class Topology {
     this.links.clear();
     this.portIndex.clear();
     this.portLink.clear();
+    for (const d of devices) this.insert(d);
+    for (const pair of t.links) {
