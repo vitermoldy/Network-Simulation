@@ -2376,3 +2376,6 @@ tbody th {
   .flow {
     left: 8px;
     right: 8px;
+    gap: 14px;
+  }
+
