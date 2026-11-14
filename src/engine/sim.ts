@@ -25,3 +25,5 @@ const MAX_TCP_TRIES = 5;
 const MAX_DNS_TRIES = 3;
 const MAX_ARP_TRIES = 3;
 const CLIENT_PORT = 49152;
+const DNS_PORT_CLIENT = 53001;
+const CLIENT_ISS = 1000;
