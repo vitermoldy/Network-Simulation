@@ -46,3 +46,5 @@ export class DeviceViewer {
     this.controls.maxDistance = 14;
 
     this.scene.add(new THREE.HemisphereLight(0xffffff, 0xc4c9d0, 1.5));
+    const key = new THREE.DirectionalLight(0xffffff, 1.6);
+    key.position.set(3, 6, 5);
