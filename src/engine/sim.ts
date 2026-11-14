@@ -503,3 +503,5 @@ export class Simulator {
     this.retx.clear();
     for (const a of this.arpPending.values()) if (a.timer) a.timer.cancelled = true;
     this.arpPending.clear();
+    if (this.kind === 'web' && this.browser.state !== 'off') {
+      this.browser.state = 'error';
