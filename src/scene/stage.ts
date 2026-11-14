@@ -20,3 +20,6 @@ export interface StageEvents {
   hover: (p: Pick | null, x: number, y: number) => void;
   place: (kind: DeviceKind, x: number, z: number) => void;
   /** Returns false to send the device back where it was. */
+  move: (deviceId: string, x: number, z: number) => boolean;
+}
+
