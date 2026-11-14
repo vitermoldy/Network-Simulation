@@ -526,3 +526,5 @@ export class Simulator {
     if (!on) {
       for (const p of dev.ports) {
         const link = this.topo.linkOf(p.id);
+        if (link) this.cutLink(link.id, `${dev.name} dimatikan saat paket masih di kabel.`);
+      }
