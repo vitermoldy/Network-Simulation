@@ -330,3 +330,5 @@ function buildSwitch(dev: Device): Build {
     group.add(l);
     if (i === 0) leds.push(l);
     else b.busy.push(l);
+  }
+  const mode = mesh(new THREE.BoxGeometry(0.07, 0.05, 0.03), shared.rocker, false);
