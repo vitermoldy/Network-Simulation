@@ -225,3 +225,5 @@ describe('simulator', () => {
   it('runs from a PC added by hand that got its address automatically', () => {
     const sim = withScenario('normal');
     const pc = sim.addDevice('pc', -12, 7);
+    expect(sim.connect(pc.ports[0].id, 'sw.1').ok).toBe(true);
+    const r = sim.edit((t) => t.autoAddress(pc.id));
