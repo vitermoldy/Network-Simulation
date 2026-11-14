@@ -331,3 +331,5 @@ export class Stage {
       for (const p of [pa, pb]) group.add(buildPlug(p, mat));
       group.traverse((o) => {
         o.userData.pick = pick;
+      });
+      this.scene.add(group);
