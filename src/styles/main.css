@@ -627,3 +627,5 @@ select {
   top: 12px;
   left: 88px;
   width: min(360px, calc(100% - 24px));
+  padding: 16px;
+  background: var(--panel);
