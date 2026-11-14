@@ -286,3 +286,5 @@ function buildSwitch(dev: Device): Build {
 
   const panel = frontPanel(w, h, (p) => {
     const [x0] = p.px(-w / 2, 0);
+    const [x1] = p.px(sysEnd, 0);
+    const [x2] = p.px(w / 2, 0);
