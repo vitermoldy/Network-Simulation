@@ -579,3 +579,5 @@ function buildLaptop(dev: Device): Build {
     m.rotation.x = -Math.PI / 2;
     m.position.set(x, baseH + 0.003, zz);
     group.add(m);
+  };
+  label('POWER', w / 2 - 0.62, -0.52, 0.5);
