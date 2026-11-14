@@ -891,3 +891,5 @@ export class App {
   private togglePower(id: string): void {
     const dev = this.sim.topo.device(id);
     this.sim.setPower(id, !dev.powered);
+    this.toast(dev.powered ? `${dev.name} dinyalakan.` : `${dev.name} dimatikan. Kabelnya tidak lagi membawa sinyal.`);
+    this.deviceKey = '';
