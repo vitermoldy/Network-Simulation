@@ -608,3 +608,5 @@ select {
 }
 
 .pal:hover:not(:disabled) {
+  background: var(--surface);
+  transform: translateY(-1px);
