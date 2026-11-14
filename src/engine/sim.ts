@@ -776,3 +776,5 @@ export class Simulator {
     if (!t) {
       t = new Map();
       this.macTables.set(id, t);
+    }
+    return t;
