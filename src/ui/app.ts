@@ -1598,3 +1598,6 @@ export class App {
 
   private currentPacket(): Packet | undefined {
     if (!this.followLatest && this.selectedPacket !== null) return this.sim.packet(this.selectedPacket);
+    return this.stage?.leadPacket ?? this.sim.flights[this.sim.flights.length - 1]?.packet ?? this.sim.holds[this.sim.holds.length - 1]?.packet;
+  }
+
