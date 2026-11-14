@@ -1036,3 +1036,5 @@ export class Simulator {
         if (!dev.powered || this.status !== 'running') return;
         p.eth = { src: nic.mac, dst: mac, type: 'IPv4' };
         this.emit(nic.id, p);
+      });
+    });
