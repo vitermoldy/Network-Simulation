@@ -1128,3 +1128,5 @@ export class Simulator {
     const q = p.app?.dns;
     if (!q || p.udp?.dst !== 53) return;
     const answer = dev.dnsRecords?.[q.question];
+    this.note(answer ? 'info' : 'error', dev.id, 'Server DNS mencari nama', answer
+      ? `Server DNS mencari ${q.question} di catatannya dan menemukannya: ${answer}. Jawaban dikirim balik ke penanya.`
