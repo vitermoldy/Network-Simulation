@@ -224,3 +224,5 @@ function placeholder(ctx: CanvasRenderingContext2D, x: number, y: number, w: num
 export function drawZoneLabel(ctx: CanvasRenderingContext2D, w: number, h: number, title: string, sub: string, color: string, muted: string): void {
   ctx.clearRect(0, 0, w, h);
   ctx.textAlign = 'center';
+  ctx.textBaseline = 'alphabetic';
+  ctx.fillStyle = color;
