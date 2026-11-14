@@ -537,3 +537,5 @@ export class App {
     this.portsKey = '';
     this.desktopKey = '';
     this.showDwTab(tab);
+    this.renderDeviceList();
+    $(`dwt-${tab}`).focus();
