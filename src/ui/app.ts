@@ -820,3 +820,5 @@ export class App {
     });
     input.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowUp' && t.history.length) {
+        t.index = Math.max(0, t.index - 1);
+        input.value = t.history[t.index] ?? '';
