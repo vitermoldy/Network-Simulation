@@ -188,3 +188,5 @@ export class Topology {
     };
     if (kind === 'server') {
       d.services = { dns: false, http: true };
+      d.dnsRecords = {};
+    }
