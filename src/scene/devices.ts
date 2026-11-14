@@ -50,3 +50,5 @@ export interface DeviceView {
   topLocal: THREE.Vector3;
   half: { x: number; z0: number; z1: number };
   screen?: { ctx: CanvasRenderingContext2D; texture: THREE.CanvasTexture; key: string };
+  /** What the model was built from; a change rebuilds it. */
+  signature: string;
