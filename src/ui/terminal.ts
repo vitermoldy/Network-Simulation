@@ -8,3 +8,5 @@ import type { Simulator } from '../engine/sim';
 import { longPortName, type Device, type Port } from '../engine/topology';
 
 export interface ShellHost {
+  sim: Simulator;
+  /** Starts a ping or nslookup run from this device; returns a reason when it cannot. */
