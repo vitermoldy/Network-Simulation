@@ -131,3 +131,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     ctx.fillStyle = '#5d6470';
     ctx.font = `500 30px ${FONT_TEXT}`;
     ctx.textAlign = 'center';
+    ctx.fillText('Ketik alamat, lalu tekan', W / 2, body(220));
+    ctx.fillText('Kirim permintaan', W / 2, body(262));
