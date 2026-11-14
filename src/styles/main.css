@@ -448,3 +448,6 @@ select {
   font-weight: 600;
   color: var(--muted);
   padding-right: 6px;
+  border-right: 1px solid var(--line-strong);
+}
+
