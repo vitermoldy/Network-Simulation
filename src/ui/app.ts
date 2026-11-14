@@ -810,3 +810,5 @@ export class App {
         t.lines = [];
         out.textContent = '';
       } else {
+        this.termWrite(deviceId, t.shell.exec(line));
+      }
