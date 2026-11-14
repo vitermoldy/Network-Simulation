@@ -2397,3 +2397,5 @@ tbody th {
   }
 
   .speed {
+    width: 100%;
+    flex-wrap: wrap;
