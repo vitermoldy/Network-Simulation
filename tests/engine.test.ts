@@ -343,3 +343,5 @@ describe('ping and nslookup', () => {
   });
 
   it('starts a new router with every port shut down, as Packet Tracer does', () => {
+    const t = new Topology();
+    const r = t.addDevice('router', 20, 20);
