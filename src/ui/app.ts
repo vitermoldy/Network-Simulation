@@ -1096,3 +1096,5 @@ export class App {
       } else if (act === 'plug') {
         const sel = document.getElementById(`to-${b.dataset.port!}`) as HTMLSelectElement | null;
         if (!sel?.value) {
+          this.toast('Pilih dulu port tujuan di daftar sebelah tombol Pasang.');
+          sel?.focus();
