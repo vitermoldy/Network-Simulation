@@ -63,3 +63,5 @@ export function keyboardTexture(): THREE.CanvasTexture {
       ctx.fillStyle = '#3a3e45';
       ctx.beginPath();
       ctx.roundRect(82 + off + i * kw, 102 + r * 53, kw - 8, 44, 6);
+      ctx.fill();
+    }
