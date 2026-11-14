@@ -2067,3 +2067,6 @@ tbody th {
   border-radius: var(--r);
   background: var(--bg);
   margin-bottom: 10px;
+}
+
+.browser-bar input {
