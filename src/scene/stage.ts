@@ -563,3 +563,5 @@ export class Stage {
     }
     if (kind) {
       const group = buildGhost(kind);
+      group.position.copy(this.controls.target).setY(0);
+      this.scene.add(group);
