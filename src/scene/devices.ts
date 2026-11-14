@@ -564,3 +564,5 @@ function buildLaptop(dev: Device): Build {
   for (const [m, dz] of [[link, -0.15], [act, 0.15]] as const) {
     m.rotation.y = Math.PI / 2;
     m.position.set(w / 2 + 0.01, baseH / 2, 0.22 + dz);
+    group.add(m);
+  }
