@@ -750,3 +750,5 @@ export class Stage {
 
   private updateCables(): void {
     const busy = new Set(this.sim.flights.map((f) => f.linkId));
+    for (const c of this.cables.values()) {
+      const selected = this.selected.linkId === c.linkId;
