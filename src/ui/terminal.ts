@@ -237,3 +237,5 @@ export class IosShell implements Shell {
     };
     const help = (list: Command[]) => (): string[] => list.map((c) => `  ${pad(c.words.join(' '), 32)}${c.help}`);
 
+    if (this.mode === 'user') {
+      const list: Command[] = [
