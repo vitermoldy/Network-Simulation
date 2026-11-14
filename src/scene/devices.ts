@@ -443,3 +443,5 @@ function buildServer(dev: Device): Build {
       const [x0, y0] = p.px(-0.36, 0.24 - i * 0.026);
       p.ctx.fillStyle = 'rgba(40,44,50,0.3)';
       p.ctx.fillRect(x0, y0, 0.72 * p.scale, 0.009 * p.scale);
+    }
+  });
