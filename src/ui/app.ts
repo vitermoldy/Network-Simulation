@@ -785,3 +785,5 @@ export class App {
     this.sim.edit(() => undefined);
     this.deviceKey = '';
     this.portsKey = '';
+    this.sourceKey = '';
+    this.renderAll();
