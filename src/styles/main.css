@@ -1755,3 +1755,5 @@ tbody th {
   border-radius: var(--r);
 }
 
+.layout-info {
+  flex: 1;
