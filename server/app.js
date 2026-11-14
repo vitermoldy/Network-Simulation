@@ -48,3 +48,5 @@ const text = (v, max) => (typeof v === 'string' ? v.slice(0, max) : '')
 const count = (v) => (Number.isInteger(v) && v >= 0 && v < 1e6 ? v : 0)
 
 /** Checks a run from the browser; returns the row values or a reason. */
+function cleanRun(run) {
+  if (!run || typeof run !== 'object') return { error: 'Data percobaan kosong.' }
