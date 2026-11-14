@@ -24,3 +24,6 @@ export function longPortName(name: string): string {
   if (/^Gi/i.test(name)) return name.replace(/^Gi/i, 'GigabitEthernet');
   if (/^G/i.test(name)) return name.replace(/^G/i, 'GigabitEthernet');
   return name;
+}
+
+export interface Services {
