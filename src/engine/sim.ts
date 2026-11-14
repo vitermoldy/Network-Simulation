@@ -1501,3 +1501,5 @@ export class Simulator {
     }
 
     if (s.state === 'last-ack' && has('ACK') && t.ack === SERVER_ISS + 2 + RESPONSE_LEN) {
+      this.acked('finack');
+      s.state = 'closed';
