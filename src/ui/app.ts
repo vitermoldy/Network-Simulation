@@ -485,3 +485,5 @@ export class App {
     const hit = this.sim.topo.overlaps(kind, x, z);
     if (hit) {
       this.toast(`Tempat itu terlalu dekat dengan ${hit.name}. Pilih tempat yang lebih lega.`);
+      return;
+    }
