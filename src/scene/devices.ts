@@ -556,3 +556,5 @@ function buildLaptop(dev: Device): Build {
 
   const port = dev.ports[0];
   const p = buildPort(port.id, 0.15, 0.09, MATERIAL.metal);
+  p.group.position.set(w / 2 + 0.004, baseH / 2, 0.22);
+  p.group.rotation.y = Math.PI / 2;
