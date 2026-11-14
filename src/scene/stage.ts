@@ -38,3 +38,6 @@ interface PacketView {
   mat: THREE.MeshStandardMaterial;
   tag: CSS2DObject;
   el: HTMLElement;
+  last: THREE.Vector3;
+}
+
