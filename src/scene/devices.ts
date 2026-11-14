@@ -222,3 +222,5 @@ function frontPanel(w: number, h: number, draw: (p: FacePrinter) => void): THREE
 }
 
 interface Build {
+  group: THREE.Group;
+  height: number;
