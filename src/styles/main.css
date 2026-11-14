@@ -2342,3 +2342,5 @@ tbody th {
     flex: 1;
   }
 
+  .toast {
+    top: auto;
