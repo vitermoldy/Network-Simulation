@@ -1062,3 +1062,5 @@ export class Simulator {
   private timeout(r: Retx): void {
     if (this.retx.get(r.key) !== r || this.status !== 'running') return;
     if (r.tries >= r.maxTries) {
+      this.retx.delete(r.key);
+      r.onGiveUp();
