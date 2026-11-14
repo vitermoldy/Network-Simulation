@@ -778,3 +778,6 @@ export class Simulator {
       this.macTables.set(id, t);
     }
     return t;
+  }
+
+  arpCache(id: string): Map<string, string> {
