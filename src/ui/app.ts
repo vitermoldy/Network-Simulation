@@ -1633,3 +1633,5 @@ export class App {
       <h2 class="packet-title">${esc(p.title)}</h2>
       <p class="packet-where"><span class="label">Posisi</span> ${esc(where)}</p>
       ${trace.length ? `<p class="packet-where"><span class="label">Sudah lewat</span> ${esc(trace.join(', '))}</p>` : ''}
+      ${p.retry ? `<p class="note">Ini kiriman ulang ke-${p.retry}, karena kiriman sebelumnya tidak dibalas.</p>` : ''}
+      ${reader && reads ? `<p class="reads">${esc(reader.name)} membuka paket ini sampai lapisan ${reads}${reads === 2 ? ' (alamat MAC saja)' : reads === 3 ? ' (sampai alamat IP)' : ' (semua lapisan)'}.</p>` : ''}
