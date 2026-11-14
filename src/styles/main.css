@@ -650,3 +650,6 @@ select {
 }
 
 .hint .btn {
+  justify-self: start;
+}
+
