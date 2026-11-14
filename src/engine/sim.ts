@@ -1267,3 +1267,5 @@ export class Simulator {
     this.sendAck(dev, 'ACK');
 
     if (!c.complete && c.rcvNext >= SERVER_ISS + 1 + RESPONSE_LEN) {
+      c.complete = true;
+      this.setPhase('http-res', 'done');
