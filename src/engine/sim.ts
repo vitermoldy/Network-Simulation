@@ -12,3 +12,5 @@ export const TIMING = {
   /** Seconds a frame spends on one cable at speed 1. */
   hop: 0.7,
   switch: 0.3,
+  router: 0.4,
+  host: 0.45,
