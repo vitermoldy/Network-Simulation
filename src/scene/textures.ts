@@ -155,3 +155,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   const [header, main, footer] = view.parts;
   if (header) {
     ctx.fillStyle = '#1f2de6';
+    ctx.fillRect(0, body(0), W, 84);
+    ctx.fillStyle = '#ffffff';
