@@ -482,3 +482,6 @@ select {
   color: var(--accent-ink);
   font: 500 11px/1.5 var(--font-mono);
   white-space: nowrap;
+  pointer-events: none;
+}
+
