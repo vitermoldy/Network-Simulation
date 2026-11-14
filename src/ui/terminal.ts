@@ -111,3 +111,6 @@ interface Command {
 }
 
 export class IosShell implements Shell {
+  private mode: Mode = 'user';
+  private iface?: string;
+
