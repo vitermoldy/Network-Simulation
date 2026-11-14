@@ -1549,3 +1549,5 @@ export class Simulator {
           return;
         }
         this.note('change', victim, 'Skenario: router padam', `Listrik ${this.topo.device(victim).name} tiba-tiba padam saat data sedang dikirim.`);
+        this.setPower(victim, false);
+      }, true);
