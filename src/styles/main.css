@@ -400,3 +400,6 @@ select {
   position: absolute;
   inset: 0;
   pointer-events: none;
+}
+
+.stage-state {
