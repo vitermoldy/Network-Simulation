@@ -27,3 +27,5 @@ const TABLES = [
     packets_lost INT NOT NULL,
     resends INT NOT NULL,
     route_changes INT NOT NULL,
+    path JSON NULL,
+    devices INT NOT NULL,
