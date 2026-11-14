@@ -315,3 +315,5 @@ export class Stage {
     const boxes = this.footprints();
     let lane = 0;
     for (const link of topo.links.values()) {
+      lane++;
+      if (this.cables.has(link.id)) continue;
