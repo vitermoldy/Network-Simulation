@@ -321,3 +321,5 @@ export class Simulator {
   }
 
   /** Nothing on a cable and nothing inside a device: the run is only waiting on a timer. */
+  get quiet(): boolean {
+    return this.flights.length === 0 && this.holds.length === 0;
