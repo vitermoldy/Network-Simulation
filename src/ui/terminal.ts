@@ -204,3 +204,5 @@ export class IosShell implements Shell {
             const port = longPortName(topo.port(r.portId).name);
             out.push(r.type === 'C' ? `C    ${r.network} is directly connected, ${port}` : `O    ${r.network} [110/${r.cost}] via ${r.nextHop}, ${port}`);
           }
+          if (!routes.length) out.push('(kosong: belum ada port yang up dengan alamat IP)');
+          if (sim.converging) out.push('', '% Rute sedang dihitung ulang setelah ada perubahan.');
