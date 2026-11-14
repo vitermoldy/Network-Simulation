@@ -80,3 +80,5 @@ describe('topology', () => {
     const pc = t.addDevice('pc', -12, 7);
     t.connect(pc.ports[0].id, 'sw.1');
     t.autoAddress(pc.id);
+    const data = JSON.parse(JSON.stringify(t.toJSON()));
+    const u = new Topology();
