@@ -1215,3 +1215,5 @@ select {
   border: 1px solid currentColor;
 }
 
+.chip-loss,
+.chip-error {
