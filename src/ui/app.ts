@@ -65,3 +65,5 @@ const DW_TABS: DwTab[] = ['fisik', 'config', 'desktop', 'cli'];
 interface TermState {
   shell: Shell;
   lines: string[];
+  history: string[];
+  index: number;
