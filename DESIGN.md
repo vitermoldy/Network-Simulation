@@ -52,3 +52,5 @@ Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan r
 ## Keputusan dan alasan (R-31)
 
 | Keputusan | Alasan |
+| --- | --- |
+| Mesin simulasi berbasis event, sendiri, di TypeScript | Setiap keputusan perangkat (switch membaca MAC, router mencocokkan rute, TCP mengirim ulang) harus bisa diceritakan dan bereaksi saat kabel dicabut di tengah jalan. |
