@@ -394,3 +394,6 @@ export class Topology {
     delete next[name];
     d.dnsRecords = next;
     this.rev++;
+  }
+
+  /**
