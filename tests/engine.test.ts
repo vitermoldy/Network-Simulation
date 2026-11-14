@@ -117,3 +117,6 @@ describe('routing', () => {
     t.setPower('r3', false);
     expect(lookup(computeRoutes(t).get('r1'), '203.0.113.80')).toBeUndefined();
   });
+});
+
+describe('simulator', () => {
