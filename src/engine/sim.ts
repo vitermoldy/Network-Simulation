@@ -774,3 +774,5 @@ export class Simulator {
   macTable(id: string): Map<string, string> {
     let t = this.macTables.get(id);
     if (!t) {
+      t = new Map();
+      this.macTables.set(id, t);
