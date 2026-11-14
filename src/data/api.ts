@@ -26,3 +26,6 @@ export interface RunRecord {
 }
 
 export interface SavedRun extends RunRecord {
+  id: number;
+}
+
