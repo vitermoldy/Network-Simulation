@@ -1120,3 +1120,5 @@ export class App {
         this.toast(`${d.name}: layanan ${input.dataset.service.toUpperCase()} ${input.checked ? 'aktif' : 'dimatikan'}.`);
         this.deviceKey = '';
         this.renderAll();
+      }
+    });
