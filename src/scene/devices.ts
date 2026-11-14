@@ -466,3 +466,5 @@ function addScreen(b: Build, parent: THREE.Object3D, w: number, y: number, z: nu
   const screen = new THREE.Mesh(new THREE.PlaneGeometry(w, sh), new THREE.MeshBasicMaterial({ map: texture, toneMapped: false }));
   screen.position.set(0, y, z);
   screen.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
+  parent.add(screen);
+  b.hits.push(screen);
