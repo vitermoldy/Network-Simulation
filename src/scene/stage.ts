@@ -679,3 +679,5 @@ export class Stage {
   tilt(delta: number): void {
     const offset = this.camera.position.clone().sub(this.controls.target);
     const s = new THREE.Spherical().setFromVector3(offset);
+    s.phi = Math.min(1.42, Math.max(0.2, s.phi + delta));
+    offset.setFromSpherical(s);
