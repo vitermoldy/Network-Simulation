@@ -588,3 +588,5 @@ export class Simulator {
     this.topologyChanged();
   }
 
+  addDevice(kind: Device['kind'], x: number, z: number): Device {
+    const d = this.topo.addDevice(kind, x, z);
