@@ -122,3 +122,6 @@ export async function flushQueue(): Promise<number> {
 
 export async function listRuns(): Promise<SavedRun[]> {
   return (await call<{ runs: SavedRun[] }>(`runs/${clientCode()}`)).runs;
+}
+
+export async function listLayouts(): Promise<LayoutSummary[]> {
