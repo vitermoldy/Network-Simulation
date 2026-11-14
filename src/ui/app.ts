@@ -880,3 +880,5 @@ export class App {
     this.renderedLog = 0;
     $('log').innerHTML = '';
     if (!this.sim.topo.has(this.selectedDevice)) this.selectedDevice = [...this.sim.topo.devices.keys()][0] ?? '';
+    this.deviceKey = '';
+    this.sourceKey = '';
