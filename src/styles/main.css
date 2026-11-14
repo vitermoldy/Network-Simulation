@@ -1748,3 +1748,5 @@ tbody th {
 
 .layouts li:not(.empty) {
   display: flex;
+  align-items: center;
+  gap: 6px;
