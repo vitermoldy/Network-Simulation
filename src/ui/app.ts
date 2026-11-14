@@ -1643,3 +1643,5 @@ export class App {
           <dl>${r.fields.map(([k, v]) => {
             const before = prevField(r.layer, k);
             const changed = before !== undefined && before !== v && r.layer !== 1;
+            return `<div><dt>${esc(k)}</dt><dd>${esc(v)}${changed ? `<span class="changed">berubah, tadinya ${esc(before!)}</span>` : ''}</dd></div>`;
+          }).join('')}</dl>
