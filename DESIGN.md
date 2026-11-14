@@ -23,3 +23,5 @@ perangkat Cisco, dial **ENERGY 2 / RHYTHM 2 / MOTION 2**.
 
 ## Deal taste-skill 2.5.1
 
+| Item | Hasil | Alasan |
+| --- | --- | --- |
