@@ -561,3 +561,5 @@ export class Stage {
       disposeTree(this.ghost.group);
       this.ghost = undefined;
     }
+    if (kind) {
+      const group = buildGhost(kind);
