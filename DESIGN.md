@@ -70,3 +70,5 @@ Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan r
 
 ## Aksesibilitas
 
+- Setiap tindakan di meja 3D punya jalan lewat DOM: daftar perangkat dengan tombol power, tab Config
+  untuk kabel (pilih port, Pasang, Cabut), IP, dan shutdown, serta tombol kamera.
