@@ -1347,3 +1347,5 @@ select {
   border-top: 1px solid var(--line);
 }
 
+.dev-title {
+  font-size: 18px;
