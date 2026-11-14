@@ -446,3 +446,5 @@ export class Simulator {
     this.holds = [];
     this.lost = [];
     this.log = [];
+    this.retx.clear();
+    this.arpPending.clear();
