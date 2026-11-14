@@ -30,3 +30,5 @@ describe('topology', () => {
   it('starts with the default cables, Cisco-style port names, and refuses bad plugs', () => {
     const t = new Topology();
     expect(t.links.size).toBe(8);
+    expect(t.peer('pc.0')).toBe('sw.0');
+    expect(t.port('sw.0').name).toBe('Fa0/1');
