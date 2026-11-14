@@ -62,3 +62,6 @@ export class DeviceViewer {
     const floor = new THREE.Mesh(new THREE.CircleGeometry(6, 64), this.floorMat);
     floor.rotation.x = -Math.PI / 2;
     floor.receiveShadow = true;
+    this.scene.add(floor);
+    this.scene.add(this.leads);
+
