@@ -552,3 +552,5 @@ export class Topology {
       }
       return r;
     };
+    const union = (x: string, y: string) => {
+      const rx = find(x);
