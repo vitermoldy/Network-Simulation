@@ -922,3 +922,6 @@ export class App {
     else this.toast(res.reason);
     this.deviceKey = '';
     this.renderAll();
+  }
+
+  private setPending(port: string | null): void {
