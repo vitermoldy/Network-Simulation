@@ -19,3 +19,5 @@ const SCENARIOS = new Set(['normal', 'loss', 'router-down', 'bad-domain', 'ping'
 const PHASES = new Set(['input', 'arp', 'dns', 'tcp-open', 'http-req', 'http-res', 'output', 'tcp-close', 'icmp'])
 const MAX_LAYOUT = 512 * 1024
 
+/** Writes come as JSON from this site only: no form posts, no other origin. */
+function sameOriginWrites(req, res, next) {
