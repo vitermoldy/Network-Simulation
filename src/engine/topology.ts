@@ -518,3 +518,5 @@ export class Topology {
       if (raw.kind === 'server') {
         d.services = { dns: !!raw.services?.dns, http: !!raw.services?.http };
         d.dnsRecords = {};
+        for (const [k, v] of Object.entries(raw.dnsRecords ?? {})) if (typeof v === 'string' && validIp(v)) d.dnsRecords[k.toLowerCase()] = v;
+      }
