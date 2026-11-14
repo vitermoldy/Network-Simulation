@@ -913,3 +913,6 @@ export class App {
     this.selectedLink = null;
     this.toast(text);
     this.deviceKey = '';
+    this.renderAll();
+  }
+
