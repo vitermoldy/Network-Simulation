@@ -23,3 +23,5 @@ void app.init(async () => {
     document.fonts.load('500 32px "JetBrains Mono Variable"'),
   ]).catch(() => undefined);
   await Promise.race([fonts, new Promise((r) => setTimeout(r, 1500))]);
+  const { Stage } = await import('./scene/stage');
+  stage = new Stage(document.getElementById('stage')!, sim, app.stageEvents());
