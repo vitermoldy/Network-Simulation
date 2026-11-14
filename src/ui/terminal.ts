@@ -325,3 +325,5 @@ export class IosShell implements Shell {
         run: (args) => {
           const p = this.findPort(args.join(''));
           if (!p) return ['% Port tidak dikenal.'];
+          this.iface = p.id;
+          return [];
