@@ -1040,3 +1040,5 @@ export class App {
   private closePopover(): void {
     if ($('popover').hidden) return;
     $('popover').hidden = true;
+    this.popoverAction = null;
+    const cancel = this.popoverCancel;
