@@ -568,3 +568,5 @@ export class Topology {
       if (!d.powered || d.kind !== 'switch') continue;
       for (const p of d.ports.slice(1)) union(d.ports[0].id, p.id);
     }
+    const ids = new Map<string, number>();
+    const out = new Map<string, number>();
