@@ -122,3 +122,5 @@ export class Stage {
 
   hovered: Pick | null = null;
   pendingPort: string | null = null;
+  selected: { deviceId?: string; linkId?: string; packetId?: number } = {};
+  follow = false;
