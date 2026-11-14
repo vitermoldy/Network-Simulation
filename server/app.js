@@ -155,3 +155,5 @@ export function createApi(getPool, database) {
     if (parsed?.version !== 1 || !Array.isArray(parsed.devices) || !Array.isArray(parsed.links)) return res.status(400).json({ error: 'Isi rancangan tidak dikenali.' })
     await touch(client)
     await getPool().query(
+      `INSERT INTO layouts (client_id, name, data, devices, links, updated_at) VALUES (?, ?, ?, ?, ?, UTC_TIMESTAMP())
+       ON DUPLICATE KEY UPDATE data = VALUES(data), devices = VALUES(devices), links = VALUES(links), updated_at = VALUES(updated_at)`,
