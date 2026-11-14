@@ -62,3 +62,5 @@ function cleanRun(run) {
       text(run.source, 32) || '-',
       SCENARIOS.has(run.scenario) ? run.scenario : 'normal',
       Math.min(0.99, Math.max(0, Number(run.lossRate) || 0)),
+      run.status,
+      PHASES.has(run.failedPhase) ? run.failedPhase : null,
