@@ -658,3 +658,6 @@ export class Simulator {
   }
 
   private activePhase(): PhaseId | undefined {
+    return this.phases.find((p) => p.status === 'active')?.id;
+  }
+
