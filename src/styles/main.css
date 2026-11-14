@@ -1811,3 +1811,6 @@ tbody th {
 .run-meta,
 .run-stats,
 .run-path {
+  color: var(--muted);
+}
+
