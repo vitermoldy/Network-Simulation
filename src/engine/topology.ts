@@ -498,3 +498,5 @@ export class Topology {
     for (const raw of t.devices) {
       if (!raw || typeof raw.id !== 'string' || !/^[a-z0-9]+$/i.test(raw.id) || seen.has(raw.id)) throw new Error('Ada perangkat tanpa id yang sah.');
       if (!(raw.kind in KIND_LABEL)) throw new Error(`Jenis perangkat ${String(raw.kind)} tidak dikenal.`);
+      seen.add(raw.id);
+      const names = portNames(raw.kind);
