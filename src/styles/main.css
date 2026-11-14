@@ -701,3 +701,5 @@ select {
   max-width: min(520px, calc(100% - 140px));
   padding: 10px 14px;
   border-radius: var(--r);
+  background: var(--tip-bg);
+  color: var(--tip-ink);
