@@ -521,3 +521,5 @@ function buildPc(dev: Device): Build {
 }
 
 /** The laptop: open lid with a live screen, network port on the right side, power key on the deck. */
+function buildLaptop(dev: Device): Build {
+  const w = 2.2;
