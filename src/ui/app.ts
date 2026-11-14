@@ -424,3 +424,5 @@ export class App {
     $('log').innerHTML = '';
     this.closePopover();
     this.setPending(null);
+    this.stopPlacing();
+    this.showTab('alur');
