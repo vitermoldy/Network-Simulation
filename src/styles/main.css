@@ -719,3 +719,5 @@ select {
   gap: 18px;
 }
 
+.flow li {
+  position: relative;
