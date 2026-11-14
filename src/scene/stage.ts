@@ -113,3 +113,5 @@ export class Stage {
   private drag?: { id: string; offset: THREE.Vector3; from: THREE.Vector3 };
   private dangling?: THREE.Mesh;
   private danglingMat = new THREE.MeshStandardMaterial({ color: MATERIAL.accent, roughness: 0.5, transparent: true, opacity: 0.75 });
+  private ghost?: { kind: DeviceKind; group: THREE.Group };
+  private marker?: THREE.Mesh;
