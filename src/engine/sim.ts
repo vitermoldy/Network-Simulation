@@ -389,3 +389,5 @@ export class Simulator {
     this.kind = 'lookup';
     this.resetRun(name, sourceId, seed);
     this.setPhase('input', 'active');
+    const dev = this.checkSource(sourceId, true);
+    if (!dev) return;
