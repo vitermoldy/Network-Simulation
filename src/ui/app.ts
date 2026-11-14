@@ -1347,3 +1347,5 @@ export class App {
 
   private renderPhases(): void {
     const html = this.sim.phases.map((p) => `<li class="phase is-${p.status}">
+      <span class="mark">${ICON[p.status]}</span>
+      <span class="phase-title">${esc(p.title)}</span>
