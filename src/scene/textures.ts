@@ -165,3 +165,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     ctx.font = `600 50px ${FONT_TEXT}`;
     ctx.fillText('Halo dari Server Web', 48, body(160));
     ctx.fillStyle = '#3b4048';
+    ctx.font = `400 27px ${FONT_TEXT}`;
+    wrap(ctx, 'Halaman ini dikirim server web lewat switch dan router sampai ke layarmu, potong demi potong.', W - 96)
