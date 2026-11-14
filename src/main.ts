@@ -12,3 +12,5 @@ let stage: Stage | undefined;
 
 // ?debug exposes the simulator and the 3D stage to the console, for lecturers and for the
 // automated click-through check. Nothing changes for normal visitors.
+if (new URLSearchParams(location.search).has('debug')) {
+  (window as unknown as { __netsim: unknown }).__netsim = { sim, app, stage: () => stage };
