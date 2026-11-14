@@ -1419,3 +1419,5 @@ export class Simulator {
     pg.received++;
     const rtt = Math.round((this.time - (pg.sentAt ?? this.time)) * 10) / 10;
     pg.times.push(rtt);
+    this.say(`Reply from ${p.ip!.src}: bytes=32 time=${rtt}s TTL=${p.ip!.ttl}`);
+    this.note('ok', dev.id, `Balasan ping ${pg.seq}`, `Echo reply ${pg.seq} datang dari ${p.ip!.src} setelah ${rtt} s waktu simulasi. TTL tinggal ${p.ip!.ttl}: setiap router di jalan menguranginya satu.`, 3, p.id);
