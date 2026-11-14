@@ -185,3 +185,5 @@ function buildRocker(deviceId: string, scale = 1) {
 function buildRoundButton(deviceId: string, r = 0.075) {
   const group = new THREE.Group();
   const seat = mesh(new THREE.CylinderGeometry(r * 1.45, r * 1.45, 0.016, 32).rotateX(Math.PI / 2), shared.bezel, false);
+  seat.position.z = 0.008;
+  group.add(seat);
