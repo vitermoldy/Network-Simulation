@@ -85,3 +85,5 @@ function hitBox(w: number, h: number, d: number, pick: Pick): THREE.Mesh {
   return m;
 }
 
+export function ledMaterial(): THREE.MeshStandardMaterial {
+  return new THREE.MeshStandardMaterial({ color: MATERIAL.ledOff, emissive: 0x000000, roughness: 0.3 });
