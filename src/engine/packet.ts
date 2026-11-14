@@ -5,3 +5,5 @@ export const BROADCAST = 'ff:ff:ff:ff:ff:ff';
 export type Flow = 'arp' | 'dns' | 'tcp' | 'http' | 'icmp';
 export type TcpFlag = 'SYN' | 'ACK' | 'PSH' | 'FIN' | 'RST';
 
+export interface EthHeader {
+  src: string;
