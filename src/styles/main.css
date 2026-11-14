@@ -1868,3 +1868,5 @@ tbody th {
   height: 20px;
 }
 
+.devwin-tabs {
+  flex: none;
