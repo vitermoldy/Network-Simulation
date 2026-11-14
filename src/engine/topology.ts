@@ -481,3 +481,5 @@ export class Topology {
       devices: [...this.devices.values()].map((d) => ({
         ...d,
         services: d.services && { ...d.services },
+        dnsRecords: d.dnsRecords && { ...d.dnsRecords },
+        ports: d.ports.map(({ deviceId: _drop, ...p }) => ({ ...p })),
