@@ -125,3 +125,5 @@ export class IosShell implements Shell {
   }
 
   prompt(): string {
+    const h = this.hostname;
+    if (this.mode === 'user') return `${h}>`;
