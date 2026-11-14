@@ -566,3 +566,6 @@ export class Simulator {
     this.cutLink(linkId, 'Kabel dicabut saat paket masih di dalamnya.');
     this.topo.disconnect(linkId);
     if (this.status === 'running') this.note('change', this.topo.port(link.a).deviceId, 'Kabel dicabut', `Kabel ${label} dicabut.`, 1);
+    this.topologyChanged();
+  }
+
