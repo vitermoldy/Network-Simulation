@@ -852,3 +852,6 @@ export class App {
     if (this.sim.output.length > s.printed) {
       this.termWrite(s.deviceId, this.sim.output.slice(s.printed));
       s.printed = this.sim.output.length;
+    }
+  }
+
