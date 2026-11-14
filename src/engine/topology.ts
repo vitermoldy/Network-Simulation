@@ -510,3 +510,5 @@ export class Topology {
           const ok = src && typeof src.ip === 'string' && validIp(src.ip) && Number.isInteger(src.prefix);
           return {
             id: `${raw.id}.${i}`, deviceId: raw.id, name: n,
+            mac: typeof src?.mac === 'string' && /^[0-9a-f]{2}(:[0-9a-f]{2}){5}$/.test(src.mac) ? src.mac : `aa:${(this.nextMac++).toString(16).padStart(2, '0')}:00:00:00:${(i + 1).toString(16).padStart(2, '0')}`,
+            ip: ok ? src.ip : undefined, prefix: ok ? src.prefix : undefined, down: src?.down ? true : undefined,
