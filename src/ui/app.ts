@@ -337,3 +337,5 @@ export class App {
     });
 
     $('devices').addEventListener('click', (e) => {
+      const t = e.target as HTMLElement;
+      const power = t.closest<HTMLButtonElement>('button[data-power]');
