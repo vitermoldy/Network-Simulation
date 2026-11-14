@@ -661,3 +661,5 @@ export class Stage {
   }
 
   focusDevice(id: string): void {
+    const v = this.devices.get(id);
+    if (!v) return;
