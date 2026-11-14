@@ -1007,3 +1007,5 @@ export class App {
       text = `${topo.device(p.deviceId).name}. Klik untuk mengatur, seret untuk memindahkan.`;
     } else if (p.type === 'cable') {
       const l = topo.links.get(p.linkId);
+      if (l) text = `Kabel ${topo.portLabel(l.a)} ke ${topo.portLabel(l.b)}. Klik untuk mencabut.`;
+    } else if (p.type === 'packet') {
