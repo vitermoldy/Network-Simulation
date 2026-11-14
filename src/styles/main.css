@@ -520,3 +520,5 @@ select {
   display: grid;
   place-items: center;
   min-width: 44px;
+  height: 44px;
+  border: 0;
