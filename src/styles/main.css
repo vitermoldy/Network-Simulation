@@ -1746,3 +1746,5 @@ tbody th {
   gap: 6px;
 }
 
+.layouts li:not(.empty) {
+  display: flex;
