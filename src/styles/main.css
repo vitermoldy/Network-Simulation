@@ -588,3 +588,5 @@ select {
   gap: 2px;
   min-width: 60px;
   min-height: 52px;
+  padding: 6px 4px;
+  border: 1px solid transparent;
