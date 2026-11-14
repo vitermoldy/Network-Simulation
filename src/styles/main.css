@@ -1371,3 +1371,6 @@ select {
 }
 
 .table-wrap {
+  overflow-x: auto;
+}
+
