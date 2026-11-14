@@ -150,3 +150,5 @@ p {
   line-height: 1.15;
 }
 
+.brand p {
+  color: var(--muted);
