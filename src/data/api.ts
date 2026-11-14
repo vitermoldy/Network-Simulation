@@ -17,3 +17,5 @@ export interface RunRecord {
   failedPhase?: string;
   reason?: string;
   simSeconds: number;
+  packetsLost: number;
+  resends: number;
