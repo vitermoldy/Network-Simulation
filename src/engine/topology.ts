@@ -469,3 +469,5 @@ export class Topology {
 
   /** Back to the starting network: the eight devices, their cables and settings. */
   reset(): void {
+    this.loadDefaults();
+    this.rev++;
