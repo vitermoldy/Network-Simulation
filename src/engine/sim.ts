@@ -576,3 +576,6 @@ export class Simulator {
   /** Swaps in a saved network. A run in progress stops, since its devices may be gone. */
   loadTopology(data: unknown): void {
     this.replaceTopology(() => this.topo.load(data));
+  }
+
+  private replaceTopology(change: () => void): void {
