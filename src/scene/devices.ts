@@ -19,3 +19,5 @@ export type Pick =
   | { type: 'cable'; linkId: string }
   | { type: 'packet'; packetId: number };
 
+export interface PortView {
+  id: string;
