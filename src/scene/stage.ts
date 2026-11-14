@@ -166,3 +166,5 @@ export class Stage {
     sc.bottom = -16;
     sc.near = 1;
     sc.far = 50;
+    sun.shadow.bias = -0.0004;
+    sun.shadow.radius = 6;
