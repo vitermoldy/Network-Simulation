@@ -25,3 +25,5 @@ export interface FacePrinter {
   ctx: CanvasRenderingContext2D;
   /** Face coordinates (x from the centre, y from the bottom, in scene units) to canvas pixels. */
   px: (x: number, y: number) => [number, number];
+  scale: number;
+  text: (s: string, x: number, y: number, size: number, opts?: { color?: string; align?: CanvasTextAlign; mono?: boolean; weight?: number }) => void;
