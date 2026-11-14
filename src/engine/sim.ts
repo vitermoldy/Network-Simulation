@@ -1167,3 +1167,5 @@ export class Simulator {
       }
       c.serverIp = p.app.dns.answer;
       this.dnsCache.set(c.host, c.serverIp);
+      this.setPhase('dns', 'done');
+      this.note('ok', this.clientId, 'IP diketahui', `Jawaban DNS: ${c.host} ada di ${c.serverIp}.${this.kind === 'web' ? ` Sekarang ${this.cname} tahu ke mana harus menyambung.` : ''}`, 7, p.id);
