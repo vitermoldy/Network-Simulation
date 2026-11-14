@@ -292,3 +292,5 @@ function buildSwitch(dev: Device): Build {
     p.ctx.fillRect(x0, 0, x1 - x0, h * p.scale);
     p.ctx.fillStyle = '#23272c';
     p.ctx.fillRect(x1, 0, x2 - x1, h * p.scale);
+    p.text('SWITCH 24 PORT', -w / 2 + 0.5, 0.06, 0.04, { color: '#2a3038', weight: 650 });
+    p.text('POWER', -w / 2 + 0.17, 0.06, 0.03, { color: '#2a3038' });
