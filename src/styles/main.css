@@ -2188,3 +2188,5 @@ tbody th {
     overflow: clip;
   }
 
+  body {
+    height: 100dvh;
