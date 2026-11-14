@@ -51,3 +51,5 @@ export class PromptShell implements Shell {
 
   exec(raw: string): string[] {
     const line = raw.trim();
+    if (!line) return [];
+    const [cmd, ...args] = line.split(/\s+/);
