@@ -1159,3 +1159,5 @@ export class Simulator {
           this.say('');
           this.say(`*** ${server} can't find ${c.host}: Non-existent domain`);
           this.setPhase('output', 'done');
+        } else if (this.kind === 'ping') {
+          this.say(`Ping request could not find host ${c.host}. Please check the name and try again.`);
