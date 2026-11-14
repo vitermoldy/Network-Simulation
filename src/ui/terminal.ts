@@ -15,3 +15,5 @@ export interface ShellHost {
   changed: () => void;
 }
 
+export interface Shell {
+  prompt(): string;
