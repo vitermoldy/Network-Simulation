@@ -510,3 +510,5 @@ function buildPc(dev: Device): Build {
   mon.position.set(0.55, 0.95, 0.05);
   mon.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
   group.add(mon);
+  b.hits.push(mon);
+  const holder = new THREE.Object3D();
