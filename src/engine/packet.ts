@@ -28,3 +28,5 @@ export interface IpHeader {
 
 export interface IcmpBody {
   type: 'echo-request' | 'echo-reply';
+  id: number;
+  seq: number;
