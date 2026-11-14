@@ -642,3 +642,5 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
   const topo = sim.topo;
   const t = sim.time;
   const on = d.powered;
+  showPower(v, on);
+  let anyActive = sim.holds.some((h) => h.deviceId === d.id);
