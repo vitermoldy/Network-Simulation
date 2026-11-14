@@ -182,3 +182,5 @@ interface ClientState {
   dnsDone: boolean;
   tcp: 'closed' | 'syn-sent' | 'established' | 'fin-wait' | 'time-wait';
   synSentAt: number;
+  synRetried: boolean;
+  sndNext: number;
