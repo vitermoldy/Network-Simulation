@@ -370,3 +370,5 @@ export class IosShell implements Shell {
     // "show mac address-table" and "show mac-address-table" both work.
     if (!best.length && /^sh/i.test(tokens[0]) && /^mac-address-table$/i.test(tokens[1] ?? '')) {
       const c = cmds.find((x) => x.words.join(' ') === 'show mac address-table');
+      if (c) return c.run([]);
+    }
