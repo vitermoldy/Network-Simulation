@@ -129,3 +129,5 @@ export class DeviceViewer {
       const d = topo.device(this.deviceId);
       return `Tombol power: ${d.powered ? 'menyala, klik untuk mematikan' : 'mati, klik untuk menyalakan'}.`;
     }
+    if (pick.type === 'port' && topo.hasPort(pick.portId)) {
+      const p = topo.port(pick.portId);
