@@ -143,3 +143,5 @@ export interface LostMark {
 export type BrowserState = 'idle' | 'resolving' | 'connecting' | 'loading' | 'done' | 'error' | 'off';
 
 export interface BrowserView {
+  /** The PC or laptop whose screen shows this browser. */
+  deviceId: string;
