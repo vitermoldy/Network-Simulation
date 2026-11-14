@@ -700,3 +700,5 @@ export class Stage {
     if (key !== this.layoutKey) {
       this.layoutKey = key;
       this.rebuildZones();
+    }
+    if (this.tween) {
