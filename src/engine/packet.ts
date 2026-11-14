@@ -88,3 +88,5 @@ export interface Packet {
 export function clonePacket(p: Packet): Packet {
   return {
     ...p,
+    eth: { ...p.eth },
+    arp: p.arp && { ...p.arp },
