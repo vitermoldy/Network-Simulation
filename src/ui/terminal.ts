@@ -147,3 +147,5 @@ export class IosShell implements Shell {
 
   private findPort(raw: string): Port | undefined {
     const s = raw.replace(/\s+/g, '').toLowerCase();
+    const m = /^(g|gi|gig|giga|gigabit|gigabitethernet|f|fa|fas|fast|fastethernet)(\d+\/\d+)$/.exec(s);
+    if (!m) return undefined;
