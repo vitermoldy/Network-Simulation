@@ -569,3 +569,5 @@ export class Simulator {
     this.topologyChanged();
   }
 
+  resetTopology(): void {
+    this.replaceTopology(() => this.topo.reset());
