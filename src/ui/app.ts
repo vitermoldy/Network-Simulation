@@ -970,3 +970,5 @@ export class App {
       this.askUnplug(p.linkId);
       return;
     }
+    if (p.type === 'device') {
+      this.openDevice(p.deviceId);
