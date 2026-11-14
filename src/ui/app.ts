@@ -828,3 +828,5 @@ export class App {
         input.value = t.history[t.index] ?? '';
         e.preventDefault();
       }
+    });
+    out.addEventListener('click', () => input.focus());
