@@ -186,3 +186,5 @@ export class IosShell implements Shell {
           }
           if (isRouter) out.push('router ospf 1', ' network 0.0.0.0 255.255.255.255 area 0', '!');
           return [...out, 'end'];
+        },
+      },
