@@ -38,3 +38,6 @@ export class PromptShell implements Shell {
   constructor(private deviceId: string, private host: ShellHost) {}
 
   private get dev(): Device {
+    return this.host.sim.topo.device(this.deviceId);
+  }
+
