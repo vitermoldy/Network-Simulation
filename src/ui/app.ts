@@ -1334,3 +1334,5 @@ export class App {
   }
 
   private renderStatus(): void {
+    const s = this.sim;
+    const el = $('run-status');
