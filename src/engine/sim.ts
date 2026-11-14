@@ -412,3 +412,5 @@ export class Simulator {
       return undefined;
     }
     if (dev.kind === 'router') {
+      if (needDns) {
+        this.fail('input', 'Router di simulasi ini hanya bisa ping ke alamat IP, bukan ke nama.', dev.id);
