@@ -370,3 +370,5 @@ select {
 }
 
 .stage-wrap {
+  position: relative;
+  grid-column: 1;
