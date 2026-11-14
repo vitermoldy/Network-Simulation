@@ -363,3 +363,5 @@ select {
 .work {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 400px;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 12px;
