@@ -716,3 +716,5 @@ export class Stage {
     this.updateMarker();
     if (this.follow && this.leadPacket && !this.tween) {
       const view = this.packets.get(this.leadPacket.id);
+      if (view) {
+        const delta = view.last.clone().sub(this.controls.target).multiplyScalar(Math.min(1, dt * 3));
