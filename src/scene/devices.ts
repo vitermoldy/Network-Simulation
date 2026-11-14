@@ -336,3 +336,6 @@ function buildSwitch(dev: Device): Build {
   group.add(mode);
   b.power = { hit: rocker.hit, glow: rocker.glow, rocker: rocker.paddle, leds };
   return b;
+}
+
+/** ISR-style router: black bezel, two blank module slots, four Gigabit ports, a console port. */
