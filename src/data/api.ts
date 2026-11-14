@@ -9,3 +9,5 @@ const QUEUE_KEY = 'netsim-unsent-runs';
 const ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 
 export interface RunRecord {
+  host: string;
+  source: string;
