@@ -1850,3 +1850,6 @@ tbody th {
 .devwin-titles {
   flex: 1;
   min-width: 0;
+}
+
+.devwin-head h2 {
