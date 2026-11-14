@@ -661,3 +661,5 @@ select {
   padding: 8px 10px;
   border-radius: var(--r);
   background: var(--tip-bg);
+  color: var(--tip-ink);
+  font-size: 13px;
