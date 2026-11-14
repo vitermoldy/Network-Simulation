@@ -331,3 +331,6 @@ export class Simulator {
     if (this.lost.length !== before) this.version++;
   }
 
+  // ------------------------------------------------------------------ run control
+
+  private resetApps(host: string, deviceId: string): void {
