@@ -1823,3 +1823,5 @@ tbody th {
   width: min(640px, calc(100vw - 32px));
   height: auto;
   max-height: none;
+  margin: 0;
+  padding: 0;
