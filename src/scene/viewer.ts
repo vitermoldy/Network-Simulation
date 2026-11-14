@@ -135,3 +135,6 @@ export class DeviceViewer {
       const state = p.down ? 'shutdown' : !peer ? 'kosong' : topo.carrier(p.id) ? 'tersambung, ada sinyal' : 'tersambung, tanpa sinyal';
       return `${p.name}${p.ip ? `, ${p.ip}/${p.prefix}` : ''}: ${state}${peer ? `, ke ${topo.portLabel(peer)}` : ''}.`;
     }
+    return '';
+  }
+
