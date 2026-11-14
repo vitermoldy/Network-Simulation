@@ -220,3 +220,5 @@ function placeholder(ctx: CanvasRenderingContext2D, x: number, y: number, w: num
   ctx.textAlign = 'left';
 }
 
+/** Big zone name painted on the bench, with a smaller line under it. */
+export function drawZoneLabel(ctx: CanvasRenderingContext2D, w: number, h: number, title: string, sub: string, color: string, muted: string): void {
