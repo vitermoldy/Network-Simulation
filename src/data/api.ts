@@ -59,3 +59,5 @@ export function clientCode(): string {
 }
 
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
+  const res = await fetch(`api/${path}`, {
+    ...init,
