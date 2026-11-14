@@ -362,3 +362,5 @@ export class Simulator {
    */
   startPing(sourceId: string, rawTarget: string, seed?: number, count = 4): void {
     const target = rawTarget.trim().toLowerCase();
+    this.kind = 'ping';
+    this.resetRun(target, sourceId, seed);
