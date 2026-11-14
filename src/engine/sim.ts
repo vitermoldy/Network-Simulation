@@ -440,3 +440,5 @@ export class Simulator {
     this.failReason = '';
     this.ping = undefined;
     for (const t of this.queue) t.cancelled = true;
+    this.queue = [];
+    this.time = 0;
