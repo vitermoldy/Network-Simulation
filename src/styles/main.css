@@ -1182,3 +1182,5 @@ select {
   min-width: 46px;
 }
 
+.entry-dev {
+  font-weight: 500;
