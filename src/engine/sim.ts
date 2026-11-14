@@ -1038,3 +1038,7 @@ export class Simulator {
         this.emit(nic.id, p);
       });
     });
+  }
+
+  // ------------------------------------------------------------------ reliable sending
+
