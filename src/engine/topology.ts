@@ -190,3 +190,6 @@ export class Topology {
       d.services = { dns: false, http: true };
       d.dnsRecords = {};
     }
+    return d;
+  }
+
