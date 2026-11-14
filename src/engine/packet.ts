@@ -16,3 +16,6 @@ export interface ArpBody {
   senderMac: string;
   senderIp: string;
   targetMac: string;
+  targetIp: string;
+}
+
