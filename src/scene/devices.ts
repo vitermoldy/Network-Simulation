@@ -671,3 +671,5 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
 }
 
 /** A see-through stand-in that follows the pointer while a new device is being placed. */
+export function buildGhost(kind: Device['kind']): THREE.Group {
+  const sizes: Record<Device['kind'], [number, number, number]> = {
