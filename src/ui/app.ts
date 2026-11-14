@@ -79,3 +79,5 @@ export class App {
   private stage: Stage | null = null;
   private playing = false;
   private stepOnce = false;
+  private speed = 1;
+  private tab: Tab = 'alur';
