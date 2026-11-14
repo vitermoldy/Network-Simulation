@@ -798,3 +798,5 @@ export class App {
     const out = el.querySelector<HTMLElement>('.term-out')!;
     out.textContent = t.lines.join('\n');
     el.querySelector('.term-prompt')!.textContent = t.shell.prompt();
+    out.scrollTop = out.scrollHeight;
+    const form = el.querySelector<HTMLFormElement>('.term-in')!;
