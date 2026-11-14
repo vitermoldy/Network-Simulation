@@ -307,3 +307,5 @@ select {
   border-color: var(--ink);
 }
 
+.btn-ghost {
+  background: transparent;
