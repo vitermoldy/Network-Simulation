@@ -441,3 +441,5 @@ function buildServer(dev: Device): Build {
     p.text('HDD', 0.06, h - 0.28, 0.035, { color: '#2a2e35' });
     for (let i = 0; i < 6; i++) {
       const [x0, y0] = p.px(-0.36, 0.24 - i * 0.026);
+      p.ctx.fillStyle = 'rgba(40,44,50,0.3)';
+      p.ctx.fillRect(x0, y0, 0.72 * p.scale, 0.009 * p.scale);
