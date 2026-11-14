@@ -261,3 +261,5 @@ export class IosShell implements Shell {
           run: (args) => {
             if (!args[0]) return ['% Incomplete command.'];
             const r = topo.rename(d.id, args.join(' '));
+            this.host.changed();
+            return r.ok ? [] : [`% ${r.reason}`];
