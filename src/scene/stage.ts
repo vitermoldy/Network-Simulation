@@ -475,3 +475,5 @@ export class Stage {
         v.group.position.set(p.x + this.drag.offset.x, 0, p.z + this.drag.offset.z);
         v.group.updateMatrixWorld(true);
         this.rebuildCables(this.drag.id);
+        this.layoutKey = '';
+      }
