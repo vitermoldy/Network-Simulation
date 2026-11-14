@@ -73,3 +73,5 @@ export class DeviceViewer {
       this.down = undefined;
       if (!d || Math.hypot(e.clientX - d.x, e.clientY - d.y) > 6) return;
       const pick = this.cast(e);
+      if (pick?.type === 'power') this.events.power(pick.deviceId);
+    });
