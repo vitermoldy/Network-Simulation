@@ -471,3 +471,5 @@ function addScreen(b: Build, parent: THREE.Object3D, w: number, y: number, z: nu
   b.screen = { ctx, texture, key: '' };
 }
 
+/** Packet Tracer style PC: a tower and a monitor on a stand. */
+function buildPc(dev: Device): Build {
