@@ -418,3 +418,5 @@ export class App {
     this.stepOnce = step;
     this.selectedPacket = null;
     this.followLatest = true;
+    this.openEntry = null;
+    this.renderedLog = 0;
