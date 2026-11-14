@@ -1224,3 +1224,5 @@ export class App {
             this.toast(`Belum terhapus: ${(ex as Error).message}`);
           }
         });
+      }
+    });
