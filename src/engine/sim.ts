@@ -1140,3 +1140,5 @@ export class Simulator {
         proto: 'DNS', lines: [answer ? `Jawaban: ${q.question} A ${answer}` : `Jawaban: ${q.question} tidak ada`],
         dns: { txid: q.txid, question: q.question, answer, rcode: answer ? 'NOERROR' : 'NXDOMAIN' },
       },
+      size: answer ? 90 : 74,
+    });
