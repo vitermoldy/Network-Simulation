@@ -366,3 +366,5 @@ export class App {
       if (e.key === 'Enter' && this.placing && this.stage && !(e.target as HTMLElement).closest('button')) {
         e.preventDefault();
         const c = this.stage.centrePoint();
+        const spot = this.freeSpot(this.placing, c.x, c.z);
+        this.place(this.placing, spot.x, spot.z);
