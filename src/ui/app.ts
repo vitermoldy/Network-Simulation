@@ -874,3 +874,5 @@ export class App {
     this.terms.clear();
     this.playing = false;
     this.selectedPacket = null;
+    this.selectedLink = null;
+    this.setPending(null);
