@@ -648,3 +648,5 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
     const last = sim.activity.get(p.id);
     const active = on && last !== undefined && t - last < 0.25 && t >= last;
     anyActive ||= active;
+    const carrier = topo.hasPort(p.id) && topo.carrier(p.id);
+    if (p.act) {
