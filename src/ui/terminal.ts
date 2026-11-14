@@ -69,3 +69,5 @@ export class PromptShell implements Shell {
       ];
     }
     if (c === 'ipconfig') {
+      const all = args[0]?.toLowerCase() === '/all';
+      const out = ['', 'FastEthernet0 Connection:(default port)', ''];
