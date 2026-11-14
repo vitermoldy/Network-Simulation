@@ -800,3 +800,5 @@ export class App {
     el.querySelector('.term-prompt')!.textContent = t.shell.prompt();
     out.scrollTop = out.scrollHeight;
     const form = el.querySelector<HTMLFormElement>('.term-in')!;
+    const input = form.querySelector('input')!;
+    form.addEventListener('submit', (e) => {
