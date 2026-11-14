@@ -344,3 +344,5 @@ export class IosShell implements Shell {
     let cmds = this.commands();
     if ((this.mode === 'config' || this.mode === 'if') && tokens[0].toLowerCase() === 'do') {
       const saved = this.mode;
+      this.mode = 'priv';
+      cmds = this.commands();
