@@ -70,3 +70,6 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
 
 export async function health(): Promise<{ ok: boolean; database: string }> {
   return call('health');
+}
+
+function readQueue(): RunRecord[] {
