@@ -570,3 +570,5 @@ export class App {
     if (!this.stage) {
       $('viewer').querySelector('.viewer-hover')!.textContent = 'Tampilan 3D tidak tersedia di browser ini (WebGL mati). Pengaturan tetap bisa dipakai di tab Config.';
       return;
+    }
+    if (!this.viewer && !this.viewerLoading) {
