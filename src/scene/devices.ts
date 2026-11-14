@@ -387,3 +387,5 @@ function buildRouter(dev: Device): Build {
       group.add(screw);
     }
   }
+  dev.ports.forEach((_, i) => addPort(b, dev, i, portX(i), 0.3, z, { w: 0.17, h: 0.13, ledY: 0.16 }));
+  // Console port: real looking, not part of the data network.
