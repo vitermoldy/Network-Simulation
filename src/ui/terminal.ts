@@ -5,3 +5,6 @@
 
 import { intToIp, maskOf, networkOf } from '../engine/ip';
 import type { Simulator } from '../engine/sim';
+import { longPortName, type Device, type Port } from '../engine/topology';
+
+export interface ShellHost {
