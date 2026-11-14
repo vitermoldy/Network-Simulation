@@ -2271,3 +2271,5 @@ tbody th {
     width: 100%;
   }
 
+  .request-row {
+    flex-wrap: wrap;
