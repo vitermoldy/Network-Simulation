@@ -238,3 +238,5 @@ describe('simulator', () => {
 
   it('refuses a PC with no address before sending anything', () => {
     const sim = withScenario('normal');
+    const pc = sim.addDevice('laptop', -12, 7);
+    run(sim, 'www.jaringan.test', 600, pc.id);
