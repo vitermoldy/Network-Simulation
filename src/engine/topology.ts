@@ -330,3 +330,5 @@ export class Topology {
     if (dev.kind === 'switch') return { ok: false, reason: 'Port switch tidak diberi IP: switch bekerja dengan alamat MAC.' };
     const clean = ip.trim();
     if (!clean) {
+      p.ip = undefined;
+      p.prefix = undefined;
