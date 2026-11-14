@@ -381,3 +381,5 @@ function buildRouter(dev: Device): Build {
     const plate = mesh(new THREE.BoxGeometry(0.36, 0.3, 0.02), shared.plate, false);
     plate.position.set(px, 0.3, z + 0.006);
     group.add(plate);
+    for (const sx of [-0.15, 0.15]) {
+      const screw = mesh(new THREE.CylinderGeometry(0.014, 0.014, 0.02, 10).rotateX(Math.PI / 2), shared.screw, false);
