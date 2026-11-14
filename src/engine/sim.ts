@@ -682,3 +682,5 @@ export class Simulator {
     const dev = this.topo.deviceOf(portId);
     const link = this.topo.linkOf(portId);
     this.record(packet, dev.id, true);
+    if (!link) {
+      this.loseAt(packet, dev.id, `Tidak ada kabel di port ${this.topo.port(portId).name} milik ${dev.name}, jadi paket tidak bisa keluar.`);
