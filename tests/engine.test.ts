@@ -327,3 +327,5 @@ describe('ping and nslookup', () => {
     const sim2 = withScenario('normal');
     sim2.startLookup('pc', 'www.tidakada.test', 3);
     while (sim2.status === 'running' && sim2.time < 200) sim2.advance(0.05);
+    expect(sim2.status).toBe('failed');
+    expect(sim2.output.some((l) => l.includes('Non-existent domain'))).toBe(true);
