@@ -250,3 +250,5 @@ export class Stage {
     const role = roleOf(d);
     const ip = d.kind === 'switch' ? '' : d.kind === 'router' ? '' : d.ports[0].ip ?? 'tanpa IP';
     const set = (sel: string, text: string) => {
+      const n = el.querySelector(sel)!;
+      if (n.textContent !== text) n.textContent = text;
