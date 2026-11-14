@@ -632,3 +632,5 @@ export class Simulator {
     for (const [sw, table] of this.macTables) {
       if (!this.topo.has(sw) || !this.topo.device(sw).powered) {
         this.macTables.delete(sw);
+        continue;
+      }
