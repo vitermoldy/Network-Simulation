@@ -1848,3 +1848,5 @@ tbody th {
 }
 
 .devwin-titles {
+  flex: 1;
+  min-width: 0;
