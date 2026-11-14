@@ -126,3 +126,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
     const b = mesh(new THREE.BoxGeometry(w, h, 0.03), frameMat, false);
     b.position.set(x, y, 0.015);
     group.add(b);
+  }
+  const hole = mesh(new THREE.BoxGeometry(holeW, holeH, 0.02), shared.hole, false);
