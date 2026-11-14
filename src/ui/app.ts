@@ -211,3 +211,5 @@ export class App {
         localStorage.setItem('netsim-theme', next);
       } catch {
         /* the theme still applies for this visit */
+      }
+      this.stage?.setTheme(next);
