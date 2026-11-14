@@ -564,3 +564,5 @@ export class Topology {
     for (const link of this.links.values()) {
       if (parent.has(link.a) && parent.has(link.b) && !this.port(link.a).down && !this.port(link.b).down) union(link.a, link.b);
     }
+    for (const d of this.devices.values()) {
+      if (!d.powered || d.kind !== 'switch') continue;
