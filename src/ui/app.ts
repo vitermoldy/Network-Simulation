@@ -259,3 +259,5 @@ export class App {
         const k = b.dataset.cam;
         if (k === 'left') s.rotate(-0.3);
         else if (k === 'right') s.rotate(0.3);
+        else if (k === 'in') s.zoom(0.78);
+        else if (k === 'out') s.zoom(1.28);
