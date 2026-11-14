@@ -181,3 +181,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
   ]);
   row(1, 'Kabel UTP', [
     ['Ukuran frame', `${p.size} byte`],
+    ['Di kabel', wire],
+  ]);
