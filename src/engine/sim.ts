@@ -483,3 +483,6 @@ export class Simulator {
     const pc = this.topo.has(this.browser.deviceId) ? this.topo.device(this.browser.deviceId) : undefined;
     this.browser = { deviceId: this.browser.deviceId, url: this.browser.url, state: pc && !pc.powered ? 'off' : 'idle', parts: PAGE_PARTS.map(() => false) };
     this.time = 0;
+    this.version++;
+  }
+
