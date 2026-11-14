@@ -1541,3 +1541,5 @@ export class Simulator {
       });
     });
     if (this.scenario === 'router-down' && !this.fired.has('router-down')) {
+      this.fired.add('router-down');
+      this.schedule(this.time + 1.5, () => {
