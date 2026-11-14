@@ -2230,3 +2230,5 @@ tbody th {
     grid-row: 2;
   }
 
+  .panel {
+    grid-column: 1;
