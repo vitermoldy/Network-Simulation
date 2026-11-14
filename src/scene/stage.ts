@@ -244,3 +244,5 @@ export class Stage {
   }
 
   private updateTag(view: DeviceView): void {
+    const el = this.tags.get(view.device.id);
+    if (!el) return;
