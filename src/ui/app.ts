@@ -1180,3 +1180,5 @@ export class App {
     $('layout-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const input = $<HTMLInputElement>('layout-name');
+      const err = $('layout-error');
+      const name = input.value.trim();
