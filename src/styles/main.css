@@ -1595,3 +1595,5 @@ tbody th {
   color: var(--muted);
 }
 
+.ports {
+  list-style: none;
