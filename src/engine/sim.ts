@@ -106,3 +106,5 @@ export type Scenario = 'normal' | 'loss' | 'router-down' | 'bad-domain';
 export interface Task {
   t: number;
   seq: number;
+  run: () => void;
+  /** In step mode the clock stops after this task. */
