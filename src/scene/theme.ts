@@ -60,3 +60,5 @@ export const MATERIAL = {
   ledAmber: 0xffaa1c,
   ledRed: 0xe0443a,
   rocker: 0x1b1d21,
+  cable: 0x3b4048,
+  cableHover: 0x1f2de6,
