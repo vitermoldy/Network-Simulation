@@ -21,3 +21,5 @@ export function canvasTexture(c: HTMLCanvasElement): THREE.CanvasTexture {
   return t;
 }
 
+export interface FacePrinter {
+  ctx: CanvasRenderingContext2D;
