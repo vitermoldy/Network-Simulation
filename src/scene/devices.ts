@@ -514,3 +514,5 @@ function buildPc(dev: Device): Build {
   const holder = new THREE.Object3D();
   holder.position.set(0.55, 0, 0.088);
   group.add(holder);
+  addScreen(b, holder, 1.52, 0.96, 0, dev);
+  b.power = { hit: button.hit, glow: button.glow, button: button.button, leds: [button.ring] };
