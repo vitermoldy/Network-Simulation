@@ -1379,3 +1379,5 @@ export class Simulator {
     this.setPhase('icmp', 'active');
     const seq = pg.seq;
     if (seq === 1) {
+      this.note('info', dev.id, 'Echo request pertama', `${dev.name} mengirim ICMP echo request ke ${pg.ip}. ICMP dibawa langsung di dalam paket IP, tanpa TCP atau UDP. Setiap request punya nomor urut supaya balasannya bisa dicocokkan.`, 3);
+    }
