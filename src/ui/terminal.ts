@@ -95,3 +95,5 @@ export class PromptShell implements Shell {
       const why = this.host.run('lookup', d.id, args[0]);
       return why ? [why] : [''];
     }
+    if (c === 'tracert' || c === 'telnet' || c === 'ssh' || c === 'ftp') return [`${cmd} belum ada di simulasi ini. Coba ping atau nslookup.`];
+    return [`Invalid Command. Ketik help untuk melihat perintah.`];
