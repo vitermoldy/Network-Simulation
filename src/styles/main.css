@@ -495,3 +495,5 @@ select {
 }
 
 .ptag.is-discard {
+  background: var(--surface);
+  color: var(--muted);
