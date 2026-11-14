@@ -166,3 +166,5 @@ p {
 .ctl > label,
 .select-wrap > label,
 .speed legend,
+.layout-form > label,
+.host-form label,
