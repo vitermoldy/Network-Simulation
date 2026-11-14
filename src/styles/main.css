@@ -876,3 +876,5 @@ select {
   min-width: 44px;
   height: 36px;
   padding: 0 6px;
+  border-radius: var(--r-sm);
+  font: 500 13px var(--font-mono);
