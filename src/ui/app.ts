@@ -1525,3 +1525,6 @@ export class App {
           <span class="port-peer">${peer ? `ke ${esc(topo.portLabel(peer))}` : 'belum berkabel'}<span class="cell-note">${state}</span></span>
           ${cable}</div>
         ${ipCell}
+      </li>`;
+    }).join('');
+
