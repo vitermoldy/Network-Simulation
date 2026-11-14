@@ -67,3 +67,5 @@ export interface Packet {
   flow: Flow;
   /** Short tag that rides above the packet in 3D. */
   label: string;
+  /** One line for the log and the inspector. */
+  title: string;
