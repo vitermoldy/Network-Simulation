@@ -295,3 +295,5 @@ export class IosShell implements Shell {
           return r.ok ? [] : [`% ${r.reason}`];
         },
       },
+      {
+        words: ['no', 'ip', 'address'], help: 'hapus IP port ini',
