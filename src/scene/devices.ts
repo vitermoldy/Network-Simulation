@@ -457,3 +457,6 @@ function buildServer(dev: Device): Build {
   b.power = { hit: button.hit, glow: button.glow, button: button.button, leds: [button.ring] };
   b.busy.push(hdd);
   return b;
+}
+
+function addScreen(b: Build, parent: THREE.Object3D, w: number, y: number, z: number, dev: Device): void {
