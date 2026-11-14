@@ -127,3 +127,5 @@ export class DeviceViewer {
     if (!pick || !topo.has(this.deviceId)) return '';
     if (pick.type === 'power') {
       const d = topo.device(this.deviceId);
+      return `Tombol power: ${d.powered ? 'menyala, klik untuk mematikan' : 'mati, klik untuk menyalakan'}.`;
+    }
