@@ -1486,3 +1486,5 @@ export class App {
     }
     const d = topo.device(this.selectedDevice);
     const routes = d.kind === 'router' ? sim.routes.get(d.id) ?? [] : [];
+    const mac = d.kind === 'switch' ? [...sim.macTable(d.id)] : [];
+    const arp = [...sim.arpCache(d.id)];
