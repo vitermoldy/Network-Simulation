@@ -831,3 +831,6 @@ select {
 
 .switch input:checked + .switch-track {
   background: var(--accent);
+  border-color: var(--accent);
+}
+
