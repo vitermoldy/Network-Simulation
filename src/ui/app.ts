@@ -244,3 +244,5 @@ export class App {
       this.renderAll();
     });
     document.querySelectorAll<HTMLInputElement>('input[name="speed"]').forEach((r) =>
+      r.addEventListener('change', () => {
+        this.speed = Number(r.value);
