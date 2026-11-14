@@ -60,3 +60,5 @@ function cleanRun(run) {
     row: [
       host,
       text(run.source, 32) || '-',
+      SCENARIOS.has(run.scenario) ? run.scenario : 'normal',
+      Math.min(0.99, Math.max(0, Number(run.lossRate) || 0)),
