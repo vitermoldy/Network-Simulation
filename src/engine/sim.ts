@@ -1121,3 +1121,6 @@ export class Simulator {
       udp: { src: DNS_PORT_CLIENT, dst: 53 },
       app: { proto: 'DNS', lines: [`Pertanyaan: ${c.host}, tipe A`], dns: { txid: c.dnsTxid, question: c.host } },
       size: 74, retry,
+    }), DNS_RTO, MAX_DNS_TRIES, () => this.fail('dns', `Server DNS tidak menjawab setelah ${MAX_DNS_TRIES} kali bertanya. Periksa jalur dari ${pc.name} ke server DNS.`, this.clientId));
+  }
+
