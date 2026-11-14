@@ -1044,3 +1044,6 @@ export class App {
     const cancel = this.popoverCancel;
     this.popoverCancel = null;
     cancel?.();
+    this.selectedLink = null;
+  }
+
