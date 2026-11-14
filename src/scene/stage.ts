@@ -205,3 +205,5 @@ export class Stage {
 
   // ------------------------------------------------------------------ theme and size
 
+  setTheme(name: ThemeName): void {
+    this.themeName = name;
