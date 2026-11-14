@@ -2033,3 +2033,5 @@ tbody th {
   min-height: 40px;
   padding: 0 10px;
   border: 1px solid var(--line-strong);
+  border-radius: var(--r-sm);
+  background: var(--bg);
