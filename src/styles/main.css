@@ -2327,3 +2327,6 @@ tbody th {
 
   .host-form,
   .record-form {
+    grid-template-columns: 1fr;
+  }
+
