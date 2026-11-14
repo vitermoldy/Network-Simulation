@@ -1393,3 +1393,5 @@ export class Simulator {
     pg.timer = this.schedule(this.time + PING_RTO, () => {
       if (this.status !== 'running' || this.ping !== pg || pg.seq !== seq) return;
       this.say('Request timed out.');
+      this.note('retry', dev.id, `Ping ${seq} tidak dibalas`, `${PING_RTO} s tanpa echo reply. Paketnya hilang di jalan, tidak ada rute, atau perangkat tujuan mati.`, 3);
+      this.schedule(this.time + 0.3, () => this.pingNext());
