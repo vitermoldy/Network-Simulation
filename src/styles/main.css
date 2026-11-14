@@ -1585,3 +1585,5 @@ tbody th {
 }
 
 .form-error {
+  flex-basis: 100%;
+  color: var(--bad);
