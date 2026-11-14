@@ -1419,3 +1419,5 @@ export class App {
     let text = '';
     if (lead && this.sim.status !== 'idle') text = `Sekarang: ${lead.label}, ${this.sim.whereIs(lead.id)}`;
     else if (this.sim.status === 'running' && this.sim.quiet) text = 'Tidak ada paket di kabel. Menunggu timer, jadi waktu dipercepat.';
+    else if (this.sim.status === 'done') text = 'Output sudah tampil di layar pengirim.';
+    const el = $('flow-now');
