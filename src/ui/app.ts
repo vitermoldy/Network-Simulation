@@ -127,3 +127,5 @@ export class App {
       } catch {
         $('hint').hidden = false;
       }
+    } catch (err) {
+      console.error(err);
