@@ -1509,3 +1509,5 @@ export class App {
             <button type="button" class="btn btn-small btn-secondary" data-act="plug" data-port="${p.id}">Pasang</button></span>`;
       const state = p.down ? 'shutdown' : !link ? 'kosong' : topo.carrier(p.id) ? 'ada sinyal' : 'tanpa sinyal';
       const upToggle = `<label class="switch switch-small"><input type="checkbox" data-port-up="${p.id}" ${p.down ? '' : 'checked'} /><span class="switch-track" aria-hidden="true"></span><span>Aktif<span class="sr-only"> ${esc(p.name)}</span></span></label>`;
+      const ipCell = editable
+        ? `<form class="ip-form" data-form="ip" data-port="${p.id}" novalidate>
