@@ -1456,3 +1456,6 @@ tbody th {
   padding: 8px 10px;
   border-radius: var(--r);
   background: var(--accent-soft);
+  font-size: 13.5px;
+}
+
