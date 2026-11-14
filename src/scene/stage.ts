@@ -862,3 +862,6 @@ export class Stage {
       this.scene.remove(v.mesh);
       v.mat.dispose();
       this.packets.delete(id);
+    }
+
+    const found = lead as { p: Packet; rank: number; role?: Role } | undefined;
