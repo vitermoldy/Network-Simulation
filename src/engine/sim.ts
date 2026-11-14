@@ -444,3 +444,5 @@ export class Simulator {
     this.time = 0;
     this.flights = [];
     this.holds = [];
+    this.lost = [];
+    this.log = [];
