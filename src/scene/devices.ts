@@ -479,3 +479,5 @@ function buildPc(dev: Device): Build {
   const td = 1.5;
   const tower = rounded(tw, th, td, shared.tower, 0.04);
   tower.position.set(-0.85, th / 2, 0);
+  tower.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
+  group.add(tower);
