@@ -106,3 +106,5 @@ export function createApi(getPool, database) {
     const client = codeOf(req.params.client)
     if (!client) return res.status(400).json({ error: 'Kode klien tidak dikenal.' })
     const [rows] = await getPool().query(
+      `SELECT id, host, source, scenario, loss_rate AS lossRate, status, failed_phase AS failedPhase, reason,
+        sim_seconds AS simSeconds, packets_lost AS packetsLost, resends, route_changes AS routeChanges, path, devices,
