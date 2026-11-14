@@ -1156,3 +1156,5 @@ export class App {
         return;
       }
       if (err) err.hidden = true;
+      this.toast(done);
+      this.deviceDirty = false;
