@@ -89,3 +89,5 @@ interface DeviceSpec {
   id: string;
   kind: DeviceKind;
   name: string;
+  x: number;
+  z: number;
