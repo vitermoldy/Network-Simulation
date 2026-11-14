@@ -564,3 +564,5 @@ export class Simulator {
     if (!link) return;
     const label = `${this.topo.portLabel(link.a)} ke ${this.topo.portLabel(link.b)}`;
     this.cutLink(linkId, 'Kabel dicabut saat paket masih di dalamnya.');
+    this.topo.disconnect(linkId);
+    if (this.status === 'running') this.note('change', this.topo.port(link.a).deviceId, 'Kabel dicabut', `Kabel ${label} dicabut.`, 1);
