@@ -216,3 +216,5 @@ export class Simulator {
   readonly topo: Topology;
   time = 0;
   status: 'idle' | 'running' | 'done' | 'failed' = 'idle';
+  stepMode = false;
+  lossRate = 0;
