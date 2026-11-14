@@ -993,3 +993,5 @@ export class App {
     if (p.type === 'port' && topo.hasPort(p.portId)) {
       const port = topo.port(p.portId);
       const peer = topo.peer(p.portId);
+      const kind = topo.deviceOf(p.portId).kind;
+      const ip = kind === 'switch' ? '' : port.ip ? `, IP ${port.ip}/${port.prefix}` : ', belum diberi IP';
