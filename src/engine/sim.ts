@@ -883,3 +883,5 @@ export class Simulator {
       if (!target) {
         this.loseAt(p, dev.id, `${dev.name} tidak menemukan ${nextHop} di port ${out.name}: kabel atau perangkat berikutnya putus.`);
         return;
+      }
+      const fwd = clonePacket(p);
