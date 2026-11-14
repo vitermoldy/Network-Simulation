@@ -124,3 +124,5 @@ const plugPins = new THREE.MeshStandardMaterial({ color: MATERIAL.pin, metalness
 /** An RJ45 plug pushed into a socket. Local +z points away from the device. */
 export function buildPlug(port: PortView, cableMat: THREE.Material): THREE.Group {
   const g = new THREE.Group();
+  const w = port.holeW * 0.92;
+  const h = port.holeH * 0.9;
