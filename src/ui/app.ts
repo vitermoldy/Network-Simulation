@@ -113,3 +113,5 @@ export class App {
 
   constructor(private sim: Simulator) {}
 
+  async init(createStage: () => Promise<Stage>): Promise<void> {
+    this.bindControls();
