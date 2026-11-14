@@ -284,3 +284,5 @@ function buildSwitch(dev: Device): Build {
   };
   const rowY = (i: number) => (i % 2 === 0 ? 0.335 : 0.165);
 
+  const panel = frontPanel(w, h, (p) => {
+    const [x0] = p.px(-w / 2, 0);
