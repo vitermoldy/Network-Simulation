@@ -1507,3 +1507,5 @@ export class App {
         : `<span class="plug-row"><label class="sr-only" for="to-${p.id}">Sambungkan ${esc(p.name)} ke</label>
             <select id="to-${p.id}"><option value="">Pilih port</option>${free.map((f) => `<option value="${f.id}">${esc(topo.portLabel(f.id))}</option>`).join('')}</select>
             <button type="button" class="btn btn-small btn-secondary" data-act="plug" data-port="${p.id}">Pasang</button></span>`;
+      const state = p.down ? 'shutdown' : !link ? 'kosong' : topo.carrier(p.id) ? 'ada sinyal' : 'tanpa sinyal';
+      const upToggle = `<label class="switch switch-small"><input type="checkbox" data-port-up="${p.id}" ${p.down ? '' : 'checked'} /><span class="switch-track" aria-hidden="true"></span><span>Aktif<span class="sr-only"> ${esc(p.name)}</span></span></label>`;
