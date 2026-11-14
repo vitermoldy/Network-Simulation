@@ -291,3 +291,5 @@ export class App {
       const act = this.popoverAction;
       this.closePopover();
       act?.();
+    });
+    $('popover-close').addEventListener('click', () => this.closePopover());
