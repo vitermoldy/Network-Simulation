@@ -8,3 +8,7 @@ tombol power yang benar-benar bisa dipakai.
 
 Perangkatnya mengikuti bentuk yang biasa ditemui di lab Cisco dan Packet Tracer: switch 24 port
 FastEthernet dengan 2 uplink Gigabit, router dengan port GigabitEthernet dan port console, PC tower,
+laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip route`, `no shutdown`).
+
+## Yang bisa dilakukan
+
