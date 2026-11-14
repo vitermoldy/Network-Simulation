@@ -468,3 +468,6 @@ function addScreen(b: Build, parent: THREE.Object3D, w: number, y: number, z: nu
   screen.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
   parent.add(screen);
   b.hits.push(screen);
+  b.screen = { ctx, texture, key: '' };
+}
+
