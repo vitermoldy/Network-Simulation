@@ -135,3 +135,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
     row(7, p.app.proto, f);
   }
   if (p.tcp) {
+    row(4, 'TCP', [
+      ['Port asal', String(p.tcp.src)],
