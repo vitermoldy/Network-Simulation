@@ -1028,3 +1028,5 @@ export class App {
 
   private confirm(title: string, action: string, run: () => void, onCancel?: () => void): void {
     $('popover-title').textContent = title;
+    $('popover-action').textContent = action;
+    this.popoverAction = run;
