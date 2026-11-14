@@ -365,3 +365,5 @@ export class Topology {
     const d = this.device(id);
     const clean = ip.trim();
     if (clean && !validIp(clean)) return { ok: false, reason: `${clean} bukan alamat IPv4.` };
+    d[field] = clean || undefined;
+    this.rev++;
