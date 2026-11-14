@@ -7,3 +7,5 @@ import { PAGE_PARTS } from '../engine/sim';
 export const FONT_TEXT = '"Host Grotesk Variable", "Host Grotesk", system-ui, sans-serif';
 export const FONT_MONO = '"JetBrains Mono Variable", "JetBrains Mono", ui-monospace, monospace';
 
+export function makeCanvas(w: number, h: number): [HTMLCanvasElement, CanvasRenderingContext2D] {
+  const c = document.createElement('canvas');
