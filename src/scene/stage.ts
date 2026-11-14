@@ -794,3 +794,5 @@ export class Stage {
   private updatePackets(): void {
     const t = this.sim.time;
     const topo = this.sim.topo;
+    const seen = new Set<number>();
+    const color = this.packetColor();
