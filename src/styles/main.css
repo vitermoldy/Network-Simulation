@@ -51,3 +51,5 @@
 }
 
 /* Components set their own display; the hidden attribute must still win. */
+[hidden] {
+  display: none !important;
