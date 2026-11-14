@@ -149,3 +149,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
 
 let rockerTex: THREE.CanvasTexture | undefined;
 function rockerTexture(): THREE.CanvasTexture {
+  const [c, ctx] = makeCanvas(64, 96);
+  ctx.fillStyle = '#1b1d21';
