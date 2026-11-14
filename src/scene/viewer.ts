@@ -210,3 +210,5 @@ export class DeviceViewer {
   frame(): void {
     if (!this.active) return;
     const topo = this.sim.topo;
+    if (topo.has(this.deviceId)) {
+      const live = topo.device(this.deviceId);
