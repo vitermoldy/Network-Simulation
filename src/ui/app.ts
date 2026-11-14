@@ -1556,3 +1556,5 @@ export class App {
             <label for="rn-${d.id}">Nama</label><input id="rn-${d.id}" name="name" class="mono" placeholder="www.contoh.test" autocomplete="off" />
             <label for="ri-${d.id}">IP</label><input id="ri-${d.id}" name="ip" class="mono" placeholder="203.0.113.81" inputmode="decimal" autocomplete="off" />
             <button type="submit" class="btn btn-small btn-secondary">Tambah catatan</button>
+            <p class="form-error" hidden></p>
+          </form>`;
