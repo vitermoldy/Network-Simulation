@@ -59,3 +59,5 @@ export function keyboardTexture(): THREE.CanvasTexture {
   rows.forEach((n, r) => {
     const kw = 860 / 14;
     const off = (14 - n) * kw / 2;
+    for (let i = 0; i < n; i++) {
+      ctx.fillStyle = '#3a3e45';
