@@ -16,3 +16,5 @@ export function maskOf(prefix: number): number {
   return prefix === 0 ? 0 : (0xffffffff << (32 - prefix)) >>> 0;
 }
 
+/** "192.168.1.10", 24 -> "192.168.1.0/24" */
+export function networkOf(ip: string, prefix: number): string {
