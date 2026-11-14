@@ -230,3 +230,5 @@ interface Build {
   hits: THREE.Mesh[];
   tagY: number;
   top: THREE.Vector3;
+  half: { x: number; z0: number; z1: number };
+  screen?: DeviceView['screen'];
