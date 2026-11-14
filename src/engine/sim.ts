@@ -1017,3 +1017,5 @@ export class Simulator {
         this.fail('arp', `Tidak ada yang menjawab ARP untuk ${ip} setelah ${MAX_ARP_TRIES} kali bertanya. Periksa kabel ${dev.name} ke switch, kabel switch ke router, dan tombol power keduanya.`, dev.id);
         return;
       }
+      this.note('retry', dev.id, 'ARP ditanyakan ulang', `${fmt(ARP_RTO)} tanpa jawaban untuk ${ip}. ${dev.name} bertanya lagi (percobaan ${entry.tries + 1}).`, 2);
+      this.sendArp(dev, ip);
