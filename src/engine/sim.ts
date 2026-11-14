@@ -1191,3 +1191,5 @@ export class Simulator {
       this.tcpConnect(dev);
       return;
     }
+    if (p.icmp) {
+      this.icmpReceive(dev, p);
