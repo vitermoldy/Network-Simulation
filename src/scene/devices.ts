@@ -151,3 +151,5 @@ let rockerTex: THREE.CanvasTexture | undefined;
 function rockerTexture(): THREE.CanvasTexture {
   const [c, ctx] = makeCanvas(64, 96);
   ctx.fillStyle = '#1b1d21';
+  ctx.fillRect(0, 0, 64, 96);
+  ctx.fillStyle = '#f2f3f5';
