@@ -540,3 +540,5 @@ export class Topology {
    * Returns a segment number per port; ports of devices that are off get none.
    */
   segments(): Map<string, number> {
+    const parent = new Map<string, string>();
+    const find = (x: string): string => {
