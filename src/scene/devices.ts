@@ -326,3 +326,5 @@ function buildSwitch(dev: Device): Build {
   const leds: THREE.Mesh[] = [];
   for (let i = 0; i < 4; i++) {
     const l = led(0.019);
+    l.position.set(-w / 2 + 0.47 + i * 0.13, 0.33, z + 0.01);
+    group.add(l);
