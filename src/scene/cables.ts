@@ -53,3 +53,5 @@ export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
   for (const bx of free) {
     for (const c of [[bx.x0 - pad, bx.z0 - pad], [bx.x1 + pad, bx.z0 - pad], [bx.x0 - pad, bx.z1 + pad], [bx.x1 + pad, bx.z1 + pad]] as V2[]) {
       if (!boxes.some((o) => inside(c, o))) corners.push(c);
+    }
+  }
