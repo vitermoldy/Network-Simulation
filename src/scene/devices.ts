@@ -366,3 +366,5 @@ function buildRouter(dev: Device): Build {
       }
     }
     p.text('PWR', -w / 2 + 0.6, 0.47, 0.03, { color: '#b9c0c8', weight: 600 });
+    p.text('SYS', -w / 2 + 0.74, 0.47, 0.03, { color: '#b9c0c8', weight: 600 });
+    p.text('ACT', -w / 2 + 0.88, 0.47, 0.03, { color: '#b9c0c8', weight: 600 });
