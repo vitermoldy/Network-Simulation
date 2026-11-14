@@ -1344,3 +1344,6 @@ select {
   gap: 6px;
   margin-bottom: 14px;
   padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
