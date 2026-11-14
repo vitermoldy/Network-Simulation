@@ -964,3 +964,5 @@ export class Simulator {
     const local = sameSubnet(nic.ip, dst, nic.prefix);
     if (!local && !dev.gateway) {
       this.loseAt(p, dev.id, `${dst} ada di jaringan lain, tapi ${dev.name} belum punya gateway.`);
+      return;
+    }
