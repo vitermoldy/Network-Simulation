@@ -26,3 +26,5 @@ export interface IpHeader {
   proto: 'UDP' | 'TCP' | 'ICMP';
 }
 
+export interface IcmpBody {
+  type: 'echo-request' | 'echo-reply';
