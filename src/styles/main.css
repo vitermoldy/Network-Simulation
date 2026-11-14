@@ -206,3 +206,5 @@ p {
   padding-left: 12px;
 }
 
+.field:focus-within {
+  border-color: var(--accent);
