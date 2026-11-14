@@ -324,3 +324,5 @@ export class Topology {
   // ------------------------------------------------------------------ IP settings
 
   /** Sets or clears (empty ip) the address on one port, with the checks a student would get wrong. */
+  setPortIp(portId: string, ip: string, prefix: number): Result {
+    const p = this.port(portId);
