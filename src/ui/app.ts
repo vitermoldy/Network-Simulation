@@ -1154,3 +1154,5 @@ export class App {
           err.hidden = false;
         }
         return;
+      }
+      if (err) err.hidden = true;
