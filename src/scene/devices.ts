@@ -77,3 +77,6 @@ function mesh(geo: THREE.BufferGeometry, mat: THREE.Material | THREE.Material[],
   m.castShadow = shadow;
   m.receiveShadow = true;
   return m;
+}
+
+function hitBox(w: number, h: number, d: number, pick: Pick): THREE.Mesh {
