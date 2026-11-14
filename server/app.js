@@ -81,3 +81,5 @@ export function createApi(getPool, database) {
   const api = express.Router()
   api.use(express.json({ limit: MAX_LAYOUT + 64 * 1024 }))
   api.use(sameOriginWrites)
+  api.use(rateLimit(120))
+  api.get('/health', (_req, res) => res.status(getPool() ? 200 : 503).json({ ok: !!getPool(), database }))
