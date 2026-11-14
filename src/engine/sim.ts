@@ -255,3 +255,5 @@ export class Simulator {
   private retx = new Map<string, Retx>();
   private arpPending = new Map<string, { packets: Packet[]; tries: number; timer?: Task }>();
   private fired = new Set<string>();
+  private client!: ClientState;
+  private servers = new Map<string, ServerState>();
