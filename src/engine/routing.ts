@@ -25,3 +25,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
   const seg = topo.segments();
   const routers = [...topo.devices.values()].filter((d) => d.kind === 'router' && d.powered);
 
+  // Networks each router has up on its own ports.
+  const attached = new Map<string, { network: string; portId: string }[]>();
