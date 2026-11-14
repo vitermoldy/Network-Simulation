@@ -544,3 +544,5 @@ export class Topology {
     const find = (x: string): string => {
       let r = x;
       while (parent.get(r) !== r) r = parent.get(r)!;
+      let c = x;
+      while (parent.get(c) !== r) {
