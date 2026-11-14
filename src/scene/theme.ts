@@ -10,3 +10,5 @@ export interface SceneTheme {
   zoneEdge: number;
   zoneActive: number;
   label: string;
+  labelMuted: string;
+  arrow: string;
