@@ -473,3 +473,5 @@ export class Stage {
       const v = this.devices.get(this.drag.id);
       if (p && v) {
         v.group.position.set(p.x + this.drag.offset.x, 0, p.z + this.drag.offset.z);
+        v.group.updateMatrixWorld(true);
+        this.rebuildCables(this.drag.id);
