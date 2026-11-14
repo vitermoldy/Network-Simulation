@@ -696,3 +696,5 @@ export class Stage {
 
   frame(dt: number): void {
     this.syncTopology();
+    const key = [...this.devices.values()].map((v) => `${v.device.id}:${roleOf(v.device)}:${v.group.position.x.toFixed(2)}:${v.group.position.z.toFixed(2)}`).join('|') + this.themeName;
+    if (key !== this.layoutKey) {
