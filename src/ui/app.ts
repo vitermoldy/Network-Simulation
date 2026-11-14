@@ -1310,3 +1310,5 @@ export class App {
 
   private renderAll(): void {
     this.renderedVersion = this.sim.version;
+    this.renderSources();
+    this.renderStatus();
