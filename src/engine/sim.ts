@@ -356,3 +356,5 @@ export class Simulator {
     }, true);
   }
 
+  /**
+   * ping from a PC, laptop, server or router: four ICMP echo requests, one after the other.
