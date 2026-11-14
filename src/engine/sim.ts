@@ -383,3 +383,5 @@ export class Simulator {
     }, true);
   }
 
+  /** nslookup from a PC or laptop: only the DNS question and its answer. */
+  startLookup(sourceId: string, rawName: string, seed?: number): void {
