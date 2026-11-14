@@ -33,3 +33,6 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
       if (p.ip && p.prefix !== undefined && topo.carrier(p.id)) list.push({ network: networkOf(p.ip, p.prefix), portId: p.id });
     }
     attached.set(r.id, list);
+  }
+
+  // Two routers are neighbours when they have ports in one broadcast domain and one subnet.
