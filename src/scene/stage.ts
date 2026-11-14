@@ -916,3 +916,5 @@ export class Stage {
       else v.hits[0].getWorldPosition(p);
     }
     p.project(this.camera);
+    const rect = this.renderer.domElement.getBoundingClientRect();
+    return { x: rect.left + ((p.x + 1) / 2) * rect.width, y: rect.top + ((1 - p.y) / 2) * rect.height };
