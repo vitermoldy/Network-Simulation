@@ -360,3 +360,5 @@ export class IosShell implements Shell {
       let ok = true;
       for (let i = 0; i < cmd.words.length; i++) {
         const t = tokens[i].toLowerCase();
+        if (!cmd.words[i].startsWith(t)) ok = false;
+      }
