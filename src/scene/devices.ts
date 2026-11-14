@@ -92,3 +92,5 @@ export function ledMaterial(): THREE.MeshStandardMaterial {
 export function setLed(m: THREE.Mesh, color: number | null): void {
   const key = color ?? -1;
   if (m.userData.led === key) return;
+  m.userData.led = key;
+  const mat = m.material as THREE.MeshStandardMaterial;
