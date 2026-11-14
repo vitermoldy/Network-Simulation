@@ -8,3 +8,5 @@ export interface SceneTheme {
   floor: number;
   zone: number;
   zoneEdge: number;
+  zoneActive: number;
+  label: string;
