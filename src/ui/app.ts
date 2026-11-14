@@ -882,3 +882,5 @@ export class App {
     if (!this.sim.topo.has(this.selectedDevice)) this.selectedDevice = [...this.sim.topo.devices.keys()][0] ?? '';
     this.deviceKey = '';
     this.sourceKey = '';
+    this.stage?.syncTopology(true);
+    this.stage?.fitView(true);
