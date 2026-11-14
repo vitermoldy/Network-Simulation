@@ -2339,3 +2339,6 @@ tbody th {
 
   .tool {
     min-width: 40px;
+    flex: 1;
+  }
+
