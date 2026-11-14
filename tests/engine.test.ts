@@ -102,3 +102,5 @@ describe('routing', () => {
     expect(lookup(routes.get('r4'), '172.16.0.53')!.viaRouter).toBe('r2');
   });
 
+  it('goes around a router that is off or removed', () => {
+    const t = new Topology();
