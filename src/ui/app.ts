@@ -1298,3 +1298,5 @@ export class App {
       packetsLost: s.log.filter((l) => l.kind === 'loss').length,
       resends: s.log.filter((l) => l.kind === 'retry' && l.title.endsWith('dikirim ulang')).length,
       routeChanges: s.log.filter((l) => l.kind === 'route' && l.title === 'Rute dihitung ulang').length,
+      path,
+      devices: topo.devices.size,
