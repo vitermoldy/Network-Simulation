@@ -11,3 +11,6 @@ const str = (key, fallback) => process.env[key] ?? fallback
 const num = (key, fallback) => {
   const value = Number(process.env[key])
   return Number.isFinite(value) && value > 0 ? value : fallback
+}
+
+export const config = {
