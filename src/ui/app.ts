@@ -960,3 +960,5 @@ export class App {
       if (link) {
         this.askUnplug(link.id);
         return;
+      }
+      this.setPending(p.portId);
