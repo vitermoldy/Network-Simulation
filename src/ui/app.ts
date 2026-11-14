@@ -387,3 +387,5 @@ export class App {
     $('theme').title = this.theme() === 'dark' ? 'Tema terang' : 'Tema gelap';
   }
 
+  private send(step = false): void {
+    const input = $<HTMLInputElement>('url');
