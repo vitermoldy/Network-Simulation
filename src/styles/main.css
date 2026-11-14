@@ -18,3 +18,5 @@
   --tip-ink: #eef0f3;
   --font-text: "Host Grotesk Variable", "Host Grotesk", system-ui, sans-serif;
   --font-mono: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --r-sm: 6px;
+  --r: 8px;
