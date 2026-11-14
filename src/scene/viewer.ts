@@ -110,3 +110,5 @@ export class DeviceViewer {
   }
 
   private cast(e: PointerEvent): Pick | null {
+    if (!this.view) return null;
+    const rect = this.renderer.domElement.getBoundingClientRect();
