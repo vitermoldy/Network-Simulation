@@ -674,3 +674,5 @@ select {
   left: 50%;
   transform: translateX(-50%);
   width: min(420px, calc(100% - 24px));
+  padding: 14px;
+  background: var(--panel);
