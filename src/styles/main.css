@@ -695,3 +695,5 @@ select {
 .toast {
   position: absolute;
   top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
