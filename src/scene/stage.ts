@@ -904,3 +904,5 @@ export class Stage {
     if (target.type === 'port') {
       const pv = this.portView(target.id);
       if (!pv) return undefined;
+      pv.anchor.getWorldPosition(p);
+    } else if (target.type === 'cable') {
