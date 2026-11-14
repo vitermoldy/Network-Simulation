@@ -991,3 +991,5 @@ select {
   color: var(--ok);
 }
 
+.sub {
+  font-size: 12.5px;
