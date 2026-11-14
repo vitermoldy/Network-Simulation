@@ -43,3 +43,6 @@ Terminal tetap gelap di kedua tema, seperti terminal sungguhan.
 | Laptop | Lid terbuka dengan layar hidup, port di sisi kanan, tombol power di atas keyboard | |
 | Server | Tower dengan drive bay; layanan (DNS, HTTP) dan IP tercetak di depan | |
 
+Tidak ada logo atau nama Cisco di model, karena itu merek dagang pihak lain. Bentuk, nama port, dan
+perintah CLI mengikuti kebiasaan Cisco supaya terasa akrab bagi mahasiswa yang memakai Packet Tracer.
+
