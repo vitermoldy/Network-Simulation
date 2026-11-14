@@ -1395,3 +1395,6 @@ export class Simulator {
       this.say('Request timed out.');
       this.note('retry', dev.id, `Ping ${seq} tidak dibalas`, `${PING_RTO} s tanpa echo reply. Paketnya hilang di jalan, tidak ada rute, atau perangkat tujuan mati.`, 3);
       this.schedule(this.time + 0.3, () => this.pingNext());
+    }, true);
+  }
+
