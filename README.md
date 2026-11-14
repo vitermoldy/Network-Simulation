@@ -68,3 +68,5 @@ http://localhost:8797.
 
 ### Perintah lain
 
+```bash
+npm test          # tes mesin simulasi (routing, ARP, DNS, TCP, ping, shutdown, simpan dan muat)
