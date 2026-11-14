@@ -649,3 +649,5 @@ export class Stage {
     dist *= 1.03;
     const position = target.clone().addScaledVector(dir, dist);
     if (animate) this.animateTo(target, position);
+    else {
+      this.controls.target.copy(target);
