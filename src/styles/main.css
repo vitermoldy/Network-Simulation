@@ -2084,3 +2084,6 @@ tbody th {
 
 .browser-bar:focus-within {
   border-color: var(--accent);
+}
+
+.browser-canvas {
