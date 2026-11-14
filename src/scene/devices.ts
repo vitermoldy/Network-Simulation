@@ -495,3 +495,5 @@ function buildPc(dev: Device): Build {
   });
   panel.position.set(-0.85, th / 2, td / 2 + 0.003);
   group.add(panel);
+  const button = buildRoundButton(dev.id, 0.065);
+  button.group.position.set(-0.85, th - 0.18, z);
