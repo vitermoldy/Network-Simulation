@@ -30,3 +30,6 @@ perangkat Cisco, dial **ENERGY 2 / RHYTHM 2 / MOTION 2**.
 | Huruf | Host Grotesk (teks dan judul) + JetBrains Mono (alamat IP, MAC, CLI) | Pasangan pertama dari dealer. Digit mono membuat alamat dan tabel rata; terminal terasa seperti terminal. |
 | Radius | soft (6, 8, 14 px) | Dealer untuk software; tidak ada bentuk pil kecuali sakelar. |
 
+Tema gelap ada sebagai pilihan (tombol di kanan atas): latar `#0b0c0e`, aksen `#5b8cff` (6,4:1 di latar).
+Terminal tetap gelap di kedua tema, seperti terminal sungguhan.
+
