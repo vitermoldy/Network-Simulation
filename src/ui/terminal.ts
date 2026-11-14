@@ -350,3 +350,5 @@ export class IosShell implements Shell {
       tokens = tokens.slice(1);
     }
     if (tokens[tokens.length - 1] === '?' && tokens.length > 1) {
+      const prefix = tokens.slice(0, -1).map((t) => t.toLowerCase());
+      const options = cmds.filter((c) => prefix.every((t, i) => c.words[i]?.startsWith(t))).map((c) => `  ${c.words.slice(prefix.length).join(' ') || '<cr>'}  ${c.help}`);
