@@ -1482,3 +1482,5 @@ export class App {
     if (!topo.has(this.selectedDevice)) {
       box.innerHTML = '';
       this.deviceKey = '';
+      return;
+    }
