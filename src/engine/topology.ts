@@ -443,3 +443,5 @@ export class Topology {
     const pa = this.port(a);
     const pb = this.port(b);
     if (pa.deviceId === pb.deviceId) {
+      return { ok: false, reason: `Kedua port ada di ${this.device(pa.deviceId).name}. Kabel harus menghubungkan dua perangkat.` };
+    }
