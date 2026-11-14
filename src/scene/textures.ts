@@ -27,3 +27,6 @@ export interface FacePrinter {
   px: (x: number, y: number) => [number, number];
   scale: number;
   text: (s: string, x: number, y: number, size: number, opts?: { color?: string; align?: CanvasTextAlign; mono?: boolean; weight?: number }) => void;
+}
+
+/** A transparent texture laid over a device face for its printed labels. */
