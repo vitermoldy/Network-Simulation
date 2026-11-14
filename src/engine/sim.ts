@@ -395,3 +395,6 @@ export class Simulator {
     this.schedule(0.6, () => {
       this.setPhase('input', 'done');
       this.dnsLookup();
+    }, true);
+  }
+
