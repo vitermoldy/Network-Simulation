@@ -2247,3 +2247,6 @@ tbody th {
 
 @media (max-width: 640px) {
   :root {
+    --gutter: 16px;
+  }
+
