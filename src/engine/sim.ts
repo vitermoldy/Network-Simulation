@@ -152,3 +152,5 @@ export interface BrowserView {
   serverIp?: string;
 }
 
+export interface TimerView {
+  key: string;
