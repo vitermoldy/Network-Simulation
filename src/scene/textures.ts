@@ -91,3 +91,6 @@ function wrap(ctx: CanvasRenderingContext2D, text: string, maxW: number): string
   return lines;
 }
 
+export const SCREEN_W = 960;
+export const SCREEN_H = 600;
+
