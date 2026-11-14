@@ -381,3 +381,5 @@ export class Topology {
     const d = this.device(id);
     const host = name.trim().toLowerCase().replace(/\.$/, '');
     if (!/^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(host)) return { ok: false, reason: 'Nama harus seperti www.contoh.test: huruf, angka, minus, dipisah titik.' };
+    if (!validIp(ip.trim())) return { ok: false, reason: `${ip} bukan alamat IPv4.` };
+    d.dnsRecords = { ...(d.dnsRecords ?? {}), [host]: ip.trim() };
