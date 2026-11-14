@@ -11,3 +11,6 @@ datang dari pemilik proyek dalam tiga langkah:
    2026 dari tiga palet yang ditawarkan.
 3. "Lihat Cisco": perangkat bergaya Cisco dan Packet Tracer, perangkat bisa ditambah dan dikurangi,
    dan klik perangkat membuka tampilan dekatnya (dengan tangkapan layar Packet Tracer sebagai acuan:
+   tab Physical, Config, Desktop, CLI).
+
+Design read: alat belajar jaringan (software) untuk mahasiswa praktikum, dengan bahasa meja lab dan
