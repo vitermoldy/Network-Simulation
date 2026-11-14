@@ -14,3 +14,5 @@ export class DeviceViewer {
   private scene = new THREE.Scene();
   private camera = new THREE.PerspectiveCamera(32, 1, 0.05, 100);
   private controls: OrbitControls;
+  private view?: DeviceView;
+  private leads = new THREE.Group();
