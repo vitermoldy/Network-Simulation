@@ -698,3 +698,5 @@ export class App {
     bc.canvas.setAttribute('aria-label', view.state === 'done' ? 'Halaman Halo dari Server Web tampil lengkap' : view.state === 'error' ? `Halaman tidak bisa dibuka. ${view.message ?? ''}` : 'Layar browser');
   }
 
+  private bindDeviceWindow(): void {
+    $('devwin-close').addEventListener('click', () => this.closeDevice());
