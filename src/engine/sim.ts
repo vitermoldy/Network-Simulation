@@ -295,3 +295,5 @@ export class Simulator {
       const mid = (lo + hi) >> 1;
       const q = this.queue[mid];
       if (q.t < t || (q.t === t && q.seq < task.seq)) lo = mid + 1;
+      else hi = mid;
+    }
