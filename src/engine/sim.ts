@@ -831,3 +831,5 @@ export class Simulator {
     }
     if (p.arp) {
       if (p.arp.op === 'request' && port.ip && p.arp.targetIp === port.ip) {
+        this.arpCache(dev.id).set(p.arp.senderIp, p.arp.senderMac);
+        this.note('info', dev.id, `${dev.name} menjawab ARP`, `ARP menanyakan ${p.arp.targetIp}, yaitu IP port ${port.name} milik router ini. Router membalas dengan MAC ${port.mac} dan sekalian mencatat MAC ${p.arp.senderIp}.`, 2, p.id);
