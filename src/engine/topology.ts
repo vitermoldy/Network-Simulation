@@ -220,3 +220,6 @@ export class Topology {
 
   deviceOf(portId: string): Device {
     return this.device(this.port(portId).deviceId);
+  }
+
+  linkOf(portId: string): Link | undefined {
