@@ -630,3 +630,5 @@ export class App {
     const box = $('desktop');
     const d = this.sim.topo.device(this.selectedDevice);
     const key = JSON.stringify([d.id, this.desktopApp, this.desktopApp === 'ip' ? this.sim.topo.rev : 0]);
+    if (key === this.desktopKey && box.childElementCount) {
+      if (this.desktopApp === 'browser') this.paintBrowser();
