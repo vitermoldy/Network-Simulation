@@ -287,3 +287,5 @@ export class Stage {
     if (!force && this.topoRev === this.sim.topo.rev) return;
     this.topoRev = this.sim.topo.rev;
     const topo = this.sim.topo;
+    for (const id of [...this.devices.keys()]) if (!topo.devices.has(id)) this.removeDeviceView(id);
+    for (const dev of topo.devices.values()) {
