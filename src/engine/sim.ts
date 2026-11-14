@@ -1575,3 +1575,5 @@ export class Simulator {
 
 /** Plain sentences about routes that moved, for the log. */
 export function describeRouteChanges(topo: Topology, before: Map<string, Route[]>, after: Map<string, Route[]>): string[] {
+  const out: string[] = [];
+  for (const [rid, routes] of after) {
