@@ -2293,3 +2293,6 @@ tbody th {
     right: 8px;
     left: 8px;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
