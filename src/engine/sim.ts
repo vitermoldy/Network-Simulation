@@ -1068,3 +1068,6 @@ export class Simulator {
     }
     this.note('retry', r.dev.id, `${r.label} dikirim ulang`, `${r.dev.name} menunggu ${fmt(r.rto)} tanpa balasan untuk ${r.label}, jadi dianggap hilang. Dikirim ulang (percobaan ${r.tries + 1}), dan timer digandakan menjadi ${fmt(r.rto * 2)}.`, 4);
     r.rto *= 2;
+    this.fire(r);
+  }
+
