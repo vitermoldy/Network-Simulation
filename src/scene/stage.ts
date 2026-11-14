@@ -55,3 +55,6 @@ const ZONE_TEXT: Record<Role, [string, string]> = {
 
 const packetGeo = new RoundedBoxGeometry(0.32, 0.2, 0.2, 2, 0.05);
 const ease = (t: number) => (t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2);
+const clamp01 = (t: number) => Math.min(1, Math.max(0, t));
+
+function roundedRectShape(x0: number, z0: number, x1: number, z1: number, r: number): THREE.Shape {
