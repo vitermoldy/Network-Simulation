@@ -321,3 +321,5 @@ describe('ping and nslookup', () => {
   it('answers nslookup with the record or NXDOMAIN', () => {
     const sim = withScenario('normal');
     sim.startLookup('pc', 'www.jaringan.test', 3);
+    while (sim.status === 'running' && sim.time < 200) sim.advance(0.05);
+    expect(sim.status).toBe('done');
