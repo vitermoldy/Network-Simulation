@@ -277,3 +277,5 @@ export class Simulator {
   }
 
   private server(id: string): ServerState {
+    let s = this.servers.get(id);
+    if (!s) {
