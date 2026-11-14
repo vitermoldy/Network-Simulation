@@ -1562,3 +1562,5 @@ export class App {
     }
     if (d.kind === 'switch') {
       extra += `<h3 class="sub">Tabel MAC</h3>${this.table(['MAC', 'Port'], mac.filter(([, port]) => topo.hasPort(port)).map(([m, port]) => [m, topo.port(port).name]),
+        'Masih kosong. Switch mengisinya sendiri dari alamat MAC asal setiap frame yang masuk.')}`;
+    }
