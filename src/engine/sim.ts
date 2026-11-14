@@ -1086,3 +1086,6 @@ export class Simulator {
     const h = this.holds.find((x) => x.packet.id === packetId);
     if (h) return `di dalam ${this.topo.device(h.deviceId).name}`;
     return 'sudah tidak di kabel';
+  }
+
+  /** The newest header version of a packet, wherever it is. */
