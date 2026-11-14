@@ -58,3 +58,5 @@ function cleanRun(run) {
   const path = Array.isArray(run.path) ? run.path.slice(0, 40).map((p) => text(p, 32)) : []
   return {
     row: [
+      host,
+      text(run.source, 32) || '-',
