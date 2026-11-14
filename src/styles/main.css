@@ -1952,3 +1952,5 @@ tbody th {
   border: 1px solid var(--line-strong);
 }
 
+.led-green {
+  background: #22d36b;
