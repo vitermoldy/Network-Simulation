@@ -688,3 +688,5 @@ export class Simulator {
     }
     const to = link.a === portId ? link.b : link.a;
     if (!this.topo.carrier(portId)) {
+      this.loseAt(packet, dev.id, `${this.topo.deviceOf(to).name} di ujung kabel sedang mati, jadi tidak ada sinyal di kabel itu.`);
+      return;
