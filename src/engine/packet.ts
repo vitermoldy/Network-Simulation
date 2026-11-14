@@ -79,3 +79,5 @@ export interface Packet {
   size: number;
   /** 0 for the first transmission, 1 for the first resend, and so on. */
   retry: number;
+  /** Cables travelled so far. */
+  hops: number;
