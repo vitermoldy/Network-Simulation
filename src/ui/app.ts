@@ -1345,3 +1345,5 @@ export class App {
     el.dataset.state = s.status;
   }
 
+  private renderPhases(): void {
+    const html = this.sim.phases.map((p) => `<li class="phase is-${p.status}">
