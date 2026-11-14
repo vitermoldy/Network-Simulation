@@ -787,3 +787,6 @@ export class App {
     this.portsKey = '';
     this.sourceKey = '';
     this.renderAll();
+  }
+
+  private renderTerm(el: HTMLElement, deviceId: string): void {
