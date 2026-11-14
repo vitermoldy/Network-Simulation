@@ -850,3 +850,5 @@ export class App {
     const s = this.stream;
     if (!s.deviceId || this.sim.outputDevice !== s.deviceId || this.sim.kind === 'web') return;
     if (this.sim.output.length > s.printed) {
+      this.termWrite(s.deviceId, this.sim.output.slice(s.printed));
+      s.printed = this.sim.output.length;
