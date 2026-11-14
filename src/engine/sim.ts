@@ -1305,3 +1305,5 @@ export class Simulator {
   }
 
   private sendGet(dev: Device): void {
+    const c = this.client;
+    if (this.status !== 'running') return;
