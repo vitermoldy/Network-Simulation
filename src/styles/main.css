@@ -1398,3 +1398,5 @@ td {
   font-variant-numeric: tabular-nums;
 }
 
+tbody th {
+  font-weight: 500;
