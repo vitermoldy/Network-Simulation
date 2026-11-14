@@ -429,3 +429,5 @@ export class Topology {
     nic.prefix = gw.prefix;
     d.gateway = gw.ip;
     if (isClient(d)) {
+      const dns = [...this.devices.values()].find((x) => x.kind === 'server' && x.services?.dns && x.ports[0].ip);
+      d.dnsServer = dns?.ports[0].ip ?? d.dnsServer;
