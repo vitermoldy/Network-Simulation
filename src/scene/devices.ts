@@ -455,3 +455,5 @@ function buildServer(dev: Device): Build {
   group.add(hdd);
   addPort(b, dev, 0, 0, 0.42, z, { w: 0.18, h: 0.14 });
   b.power = { hit: button.hit, glow: button.glow, button: button.button, leds: [button.ring] };
+  b.busy.push(hdd);
+  return b;
