@@ -117,3 +117,5 @@ export interface Flight {
   packet: Packet;
   linkId: string;
   from: string;
+  to: string;
+  t0: number;
