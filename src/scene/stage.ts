@@ -639,3 +639,5 @@ export class Stage {
       dist = hi;
       // Then slide the aim so the bench sits in the middle of the free area.
       const bb = bounds(dist);
+      const dx = (free.left + free.right) / 2 - (bb.l + bb.r) / 2;
+      const dy = (free.bottom + free.top) / 2 - (bb.b + bb.t) / 2;
