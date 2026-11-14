@@ -17,3 +17,5 @@ const TABLES = [
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     client_id CHAR(12) NOT NULL,
     host VARCHAR(253) NOT NULL,
+    source VARCHAR(32) NOT NULL,
+    scenario VARCHAR(16) NOT NULL,
