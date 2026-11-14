@@ -70,3 +70,5 @@ function cleanRun(run) {
       count(run.resends),
       count(run.routeChanges),
       JSON.stringify(path),
+      count(run.devices),
+      at,
