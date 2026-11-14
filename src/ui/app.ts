@@ -1625,3 +1625,5 @@ export class App {
     const reads = reader ? readsUpTo(reader.kind) : undefined;
     const rows = layersOf(p, where);
     const trace = (this.sim.trace.get(p.id) ?? []).map((id) => this.deviceName(id));
+    box.innerHTML = `
+      <div class="packet-head">
