@@ -149,3 +149,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
       ['Port tujuan', String(p.udp.dst)],
     ]);
   }
+  if (p.icmp) {
+    row(3, 'ICMP', [
