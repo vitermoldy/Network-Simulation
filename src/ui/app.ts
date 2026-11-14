@@ -837,3 +837,5 @@ export class App {
     if (!lines.length) return;
     const t = this.term(deviceId);
     t.lines.push(...lines);
+    if (t.lines.length > 600) t.lines.splice(0, t.lines.length - 600);
+    const el = document.querySelector<HTMLElement>(`.term[data-device="${CSS.escape(deviceId)}"] .term-out`);
