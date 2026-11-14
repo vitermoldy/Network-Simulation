@@ -247,3 +247,5 @@ export class IosShell implements Shell {
     }
     if (this.mode === 'priv') {
       const list: Command[] = [
+        { words: ['configure', 'terminal'], help: 'masuk mode konfigurasi', run: () => ((this.mode = 'config'), ['Enter configuration commands, one per line.  End with CNTL/Z.']) },
+        { words: ['disable'], help: 'kembali ke mode user (>)', run: () => ((this.mode = 'user'), []) },
