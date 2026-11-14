@@ -195,3 +195,5 @@ interface ServerState {
   rcvNext: number;
   clientIp?: string;
   synAckAt: number;
+  lastAck: number;
+  responded: boolean;
