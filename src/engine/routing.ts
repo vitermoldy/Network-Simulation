@@ -90,3 +90,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
       for (const a of attached.get(other) ?? []) {
         const cur = best.get(a.network);
         const cand: Route = {
+          network: a.network, type: 'O', portId: hop.portId, nextHop: hop.nextHop, viaRouter: hop.to, cost: d,
+        };
