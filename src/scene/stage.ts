@@ -348,3 +348,5 @@ export class Stage {
     for (const z of this.zones) {
       this.scene.remove(z.group);
       disposeTree(z.group);
+    }
+    this.zones = [];
