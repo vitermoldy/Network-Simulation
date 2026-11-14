@@ -724,3 +724,5 @@ export class App {
         this.desktopApp = app.dataset.app as typeof this.desktopApp;
         this.desktopKey = '';
         this.renderDesktop();
+        (desk.querySelector('.term-in input, input, .app-tile') as HTMLElement | null)?.focus();
+        return;
