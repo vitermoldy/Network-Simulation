@@ -652,3 +652,5 @@ export class App {
         <form class="ipconf" data-desk="ip" novalidate>
           <div class="ipconf-mode"><button type="button" class="btn btn-small btn-secondary" data-desk-act="dhcp">DHCP (IP otomatis)</button>
             <span class="note-muted">atau isi manual (Static):</span></div>
+          <label for="ic-ip">IPv4 Address</label><input id="ic-ip" name="ip" class="mono" value="${esc(nic.ip ?? '')}" inputmode="decimal" autocomplete="off" />
+          <label for="ic-mask">Subnet Mask</label><input id="ic-mask" name="mask" class="mono" value="${nic.prefix !== undefined ? prefixToMask(nic.prefix) : '255.255.255.0'}" inputmode="decimal" autocomplete="off" />
