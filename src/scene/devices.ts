@@ -279,3 +279,5 @@ function buildSwitch(dev: Device): Build {
   const holeH = 0.115;
   const colX = (i: number) => {
     const block = Math.floor(i / 8);
+    const col = Math.floor((i % 8) / 2);
+    return -0.95 + block * 0.86 + col * 0.19;
