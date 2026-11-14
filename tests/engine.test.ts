@@ -358,3 +358,5 @@ describe('layers', () => {
     const rows = layersOf(get[0], 'Laptop Fa0 ke Switch Lab Fa0/1');
     expect(rows.map((r) => r.layer)).toEqual([7, 4, 3, 2, 1]);
     expect(rows[1].proto).toBe('TCP');
+  });
+});
