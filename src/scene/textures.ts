@@ -243,3 +243,5 @@ export function drawArrow(ctx: CanvasRenderingContext2D, w: number, h: number, c
   ctx.moveTo(w * 0.08, h / 2);
   ctx.lineTo(w * 0.86, h / 2);
   ctx.moveTo(w * 0.66, h * 0.22);
+  ctx.lineTo(w * 0.9, h / 2);
+  ctx.lineTo(w * 0.66, h * 0.78);
