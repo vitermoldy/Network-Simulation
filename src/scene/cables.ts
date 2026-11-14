@@ -35,3 +35,5 @@ function segmentHitsBox(a: V2, b: V2, box: Box2): boolean {
       t1 = Math.min(t1, tb);
       if (t0 > t1) return false;
     }
+  }
+  return true;
