@@ -1483,3 +1483,6 @@ export class Simulator {
       if (t.len === 0 && t.ack === s.lastAck && waiting) {
         this.note('retry', dev.id, 'ACK duplikat', `Server menerima ACK ${t.ack} sekali lagi. Artinya ${this.cname} masih menunggu byte ${t.ack}; segmen itu akan dikirim ulang kalau timer-nya habis.`, 4, p.id);
       }
+      s.lastAck = Math.max(s.lastAck, t.ack);
+    }
+
