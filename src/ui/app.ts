@@ -420,3 +420,5 @@ export class App {
     this.followLatest = true;
     this.openEntry = null;
     this.renderedLog = 0;
+    this.stream = { deviceId: this.sim.outputDevice, printed: 0 };
+    $('log').innerHTML = '';
