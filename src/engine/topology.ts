@@ -336,3 +336,5 @@ export class Topology {
       return { ok: true };
     }
     if (!validIp(clean)) return { ok: false, reason: `${clean} bukan alamat IPv4. Contoh yang benar: 192.168.1.20.` };
+    if (!Number.isInteger(prefix) || prefix < 8 || prefix > 30) return { ok: false, reason: 'Prefix harus antara /8 dan /30, misalnya /24.' };
+    const n = ipToInt(clean);
