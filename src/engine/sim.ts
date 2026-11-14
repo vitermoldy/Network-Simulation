@@ -1421,3 +1421,6 @@ export class Simulator {
     pg.times.push(rtt);
     this.say(`Reply from ${p.ip!.src}: bytes=32 time=${rtt}s TTL=${p.ip!.ttl}`);
     this.note('ok', dev.id, `Balasan ping ${pg.seq}`, `Echo reply ${pg.seq} datang dari ${p.ip!.src} setelah ${rtt} s waktu simulasi. TTL tinggal ${p.ip!.ttl}: setiap router di jalan menguranginya satu.`, 3, p.id);
+    this.schedule(this.time + 0.8, () => this.pingNext());
+  }
+
