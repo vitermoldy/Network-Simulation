@@ -402,3 +402,5 @@ export class Stage {
       if (a.x1 + 0.75 >= b.x0 - 0.75) continue;
       const [c, ctx] = makeCanvas(256, 128);
       const tex = canvasTexture(c);
+      drawArrow(ctx, 256, 128, this.theme.arrow);
+      tex.needsUpdate = true;
