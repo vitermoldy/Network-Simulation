@@ -520,3 +520,5 @@ export class Stage {
     this.events.pick(this.cast(e));
   }
 
+  private onKey(e: KeyboardEvent): void {
+    const k = e.key;
