@@ -619,3 +619,6 @@ export function buildDevice(dev: Device): DeviceView {
     screen: b.screen,
     signature: signatureOf(dev),
   };
+}
+
+/** World footprint of a device on the bench, for cable routing and placement. */
