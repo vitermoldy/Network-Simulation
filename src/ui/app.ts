@@ -1128,3 +1128,5 @@ export class App {
       const id = this.selectedDevice;
       const f = new FormData(form);
       const kind = form.dataset.form;
+      let res: { ok: boolean; reason?: string } = { ok: true };
+      let done = '';
