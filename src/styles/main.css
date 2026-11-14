@@ -688,3 +688,5 @@ select {
 }
 
 .popover-actions {
+  display: flex;
+  gap: 8px;
