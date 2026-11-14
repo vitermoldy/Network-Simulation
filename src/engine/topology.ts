@@ -136,3 +136,6 @@ export const SIZE: Record<DeviceKind, { w: number; d: number }> = {
 
 export interface SavedDevice extends Omit<Device, 'ports'> {
   ports: Omit<Port, 'deviceId'>[];
+}
+
+export interface TopologyData {
