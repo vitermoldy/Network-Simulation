@@ -48,3 +48,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* Components set their own display; the hidden attribute must still win. */
