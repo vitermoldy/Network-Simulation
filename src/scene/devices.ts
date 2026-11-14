@@ -535,3 +535,5 @@ function buildLaptop(dev: Device): Build {
   deck.position.set(0, baseH + 0.001, 0.02);
   deck.receiveShadow = true;
   group.add(deck);
+  const hinge = new THREE.Group();
+  hinge.position.set(0, baseH, -d / 2 + 0.04);
