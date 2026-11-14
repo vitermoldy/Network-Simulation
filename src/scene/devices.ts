@@ -591,3 +591,5 @@ export function signatureOf(dev: Device): string {
 
 export function buildDevice(dev: Device): DeviceView {
   const b = dev.kind === 'laptop' ? buildLaptop(dev)
+    : dev.kind === 'pc' ? buildPc(dev)
+      : dev.kind === 'server' ? buildServer(dev)
