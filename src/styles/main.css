@@ -1784,3 +1784,5 @@ tbody th {
   font-size: 12.5px;
 }
 
+.run-head {
+  display: flex;
