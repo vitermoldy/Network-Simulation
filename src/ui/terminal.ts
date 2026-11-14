@@ -224,3 +224,5 @@ export class IosShell implements Shell {
           return ['          Mac Address Table', '-------------------------------------------', '', 'Vlan    Mac Address       Type        Ports', '----    -----------       --------    -----',
             ...table.map(([mac, p]) => `   1    ${pad(mac, 18)}DYNAMIC     ${topo.port(p).name}`), ...(table.length ? [] : ['(kosong: belum ada frame yang lewat)'])];
         },
+      });
+    }
