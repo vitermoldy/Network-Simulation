@@ -263,3 +263,5 @@ export class Topology {
     while (taken.has(`${KIND_LABEL[kind]} ${n}`)) n++;
     let id = `${kind}${n}`;
     while (this.devices.has(id)) id = `${kind}${++n}x`;
+    const d = this.makeDevice(kind, id, `${KIND_LABEL[kind]} ${n}`, x, z);
+    // A router fresh out of the box has every interface shut down until someone enables it.
