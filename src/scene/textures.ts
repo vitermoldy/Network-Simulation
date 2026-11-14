@@ -44,3 +44,6 @@ export function printFace(w: number, h: number, draw: (p: FacePrinter) => void):
   };
   draw({ ctx, px, scale, text });
   return canvasTexture(c);
+}
+
+export function keyboardTexture(): THREE.CanvasTexture {
