@@ -234,3 +234,6 @@ p {
 
 .field-error {
   color: var(--bad);
+  font-size: 13px;
+}
+
