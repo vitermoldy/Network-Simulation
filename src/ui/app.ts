@@ -25,3 +25,6 @@ const ROLE_TEXT: Record<Role, string> = {
   input: 'Input: tempat alamat diketik dan halaman ditampilkan.',
   process: 'Proses: meneruskan atau membantu paket di jalan.',
   output: 'Output: menyiapkan jawaban untuk pengirim.',
+};
+
+const KIND_TEXT: Record<DeviceKind, string> = {
