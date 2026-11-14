@@ -140,3 +140,6 @@ export interface LostMark {
   deviceId?: string;
 }
 
+export type BrowserState = 'idle' | 'resolving' | 'connecting' | 'loading' | 'done' | 'error' | 'off';
+
+export interface BrowserView {
