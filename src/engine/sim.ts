@@ -930,3 +930,5 @@ export class Simulator {
       if (dev.id === this.client.deviceId) {
         this.clientReceive(dev, p);
         return;
+      }
+      if (dev.kind !== 'server') {
