@@ -477,3 +477,5 @@ function buildPc(dev: Device): Build {
   const tw = 0.75;
   const th = 1.55;
   const td = 1.5;
+  const tower = rounded(tw, th, td, shared.tower, 0.04);
+  tower.position.set(-0.85, th / 2, 0);
