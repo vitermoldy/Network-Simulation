@@ -308,3 +308,5 @@ export class Simulator {
       const task = this.queue.shift()!;
       if (task.cancelled) continue;
       this.time = Math.max(this.time, task.t);
+      task.run();
+      this.version++;
