@@ -62,3 +62,5 @@ const shared = {
   graphite: std(MATERIAL.graphite, { roughness: 0.5, metalness: 0.25 }),
   laptop: std(MATERIAL.laptop, { roughness: 0.45, metalness: 0.25 }),
   tower: std(MATERIAL.tower),
+  server: std(MATERIAL.server),
+  bezel: std(MATERIAL.bezel, { roughness: 0.5 }),
