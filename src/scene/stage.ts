@@ -865,3 +865,5 @@ export class Stage {
     }
 
     const found = lead as { p: Packet; rank: number; role?: Role } | undefined;
+    this.leadPacket = found?.p;
+    this.activeRole = found?.role;
