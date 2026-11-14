@@ -239,3 +239,5 @@ export class IosShell implements Shell {
 
     if (this.mode === 'user') {
       const list: Command[] = [
+        { words: ['enable'], help: 'masuk mode privileged (#)', run: () => ((this.mode = 'priv'), []) },
+        ...show, ping,
