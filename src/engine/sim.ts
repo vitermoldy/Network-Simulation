@@ -1237,3 +1237,6 @@ export class Simulator {
       return;
     }
 
+    if (has('ACK') && t.ack >= CLIENT_ISS + 1 + c.getLen && c.getLen > 0) this.acked('get');
+    if (t.len === 0) return;
+
