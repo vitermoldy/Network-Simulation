@@ -812,3 +812,5 @@ export class Simulator {
     const learnText = learned ? ` Switch juga mencatat bahwa ${p.eth.src} ada di ${inName}.` : '';
     this.note('info', dev.id, `${dev.name} meneruskan frame`, `Frame "${p.label}" masuk di ${inName}. Switch hanya membaca header Ethernet (lapisan 2). ${how}${outs.length ? ` (${names})` : ''}.${learnText}`, 2, p.id);
     this.hold(p, dev, inPort, outs, TIMING.switch, () => {
+      if (!outs.length) {
+        this.discard(p, dev.id, 'tidak ada port lain yang tersambung untuk frame ini.');
