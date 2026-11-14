@@ -44,3 +44,5 @@ export interface Device {
   /** Servers only. */
   services?: Services;
   /** Servers with DNS on: name to IPv4. */
+  dnsRecords?: Record<string, string>;
+  /** Place on the bench, in scene units. Every device faces +z. */
