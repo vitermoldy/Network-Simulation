@@ -634,3 +634,5 @@ export class App {
       if (this.desktopApp === 'browser') this.paintBrowser();
       return;
     }
+    if (box.contains(document.activeElement) && (document.activeElement as HTMLElement).matches('input') && this.desktopApp === 'ip') return;
+    this.desktopKey = key;
