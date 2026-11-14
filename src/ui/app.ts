@@ -1392,3 +1392,5 @@ export class App {
     if (nearBottom || log.length < 4) ol.scrollTop = ol.scrollHeight;
   }
 
+  private renderTimers(): void {
+    const timers = this.sim.timers();
