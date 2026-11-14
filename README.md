@@ -70,3 +70,6 @@ http://localhost:8797.
 
 ```bash
 npm test          # tes mesin simulasi (routing, ARP, DNS, TCP, ping, shutdown, simpan dan muat)
+npm run typecheck
+```
+
