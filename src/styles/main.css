@@ -289,3 +289,5 @@ select {
   border-color: var(--line-strong);
 }
 
+.btn-primary {
+  background: var(--accent);
