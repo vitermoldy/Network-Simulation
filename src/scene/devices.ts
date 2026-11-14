@@ -644,3 +644,5 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
   const on = d.powered;
   showPower(v, on);
   let anyActive = sim.holds.some((h) => h.deviceId === d.id);
+  for (const p of v.ports.values()) {
+    const last = sim.activity.get(p.id);
