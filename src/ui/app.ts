@@ -1060,3 +1060,5 @@ export class App {
   private showTab(tab: Tab): void {
     this.tab = tab;
     for (const t of TABS) {
+      const b = $(`tab-${t}`);
+      b.setAttribute('aria-selected', String(t === tab));
