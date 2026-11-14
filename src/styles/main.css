@@ -79,3 +79,5 @@ select {
 button,
 select,
 label[for],
+input[type="checkbox"],
+input[type="radio"],
