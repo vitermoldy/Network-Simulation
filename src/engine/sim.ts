@@ -1248,3 +1248,5 @@ export class Simulator {
       while (c.buffer.has(c.rcvNext)) {
         const b = c.buffer.get(c.rcvNext)!;
         c.buffer.delete(c.rcvNext);
+        c.rcvNext += b.tcp!.len;
+        const bp = b.app?.part ?? 0;
