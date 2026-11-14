@@ -71,3 +71,5 @@ export function keyboardTexture(): THREE.CanvasTexture {
   ctx.lineWidth = 3;
   ctx.beginPath();
   ctx.roundRect(392, 332, 240, 76, 12);
+  ctx.fill();
+  ctx.stroke();
