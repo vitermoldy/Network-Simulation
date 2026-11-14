@@ -1530,3 +1530,6 @@ tbody th {
 
 .layer dt {
   color: var(--muted);
+}
+
+.layer dd {
