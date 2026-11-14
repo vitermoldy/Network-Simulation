@@ -129,3 +129,5 @@ export class App {
       }
     } catch (err) {
       console.error(err);
+      const s = $('stage-state');
+      s.classList.add('is-error');
