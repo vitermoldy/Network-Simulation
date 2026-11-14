@@ -1023,3 +1023,5 @@ select {
   display: grid;
 }
 
+.phase .mark svg {
+  width: 20px;
