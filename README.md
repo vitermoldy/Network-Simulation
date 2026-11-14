@@ -90,3 +90,4 @@ Ini simulasi untuk belajar, bukan emulator. Waktu diperlambat supaya paket bisa 
 segmen TCP berisi 400 byte, nomor urut TCP dimulai dari angka yang mudah dibaca, router mempelajari
 rute secara otomatis (tanpa perlu `router ospf`), dan ARP antar router dianggap sudah tersimpan;
 ARP yang diperlihatkan hanya dari PC atau laptop pengirim. Belum ada VLAN, DHCP server sungguhan
+(tombol IP otomatis meniru hasilnya), NAT, atau traceroute.
