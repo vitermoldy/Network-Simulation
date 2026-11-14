@@ -143,3 +143,6 @@ describe('simulator', () => {
     expect(versions[versions.length - 1].ip!.ttl).toBe(61);
     expect(versions[0].eth.src).not.toBe(versions[versions.length - 1].eth.src);
     expect(versions[versions.length - 1].ip!.src).toBe('192.168.1.10');
+  });
+
+  it('resends a lost segment and holds the next one until the gap is filled', () => {
