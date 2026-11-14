@@ -107,3 +107,5 @@ export function lookup(routes: Route[] | undefined, ip: string): Route | undefin
   let found: Route | undefined;
   for (const r of routes ?? []) {
     if (!inNetwork(ip, r.network)) continue;
+    if (!found || prefixOf(r.network) > prefixOf(found.network)) found = r;
+  }
