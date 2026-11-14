@@ -530,3 +530,6 @@ export class Topology {
     for (const pair of t.links) {
       if (Array.isArray(pair) && this.portIndex.has(pair[0]) && this.portIndex.has(pair[1])) this.connect(pair[0], pair[1]);
     }
+    this.rev++;
+  }
+
