@@ -151,3 +151,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     ctx.fillText(view.message ?? '', W / 2, body(240));
     return;
   }
+  // loading or done: draw the page, leaving gaps where a segment has not arrived in order.
+  const [header, main, footer] = view.parts;
