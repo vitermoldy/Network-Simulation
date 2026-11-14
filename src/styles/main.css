@@ -1882,3 +1882,6 @@ tbody th {
 .dw-fisik {
   display: grid;
   align-content: start;
+  gap: 10px;
+}
+
