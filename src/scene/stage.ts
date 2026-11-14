@@ -533,3 +533,5 @@ export class Stage {
   }
 
   private drawDangling(point: THREE.Vector3): void {
+    const port = this.pendingPort ? this.portView(this.pendingPort) : undefined;
+    if (!port) return;
