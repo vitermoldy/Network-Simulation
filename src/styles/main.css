@@ -1435,3 +1435,5 @@ tbody th {
   color: var(--muted);
 }
 
+.packet-title {
+  font-size: 17px;
