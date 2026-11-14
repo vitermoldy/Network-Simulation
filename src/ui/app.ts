@@ -1102,3 +1102,5 @@ export class App {
         }
         this.plug(b.dataset.port!, sel.value);
       }
+    });
+    box.addEventListener('change', (e) => {
