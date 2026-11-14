@@ -557,3 +557,5 @@ export class Stage {
   /** Start or stop placing a new device; the ghost follows the pointer until a click. */
   setPlacing(kind: DeviceKind | null): void {
     if (this.ghost) {
+      this.scene.remove(this.ghost.group);
+      disposeTree(this.ghost.group);
