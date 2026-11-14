@@ -1415,3 +1415,5 @@ export class App {
       if (on) li.setAttribute('aria-current', 'step');
       else li.removeAttribute('aria-current');
     });
+    const lead = this.stage?.leadPacket;
+    let text = '';
