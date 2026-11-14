@@ -267,3 +267,5 @@ describe('simulator', () => {
   });
 
   it('fails cleanly when the sending PC is removed mid-run', () => {
+    const sim = withScenario('normal');
+    sim.start('www.jaringan.test', 3);
