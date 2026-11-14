@@ -815,3 +815,6 @@ select {
   background: var(--surface);
   border: 1px solid var(--line-strong);
   transition: background-color 0.15s ease;
+}
+
+.switch-track::after {
