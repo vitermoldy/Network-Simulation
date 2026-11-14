@@ -999,3 +999,5 @@ export class App {
         ? `${topo.portLabel(p.portId)}${ip}. Tersambung ke ${topo.portLabel(peer)}.${topo.carrier(p.portId) ? '' : ' Tidak ada sinyal karena salah satu perangkat mati.'}`
         : this.pendingPort
           ? `${topo.portLabel(p.portId)}${ip}. Klik untuk memasang ujung kabel di sini.`
+          : `${topo.portLabel(p.portId)} kosong${ip}. Klik untuk mulai memasang kabel dari sini.`;
+    } else if (p.type === 'power' && topo.has(p.deviceId)) {
