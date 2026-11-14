@@ -566,3 +566,5 @@ export class Topology {
     }
     for (const d of this.devices.values()) {
       if (!d.powered || d.kind !== 'switch') continue;
+      for (const p of d.ports.slice(1)) union(d.ports[0].id, p.id);
+    }
