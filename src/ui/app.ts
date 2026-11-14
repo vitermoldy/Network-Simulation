@@ -293,3 +293,5 @@ export class App {
       act?.();
     });
     $('popover-close').addEventListener('click', () => this.closePopover());
+    $('recable').addEventListener('click', () => {
+      this.confirm('Kembalikan jaringan ke delapan perangkat awal? Perangkat yang kamu tambah dan semua pengaturan akan hilang, kecuali yang sudah disimpan sebagai rancangan.', 'Kembalikan', () => {
