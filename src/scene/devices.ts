@@ -334,3 +334,5 @@ function buildSwitch(dev: Device): Build {
   const mode = mesh(new THREE.BoxGeometry(0.07, 0.05, 0.03), shared.rocker, false);
   mode.position.set(-w / 2 + 0.88, 0.26, z + 0.012);
   group.add(mode);
+  b.power = { hit: rocker.hit, glow: rocker.glow, rocker: rocker.paddle, leds };
+  return b;
