@@ -230,3 +230,5 @@ export class Simulator {
   flights: Flight[] = [];
   holds: Hold[] = [];
   lost: LostMark[] = [];
+  routes = new Map<string, Route[]>();
+  converging = false;
