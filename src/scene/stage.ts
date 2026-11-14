@@ -832,3 +832,5 @@ export class Stage {
       const top = dev.topLocal.clone().add(dev.group.position).add(new THREE.Vector3(0, 0.12, 0));
       let to: THREE.Vector3;
       if (h.outPorts.length === 1 && h.outPorts[0] !== h.inPort) to = this.anchorPoint(h.outPorts[0]) ?? top;
+      else if (h.outPorts.length === 1) to = this.anchorPoint(h.inPort, 0.45) ?? top;
+      else to = top;
