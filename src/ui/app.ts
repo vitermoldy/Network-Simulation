@@ -738,3 +738,5 @@ export class App {
       e.preventDefault();
       const form = e.target as HTMLFormElement;
       const f = new FormData(form);
+      const id = this.selectedDevice;
+      if (form.dataset.desk === 'browse') {
