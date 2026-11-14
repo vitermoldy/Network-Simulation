@@ -67,3 +67,5 @@ describe('topology', () => {
     const a = t.addDevice('pc', -12, 7);
     const b = t.addDevice('pc', -8, 7);
     expect(a.name).toBe('PC 1');
+    expect(b.name).toBe('PC 2');
+    expect(a.ports[0].name).toBe('Fa0');
