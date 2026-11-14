@@ -263,3 +263,5 @@ export class App {
         else if (k === 'out') s.zoom(1.28);
         else if (k === 'reset') {
           s.resetView();
+          $('follow').setAttribute('aria-pressed', 'false');
+        }
