@@ -1424,3 +1424,5 @@ export class App {
     if (el.textContent !== text) el.textContent = text;
   }
 
+  private roleFromLog(): Role | undefined {
+    for (let i = this.sim.log.length - 1; i >= 0; i--) {
