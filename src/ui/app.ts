@@ -1030,3 +1030,5 @@ export class App {
     $('popover-title').textContent = title;
     $('popover-action').textContent = action;
     this.popoverAction = run;
+    this.popoverCancel = onCancel ?? null;
+    $('popover').hidden = false;
