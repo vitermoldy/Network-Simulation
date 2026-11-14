@@ -1024,3 +1024,5 @@ export class Simulator {
 
   private arpResolved(dev: Device, ip: string, mac: string, packetId: number): void {
     this.arpCache(dev.id).set(ip, mac);
+    const entry = this.arpPending.get(ip);
+    if (!entry) return;
