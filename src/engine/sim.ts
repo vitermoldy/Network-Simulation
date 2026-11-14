@@ -546,3 +546,6 @@ export class Simulator {
         ? `${dev.name} menyala lagi. Lampu link di port yang berkabel kembali hidup.`
         : `${dev.name} mati. Semua port-nya padam, jadi kabel yang terpasang tidak lagi membawa sinyal.`);
     }
+    this.topologyChanged();
+  }
+
