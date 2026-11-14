@@ -54,3 +54,5 @@ function cleanRun(run) {
   if (!/^[a-z0-9.-]+$/.test(host)) return { error: 'Alamat web tidak sah.' }
   if (run.status !== 'done' && run.status !== 'failed') return { error: 'Status percobaan tidak dikenal.' }
   const at = new Date(run.finishedAt)
+  if (Number.isNaN(at.getTime()) || Math.abs(Date.now() - at.getTime()) > 400 * 86_400_000) return { error: 'Waktu percobaan tidak masuk akal.' }
+  const path = Array.isArray(run.path) ? run.path.slice(0, 40).map((p) => text(p, 32)) : []
