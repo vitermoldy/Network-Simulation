@@ -1149,3 +1149,5 @@ export class Simulator {
     const c = this.client;
     if (p.app?.dns) {
       if (c.dnsDone || p.app.dns.txid !== c.dnsTxid) return;
+      c.dnsDone = true;
+      this.acked('dns');
