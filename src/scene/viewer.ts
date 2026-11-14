@@ -175,3 +175,5 @@ export class DeviceViewer {
       b.y = Math.max(0.05, pos.y * 0.4);
       const c = pos.clone().addScaledVector(dir, 1.5);
       c.y = 0.04;
+      const lead = new THREE.Mesh(tube(new THREE.CatmullRomCurve3([a, b, c]), 0.035), mat);
+      lead.castShadow = true;
