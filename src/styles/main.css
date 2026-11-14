@@ -1108,3 +1108,5 @@ select {
   font-weight: 500;
 }
 
+.timer-dev {
+  grid-column: 1;
