@@ -1222,3 +1222,5 @@ export class App {
             void this.refreshDb();
           } catch (ex) {
             this.toast(`Belum terhapus: ${(ex as Error).message}`);
+          }
+        });
