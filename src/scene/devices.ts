@@ -217,3 +217,5 @@ const rounded = (w: number, h: number, d: number, mat: THREE.Material, r = 0.04)
 
 /** An opaque printed front panel: background colours, labels, vents. */
 function frontPanel(w: number, h: number, draw: (p: FacePrinter) => void): THREE.Mesh {
+  const tex = printFace(w, h, draw);
+  return new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.6, metalness: 0.1 }));
