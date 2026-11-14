@@ -2219,3 +2219,6 @@ tbody th {
   .work {
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: auto auto auto;
+  }
+
+  .stage-wrap {
