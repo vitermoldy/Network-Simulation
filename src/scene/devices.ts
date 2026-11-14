@@ -617,3 +617,5 @@ export function buildDevice(dev: Device): DeviceView {
     topLocal: b.top.clone(),
     half: b.half,
     screen: b.screen,
+    signature: signatureOf(dev),
+  };
