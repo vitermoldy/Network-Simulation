@@ -316,3 +316,5 @@ export class Topology {
 
   setPower(deviceId: string, on: boolean): void {
     const d = this.device(deviceId);
+    if (d.powered === on) return;
+    d.powered = on;
