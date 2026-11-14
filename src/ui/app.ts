@@ -1241,3 +1241,5 @@ export class App {
       text.textContent = `Tersambung ke MySQL, database ${h.database}.${sent ? ` ${sent} percobaan yang tertunda baru saja terkirim.` : ''}`;
       $('db-status').dataset.state = 'ok';
       this.renderLayouts(layouts);
+      this.renderRuns(runs);
+    } catch (ex) {
