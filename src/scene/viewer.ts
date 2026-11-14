@@ -114,3 +114,5 @@ export class DeviceViewer {
     const rect = this.renderer.domElement.getBoundingClientRect();
     this.pointer.set(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1);
     this.raycaster.setFromCamera(this.pointer, this.camera);
+    const targets: THREE.Object3D[] = [this.view.powerHit, ...[...this.view.ports.values()].map((p) => p.hit)];
+    for (const h of this.raycaster.intersectObjects(targets, false)) {
