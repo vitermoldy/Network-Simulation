@@ -522,3 +522,5 @@ export class Topology {
       }
       devices.push(d);
     }
+    this.devices.clear();
+    this.links.clear();
