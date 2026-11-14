@@ -187,3 +187,5 @@ export class DeviceViewer {
       const fov = (this.camera.fov * Math.PI) / 180;
       const fitW = size.x / 2 / Math.tan(Math.atan(Math.tan(fov / 2) * this.camera.aspect));
       const fitH = Math.max(size.y, size.z * 0.6) / 2 / Math.tan(fov / 2);
+      const dist = Math.max(fitW, fitH) * 1.35 + size.z * 0.5;
+      this.home = { target: centre, position: centre.clone().addScaledVector(dir, dist) };
