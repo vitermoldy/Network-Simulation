@@ -1400,3 +1400,5 @@ export class App {
     const html = timers.map((t) => {
       const frac = Math.max(0, Math.min(1, t.remaining / t.rto));
       return `<li><span class="timer-name">${esc(t.label)}</span><span class="timer-dev">${esc(this.deviceName(t.deviceId))}, percobaan ${t.tries}</span>
+        <span class="timer-bar" aria-hidden="true"><span style="width:${(frac * 100).toFixed(1)}%"></span></span>
+        <span class="timer-left">sisa ${num(t.remaining)} s</span></li>`;
