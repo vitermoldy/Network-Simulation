@@ -1283,3 +1283,5 @@ select {
 }
 
 .devices li.is-selected .dev-pick {
+  border-color: var(--accent);
+  background: var(--accent-soft);
