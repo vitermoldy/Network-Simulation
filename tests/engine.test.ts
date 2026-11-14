@@ -28,3 +28,5 @@ describe('ip', () => {
 
 describe('topology', () => {
   it('starts with the default cables, Cisco-style port names, and refuses bad plugs', () => {
+    const t = new Topology();
+    expect(t.links.size).toBe(8);
