@@ -477,3 +477,5 @@ export class Topology {
 
   toJSON(): TopologyData {
     return {
+      version: 1,
+      devices: [...this.devices.values()].map((d) => ({
