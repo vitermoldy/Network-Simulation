@@ -1548,3 +1548,5 @@ export class App {
           <label class="switch"><input type="checkbox" data-service="http" ${d.services?.http ? 'checked' : ''} /><span class="switch-track" aria-hidden="true"></span><span>HTTP (TCP 80)</span></label>
         </div>`;
       if (d.services?.dns) {
+        extra += `<h3 class="sub">Catatan DNS</h3>
+          ${recs.length ? `<div class="table-wrap"><table><thead><tr><th scope="col">Nama</th><th scope="col">IP</th><th scope="col"><span class="sr-only">Aksi</span></th></tr></thead><tbody>
