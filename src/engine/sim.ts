@@ -1488,3 +1488,5 @@ export class Simulator {
 
     if (has('FIN')) {
       if (s.state === 'established' || s.state === 'syn-rcvd') {
+        s.state = 'last-ack';
+        s.rcvNext = t.seq + 1;
