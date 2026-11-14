@@ -506,3 +506,5 @@ export class App {
     const d = this.sim.topo.device(id);
     const hit = this.sim.topo.overlaps(d.kind, x, z, id);
     if (hit) {
+      this.toast(`${d.name} tidak bisa ditaruh di atas ${hit.name}.`);
+      return false;
