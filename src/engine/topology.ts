@@ -13,3 +13,5 @@ export interface Port {
   name: string;
   mac: string;
   ip?: string;
+  prefix?: number;
+  /** Administratively down ("shutdown" in the CLI). New routers start this way, as in Packet Tracer. */
