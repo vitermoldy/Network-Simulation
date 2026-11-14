@@ -885,3 +885,5 @@ export class Simulator {
         return;
       }
       const fwd = clonePacket(p);
+      fwd.ip!.ttl = ttl;
+      fwd.eth = { src: out.mac, dst: target.mac, type: 'IPv4' };
