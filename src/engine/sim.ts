@@ -351,3 +351,5 @@ export class Simulator {
     if (!pc) return;
     this.note('info', pc.id, 'Input: alamat diketik', `Browser di ${pc.name} menerima alamat http://${host}/. Sebelum bisa mengirim apa pun, browser perlu tahu alamat IP server untuk nama itu.`, 7);
     this.schedule(0.8, () => {
+      this.setPhase('input', 'done');
+      this.dnsLookup();
