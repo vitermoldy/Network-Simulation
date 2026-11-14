@@ -236,3 +236,5 @@ describe('simulator', () => {
     expect(sim.browser.deviceId).toBe(pc.id);
   });
 
+  it('refuses a PC with no address before sending anything', () => {
+    const sim = withScenario('normal');
