@@ -759,3 +759,5 @@ export class Stage {
     }
   }
 
+  private packetColor(): number {
+    return this.themeName === 'dark' ? MATERIAL.packetDark : MATERIAL.packet;
