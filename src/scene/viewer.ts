@@ -18,3 +18,5 @@ export class DeviceViewer {
   private leads = new THREE.Group();
   private floorMat = new THREE.MeshStandardMaterial({ color: 0xe2e5ea, roughness: 0.95 });
   private raycaster = new THREE.Raycaster();
+  private pointer = new THREE.Vector2();
+  private home?: { target: THREE.Vector3; position: THREE.Vector3 };
