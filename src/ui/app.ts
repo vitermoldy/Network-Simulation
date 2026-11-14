@@ -620,3 +620,5 @@ export class App {
       const peer = topo.peer(p.id);
       const state = p.down ? 'shutdown' : !peer ? 'kosong' : topo.carrier(p.id) ? 'tersambung' : 'tanpa sinyal';
       return [p.name, p.ip ? `${p.ip}/${p.prefix}` : '-', state, peer ? topo.portLabel(peer) : '-'];
+    });
+    $('dw-ports').innerHTML = `<h3 class="sub">Port</h3>${this.table(['Port', 'IP', 'Status', 'Kabel ke'], rows, '')}`;
