@@ -105,3 +105,5 @@ export class Stage {
   private raycaster = new THREE.Raycaster();
   private pointer = new THREE.Vector2();
   private floorPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
+  private topoRev = -1;
+  private layoutKey = '';
