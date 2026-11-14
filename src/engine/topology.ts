@@ -82,3 +82,6 @@ export const isClient = (d: Device) => d.kind === 'pc' || d.kind === 'laptop';
 function portNames(kind: DeviceKind): string[] {
   if (kind === 'switch') return [...Array.from({ length: 24 }, (_, i) => `Fa0/${i + 1}`), 'Gi0/1', 'Gi0/2'];
   if (kind === 'router') return ['G0/0', 'G0/1', 'G0/2', 'G0/3'];
+  return ['Fa0'];
+}
+
