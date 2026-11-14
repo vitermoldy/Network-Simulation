@@ -1146,3 +1146,5 @@ export class App {
       } else if (kind === 'record') {
         res = this.sim.edit((t) => t.setDnsRecord(id, String(f.get('name') ?? ''), String(f.get('ip') ?? '')));
         done = 'Catatan DNS ditambahkan.';
+      }
+      const err = form.querySelector<HTMLElement>('.form-error');
