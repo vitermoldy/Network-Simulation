@@ -265,3 +265,5 @@ export class App {
           s.resetView();
           $('follow').setAttribute('aria-pressed', 'false');
         }
+      }),
+    );
