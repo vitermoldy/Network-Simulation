@@ -164,3 +164,5 @@ export class App {
         this.stepOnce = false;
       }
       $('clock').classList.toggle('is-fast', fast);
+    } else if (this.playing && sim.status !== 'running') {
+      this.playing = false;
