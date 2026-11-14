@@ -407,3 +407,5 @@ export class App {
     const scenario = $<HTMLSelectElement>('scenario').value as Scenario;
     this.runScenario = scenario;
     this.sim.scenario = scenario === 'bad-domain' ? 'normal' : scenario;
+    this.sim.start(host, (Math.random() * 1e9) | 0, source);
+    this.beginRun(step);
