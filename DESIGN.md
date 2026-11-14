@@ -33,3 +33,6 @@ perangkat Cisco, dial **ENERGY 2 / RHYTHM 2 / MOTION 2**.
 Tema gelap ada sebagai pilihan (tombol di kanan atas): latar `#0b0c0e`, aksen `#5b8cff` (6,4:1 di latar).
 Terminal tetap gelap di kedua tema, seperti terminal sungguhan.
 
+## Perangkat (gaya Cisco, tanpa logo)
+
+| Perangkat | Bentuk | Catatan |
