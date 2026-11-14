@@ -700,3 +700,5 @@ export class App {
 
   private bindDeviceWindow(): void {
     $('devwin-close').addEventListener('click', () => this.closeDevice());
+    DW_TABS.forEach((t) => {
+      const b = $(`dwt-${t}`);
