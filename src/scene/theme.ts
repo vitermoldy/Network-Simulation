@@ -54,3 +54,5 @@ export const MATERIAL = {
   bezel: 0x2b2e33,
   metal: 0x9aa1aa,
   hole: 0x050607,
+  pin: 0xc9a54a,
+  ledOff: 0x3a3e44,
