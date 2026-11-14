@@ -1454,3 +1454,5 @@ export class App {
       const role = roleOf(d);
       return `<li class="${d.id === this.selectedDevice ? 'is-selected' : ''}">
         <button type="button" class="dev-pick" data-pick="${d.id}" aria-pressed="${d.id === this.selectedDevice}">
+          <span class="dev-name">${esc(d.name)}</span>
+          <span class="dev-meta">${KIND_LABEL[d.kind]}, ${role === 'input' ? 'input' : role === 'output' ? 'output' : 'proses'}, ${used} dari ${d.ports.length} port berkabel</span>
