@@ -664,3 +664,6 @@ export class Simulator {
   // ------------------------------------------------------------------ wire
 
   private newPacket(p: Omit<Packet, 'id' | 'retry' | 'hops'> & { retry?: number }): Packet {
+    return { retry: 0, hops: 0, ...p, id: this.nextPacket++ };
+  }
+
