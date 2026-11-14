@@ -1461,3 +1461,5 @@ export class Simulator {
         this.reliable('synack', 'SYN-ACK', dev, (retry) => this.tcpPacket(dev, s.clientIp!, 80, CLIENT_PORT, ['SYN', 'ACK'], SERVER_ISS, s.rcvNext, 'SYN-ACK', 'TCP SYN-ACK: sambungan diterima', retry),
           this.rto(), MAX_TCP_TRIES, () => this.note('error', dev.id, 'Server menyerah', 'SYN-ACK tidak pernah dibalas, server melupakan sambungan ini.'));
       } else if (s.state === 'syn-rcvd') {
+        const r = this.retx.get('synack');
+        this.note('info', dev.id, 'SYN ulang', 'SYN datang lagi, tanda SYN-ACK tadi tidak sampai. Server langsung mengirim SYN-ACK ulang.', 4, p.id);
