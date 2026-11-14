@@ -84,3 +84,5 @@ function readQueue(): RunRecord[] {
 
 function writeQueue(list: RunRecord[]): void {
   try {
+    localStorage.setItem(QUEUE_KEY, JSON.stringify(list.slice(-50)));
+  } catch {
