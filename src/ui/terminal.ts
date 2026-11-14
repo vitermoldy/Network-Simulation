@@ -145,3 +145,5 @@ export class IosShell implements Shell {
     ];
   }
 
+  private findPort(raw: string): Port | undefined {
+    const s = raw.replace(/\s+/g, '').toLowerCase();
