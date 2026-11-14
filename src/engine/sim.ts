@@ -222,3 +222,5 @@ export class Simulator {
   kind: RunKind = 'web';
   /** Text the run prints for the Command Prompt or CLI that started it (ping, nslookup). */
   output: string[] = [];
+  outputDevice = '';
+  /** Why the last run failed, in words, for every kind of run. */
