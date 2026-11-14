@@ -614,3 +614,5 @@ export class App {
     const topo = this.sim.topo;
     const d = topo.device(this.selectedDevice);
     const key = JSON.stringify([d.id, topo.rev]);
+    if (key === this.portsKey) return;
+    this.portsKey = key;
