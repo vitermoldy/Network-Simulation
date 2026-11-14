@@ -289,3 +289,5 @@ export class Simulator {
 
   private schedule(t: number, run: () => void, stop = false): Task {
     const task: Task = { t, seq: this.seq++, run, stop, cancelled: false };
+    let lo = 0;
+    let hi = this.queue.length;
