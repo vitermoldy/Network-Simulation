@@ -356,3 +356,5 @@ export class IosShell implements Shell {
     }
     let best: { cmd: Command; used: number }[] = [];
     for (const cmd of cmds) {
+      if (tokens.length < cmd.words.length) continue;
+      let ok = true;
