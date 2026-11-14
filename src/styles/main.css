@@ -1669,3 +1669,5 @@ tbody th {
 .ip-form input:focus,
 .host-form input:focus,
 .record-form input:focus,
+.inline-form input:focus {
+  outline: none;
