@@ -41,3 +41,5 @@ export class PromptShell implements Shell {
     return this.host.sim.topo.device(this.deviceId);
   }
 
+  prompt(): string {
+    return 'C:\\>';
