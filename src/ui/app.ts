@@ -1288,3 +1288,5 @@ export class App {
     const path = syn ? (s.trace.get(syn[0]) ?? []).map((id) => (topo.has(id) ? topo.device(id).name : id)) : [];
     const run: api.RunRecord = {
       host: s.browser.url,
+      source: topo.has(s.clientId) ? topo.device(s.clientId).name : s.clientId,
+      scenario: s.kind === 'web' ? this.runScenario : s.kind === 'ping' ? 'ping' : 'lookup',
