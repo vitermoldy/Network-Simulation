@@ -708,3 +708,5 @@ export class Stage {
       this.camera.position.lerpVectors(tw.fromPos, tw.toPos, k);
       this.controls.target.lerpVectors(tw.fromTarget, tw.toTarget, k);
       if (tw.t >= tw.dur) this.tween = undefined;
+    }
+    this.updateDevices();
