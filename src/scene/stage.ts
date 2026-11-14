@@ -488,3 +488,5 @@ export class Stage {
   }
 
   private setHover(pick: Pick | null, x: number, y: number): void {
+    const same = JSON.stringify(pick) === JSON.stringify(this.hovered);
+    this.hovered = pick;
