@@ -65,3 +65,5 @@ export class DeviceViewer {
     this.scene.add(floor);
     this.scene.add(this.leads);
 
+    canvas.addEventListener('pointerdown', (e) => {
+      this.down = { x: e.clientX, y: e.clientY };
