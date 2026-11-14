@@ -36,3 +36,5 @@ Terminal tetap gelap di kedua tema, seperti terminal sungguhan.
 ## Perangkat (gaya Cisco, tanpa logo)
 
 | Perangkat | Bentuk | Catatan |
+| --- | --- | --- |
+| Switch | Panel sistem abu kebiruan, 24 port Fa dalam tiga blok berisi delapan (dua baris), dua uplink Gi0/1 dan Gi0/2, LED SYST, STAT, DUPLX, SPEED, tombol MODE | Satu LED per port seperti switch Cisco: hijau saat link, kuning saat ada data. |
