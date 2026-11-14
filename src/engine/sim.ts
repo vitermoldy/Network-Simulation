@@ -380,3 +380,6 @@ export class Simulator {
         this.ping!.ip = target;
         this.pingNext();
       } else this.dnsLookup();
+    }, true);
+  }
+
