@@ -940,3 +940,5 @@ export class App {
       return;
     }
     if (p.type === 'power') {
+      this.togglePower(p.deviceId);
+      return;
