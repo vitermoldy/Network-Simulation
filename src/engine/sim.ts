@@ -178,3 +178,5 @@ interface ClientState {
   deviceId: string;
   host: string;
   serverIp?: string;
+  dnsTxid: number;
+  dnsDone: boolean;
