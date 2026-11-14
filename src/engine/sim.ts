@@ -1335,3 +1335,7 @@ export class Simulator {
     for (const r of this.retx.values()) if (r.timer) r.timer.cancelled = true;
     this.retx.clear();
     this.note('ok', undefined, 'Selesai', text);
+  }
+
+  // ------------------------------------------------------------------ ping (ICMP)
+
