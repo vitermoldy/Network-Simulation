@@ -978,3 +978,5 @@ select {
   overflow: hidden;
 }
 
+.run-status {
+  font-size: 14px;
