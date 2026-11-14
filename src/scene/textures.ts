@@ -88,3 +88,6 @@ function wrap(ctx: CanvasRenderingContext2D, text: string, maxW: number): string
     } else cur = t;
   }
   if (cur) lines.push(cur);
+  return lines;
+}
+
