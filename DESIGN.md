@@ -60,3 +60,5 @@ Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan r
 | Paket kotak kobalt dengan label pendek (SYN, DNS?, Data 2/3) | Satu warna aksen untuk "yang sedang bergerak"; paket hilang merah, paket yang diabaikan abu, selalu dengan kata, bukan warna saja. |
 | Klik perangkat membuka jendela, bukan memindah panel | Mengikuti Packet Tracer. Jendela tidak modal dan menempel di kanan, jadi meja tetap terlihat saat ping berjalan. |
 | Tampilan Fisik memakai penampil 3D terpisah | Satu perangkat sendirian, sebesar mungkin, bisa diputar; port, LED, dan colokan kabelnya terbaca. |
+| CLI gaya IOS dan Command Prompt bergaya Windows, keluaran berbahasa Inggris | Teks yang sama dengan yang dilihat mahasiswa di Packet Tracer; penjelasan tetap berbahasa Indonesia di panel Alur. |
+| Port router baru shutdown | Langkah `no shutdown` adalah bagian penting praktikum; sakelar Aktif di tab Config memberi jalan tanpa CLI. |
