@@ -558,3 +558,5 @@ export class Topology {
       if (rx !== ry) parent.set(rx, ry);
     };
     for (const d of this.devices.values()) {
+      if (!d.powered) continue;
+      for (const p of d.ports) parent.set(p.id, p.id);
