@@ -166,3 +166,5 @@ export class App {
       $('clock').classList.toggle('is-fast', fast);
     } else if (this.playing && sim.status !== 'running') {
       this.playing = false;
+    }
+    if (this.lastStatus === 'running' && (sim.status === 'done' || sim.status === 'failed')) void this.recordRun();
