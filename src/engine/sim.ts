@@ -1009,3 +1009,5 @@ export class Simulator {
       arp: { op: 'request', senderMac: nic.mac, senderIp: nic.ip!, targetMac: '00:00:00:00:00:00', targetIp: ip },
       size: 42, retry,
     });
+    this.emit(nic.id, p);
+    entry.timer = this.schedule(this.time + ARP_RTO, () => {
