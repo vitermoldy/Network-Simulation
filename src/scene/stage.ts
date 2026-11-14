@@ -756,3 +756,6 @@ export class Stage {
       c.mat.color.setHex(selected ? this.theme.zoneActive : hover ? 0x5d6470 : busy.has(c.linkId) ? 0x4a515c : MATERIAL.cable);
       c.mat.emissive.setHex(selected ? this.theme.zoneActive : 0x000000);
       c.mat.emissiveIntensity = selected ? 0.35 : 0;
+    }
+  }
+
