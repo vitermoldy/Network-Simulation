@@ -273,3 +273,5 @@ export class IosShell implements Shell {
             this.iface = p.id;
             this.mode = 'if';
             return [];
+          },
+        },
