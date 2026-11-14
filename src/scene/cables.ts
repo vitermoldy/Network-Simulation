@@ -90,3 +90,5 @@ function endPoints(port: PortView): { start: THREE.Vector3; out: THREE.Vector3; 
   dir.normalize();
   const start = pos.clone().addScaledVector(dir, 0.42);
   const out = pos.clone().addScaledVector(dir, 0.62);
+  out.y = pos.y * 0.55 + FLOOR_Y * 0.45;
+  const drop = pos.clone().addScaledVector(dir, 0.85);
