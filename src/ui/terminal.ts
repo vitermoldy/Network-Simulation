@@ -259,3 +259,5 @@ export class IosShell implements Shell {
         {
           words: ['hostname'], help: 'hostname <nama>: ganti nama perangkat',
           run: (args) => {
+            if (!args[0]) return ['% Incomplete command.'];
+            const r = topo.rename(d.id, args.join(' '));
