@@ -680,3 +680,5 @@ export class Simulator {
 
   private emit(portId: string, packet: Packet): void {
     const dev = this.topo.deviceOf(portId);
+    const link = this.topo.linkOf(portId);
+    this.record(packet, dev.id, true);
