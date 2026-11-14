@@ -447,3 +447,6 @@ export class App {
     this.send();
   }
 
+  // ------------------------------------------------------------------ devices on the bench
+
+  private startPlacing(kind: DeviceKind): void {
