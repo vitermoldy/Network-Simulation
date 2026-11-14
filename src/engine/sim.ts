@@ -314,3 +314,5 @@ export class Simulator {
         this.pruneLost();
         return 'step';
       }
+    }
+    this.time = target;
