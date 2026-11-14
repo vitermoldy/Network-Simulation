@@ -133,3 +133,5 @@ export interface Hold {
 
 export interface LostMark {
   packet: Packet;
+  t: number;
+  reason: string;
