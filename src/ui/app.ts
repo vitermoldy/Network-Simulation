@@ -1353,3 +1353,5 @@ export class App {
       <span class="phase-state">${STATUS_WORD[p.status]}</span>
     </li>`).join('');
     const ol = $('phases');
+    if (ol.dataset.html !== html) {
+      ol.innerHTML = html;
