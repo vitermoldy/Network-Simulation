@@ -703,3 +703,5 @@ select {
   border-radius: var(--r);
   background: var(--tip-bg);
   color: var(--tip-ink);
+  font-size: 13.5px;
+  z-index: 8;
