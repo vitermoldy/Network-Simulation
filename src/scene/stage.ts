@@ -60,3 +60,5 @@ const clamp01 = (t: number) => Math.min(1, Math.max(0, t));
 function roundedRectShape(x0: number, z0: number, x1: number, z1: number, r: number): THREE.Shape {
   // Drawn in the XY plane with y = -z, then laid flat.
   const s = new THREE.Shape();
+  s.moveTo(x0 + r, -z0);
+  s.lineTo(x1 - r, -z0);
