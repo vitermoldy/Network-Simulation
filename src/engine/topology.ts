@@ -93,3 +93,5 @@ interface DeviceSpec {
   z: number;
   ips?: Record<number, [string, number]>;
   gateway?: string;
+  dnsServer?: string;
+  services?: Services;
