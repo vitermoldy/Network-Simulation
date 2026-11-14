@@ -343,3 +343,5 @@ function buildRouter(dev: Device): Build {
   const w = 2.9;
   const h = 0.6;
   const d = 1.5;
+  const group = new THREE.Group();
+  const body = rounded(w, h, d, shared.graphite, 0.035);
