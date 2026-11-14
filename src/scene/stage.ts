@@ -254,3 +254,5 @@ export class Stage {
       if (n.textContent !== text) n.textContent = text;
     };
     set('.tag-role', role === 'input' ? 'Input' : role === 'output' ? 'Output' : 'Proses');
+    set('.tag-name', d.name);
+    set('.tag-ip', ip);
