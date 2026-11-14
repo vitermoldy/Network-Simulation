@@ -616,3 +616,5 @@ export class App {
     const key = JSON.stringify([d.id, topo.rev]);
     if (key === this.portsKey) return;
     this.portsKey = key;
+    const rows = d.ports.map((p) => {
+      const peer = topo.peer(p.id);
