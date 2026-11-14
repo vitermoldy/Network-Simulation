@@ -837,3 +837,5 @@ export class Simulator {
           const reply = this.newPacket({
             flow: 'arp', label: 'ARP balas', title: `ARP: ${port.ip} ada di ${port.mac}`,
             eth: { src: port.mac, dst: p.arp!.senderMac, type: 'ARP' },
+            arp: { op: 'reply', senderMac: port.mac, senderIp: port.ip!, targetMac: p.arp!.senderMac, targetIp: p.arp!.senderIp },
+            size: 42,
