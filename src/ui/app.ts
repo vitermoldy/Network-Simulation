@@ -442,3 +442,5 @@ export class App {
 
   /** The Web Browser app on a PC's Desktop: same run as the header form, from that PC. */
   private browse(deviceId: string, rawUrl: string): void {
+    $<HTMLSelectElement>('source').value = deviceId;
+    $<HTMLInputElement>('url').value = rawUrl.trim().replace(/^https?:\/\//i, '').replace(/\/.*$/, '');
