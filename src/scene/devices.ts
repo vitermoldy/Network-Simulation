@@ -166,3 +166,5 @@ function rockerTexture(): THREE.CanvasTexture {
 function buildRocker(deviceId: string, scale = 1) {
   const group = new THREE.Group();
   const housing = mesh(new THREE.BoxGeometry(0.2 * scale, 0.27 * scale, 0.03), shared.rocker, false);
+  housing.position.z = 0.015;
+  group.add(housing);
