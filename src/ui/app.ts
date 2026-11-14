@@ -452,3 +452,5 @@ export class App {
   private startPlacing(kind: DeviceKind): void {
     if (!this.stage) return;
     this.setPending(null);
+    this.closePopover();
+    this.placing = kind;
