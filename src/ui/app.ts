@@ -300,3 +300,5 @@ export class App {
       });
     });
 
+    TABS.forEach((t, i) => {
+      const b = $(`tab-${t}`);
