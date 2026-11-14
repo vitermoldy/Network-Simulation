@@ -149,3 +149,5 @@ export class Stage {
     this.controls = new OrbitControls(this.camera, canvas);
     this.controls.enableDamping = true;
     this.controls.dampingFactor = 0.09;
+    this.controls.minDistance = 3;
+    this.controls.maxDistance = 60;
