@@ -1439,3 +1439,5 @@ export class App {
     if (s.status === 'idle') label = 'Mulai';
     else if ((s.status === 'done' || s.status === 'failed') && s.quiet && s.lost.length === 0) label = 'Kirim lagi';
     else label = this.playing ? 'Jeda' : 'Lanjutkan';
+    if (play.textContent !== label) play.textContent = label;
+    play.setAttribute('aria-pressed', String(this.playing));
