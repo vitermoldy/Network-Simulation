@@ -31,3 +31,5 @@ const TABLES = [
     devices INT NOT NULL,
     finished_at DATETIME NOT NULL,
     INDEX runs_by_client (client_id, finished_at),
+    CONSTRAINT runs_client FOREIGN KEY (client_id) REFERENCES clients(id) ON DELETE CASCADE
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
