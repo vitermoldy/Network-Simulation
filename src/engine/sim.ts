@@ -1153,3 +1153,5 @@ export class Simulator {
       this.acked('dns');
       const server = this.topo.device(this.clientId).dnsServer ?? '';
       if (p.app.dns.rcode === 'NXDOMAIN' || !p.app.dns.answer) {
+        if (this.kind === 'lookup') {
+          this.say(`Server:  ${server}`);
