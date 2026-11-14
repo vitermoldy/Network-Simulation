@@ -6,3 +6,5 @@ export type ThemeName = 'light' | 'dark';
 export interface SceneTheme {
   background: number;
   floor: number;
+  zone: number;
+  zoneEdge: number;
