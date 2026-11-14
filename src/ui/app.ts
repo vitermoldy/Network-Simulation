@@ -1032,3 +1032,6 @@ export class App {
     this.popoverAction = run;
     this.popoverCancel = onCancel ?? null;
     $('popover').hidden = false;
+    $('popover-action').focus();
+  }
+
