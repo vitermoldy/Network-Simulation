@@ -507,3 +507,5 @@ export class Stage {
         v.group.updateMatrixWorld(true);
         this.rebuildCables(d.id);
       }
+      this.layoutKey = '';
+      return;
