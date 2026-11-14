@@ -772,3 +772,5 @@ export class App {
   private term(deviceId: string): TermState {
     let t = this.terms.get(deviceId);
     if (!t) {
+      const d = this.sim.topo.device(deviceId);
+      const host = { sim: this.sim, run: (k: 'ping' | 'lookup', id: string, target: string) => this.shellRun(k, id, target), changed: () => this.afterShellEdit() };
