@@ -2047,3 +2047,6 @@ tbody th {
 .ipconf-mode,
 .ipconf-actions,
 .ipconf .form-error {
+  grid-column: 1 / 3;
+}
+
