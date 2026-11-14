@@ -781,3 +781,5 @@ export class App {
     return t;
   }
 
+  private afterShellEdit(): void {
+    this.sim.edit(() => undefined);
