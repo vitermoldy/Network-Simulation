@@ -7,3 +7,5 @@ import { layersOf, readsUpTo, type Packet } from '../engine/packet';
 import { type LogEntry, type PhaseStatus, type Scenario, Simulator } from '../engine/sim';
 import { isClient, KIND_LABEL, roleOf, type DeviceKind, type Role } from '../engine/topology';
 import type { Pick } from '../scene/devices';
+import type { Stage, StageEvents } from '../scene/stage';
+import type { DeviceViewer } from '../scene/viewer';
