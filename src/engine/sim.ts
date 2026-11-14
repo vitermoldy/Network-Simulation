@@ -642,3 +642,5 @@ export class Simulator {
       return;
     }
     if (this.convergeTask) this.convergeTask.cancelled = true;
+    this.converging = true;
+    this.convergeTask = this.schedule(this.time + TIMING.converge, () => this.converge(), true);
