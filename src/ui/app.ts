@@ -1536,3 +1536,5 @@ export class App {
           ${isClient(d) ? `<label for="dns-${d.id}">Server DNS</label><input id="dns-${d.id}" name="dns" class="mono" value="${esc(d.dnsServer ?? '')}" placeholder="misalnya 172.16.0.53" inputmode="decimal" autocomplete="off" />` : ''}
           <div class="host-actions"><button type="submit" class="btn btn-small btn-secondary">Simpan</button>
             <button type="button" class="btn btn-small btn-ghost" data-act="auto">IP otomatis</button></div>
+          <p class="form-error" hidden></p>
+        </form>
