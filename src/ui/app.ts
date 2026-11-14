@@ -433,3 +433,5 @@ export class App {
   private shellRun(kind: 'ping' | 'lookup', deviceId: string, target: string): string | undefined {
     if (this.sim.status === 'running') return 'Masih ada simulasi yang berjalan. Tunggu sampai selesai, atau tekan Atur ulang di bawah meja.';
     this.runScenario = kind === 'ping' ? 'normal' : 'normal';
+    this.sim.scenario = 'normal';
+    if (kind === 'ping') this.sim.startPing(deviceId, target, (Math.random() * 1e9) | 0);
