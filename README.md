@@ -20,3 +20,5 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
   mana yang berubah (MAC baru, TTL turun).
 - **Ubah jaringannya.** Tambah PC, laptop, switch, router, atau server dari palet; seret untuk
   memindahkan; klik port kosong lalu port lain untuk memasang kabel; klik kabel untuk mencabutnya;
+  tekan tombol power untuk mematikan perangkat.
+- **Jendela perangkat seperti di Packet Tracer.** Klik perangkat untuk membukanya:
