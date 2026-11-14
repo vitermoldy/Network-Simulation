@@ -410,3 +410,5 @@ export class Simulator {
       this.fail('input', `${dev.name} mati. Nyalakan dulu lewat tombol power-nya.`, dev.id);
       this.browser.state = 'off';
       return undefined;
+    }
+    if (dev.kind === 'router') {
