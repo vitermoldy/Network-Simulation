@@ -1042,3 +1042,5 @@ export class App {
     $('popover').hidden = true;
     this.popoverAction = null;
     const cancel = this.popoverCancel;
+    this.popoverCancel = null;
+    cancel?.();
