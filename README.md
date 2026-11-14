@@ -24,3 +24,5 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
 - **Jendela perangkat seperti di Packet Tracer.** Klik perangkat untuk membukanya:
   - Fisik: perangkat itu saja dalam 3D, bisa diputar dan diperbesar.
   - Config: nama, IP per port, port aktif atau shutdown, gateway, DNS, layanan server, catatan DNS.
+  - Desktop (PC, laptop): IP Configuration, Command Prompt (`ipconfig`, `ping`, `arp -a`, `nslookup`),
+    Web Browser.
