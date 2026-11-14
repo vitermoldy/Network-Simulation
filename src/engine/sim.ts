@@ -725,3 +725,5 @@ export class Simulator {
 
   private loseFlight(f: Flight, reason: string): void {
     this.flights = this.flights.filter((x) => x !== f);
+    this.lost.push({ packet: f.packet, t: this.time, reason, kind: 'lost' });
+    this.note('loss', undefined, `${f.packet.label} hilang`, `${f.packet.title}: hilang di kabel ${this.topo.portLabel(f.from)} ke ${this.topo.portLabel(f.to)}. ${reason}`, 1, f.packet.id);
