@@ -42,3 +42,5 @@ export interface TcpHeader {
   dst: number;
   seq: number;
   ack: number;
+  flags: TcpFlag[];
+  len: number;
