@@ -609,3 +609,5 @@ export class Stage {
     const cam = this.camera.clone();
     const bounds = (dist: number) => {
       cam.position.copy(target).addScaledVector(dir, dist);
+      cam.lookAt(target);
+      cam.updateMatrixWorld(true);
