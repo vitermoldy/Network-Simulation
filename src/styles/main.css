@@ -1205,3 +1205,6 @@ select {
   -webkit-line-clamp: unset;
   display: block;
   color: var(--ink);
+}
+
+.chip {
