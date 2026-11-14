@@ -396,3 +396,5 @@ function buildRouter(dev: Device): Build {
 
   const rocker = buildRocker(dev.id, 0.85);
   rocker.group.position.set(-w / 2 + 0.74, 0.25, z);
+  group.add(rocker.group);
+  const pwr = led(0.02);
