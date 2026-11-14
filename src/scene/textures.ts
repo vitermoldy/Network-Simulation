@@ -178,3 +178,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   } else placeholder(ctx, 0, H - 76, W, 76, 3);
 }
 
+/** A PC that is not the sender in this run: a quiet desktop with its name and address. */
+export function drawDesktop(ctx: CanvasRenderingContext2D, name: string, ip: string | undefined, on: boolean): void {
