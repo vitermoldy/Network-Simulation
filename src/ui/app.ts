@@ -1327,3 +1327,5 @@ export class App {
     this.sourceKey = key;
     const sel = $<HTMLSelectElement>('source');
     const keep = sel.value;
+    sel.innerHTML = clients.length
+      ? clients.map((c) => `<option value="${c.id}">${esc(c.name)}</option>`).join('')
