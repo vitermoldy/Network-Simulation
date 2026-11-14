@@ -845,3 +845,5 @@ export class Simulator {
       } else {
         this.discard(p, dev.id, `ARP ini menanyakan ${p.arp.targetIp}, bukan IP router, jadi router diam saja.`);
       }
+      return;
+    }
