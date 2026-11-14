@@ -1173,3 +1173,5 @@ export class Simulator {
         this.say(`Server:  ${server}`);
         this.say(`Address: ${server}`);
         this.say('');
+        this.say(`Name:    ${c.host}`);
+        this.say(`Address: ${c.serverIp}`);
