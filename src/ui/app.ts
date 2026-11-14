@@ -123,3 +123,5 @@ export class App {
       this.stage.setTheme(this.theme());
       document.fonts?.ready.then(() => this.stage?.refreshText());
       try {
+        if (!localStorage.getItem('netsim-hint-seen')) $('hint').hidden = false;
+      } catch {
