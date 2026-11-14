@@ -44,3 +44,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
       const s = seg.get(p.id);
       for (const o of routers) {
         if (o.id === r.id) continue;
+        for (const q of o.ports) {
+          if (!q.ip || q.prefix === undefined || seg.get(q.id) !== s) continue;
