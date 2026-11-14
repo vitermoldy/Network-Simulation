@@ -405,3 +405,5 @@ export class Topology {
     const nic = d.ports[0];
     if (!this.linkOf(nic.id)) return { ok: false, reason: `${d.name} belum berkabel. Pasang kabel ke switch atau router dulu.` };
     const seg = this.segments();
+    const mine = seg.get(nic.id);
+    if (mine === undefined) return { ok: false, reason: `${d.name} sedang mati.` };
