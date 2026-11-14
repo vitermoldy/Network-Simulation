@@ -46,3 +46,7 @@ npm run dev
 ```
 
 Buka http://localhost:5181. Simulasinya berjalan penuh di browser; server MySQL hanya untuk riwayat
+dan rancangan tersimpan.
+
+### Server MySQL (riwayat dan rancangan)
+
