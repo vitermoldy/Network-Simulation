@@ -1265,3 +1265,5 @@ select {
   border-radius: var(--r);
 }
 
+.dev-pick {
+  flex: 1;
