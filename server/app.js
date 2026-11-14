@@ -89,3 +89,5 @@ export function createApi(getPool, database) {
   const codeOf = (raw) => (CODE.test(String(raw ?? '')) ? String(raw) : null)
 
   api.post('/runs', async (req, res) => {
+    const client = codeOf(req.body?.client)
+    if (!client) return res.status(400).json({ error: 'Kode klien tidak dikenal.' })
