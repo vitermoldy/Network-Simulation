@@ -1629,3 +1629,5 @@ export class App {
       <div class="packet-head">
         <p class="packet-mode">${this.followLatest ? 'Mengikuti paket terbaru' : 'Paket yang kamu pilih'}</p>
         ${this.followLatest ? '' : '<button type="button" class="btn btn-small btn-ghost" id="follow-latest">Ikuti paket terbaru</button>'}
+      </div>
+      <h2 class="packet-title">${esc(p.title)}</h2>
