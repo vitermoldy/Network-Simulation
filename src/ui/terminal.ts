@@ -59,3 +59,5 @@ export class PromptShell implements Shell {
     if (!d.powered) return ['Perangkat mati. Nyalakan dulu lewat tombol power.'];
     if (c === 'help' || c === '?') {
       return [
+        'Perintah yang tersedia:',
+        '  ipconfig            alamat IP, subnet mask, dan gateway',
