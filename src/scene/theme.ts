@@ -50,3 +50,5 @@ export const MATERIAL = {
   tower: 0xd6dadf,
   laptop: 0xc9ced5,
   keyboard: 0x2a2d32,
+  server: 0xcfd3d9,
+  bezel: 0x2b2e33,
