@@ -386,3 +386,5 @@ select {
 }
 
 .stage-canvas {
+  display: block;
+  width: 100%;
