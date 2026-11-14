@@ -129,3 +129,5 @@ export class Stage {
 
   constructor(private container: HTMLElement, private sim: Simulator, private events: StageEvents) {
     this.renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    this.renderer.shadowMap.enabled = true;
