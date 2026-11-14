@@ -1062,3 +1062,5 @@ export class App {
     for (const t of TABS) {
       const b = $(`tab-${t}`);
       b.setAttribute('aria-selected', String(t === tab));
+      b.tabIndex = t === tab ? 0 : -1;
+      $(`pane-${t}`).hidden = t !== tab;
