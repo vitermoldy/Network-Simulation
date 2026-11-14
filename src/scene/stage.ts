@@ -16,3 +16,5 @@ import { canvasTexture, drawArrow, drawZoneLabel, makeCanvas } from './textures'
 import { MATERIAL, SCENE_THEMES, type SceneTheme, type ThemeName } from './theme';
 
 export interface StageEvents {
+  pick: (p: Pick | null) => void;
+  hover: (p: Pick | null, x: number, y: number) => void;
