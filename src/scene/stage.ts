@@ -252,3 +252,5 @@ export class Stage {
     const set = (sel: string, text: string) => {
       const n = el.querySelector(sel)!;
       if (n.textContent !== text) n.textContent = text;
+    };
+    set('.tag-role', role === 'input' ? 'Input' : role === 'output' ? 'Output' : 'Proses');
