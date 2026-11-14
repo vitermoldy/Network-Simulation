@@ -382,3 +382,5 @@ export class App {
     $('url').removeAttribute('aria-invalid');
   }
 
+  private syncThemeButton(): void {
+    $('theme').setAttribute('aria-label', this.theme() === 'dark' ? 'Pakai tema terang' : 'Pakai tema gelap');
