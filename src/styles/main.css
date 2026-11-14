@@ -1463,3 +1463,5 @@ tbody th {
   list-style: none;
   margin: 12px 0 0;
   padding: 0;
+  display: grid;
+  gap: 8px;
