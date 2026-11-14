@@ -179,3 +179,5 @@ describe('simulator', () => {
     const sim = withScenario('normal');
     sim.disconnect(sim.topo.linkOf('pc.0')!.id);
     run(sim);
+    expect(sim.status).toBe('failed');
+    expect(sim.phases.find((p) => p.id === 'arp')!.status).toBe('failed');
