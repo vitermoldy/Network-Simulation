@@ -11,3 +11,5 @@ const ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 export interface RunRecord {
   host: string;
   source: string;
+  scenario: string;
+  lossRate: number;
