@@ -176,3 +176,5 @@ export class IosShell implements Shell {
       {
         words: ['show', 'running-config'], help: 'konfigurasi yang sedang dipakai',
         run: () => {
+          const out = ['Building configuration...', '', 'Current configuration:', '!', `hostname ${this.hostname}`, '!'];
+          for (const p of d.ports) {
