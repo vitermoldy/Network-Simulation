@@ -208,3 +208,5 @@ export class DeviceViewer {
   }
 
   frame(): void {
+    if (!this.active) return;
+    const topo = this.sim.topo;
