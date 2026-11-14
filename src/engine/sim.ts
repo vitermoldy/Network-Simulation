@@ -253,3 +253,5 @@ export class Simulator {
   private rng: () => number;
   private convergeTask?: Task;
   private retx = new Map<string, Retx>();
+  private arpPending = new Map<string, { packets: Packet[]; tries: number; timer?: Task }>();
+  private fired = new Set<string>();
