@@ -1558,3 +1558,5 @@ export class Simulator {
   private middleRouter(server: Device): string | undefined {
     const clientIp = this.topo.has(this.clientId) ? this.topo.device(this.clientId).ports[0].ip : undefined;
     if (!clientIp || !server.gateway) return undefined;
+    const gwPort = this.topo.findInSegment(server.ports[0].id, server.gateway);
+    let at = gwPort?.deviceId;
