@@ -114,3 +114,6 @@ export class IosShell implements Shell {
   private mode: Mode = 'user';
   private iface?: string;
 
+  constructor(private deviceId: string, private host: ShellHost) {}
+
+  private get dev(): Device {
