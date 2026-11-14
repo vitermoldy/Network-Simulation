@@ -313,3 +313,5 @@ export class App {
       });
     });
 
+    $('log').addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('button.entry');
