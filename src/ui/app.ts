@@ -1078,3 +1078,5 @@ export class App {
     box.addEventListener('click', (e) => {
       const b = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-act]');
       if (!b) return;
+      const id = this.selectedDevice;
+      const act = b.dataset.act;
