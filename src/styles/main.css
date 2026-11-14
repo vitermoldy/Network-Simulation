@@ -2140,3 +2140,5 @@ tbody th {
   font: inherit;
 }
 
+.term-in input:focus {
+  outline: none;
