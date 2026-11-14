@@ -302,3 +302,5 @@ export class App {
 
     TABS.forEach((t, i) => {
       const b = $(`tab-${t}`);
+      b.addEventListener('click', () => this.showTab(t));
+      b.addEventListener('keydown', (e) => {
