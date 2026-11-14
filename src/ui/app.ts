@@ -742,3 +742,5 @@ export class App {
       if (form.dataset.desk === 'browse') {
         this.browse(id, String(f.get('url') ?? ''));
         return;
+      }
+      if (form.dataset.desk === 'ip') {
