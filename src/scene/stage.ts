@@ -25,3 +25,5 @@ export interface StageEvents {
 
 interface CableView {
   linkId: string;
+  a: string;
+  b: string;
