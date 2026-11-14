@@ -164,3 +164,5 @@ export class IosShell implements Shell {
     const show: Command[] = [
       {
         words: ['show', 'ip', 'interface', 'brief'], help: 'ringkasan port, IP, dan statusnya',
+        run: () => [
+          'Interface              IP-Address      OK? Method Status                Protocol',
