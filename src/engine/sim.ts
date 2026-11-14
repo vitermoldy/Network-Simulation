@@ -1292,3 +1292,5 @@ export class Simulator {
     this.hostSend(dev, this.tcpPacket(dev, c.serverIp!, CLIENT_PORT, 80, ['ACK'], c.sndNext, c.rcvNext, label, `TCP ACK ${c.rcvNext}`, 0));
   }
 
+  private tcpConnect(dev: Device): void {
+    const c = this.client;
