@@ -1975,3 +1975,5 @@ tbody th {
 
 .app-tile {
   display: grid;
+  justify-items: center;
+  gap: 8px;
