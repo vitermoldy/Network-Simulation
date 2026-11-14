@@ -159,3 +159,6 @@ function rockerTexture(): THREE.CanvasTexture {
   ctx.beginPath();
   ctx.arc(32, 70, 11, 0, Math.PI * 2);
   ctx.stroke();
+  return canvasTexture(c);
+}
+
