@@ -607,3 +607,5 @@ export function buildDevice(dev: Device): DeviceView {
     height: b.height,
     ports: new Map(b.ports.map((p) => [p.id, p])),
     powerHit: b.power.hit,
+    powerGlow: b.power.glow,
+    rocker: b.power.rocker,
