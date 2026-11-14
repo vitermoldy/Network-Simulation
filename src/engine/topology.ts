@@ -205,3 +205,6 @@ export class Topology {
   }
 
   has(id: string): boolean {
+    return this.devices.has(id);
+  }
+
