@@ -168,3 +168,5 @@ describe('simulator', () => {
 
   it('stops at DNS when the name does not exist', () => {
     const sim = withScenario('normal');
+    run(sim, 'www.tidakada.test');
+    expect(sim.status).toBe('failed');
