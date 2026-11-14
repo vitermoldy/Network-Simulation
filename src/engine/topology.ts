@@ -425,3 +425,5 @@ export class Topology {
       if (!used.has(cand)) pick = cand;
     }
     if (!pick) return { ok: false, reason: `Jaringan ${networkOf(gw.ip, gw.prefix)} sudah penuh.` };
+    nic.ip = pick;
+    nic.prefix = gw.prefix;
