@@ -303,3 +303,5 @@ describe('ping and nslookup', () => {
 
   it('pings from a router and gets answers from a router port', () => {
     const sim = withScenario('normal');
+    runPing(sim, 'r1', '203.0.113.80');
+    expect(sim.status).toBe('done');
