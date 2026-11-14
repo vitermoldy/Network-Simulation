@@ -168,3 +168,5 @@ p {
 .speed legend,
 .layout-form > label,
 .host-form label,
+.record-form label {
+  font-size: 12.5px;
