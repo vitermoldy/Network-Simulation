@@ -747,3 +747,5 @@ export class Simulator {
   private hold(packet: Packet, dev: Device, inPort: string, outPorts: string[], dur: number, then: () => void): void {
     const h: Hold = { packet, deviceId: dev.id, inPort, outPorts, t0: this.time, t1: this.time + dur };
     this.holds.push(h);
+    this.schedule(h.t1, () => {
+      if (!this.holds.includes(h)) return;
