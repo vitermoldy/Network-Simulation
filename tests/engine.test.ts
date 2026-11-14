@@ -354,3 +354,5 @@ describe('layers', () => {
   it('lists the headers from the application down to the cable', () => {
     const sim = withScenario('normal');
     run(sim);
+    const get = [...sim.history.values()].find((v) => v[0].app?.lines[0] === 'GET / HTTP/1.1')!;
+    const rows = layersOf(get[0], 'Laptop Fa0 ke Switch Lab Fa0/1');
