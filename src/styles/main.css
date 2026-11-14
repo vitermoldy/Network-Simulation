@@ -1203,3 +1203,5 @@ select {
 .entry.is-latest .entry-text,
 .entry.is-open .entry-text {
   -webkit-line-clamp: unset;
+  display: block;
+  color: var(--ink);
