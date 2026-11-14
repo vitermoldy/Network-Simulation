@@ -187,3 +187,5 @@ export class Stage {
     canvas.addEventListener('pointerup', (e) => this.onUp(e));
     canvas.addEventListener('pointerleave', () => this.setHover(null, 0, 0));
     canvas.addEventListener('keydown', (e) => this.onKey(e));
+    // Size first, then frame the bench: the fit depends on the canvas shape.
+    this.resize();
