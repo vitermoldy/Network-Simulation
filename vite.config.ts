@@ -10,3 +10,5 @@ const api = { '/api': { target: `http://localhost:${process.env.PORT ?? 8797}` }
 export default defineConfig({
   root,
   // Relative asset paths, so the built simulator runs from any folder or static host.
+  base: './',
+  server: { port: 5181, proxy: api },
