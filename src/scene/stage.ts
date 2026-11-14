@@ -726,3 +726,6 @@ export class Stage {
     this.controls.update();
     this.renderer.render(this.scene, this.camera);
     this.labels.render(this.scene, this.camera);
+  }
+
+  private updateDevices(): void {
