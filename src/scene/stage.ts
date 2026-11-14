@@ -53,3 +53,5 @@ const ZONE_TEXT: Record<Role, [string, string]> = {
   output: ['OUTPUT', 'Jawaban disiapkan'],
 };
 
+const packetGeo = new RoundedBoxGeometry(0.32, 0.2, 0.2, 2, 0.05);
+const ease = (t: number) => (t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2);
