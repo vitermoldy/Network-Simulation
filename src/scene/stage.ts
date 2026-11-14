@@ -168,3 +168,5 @@ export class Stage {
     sc.far = 50;
     sun.shadow.bias = -0.0004;
     sun.shadow.radius = 6;
+    this.scene.add(sun);
+    const fill = new THREE.DirectionalLight(0xffffff, 0.55);
