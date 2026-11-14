@@ -360,3 +360,5 @@ function buildRouter(dev: Device): Build {
     for (let r = 0; r < 6; r++) {
       for (let c = 0; c < 6; c++) {
         const [vx, vy] = p.px(-w / 2 + 0.08 + c * 0.05 + (r % 2) * 0.025, 0.47 - r * 0.05);
+        p.ctx.beginPath();
+        p.ctx.arc(vx, vy, 0.014 * p.scale, 0, Math.PI * 2);
