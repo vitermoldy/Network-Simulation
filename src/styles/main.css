@@ -1475,3 +1475,6 @@ tbody th {
 
 .layer.is-read {
   border-color: var(--accent);
+}
+
+.layer-head {
