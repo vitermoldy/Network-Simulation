@@ -1226,3 +1226,6 @@ export class App {
         });
       }
     });
+  }
+
+  private async refreshDb(): Promise<void> {
