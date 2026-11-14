@@ -128,3 +128,5 @@ export async function listLayouts(): Promise<LayoutSummary[]> {
   return (await call<{ layouts: LayoutSummary[] }>(`layouts/${clientCode()}`)).layouts;
 }
 
+export async function saveLayout(name: string, data: TopologyData): Promise<void> {
+  await call('layouts', { method: 'PUT', body: JSON.stringify({ client: clientCode(), name, data: JSON.stringify(data) }) });
