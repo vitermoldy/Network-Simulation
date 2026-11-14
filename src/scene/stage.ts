@@ -787,3 +787,5 @@ export class Stage {
     const pos = new THREE.Vector3();
     const dir = new THREE.Vector3();
     pv.anchor.getWorldPosition(pos);
+    pv.anchor.getWorldDirection(dir);
+    return pos.addScaledVector(dir, out).add(new THREE.Vector3(0, 0.14, 0));
