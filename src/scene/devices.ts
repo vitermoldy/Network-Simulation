@@ -341,3 +341,5 @@ function buildSwitch(dev: Device): Build {
 /** ISR-style router: black bezel, two blank module slots, four Gigabit ports, a console port. */
 function buildRouter(dev: Device): Build {
   const w = 2.9;
+  const h = 0.6;
+  const d = 1.5;
