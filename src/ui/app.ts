@@ -168,3 +168,5 @@ export class App {
       this.playing = false;
     }
     if (this.lastStatus === 'running' && (sim.status === 'done' || sim.status === 'failed')) void this.recordRun();
+    this.lastStatus = sim.status;
+    if (this.stage) {
