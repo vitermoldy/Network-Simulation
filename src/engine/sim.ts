@@ -1177,3 +1177,5 @@ export class Simulator {
         this.say(`Address: ${c.serverIp}`);
         this.setPhase('output', 'done');
         this.finish(`Selesai. ${c.host} adalah ${c.serverIp}.`);
+        return;
+      }
