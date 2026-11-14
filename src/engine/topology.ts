@@ -449,3 +449,5 @@ export class Topology {
     if (this.portLink.has(b)) return { ok: false, reason: `${this.portLabel(b)} sudah terisi kabel.` };
     let id = `k${this.nextLink++}`;
     while (this.links.has(id)) id = `k${this.nextLink++}`;
+    const link: Link = { id, a, b };
+    this.links.set(link.id, link);
