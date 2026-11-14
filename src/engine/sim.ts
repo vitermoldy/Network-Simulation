@@ -544,3 +544,5 @@ export class Simulator {
     if (this.status === 'running') {
       this.note('change', deviceId, on ? 'Perangkat dinyalakan' : 'Perangkat dimatikan', on
         ? `${dev.name} menyala lagi. Lampu link di port yang berkabel kembali hidup.`
+        : `${dev.name} mati. Semua port-nya padam, jadi kabel yang terpasang tidak lagi membawa sinyal.`);
+    }
