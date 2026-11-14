@@ -287,3 +287,5 @@ export class Simulator {
 
   // ------------------------------------------------------------------ clock
 
+  private schedule(t: number, run: () => void, stop = false): Task {
+    const task: Task = { t, seq: this.seq++, run, stop, cancelled: false };
