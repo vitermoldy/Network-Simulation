@@ -1130,3 +1130,5 @@ export class Simulator {
     const answer = dev.dnsRecords?.[q.question];
     this.note(answer ? 'info' : 'error', dev.id, 'Server DNS mencari nama', answer
       ? `Server DNS mencari ${q.question} di catatannya dan menemukannya: ${answer}. Jawaban dikirim balik ke penanya.`
+      : `Server DNS tidak punya catatan untuk ${q.question}. Jawabannya NXDOMAIN, artinya nama itu tidak ada.`, 7, p.id);
+    const reply = this.newPacket({
