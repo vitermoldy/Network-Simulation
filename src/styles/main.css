@@ -2405,3 +2405,5 @@ tbody th {
     flex: 1;
   }
 
+  .speed legend {
+    width: 100%;
