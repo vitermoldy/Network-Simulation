@@ -1503,3 +1503,5 @@ export class App {
       const link = topo.linkOf(p.id);
       const peer = topo.peer(p.id);
       const cable = link
+        ? `<button type="button" class="btn btn-small btn-danger" data-act="unplug" data-link="${link.id}">Cabut</button>`
+        : `<span class="plug-row"><label class="sr-only" for="to-${p.id}">Sambungkan ${esc(p.name)} ke</label>
