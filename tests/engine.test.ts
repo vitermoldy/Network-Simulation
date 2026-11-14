@@ -50,3 +50,5 @@ describe('topology', () => {
     expect(off.get('pc.0')).not.toBe(off.get('r1.0'));
   });
 
+  it('checks IP settings the way a lab assistant would', () => {
+    const t = new Topology();
