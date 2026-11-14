@@ -37,3 +37,6 @@ export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
     labelMuted: '#a3a7ad',
     arrow: '#6d727a',
     shadow: 0.42,
+  },
+};
+
