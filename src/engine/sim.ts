@@ -1278,3 +1278,5 @@ export class Simulator {
   }
 
   private tcpPacket(from: Device, toIp: string, srcPort: number, dstPort: number, flags: TcpFlag[], seq: number, ack: number, label: string, title: string, retry: number, app?: Packet['app'], len = 0): Packet {
+    return this.newPacket({
+      flow: app?.proto === 'HTTP' ? 'http' : 'tcp', label: retry ? `${label} (ulang)` : label, title,
