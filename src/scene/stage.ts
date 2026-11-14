@@ -124,3 +124,6 @@ export class Stage {
   pendingPort: string | null = null;
   selected: { deviceId?: string; linkId?: string; packetId?: number } = {};
   follow = false;
+  activeRole: Role | undefined;
+  leadPacket: Packet | undefined;
+
