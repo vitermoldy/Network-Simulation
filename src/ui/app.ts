@@ -1216,3 +1216,5 @@ export class App {
         });
       } else if (b.dataset.op === 'delete') {
         this.confirm(`Hapus rancangan ${name} dari MySQL?`, 'Hapus rancangan', async () => {
+          try {
+            await api.deleteLayout(id);
