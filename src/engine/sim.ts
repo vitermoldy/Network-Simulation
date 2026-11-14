@@ -184,3 +184,5 @@ interface ClientState {
   synSentAt: number;
   synRetried: boolean;
   sndNext: number;
+  rcvNext: number;
+  getLen: number;
