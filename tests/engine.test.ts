@@ -93,3 +93,5 @@ describe('topology', () => {
 describe('routing', () => {
   it('finds the shortest way and breaks ties the same way every time', () => {
     const t = new Topology();
+    const routes = computeRoutes(t);
+    const r1 = lookup(routes.get('r1'), '203.0.113.80')!;
