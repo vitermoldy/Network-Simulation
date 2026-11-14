@@ -193,3 +193,5 @@ export class Topology {
     return d;
   }
 
+  private insert(d: Device): void {
+    this.devices.set(d.id, d);
