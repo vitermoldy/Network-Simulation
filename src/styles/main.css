@@ -1901,3 +1901,5 @@ tbody th {
 }
 
 .viewer-canvas {
+  display: block;
+  width: 100%;
