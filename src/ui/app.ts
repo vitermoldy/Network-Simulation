@@ -886,3 +886,6 @@ export class App {
     this.stage?.fitView(true);
     this.toast(message);
     this.renderAll();
+  }
+
+  private togglePower(id: string): void {
