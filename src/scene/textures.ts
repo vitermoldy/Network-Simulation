@@ -207,3 +207,5 @@ export function drawDesktop(ctx: CanvasRenderingContext2D, name: string, ip: str
 function placeholder(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, part: number): void {
   ctx.fillStyle = '#eef0f3';
   ctx.fillRect(x, y, w, h);
+  ctx.strokeStyle = '#c3c8d0';
+  ctx.setLineDash([10, 8]);
