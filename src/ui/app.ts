@@ -778,3 +778,6 @@ export class App {
       t = { shell, lines: [...shell.banner()], history: [], index: 0 };
       this.terms.set(deviceId, t);
     }
+    return t;
+  }
+
