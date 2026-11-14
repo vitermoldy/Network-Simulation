@@ -293,3 +293,5 @@ export class IosShell implements Shell {
           const r = topo.setPortIp(port!.id, args[0], prefix);
           this.host.changed();
           return r.ok ? [] : [`% ${r.reason}`];
+        },
+      },
