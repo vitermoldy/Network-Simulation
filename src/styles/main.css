@@ -2332,3 +2332,5 @@ tbody th {
 
   .host-actions,
   .record-form .btn,
+  .host-form .form-error,
+  .record-form .form-error {
