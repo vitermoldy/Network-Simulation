@@ -477,3 +477,5 @@ export class Simulator {
     this.lost = [];
     this.retx.clear();
     this.arpPending.clear();
+    this.status = 'idle';
+    this.phases = PHASES.map((p) => ({ ...p, status: 'waiting' }));
