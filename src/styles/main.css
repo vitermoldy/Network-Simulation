@@ -1076,3 +1076,6 @@ select {
 
 .phase.is-done .mark,
 .phase.is-done .phase-state {
+  color: var(--ok);
+}
+
