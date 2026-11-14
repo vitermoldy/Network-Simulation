@@ -431,3 +431,5 @@ export class Topology {
     if (isClient(d)) {
       const dns = [...this.devices.values()].find((x) => x.kind === 'server' && x.services?.dns && x.ports[0].ip);
       d.dnsServer = dns?.ports[0].ip ?? d.dnsServer;
+    }
+    this.rev++;
