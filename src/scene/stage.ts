@@ -511,3 +511,5 @@ export class Stage {
       return;
     }
     if (!down || e.button !== 0) return;
+    if (Math.hypot(e.clientX - down.x, e.clientY - down.y) > 6) return;
+    if (this.ghost) {
