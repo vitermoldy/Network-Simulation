@@ -2105,3 +2105,6 @@ tbody th {
   color: #e3e6ea;
   font: 400 13px/1.5 var(--font-mono);
   overflow: hidden;
+  border: 1px solid #23262b;
+}
+
