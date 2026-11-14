@@ -298,3 +298,6 @@ describe('ping and nslookup', () => {
     runPing(sim, 'pc', 'www.jaringan.test');
     expect(sim.status).toBe('done');
     expect(sim.phases.find((p) => p.id === 'dns')!.status).toBe('done');
+    expect(sim.output.some((l) => l.includes('203.0.113.80'))).toBe(true);
+  });
+
