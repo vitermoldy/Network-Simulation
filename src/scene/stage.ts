@@ -191,3 +191,5 @@ export class Stage {
     this.resize();
     this.fitView(false);
     let framedAspect = this.container.clientWidth > 0 ? this.camera.aspect : 0;
+    this.observer = new ResizeObserver(() => {
+      this.resize();
