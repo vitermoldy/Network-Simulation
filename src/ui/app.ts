@@ -352,3 +352,5 @@ export class App {
 
     document.addEventListener('keydown', (e) => {
       const typing = (e.target as HTMLElement).closest('input, select, textarea');
+      if (e.key === 'Escape') {
+        if (!$('popover').hidden) this.closePopover();
