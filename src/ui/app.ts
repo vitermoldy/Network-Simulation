@@ -1469,3 +1469,5 @@ export class App {
     }
   }
 
+  private table(head: string[], rows: string[][], empty: string): string {
+    if (!rows.length) return `<p class="empty">${esc(empty)}</p>`;
