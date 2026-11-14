@@ -190,3 +190,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
 export function readsUpTo(kind: string): LayerId {
   if (kind === 'switch') return 2;
   if (kind === 'router') return 3;
+  return 7;
+}
