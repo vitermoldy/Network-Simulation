@@ -1220,3 +1220,5 @@ export class App {
             await api.deleteLayout(id);
             this.toast(`Rancangan ${name} dihapus.`);
             void this.refreshDb();
+          } catch (ex) {
+            this.toast(`Belum terhapus: ${(ex as Error).message}`);
