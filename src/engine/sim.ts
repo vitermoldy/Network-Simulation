@@ -297,3 +297,5 @@ export class Simulator {
       if (q.t < t || (q.t === t && q.seq < task.seq)) lo = mid + 1;
       else hi = mid;
     }
+    this.queue.splice(lo, 0, task);
+    return task;
