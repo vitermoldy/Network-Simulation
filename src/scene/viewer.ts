@@ -116,3 +116,5 @@ export class DeviceViewer {
     this.raycaster.setFromCamera(this.pointer, this.camera);
     const targets: THREE.Object3D[] = [this.view.powerHit, ...[...this.view.ports.values()].map((p) => p.hit)];
     for (const h of this.raycaster.intersectObjects(targets, false)) {
+      const pick = h.object.userData.pick as Pick | undefined;
+      if (pick) return pick;
