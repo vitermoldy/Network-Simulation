@@ -527,3 +527,5 @@ function buildLaptop(dev: Device): Build {
   const d = 1.45;
   const group = new THREE.Group();
   const base = rounded(w, baseH, d, shared.laptop, 0.05);
+  base.position.y = baseH / 2;
+  base.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
