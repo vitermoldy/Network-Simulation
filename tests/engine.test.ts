@@ -161,3 +161,5 @@ describe('simulator', () => {
     expect(sim.status).toBe('done');
     expect(sim.topo.device('r2').powered).toBe(false);
     expect(sim.log.some((l) => l.kind === 'route' && l.title === 'Rute dihitung ulang')).toBe(true);
+    const resent = [...sim.history.entries()].filter(([, v]) => v[0].app?.part && v[0].retry > 0);
+    expect(resent.length).toBeGreaterThan(0);
