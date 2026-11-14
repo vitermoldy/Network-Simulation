@@ -321,3 +321,5 @@ export class Stage {
       const pb = this.portView(link.b);
       if (!pa || !pb) continue;
       const curve = cableCurve(pa, pb, boxes, lane % 3);
+      const mat = cableMaterial();
+      const tubeMesh = new THREE.Mesh(tube(curve), mat);
