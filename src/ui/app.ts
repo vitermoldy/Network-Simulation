@@ -493,3 +493,5 @@ export class App {
     }
     const d = this.sim.addDevice(kind, x, z);
     this.stopPlacing();
+    this.openDevice(d.id, 'config');
+    const next = kind === 'pc' || kind === 'laptop'
