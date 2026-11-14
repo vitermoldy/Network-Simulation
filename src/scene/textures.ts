@@ -125,3 +125,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     ctx.fillRect(0, 74, W * frac, 4);
   }
 
+  const body = (y: number) => y + 78;
+  ctx.textAlign = 'left';
