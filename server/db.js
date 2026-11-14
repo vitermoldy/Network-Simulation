@@ -41,3 +41,5 @@ const TABLES = [
     devices INT NOT NULL,
     links INT NOT NULL,
     updated_at DATETIME NOT NULL,
+    UNIQUE KEY layouts_name (client_id, name),
+    CONSTRAINT layouts_client FOREIGN KEY (client_id) REFERENCES clients(id) ON DELETE CASCADE
