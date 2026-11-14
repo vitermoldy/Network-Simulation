@@ -31,3 +31,6 @@ export interface PortView {
   hit: THREE.Mesh;
   holeW: number;
   holeH: number;
+}
+
+export interface DeviceView {
