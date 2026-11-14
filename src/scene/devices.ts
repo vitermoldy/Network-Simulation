@@ -172,3 +172,5 @@ function buildRocker(deviceId: string, scale = 1) {
   const glow = std(MATERIAL.rocker, { roughness: 0.35 });
   const face = new THREE.MeshStandardMaterial({ map: rockerTex, roughness: 0.4 });
   const paddle = new THREE.Group();
+  paddle.add(mesh(new THREE.BoxGeometry(0.15 * scale, 0.22 * scale, 0.05), [glow, glow, glow, glow, face, glow], false));
+  paddle.position.z = 0.04;
