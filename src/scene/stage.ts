@@ -278,3 +278,5 @@ export class Stage {
     this.removeDeviceView(id);
     if (!dev) return;
     const view = buildDevice(dev);
+    this.devices.set(id, view);
+    this.scene.add(view.group);
