@@ -733,3 +733,5 @@ export class Stage {
     for (const v of this.devices.values()) {
       refreshLive(v, v.device, this.sim);
       const hoverPower = this.hovered?.type === 'power' && this.hovered.deviceId === v.device.id;
+      v.powerGlow.emissive.setHex(hoverPower ? this.theme.zoneActive : 0x000000);
+      v.powerGlow.emissiveIntensity = hoverPower ? 0.55 : 0;
