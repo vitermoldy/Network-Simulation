@@ -398,3 +398,5 @@ export class Stage {
     const present = order.filter((r) => rects.has(r));
     for (let i = 0; i + 1 < present.length; i++) {
       const a = rects.get(present[i])!;
+      const b = rects.get(present[i + 1])!;
+      if (a.x1 + 0.75 >= b.x0 - 0.75) continue;
