@@ -57,3 +57,5 @@ export class PromptShell implements Shell {
     const d = this.dev;
     const nic = d.ports[0];
     if (!d.powered) return ['Perangkat mati. Nyalakan dulu lewat tombol power.'];
+    if (c === 'help' || c === '?') {
+      return [
