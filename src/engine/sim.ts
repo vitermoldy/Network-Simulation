@@ -605,3 +605,5 @@ export class Simulator {
     this.lost = this.lost.filter((l) => l.deviceId !== id);
     this.macTables.delete(id);
     this.arpCaches.delete(id);
+    const wasClient = this.status === 'running' && id === this.client.deviceId;
+    this.topo.removeDevice(id);
