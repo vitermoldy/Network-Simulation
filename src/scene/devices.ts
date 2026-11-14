@@ -36,3 +36,5 @@ export interface PortView {
 export interface DeviceView {
   device: Device;
   group: THREE.Group;
+  height: number;
+  ports: Map<string, PortView>;
