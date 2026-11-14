@@ -1511,3 +1511,5 @@ export class App {
       const upToggle = `<label class="switch switch-small"><input type="checkbox" data-port-up="${p.id}" ${p.down ? '' : 'checked'} /><span class="switch-track" aria-hidden="true"></span><span>Aktif<span class="sr-only"> ${esc(p.name)}</span></span></label>`;
       const ipCell = editable
         ? `<form class="ip-form" data-form="ip" data-port="${p.id}" novalidate>
+            <label class="sr-only" for="ip-${p.id}">IP ${esc(p.name)}</label>
+            <input id="ip-${p.id}" name="ip" class="mono" value="${esc(p.ip ?? '')}" placeholder="kosong" inputmode="decimal" autocomplete="off" />
