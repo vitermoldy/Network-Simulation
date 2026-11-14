@@ -78,3 +78,5 @@ describe('topology', () => {
   it('saves and loads the whole network', () => {
     const t = new Topology();
     const pc = t.addDevice('pc', -12, 7);
+    t.connect(pc.ports[0].id, 'sw.1');
+    t.autoAddress(pc.id);
