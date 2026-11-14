@@ -72,3 +72,5 @@ const PHASE_SETS: Record<RunKind, Omit<Phase, 'status'>[]> = {
     { id: 'tcp-close', title: 'TCP: sambungan ditutup', layer: 'Transport', role: 'process' },
   ],
   ping: [
+    { id: 'input', title: 'Perintah ping diketik', layer: 'Aplikasi', role: 'input' },
+    { id: 'arp', title: 'ARP: mencari MAC tujuan berikutnya', layer: 'Data link', role: 'process' },
