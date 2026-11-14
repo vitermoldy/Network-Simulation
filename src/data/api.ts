@@ -91,3 +91,6 @@ function writeQueue(list: RunRecord[]): void {
 }
 
 export function queuedRuns(): number {
+  return readQueue().length;
+}
+
