@@ -876,3 +876,5 @@ export class App {
     this.selectedPacket = null;
     this.selectedLink = null;
     this.setPending(null);
+    this.stopPlacing();
+    this.renderedLog = 0;
