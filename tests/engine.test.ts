@@ -146,3 +146,5 @@ describe('simulator', () => {
   });
 
   it('resends a lost segment and holds the next one until the gap is filled', () => {
+    const sim = withScenario('loss');
+    run(sim);
