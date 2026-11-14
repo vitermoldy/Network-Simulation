@@ -154,3 +154,5 @@ export interface BrowserView {
 
 export interface TimerView {
   key: string;
+  label: string;
+  deviceId: string;
