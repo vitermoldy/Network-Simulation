@@ -861,3 +861,5 @@ export class Simulator {
         else this.discard(p, dev.id, 'tidak ada layanan di router ini untuk paket tersebut.');
       });
       return;
+    }
+    const route = lookup(this.routes.get(dev.id), p.ip.dst);
