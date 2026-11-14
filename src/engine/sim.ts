@@ -460,3 +460,5 @@ export class Simulator {
     this.phases = PHASE_SETS[this.kind].map((p) => ({ ...p, status: 'waiting' }));
     this.routes = computeRoutes(this.topo);
     this.resetApps(host, sourceId);
+    if (this.kind === 'web') {
+      this.browser = { deviceId: sourceId, url: host, state: 'resolving', parts: PAGE_PARTS.map(() => false), message: 'Mencari alamat IP' };
