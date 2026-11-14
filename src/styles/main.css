@@ -2112,3 +2112,5 @@ tbody th {
   margin: 0;
   padding: 12px 14px 4px;
   overflow-y: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
