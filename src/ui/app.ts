@@ -855,3 +855,5 @@ export class App {
     }
   }
 
+  private askRemove(id: string): void {
+    const d = this.sim.topo.device(id);
