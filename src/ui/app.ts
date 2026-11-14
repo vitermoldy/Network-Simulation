@@ -1302,3 +1302,5 @@ export class App {
       devices: topo.devices.size,
       finishedAt: new Date().toISOString(),
     };
+    const ok = await api.saveRun(run);
+    if (ok && this.tab === 'riwayat') void this.refreshDb();
