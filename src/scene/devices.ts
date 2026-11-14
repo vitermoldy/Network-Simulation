@@ -573,3 +573,5 @@ function buildLaptop(dev: Device): Build {
   button.group.position.set(w / 2 - 0.22, baseH + 0.002, -0.52);
   group.add(button.group);
   b.power = { hit: button.hit, glow: button.glow, button: button.button, leds: [button.ring] };
+  const label = (text: string, x: number, zz: number, wide: number) => {
+    const tex = printFace(wide, 0.15, (q) => q.text(text, 0, 0.075, 0.07, { weight: 600, color: '#3b4048' }));
