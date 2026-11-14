@@ -1308,3 +1308,5 @@ select {
   border: 1px solid var(--line-strong);
   background: transparent;
   font-size: 13px;
+  font-weight: 500;
+  transition: transform 0.12s ease, border-color 0.15s ease;
