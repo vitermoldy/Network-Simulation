@@ -350,3 +350,5 @@ export class Topology {
         if (q.id === portId || !q.ip || q.prefix === undefined) continue;
         const mine = networkOf(clean, prefix);
         const theirs = networkOf(q.ip, q.prefix);
+        if (inNetwork(q.ip, mine) || inNetwork(clean, theirs)) {
+          return { ok: false, reason: `Jaringan ${mine} bertumpuk dengan ${theirs} di port ${q.name}. Tiap port router harus di jaringan yang berbeda.` };
