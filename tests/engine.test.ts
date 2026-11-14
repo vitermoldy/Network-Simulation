@@ -148,3 +148,5 @@ describe('simulator', () => {
   it('resends a lost segment and holds the next one until the gap is filled', () => {
     const sim = withScenario('loss');
     run(sim);
+    expect(sim.status).toBe('done');
+    expect(sim.log.filter((l) => l.kind === 'loss')).toHaveLength(1);
