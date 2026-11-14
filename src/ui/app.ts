@@ -1460,3 +1460,5 @@ export class App {
         <button type="button" class="power ${d.powered ? 'is-on' : 'is-off'}" data-power="${d.id}" aria-pressed="${d.powered}" aria-label="${d.powered ? 'Matikan' : 'Nyalakan'} ${esc(d.name)}">
           ${ICON.power}<span>${d.powered ? 'Menyala' : 'Mati'}</span>
         </button>
+      </li>`;
+    }).join('') || '<li class="empty">Meja kosong. Tambahkan perangkat dari palet di kiri meja.</li>';
