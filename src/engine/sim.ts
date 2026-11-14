@@ -1356,3 +1356,5 @@ export class Simulator {
     }
     const out = this.topo.port(route.portId);
     if (!p.ip!.src) p.ip!.src = out.ip ?? '';
+    const nextHop = route.nextHop ?? dst;
+    const target = this.topo.findInSegment(route.portId, nextHop);
