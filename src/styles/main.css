@@ -2031,3 +2031,5 @@ tbody th {
 
 .ipconf input {
   min-height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--line-strong);
