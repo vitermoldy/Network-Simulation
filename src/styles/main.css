@@ -756,3 +756,5 @@ select {
   box-shadow: 0 0 0 1px var(--accent);
 }
 
+.flow li.is-now .flow-name {
+  color: var(--accent);
