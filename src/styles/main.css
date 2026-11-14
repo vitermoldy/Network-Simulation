@@ -2137,3 +2137,6 @@ tbody th {
   border-bottom: 1px solid #3a3e45;
   background: transparent;
   color: inherit;
+  font: inherit;
+}
+
