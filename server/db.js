@@ -35,3 +35,5 @@ const TABLES = [
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
   `CREATE TABLE IF NOT EXISTS layouts (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    client_id CHAR(12) NOT NULL,
+    name VARCHAR(60) NOT NULL,
