@@ -12,3 +12,5 @@ import { SCENE_THEMES, type ThemeName } from './theme';
 export class DeviceViewer {
   private renderer: THREE.WebGLRenderer;
   private scene = new THREE.Scene();
+  private camera = new THREE.PerspectiveCamera(32, 1, 0.05, 100);
+  private controls: OrbitControls;
