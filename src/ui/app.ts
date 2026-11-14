@@ -1090,3 +1090,5 @@ export class App {
         this.deviceKey = '';
         this.renderAll();
       } else if (act === 'del-record') {
+        this.sim.edit((t) => t.removeDnsRecord(id, b.dataset.name!));
+        this.deviceKey = '';
