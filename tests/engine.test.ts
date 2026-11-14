@@ -260,3 +260,5 @@ describe('simulator', () => {
     sim.connect('r4.3', srv.ports[0].id);
     expect(sim.edit((t) => t.autoAddress(srv.id)).ok).toBe(true);
     expect(sim.edit((t) => t.setDnsRecord('dns', 'www.baru.test', srv.ports[0].ip!)).ok).toBe(true);
+    run(sim, 'www.baru.test');
+    expect(sim.status).toBe('done');
