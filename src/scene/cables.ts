@@ -17,3 +17,5 @@ type V2 = [number, number];
 const FLOOR_Y = 0.045;
 const MARGIN = 0.28;
 
+function segmentHitsBox(a: V2, b: V2, box: Box2): boolean {
+  // Slab test on the segment a..b.
