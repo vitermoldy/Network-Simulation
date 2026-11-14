@@ -824,3 +824,5 @@ export class App {
         input.value = t.history[t.index] ?? '';
         e.preventDefault();
       } else if (e.key === 'ArrowDown' && t.history.length) {
+        t.index = Math.min(t.history.length, t.index + 1);
+        input.value = t.history[t.index] ?? '';
