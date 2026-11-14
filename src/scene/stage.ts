@@ -735,3 +735,5 @@ export class Stage {
       const hoverPower = this.hovered?.type === 'power' && this.hovered.deviceId === v.device.id;
       v.powerGlow.emissive.setHex(hoverPower ? this.theme.zoneActive : 0x000000);
       v.powerGlow.emissiveIntensity = hoverPower ? 0.55 : 0;
+      for (const p of v.ports.values()) {
+        const free = !topo.linkOf(p.id);
