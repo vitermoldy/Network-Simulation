@@ -21,3 +21,5 @@ export type Pick =
 
 export interface PortView {
   id: string;
+  deviceId: string;
+  anchor: THREE.Object3D;
