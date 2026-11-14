@@ -597,3 +597,5 @@ export class Simulator {
 
   removeDevice(id: string): void {
     const dev = this.topo.device(id);
+    for (const p of dev.ports) {
+      const link = this.topo.linkOf(p.id);
