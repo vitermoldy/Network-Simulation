@@ -1476,3 +1476,5 @@ export class App {
   }
 
   private renderDevice(): void {
+    const sim = this.sim;
+    const topo = sim.topo;
