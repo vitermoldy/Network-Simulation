@@ -11,3 +11,7 @@ import type { Stage, StageEvents } from '../scene/stage';
 import type { DeviceViewer } from '../scene/viewer';
 import { drawBrowser, makeCanvas, SCREEN_H, SCREEN_W } from '../scene/textures';
 import { IosShell, prefixToMask, PromptShell, type Shell } from './terminal';
+import type { ThemeName } from '../scene/theme';
+
+const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
+
