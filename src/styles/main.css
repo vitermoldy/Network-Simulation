@@ -829,3 +829,5 @@ select {
   transition: transform 0.15s ease, background-color 0.15s ease;
 }
 
+.switch input:checked + .switch-track {
+  background: var(--accent);
