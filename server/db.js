@@ -39,3 +39,5 @@ const TABLES = [
     name VARCHAR(60) NOT NULL,
     data MEDIUMTEXT NOT NULL,
     devices INT NOT NULL,
+    links INT NOT NULL,
+    updated_at DATETIME NOT NULL,
