@@ -723,3 +723,5 @@ select {
   position: relative;
   display: grid;
   padding: 6px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r);
