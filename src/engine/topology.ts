@@ -363,3 +363,5 @@ export class Topology {
 
   setHostField(id: string, field: 'gateway' | 'dnsServer', ip: string): Result {
     const d = this.device(id);
+    const clean = ip.trim();
+    if (clean && !validIp(clean)) return { ok: false, reason: `${clean} bukan alamat IPv4.` };
