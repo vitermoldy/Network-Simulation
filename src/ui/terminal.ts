@@ -104,3 +104,5 @@ export class PromptShell implements Shell {
 
 type Mode = 'user' | 'priv' | 'config' | 'if';
 
+interface Command {
+  words: string[];
