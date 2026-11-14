@@ -333,3 +333,5 @@ export class Stage {
         o.userData.pick = pick;
       });
       this.scene.add(group);
+      this.cables.set(link.id, { linkId: link.id, a: link.a, b: link.b, group, mesh: tubeMesh, mat, curve });
+    }
