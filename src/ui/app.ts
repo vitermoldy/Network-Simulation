@@ -1229,3 +1229,5 @@ export class App {
   }
 
   private async refreshDb(): Promise<void> {
+    const text = $('db-text');
+    const retry = $('db-retry');
