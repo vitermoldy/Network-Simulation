@@ -283,3 +283,5 @@ export class Stage {
     this.addTag(view);
   }
 
+  syncTopology(force = false): void {
+    if (!force && this.topoRev === this.sim.topo.rev) return;
