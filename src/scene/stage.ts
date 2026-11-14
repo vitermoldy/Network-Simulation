@@ -656,3 +656,5 @@ export class Stage {
     }
   }
 
+  resetView(): void {
+    this.fitView(true);
