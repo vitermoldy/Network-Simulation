@@ -180,3 +180,5 @@ interface ClientState {
   serverIp?: string;
   dnsTxid: number;
   dnsDone: boolean;
+  tcp: 'closed' | 'syn-sent' | 'established' | 'fin-wait' | 'time-wait';
+  synSentAt: number;
