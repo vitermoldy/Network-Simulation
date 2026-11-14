@@ -180,3 +180,5 @@ export class IosShell implements Shell {
           for (const p of d.ports) {
             out.push(`interface ${longPortName(p.name)}`);
             if (p.ip && p.prefix !== undefined) out.push(` ip address ${p.ip} ${prefixToMask(p.prefix)}`);
+            else if (isRouter) out.push(' no ip address');
+            if (p.down) out.push(' shutdown');
