@@ -120,3 +120,5 @@ export class IosShell implements Shell {
     return this.host.sim.topo.device(this.deviceId);
   }
 
+  private get hostname(): string {
+    return this.dev.name.replace(/\s+/g, '') || 'Router';
