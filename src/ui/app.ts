@@ -566,3 +566,5 @@ export class App {
     if (tab === 'cli') this.renderTerm($('cli-term'), this.selectedDevice);
   }
 
+  private async ensureViewer(): Promise<void> {
+    if (!this.stage) {
