@@ -434,3 +434,5 @@ export class Stage {
   private cast(e: PointerEvent): Pick | null {
     this.setPointer(e);
     for (const h of this.raycaster.intersectObjects(this.pickables(), true)) {
+      let o: THREE.Object3D | null = h.object;
+      while (o && !o.userData.pick) o = o.parent;
