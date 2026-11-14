@@ -106,3 +106,6 @@ export interface LayerRow {
   tcpip: string;
   proto: string;
   fields: [string, string][];
+}
+
+export const LAYER_NAMES: Record<LayerId, { osi: string; tcpip: string }> = {
