@@ -495,3 +495,5 @@ export class App {
     this.stopPlacing();
     this.openDevice(d.id, 'config');
     const next = kind === 'pc' || kind === 'laptop'
+      ? 'Sambungkan kabelnya ke switch, lalu tekan IP otomatis.'
+      : kind === 'router' ? 'Port router baru masih shutdown, seperti di Packet Tracer. Beri IP, centang Aktif (atau no shutdown di CLI), lalu sambungkan kabelnya.'
