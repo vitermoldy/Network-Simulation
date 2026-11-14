@@ -1917,3 +1917,5 @@ tbody th {
   right: 10px;
   bottom: 10px;
   padding: 6px 10px;
+  border-radius: var(--r-sm);
+  background: var(--tip-bg);
