@@ -67,3 +67,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
         if (done.has(id)) continue;
         if (cur === undefined || d < dist.get(cur)! || (d === dist.get(cur)! && id < cur)) cur = id;
       }
+      if (cur === undefined) break;
+      done.add(cur);
