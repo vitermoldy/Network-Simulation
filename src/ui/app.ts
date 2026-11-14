@@ -257,3 +257,5 @@ export class App {
         const s = this.stage;
         if (!s) return;
         const k = b.dataset.cam;
+        if (k === 'left') s.rotate(-0.3);
+        else if (k === 'right') s.rotate(0.3);
