@@ -84,3 +84,5 @@ function wrap(ctx: CanvasRenderingContext2D, text: string, maxW: number): string
     const t = cur ? `${cur} ${w}` : w;
     if (ctx.measureText(t).width > maxW && cur) {
       lines.push(cur);
+      cur = w;
+    } else cur = t;
