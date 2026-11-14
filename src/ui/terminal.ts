@@ -210,3 +210,5 @@ export class IosShell implements Shell {
         },
       });
       show.push({
+        words: ['show', 'arp'], help: 'cache ARP router',
+        run: () => {
