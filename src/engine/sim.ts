@@ -1455,3 +1455,5 @@ export class Simulator {
       if (s.state === 'listen') {
         s.state = 'syn-rcvd';
         s.clientIp = p.ip!.src;
+        s.rcvNext = t.seq + 1;
+        s.synAckAt = this.time;
