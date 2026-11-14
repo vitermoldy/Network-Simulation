@@ -233,3 +233,5 @@ export class Topology {
     return link.a === portId ? link.b : link.a;
   }
 
+  /** A port has carrier when a cable is in it and the devices at both ends are on. */
+  carrier(portId: string): boolean {
