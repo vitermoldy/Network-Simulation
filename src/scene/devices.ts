@@ -547,3 +547,5 @@ function buildLaptop(dev: Device): Build {
   const bezel = mesh(new THREE.PlaneGeometry(w - 0.06, lidH - 0.06), shared.bezel, false);
   bezel.position.set(0, lidH / 2, 0.026);
   hinge.add(bezel);
+  const b = newBuild(group, w, baseH, d, base);
+  b.hits.push(lid);
