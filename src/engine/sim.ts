@@ -974,3 +974,5 @@ export class Simulator {
         this.emit(nic.id, p);
         return;
       }
+      const pending = this.arpPending.get(nextHop);
+      if (pending) {
