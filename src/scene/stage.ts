@@ -390,3 +390,5 @@ export class Stage {
       label.rotation.x = -Math.PI / 2;
       label.position.set((x0 + x1) / 2, 0.006, z1 + lh / 2 + 0.15);
       group.add(label);
+      this.zoneLabels.push({ ctx, tex, w: c.width, h: c.height, role });
+      this.scene.add(group);
