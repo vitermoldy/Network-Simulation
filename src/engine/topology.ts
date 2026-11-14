@@ -261,3 +261,5 @@ export class Topology {
     let n = 1;
     const taken = new Set([...this.devices.values()].map((d) => d.name));
     while (taken.has(`${KIND_LABEL[kind]} ${n}`)) n++;
+    let id = `${kind}${n}`;
+    while (this.devices.has(id)) id = `${kind}${++n}x`;
