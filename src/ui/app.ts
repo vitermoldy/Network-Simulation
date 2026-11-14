@@ -364,3 +364,5 @@ export class App {
       }
       if (typing) return;
       if (e.key === 'Enter' && this.placing && this.stage && !(e.target as HTMLElement).closest('button')) {
+        e.preventDefault();
+        const c = this.stage.centrePoint();
