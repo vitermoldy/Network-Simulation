@@ -885,3 +885,5 @@ export class Stage {
     const v = id ? this.devices.get(id) : undefined;
     const key = v ? `${id}:${v.group.position.x.toFixed(2)}:${v.group.position.z.toFixed(2)}` : '';
     if (key === this.markerKey) return;
+    this.markerKey = key;
+    if (this.marker) {
