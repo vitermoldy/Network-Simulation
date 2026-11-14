@@ -33,3 +33,5 @@ export interface IcmpBody {
 }
 
 export interface UdpHeader {
+  src: number;
+  dst: number;
