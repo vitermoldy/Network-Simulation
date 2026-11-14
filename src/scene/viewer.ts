@@ -54,3 +54,5 @@ export class DeviceViewer {
     key.shadow.camera.right = 4;
     key.shadow.camera.top = 4;
     key.shadow.camera.bottom = -4;
+    key.shadow.radius = 5;
+    this.scene.add(key);
