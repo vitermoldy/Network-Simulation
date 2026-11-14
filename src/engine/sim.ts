@@ -238,3 +238,5 @@ export class Simulator {
   browser: BrowserView = { deviceId: 'pc', url: 'www.jaringan.test', state: 'idle', parts: PAGE_PARTS.map(() => false) };
   /** Sim time of the last frame through each port, for the activity LEDs. */
   activity = new Map<string, number>();
+  /** Every header version a packet has had, oldest first; routers add one per hop. */
+  history = new Map<number, Packet[]>();
