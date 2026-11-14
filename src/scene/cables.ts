@@ -94,3 +94,6 @@ function endPoints(port: PortView): { start: THREE.Vector3; out: THREE.Vector3; 
   const drop = pos.clone().addScaledVector(dir, 0.85);
   drop.y = FLOOR_Y;
   return { start, out, drop, floor: [drop.x, drop.z] };
+}
+
+/** The centre line of a cable from port a to port b. */
