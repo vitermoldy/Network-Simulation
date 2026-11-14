@@ -52,3 +52,5 @@ export function clientCode(): string {
       localStorage.setItem(CODE_KEY, code);
     }
     return code;
+  } catch {
+    memoryCode ??= makeCode();
