@@ -294,3 +294,5 @@ describe('ping and nslookup', () => {
   });
 
   it('looks a name up before pinging it', () => {
+    const sim = withScenario('normal');
+    runPing(sim, 'pc', 'www.jaringan.test');
