@@ -364,3 +364,5 @@ export class IosShell implements Shell {
       }
       if (!ok) continue;
       const used = cmd.words.length;
+      if (!best.length || used > best[0].used) best = [{ cmd, used }];
+      else if (used === best[0].used) best.push({ cmd, used });
