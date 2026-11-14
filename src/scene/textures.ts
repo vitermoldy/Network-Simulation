@@ -237,3 +237,5 @@ export function drawArrow(ctx: CanvasRenderingContext2D, w: number, h: number, c
   ctx.clearRect(0, 0, w, h);
   ctx.strokeStyle = color;
   ctx.lineWidth = h * 0.12;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
