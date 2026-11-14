@@ -625,3 +625,5 @@ export class Stage {
       return { l, r, b, t };
     };
     let dist = 20;
+    for (let pass = 0; pass < 3; pass++) {
+      // Shortest distance at which the whole bench fits the free area.
