@@ -1775,3 +1775,5 @@ tbody th {
   margin-right: 6px;
 }
 
+.run {
+  display: grid;
