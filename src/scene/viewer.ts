@@ -223,3 +223,5 @@ export class DeviceViewer {
   dispose(): void {
     this.observer.disconnect();
     this.renderer.dispose();
+  }
+}
