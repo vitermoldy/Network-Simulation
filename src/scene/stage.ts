@@ -338,3 +338,5 @@ export class Stage {
   }
 
   portView(portId: string): PortView | undefined {
+    const deviceId = portId.slice(0, portId.lastIndexOf('.'));
+    return this.devices.get(deviceId)?.ports.get(portId);
