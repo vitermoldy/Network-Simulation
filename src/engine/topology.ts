@@ -276,3 +276,5 @@ export class Topology {
     if (!d) return undefined;
     for (const p of d.ports) {
       const l = this.linkOf(p.id);
+      if (l) this.disconnect(l.id);
+      this.portIndex.delete(p.id);
