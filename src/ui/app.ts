@@ -628,3 +628,5 @@ export class App {
 
   private renderDesktop(): void {
     const box = $('desktop');
+    const d = this.sim.topo.device(this.selectedDevice);
+    const key = JSON.stringify([d.id, this.desktopApp, this.desktopApp === 'ip' ? this.sim.topo.rev : 0]);
