@@ -667,3 +667,6 @@ export class Stage {
     const dir = new THREE.Vector3(0.1, 0.5, 1).normalize();
     const size = v.half.x * 2;
     this.animateTo(target, target.clone().addScaledVector(dir, Math.max(3.4, size * 1.35)));
+  }
+
+  rotate(angle: number): void {
