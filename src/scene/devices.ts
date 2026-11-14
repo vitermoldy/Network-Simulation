@@ -298,3 +298,5 @@ function buildSwitch(dev: Device): Build {
     p.text('MODE', -w / 2 + 0.88, 0.2, 0.026, { color: '#2a3038' });
     for (let i = 0; i < 24; i++) {
       const top = i % 2 === 0;
+      p.text(String(i + 1), colX(i) + 0.05, top ? 0.452 : 0.048, 0.03, { color: '#c9d0d8', mono: true, weight: 500 });
+    }
