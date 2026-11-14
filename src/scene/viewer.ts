@@ -16,3 +16,5 @@ export class DeviceViewer {
   private controls: OrbitControls;
   private view?: DeviceView;
   private leads = new THREE.Group();
+  private floorMat = new THREE.MeshStandardMaterial({ color: 0xe2e5ea, roughness: 0.95 });
+  private raycaster = new THREE.Raycaster();
