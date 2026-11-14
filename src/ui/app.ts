@@ -172,3 +172,5 @@ export class App {
     if (this.stage) {
       this.stage.selected = { deviceId: this.selectedDevice, linkId: this.selectedLink ?? undefined, packetId: this.selectedPacket ?? undefined };
       this.stage.frame(dt);
+    }
+    this.viewer?.frame();
