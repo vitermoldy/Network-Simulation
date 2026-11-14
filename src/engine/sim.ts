@@ -1126,3 +1126,5 @@ export class Simulator {
 
   private dnsReceive(dev: Device, p: Packet): void {
     const q = p.app?.dns;
+    if (!q || p.udp?.dst !== 53) return;
+    const answer = dev.dnsRecords?.[q.question];
