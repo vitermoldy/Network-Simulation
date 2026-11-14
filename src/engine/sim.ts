@@ -1193,3 +1193,5 @@ export class Simulator {
     }
     if (p.icmp) {
       this.icmpReceive(dev, p);
+      return;
+    }
