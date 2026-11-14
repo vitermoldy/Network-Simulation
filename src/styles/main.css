@@ -1194,3 +1194,5 @@ select {
 .entry-text {
   font-size: 13.5px;
   color: var(--muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
