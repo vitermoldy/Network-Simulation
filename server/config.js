@@ -16,3 +16,5 @@ const num = (key, fallback) => {
 export const config = {
   name: 'Simulasi Jaringan',
   port: num('PORT', 8797),
+  db: {
+    host: str('DB_HOST', '127.0.0.1'),
