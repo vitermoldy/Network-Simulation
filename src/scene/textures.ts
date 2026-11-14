@@ -114,3 +114,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   ctx.fill();
   ctx.fillStyle = '#5d6470';
   ctx.font = `500 22px ${FONT_MONO}`;
+  ctx.textBaseline = 'middle';
+  ctx.textAlign = 'left';
