@@ -2300,3 +2300,5 @@ tbody th {
     top: 66px;
     left: 8px;
     right: 8px;
+    transform: none;
+    display: flex;
