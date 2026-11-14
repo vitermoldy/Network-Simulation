@@ -229,3 +229,6 @@ export class Stage {
     this.labels.setSize(w, h);
     this.camera.aspect = w / h;
     this.camera.fov = w / h < 0.9 ? 54 : w / h < 1.4 ? 44 : 38;
+    this.camera.updateProjectionMatrix();
+  }
+
