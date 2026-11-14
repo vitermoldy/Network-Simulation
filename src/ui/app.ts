@@ -91,3 +91,5 @@ export class App {
   private pendingPort: string | null = null;
   private placing: DeviceKind | null = null;
   private popoverAction: (() => void) | null = null;
+  private deviceKey = '';
+  private deviceDirty = false;
