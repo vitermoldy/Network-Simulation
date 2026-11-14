@@ -1394,3 +1394,5 @@ export class App {
 
   private renderTimers(): void {
     const timers = this.sim.timers();
+    const box = $('timers');
+    box.hidden = timers.length === 0;
