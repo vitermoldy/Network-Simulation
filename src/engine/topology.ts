@@ -210,3 +210,5 @@ export class Topology {
 
   port(id: string): Port {
     const p = this.portIndex.get(id);
+    if (!p) throw new Error(`Port tidak dikenal: ${id}`);
+    return p;
