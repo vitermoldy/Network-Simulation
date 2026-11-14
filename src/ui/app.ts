@@ -491,3 +491,5 @@ export class App {
       this.toast('Meja sudah penuh: paling banyak 60 perangkat.');
       return;
     }
+    const d = this.sim.addDevice(kind, x, z);
+    this.stopPlacing();
