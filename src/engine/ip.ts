@@ -25,3 +25,6 @@ export function inNetwork(ip: string, network: string): boolean {
   const [base, p] = network.split('/');
   const prefix = Number(p);
   return ((ipToInt(ip) & maskOf(prefix)) >>> 0) === ipToInt(base);
+}
+
+export function sameSubnet(a: string, b: string, prefix: number): boolean {
