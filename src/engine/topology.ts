@@ -409,3 +409,5 @@ export class Topology {
     if (mine === undefined) return { ok: false, reason: `${d.name} sedang mati.` };
     const gw = [...seg].map(([pid, s]) => (s === mine ? this.port(pid) : undefined))
       .find((p) => p && p.ip && p.prefix !== undefined && this.deviceOf(p.id).kind === 'router');
+    if (!gw?.ip || gw.prefix === undefined) {
+      return { ok: false, reason: 'Tidak ada port router ber-IP di jaringan yang sama. Pastikan kabelnya sampai ke router, dan port router itu sudah diberi IP.' };
