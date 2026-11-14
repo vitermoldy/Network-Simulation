@@ -354,3 +354,5 @@ export class IosShell implements Shell {
       const options = cmds.filter((c) => prefix.every((t, i) => c.words[i]?.startsWith(t))).map((c) => `  ${c.words.slice(prefix.length).join(' ') || '<cr>'}  ${c.help}`);
       return options.length ? options : ['% Unrecognized command'];
     }
+    let best: { cmd: Command; used: number }[] = [];
+    for (const cmd of cmds) {
