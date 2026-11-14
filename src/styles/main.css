@@ -1313,3 +1313,5 @@ select {
 }
 
 .power:hover {
+  transform: translateY(-1px);
+  border-color: var(--ink);
