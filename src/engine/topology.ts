@@ -307,3 +307,5 @@ export class Topology {
     if (!clean) return { ok: false, reason: 'Nama tidak boleh kosong.' };
     if (clean.length > 32) return { ok: false, reason: 'Nama paling panjang 32 huruf.' };
     if ([...this.devices.values()].some((d) => d.id !== id && d.name.toLowerCase() === clean.toLowerCase())) {
+      return { ok: false, reason: `Nama ${clean} sudah dipakai perangkat lain.` };
+    }
