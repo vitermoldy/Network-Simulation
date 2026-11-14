@@ -167,3 +167,5 @@ export class Topology {
     this.links.clear();
     this.portIndex.clear();
     this.portLink.clear();
+    this.nextLink = 1;
+    for (const s of SPECS) {
