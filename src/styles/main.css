@@ -1819,3 +1819,5 @@ tbody th {
 /* A floating window over the panel column, so the bench stays in view while a ping runs. */
 .devwin {
   position: fixed;
+  inset: 84px 16px 16px auto;
+  width: min(640px, calc(100vw - 32px));
