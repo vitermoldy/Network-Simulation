@@ -71,3 +71,5 @@ export interface Packet {
   title: string;
   eth: EthHeader;
   arp?: ArpBody;
+  ip?: IpHeader;
+  icmp?: IcmpBody;
