@@ -1042,3 +1042,5 @@ export class Simulator {
 
   // ------------------------------------------------------------------ reliable sending
 
+  private reliable(key: string, label: string, dev: Device, make: (retry: number) => Packet, rto: number, maxTries: number, onGiveUp: () => void): void {
+    const old = this.retx.get(key);
