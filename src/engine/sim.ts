@@ -509,3 +509,6 @@ export class Simulator {
     }
     this.failReason = reason;
     if (this.kind !== 'web' && phase === 'input') this.say(reason);
+    this.note('error', deviceId, 'Gagal', reason);
+  }
+
