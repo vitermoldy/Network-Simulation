@@ -790,3 +790,5 @@ export class Simulator {
   }
 
   private switchIn(dev: Device, inPort: string, p: Packet): void {
+    const table = this.macTable(dev.id);
+    const inName = this.topo.port(inPort).name;
