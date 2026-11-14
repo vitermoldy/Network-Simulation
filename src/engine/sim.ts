@@ -910,3 +910,5 @@ export class Simulator {
           this.emit(inPort, reply);
         });
       } else if (p.arp.op === 'reply' && p.arp.targetIp === nic.ip && dev.id === this.client.deviceId) {
+        this.hold(p, dev, inPort, [], TIMING.host, () => this.arpResolved(dev, p.arp!.senderIp, p.arp!.senderMac, p.id));
+      } else {
