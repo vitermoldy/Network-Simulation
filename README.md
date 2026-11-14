@@ -73,3 +73,6 @@ npm test          # tes mesin simulasi (routing, ARP, DNS, TCP, ping, shutdown, 
 npm run typecheck
 ```
 
+## Struktur
+
+```
