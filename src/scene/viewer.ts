@@ -93,3 +93,6 @@ export class DeviceViewer {
     });
     this.observer = new ResizeObserver(() => this.resize());
     this.observer.observe(host);
+  }
+
+  setTheme(name: ThemeName): void {
