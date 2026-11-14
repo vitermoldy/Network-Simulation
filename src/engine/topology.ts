@@ -379,3 +379,5 @@ export class Topology {
 
   setDnsRecord(id: string, name: string, ip: string): Result {
     const d = this.device(id);
+    const host = name.trim().toLowerCase().replace(/\.$/, '');
+    if (!/^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(host)) return { ok: false, reason: 'Nama harus seperti www.contoh.test: huruf, angka, minus, dipisah titik.' };
