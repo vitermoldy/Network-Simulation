@@ -121,3 +121,5 @@ export class App {
       this.stage = await createStage();
       $('stage-state').hidden = true;
       this.stage.setTheme(this.theme());
+      document.fonts?.ready.then(() => this.stage?.refreshText());
+      try {
