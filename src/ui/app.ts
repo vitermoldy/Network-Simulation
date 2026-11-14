@@ -1445,3 +1445,6 @@ export class App {
     const cv = $('clock-value');
     if (cv.textContent !== v) cv.textContent = v;
     ($('step') as HTMLButtonElement).disabled = s.status !== 'idle' && s.status !== 'running' && s.quiet;
+  }
+
+  private renderDeviceList(): void {
