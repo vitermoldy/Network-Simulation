@@ -283,3 +283,5 @@ function runPing(sim: Simulator, source: string, target: string): void {
 }
 
 describe('ping and nslookup', () => {
+  it('pings the web server by address from the laptop', () => {
+    const sim = withScenario('normal');
