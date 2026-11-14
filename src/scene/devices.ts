@@ -130,3 +130,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
   const hole = mesh(new THREE.BoxGeometry(holeW, holeH, 0.02), shared.hole, false);
   hole.position.z = -0.006;
   group.add(hole);
+  const s = flip ? -1 : 1;
+  for (let i = 0; i < 8; i++) {
