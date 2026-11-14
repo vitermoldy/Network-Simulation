@@ -603,3 +603,5 @@ export class Stage {
       right: 1 - (2 * (narrow ? 52 : 70)) / w,
       top: 1 - (2 * (narrow ? 150 : 72)) / h,
       bottom: -1 + (2 * (narrow ? 80 : 104)) / h,
+    };
+    const dir = new THREE.Vector3(0.0, 0.66, 1).normalize();
