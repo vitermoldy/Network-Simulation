@@ -292,3 +292,5 @@ export class Topology {
   }
 
   /** Would a device of `kind` at (x, z) sit on top of another one? */
+  overlaps(kind: DeviceKind, x: number, z: number, ignore?: string): Device | undefined {
+    const s = SIZE[kind];
