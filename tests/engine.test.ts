@@ -329,3 +329,6 @@ describe('ping and nslookup', () => {
     while (sim2.status === 'running' && sim2.time < 200) sim2.advance(0.05);
     expect(sim2.status).toBe('failed');
     expect(sim2.output.some((l) => l.includes('Non-existent domain'))).toBe(true);
+  });
+
+  it('keeps a port that is shut down dark until no shutdown', () => {
