@@ -345,3 +345,5 @@ describe('ping and nslookup', () => {
   it('starts a new router with every port shut down, as Packet Tracer does', () => {
     const t = new Topology();
     const r = t.addDevice('router', 20, 20);
+    expect(r.ports.every((p) => p.down)).toBe(true);
+    expect(t.addDevice('switch', 30, 20).ports.some((p) => p.down)).toBe(false);
