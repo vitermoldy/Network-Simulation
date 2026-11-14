@@ -82,3 +82,5 @@ const PHASE_SETS: Record<RunKind, Omit<Phase, 'status'>[]> = {
     { id: 'input', title: 'Perintah nslookup diketik', layer: 'Aplikasi', role: 'input' },
     { id: 'arp', title: 'ARP: mencari MAC gateway', layer: 'Data link', role: 'process' },
     { id: 'dns', title: 'DNS: menanyakan alamat IP', layer: 'Aplikasi, UDP', role: 'process' },
+    { id: 'output', title: 'Jawaban tampil', layer: 'Aplikasi', role: 'input' },
+  ],
