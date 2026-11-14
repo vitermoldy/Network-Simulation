@@ -791,3 +791,5 @@ select {
   min-width: 112px;
 }
 
+.switch {
+  display: inline-flex;
