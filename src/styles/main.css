@@ -1694,3 +1694,6 @@ tbody th {
   display: flex;
   gap: 6px;
   justify-self: start;
+}
+
+.host-form .form-error,
