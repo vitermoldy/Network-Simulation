@@ -2268,3 +2268,6 @@ tbody th {
   }
 
   .top-tools select {
+    width: 100%;
+  }
+
