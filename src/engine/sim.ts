@@ -1019,3 +1019,6 @@ export class Simulator {
       }
       this.note('retry', dev.id, 'ARP ditanyakan ulang', `${fmt(ARP_RTO)} tanpa jawaban untuk ${ip}. ${dev.name} bertanya lagi (percobaan ${entry.tries + 1}).`, 2);
       this.sendArp(dev, ip);
+    }, true);
+  }
+
