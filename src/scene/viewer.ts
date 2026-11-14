@@ -193,3 +193,6 @@ export class DeviceViewer {
       this.camera.position.copy(this.home.position);
     }
     this.key = `${topo.rev}|${signatureOf(live)}`;
+  }
+
+  zoom(factor: number): void {
