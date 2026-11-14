@@ -12,3 +12,6 @@ export interface Route {
   nextHop?: string;
   /** The router the next hop belongs to, for the explanation text. */
   viaRouter?: string;
+  cost: number;
+}
+
