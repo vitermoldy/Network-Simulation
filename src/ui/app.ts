@@ -183,3 +183,6 @@ export class App {
     requestAnimationFrame((t) => this.tick(t));
   }
 
+  // ------------------------------------------------------------------ controls
+
+  private theme(): ThemeName {
