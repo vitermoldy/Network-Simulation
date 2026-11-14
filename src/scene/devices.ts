@@ -14,3 +14,5 @@ import { MATERIAL } from './theme';
 
 export type Pick =
   | { type: 'port'; portId: string }
+  | { type: 'power'; deviceId: string }
+  | { type: 'device'; deviceId: string }
