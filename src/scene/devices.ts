@@ -197,3 +197,5 @@ function buildRoundButton(deviceId: string, r = 0.075) {
   ctx.strokeStyle = '#e9ecef';
   ctx.lineWidth = 8;
   ctx.lineCap = 'round';
+  ctx.beginPath();
+  ctx.arc(48, 52, 24, -Math.PI * 0.32, Math.PI * 1.32);
