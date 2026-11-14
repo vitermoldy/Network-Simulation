@@ -530,3 +530,5 @@ export class Simulator {
       }
       for (const h of [...this.holds]) {
         if (h.deviceId === deviceId) this.loseHold(h, `${dev.name} dimatikan saat paket sedang diproses di dalamnya.`);
+      }
+      this.macTables.delete(deviceId);
