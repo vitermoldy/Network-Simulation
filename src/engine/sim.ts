@@ -877,3 +877,5 @@ export class Simulator {
     this.hold(p, dev, inPort, [route.portId], TIMING.router, () => {
       if (ttl <= 0) {
         this.loseAt(p, dev.id, 'TTL habis, paket dibuang supaya tidak berputar selamanya.');
+        return;
+      }
