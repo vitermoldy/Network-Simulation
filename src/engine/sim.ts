@@ -1077,3 +1077,6 @@ export class Simulator {
     if (r.timer) r.timer.cancelled = true;
     this.retx.delete(key);
     return true;
+  }
+
+  /** Where a packet is right now, in words. */
