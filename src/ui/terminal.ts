@@ -289,3 +289,5 @@ export class IosShell implements Shell {
           if (!isRouter) return ['% Port switch tidak diberi IP di simulasi ini.'];
           if (args.length < 2) return ['% Incomplete command. Contoh: ip address 10.0.50.1 255.255.255.0'];
           const prefix = maskToPrefix(args[1]);
+          if (prefix === undefined) return [`% ${args[1]} bukan subnet mask yang sah. Contoh: 255.255.255.0`];
+          const r = topo.setPortIp(port!.id, args[0], prefix);
