@@ -64,3 +64,5 @@ function cleanRun(run) {
       Math.min(0.99, Math.max(0, Number(run.lossRate) || 0)),
       run.status,
       PHASES.has(run.failedPhase) ? run.failedPhase : null,
+      run.reason ? text(run.reason, 400) : null,
+      Math.min(99999, Math.max(0, Number(run.simSeconds) || 0)),
