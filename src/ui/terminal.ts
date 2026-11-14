@@ -327,3 +327,5 @@ export class IosShell implements Shell {
           if (!p) return ['% Port tidak dikenal.'];
           this.iface = p.id;
           return [];
+        },
+      },
