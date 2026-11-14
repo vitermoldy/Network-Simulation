@@ -291,3 +291,5 @@ export class Stage {
     for (const dev of topo.devices.values()) {
       const v = this.devices.get(dev.id);
       if (!v || v.signature !== signatureOf(dev)) this.rebuildDevice(dev.id);
+      else if (this.drag?.id !== dev.id) v.group.position.set(dev.x, 0, dev.z);
+    }
