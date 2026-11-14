@@ -9,3 +9,5 @@ import { connect } from './db.js'
  * (this also serves dist/). The simulator works with the server off: finished runs wait in
  * the browser and go out once the server answers again.
  */
+let pool = null
+const app = express()
