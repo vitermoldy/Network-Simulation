@@ -125,3 +125,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
   if (p.app) {
     const f: [string, string][] = [];
     if (p.app.dns) {
+      f.push(['ID transaksi', String(p.app.dns.txid)], ['Pertanyaan', `${p.app.dns.question} (A)`]);
+      if (p.app.dns.rcode) f.push(['Status', p.app.dns.rcode]);
