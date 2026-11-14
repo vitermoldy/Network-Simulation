@@ -571,3 +571,5 @@ function buildLaptop(dev: Device): Build {
   const button = buildRoundButton(dev.id, 0.06);
   button.group.rotation.x = -Math.PI / 2;
   button.group.position.set(w / 2 - 0.22, baseH + 0.002, -0.52);
+  group.add(button.group);
+  b.power = { hit: button.hit, glow: button.glow, button: button.button, leds: [button.ring] };
