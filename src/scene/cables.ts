@@ -142,3 +142,5 @@ export function buildPlug(port: PortView, cableMat: THREE.Material): THREE.Group
   const pos = new THREE.Vector3();
   const quat = new THREE.Quaternion();
   port.anchor.getWorldPosition(pos);
+  port.anchor.getWorldQuaternion(quat);
+  g.position.copy(pos);
