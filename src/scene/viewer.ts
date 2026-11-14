@@ -3,3 +3,5 @@
 // and its power control works here too. Plugged cables show as short leads leaving the sockets.
 
 import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import type { Simulator } from '../engine/sim';
