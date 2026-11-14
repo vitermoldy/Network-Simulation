@@ -23,3 +23,5 @@ const TABLES = [
     status ENUM('done','failed') NOT NULL,
     failed_phase VARCHAR(16) NULL,
     reason VARCHAR(400) NULL,
+    sim_seconds DECIMAL(7,1) NOT NULL,
+    packets_lost INT NOT NULL,
