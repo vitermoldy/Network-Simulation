@@ -1271,3 +1271,5 @@ select {
   gap: 0;
   min-height: 48px;
   padding: 6px 10px;
+  text-align: left;
+  border: 1px solid transparent;
