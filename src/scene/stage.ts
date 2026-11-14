@@ -117,3 +117,6 @@ export class Stage {
   private marker?: THREE.Mesh;
   private markerMat = new THREE.MeshBasicMaterial({ color: MATERIAL.accent });
   private markerKey = '';
+  private tween?: { t: number; dur: number; fromPos: THREE.Vector3; toPos: THREE.Vector3; fromTarget: THREE.Vector3; toTarget: THREE.Vector3 };
+  private observer: ResizeObserver;
+
