@@ -453,3 +453,6 @@ select {
 
 .tag[data-role="input"] .tag-role,
 .tag[data-role="output"] .tag-role {
+  color: var(--accent);
+}
+
