@@ -123,3 +123,5 @@ export function createApi(getPool, database) {
 
   api.get('/layouts/:client', async (req, res) => {
     const client = codeOf(req.params.client)
+    if (!client) return res.status(400).json({ error: 'Kode klien tidak dikenal.' })
+    const [rows] = await getPool().query(
