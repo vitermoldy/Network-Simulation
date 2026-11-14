@@ -161,3 +161,6 @@ p {
   margin-left: auto;
   display: grid;
   gap: 4px;
+}
+
+.ctl > label,
