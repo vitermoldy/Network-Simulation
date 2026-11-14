@@ -1068,3 +1068,6 @@ export class App {
     this.packetKey = '';
     this.deviceKey = '';
     if (tab === 'riwayat') void this.refreshDb();
+    this.renderAll();
+  }
+
