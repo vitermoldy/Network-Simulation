@@ -10,3 +10,5 @@ export interface Route {
   type: 'C' | 'O';
   portId: string;
   nextHop?: string;
+  /** The router the next hop belongs to, for the explanation text. */
+  viaRouter?: string;
