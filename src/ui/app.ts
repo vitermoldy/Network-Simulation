@@ -87,3 +87,5 @@ export class App {
   private followLatest = true;
   private selectedPacket: number | null = null;
   private selectedDevice = 'r1';
+  private selectedLink: string | null = null;
+  private pendingPort: string | null = null;
