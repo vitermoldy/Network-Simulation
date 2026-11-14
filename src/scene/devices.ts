@@ -462,3 +462,5 @@ function buildServer(dev: Device): Build {
 function addScreen(b: Build, parent: THREE.Object3D, w: number, y: number, z: number, dev: Device): void {
   const [canvas, ctx] = makeCanvas(SCREEN_W, SCREEN_H);
   const texture = canvasTexture(canvas);
+  const sh = w * (SCREEN_H / SCREEN_W);
+  const screen = new THREE.Mesh(new THREE.PlaneGeometry(w, sh), new THREE.MeshBasicMaterial({ map: texture, toneMapped: false }));
