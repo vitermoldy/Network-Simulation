@@ -14,3 +14,5 @@ export default defineConfig({
   server: { port: 5181, proxy: api },
   preview: { port: 5181, proxy: api },
   build: {
+    target: 'es2022',
+    assetsDir: 'build',
