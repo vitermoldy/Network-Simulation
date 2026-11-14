@@ -716,3 +716,5 @@ export class App {
     $('vw-in').addEventListener('click', () => this.viewer?.zoom(0.75));
     $('vw-out').addEventListener('click', () => this.viewer?.zoom(1.3));
     $('vw-reset').addEventListener('click', () => this.viewer?.reset());
+    const desk = $('desktop');
+    desk.addEventListener('click', (e) => {
