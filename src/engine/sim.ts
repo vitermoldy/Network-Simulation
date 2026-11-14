@@ -1428,3 +1428,5 @@ export class Simulator {
     const pg = this.ping!;
     const lost = pg.sent - pg.received;
     this.say('');
+    this.say(`Ping statistics for ${pg.ip}:`);
+    this.say(`    Packets: Sent = ${pg.sent}, Received = ${pg.received}, Lost = ${lost} (${Math.round((lost / pg.sent) * 100)}% loss),`);
