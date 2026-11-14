@@ -89,3 +89,5 @@ export class App {
   private selectedDevice = 'r1';
   private selectedLink: string | null = null;
   private pendingPort: string | null = null;
+  private placing: DeviceKind | null = null;
+  private popoverAction: (() => void) | null = null;
