@@ -1540,3 +1540,5 @@ tbody th {
 }
 
 .changed {
+  display: block;
+  font-family: var(--font-text);
