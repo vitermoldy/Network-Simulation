@@ -1340,3 +1340,5 @@ export class App {
     if (s.status === 'idle') text = `${SCENARIO_TEXT[$<HTMLSelectElement>('scenario').value as Scenario]} Pilih pengirim, ketik alamat web, lalu tekan Kirim permintaan.`;
     else if (s.status === 'running') text = `Mengirim permintaan ke ${s.browser.url}.`;
     else if (s.status === 'done') text = `Selesai. Halaman ${s.browser.url} tampil di layar pengirim.`;
+    else text = `Berhenti: ${s.browser.message ?? 'permintaan gagal.'}`;
+    if (el.textContent !== text) el.textContent = text;
