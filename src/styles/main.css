@@ -1564,3 +1564,5 @@ tbody th {
 .dev-title-input {
   flex: 1;
   min-width: 0;
+  min-height: 44px;
+  padding: 0 10px;
