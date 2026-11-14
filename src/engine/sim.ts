@@ -370,3 +370,5 @@ export class Simulator {
     const dev = this.checkSource(sourceId, !isIp);
     if (!dev) return;
     if (dev.kind === 'router') this.setPhase('arp', 'skipped');
+    this.say(`Pinging ${target} with 32 bytes of data:`);
+    this.say('');
