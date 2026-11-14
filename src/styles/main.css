@@ -229,3 +229,6 @@ p {
 }
 
 .field input:focus {
+  outline: none;
+}
+
