@@ -513,3 +513,6 @@ export class App {
     return true;
   }
 
+  // ------------------------------------------------------------------ device window
+
+  private dwOpen(): boolean {
