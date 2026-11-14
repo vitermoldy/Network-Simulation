@@ -170,3 +170,5 @@ export class IosShell implements Shell {
             const status = p.down ? 'administratively down' : topo.carrier(p.id) ? 'up' : 'down';
             const proto = !p.down && topo.carrier(p.id) ? 'up' : 'down';
             return `${pad(longPortName(p.name), 23)}${pad(p.ip ?? 'unassigned', 16)}YES ${pad(p.ip ? 'manual' : 'unset', 7)}${pad(status, 22)}${proto}`;
+          }),
+        ],
