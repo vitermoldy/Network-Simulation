@@ -156,3 +156,5 @@ export class Stage {
 
     this.scene.add(new THREE.HemisphereLight(0xffffff, 0xc4c9d0, 1.45));
     const sun = new THREE.DirectionalLight(0xffffff, 1.45);
+    sun.position.set(6, 18, 11);
+    sun.castShadow = true;
