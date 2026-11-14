@@ -108,3 +108,6 @@ interface Command {
   words: string[];
   help: string;
   run: (args: string[]) => string[];
+}
+
+export class IosShell implements Shell {
