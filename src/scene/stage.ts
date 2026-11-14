@@ -207,3 +207,5 @@ export class Stage {
 
   setTheme(name: ThemeName): void {
     this.themeName = name;
+    this.theme = SCENE_THEMES[name];
+    this.scene.background = new THREE.Color(this.theme.background);
