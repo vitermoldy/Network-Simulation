@@ -609,3 +609,5 @@ export function buildDevice(dev: Device): DeviceView {
     powerHit: b.power.hit,
     powerGlow: b.power.glow,
     rocker: b.power.rocker,
+    button: b.power.button,
+    powerLeds: b.power.leds,
