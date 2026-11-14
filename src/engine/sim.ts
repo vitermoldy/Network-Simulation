@@ -785,3 +785,5 @@ export class Simulator {
     if (!t) {
       t = new Map();
       this.arpCaches.set(id, t);
+    }
+    return t;
