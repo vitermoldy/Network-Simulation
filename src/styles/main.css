@@ -1911,3 +1911,5 @@ tbody th {
   outline-offset: -3px;
 }
 
+.viewer-hover {
+  position: absolute;
