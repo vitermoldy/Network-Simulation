@@ -75,3 +75,5 @@ export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
       if (len < bestLen) {
         bestLen = len;
         best = [a, c1, c2, b];
+      }
+    }
