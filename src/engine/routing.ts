@@ -94,3 +94,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
         };
         if (!cur || cand.cost < cur.cost || (cand.cost === cur.cost && cur.type === 'O' && (cand.viaRouter ?? '') < (cur.viaRouter ?? ''))) {
           best.set(a.network, cand);
+        }
+      }
