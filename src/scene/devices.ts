@@ -622,3 +622,5 @@ export function buildDevice(dev: Device): DeviceView {
 }
 
 /** World footprint of a device on the bench, for cable routing and placement. */
+export function footprintOf(v: DeviceView): { x0: number; x1: number; z0: number; z1: number } {
+  const { x, z } = v.device;
