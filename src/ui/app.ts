@@ -863,3 +863,5 @@ export class App {
       this.sim.removeDevice(id);
       this.terms.delete(id);
       if (this.selectedDevice === id) this.selectedDevice = [...this.sim.topo.devices.keys()][0] ?? '';
+      this.toast(`${d.name} dihapus.`);
+      this.deviceKey = '';
