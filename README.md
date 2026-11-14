@@ -28,3 +28,5 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
     Web Browser.
   - CLI (router, switch): `enable`, `configure terminal`, `interface`, `ip address`, `shutdown`,
     `no shutdown`, `hostname`, `show ip interface brief`, `show ip route`, `show mac address-table`,
+    `show arp`, `show running-config`, `ping`. Singkatan seperti `conf t` dan `int g0/1` bisa dipakai.
+- **Lihat jaringan memperbaiki diri.** Skenario "router mati" mematikan router di tengah jalur saat data
