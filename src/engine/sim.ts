@@ -1082,3 +1082,5 @@ export class Simulator {
   /** Where a packet is right now, in words. */
   whereIs(packetId: number): string {
     const f = this.flights.find((x) => x.packet.id === packetId);
+    if (f) return `${this.topo.portLabel(f.from)} ke ${this.topo.portLabel(f.to)}`;
+    const h = this.holds.find((x) => x.packet.id === packetId);
