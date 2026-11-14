@@ -1977,3 +1977,5 @@ tbody th {
   display: grid;
   justify-items: center;
   gap: 8px;
+  padding: 18px 10px 14px;
+  border: 1px solid var(--line);
