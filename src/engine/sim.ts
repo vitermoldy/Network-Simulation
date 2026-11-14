@@ -1096,3 +1096,5 @@ export class Simulator {
     return versions?.[versions.length - 1] ?? this.lost.find((l) => l.packet.id === packetId)?.packet;
   }
 
+  timers(): TimerView[] {
+    return [...this.retx.values()].map((r) => ({
