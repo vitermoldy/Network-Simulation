@@ -741,3 +741,5 @@ select {
   transform: translateY(-50%) rotate(45deg);
 }
 
+.flow-name {
+  font-size: 13px;
