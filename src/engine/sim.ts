@@ -1185,3 +1185,5 @@ export class Simulator {
         this.pingNext();
         return;
       }
+      this.browser.serverIp = c.serverIp;
+      this.browser.state = 'connecting';
