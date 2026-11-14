@@ -908,3 +908,6 @@ select {
 
 .clock-label {
   color: var(--muted);
+}
+
+#clock-value {
