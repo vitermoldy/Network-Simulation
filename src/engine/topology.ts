@@ -504,3 +504,5 @@ export class Topology {
         id: raw.id, kind: raw.kind, name: String(raw.name ?? raw.id).slice(0, 32), powered: raw.powered !== false,
         x: Number(raw.x) || 0, z: Number(raw.z) || 0,
         gateway: typeof raw.gateway === 'string' && validIp(raw.gateway) ? raw.gateway : undefined,
+        dnsServer: typeof raw.dnsServer === 'string' && validIp(raw.dnsServer) ? raw.dnsServer : undefined,
+        ports: names.map((n, i) => {
