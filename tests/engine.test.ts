@@ -71,3 +71,5 @@ describe('topology', () => {
     expect(a.ports[0].name).toBe('Fa0');
     expect(t.overlaps('router', -12, 7)).toBeDefined();
     expect(t.overlaps('router', 20, 20)).toBeUndefined();
+    t.removeDevice(a.id);
+    expect(t.has(a.id)).toBe(false);
