@@ -2250,3 +2250,5 @@ tbody th {
     --gutter: 16px;
   }
 
+  .top {
+    gap: 12px;
