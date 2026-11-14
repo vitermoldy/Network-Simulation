@@ -174,3 +174,5 @@ function buildRocker(deviceId: string, scale = 1) {
   const paddle = new THREE.Group();
   paddle.add(mesh(new THREE.BoxGeometry(0.15 * scale, 0.22 * scale, 0.05), [glow, glow, glow, glow, face, glow], false));
   paddle.position.z = 0.04;
+  group.add(paddle);
+  const hit = hitBox(0.3 * scale, 0.36 * scale, 0.14, { type: 'power', deviceId });
