@@ -872,3 +872,5 @@ export class App {
   private afterTopologySwap(message: string): void {
     this.closeDevice();
     this.terms.clear();
+    this.playing = false;
+    this.selectedPacket = null;
