@@ -23,3 +23,6 @@ export interface IpHeader {
   src: string;
   dst: string;
   ttl: number;
+  proto: 'UDP' | 'TCP' | 'ICMP';
+}
+
