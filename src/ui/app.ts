@@ -1080,3 +1080,5 @@ export class App {
       if (!b) return;
       const id = this.selectedDevice;
       const act = b.dataset.act;
+      if (act === 'power') this.togglePower(id);
+      else if (act === 'focus') this.stage?.focusDevice(id);
