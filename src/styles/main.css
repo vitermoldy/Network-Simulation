@@ -2330,3 +2330,5 @@ tbody th {
     grid-template-columns: 1fr;
   }
 
+  .host-actions,
+  .record-form .btn,
