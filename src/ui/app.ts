@@ -640,3 +640,5 @@ export class App {
     if (this.desktopApp === 'home') {
       box.innerHTML = `<div class="apps">
         <button type="button" class="app-tile" data-app="ip">${APP_ICONS.ip}<span>IP Configuration</span></button>
+        <button type="button" class="app-tile" data-app="prompt">${APP_ICONS.prompt}<span>Command Prompt</span></button>
+        <button type="button" class="app-tile" data-app="browser">${APP_ICONS.browser}<span>Web Browser</span></button>
