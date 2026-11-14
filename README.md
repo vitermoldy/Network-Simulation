@@ -34,3 +34,7 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
   lewat jalur lain. Skenario "paket hilang" merusak satu segmen di kabel sehingga terlihat ACK duplikat
   dan kirim ulang.
 - **Riwayat dan rancangan di MySQL.** Setiap percobaan (berhasil atau gagal) tercatat, dan susunan
+  jaringan bisa disimpan dengan nama lalu dimuat lagi.
+
+## Menjalankan
+
