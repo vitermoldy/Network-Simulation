@@ -165,3 +165,5 @@ export class Topology {
   private loadDefaults(): void {
     this.devices.clear();
     this.links.clear();
+    this.portIndex.clear();
+    this.portLink.clear();
