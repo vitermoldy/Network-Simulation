@@ -1222,3 +1222,6 @@ select {
 
 .chip-retry {
   color: var(--warn);
+}
+
+.chip-route {
