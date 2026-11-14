@@ -558,3 +558,5 @@ function buildLaptop(dev: Device): Build {
   const p = buildPort(port.id, 0.15, 0.09, MATERIAL.metal);
   p.group.position.set(w / 2 + 0.004, baseH / 2, 0.22);
   p.group.rotation.y = Math.PI / 2;
+  group.add(p.group);
+  const link = led(0.017);
