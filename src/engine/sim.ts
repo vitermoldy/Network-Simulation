@@ -108,3 +108,5 @@ export interface Task {
   seq: number;
   run: () => void;
   /** In step mode the clock stops after this task. */
+  stop: boolean;
+  cancelled: boolean;
