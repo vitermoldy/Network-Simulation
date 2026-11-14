@@ -73,3 +73,5 @@ export class PromptShell implements Shell {
       const out = ['', 'FastEthernet0 Connection:(default port)', ''];
       if (all) out.push(`   Physical Address................: ${nic.mac.toUpperCase().replace(/:/g, '-')}`);
       out.push(`   IPv4 Address....................: ${nic.ip ?? '0.0.0.0'}`);
+      out.push(`   Subnet Mask.....................: ${nic.prefix !== undefined ? prefixToMask(nic.prefix) : '0.0.0.0'}`);
+      out.push(`   Default Gateway.................: ${d.gateway ?? '0.0.0.0'}`);
