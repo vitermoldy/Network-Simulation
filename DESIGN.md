@@ -25,3 +25,5 @@ perangkat Cisco, dial **ENERGY 2 / RHYTHM 2 / MOTION 2**.
 
 | Item | Hasil | Alasan |
 | --- | --- | --- |
+| Kind | software (developer tool) | Produknya alat kerja; tampilannya adalah alat itu sendiri. |
+| Palet | cool-grey-cobalt: bg `#eef0f3`, surface `#e2e5ea`, ink `#0b0c0e`, muted `#4f5662`, aksen `#1f2de6` | Meja abu terang membuat perangkat gelap gaya Cisco dan lubang port hitam paling kontras; kobalt hanya untuk paket yang bergerak dan status aktif. Dipilih pemilik. |
