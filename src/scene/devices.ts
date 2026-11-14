@@ -116,3 +116,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
   const group = new THREE.Group();
   const t = 0.02;
   const frameMat = std(frameColor, { metalness: 0.7, roughness: 0.32 });
+  const bars: [number, number, number, number][] = [
+    [0, holeH / 2 + t / 2, holeW + 2 * t, t],
