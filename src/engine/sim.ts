@@ -1566,3 +1566,5 @@ export class Simulator {
       if (!r || r.type === 'C' || !r.viaRouter) break;
       chain.push(r.viaRouter);
       at = r.viaRouter;
+    }
+    // The last router in the chain is the client's own gateway; anything before it is in the middle.
