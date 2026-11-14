@@ -715,3 +715,5 @@ export class Simulator {
     }
     if (this.lossRate > 0 && this.rng() < this.lossRate) {
       return { u: 0.3 + this.rng() * 0.4, reason: 'Gangguan acak merusak frame ini di kabel. Cek FCS di penerima gagal, jadi frame dibuang.' };
+    }
+    return undefined;
