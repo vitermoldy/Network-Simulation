@@ -462,3 +462,5 @@ export class Simulator {
     this.resetApps(host, sourceId);
     if (this.kind === 'web') {
       this.browser = { deviceId: sourceId, url: host, state: 'resolving', parts: PAGE_PARTS.map(() => false), message: 'Mencari alamat IP' };
+    }
+    this.outputDevice = sourceId;
