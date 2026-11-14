@@ -367,3 +367,6 @@ select {
   gap: 12px;
   padding: 0 var(--gutter) 12px;
   min-height: 0;
+}
+
+.stage-wrap {
