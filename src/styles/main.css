@@ -2072,3 +2072,5 @@ tbody th {
 .browser-bar input {
   flex: 1;
   min-width: 0;
+  min-height: 40px;
+  border: 0;
