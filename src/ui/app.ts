@@ -1019,3 +1019,5 @@ export class App {
     tip.textContent = text;
     tip.hidden = false;
     const host = tip.parentElement!.getBoundingClientRect();
+    const w = tip.offsetWidth;
+    const h = tip.offsetHeight;
