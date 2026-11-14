@@ -16,3 +16,5 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
   tiga langkah, HTTP meminta halaman, server mengirimnya dalam tiga segmen, lalu sambungan ditutup.
   Setiap keputusan perangkat dijelaskan di panel Alur.
 - **Buka header setiap paket** lapis demi lapis (aplikasi, transport, IP, Ethernet, kabel). Saat paket
+  ada di dalam switch atau router, terlihat sampai lapisan mana perangkat itu membacanya dan field
+  mana yang berubah (MAC baru, TTL turun).
