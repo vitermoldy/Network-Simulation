@@ -391,3 +391,5 @@ export class App {
     const input = $<HTMLInputElement>('url');
     const host = input.value.trim().replace(/^https?:\/\//i, '').replace(/\/.*$/, '').toLowerCase();
     const err = $('url-error');
+    const source = $<HTMLSelectElement>('source').value;
+    if (!source) {
