@@ -477,3 +477,5 @@ export class Stage {
         this.rebuildCables(this.drag.id);
         this.layoutKey = '';
       }
+      return;
+    }
