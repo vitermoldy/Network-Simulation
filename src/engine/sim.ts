@@ -372,3 +372,5 @@ export class Simulator {
     if (dev.kind === 'router') this.setPhase('arp', 'skipped');
     this.say(`Pinging ${target} with 32 bytes of data:`);
     this.say('');
+    this.note('info', dev.id, 'Input: perintah ping', `${dev.name} menjalankan ping ${target}. Ping mengirim paket ICMP echo request; perangkat tujuan yang hidup akan membalas echo reply. Ini cara tercepat memeriksa apakah dua perangkat bisa saling mencapai.`, 3);
+    this.schedule(0.6, () => {
