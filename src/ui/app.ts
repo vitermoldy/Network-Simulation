@@ -456,3 +456,6 @@ export class App {
     this.placing = kind;
     this.stage.setPlacing(kind);
     document.querySelectorAll<HTMLButtonElement>('[data-add]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.add === kind)));
+    this.toast(`Klik tempat kosong di meja untuk menaruh ${KIND_LABEL[kind]}. Enter menaruhnya di tengah tampilan, Esc untuk batal.`);
+  }
+
