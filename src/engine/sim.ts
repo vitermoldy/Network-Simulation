@@ -751,3 +751,5 @@ export class Simulator {
       if (!this.holds.includes(h)) return;
       this.holds = this.holds.filter((x) => x !== h);
       if (!dev.powered) return;
+      then();
+    });
