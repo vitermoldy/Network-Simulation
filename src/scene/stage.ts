@@ -658,3 +658,6 @@ export class Stage {
 
   resetView(): void {
     this.fitView(true);
+  }
+
+  focusDevice(id: string): void {
