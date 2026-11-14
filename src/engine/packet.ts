@@ -77,3 +77,5 @@ export interface Packet {
   tcp?: TcpHeader;
   app?: AppBody;
   size: number;
+  /** 0 for the first transmission, 1 for the first resend, and so on. */
+  retry: number;
