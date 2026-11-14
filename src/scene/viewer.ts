@@ -89,3 +89,5 @@ export class DeviceViewer {
         off.applyAxisAngle(new THREE.Vector3(0, 1, 0), e.key === 'ArrowLeft' ? -0.25 : 0.25);
         this.camera.position.copy(this.controls.target).add(off);
       } else return;
+      e.preventDefault();
+    });
