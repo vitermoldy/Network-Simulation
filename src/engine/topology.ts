@@ -436,3 +436,6 @@ export class Topology {
     return { ok: true, value: `${pick}/${gw.prefix}, gateway ${gw.ip}${isClient(d) && d.dnsServer ? `, DNS ${d.dnsServer}` : ''}` };
   }
 
+  // ------------------------------------------------------------------ cables
+
+  connect(a: string, b: string): ResultOf<Link> {
