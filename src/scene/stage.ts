@@ -173,3 +173,5 @@ export class Stage {
     fill.position.set(-10, 7, 14);
     this.scene.add(fill);
 
+    this.floorMat = new THREE.MeshStandardMaterial({ color: this.theme.floor, roughness: 0.95 });
+    const floor = new THREE.Mesh(new THREE.PlaneGeometry(140, 140), this.floorMat);
