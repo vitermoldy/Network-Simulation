@@ -87,3 +87,5 @@ function portNames(kind: DeviceKind): string[] {
 
 interface DeviceSpec {
   id: string;
+  kind: DeviceKind;
+  name: string;
