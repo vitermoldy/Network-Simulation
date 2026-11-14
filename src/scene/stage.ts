@@ -748,3 +748,5 @@ export class Stage {
     }
   }
 
+  private updateCables(): void {
+    const busy = new Set(this.sim.flights.map((f) => f.linkId));
