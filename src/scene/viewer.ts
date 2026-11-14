@@ -171,3 +171,5 @@ export class DeviceViewer {
       p.anchor.getWorldPosition(pos);
       p.anchor.getWorldDirection(dir);
       const a = pos.clone().addScaledVector(dir, 0.42);
+      const b = pos.clone().addScaledVector(dir, 0.8);
+      b.y = Math.max(0.05, pos.y * 0.4);
