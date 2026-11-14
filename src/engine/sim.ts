@@ -54,3 +54,6 @@ export interface Phase {
   title: string;
   layer: string;
   role: Role;
+  status: PhaseStatus;
+}
+
