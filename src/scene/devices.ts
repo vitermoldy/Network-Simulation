@@ -294,3 +294,5 @@ function buildSwitch(dev: Device): Build {
     p.ctx.fillRect(x1, 0, x2 - x1, h * p.scale);
     p.text('SWITCH 24 PORT', -w / 2 + 0.5, 0.06, 0.04, { color: '#2a3038', weight: 650 });
     p.text('POWER', -w / 2 + 0.17, 0.06, 0.03, { color: '#2a3038' });
+    for (const [i, s] of ['SYST', 'STAT', 'DUPLX', 'SPEED'].entries()) p.text(s, -w / 2 + 0.47 + i * 0.13, 0.4, 0.026, { color: '#2a3038', weight: 600 });
+    p.text('MODE', -w / 2 + 0.88, 0.2, 0.026, { color: '#2a3038' });
