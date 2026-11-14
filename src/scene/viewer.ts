@@ -181,3 +181,5 @@ export class DeviceViewer {
     }
     if (!this.home) {
       const box = new THREE.Box3().setFromObject(view.group);
+      const size = box.getSize(new THREE.Vector3());
+      const centre = box.getCenter(new THREE.Vector3());
