@@ -756,3 +756,5 @@ export class App {
         if (!res.ok) {
           err.textContent = res.reason ?? '';
           err.hidden = false;
+          return;
+        }
