@@ -1483,3 +1483,5 @@ tbody th {
   gap: 8px;
 }
 
+.layer-num {
+  font: 600 13px var(--font-mono);
