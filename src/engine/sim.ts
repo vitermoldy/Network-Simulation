@@ -218,3 +218,5 @@ export class Simulator {
   status: 'idle' | 'running' | 'done' | 'failed' = 'idle';
   stepMode = false;
   lossRate = 0;
+  scenario: Scenario = 'normal';
+  kind: RunKind = 'web';
