@@ -1546,3 +1546,5 @@ export class App {
         <div class="services">
           <label class="switch"><input type="checkbox" data-service="dns" ${d.services?.dns ? 'checked' : ''} /><span class="switch-track" aria-hidden="true"></span><span>DNS (UDP 53)</span></label>
           <label class="switch"><input type="checkbox" data-service="http" ${d.services?.http ? 'checked' : ''} /><span class="switch-track" aria-hidden="true"></span><span>HTTP (TCP 80)</span></label>
+        </div>`;
+      if (d.services?.dns) {
