@@ -2389,3 +2389,6 @@ tbody th {
   }
 
   .playbar .btn {
+    flex: 1 1 calc(50% - 6px);
+  }
+
