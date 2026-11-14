@@ -518,3 +518,5 @@ select {
 
 .tool {
   display: grid;
+  place-items: center;
+  min-width: 44px;
