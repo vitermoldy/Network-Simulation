@@ -230,3 +230,5 @@ export class App {
       if (this.sim.status === 'idle') {
         this.send(true);
         return;
+      }
+      this.playing = true;
