@@ -1111,3 +1111,5 @@ export class Simulator {
 
   private dnsLookup(): void {
     const pc = this.topo.device(this.clientId);
+    const c = this.client;
+    this.setPhase('dns', 'active');
