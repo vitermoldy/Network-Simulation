@@ -56,3 +56,5 @@ Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan r
 | Mesin simulasi berbasis event, sendiri, di TypeScript | Setiap keputusan perangkat (switch membaca MAC, router mencocokkan rute, TCP mengirim ulang) harus bisa diceritakan dan bereaksi saat kabel dicabut di tengah jalan. |
 | Routing link-state otomatis dengan jeda konvergensi 2,5 detik | Memperlihatkan paket yang hilang selama router belum sepakat, lalu jalur baru. |
 | Zona Input, Proses, Output di lantai, dihitung dari posisi perangkat | Pemilik meminta alur input proses output; zona ikut bergeser saat perangkat dipindah atau ditambah. |
+| Bilah alur di bawah meja dan zona yang menyala kobalt | Menunjukkan di tahap mana paket berada tanpa membaca log. |
+| Paket kotak kobalt dengan label pendek (SYN, DNS?, Data 2/3) | Satu warna aksen untuk "yang sedang bergerak"; paket hilang merah, paket yang diabaikan abu, selalu dengan kata, bukan warna saja. |
