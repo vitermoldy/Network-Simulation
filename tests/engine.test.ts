@@ -9,3 +9,6 @@ function run(sim: Simulator, host = 'www.jaringan.test', limit = 600, source = '
   sim.start(host, 3, source);
   let guard = 0;
   while (sim.status === 'running' && sim.time < limit && guard++ < 100000) sim.advance(0.05);
+}
+
+function withScenario(s: Scenario): Simulator {
