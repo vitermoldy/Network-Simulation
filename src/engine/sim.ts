@@ -732,3 +732,6 @@ export class Simulator {
   private loseAt(packet: Packet, deviceId: string, reason: string): void {
     this.lost.push({ packet, t: this.time, reason, kind: 'lost', deviceId });
     this.note('loss', deviceId, `${packet.label} hilang`, `${packet.title}: ${reason}`, undefined, packet.id);
+  }
+
+  private discard(packet: Packet, deviceId: string, reason: string): void {
