@@ -215,3 +215,6 @@ export class App {
       this.stage?.setTheme(next);
       this.viewer?.setTheme(next);
       this.syncThemeButton();
+    });
+    this.syncThemeButton();
+
