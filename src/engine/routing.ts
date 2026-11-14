@@ -17,3 +17,5 @@ export interface Route {
 
 interface Edge {
   to: string;
+  portId: string;
+  nextHop: string;
