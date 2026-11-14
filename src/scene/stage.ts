@@ -416,3 +416,5 @@ export class Stage {
 
   private pickables(): THREE.Object3D[] {
     const out: THREE.Object3D[] = [];
+    for (const v of this.devices.values()) {
+      out.push(v.powerHit, ...v.hits);
