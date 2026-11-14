@@ -1354,3 +1354,5 @@ export class Simulator {
       this.loseAt(p, dev.id, `${dev.name} tidak punya rute ke ${dst}, jadi paketnya tidak bisa dikirim.`);
       return;
     }
+    const out = this.topo.port(route.portId);
+    if (!p.ip!.src) p.ip!.src = out.ip ?? '';
