@@ -115,3 +115,5 @@ export interface Task {
 export interface Flight {
   id: number;
   packet: Packet;
+  linkId: string;
+  from: string;
