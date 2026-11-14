@@ -347,3 +347,6 @@ export class App {
       if (pick) this.openDevice(pick.dataset.pick!);
     });
     this.bindDevicePanel();
+    this.bindDeviceWindow();
+    this.bindHistoryPanel();
+
