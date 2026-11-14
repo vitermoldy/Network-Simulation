@@ -212,3 +212,5 @@ function mulberry32(seed: number): () => number {
 
 const fmt = (s: number) => `${Number.isInteger(s) ? s : s.toFixed(1)} s`;
 
+export class Simulator {
+  readonly topo: Topology;
