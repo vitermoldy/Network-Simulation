@@ -232,3 +232,6 @@ interface Build {
   top: THREE.Vector3;
   half: { x: number; z0: number; z1: number };
   screen?: DeviceView['screen'];
+}
+
+function newBuild(group: THREE.Group, w: number, h: number, d: number, body: THREE.Mesh): Build {
