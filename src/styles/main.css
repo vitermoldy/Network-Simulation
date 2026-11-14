@@ -781,3 +781,5 @@ select {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px 12px;
+  padding: 10px 12px;
+  background: var(--panel);
