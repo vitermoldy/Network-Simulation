@@ -118,3 +118,5 @@ const DEFAULT_LINKS: [string, string][] = [
   ['pc.0', 'sw.0'],
   ['sw.24', 'r1.0'],
   ['r1.3', 'dns.0'],
+  ['r1.1', 'r2.0'],
+  ['r1.2', 'r3.0'],
