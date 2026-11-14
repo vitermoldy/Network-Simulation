@@ -158,3 +158,5 @@ export class IosShell implements Shell {
 
   private commands(): Command[] {
     const d = this.dev;
+    const sim = this.host.sim;
+    const topo = sim.topo;
