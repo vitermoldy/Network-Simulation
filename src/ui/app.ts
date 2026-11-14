@@ -650,3 +650,5 @@ export class App {
       const nic = d.ports[0];
       box.innerHTML = `${back('IP Configuration')}
         <form class="ipconf" data-desk="ip" novalidate>
+          <div class="ipconf-mode"><button type="button" class="btn btn-small btn-secondary" data-desk-act="dhcp">DHCP (IP otomatis)</button>
+            <span class="note-muted">atau isi manual (Static):</span></div>
