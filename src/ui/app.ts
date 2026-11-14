@@ -1538,3 +1538,5 @@ export class App {
             <button type="button" class="btn btn-small btn-ghost" data-act="auto">IP otomatis</button></div>
           <p class="form-error" hidden></p>
         </form>
+        <p class="note-muted">IP otomatis bekerja seperti DHCP: mengambil IP kosong di jaringan port router yang terhubung, memakai port itu sebagai gateway${isClient(d) ? ', dan memakai server DNS pertama yang ada' : ''}.</p>`;
+    }
