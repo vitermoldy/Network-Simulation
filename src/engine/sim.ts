@@ -1352,3 +1352,5 @@ export class Simulator {
     const route = lookup(this.routes.get(dev.id), dst);
     if (!route) {
       this.loseAt(p, dev.id, `${dev.name} tidak punya rute ke ${dst}, jadi paketnya tidak bisa dikirim.`);
+      return;
+    }
