@@ -2227,3 +2227,6 @@ tbody th {
   }
 
   .playbar {
+    grid-row: 2;
+  }
+
