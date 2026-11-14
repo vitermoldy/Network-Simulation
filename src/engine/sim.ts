@@ -404,3 +404,5 @@ export class Simulator {
     const allowed = dev && (this.kind === 'ping' ? dev.kind !== 'switch' : isClient(dev));
     if (!dev || !allowed) {
       this.fail('input', this.kind === 'ping' ? 'Ping hanya bisa dari PC, laptop, server, atau router.' : 'Pilih PC atau laptop sebagai pengirim. Tambahkan satu dari palet perangkat kalau belum ada.');
+      return undefined;
+    }
