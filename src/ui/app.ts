@@ -734,3 +734,5 @@ export class App {
         this.renderAll();
       }
     });
+    desk.addEventListener('submit', (e) => {
+      e.preventDefault();
