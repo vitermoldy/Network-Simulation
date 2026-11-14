@@ -914,3 +914,5 @@ export class Stage {
       if (!v) return undefined;
       if (target.type === 'power') v.powerHit.getWorldPosition(p);
       else v.hits[0].getWorldPosition(p);
+    }
+    p.project(this.camera);
