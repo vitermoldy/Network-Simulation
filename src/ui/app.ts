@@ -1331,3 +1331,6 @@ export class App {
       ? clients.map((c) => `<option value="${c.id}">${esc(c.name)}</option>`).join('')
       : '<option value="">Belum ada PC</option>';
     if (clients.some((c) => c.id === keep)) sel.value = keep;
+  }
+
+  private renderStatus(): void {
