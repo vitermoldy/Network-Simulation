@@ -301,3 +301,5 @@ describe('ping and nslookup', () => {
     expect(sim.output.some((l) => l.includes('203.0.113.80'))).toBe(true);
   });
 
+  it('pings from a router and gets answers from a router port', () => {
+    const sim = withScenario('normal');
