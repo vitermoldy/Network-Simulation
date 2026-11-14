@@ -1617,3 +1617,5 @@ export class App {
     const versions = this.sim.history.get(p.id) ?? [];
     const prev = versions.length > 1 ? versions[versions.length - 2] : undefined;
     const key = JSON.stringify([p.id, where, p.eth, p.ip, this.followLatest, versions.length, hold?.deviceId]);
+    if (key === this.packetKey) return;
+    this.packetKey = key;
