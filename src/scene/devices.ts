@@ -485,3 +485,5 @@ function buildPc(dev: Device): Build {
   b.top.set(-0.85, th + 0.15, 0);
   const z = td / 2 + 0.006;
   const panel = frontPanel(tw - 0.06, th - 0.06, (p) => {
+    p.ctx.fillStyle = '#d0d4d9';
+    p.ctx.fillRect(0, 0, (tw - 0.06) * p.scale, (th - 0.06) * p.scale);
