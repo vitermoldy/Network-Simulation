@@ -139,3 +139,5 @@ export function createApi(getPool, database) {
     res.json(rows[0])
   })
 
+  api.put('/layouts', async (req, res) => {
+    const client = codeOf(req.body?.client)
