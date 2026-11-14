@@ -742,3 +742,6 @@ export class Simulator {
   private loseHold(h: Hold, reason: string): void {
     this.holds = this.holds.filter((x) => x !== h);
     this.loseAt(h.packet, h.deviceId, reason);
+  }
+
+  private hold(packet: Packet, dev: Device, inPort: string, outPorts: string[], dur: number, then: () => void): void {
