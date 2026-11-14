@@ -310,3 +310,5 @@ describe('ping and nslookup', () => {
     expect(sim2.status).toBe('done');
   });
 
+  it('times out four times when there is no route', () => {
+    const sim = withScenario('normal');
