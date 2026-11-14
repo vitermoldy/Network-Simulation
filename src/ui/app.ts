@@ -306,3 +306,5 @@ export class App {
       b.addEventListener('keydown', (e) => {
         const dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
         if (!dir) return;
+        e.preventDefault();
+        const next = TABS[(i + dir + TABS.length) % TABS.length];
