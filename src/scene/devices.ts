@@ -433,3 +433,5 @@ function buildServer(dev: Device): Build {
       p.ctx.fillStyle = '#4a4f57';
       p.ctx.fillRect(bx + 0.52 * p.scale, by + 0.04 * p.scale, 0.12 * p.scale, 0.05 * p.scale);
     }
+    p.text('SERVER', 0, 1.2, 0.07, { weight: 650, color: '#2a2e35' });
+    p.text(services, 0, 1.05, services.length > 8 ? 0.075 : 0.11, { weight: 650, color: '#1f2de6' });
