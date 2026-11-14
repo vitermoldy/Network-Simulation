@@ -354,3 +354,5 @@ export class App {
       const typing = (e.target as HTMLElement).closest('input, select, textarea');
       if (e.key === 'Escape') {
         if (!$('popover').hidden) this.closePopover();
+        else if (this.placing) this.stopPlacing('Batal menaruh perangkat.');
+        else if (this.pendingPort) {
