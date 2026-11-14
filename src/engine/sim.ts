@@ -1529,3 +1529,5 @@ export class Simulator {
     const s = this.server(dev.id);
     if (s.responded) return;
     s.responded = true;
+    s.lastAck = SERVER_ISS + 1;
+    this.setPhase('http-res', 'active');
