@@ -21,3 +21,5 @@ export interface RunRecord {
   resends: number;
   routeChanges: number;
   path: string[];
+  devices: number;
+  finishedAt: string;
