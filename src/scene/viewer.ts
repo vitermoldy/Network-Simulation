@@ -41,3 +41,5 @@ export class DeviceViewer {
     this.controls = new OrbitControls(this.camera, canvas);
     this.controls.enableDamping = true;
     this.controls.dampingFactor = 0.1;
+    this.controls.maxPolarAngle = 1.5;
+    this.controls.minDistance = 0.8;
