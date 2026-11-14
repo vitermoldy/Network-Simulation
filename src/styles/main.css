@@ -582,3 +582,5 @@ select {
   padding: 2px 0 2px;
 }
 
+.pal {
+  display: grid;
