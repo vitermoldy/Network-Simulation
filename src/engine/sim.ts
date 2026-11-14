@@ -696,3 +696,5 @@ export class Simulator {
     this.flights.push(f);
     this.activity.set(portId, this.time);
     const drop = this.planDrop(packet);
+    if (drop) {
+      this.schedule(f.t0 + (f.t1 - f.t0) * drop.u, () => {
