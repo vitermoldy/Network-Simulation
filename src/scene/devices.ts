@@ -504,3 +504,5 @@ function buildPc(dev: Device): Build {
   const stand = mesh(new THREE.BoxGeometry(0.5, 0.03, 0.4), shared.bezel);
   stand.position.set(0.55, 0.015, 0.1);
   const neck = mesh(new THREE.BoxGeometry(0.08, 0.45, 0.06), shared.bezel);
+  neck.position.set(0.55, 0.25, 0.0);
+  group.add(stand, neck);
