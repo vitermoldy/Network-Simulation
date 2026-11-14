@@ -406,3 +406,5 @@ export class Simulator {
       this.fail('input', this.kind === 'ping' ? 'Ping hanya bisa dari PC, laptop, server, atau router.' : 'Pilih PC atau laptop sebagai pengirim. Tambahkan satu dari palet perangkat kalau belum ada.');
       return undefined;
     }
+    if (!dev.powered) {
+      this.fail('input', `${dev.name} mati. Nyalakan dulu lewat tombol power-nya.`, dev.id);
