@@ -546,3 +546,6 @@ export class App {
     if (!dialog.open) return;
     dialog.close();
     if (this.viewer) this.viewer.active = false;
+    (document.querySelector('.stage-canvas') as HTMLElement | null)?.focus();
+  }
+
