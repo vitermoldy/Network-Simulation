@@ -51,3 +51,6 @@ export interface DnsBody {
   question: string;
   answer?: string;
   rcode?: 'NOERROR' | 'NXDOMAIN';
+}
+
+export interface AppBody {
