@@ -1525,3 +1525,6 @@ tbody th {
   display: grid;
   grid-template-columns: 130px minmax(0, 1fr);
   gap: 8px;
+  font-size: 13px;
+}
+
