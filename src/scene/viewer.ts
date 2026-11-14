@@ -153,3 +153,5 @@ export class DeviceViewer {
       this.view.group.traverse((o) => (o as THREE.Mesh).geometry?.dispose());
       this.view = undefined;
     }
+    this.leads.clear();
+    const topo = this.sim.topo;
