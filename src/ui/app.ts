@@ -497,3 +497,5 @@ export class App {
     const next = kind === 'pc' || kind === 'laptop'
       ? 'Sambungkan kabelnya ke switch, lalu tekan IP otomatis.'
       : kind === 'router' ? 'Port router baru masih shutdown, seperti di Packet Tracer. Beri IP, centang Aktif (atau no shutdown di CLI), lalu sambungkan kabelnya.'
+        : kind === 'server' ? 'Sambungkan kabelnya, beri IP, lalu pilih layanannya.'
+          : 'Sambungkan kabel dari PC dan dari router ke port-nya.';
