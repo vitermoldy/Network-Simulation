@@ -492,3 +492,5 @@ export class Topology {
   load(data: unknown): void {
     const t = data as TopologyData;
     if (!t || t.version !== 1 || !Array.isArray(t.devices) || !Array.isArray(t.links)) throw new Error('Berkas rancangan tidak dikenali.');
+    if (t.devices.length > 60) throw new Error('Rancangan terlalu besar (lebih dari 60 perangkat).');
+    const devices: Device[] = [];
