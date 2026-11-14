@@ -487,3 +487,5 @@ function buildPc(dev: Device): Build {
   const panel = frontPanel(tw - 0.06, th - 0.06, (p) => {
     p.ctx.fillStyle = '#d0d4d9';
     p.ctx.fillRect(0, 0, (tw - 0.06) * p.scale, (th - 0.06) * p.scale);
+    const [sx, sy] = p.px(-0.28, th - 0.42);
+    p.ctx.fillStyle = '#2b2e33';
