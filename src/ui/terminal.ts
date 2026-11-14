@@ -149,3 +149,5 @@ export class IosShell implements Shell {
     const s = raw.replace(/\s+/g, '').toLowerCase();
     const m = /^(g|gi|gig|giga|gigabit|gigabitethernet|f|fa|fas|fast|fastethernet)(\d+\/\d+)$/.exec(s);
     if (!m) return undefined;
+    const giga = m[1].startsWith('g');
+    return this.dev.ports.find((p) => {
