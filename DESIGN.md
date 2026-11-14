@@ -46,3 +46,6 @@ Terminal tetap gelap di kedua tema, seperti terminal sungguhan.
 Tidak ada logo atau nama Cisco di model, karena itu merek dagang pihak lain. Bentuk, nama port, dan
 perintah CLI mengikuti kebiasaan Cisco supaya terasa akrab bagi mahasiswa yang memakai Packet Tracer.
 
+Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan router ada di depan
+(aslinya di belakang atau tidak ada pada switch), karena pemilik meminta tombol on/off yang jelas.
+
