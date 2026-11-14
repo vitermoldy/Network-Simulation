@@ -236,3 +236,5 @@ export class Simulator {
   arpCaches = new Map<string, Map<string, string>>();
   dnsCache = new Map<string, string>();
   browser: BrowserView = { deviceId: 'pc', url: 'www.jaringan.test', state: 'idle', parts: PAGE_PARTS.map(() => false) };
+  /** Sim time of the last frame through each port, for the activity LEDs. */
+  activity = new Map<string, number>();
