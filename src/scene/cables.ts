@@ -126,3 +126,5 @@ export function buildPlug(port: PortView, cableMat: THREE.Material): THREE.Group
   const g = new THREE.Group();
   const w = port.holeW * 0.92;
   const h = port.holeH * 0.9;
+  const body = new THREE.Mesh(new THREE.BoxGeometry(w, h, 0.28), plugBody);
+  body.position.z = 0.09;
