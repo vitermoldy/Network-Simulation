@@ -985,3 +985,6 @@ select {
 
 .run-status[data-state="failed"] {
   color: var(--bad);
+}
+
+.run-status[data-state="done"] {
