@@ -133,3 +133,5 @@ describe('simulator', () => {
     expect(sim.macTable('sw').get(sim.topo.port('pc.0').mac)).toBe('sw.0');
   });
 
+  it('sends the SYN along laptop, switch, router kampus, router A, pusat data, server', () => {
+    const sim = withScenario('normal');
