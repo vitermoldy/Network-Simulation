@@ -153,3 +153,5 @@ export class Topology {
   readonly links = new Map<string, Link>();
   private portIndex = new Map<string, Port>();
   private portLink = new Map<string, string>();
+  private nextLink = 1;
+  private nextMac = 0x30;
