@@ -629,3 +629,5 @@ select {
   width: min(360px, calc(100% - 24px));
   padding: 16px;
   background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
