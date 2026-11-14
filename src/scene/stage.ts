@@ -845,3 +845,5 @@ export class Stage {
       if (seen.has(l.packet.id)) continue;
       const v = this.ensurePacket(l.packet);
       seen.add(l.packet.id);
+      const age = Math.max(0, t - l.t);
+      if (v.last.lengthSq() === 0 && l.deviceId) {
