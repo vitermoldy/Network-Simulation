@@ -42,3 +42,6 @@ function rateLimit(limit) {
     if (recent.length > limit) return res.status(429).json({ error: 'Terlalu banyak permintaan. Coba lagi sebentar lagi.' })
     next()
   }
+}
+
+const text = (v, max) => (typeof v === 'string' ? v.slice(0, max) : '')
