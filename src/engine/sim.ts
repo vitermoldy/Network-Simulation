@@ -595,3 +595,5 @@ export class Simulator {
     return d;
   }
 
+  removeDevice(id: string): void {
+    const dev = this.topo.device(id);
