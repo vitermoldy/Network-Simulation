@@ -449,3 +449,5 @@ function buildServer(dev: Device): Build {
   group.add(panel);
   const button = buildRoundButton(dev.id);
   button.group.position.set(0.3, h - 0.18, z);
+  group.add(button.group);
+  const hdd = led(0.02);
