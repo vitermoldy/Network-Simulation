@@ -76,3 +76,5 @@ export function keyboardTexture(): THREE.CanvasTexture {
   return canvasTexture(c);
 }
 
+function wrap(ctx: CanvasRenderingContext2D, text: string, maxW: number): string[] {
+  const words = text.split(/\s+/);
