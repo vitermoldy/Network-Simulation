@@ -1208,3 +1208,5 @@ export class App {
         this.confirm(`Muat rancangan ${name}? Jaringan di meja sekarang akan diganti.`, 'Muat rancangan', async () => {
           try {
             const saved = await api.loadLayout(id);
+            this.sim.loadTopology(saved.data);
+            this.afterTopologySwap(`Rancangan ${saved.name} dimuat.`);
