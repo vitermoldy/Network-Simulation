@@ -360,3 +360,5 @@ export class App {
           this.toast('Pemasangan kabel dibatalkan.');
         } else if (!$('hint').hidden) $('hint-close').click();
         else if (this.dwOpen()) this.closeDevice();
+        return;
+      }
