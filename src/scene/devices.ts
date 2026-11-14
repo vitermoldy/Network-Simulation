@@ -529,3 +529,5 @@ function buildLaptop(dev: Device): Build {
   const base = rounded(w, baseH, d, shared.laptop, 0.05);
   base.position.y = baseH / 2;
   base.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
+  group.add(base);
+  const deck = new THREE.Mesh(new THREE.PlaneGeometry(w - 0.08, d - 0.08), new THREE.MeshStandardMaterial({ map: keyboardTexture(), roughness: 0.6 }));
