@@ -972,3 +972,5 @@ export class Simulator {
       if (mac) {
         p.eth = { src: nic.mac, dst: mac, type: 'IPv4' };
         this.emit(nic.id, p);
+        return;
+      }
