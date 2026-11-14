@@ -1280,3 +1280,5 @@ export class Simulator {
   private tcpPacket(from: Device, toIp: string, srcPort: number, dstPort: number, flags: TcpFlag[], seq: number, ack: number, label: string, title: string, retry: number, app?: Packet['app'], len = 0): Packet {
     return this.newPacket({
       flow: app?.proto === 'HTTP' ? 'http' : 'tcp', label: retry ? `${label} (ulang)` : label, title,
+      eth: { src: from.ports[0].mac, dst: BROADCAST, type: 'IPv4' },
+      ip: { src: from.ports[0].ip!, dst: toIp, ttl: 64, proto: 'TCP' },
