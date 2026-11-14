@@ -778,3 +778,6 @@ export class Stage {
     this.scene.add(mesh);
     v = { mesh, mat, tag, el, last: new THREE.Vector3() };
     this.packets.set(p.id, v);
+    return v;
+  }
+
