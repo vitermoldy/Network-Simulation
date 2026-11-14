@@ -629,3 +629,5 @@ export function footprintOf(v: DeviceView): { x0: number; x1: number; z0: number
 
 /** Power state on the device itself: LEDs, the rocker's tilt, the button's travel. */
 export function showPower(v: DeviceView, on: boolean): void {
+  for (const l of v.powerLeds) setLed(l, on ? MATERIAL.ledGreen : null);
+  if (v.rocker) v.rocker.rotation.x = on ? -0.2 : 0.2;
