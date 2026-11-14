@@ -147,3 +147,5 @@ export class DeviceViewer {
     this.rebuild();
   }
 
+  private rebuild(): void {
+    if (this.view) {
