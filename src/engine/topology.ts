@@ -125,3 +125,5 @@ const DEFAULT_LINKS: [string, string][] = [
   ['r4.2', 'web.0'],
 ];
 
+/** Footprint half sizes, so placement can refuse overlaps before a model exists. */
+export const SIZE: Record<DeviceKind, { w: number; d: number }> = {
