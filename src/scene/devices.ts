@@ -142,3 +142,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
   const hit = hitBox(holeW + 0.06, holeH + 0.06, 0.1, { type: 'port', portId });
   hit.position.z = 0.03;
   group.add(hit);
+  const anchor = new THREE.Object3D();
+  group.add(anchor);
