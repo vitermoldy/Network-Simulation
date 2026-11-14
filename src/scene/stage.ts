@@ -396,3 +396,5 @@ export class Stage {
     }
     // Arrows between the zones, only when they read left to right.
     const present = order.filter((r) => rects.has(r));
+    for (let i = 0; i + 1 < present.length; i++) {
+      const a = rects.get(present[i])!;
