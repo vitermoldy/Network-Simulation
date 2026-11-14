@@ -9,3 +9,6 @@ export interface EthHeader {
   src: string;
   dst: string;
   type: 'ARP' | 'IPv4';
+}
+
+export interface ArpBody {
