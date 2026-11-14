@@ -550,3 +550,5 @@ export class Stage {
     if (!portId && this.dangling) {
       this.scene.remove(this.dangling);
       this.dangling.geometry.dispose();
+      this.dangling = undefined;
+    }
