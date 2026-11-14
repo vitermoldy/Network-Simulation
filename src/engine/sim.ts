@@ -378,3 +378,5 @@ export class Simulator {
       if (isIp) {
         this.setPhase('dns', 'skipped');
         this.ping!.ip = target;
+        this.pingNext();
+      } else this.dnsLookup();
