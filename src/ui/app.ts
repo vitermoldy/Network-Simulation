@@ -1585,3 +1585,5 @@ export class App {
       </form>
       <p class="dev-role">${KIND_LABEL[d.kind]}. ${ROLE_TEXT[roleOf(d)]}</p>
       <p class="dev-kind">${KIND_TEXT[d.kind]}</p>
+      <div class="dev-actions">
+        <button type="button" class="btn btn-small ${d.powered ? 'btn-secondary' : 'btn-primary'}" data-act="power">${d.powered ? 'Matikan' : 'Nyalakan'}</button>
