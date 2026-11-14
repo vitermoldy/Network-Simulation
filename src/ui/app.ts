@@ -317,3 +317,5 @@ export class App {
       const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('button.entry');
       if (!btn) return;
       const entry = this.sim.log.find((l) => l.id === Number(btn.dataset.id));
+      if (!entry) return;
+      this.openEntry = this.openEntry === entry.id ? null : entry.id;
