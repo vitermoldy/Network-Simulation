@@ -7,3 +7,5 @@ import mysql from 'mysql2/promise'
  * - layouts: saved network designs (devices, cables, IP settings) as one JSON text each.
  * Times are stored in UTC.
  */
+const TABLES = [
+  `CREATE TABLE IF NOT EXISTS clients (
