@@ -395,3 +395,5 @@ export class App {
     if (!source) {
       err.textContent = 'Belum ada PC atau laptop di meja. Tambahkan satu dari palet, sambungkan kabelnya, lalu kirim lagi.';
       err.hidden = false;
+      return;
+    }
