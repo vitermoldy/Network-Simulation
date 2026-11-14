@@ -561,3 +561,5 @@ export class App {
     if (tab === 'fisik') void this.ensureViewer();
     this.deviceKey = '';
     this.portsKey = '';
+    this.desktopKey = '';
+    this.renderDeviceWindow();
