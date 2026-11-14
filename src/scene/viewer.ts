@@ -183,3 +183,5 @@ export class DeviceViewer {
       const box = new THREE.Box3().setFromObject(view.group);
       const size = box.getSize(new THREE.Vector3());
       const centre = box.getCenter(new THREE.Vector3());
+      const dir = new THREE.Vector3(0.18, 0.42, 1).normalize();
+      const fov = (this.camera.fov * Math.PI) / 180;
