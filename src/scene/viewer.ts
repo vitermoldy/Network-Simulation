@@ -142,3 +142,5 @@ export class DeviceViewer {
   show(deviceId: string): void {
     this.deviceId = deviceId;
     this.key = '';
+    this.home = undefined;
+    this.renderer.domElement.setAttribute('aria-label', this.sim.topo.has(deviceId) ? `Tampilan dekat ${this.sim.topo.device(deviceId).name}. Seret untuk memutar, gulir untuk memperbesar.` : 'Tampilan dekat perangkat');
