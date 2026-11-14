@@ -220,3 +220,5 @@ export class Simulator {
   lossRate = 0;
   scenario: Scenario = 'normal';
   kind: RunKind = 'web';
+  /** Text the run prints for the Command Prompt or CLI that started it (ping, nslookup). */
+  output: string[] = [];
