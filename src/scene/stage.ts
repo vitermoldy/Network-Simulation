@@ -543,3 +543,6 @@ export class Stage {
       this.dangling.geometry.dispose();
       this.dangling.geometry = geo;
     }
+  }
+
+  setPending(portId: string | null): void {
