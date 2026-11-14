@@ -98,3 +98,5 @@ export const SCREEN_H = 600;
 export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): void {
   const W = SCREEN_W;
   const H = SCREEN_H;
+  if (view.state === 'off') {
+    ctx.fillStyle = '#060708';
