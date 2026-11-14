@@ -803,3 +803,5 @@ export class Stage {
     };
 
     for (const f of this.sim.flights) {
+      const cable = this.cables.get(f.linkId);
+      if (!cable) continue;
