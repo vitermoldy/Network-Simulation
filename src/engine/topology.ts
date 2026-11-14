@@ -249,3 +249,5 @@ export class Topology {
     this.rev++;
   }
 
+  portLabel(portId: string): string {
+    const p = this.port(portId);
