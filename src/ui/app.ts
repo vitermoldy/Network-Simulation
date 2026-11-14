@@ -839,3 +839,5 @@ export class App {
     t.lines.push(...lines);
     if (t.lines.length > 600) t.lines.splice(0, t.lines.length - 600);
     const el = document.querySelector<HTMLElement>(`.term[data-device="${CSS.escape(deviceId)}"] .term-out`);
+    if (el && el.isConnected) {
+      el.textContent = t.lines.join('\n');
