@@ -806,3 +806,5 @@ export class App {
       const line = input.value;
       input.value = '';
       this.termWrite(deviceId, [`${t.shell.prompt()}${line}`]);
+      if (line.trim().toLowerCase() === 'cls' && t.shell instanceof PromptShell) {
+        t.lines = [];
