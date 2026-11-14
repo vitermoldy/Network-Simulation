@@ -756,3 +756,5 @@ export class Simulator {
   }
 
   private arrive(f: Flight): void {
+    this.flights = this.flights.filter((x) => x !== f);
+    this.activity.set(f.to, this.time);
