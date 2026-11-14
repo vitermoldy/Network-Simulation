@@ -783,3 +783,5 @@ export class Stage {
 
   private anchorPoint(portId: string, out = 0.3): THREE.Vector3 | undefined {
     const pv = this.portView(portId);
+    if (!pv) return undefined;
+    const pos = new THREE.Vector3();
