@@ -555,3 +555,5 @@ export class App {
       const b = $(`dwt-${t}`);
       b.setAttribute('aria-selected', String(t === tab));
       b.tabIndex = t === tab ? 0 : -1;
+      $(`dw-${t}`).hidden = t !== tab;
+    }
