@@ -451,3 +451,5 @@ function buildServer(dev: Device): Build {
   button.group.position.set(0.3, h - 0.18, z);
   group.add(button.group);
   const hdd = led(0.02);
+  hdd.position.set(0.06, h - 0.18, z + 0.01);
+  group.add(hdd);
