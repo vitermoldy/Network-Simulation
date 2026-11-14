@@ -162,3 +162,5 @@ export class App {
       if (r === 'step') {
         this.playing = false;
         this.stepOnce = false;
+      }
+      $('clock').classList.toggle('is-fast', fast);
