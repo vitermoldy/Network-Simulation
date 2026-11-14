@@ -1440,3 +1440,6 @@ export class Simulator {
     this.setPhase('icmp', pg.received ? 'done' : 'failed');
     this.setPhase('output', 'done');
     if (pg.received) this.finish(`Ping selesai: ${pg.received} dari ${pg.sent} echo request dibalas.`);
+    else this.fail('icmp', `Tidak ada satu pun balasan dari ${pg.ip}. Periksa kabel, tombol power, IP, gateway, dan port yang masih shutdown di sepanjang jalur.`, this.clientId);
+  }
+
