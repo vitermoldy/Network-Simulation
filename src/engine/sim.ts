@@ -808,3 +808,5 @@ export class Simulator {
       outs = others;
       how = `MAC tujuan ${p.eth.dst} belum ada di tabel MAC, jadi frame disebar (flooding) ke semua port lain`;
     }
+    const names = outs.map((o) => this.topo.port(o).name).join(', ');
+    const learnText = learned ? ` Switch juga mencatat bahwa ${p.eth.src} ada di ${inName}.` : '';
