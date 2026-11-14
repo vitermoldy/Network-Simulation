@@ -77,3 +77,5 @@ const APP_ICONS = {
 
 export class App {
   private stage: Stage | null = null;
+  private playing = false;
+  private stepOnce = false;
