@@ -958,3 +958,5 @@ export class App {
       }
       const link = topo.linkOf(p.portId);
       if (link) {
+        this.askUnplug(link.id);
+        return;
