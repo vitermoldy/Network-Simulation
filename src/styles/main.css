@@ -2082,3 +2082,5 @@ tbody th {
   outline: none;
 }
 
+.browser-bar:focus-within {
+  border-color: var(--accent);
