@@ -1221,3 +1221,6 @@ export class Simulator {
         this.sendAck(dev, 'ACK');
       }
       return;
+    }
+
+    if (has('FIN')) {
