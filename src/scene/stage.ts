@@ -694,3 +694,5 @@ export class Stage {
 
   // ------------------------------------------------------------------ per frame
 
+  frame(dt: number): void {
+    this.syncTopology();
