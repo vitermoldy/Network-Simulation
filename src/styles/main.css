@@ -886,3 +886,6 @@ select {
 
 .speed input:checked + span {
   background: var(--ink);
+  color: var(--bg);
+}
+
