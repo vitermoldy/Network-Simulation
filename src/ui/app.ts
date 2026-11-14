@@ -1170,3 +1170,6 @@ export class App {
           this.renderDevice();
         }
       }, 0);
+    });
+  }
+
