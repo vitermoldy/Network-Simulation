@@ -62,3 +62,5 @@ export const MATERIAL = {
   rocker: 0x1b1d21,
   cable: 0x3b4048,
   cableHover: 0x1f2de6,
+  plug: 0xe6ebf0,
+  packet: 0x1f2de6,
