@@ -1581,3 +1581,5 @@ export class App {
         <label for="name-${d.id}" class="sr-only">Nama perangkat</label>
         <input id="name-${d.id}" name="name" class="dev-title-input" value="${esc(d.name)}" maxlength="32" autocomplete="off" />
         <button type="submit" class="btn btn-small btn-ghost">Ganti nama</button>
+        <p class="form-error" hidden></p>
+      </form>
