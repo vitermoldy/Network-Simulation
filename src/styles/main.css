@@ -2260,3 +2260,6 @@ tbody th {
 
   .top-tools {
     width: 100%;
+    order: 2;
+  }
+
