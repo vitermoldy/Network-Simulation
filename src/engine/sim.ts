@@ -1446,3 +1446,5 @@ export class Simulator {
   // ------------------------------------------------------------------ the web server
 
   private webReceive(dev: Device, p: Packet): void {
+    if (!p.tcp || p.tcp.dst !== 80) return;
+    const s = this.server(dev.id);
