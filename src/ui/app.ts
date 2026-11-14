@@ -97,3 +97,5 @@ export class App {
   private sourceKey = '';
   private toastTimer = 0;
   // Device window.
+  private dwTab: DwTab = 'fisik';
+  private viewer: DeviceViewer | null = null;
