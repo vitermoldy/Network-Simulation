@@ -656,3 +656,5 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
       setLed(p.link, active ? MATERIAL.ledAmber : carrier ? MATERIAL.ledGreen : null);
     }
   }
+  for (const l of v.busyLeds) setLed(l, on && anyActive ? MATERIAL.ledAmber : on && l === v.busyLeds[0] && d.kind === 'switch' ? MATERIAL.ledGreen : null);
+  if (v.screen) {
