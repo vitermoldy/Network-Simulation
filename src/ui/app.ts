@@ -232,3 +232,5 @@ export class App {
         return;
       }
       this.playing = true;
+      this.stepOnce = true;
+    });
