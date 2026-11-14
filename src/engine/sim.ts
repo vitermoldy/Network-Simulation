@@ -398,3 +398,5 @@ export class Simulator {
     }, true);
   }
 
+  /** Checks the sender can send at all; fails the run with the reason when it cannot. */
+  private checkSource(sourceId: string, needDns: boolean): Device | undefined {
