@@ -137,3 +137,5 @@ describe('simulator', () => {
     const sim = withScenario('normal');
     run(sim);
     const syn = [...sim.history.entries()].find(([, v]) => v[0].tcp?.flags.join() === 'SYN')!;
+    expect(sim.trace.get(syn[0])).toEqual(['pc', 'sw', 'r1', 'r2', 'r4', 'web']);
+    const versions = syn[1];
