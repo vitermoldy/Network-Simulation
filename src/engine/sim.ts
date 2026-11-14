@@ -76,3 +76,5 @@ const PHASE_SETS: Record<RunKind, Omit<Phase, 'status'>[]> = {
     { id: 'arp', title: 'ARP: mencari MAC tujuan berikutnya', layer: 'Data link', role: 'process' },
     { id: 'dns', title: 'DNS: menanyakan alamat IP', layer: 'Aplikasi, UDP', role: 'process' },
     { id: 'icmp', title: 'ICMP: echo request dan echo reply', layer: 'Jaringan', role: 'process' },
+    { id: 'output', title: 'Hasil ping tampil', layer: 'Aplikasi', role: 'input' },
+  ],
