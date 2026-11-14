@@ -938,3 +938,5 @@ select {
   outline: none;
 }
 
+.tabs {
+  display: flex;
