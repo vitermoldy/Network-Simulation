@@ -1443,3 +1443,6 @@ export class Simulator {
     else this.fail('icmp', `Tidak ada satu pun balasan dari ${pg.ip}. Periksa kabel, tombol power, IP, gateway, dan port yang masih shutdown di sepanjang jalur.`, this.clientId);
   }
 
+  // ------------------------------------------------------------------ the web server
+
+  private webReceive(dev: Device, p: Packet): void {
