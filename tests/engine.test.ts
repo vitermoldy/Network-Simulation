@@ -194,3 +194,5 @@ describe('simulator', () => {
         if (f) {
           sim.disconnect(f.linkId);
           pulled = true;
+        }
+      }
