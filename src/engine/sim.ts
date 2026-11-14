@@ -507,3 +507,5 @@ export class Simulator {
       this.browser.state = 'error';
       this.browser.message = reason;
     }
+    this.failReason = reason;
+    if (this.kind !== 'web' && phase === 'input') this.say(reason);
