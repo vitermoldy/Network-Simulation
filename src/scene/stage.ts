@@ -309,3 +309,5 @@ export class Stage {
     for (const c of [...this.cables.values()]) {
       if (only && !c.a.startsWith(`${only}.`) && !c.b.startsWith(`${only}.`)) continue;
       this.scene.remove(c.group);
+      disposeTree(c.group);
+      this.cables.delete(c.linkId);
