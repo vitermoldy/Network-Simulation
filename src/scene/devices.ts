@@ -275,3 +275,5 @@ function buildSwitch(dev: Device): Build {
   const b = newBuild(group, w, h, d, body);
   const z = d / 2 + 0.006;
   const sysEnd = -w / 2 + 1.05;
+  const holeW = 0.15;
+  const holeH = 0.115;
