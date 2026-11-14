@@ -1318,3 +1318,6 @@ select {
 }
 
 .power:active {
+  transform: translateY(1px);
+}
+
