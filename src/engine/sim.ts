@@ -1389,3 +1389,5 @@ export class Simulator {
       size: 74,
     });
     pg.sentAt = this.time;
+    this.sendFrom(dev, p);
+    pg.timer = this.schedule(this.time + PING_RTO, () => {
