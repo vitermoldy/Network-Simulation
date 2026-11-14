@@ -1613,3 +1613,5 @@ export class App {
       return;
     }
     const hold = this.sim.holds.find((h) => h.packet.id === p.id);
+    const where = this.sim.whereIs(p.id);
+    const versions = this.sim.history.get(p.id) ?? [];
