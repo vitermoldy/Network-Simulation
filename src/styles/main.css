@@ -1124,3 +1124,5 @@ select {
 
 .timer-bar {
   grid-column: 1 / 3;
+  height: 4px;
+  border-radius: 2px;
