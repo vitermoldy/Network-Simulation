@@ -560,3 +560,5 @@ export class Topology {
     for (const d of this.devices.values()) {
       if (!d.powered) continue;
       for (const p of d.ports) parent.set(p.id, p.id);
+    }
+    for (const link of this.links.values()) {
