@@ -1136,3 +1136,5 @@ export class App {
         this.sourceKey = '';
       } else if (kind === 'ip') {
         const port = form.dataset.port!;
+        res = this.sim.edit((t) => t.setPortIp(port, String(f.get('ip') ?? ''), Number(f.get('prefix'))));
+        done = `IP ${this.sim.topo.portLabel(port)} disimpan.`;
