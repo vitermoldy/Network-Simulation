@@ -35,3 +35,7 @@ export interface LayoutSummary {
   devices: number;
   links: number;
   updatedAt: string;
+}
+
+let memoryCode: string | undefined;
+
