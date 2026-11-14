@@ -228,3 +228,5 @@ export function drawZoneLabel(ctx: CanvasRenderingContext2D, w: number, h: numbe
   ctx.fillStyle = color;
   ctx.font = `600 ${Math.round(h * 0.46)}px ${FONT_TEXT}`;
   ctx.fillText(title, w / 2, h * 0.52);
+  ctx.fillStyle = muted;
+  ctx.font = `500 ${Math.round(h * 0.2)}px ${FONT_TEXT}`;
