@@ -64,3 +64,7 @@ Kalau server mati, simulator tetap bisa dipakai. Percobaan yang selesai disimpan
 dikirim begitu server tersambung lagi.
 
 Untuk versi jadi: `npm run build`, lalu `npm start` menyajikan folder `dist` sekaligus API-nya di
+http://localhost:8797.
+
+### Perintah lain
+
