@@ -438,3 +438,5 @@ export class Simulator {
     if (seed !== undefined) this.rng = mulberry32(seed);
     this.output = [];
     this.failReason = '';
+    this.ping = undefined;
+    for (const t of this.queue) t.cancelled = true;
