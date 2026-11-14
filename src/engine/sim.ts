@@ -424,3 +424,6 @@ export class Simulator {
       this.fail('input', `${dev.name} belum punya ${missing}. Isi di tab Config, atau tekan IP otomatis.`, dev.id);
       return undefined;
     }
+    return dev;
+  }
+
