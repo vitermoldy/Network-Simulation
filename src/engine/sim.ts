@@ -1451,3 +1451,5 @@ export class Simulator {
     const t = p.tcp;
     const has = (f: TcpFlag) => t.flags.includes(f);
 
+    if (has('SYN')) {
+      if (s.state === 'listen') {
