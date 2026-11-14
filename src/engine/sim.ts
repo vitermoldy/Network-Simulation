@@ -1011,3 +1011,5 @@ export class Simulator {
     });
     this.emit(nic.id, p);
     entry.timer = this.schedule(this.time + ARP_RTO, () => {
+      if (this.arpPending.get(ip) !== entry || this.status !== 'running') return;
+      if (entry.tries >= MAX_ARP_TRIES) {
