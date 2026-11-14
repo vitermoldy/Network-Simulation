@@ -762,3 +762,5 @@ export class App {
         this.toast('IP Configuration disimpan.');
         this.desktopKey = '';
         (document.activeElement as HTMLElement | null)?.blur();
+        this.renderAll();
+      }
