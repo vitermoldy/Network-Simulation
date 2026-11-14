@@ -29,3 +29,5 @@ interface CableView {
   b: string;
   group: THREE.Group;
   mesh: THREE.Mesh;
+  mat: THREE.MeshStandardMaterial;
+  curve: THREE.CatmullRomCurve3;
