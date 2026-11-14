@@ -144,3 +144,5 @@ export interface TopologyData {
   links: [string, string][];
 }
 
+function validIp(ip: string): boolean {
+  return /^(25[0-5]|2[0-4]\d|1?\d?\d)(\.(25[0-5]|2[0-4]\d|1?\d?\d)){3}$/.test(ip);
