@@ -261,3 +261,5 @@ export class Stage {
     el.classList.toggle('is-selected', this.selected.deviceId === d.id);
   }
 
+  private removeDeviceView(id: string): void {
+    const v = this.devices.get(id);
