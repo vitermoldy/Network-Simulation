@@ -382,3 +382,5 @@ export class Stage {
       group.add(edgeMesh);
       const lw = Math.min(x1 - x0 - 0.3, 4.2);
       const lh = lw * 0.3;
+      const [c, ctx] = makeCanvas(900, 270);
+      const tex = canvasTexture(c);
