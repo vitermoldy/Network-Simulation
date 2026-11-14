@@ -370,3 +370,5 @@ export class App {
         this.place(this.placing, spot.x, spot.z);
         return;
       }
+      if ((e.key === 'Delete' || e.key === 'Backspace') && $('popover').hidden) {
+        if (this.selectedLink) this.askUnplug(this.selectedLink);
