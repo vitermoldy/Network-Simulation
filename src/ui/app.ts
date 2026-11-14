@@ -1409,3 +1409,5 @@ export class App {
 
   private renderFlow(): void {
     const role = this.stage?.activeRole ?? this.roleFromLog();
+    document.querySelectorAll<HTMLLIElement>('#flow li').forEach((li) => {
+      const on = li.dataset.role === role && this.sim.status !== 'idle';
