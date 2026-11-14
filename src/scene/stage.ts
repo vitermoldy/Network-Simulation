@@ -867,3 +867,6 @@ export class Stage {
     const found = lead as { p: Packet; rank: number; role?: Role } | undefined;
     this.leadPacket = found?.p;
     this.activeRole = found?.role;
+  }
+
+  private stylePacket(v: PacketView, p: Packet, color: number, state: 'fly' | 'hold' | 'lost' | 'discard'): void {
