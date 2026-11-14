@@ -396,3 +396,5 @@ select {
   outline-offset: -3px;
 }
 
+.stage-labels {
+  position: absolute;
