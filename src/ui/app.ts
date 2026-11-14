@@ -783,3 +783,5 @@ export class App {
 
   private afterShellEdit(): void {
     this.sim.edit(() => undefined);
+    this.deviceKey = '';
+    this.portsKey = '';
