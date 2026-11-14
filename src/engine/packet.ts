@@ -94,3 +94,5 @@ export function clonePacket(p: Packet): Packet {
     icmp: p.icmp && { ...p.icmp },
     udp: p.udp && { ...p.udp },
     tcp: p.tcp && { ...p.tcp, flags: [...p.tcp.flags] },
+    app: p.app && { ...p.app, lines: [...p.app.lines], dns: p.app.dns && { ...p.app.dns } },
+  };
