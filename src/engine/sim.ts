@@ -1568,3 +1568,5 @@ export class Simulator {
       at = r.viaRouter;
     }
     // The last router in the chain is the client's own gateway; anything before it is in the middle.
+    const middle = chain.slice(0, -1).filter((id) => this.topo.device(id).powered);
+    return middle[0];
