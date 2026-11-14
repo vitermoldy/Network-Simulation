@@ -2101,3 +2101,5 @@ tbody th {
   grid-template-rows: minmax(0, 1fr) auto;
   height: clamp(320px, 56vh, 560px);
   border-radius: var(--r);
+  background: #0b0c0e;
+  color: #e3e6ea;
