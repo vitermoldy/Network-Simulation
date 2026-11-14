@@ -394,3 +394,5 @@ export class Stage {
       this.scene.add(group);
       this.zones.push({ role, group, edge });
     }
+    // Arrows between the zones, only when they read left to right.
+    const present = order.filter((r) => rects.has(r));
