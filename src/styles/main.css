@@ -451,3 +451,5 @@ select {
   border-right: 1px solid var(--line-strong);
 }
 
+.tag[data-role="input"] .tag-role,
+.tag[data-role="output"] .tag-role {
