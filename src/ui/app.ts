@@ -646,3 +646,5 @@ export class App {
       <p class="note-muted">Desktop ${esc(d.name)}. Aplikasi di sini memakai jaringan yang sama dengan meja 3D, jadi paketnya terlihat berjalan di kabel.</p>`;
       return;
     }
+    if (this.desktopApp === 'ip') {
+      const nic = d.ports[0];
