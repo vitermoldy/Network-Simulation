@@ -50,3 +50,5 @@ export class DeviceViewer {
     key.position.set(3, 6, 5);
     key.castShadow = true;
     key.shadow.mapSize.set(1024, 1024);
+    key.shadow.camera.left = -4;
+    key.shadow.camera.right = 4;
