@@ -122,3 +122,5 @@ describe('routing', () => {
 describe('simulator', () => {
   it('takes a request from the laptop to the web server and back', () => {
     const sim = withScenario('normal');
+    run(sim);
+    expect(sim.status).toBe('done');
