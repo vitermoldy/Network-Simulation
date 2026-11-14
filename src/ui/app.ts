@@ -792,3 +792,5 @@ export class App {
   private renderTerm(el: HTMLElement, deviceId: string): void {
     const t = this.term(deviceId);
     el.dataset.device = deviceId;
+    el.innerHTML = `<pre class="term-out" role="log" aria-live="polite" aria-label="Keluaran"></pre>
+      <form class="term-in"><label class="term-prompt" for="term-input-${deviceId}"></label>
