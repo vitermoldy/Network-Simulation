@@ -1575,3 +1575,6 @@ tbody th {
 }
 
 .dev-title-input:hover {
+  border-color: var(--line);
+}
+
