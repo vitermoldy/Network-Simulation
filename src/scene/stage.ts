@@ -923,3 +923,5 @@ export class Stage {
   /** Client pixels to a point on the bench, for the same checks. */
   floorAt(x: number, y: number): { x: number; z: number } | undefined {
     const rect = this.renderer.domElement.getBoundingClientRect();
+    this.pointer.set(((x - rect.left) / rect.width) * 2 - 1, -((y - rect.top) / rect.height) * 2 + 1);
+    this.raycaster.setFromCamera(this.pointer, this.camera);
