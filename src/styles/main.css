@@ -914,3 +914,5 @@ select {
   font-family: var(--font-mono);
 }
 
+.clock.is-fast #clock-value::after {
+  content: " (dipercepat)";
