@@ -8,3 +8,5 @@ import { BROADCAST, clonePacket, type LayerId, type Packet, type TcpFlag } from 
 import { computeRoutes, lookup, type Route } from './routing';
 import { isClient, Topology, type Device, type Role } from './topology';
 
+export const TIMING = {
+  /** Seconds a frame spends on one cable at speed 1. */
