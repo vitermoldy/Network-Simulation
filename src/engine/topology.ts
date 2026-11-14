@@ -318,3 +318,6 @@ export class Topology {
     const d = this.device(deviceId);
     if (d.powered === on) return;
     d.powered = on;
+    this.rev++;
+  }
+
