@@ -155,3 +155,6 @@ export class Topology {
   private portLink = new Map<string, string>();
   private nextLink = 1;
   private nextMac = 0x30;
+  /** Goes up on every change; views rebuild when it moves. */
+  rev = 0;
+
