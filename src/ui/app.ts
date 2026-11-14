@@ -1164,3 +1164,5 @@ export class App {
     });
     box.addEventListener('focusout', () => {
       window.setTimeout(() => {
+        if (this.deviceDirty && !box.contains(document.activeElement)) {
+          this.deviceDirty = false;
