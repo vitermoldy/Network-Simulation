@@ -587,3 +587,5 @@ export class Stage {
     const boxes = this.footprints();
     if (!boxes.length) boxes.push({ x0: -4, x1: 4, z0: -3, z1: 3 });
     // The zones reach 0.75 past the devices and their labels sit in front; tags float above.
+    const x0 = Math.min(...boxes.map((b) => b.x0)) - 0.9;
+    const x1 = Math.max(...boxes.map((b) => b.x1)) + 0.9;
