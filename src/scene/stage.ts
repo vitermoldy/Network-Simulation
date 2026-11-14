@@ -811,3 +811,5 @@ export class Stage {
       const k = f.from === cable.a ? u : 1 - u;
       const pos = cable.curve.getPointAt(k);
       const tan = cable.curve.getTangentAt(k);
+      if (f.from !== cable.a) tan.negate();
+      pos.y += 0.15;
