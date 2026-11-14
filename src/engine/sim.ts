@@ -1181,3 +1181,5 @@ export class Simulator {
       }
       if (this.kind === 'ping') {
         this.ping!.ip = c.serverIp;
+        this.say(`(${c.host} = ${c.serverIp})`);
+        this.pingNext();
