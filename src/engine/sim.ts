@@ -306,3 +306,5 @@ export class Simulator {
     const target = this.time + dt;
     while (this.queue.length && this.queue[0].t <= target) {
       const task = this.queue.shift()!;
+      if (task.cancelled) continue;
+      this.time = Math.max(this.time, task.t);
