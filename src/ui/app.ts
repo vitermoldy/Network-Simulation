@@ -523,3 +523,5 @@ export class App {
   openDevice(id: string, tab: DwTab = 'fisik'): void {
     if (!this.sim.topo.has(id)) return;
     const d = this.sim.topo.device(id);
+    const changed = this.selectedDevice !== id;
+    this.selectedDevice = id;
