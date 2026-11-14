@@ -1086,3 +1086,5 @@ export class App {
       else if (act === 'unplug') this.askUnplug(b.dataset.link!);
       else if (act === 'auto') {
         const r = this.sim.edit((t) => t.autoAddress(id));
+        this.toast(r.ok ? `IP otomatis: ${r.value}.` : r.reason);
+        this.deviceKey = '';
