@@ -32,3 +32,5 @@ describe('topology', () => {
     expect(t.links.size).toBe(8);
     expect(t.peer('pc.0')).toBe('sw.0');
     expect(t.port('sw.0').name).toBe('Fa0/1');
+    expect(t.port('sw.24').name).toBe('Gi0/1');
+    expect(t.peer('sw.24')).toBe('r1.0');
