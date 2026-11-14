@@ -66,3 +66,5 @@ export const MATERIAL = {
   packet: 0x1f2de6,
   packetDark: 0x5b8cff,
   lost: 0xd93a2b,
+  discard: 0x8a9099,
+  accent: 0x1f2de6,
