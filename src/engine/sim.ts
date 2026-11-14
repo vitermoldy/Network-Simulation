@@ -1048,3 +1048,6 @@ export class Simulator {
     const r: Retx = { key, label, dev, make, tries: 0, maxTries, rto, firedAt: 0, onGiveUp };
     this.retx.set(key, r);
     this.fire(r);
+  }
+
+  private fire(r: Retx): void {
