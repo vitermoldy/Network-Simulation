@@ -461,3 +461,5 @@ export class App {
 
   private stopPlacing(message?: string): void {
     if (!this.placing) return;
+    this.placing = null;
+    this.stage?.setPlacing(null);
