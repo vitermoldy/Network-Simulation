@@ -65,3 +65,5 @@ export class PromptShell implements Shell {
         '  ping <ip|nama>      kirim 4 ICMP echo request dan tunggu balasannya',
         '  arp -a              isi cache ARP',
         '  nslookup <nama>     tanya server DNS',
+        '  cls                 bersihkan layar',
+      ];
