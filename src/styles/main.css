@@ -1167,3 +1167,6 @@ select {
 .entry.is-latest {
   border-color: var(--line-strong);
   background: var(--bg);
+}
+
+.entry-head {
