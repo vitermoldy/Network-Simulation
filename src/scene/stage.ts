@@ -589,3 +589,5 @@ export class Stage {
     // The zones reach 0.75 past the devices and their labels sit in front; tags float above.
     const x0 = Math.min(...boxes.map((b) => b.x0)) - 0.9;
     const x1 = Math.max(...boxes.map((b) => b.x1)) + 0.9;
+    const z0 = Math.min(...boxes.map((b) => b.z0)) - 0.9;
+    const z1 = Math.max(...boxes.map((b) => b.z1)) + 2.6;
