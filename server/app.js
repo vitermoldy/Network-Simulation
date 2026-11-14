@@ -95,3 +95,5 @@ export function createApi(getPool, database) {
     if (error) return res.status(400).json({ error })
     await touch(client)
     const [r] = await getPool().query(
+      `INSERT INTO runs (client_id, host, source, scenario, loss_rate, status, failed_phase, reason, sim_seconds,
+        packets_lost, resends, route_changes, path, devices, finished_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
