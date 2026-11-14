@@ -124,3 +124,5 @@ export interface Flight {
 
 export interface Hold {
   packet: Packet;
+  deviceId: string;
+  inPort: string;
