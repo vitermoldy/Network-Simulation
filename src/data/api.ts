@@ -15,3 +15,5 @@ export interface RunRecord {
   lossRate: number;
   status: 'done' | 'failed';
   failedPhase?: string;
+  reason?: string;
+  simSeconds: number;
