@@ -40,3 +40,6 @@ function segmentHitsBox(a: V2, b: V2, box: Box2): boolean {
 }
 
 const inside = (p: V2, b: Box2) => p[0] > b.x0 && p[0] < b.x1 && p[1] > b.z0 && p[1] < b.z1;
+const dist = (a: V2, b: V2) => Math.hypot(a[0] - b[0], a[1] - b[1]);
+
+/** Shortest of: straight, one corner, two corners, around the expanded device boxes. */
