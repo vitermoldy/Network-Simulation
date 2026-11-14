@@ -43,3 +43,6 @@ export class DeviceViewer {
     this.controls.dampingFactor = 0.1;
     this.controls.maxPolarAngle = 1.5;
     this.controls.minDistance = 0.8;
+    this.controls.maxDistance = 14;
+
+    this.scene.add(new THREE.HemisphereLight(0xffffff, 0xc4c9d0, 1.5));
