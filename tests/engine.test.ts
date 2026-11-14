@@ -352,3 +352,5 @@ describe('ping and nslookup', () => {
 
 describe('layers', () => {
   it('lists the headers from the application down to the cable', () => {
+    const sim = withScenario('normal');
+    run(sim);
