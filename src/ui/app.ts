@@ -1212,3 +1212,5 @@ export class App {
             this.afterTopologySwap(`Rancangan ${saved.name} dimuat.`);
           } catch (ex) {
             this.toast(`Rancangan tidak bisa dimuat: ${(ex as Error).message}`);
+          }
+        });
