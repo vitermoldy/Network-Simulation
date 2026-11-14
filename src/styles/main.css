@@ -560,3 +560,5 @@ select {
   color: var(--accent-ink);
 }
 
+.palette {
+  position: absolute;
