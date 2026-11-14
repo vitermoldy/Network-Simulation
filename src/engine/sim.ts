@@ -847,3 +847,5 @@ export class Simulator {
       }
       return;
     }
+    if (!p.ip) {
+      this.discard(p, dev.id, 'frame tanpa paket IP tidak diteruskan router.');
