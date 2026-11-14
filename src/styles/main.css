@@ -1727,3 +1727,5 @@ tbody th {
   color: var(--ok);
 }
 
+.db-status[data-state="error"] p {
+  color: var(--bad);
