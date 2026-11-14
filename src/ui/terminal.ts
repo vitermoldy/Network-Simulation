@@ -340,3 +340,5 @@ export class IosShell implements Shell {
     if (!this.dev.powered) return ['% Perangkat mati. Nyalakan dulu lewat tombol power.'];
     if (!line) return [];
     // "do show ..." from configuration modes, as in IOS.
+    let tokens = line.split(/\s+/);
+    let cmds = this.commands();
