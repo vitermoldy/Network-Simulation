@@ -1404,3 +1404,5 @@ export class Simulator {
     this.note('info', dev.id, `${dev.name} membalas ping`, `Echo request ${req.seq} dari ${p.ip!.src} sampai. ${dev.name} membalas dengan echo reply bernomor sama.`, 3, p.id);
     const reply = this.newPacket({
       flow: 'icmp', label: `Balas ${req.seq}`, title: `ICMP echo reply ${req.seq} ke ${p.ip!.src}`,
+      eth: { src: '', dst: BROADCAST, type: 'IPv4' },
+      ip: { src: p.ip!.dst, dst: p.ip!.src, ttl: dev.kind === 'router' ? 255 : 128, proto: 'ICMP' },
