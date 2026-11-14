@@ -660,3 +660,5 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
   if (v.screen) {
     const b = sim.browser;
     const mine = b.deviceId === d.id;
+    const key = mine ? `b|${on ? b.state : 'off'}|${b.url}|${b.parts.join()}|${b.message ?? ''}` : `d|${on}|${d.name}|${d.ports[0].ip ?? ''}`;
+    if (key !== v.screen.key) {
