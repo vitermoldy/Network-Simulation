@@ -952,3 +952,5 @@ export class App {
           return;
         }
         const from = this.pendingPort;
+        this.setPending(null);
+        this.plug(from, p.portId);
