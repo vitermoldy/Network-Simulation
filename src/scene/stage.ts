@@ -235,3 +235,5 @@ export class Stage {
   // ------------------------------------------------------------------ devices and cables
 
   private addTag(view: DeviceView): void {
+    const el = document.createElement('div');
+    el.className = 'tag';
