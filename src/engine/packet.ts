@@ -155,3 +155,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
       ['Identifier', String(p.icmp.id)],
       ['Nomor urut', String(p.icmp.seq)],
       ['Data', '32 byte'],
+    ]);
+  }
