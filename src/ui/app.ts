@@ -539,3 +539,6 @@ export class App {
     this.showDwTab(tab);
     this.renderDeviceList();
     $(`dwt-${tab}`).focus();
+  }
+
+  private closeDevice(): void {
