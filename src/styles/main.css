@@ -1081,3 +1081,6 @@ select {
 
 .phase.is-failed .mark,
 .phase.is-failed .phase-state {
+  color: var(--bad);
+}
+
