@@ -271,3 +271,6 @@ export class Stage {
     disposeTree(v.group);
     this.devices.delete(id);
     this.tags.delete(id);
+  }
+
+  private rebuildDevice(id: string): void {
