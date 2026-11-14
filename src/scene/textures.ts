@@ -14,3 +14,5 @@ export function makeCanvas(w: number, h: number): [HTMLCanvasElement, CanvasRend
   return [c, c.getContext('2d')!];
 }
 
+export function canvasTexture(c: HTMLCanvasElement): THREE.CanvasTexture {
+  const t = new THREE.CanvasTexture(c);
