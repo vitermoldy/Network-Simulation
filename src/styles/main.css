@@ -269,3 +269,5 @@ select {
   padding: 0 16px;
   border-radius: var(--r);
   border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 500;
