@@ -67,3 +67,5 @@ export class DeviceViewer {
 
     canvas.addEventListener('pointerdown', (e) => {
       this.down = { x: e.clientX, y: e.clientY };
+    });
+    canvas.addEventListener('pointerup', (e) => {
