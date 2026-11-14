@@ -142,3 +142,6 @@ export class Stage {
     container.appendChild(canvas);
 
     this.labels = new CSS2DRenderer();
+    this.labels.domElement.className = 'stage-labels';
+    container.appendChild(this.labels.domElement);
+
