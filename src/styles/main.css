@@ -1924,3 +1924,5 @@ tbody th {
   pointer-events: none;
 }
 
+.viewer-hover:empty {
+  display: none;
