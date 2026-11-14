@@ -995,3 +995,5 @@ export class App {
       const peer = topo.peer(p.portId);
       const kind = topo.deviceOf(p.portId).kind;
       const ip = kind === 'switch' ? '' : port.ip ? `, IP ${port.ip}/${port.prefix}` : ', belum diberi IP';
+      text = peer
+        ? `${topo.portLabel(p.portId)}${ip}. Tersambung ke ${topo.portLabel(peer)}.${topo.carrier(p.portId) ? '' : ' Tidak ada sinyal karena salah satu perangkat mati.'}`
