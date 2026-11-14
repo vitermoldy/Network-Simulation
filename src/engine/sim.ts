@@ -110,3 +110,6 @@ export interface Task {
   /** In step mode the clock stops after this task. */
   stop: boolean;
   cancelled: boolean;
+}
+
+export interface Flight {
