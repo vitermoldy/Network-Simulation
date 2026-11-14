@@ -60,3 +60,6 @@ export interface AppBody {
   /** HTTP response segments: which part of the page this one carries (1-based). */
   part?: number;
   parts?: number;
+}
+
+export interface Packet {
