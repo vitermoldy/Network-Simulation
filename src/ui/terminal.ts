@@ -61,3 +61,5 @@ export class PromptShell implements Shell {
       return [
         'Perintah yang tersedia:',
         '  ipconfig            alamat IP, subnet mask, dan gateway',
+        '  ipconfig /all       ditambah alamat MAC dan server DNS',
+        '  ping <ip|nama>      kirim 4 ICMP echo request dan tunggu balasannya',
