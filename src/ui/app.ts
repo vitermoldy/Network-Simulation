@@ -551,3 +551,5 @@ export class App {
 
   private showDwTab(tab: DwTab): void {
     this.dwTab = tab;
+    for (const t of DW_TABS) {
+      const b = $(`dwt-${t}`);
