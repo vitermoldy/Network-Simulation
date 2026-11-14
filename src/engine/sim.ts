@@ -1343,3 +1343,6 @@ export class Simulator {
   private sendFrom(dev: Device, p: Packet): void {
     if (dev.kind === 'router') this.routerOriginate(dev, p);
     else this.hostSend(dev, p);
+  }
+
+  /** A packet a router makes itself (a ping, a reply to a ping). */
