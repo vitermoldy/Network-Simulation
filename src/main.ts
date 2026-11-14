@@ -19,3 +19,5 @@ if (new URLSearchParams(location.search).has('debug')) {
 void app.init(async () => {
   // Fonts first, so the printing on device faces uses the real typeface.
   const fonts = Promise.all([
+    document.fonts.load('600 32px "Host Grotesk Variable"'),
+    document.fonts.load('500 32px "JetBrains Mono Variable"'),
