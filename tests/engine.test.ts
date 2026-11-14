@@ -233,3 +233,6 @@ describe('simulator', () => {
     expect(pc.dnsServer).toBe('172.16.0.53');
     run(sim, 'www.jaringan.test', 600, pc.id);
     expect(sim.status).toBe('done');
+    expect(sim.browser.deviceId).toBe(pc.id);
+  });
+
