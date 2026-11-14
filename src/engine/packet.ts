@@ -44,3 +44,6 @@ export interface TcpHeader {
   ack: number;
   flags: TcpFlag[];
   len: number;
+}
+
+export interface DnsBody {
