@@ -1364,3 +1364,5 @@ select {
 }
 
 .dev-actions {
+  display: flex;
+  flex-wrap: wrap;
