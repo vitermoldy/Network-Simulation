@@ -1535,3 +1535,5 @@ export class Simulator {
       this.schedule(this.time + i * 0.3, () => {
         if (this.status !== 'running' || !dev.powered) return;
         const seq = SERVER_ISS + 1 + SEGMENT * i;
+        this.reliable(`seg${i + 1}`, `Data ${i + 1}/${PAGE_PARTS.length}`, dev, (retry) => this.tcpPacket(dev, s.clientIp!, 80, CLIENT_PORT, ['PSH', 'ACK'], seq, s.rcvNext, `Data ${i + 1}/${PAGE_PARTS.length}`, `HTTP 200 OK, segmen ${i + 1} dari ${PAGE_PARTS.length}`, retry,
+          { proto: 'HTTP', lines: part.lines, part: i + 1, parts: PAGE_PARTS.length }, SEGMENT),
