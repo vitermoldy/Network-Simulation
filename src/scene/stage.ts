@@ -745,3 +745,6 @@ export class Stage {
         p.frameMat.emissiveIntensity = pending || hover ? 0.5 : 0;
       }
       this.updateTag(v);
+    }
+  }
+
