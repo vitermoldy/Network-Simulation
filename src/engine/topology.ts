@@ -520,3 +520,5 @@ export class Topology {
         d.dnsRecords = {};
         for (const [k, v] of Object.entries(raw.dnsRecords ?? {})) if (typeof v === 'string' && validIp(v)) d.dnsRecords[k.toLowerCase()] = v;
       }
+      devices.push(d);
+    }
