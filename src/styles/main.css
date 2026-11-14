@@ -2428,3 +2428,5 @@ tbody th {
   }
 
   .plug-row {
+    flex-wrap: wrap;
+  }
