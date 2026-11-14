@@ -863,3 +863,5 @@ select {
   position: relative;
 }
 
+.speed input {
+  position: absolute;
