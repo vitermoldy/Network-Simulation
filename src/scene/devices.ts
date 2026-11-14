@@ -140,3 +140,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
   slot.position.set(0, -s * holeH * 0.36, 0.006);
   group.add(slot);
   const hit = hitBox(holeW + 0.06, holeH + 0.06, 0.1, { type: 'port', portId });
+  hit.position.z = 0.03;
+  group.add(hit);
