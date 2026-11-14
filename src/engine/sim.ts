@@ -101,3 +101,6 @@ export interface LogEntry {
   text: string;
 }
 
+export type Scenario = 'normal' | 'loss' | 'router-down' | 'bad-domain';
+
+export interface Task {
