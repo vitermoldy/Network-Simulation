@@ -3,3 +3,5 @@
 // panels redraw when its version number moves.
 
 import * as api from '../data/api';
+import { layersOf, readsUpTo, type Packet } from '../engine/packet';
+import { type LogEntry, type PhaseStatus, type Scenario, Simulator } from '../engine/sim';
