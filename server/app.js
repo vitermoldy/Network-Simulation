@@ -147,3 +147,5 @@ export function createApi(getPool, database) {
     const data = req.body?.data
     if (typeof data !== 'string' || Buffer.byteLength(data) > MAX_LAYOUT) return res.status(413).json({ error: 'Rancangan terlalu besar.' })
     let parsed
+    try {
+      parsed = JSON.parse(data)
