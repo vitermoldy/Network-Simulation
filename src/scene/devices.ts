@@ -118,3 +118,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
   const frameMat = std(frameColor, { metalness: 0.7, roughness: 0.32 });
   const bars: [number, number, number, number][] = [
     [0, holeH / 2 + t / 2, holeW + 2 * t, t],
+    [0, -holeH / 2 - t / 2, holeW + 2 * t, t],
+    [-holeW / 2 - t / 2, 0, t, holeH],
