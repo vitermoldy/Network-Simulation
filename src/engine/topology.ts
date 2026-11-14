@@ -594,3 +594,6 @@ export class Topology {
   freePorts(): Port[] {
     const out: Port[] = [];
     for (const d of this.devices.values()) for (const p of d.ports) if (!this.portLink.has(p.id)) out.push(p);
+    return out;
+  }
+
