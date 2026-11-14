@@ -275,3 +275,5 @@ export class App {
     $('help-open').addEventListener('click', () => {
       $('hint').hidden = false;
       $('hint-close').focus();
+    });
+    $('hint-close').addEventListener('click', () => {
