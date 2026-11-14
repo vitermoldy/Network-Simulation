@@ -156,3 +156,5 @@ export interface TimerView {
   key: string;
   label: string;
   deviceId: string;
+  remaining: number;
+  rto: number;
