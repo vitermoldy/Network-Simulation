@@ -223,3 +223,5 @@ export class Topology {
   }
 
   linkOf(portId: string): Link | undefined {
+    const id = this.portLink.get(portId);
+    return id ? this.links.get(id) : undefined;
