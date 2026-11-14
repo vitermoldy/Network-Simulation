@@ -968,3 +968,5 @@ export class App {
     }
     if (p.type === 'cable') {
       this.askUnplug(p.linkId);
+      return;
+    }
