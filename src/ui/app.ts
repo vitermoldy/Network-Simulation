@@ -1260,3 +1260,5 @@ export class App {
     }
     ul.innerHTML = list.map((l) => `<li>
       <div class="layout-info"><span class="layout-name">${esc(l.name)}</span>
+        <span class="layout-meta">${l.devices} perangkat, ${l.links} kabel, disimpan ${esc(new Date(l.updatedAt).toLocaleString('id-ID', { dateStyle: 'medium', timeStyle: 'short' }))}</span></div>
+      <button type="button" class="btn btn-small btn-secondary" data-layout="${l.id}" data-op="load" data-name="${esc(l.name)}">Muat</button>
