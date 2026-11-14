@@ -1128,3 +1128,6 @@ select {
   border-radius: 2px;
   background: var(--surface);
   overflow: hidden;
+}
+
+.timer-bar span {
