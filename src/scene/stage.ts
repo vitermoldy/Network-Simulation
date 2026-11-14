@@ -79,3 +79,6 @@ function outlineGeometry(x0: number, z0: number, x1: number, z1: number, r: numb
   const g = new THREE.ShapeGeometry(outer, 8);
   g.rotateX(-Math.PI / 2);
   return g;
+}
+
+function disposeTree(o: THREE.Object3D): void {
