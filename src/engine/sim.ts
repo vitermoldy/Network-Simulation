@@ -978,3 +978,5 @@ export class Simulator {
       if (pending) {
         pending.packets.push(p);
         return;
+      }
+      this.arpPending.set(nextHop, { packets: [p], tries: 0 });
