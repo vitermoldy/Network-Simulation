@@ -2430,3 +2430,6 @@ tbody th {
   .plug-row {
     flex-wrap: wrap;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
