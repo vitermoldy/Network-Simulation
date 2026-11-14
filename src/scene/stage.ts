@@ -828,3 +828,5 @@ export class Stage {
       if (!from) continue;
       const v = this.ensurePacket(h.packet);
       seen.add(h.packet.id);
+      const k = ease(clamp01((t - h.t0) / (h.t1 - h.t0)));
+      const top = dev.topLocal.clone().add(dev.group.position).add(new THREE.Vector3(0, 0.12, 0));
