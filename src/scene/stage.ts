@@ -583,3 +583,5 @@ export class Stage {
 
   /** Frames every device on the bench. */
   fitView(animate = true): void {
+    this.follow = false;
+    const boxes = this.footprints();
