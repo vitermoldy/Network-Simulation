@@ -153,3 +153,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   }
   // loading or done: draw the page, leaving gaps where a segment has not arrived in order.
   const [header, main, footer] = view.parts;
+  if (header) {
+    ctx.fillStyle = '#1f2de6';
