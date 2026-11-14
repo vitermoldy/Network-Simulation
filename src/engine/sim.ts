@@ -920,3 +920,5 @@ export class Simulator {
       this.discard(p, dev.id, 'IP tujuan bukan miliknya.');
       return;
     }
+    this.hold(p, dev, inPort, [], TIMING.host, () => {
+      if (this.status !== 'running') return;
