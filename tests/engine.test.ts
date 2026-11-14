@@ -155,3 +155,5 @@ describe('simulator', () => {
     expect(sim.browser.parts).toEqual([true, true, true]);
   });
 
+  it('finds a new way when a router goes dark mid-transfer', () => {
+    const sim = withScenario('router-down');
