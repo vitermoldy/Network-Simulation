@@ -200,3 +200,5 @@ export function drawDesktop(ctx: CanvasRenderingContext2D, name: string, ip: str
   ctx.fillStyle = '#b9c3d0';
   ctx.font = `500 30px ${FONT_MONO}`;
   ctx.fillText(ip ?? 'IP belum diatur', W / 2, H / 2 + 26);
+  ctx.font = `500 24px ${FONT_TEXT}`;
+  ctx.fillText('Pilih sebagai pengirim untuk memakai browser-nya', W / 2, H / 2 + 86);
