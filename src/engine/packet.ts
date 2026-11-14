@@ -102,3 +102,5 @@ export type LayerId = 7 | 4 | 3 | 2 | 1;
 
 export interface LayerRow {
   layer: LayerId;
+  osi: string;
+  tcpip: string;
