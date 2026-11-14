@@ -601,3 +601,5 @@ export function buildDevice(dev: Device): DeviceView {
   tagAnchor.position.set(0, b.tagY, 0);
   b.group.add(tagAnchor);
   b.group.updateMatrixWorld(true);
+  return {
+    device: dev,
