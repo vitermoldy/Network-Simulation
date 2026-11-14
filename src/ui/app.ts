@@ -936,3 +936,5 @@ export class App {
         this.setPending(null);
         this.toast('Pemasangan kabel dibatalkan.');
       }
+      this.closePopover();
+      return;
