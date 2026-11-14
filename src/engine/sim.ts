@@ -914,3 +914,5 @@ export class Simulator {
       } else {
         this.discard(p, dev.id, `ARP ini untuk ${p.arp.targetIp}, bukan untuk ${dev.name}.`);
       }
+      return;
+    }
