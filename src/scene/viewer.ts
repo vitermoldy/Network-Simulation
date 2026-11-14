@@ -173,3 +173,5 @@ export class DeviceViewer {
       const a = pos.clone().addScaledVector(dir, 0.42);
       const b = pos.clone().addScaledVector(dir, 0.8);
       b.y = Math.max(0.05, pos.y * 0.4);
+      const c = pos.clone().addScaledVector(dir, 1.5);
+      c.y = 0.04;
