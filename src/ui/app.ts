@@ -1023,3 +1023,6 @@ export class App {
     const h = tip.offsetHeight;
     const left = Math.min(host.width - w - 8, Math.max(8, x - host.left + 14));
     const top = y - host.top + 18 + h > host.height ? y - host.top - h - 12 : y - host.top + 18;
+    tip.style.transform = `translate(${Math.round(left)}px, ${Math.round(Math.max(8, top))}px)`;
+  }
+
