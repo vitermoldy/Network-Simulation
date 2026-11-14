@@ -237,3 +237,5 @@ export class Topology {
   carrier(portId: string): boolean {
     const peer = this.peer(portId);
     if (!peer) return false;
+    if (this.port(portId).down || this.port(peer).down) return false;
+    return this.deviceOf(portId).powered && this.deviceOf(peer).powered;
