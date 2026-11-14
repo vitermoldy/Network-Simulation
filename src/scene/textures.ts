@@ -96,3 +96,5 @@ export const SCREEN_H = 600;
 
 /** Draws what the laptop's browser shows. The page appears part by part as TCP delivers it. */
 export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): void {
+  const W = SCREEN_W;
+  const H = SCREEN_H;
