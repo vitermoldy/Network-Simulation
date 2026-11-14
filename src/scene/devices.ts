@@ -120,3 +120,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
     [0, holeH / 2 + t / 2, holeW + 2 * t, t],
     [0, -holeH / 2 - t / 2, holeW + 2 * t, t],
     [-holeW / 2 - t / 2, 0, t, holeH],
+    [holeW / 2 + t / 2, 0, t, holeH],
+  ];
