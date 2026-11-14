@@ -1377,3 +1377,5 @@ export class App {
     const frag = document.createDocumentFragment();
     for (const l of log.slice(this.renderedLog)) {
       const li = document.createElement('li');
+      const chip = KIND_CHIP[l.kind];
+      li.innerHTML = `<button type="button" class="entry kind-${l.kind}" data-id="${l.id}">
