@@ -144,3 +144,5 @@ export function buildPlug(port: PortView, cableMat: THREE.Material): THREE.Group
   port.anchor.getWorldPosition(pos);
   port.anchor.getWorldQuaternion(quat);
   g.position.copy(pos);
+  g.quaternion.copy(quat);
+  return g;
