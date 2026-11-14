@@ -1155,3 +1155,5 @@ select {
   padding: 8px 10px;
   text-align: left;
   border: 1px solid transparent;
+  border-radius: var(--r);
+  background: transparent;
