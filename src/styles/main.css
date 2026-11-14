@@ -1280,3 +1280,6 @@ select {
 
 .dev-pick:hover {
   background: var(--surface);
+}
+
+.devices li.is-selected .dev-pick {
