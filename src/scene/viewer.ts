@@ -101,3 +101,5 @@ export class DeviceViewer {
     this.floorMat.color.setHex(t.floor);
   }
 
+  private resize(): void {
+    const w = Math.max(1, this.host.clientWidth);
