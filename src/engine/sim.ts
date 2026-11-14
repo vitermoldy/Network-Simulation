@@ -113,3 +113,5 @@ export interface Task {
 }
 
 export interface Flight {
+  id: number;
+  packet: Packet;
