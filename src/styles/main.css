@@ -1487,3 +1487,5 @@ tbody th {
   font: 600 13px var(--font-mono);
   min-width: 18px;
   height: 22px;
+  display: inline-grid;
+  place-items: center;
