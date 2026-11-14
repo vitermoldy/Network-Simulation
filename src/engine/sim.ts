@@ -820,3 +820,6 @@ export class Simulator {
         if (i === 0) this.emit(o, p);
         else this.emit(o, { ...clonePacket(p), id: this.nextPacket++, copyOf: p.id, hops: p.hops });
       });
+    });
+  }
+
