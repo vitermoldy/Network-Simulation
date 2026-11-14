@@ -607,3 +607,6 @@ export class App {
       if (this.viewer && this.viewer.deviceId !== d.id) this.viewer.show(d.id);
       this.renderPorts();
     } else if (this.dwTab === 'config') this.renderDevice();
+    else if (this.dwTab === 'desktop') this.renderDesktop();
+  }
+
