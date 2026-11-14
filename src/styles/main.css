@@ -935,3 +935,6 @@ select {
 }
 
 .panel:focus {
+  outline: none;
+}
+
