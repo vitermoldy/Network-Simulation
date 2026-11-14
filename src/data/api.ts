@@ -111,3 +111,5 @@ export async function flushQueue(): Promise<number> {
   for (const run of list) {
     try {
       await call('runs', { method: 'POST', body: JSON.stringify({ client: clientCode(), run }) });
+      sent++;
+    } catch {
