@@ -184,3 +184,5 @@ export class Topology {
     const base = (this.nextMac++).toString(16).padStart(2, '0');
     const d: Device = {
       id, kind, name, powered: true, x, z,
+      ports: portNames(kind).map((n, i) => ({ id: `${id}.${i}`, deviceId: id, name: n, mac: `aa:${base}:00:00:00:${(i + 1).toString(16).padStart(2, '0')}` })),
+    };
