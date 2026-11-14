@@ -737,3 +737,5 @@ export class Stage {
       v.powerGlow.emissiveIntensity = hoverPower ? 0.55 : 0;
       for (const p of v.ports.values()) {
         const free = !topo.linkOf(p.id);
+        const hover = this.hovered?.type === 'port' && this.hovered.portId === p.id;
+        const pending = this.pendingPort === p.id;
