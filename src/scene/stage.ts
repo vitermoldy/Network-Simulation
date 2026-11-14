@@ -847,3 +847,5 @@ export class Stage {
       seen.add(l.packet.id);
       const age = Math.max(0, t - l.t);
       if (v.last.lengthSq() === 0 && l.deviceId) {
+        const d = this.devices.get(l.deviceId);
+        if (d) v.last.copy(d.topLocal).add(d.group.position);
