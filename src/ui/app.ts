@@ -1635,3 +1635,5 @@ export class App {
       ${trace.length ? `<p class="packet-where"><span class="label">Sudah lewat</span> ${esc(trace.join(', '))}</p>` : ''}
       ${p.retry ? `<p class="note">Ini kiriman ulang ke-${p.retry}, karena kiriman sebelumnya tidak dibalas.</p>` : ''}
       ${reader && reads ? `<p class="reads">${esc(reader.name)} membuka paket ini sampai lapisan ${reads}${reads === 2 ? ' (alamat MAC saja)' : reads === 3 ? ' (sampai alamat IP)' : ' (semua lapisan)'}.</p>` : ''}
+      <ol class="layers">${rows.map((r) => {
+        const read = reads !== undefined && r.layer <= reads;
