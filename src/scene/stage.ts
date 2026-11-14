@@ -404,3 +404,5 @@ export class Stage {
       const tex = canvasTexture(c);
       drawArrow(ctx, 256, 128, this.theme.arrow);
       tex.needsUpdate = true;
+      const arrow = new THREE.Mesh(new THREE.PlaneGeometry(0.8, 0.4), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false }));
+      arrow.rotation.x = -Math.PI / 2;
