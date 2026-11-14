@@ -539,3 +539,5 @@ export class Stage {
     if (!this.dangling) {
       this.dangling = new THREE.Mesh(geo, this.danglingMat);
       this.scene.add(this.dangling);
+    } else {
+      this.dangling.geometry.dispose();
