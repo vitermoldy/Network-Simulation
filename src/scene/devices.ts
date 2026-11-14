@@ -374,3 +374,6 @@ function buildRouter(dev: Device): Build {
     p.text('CON', 1.32, 0.47, 0.03, { color: '#7fb6e6', mono: true, weight: 600 });
   });
   panel.position.set(0, h / 2, d / 2 + 0.002);
+  group.add(panel);
+
+  // Two blank module plates with screws.
