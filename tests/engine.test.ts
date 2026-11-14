@@ -111,3 +111,5 @@ describe('routing', () => {
     expect(lookup(computeRoutes(u).get('r1'), '203.0.113.80')!.viaRouter).toBe('r3');
   });
 
+  it('has no route when both middle routers are gone', () => {
+    const t = new Topology();
