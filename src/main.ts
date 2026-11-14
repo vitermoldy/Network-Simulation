@@ -17,3 +17,5 @@ if (new URLSearchParams(location.search).has('debug')) {
 }
 
 void app.init(async () => {
+  // Fonts first, so the printing on device faces uses the real typeface.
+  const fonts = Promise.all([
