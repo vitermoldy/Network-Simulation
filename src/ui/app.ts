@@ -1396,3 +1396,5 @@ export class App {
     const timers = this.sim.timers();
     const box = $('timers');
     box.hidden = timers.length === 0;
+    if (!timers.length) return;
+    const html = timers.map((t) => {
