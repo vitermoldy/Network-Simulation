@@ -122,3 +122,5 @@ const plugBody = new THREE.MeshStandardMaterial({ color: MATERIAL.plug, transpar
 const plugPins = new THREE.MeshStandardMaterial({ color: MATERIAL.pin, metalness: 0.9, roughness: 0.3 });
 
 /** An RJ45 plug pushed into a socket. Local +z points away from the device. */
+export function buildPlug(port: PortView, cableMat: THREE.Material): THREE.Group {
+  const g = new THREE.Group();
