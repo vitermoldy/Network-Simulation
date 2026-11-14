@@ -291,3 +291,5 @@ export class Simulator {
     const task: Task = { t, seq: this.seq++, run, stop, cancelled: false };
     let lo = 0;
     let hi = this.queue.length;
+    while (lo < hi) {
+      const mid = (lo + hi) >> 1;
