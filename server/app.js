@@ -9,3 +9,5 @@ import express from 'express'
  *   GET    /api/layouts/:client/:id                         one design with its JSON
  *   PUT    /api/layouts              { client, name, data } save a design (same name replaces it)
  *   DELETE /api/layouts/:client/:id
+ * There are no accounts: a client is the 12-character code its browser made up. Anyone who
+ * knows a code can read and change that client's data, so the code never appears on screen.
