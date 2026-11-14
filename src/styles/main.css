@@ -2005,3 +2005,5 @@ tbody th {
   transform: translateY(0);
 }
 
+.app-bar {
+  display: flex;
