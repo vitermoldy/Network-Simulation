@@ -1015,3 +1015,5 @@ export class Simulator {
       if (entry.tries >= MAX_ARP_TRIES) {
         this.arpPending.delete(ip);
         this.fail('arp', `Tidak ada yang menjawab ARP untuk ${ip} setelah ${MAX_ARP_TRIES} kali bertanya. Periksa kabel ${dev.name} ke switch, kabel switch ke router, dan tombol power keduanya.`, dev.id);
+        return;
+      }
