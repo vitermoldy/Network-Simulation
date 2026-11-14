@@ -196,3 +196,5 @@ export class IosShell implements Shell {
     if (isRouter) {
       show.push({
         words: ['show', 'ip', 'route'], help: 'tabel routing',
+        run: () => {
+          const routes = sim.routes.get(d.id) ?? [];
