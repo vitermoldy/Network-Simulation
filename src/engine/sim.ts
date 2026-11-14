@@ -1282,3 +1282,5 @@ export class Simulator {
       flow: app?.proto === 'HTTP' ? 'http' : 'tcp', label: retry ? `${label} (ulang)` : label, title,
       eth: { src: from.ports[0].mac, dst: BROADCAST, type: 'IPv4' },
       ip: { src: from.ports[0].ip!, dst: toIp, ttl: 64, proto: 'TCP' },
+      tcp: { src: srcPort, dst: dstPort, seq, ack, flags, len },
+      app, size: 54 + len, retry,
