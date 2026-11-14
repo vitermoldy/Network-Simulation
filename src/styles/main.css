@@ -1933,3 +1933,5 @@ tbody th {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
