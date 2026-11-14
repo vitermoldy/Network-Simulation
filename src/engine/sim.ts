@@ -999,3 +999,5 @@ export class Simulator {
 
   private sendArp(dev: Device, ip: string): void {
     const entry = this.arpPending.get(ip);
+    if (!entry) return;
+    const nic = dev.ports[0];
