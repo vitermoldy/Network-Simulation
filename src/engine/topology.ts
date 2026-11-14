@@ -68,3 +68,5 @@ export const KIND_LABEL: Record<DeviceKind, string> = {
   server: 'Server',
 };
 
+/** Where a device sits in the Input, Proses, Output story. */
+export function roleOf(d: Device): Role {
