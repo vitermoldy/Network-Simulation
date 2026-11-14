@@ -9,3 +9,5 @@ export type Role = 'input' | 'process' | 'output';
 
 export interface Port {
   id: string;
+  deviceId: string;
+  name: string;
