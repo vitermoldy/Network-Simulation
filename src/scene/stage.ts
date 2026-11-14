@@ -111,3 +111,5 @@ export class Stage {
   private themeName: ThemeName = 'light';
   private down?: { x: number; y: number; pick: Pick | null; floor?: THREE.Vector3 };
   private drag?: { id: string; offset: THREE.Vector3; from: THREE.Vector3 };
+  private dangling?: THREE.Mesh;
+  private danglingMat = new THREE.MeshStandardMaterial({ color: MATERIAL.accent, roughness: 0.5, transparent: true, opacity: 0.75 });
