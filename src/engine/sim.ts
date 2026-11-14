@@ -1234,3 +1234,6 @@ export class Simulator {
           : `FIN dari server datang lagi, berarti ACK terakhir hilang. ${this.cname} membalas ACK sekali lagi.`, 4, p.id);
         this.sendAck(dev, 'ACK');
       }
+      return;
+    }
+
