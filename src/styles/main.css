@@ -249,3 +249,5 @@ p {
 }
 
 select {
+  appearance: none;
+  min-height: 44px;
