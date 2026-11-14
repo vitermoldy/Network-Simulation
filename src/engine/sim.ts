@@ -318,3 +318,6 @@ export class Simulator {
     this.time = target;
     this.pruneLost();
     return 'ok';
+  }
+
+  /** Nothing on a cable and nothing inside a device: the run is only waiting on a timer. */
