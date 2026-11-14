@@ -509,3 +509,5 @@ export class Stage {
       }
       this.layoutKey = '';
       return;
+    }
+    if (!down || e.button !== 0) return;
