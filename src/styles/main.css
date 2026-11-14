@@ -88,3 +88,6 @@ summary {
 button:disabled,
 select:disabled {
   cursor: not-allowed;
+}
+
+:focus-visible {
