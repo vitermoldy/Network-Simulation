@@ -94,3 +94,5 @@ export interface LogEntry {
   id: number;
   t: number;
   kind: LogKind;
+  deviceId?: string;
+  packetId?: number;
