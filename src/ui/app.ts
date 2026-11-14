@@ -591,3 +591,5 @@ export class App {
   }
 
   private renderDeviceWindow(): void {
+    if (!this.dwOpen()) return;
+    const topo = this.sim.topo;
