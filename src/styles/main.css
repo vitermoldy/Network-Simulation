@@ -1898,3 +1898,6 @@ tbody th {
   border-radius: var(--r);
   overflow: hidden;
   background: var(--bg);
+}
+
+.viewer-canvas {
