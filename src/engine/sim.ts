@@ -794,3 +794,5 @@ export class Simulator {
     const inName = this.topo.port(inPort).name;
     const learned = table.get(p.eth.src) !== inPort;
     table.set(p.eth.src, inPort);
+    const others = dev.ports.filter((q) => q.id !== inPort && this.topo.carrier(q.id)).map((q) => q.id);
+    let outs: string[];
