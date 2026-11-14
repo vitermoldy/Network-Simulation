@@ -1053,3 +1053,5 @@ export class App {
     t.hidden = false;
     window.clearTimeout(this.toastTimer);
     this.toastTimer = window.setTimeout(() => {
+      t.hidden = true;
+    }, 4800);
