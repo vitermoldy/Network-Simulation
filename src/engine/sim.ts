@@ -889,3 +889,6 @@ export class Simulator {
       fwd.eth = { src: out.mac, dst: target.mac, type: 'IPv4' };
       this.emit(route.portId, fwd);
     });
+  }
+
+  private hostIn(dev: Device, inPort: string, p: Packet): void {
