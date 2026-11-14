@@ -43,3 +43,5 @@ describe('topology', () => {
     const t = new Topology();
     const seg = t.segments();
     expect(seg.get('pc.0')).toBe(seg.get('r1.0'));
+    expect(seg.get('pc.0')).not.toBe(seg.get('r1.1'));
+    t.setPower('sw', false);
