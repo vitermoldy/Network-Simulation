@@ -36,3 +36,5 @@ export function printFace(w: number, h: number, draw: (p: FacePrinter) => void):
   const px = (x: number, y: number): [number, number] => [(x + w / 2) * scale, (h - y) * scale];
   const text: FacePrinter['text'] = (s, x, y, size, opts = {}) => {
     const [cx, cy] = px(x, y);
+    ctx.fillStyle = opts.color ?? '#2a2e35';
+    ctx.textAlign = opts.align ?? 'center';
