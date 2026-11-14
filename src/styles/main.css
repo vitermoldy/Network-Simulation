@@ -2126,3 +2126,6 @@ tbody th {
 
 .term-prompt {
   color: #8fb4ff;
+  white-space: nowrap;
+}
+
