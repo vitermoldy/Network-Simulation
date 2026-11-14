@@ -2312,3 +2312,6 @@ tbody th {
   .pal {
     flex: 1;
     min-width: 0;
+  }
+
+  .hint {
