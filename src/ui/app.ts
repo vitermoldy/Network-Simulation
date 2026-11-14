@@ -642,3 +642,5 @@ export class App {
         <button type="button" class="app-tile" data-app="ip">${APP_ICONS.ip}<span>IP Configuration</span></button>
         <button type="button" class="app-tile" data-app="prompt">${APP_ICONS.prompt}<span>Command Prompt</span></button>
         <button type="button" class="app-tile" data-app="browser">${APP_ICONS.browser}<span>Web Browser</span></button>
+      </div>
+      <p class="note-muted">Desktop ${esc(d.name)}. Aplikasi di sini memakai jaringan yang sama dengan meja 3D, jadi paketnya terlihat berjalan di kabel.</p>`;
