@@ -80,3 +80,5 @@ export const isClient = (d: Device) => d.kind === 'pc' || d.kind === 'laptop';
 
 /** Port names follow Cisco Packet Tracer: Fa0 on hosts, Fa0/1 to Fa0/24 and Gi0/1 to Gi0/2 on a switch. */
 function portNames(kind: DeviceKind): string[] {
+  if (kind === 'switch') return [...Array.from({ length: 24 }, (_, i) => `Fa0/${i + 1}`), 'Gi0/1', 'Gi0/2'];
+  if (kind === 'router') return ['G0/0', 'G0/1', 'G0/2', 'G0/3'];
