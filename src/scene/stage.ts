@@ -313,3 +313,5 @@ export class Stage {
       this.cables.delete(c.linkId);
     }
     const boxes = this.footprints();
+    let lane = 0;
+    for (const link of topo.links.values()) {
