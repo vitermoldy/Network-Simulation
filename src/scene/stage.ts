@@ -613,3 +613,5 @@ export class Stage {
       cam.updateMatrixWorld(true);
       let l = Infinity;
       let r = -Infinity;
+      let b = Infinity;
+      let t = -Infinity;
