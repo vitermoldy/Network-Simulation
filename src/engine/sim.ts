@@ -623,3 +623,5 @@ export class Simulator {
    */
   edit<T>(change: (t: Topology) => T): T {
     const out = change(this.topo);
+    this.topologyChanged();
+    return out;
