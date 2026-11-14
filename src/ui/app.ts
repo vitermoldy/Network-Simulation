@@ -135,3 +135,5 @@ export class App {
       document.querySelectorAll<HTMLButtonElement>('.palette button, .stage-tools button').forEach((b) => {
         b.disabled = true;
       });
+    }
+    requestAnimationFrame((t) => this.tick(t));
