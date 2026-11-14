@@ -1162,3 +1162,6 @@ select {
 
 .entry:hover {
   background: var(--surface);
+}
+
+.entry.is-latest {
