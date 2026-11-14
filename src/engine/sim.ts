@@ -360,3 +360,5 @@ export class Simulator {
    * ping from a PC, laptop, server or router: four ICMP echo requests, one after the other.
    * A name is looked up in DNS first; a router can only ping an address.
    */
+  startPing(sourceId: string, rawTarget: string, seed?: number, count = 4): void {
+    const target = rawTarget.trim().toLowerCase();
