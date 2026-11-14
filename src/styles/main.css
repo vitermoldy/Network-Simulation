@@ -708,3 +708,5 @@ select {
 }
 
 .flow {
+  position: absolute;
+  left: 12px;
