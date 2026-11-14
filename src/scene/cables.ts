@@ -114,3 +114,5 @@ export function danglingCurve(a: PortView, to: THREE.Vector3): THREE.CatmullRomC
   end.y = FLOOR_Y + 0.02;
   const pts = [ea.start, ea.out, ea.drop];
   if (end.distanceTo(ea.drop) > 0.2) pts.push(end);
+  else pts.push(ea.drop.clone().add(new THREE.Vector3(0.05, 0, 0.05)));
+  return new THREE.CatmullRomCurve3(pts, false, 'centripetal', 0.5);
