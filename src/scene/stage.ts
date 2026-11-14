@@ -109,3 +109,5 @@ export class Stage {
   private layoutKey = '';
   private theme: SceneTheme = SCENE_THEMES.light;
   private themeName: ThemeName = 'light';
+  private down?: { x: number; y: number; pick: Pick | null; floor?: THREE.Vector3 };
+  private drag?: { id: string; offset: THREE.Vector3; from: THREE.Vector3 };
