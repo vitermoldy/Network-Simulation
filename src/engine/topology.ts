@@ -314,3 +314,5 @@ export class Topology {
     return { ok: true };
   }
 
+  setPower(deviceId: string, on: boolean): void {
+    const d = this.device(deviceId);
