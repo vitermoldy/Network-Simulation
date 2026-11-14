@@ -1250,3 +1250,5 @@ export class Simulator {
         c.buffer.delete(c.rcvNext);
         c.rcvNext += b.tcp!.len;
         const bp = b.app?.part ?? 0;
+        this.browser.parts[bp - 1] = true;
+        delivered.push(bp);
