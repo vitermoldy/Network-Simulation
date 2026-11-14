@@ -1605,3 +1605,5 @@ export class App {
     const box = $('packet');
     const p = this.currentPacket();
     if (!p) {
+      const html = `<p class="empty">${this.sim.status === 'idle'
+        ? 'Belum ada paket. Tekan Kirim permintaan, lalu klik kotak biru yang berjalan di kabel untuk membuka isinya.'
