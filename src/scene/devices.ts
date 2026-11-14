@@ -5,3 +5,5 @@
 // Every port is a real socket (metal frame, dark hole, gold pins) with its own LED, and every
 // device has a power control you can press, placed on the front so it is easy to find.
 
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
