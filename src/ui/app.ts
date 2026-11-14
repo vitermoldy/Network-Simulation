@@ -843,3 +843,6 @@ export class App {
       el.textContent = t.lines.join('\n');
       el.scrollTop = el.scrollHeight;
     }
+  }
+
+  /** Lines a ping or nslookup run printed since the last frame go to the terminal that started it. */
