@@ -3,3 +3,5 @@
 // laptop, the DNS server, the web server). Decisions use the topology as it is at that moment, so
 // pulling a cable or switching a router off mid-run really loses packets and changes the route.
 
+import { sameSubnet } from './ip';
+import { BROADCAST, clonePacket, type LayerId, type Packet, type TcpFlag } from './packet';
