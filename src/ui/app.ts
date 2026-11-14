@@ -1607,3 +1607,5 @@ export class App {
     if (!p) {
       const html = `<p class="empty">${this.sim.status === 'idle'
         ? 'Belum ada paket. Tekan Kirim permintaan, lalu klik kotak biru yang berjalan di kabel untuk membuka isinya.'
+        : 'Tidak ada paket di kabel saat ini. Pilih kejadian di panel Alur untuk membuka paket yang terlibat.'}</p>`;
+      if (box.innerHTML !== html) box.innerHTML = html;
