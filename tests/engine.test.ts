@@ -159,3 +159,5 @@ describe('simulator', () => {
     const sim = withScenario('router-down');
     run(sim);
     expect(sim.status).toBe('done');
+    expect(sim.topo.device('r2').powered).toBe(false);
+    expect(sim.log.some((l) => l.kind === 'route' && l.title === 'Rute dihitung ulang')).toBe(true);
