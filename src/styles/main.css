@@ -881,3 +881,6 @@ select {
 }
 
 .speed label:hover span {
+  background: var(--surface);
+}
+
