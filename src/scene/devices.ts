@@ -539,3 +539,5 @@ function buildLaptop(dev: Device): Build {
   hinge.position.set(0, baseH, -d / 2 + 0.04);
   hinge.rotation.x = -0.2;
   group.add(hinge);
+  const lidH = 1.36;
+  const lid = rounded(w, lidH, 0.05, shared.laptop, 0.02);
