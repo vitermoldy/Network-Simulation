@@ -1119,3 +1119,5 @@ export class Simulator {
       eth: { src: pc.ports[0].mac, dst: BROADCAST, type: 'IPv4' },
       ip: { src: pc.ports[0].ip!, dst: pc.dnsServer!, ttl: 64, proto: 'UDP' },
       udp: { src: DNS_PORT_CLIENT, dst: 53 },
+      app: { proto: 'DNS', lines: [`Pertanyaan: ${c.host}, tipe A`], dns: { txid: c.dnsTxid, question: c.host } },
+      size: 74, retry,
