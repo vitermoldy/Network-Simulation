@@ -901,3 +901,5 @@ select {
 }
 
 .clock {
+  margin-left: auto;
+  font-size: 13.5px;
