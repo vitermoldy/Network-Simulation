@@ -1505,3 +1505,6 @@ export class Simulator {
       s.state = 'closed';
       this.note('ok', dev.id, 'Sambungan tertutup', 'ACK terakhir sampai. Sambungan TCP tertutup di kedua sisi.', 4, p.id);
       this.finish(`Selesai dalam ${fmt(Math.round(this.time * 10) / 10)} waktu simulasi. Input dari ${this.cname} sudah melewati proses di jaringan, dan output-nya tampil di layar.`);
+      return;
+    }
+
