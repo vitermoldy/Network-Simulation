@@ -524,3 +524,6 @@ select {
   border: 0;
   border-radius: var(--r);
   background: transparent;
+  transition: background-color 0.15s ease, transform 0.12s ease;
+}
+
