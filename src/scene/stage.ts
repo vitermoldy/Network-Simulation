@@ -739,3 +739,5 @@ export class Stage {
         const free = !topo.linkOf(p.id);
         const hover = this.hovered?.type === 'port' && this.hovered.portId === p.id;
         const pending = this.pendingPort === p.id;
+        const candidate = !!this.pendingPort && free && !pending && !this.pendingPort.startsWith(`${v.device.id}.`);
+        p.frameMat.color.setHex(pending || hover ? this.theme.zoneActive : candidate ? 0x8a93ec : p.frameColor);
