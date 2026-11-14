@@ -28,3 +28,5 @@ function sameOriginWrites(req, res, next) {
   next()
 }
 
+/** At most `limit` writes per minute per address. */
+function rateLimit(limit) {
