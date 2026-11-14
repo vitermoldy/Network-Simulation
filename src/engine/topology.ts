@@ -562,3 +562,5 @@ export class Topology {
       for (const p of d.ports) parent.set(p.id, p.id);
     }
     for (const link of this.links.values()) {
+      if (parent.has(link.a) && parent.has(link.b) && !this.port(link.a).down && !this.port(link.b).down) union(link.a, link.b);
+    }
