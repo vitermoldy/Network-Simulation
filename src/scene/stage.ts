@@ -515,3 +515,5 @@ export class Stage {
     if (this.ghost) {
       const p = this.ghost.group.position;
       this.events.place(this.ghost.kind, p.x, p.z);
+      return;
+    }
