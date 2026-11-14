@@ -237,3 +237,5 @@ export class Stage {
   private addTag(view: DeviceView): void {
     const el = document.createElement('div');
     el.className = 'tag';
+    el.setAttribute('aria-hidden', 'true');
+    el.innerHTML = '<span class="tag-role"></span><span class="tag-name"></span><span class="tag-ip"></span><span class="tag-off">Mati</span>';
