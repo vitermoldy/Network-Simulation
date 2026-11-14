@@ -151,3 +151,5 @@ export class DeviceViewer {
     if (this.view) {
       this.scene.remove(this.view.group);
       this.view.group.traverse((o) => (o as THREE.Mesh).geometry?.dispose());
+      this.view = undefined;
+    }
