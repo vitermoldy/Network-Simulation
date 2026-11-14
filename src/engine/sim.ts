@@ -655,3 +655,6 @@ export class Simulator {
     this.note('route', undefined, 'Rute dihitung ulang', lines.length
       ? `Router saling bertukar kabar (link-state, seperti OSPF) lalu menghitung jalur terpendek lagi. ${lines.join(' ')}`
       : 'Router saling bertukar kabar dan menghitung jalur lagi. Tidak ada rute yang berubah.', 3);
+  }
+
+  private activePhase(): PhaseId | undefined {
