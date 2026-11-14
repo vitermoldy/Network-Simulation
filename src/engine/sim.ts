@@ -188,3 +188,6 @@ interface ClientState {
   getLen: number;
   buffer: Map<number, Packet>;
   complete: boolean;
+}
+
+interface ServerState {
