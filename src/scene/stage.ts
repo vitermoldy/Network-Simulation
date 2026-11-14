@@ -887,3 +887,5 @@ export class Stage {
     if (key === this.markerKey) return;
     this.markerKey = key;
     if (this.marker) {
+      this.scene.remove(this.marker);
+      this.marker.geometry.dispose();
