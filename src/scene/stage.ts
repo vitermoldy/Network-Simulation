@@ -443,3 +443,5 @@ export class Stage {
 
   private floorPoint(e: PointerEvent): THREE.Vector3 | undefined {
     this.setPointer(e);
+    const p = new THREE.Vector3();
+    return this.raycaster.ray.intersectPlane(this.floorPlane, p) ? p : undefined;
