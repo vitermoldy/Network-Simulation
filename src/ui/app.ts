@@ -1452,3 +1452,5 @@ export class App {
     const html = [...topo.devices.values()].map((d) => {
       const used = d.ports.filter((p) => topo.linkOf(p.id)).length;
       const role = roleOf(d);
+      return `<li class="${d.id === this.selectedDevice ? 'is-selected' : ''}">
+        <button type="button" class="dev-pick" data-pick="${d.id}" aria-pressed="${d.id === this.selectedDevice}">
