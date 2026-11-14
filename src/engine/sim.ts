@@ -1028,3 +1028,5 @@ export class Simulator {
     if (!entry) return;
     if (entry.timer) entry.timer.cancelled = true;
     this.arpPending.delete(ip);
+    this.setPhase('arp', 'done');
+    this.note('ok', dev.id, 'MAC gateway diketahui', `Balasan ARP: ${ip} ada di ${mac}. ${dev.name} menyimpannya di cache ARP, lalu mengirim paket yang tadi menunggu.`, 2, packetId);
