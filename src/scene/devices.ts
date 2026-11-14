@@ -497,3 +497,6 @@ function buildPc(dev: Device): Build {
   group.add(panel);
   const button = buildRoundButton(dev.id, 0.065);
   button.group.position.set(-0.85, th - 0.18, z);
+  group.add(button.group);
+  addPort(b, dev, 0, -0.85, 0.36, z, { w: 0.17, h: 0.13 });
+
