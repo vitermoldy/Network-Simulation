@@ -1086,3 +1086,6 @@ select {
 
 .timers {
   flex: none;
+}
+
+.timers ul {
