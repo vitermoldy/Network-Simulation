@@ -14,3 +14,5 @@ const num = (key, fallback) => {
 }
 
 export const config = {
+  name: 'Simulasi Jaringan',
+  port: num('PORT', 8797),
