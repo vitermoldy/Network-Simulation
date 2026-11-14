@@ -777,3 +777,5 @@ select {
 .playbar {
   grid-column: 1;
   grid-row: 2;
+  display: flex;
+  flex-wrap: wrap;
