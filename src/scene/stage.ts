@@ -853,3 +853,6 @@ export class Stage {
       v.mesh.position.set(v.last.x, Math.max(0.1, v.last.y - age * 0.45), v.last.z);
       v.mat.opacity = Math.max(0, 1 - age / 2.2);
       this.stylePacket(v, l.packet, l.kind === 'lost' ? MATERIAL.lost : MATERIAL.discard, l.kind);
+    }
+
+    for (const [id, v] of this.packets) {
