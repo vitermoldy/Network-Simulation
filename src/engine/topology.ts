@@ -251,3 +251,6 @@ export class Topology {
 
   portLabel(portId: string): string {
     const p = this.port(portId);
+    return `${this.device(p.deviceId).name} ${p.name}`;
+  }
+
