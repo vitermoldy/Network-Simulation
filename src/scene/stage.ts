@@ -856,3 +856,5 @@ export class Stage {
     }
 
     for (const [id, v] of this.packets) {
+      if (seen.has(id)) continue;
+      v.tag.removeFromParent();
