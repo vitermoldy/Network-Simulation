@@ -1114,3 +1114,5 @@ export class App {
         return;
       }
       if (input.dataset.service) {
+        const d = this.sim.topo.device(this.selectedDevice);
+        const next = { dns: !!d.services?.dns, http: !!d.services?.http, [input.dataset.service]: input.checked };
