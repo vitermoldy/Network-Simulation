@@ -583,3 +583,5 @@ export class Simulator {
     change();
     this.macTables.clear();
     this.arpCaches.clear();
+    const first = [...this.topo.devices.values()].find(isClient);
+    this.browser = { deviceId: first?.id ?? '', url: this.browser.url, state: 'idle', parts: PAGE_PARTS.map(() => false) };
