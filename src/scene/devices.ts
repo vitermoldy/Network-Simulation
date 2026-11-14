@@ -445,3 +445,5 @@ function buildServer(dev: Device): Build {
       p.ctx.fillRect(x0, y0, 0.72 * p.scale, 0.009 * p.scale);
     }
   });
+  panel.position.set(0, h / 2, d / 2 + 0.003);
+  group.add(panel);
