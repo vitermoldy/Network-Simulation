@@ -1269,3 +1269,5 @@ select {
   flex: 1;
   display: grid;
   gap: 0;
+  min-height: 48px;
+  padding: 6px 10px;
