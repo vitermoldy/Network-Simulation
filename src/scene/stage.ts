@@ -285,3 +285,5 @@ export class Stage {
 
   syncTopology(force = false): void {
     if (!force && this.topoRev === this.sim.topo.rev) return;
+    this.topoRev = this.sim.topo.rev;
+    const topo = this.sim.topo;
