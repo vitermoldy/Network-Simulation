@@ -287,3 +287,5 @@ export class Topology {
   moveDevice(id: string, x: number, z: number): void {
     const d = this.device(id);
     d.x = Math.round(x * 100) / 100;
+    d.z = Math.round(z * 100) / 100;
+    this.rev++;
