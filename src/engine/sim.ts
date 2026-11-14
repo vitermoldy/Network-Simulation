@@ -131,3 +131,5 @@ export interface Hold {
   t1: number;
 }
 
+export interface LostMark {
+  packet: Packet;
