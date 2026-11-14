@@ -332,3 +332,5 @@ export class Topology {
     if (!clean) {
       p.ip = undefined;
       p.prefix = undefined;
+      this.rev++;
+      return { ok: true };
