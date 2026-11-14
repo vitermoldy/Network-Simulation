@@ -42,3 +42,5 @@ export interface Device {
   /** PCs and laptops: the DNS server they ask. */
   dnsServer?: string;
   /** Servers only. */
+  services?: Services;
+  /** Servers with DNS on: name to IPv4. */
