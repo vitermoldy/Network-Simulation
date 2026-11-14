@@ -1494,3 +1494,5 @@ export class Simulator {
         this.reliable('finack', 'FIN-ACK', dev, (retry) => this.tcpPacket(dev, s.clientIp!, 80, CLIENT_PORT, ['FIN', 'ACK'], SERVER_ISS + 1 + RESPONSE_LEN, s.rcvNext, 'FIN-ACK', 'TCP FIN-ACK: server juga selesai', retry),
           this.rto(), MAX_TCP_TRIES, () => this.finish('ACK terakhir tidak sampai, tapi server menutup sambungan setelah menunggu.'));
       } else if (s.state === 'last-ack') {
+        const r = this.retx.get('finack');
+        if (r) this.fire(r);
