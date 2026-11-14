@@ -1863,3 +1863,5 @@ tbody th {
   color: var(--muted);
 }
 
+.devwin-head .btn-icon svg {
+  width: 20px;
