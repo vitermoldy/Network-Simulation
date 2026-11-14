@@ -75,3 +75,5 @@ export async function health(): Promise<{ ok: boolean; database: string }> {
 function readQueue(): RunRecord[] {
   try {
     const raw = localStorage.getItem(QUEUE_KEY);
+    const list = raw ? (JSON.parse(raw) as RunRecord[]) : [];
+    return Array.isArray(list) ? list : [];
