@@ -1198,3 +1198,5 @@ export class App {
         err.textContent = `Belum tersimpan: ${(ex as Error).message} Jalankan npm run server, lalu coba lagi.`;
         err.hidden = false;
       }
+    });
+    $('layouts').addEventListener('click', async (e) => {
