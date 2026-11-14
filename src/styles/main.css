@@ -738,3 +738,6 @@ select {
   height: 7px;
   border-top: 1.6px solid var(--muted);
   border-right: 1.6px solid var(--muted);
+  transform: translateY(-50%) rotate(45deg);
+}
+
