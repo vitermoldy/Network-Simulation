@@ -1973,3 +1973,5 @@ tbody th {
   margin-bottom: 12px;
 }
 
+.app-tile {
+  display: grid;
