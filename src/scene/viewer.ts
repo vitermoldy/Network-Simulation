@@ -131,3 +131,5 @@ export class DeviceViewer {
     }
     if (pick.type === 'port' && topo.hasPort(pick.portId)) {
       const p = topo.port(pick.portId);
+      const peer = topo.peer(p.id);
+      const state = p.down ? 'shutdown' : !peer ? 'kosong' : topo.carrier(p.id) ? 'tersambung, ada sinyal' : 'tersambung, tanpa sinyal';
