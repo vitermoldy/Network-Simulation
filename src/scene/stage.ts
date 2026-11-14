@@ -388,3 +388,5 @@ export class Stage {
       tex.needsUpdate = true;
       const label = new THREE.Mesh(new THREE.PlaneGeometry(lw, lh), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false }));
       label.rotation.x = -Math.PI / 2;
+      label.position.set((x0 + x1) / 2, 0.006, z1 + lh / 2 + 0.15);
+      group.add(label);
