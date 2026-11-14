@@ -827,3 +827,5 @@ export class Simulator {
     const port = this.topo.port(inPort);
     if (p.eth.dst !== port.mac && p.eth.dst !== BROADCAST) {
       this.discard(p, dev.id, `MAC tujuan ${p.eth.dst} bukan milik port ${port.name}, frame dibuang.`);
+      return;
+    }
