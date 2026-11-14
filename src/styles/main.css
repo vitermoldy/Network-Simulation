@@ -1142,3 +1142,5 @@ select {
   padding: 0 2px 0 0;
   flex: 1;
   min-height: 120px;
+  overflow-y: auto;
+  display: grid;
