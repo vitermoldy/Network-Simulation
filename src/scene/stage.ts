@@ -93,3 +93,5 @@ export class Stage {
   readonly labels: CSS2DRenderer;
   readonly scene = new THREE.Scene();
   readonly camera: THREE.PerspectiveCamera;
+  readonly controls: OrbitControls;
+  readonly devices = new Map<string, DeviceView>();
