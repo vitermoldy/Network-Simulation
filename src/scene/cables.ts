@@ -6,3 +6,5 @@ import type { PortView } from './devices';
 import { MATERIAL } from './theme';
 
 export interface Box2 {
+  x0: number;
+  x1: number;
