@@ -785,3 +785,5 @@ export class Stage {
     const pv = this.portView(portId);
     if (!pv) return undefined;
     const pos = new THREE.Vector3();
+    const dir = new THREE.Vector3();
+    pv.anchor.getWorldPosition(pos);
