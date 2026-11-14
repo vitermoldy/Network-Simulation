@@ -649,3 +649,5 @@ export class Simulator {
 
   private converge(): void {
     const before = this.routes;
+    this.routes = computeRoutes(this.topo);
+    this.converging = false;
