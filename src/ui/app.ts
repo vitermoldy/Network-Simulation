@@ -1373,3 +1373,5 @@ export class App {
       return;
     }
     if (this.renderedLog === 0) ol.innerHTML = '';
+    const nearBottom = ol.scrollHeight - ol.scrollTop - ol.clientHeight < 80;
+    const frag = document.createDocumentFragment();
