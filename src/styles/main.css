@@ -152,3 +152,6 @@ p {
 
 .brand p {
   color: var(--muted);
+  font-size: 13.5px;
+}
+
