@@ -1321,3 +1321,5 @@ select {
   transform: translateY(1px);
 }
 
+.power svg {
+  width: 18px;
