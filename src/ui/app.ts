@@ -1523,3 +1523,5 @@ export class App {
       return `<li class="port-row">
         <div class="port-top"><span class="port-name mono">${esc(p.name)}</span>${upToggle}
           <span class="port-peer">${peer ? `ke ${esc(topo.portLabel(peer))}` : 'belum berkabel'}<span class="cell-note">${state}</span></span>
+          ${cable}</div>
+        ${ipCell}
