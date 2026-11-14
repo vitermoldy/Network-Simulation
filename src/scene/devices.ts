@@ -300,3 +300,5 @@ function buildSwitch(dev: Device): Build {
       const top = i % 2 === 0;
       p.text(String(i + 1), colX(i) + 0.05, top ? 0.452 : 0.048, 0.03, { color: '#c9d0d8', mono: true, weight: 500 });
     }
+    for (let blk = 0; blk < 3; blk++) {
+      const [bx0, by] = p.px(-0.95 + blk * 0.86 - 0.1, 0.25);
