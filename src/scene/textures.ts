@@ -55,3 +55,5 @@ export function keyboardTexture(): THREE.CanvasTexture {
   ctx.beginPath();
   ctx.roundRect(70, 92, 884, 226, 14);
   ctx.fill();
+  const rows = [14, 14, 13, 12];
+  rows.forEach((n, r) => {
