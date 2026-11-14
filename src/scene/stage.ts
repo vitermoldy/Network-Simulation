@@ -834,3 +834,5 @@ export class Stage {
       if (h.outPorts.length === 1 && h.outPorts[0] !== h.inPort) to = this.anchorPoint(h.outPorts[0]) ?? top;
       else if (h.outPorts.length === 1) to = this.anchorPoint(h.inPort, 0.45) ?? top;
       else to = top;
+      const pos = from.lerp(to, k);
+      v.mesh.position.copy(pos);
