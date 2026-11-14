@@ -858,3 +858,5 @@ export class Stage {
     for (const [id, v] of this.packets) {
       if (seen.has(id)) continue;
       v.tag.removeFromParent();
+      v.el.remove();
+      this.scene.remove(v.mesh);
