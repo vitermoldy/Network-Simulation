@@ -127,3 +127,6 @@ p {
   background: var(--ink);
   color: var(--bg);
   border-radius: var(--r);
+  text-decoration: none;
+}
+
