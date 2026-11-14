@@ -68,3 +68,5 @@ function cleanRun(run) {
       Math.min(99999, Math.max(0, Number(run.simSeconds) || 0)),
       count(run.packetsLost),
       count(run.resends),
+      count(run.routeChanges),
+      JSON.stringify(path),
