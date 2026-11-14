@@ -577,3 +577,5 @@ function buildLaptop(dev: Device): Build {
     const tex = printFace(wide, 0.15, (q) => q.text(text, 0, 0.075, 0.07, { weight: 600, color: '#3b4048' }));
     const m = new THREE.Mesh(new THREE.PlaneGeometry(wide, 0.15), new THREE.MeshBasicMaterial({ map: tex, transparent: true }));
     m.rotation.x = -Math.PI / 2;
+    m.position.set(x, baseH + 0.003, zz);
+    group.add(m);
