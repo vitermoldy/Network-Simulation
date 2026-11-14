@@ -364,3 +364,5 @@ function buildRouter(dev: Device): Build {
         p.ctx.arc(vx, vy, 0.014 * p.scale, 0, Math.PI * 2);
         p.ctx.fill();
       }
+    }
+    p.text('PWR', -w / 2 + 0.6, 0.47, 0.03, { color: '#b9c0c8', weight: 600 });
