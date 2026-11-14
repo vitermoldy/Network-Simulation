@@ -1150,3 +1150,5 @@ export class App {
       const err = form.querySelector<HTMLElement>('.form-error');
       if (!res.ok) {
         if (err) {
+          err.textContent = res.reason ?? '';
+          err.hidden = false;
