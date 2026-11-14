@@ -1449,3 +1449,6 @@ tbody th {
 .packet-where .label {
   color: var(--muted);
   margin-right: 4px;
+}
+
+.reads {
