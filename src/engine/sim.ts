@@ -1367,3 +1367,5 @@ export class Simulator {
   }
 
   private pingNext(): void {
+    const pg = this.ping;
+    if (!pg || this.status !== 'running' || !this.topo.has(this.clientId)) return;
