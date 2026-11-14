@@ -355,3 +355,6 @@ select {
 
 :root:not([data-theme="dark"]) .i-sun,
 :root[data-theme="dark"] .i-moon {
+  display: none;
+}
+
