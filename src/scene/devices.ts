@@ -267,3 +267,5 @@ function buildSwitch(dev: Device): Build {
   const w = 4.4;
   const h = 0.5;
   const d = 1.5;
+  const group = new THREE.Group();
+  const body = rounded(w, h, d, shared.slate, 0.03);
