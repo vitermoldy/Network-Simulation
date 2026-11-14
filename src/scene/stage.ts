@@ -364,3 +364,5 @@ export class Stage {
     const allZ0 = Math.min(...[...rects.values()].map((r) => r.z0));
     const order: Role[] = ['input', 'process', 'output'];
     for (const role of order) {
+      const r = rects.get(role);
+      if (!r) continue;
