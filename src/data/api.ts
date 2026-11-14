@@ -79,3 +79,6 @@ function readQueue(): RunRecord[] {
     return Array.isArray(list) ? list : [];
   } catch {
     return [];
+  }
+}
+
