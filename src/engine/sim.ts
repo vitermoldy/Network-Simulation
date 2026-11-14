@@ -501,3 +501,5 @@ export class Simulator {
     this.status = 'failed';
     for (const r of this.retx.values()) if (r.timer) r.timer.cancelled = true;
     this.retx.clear();
+    for (const a of this.arpPending.values()) if (a.timer) a.timer.cancelled = true;
+    this.arpPending.clear();
