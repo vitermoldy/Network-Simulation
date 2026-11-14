@@ -158,3 +158,6 @@ export interface TimerView {
   deviceId: string;
   remaining: number;
   rto: number;
+  tries: number;
+}
+
