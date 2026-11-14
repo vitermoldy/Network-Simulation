@@ -101,3 +101,5 @@ export class Stage {
   private zoneLabels: { ctx: CanvasRenderingContext2D; tex: THREE.CanvasTexture; w: number; h: number; role: Role }[] = [];
   private arrows: { ctx: CanvasRenderingContext2D; tex: THREE.CanvasTexture }[] = [];
   private tags = new Map<string, HTMLElement>();
+  private floorMat: THREE.MeshStandardMaterial;
+  private raycaster = new THREE.Raycaster();
