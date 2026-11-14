@@ -926,3 +926,5 @@ export class Simulator {
         if (p.icmp.type === 'echo-request') this.icmpReply(dev, p);
         else if (dev.id === this.client.deviceId) this.icmpReceive(dev, p);
         return;
+      }
+      if (dev.id === this.client.deviceId) {
