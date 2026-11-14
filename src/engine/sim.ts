@@ -92,3 +92,5 @@ export type LogKind = 'info' | 'route' | 'loss' | 'retry' | 'ok' | 'error' | 'ch
 
 export interface LogEntry {
   id: number;
+  t: number;
+  kind: LogKind;
