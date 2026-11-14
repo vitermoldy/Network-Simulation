@@ -1073,3 +1073,5 @@ export class Simulator {
 
   private acked(key: string): boolean {
     const r = this.retx.get(key);
+    if (!r) return false;
+    if (r.timer) r.timer.cancelled = true;
