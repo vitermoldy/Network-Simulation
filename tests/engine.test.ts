@@ -99,3 +99,6 @@ describe('routing', () => {
     expect(r1.viaRouter).toBe('r2');
     expect(r1.cost).toBe(2);
     expect(lookup(routes.get('r1'), '192.168.1.10')!.type).toBe('C');
+    expect(lookup(routes.get('r4'), '172.16.0.53')!.viaRouter).toBe('r2');
+  });
+
