@@ -201,3 +201,7 @@ export class Stage {
       }
     });
     this.observer.observe(container);
+  }
+
+  // ------------------------------------------------------------------ theme and size
+
