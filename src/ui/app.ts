@@ -1462,3 +1462,5 @@ export class App {
         </button>
       </li>`;
     }).join('') || '<li class="empty">Meja kosong. Tambahkan perangkat dari palet di kiri meja.</li>';
+    const ul = $('devices');
+    if (ul.dataset.html !== html) {
