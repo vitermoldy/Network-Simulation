@@ -1026,3 +1026,5 @@ export class Simulator {
     this.arpCache(dev.id).set(ip, mac);
     const entry = this.arpPending.get(ip);
     if (!entry) return;
+    if (entry.timer) entry.timer.cancelled = true;
+    this.arpPending.delete(ip);
