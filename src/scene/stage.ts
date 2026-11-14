@@ -552,3 +552,6 @@ export class Stage {
       this.dangling.geometry.dispose();
       this.dangling = undefined;
     }
+  }
+
+  /** Start or stop placing a new device; the ghost follows the pointer until a click. */
