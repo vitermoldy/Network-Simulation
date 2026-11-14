@@ -91,3 +91,5 @@ describe('topology', () => {
 });
 
 describe('routing', () => {
+  it('finds the shortest way and breaks ties the same way every time', () => {
+    const t = new Topology();
