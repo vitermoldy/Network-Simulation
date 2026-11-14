@@ -108,3 +108,6 @@ describe('routing', () => {
     expect(lookup(computeRoutes(t).get('r1'), '203.0.113.80')!.viaRouter).toBe('r3');
     const u = new Topology();
     u.removeDevice('r2');
+    expect(lookup(computeRoutes(u).get('r1'), '203.0.113.80')!.viaRouter).toBe('r3');
+  });
+
