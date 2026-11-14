@@ -727,3 +727,6 @@ select {
   border-radius: var(--r);
   background: color-mix(in srgb, var(--panel) 94%, transparent);
   line-height: 1.25;
+}
+
+.flow li + li::before {
