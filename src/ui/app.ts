@@ -1488,3 +1488,5 @@ export class App {
     const routes = d.kind === 'router' ? sim.routes.get(d.id) ?? [] : [];
     const mac = d.kind === 'switch' ? [...sim.macTable(d.id)] : [];
     const arp = [...sim.arpCache(d.id)];
+    const key = JSON.stringify([d.id, topo.rev, routes, mac, arp, sim.converging, [...sim.dnsCache]]);
+    if (key === this.deviceKey) return;
