@@ -700,3 +700,5 @@ export class Simulator {
       this.schedule(f.t0 + (f.t1 - f.t0) * drop.u, () => {
         if (this.flights.includes(f)) this.loseFlight(f, drop.reason);
       }, true);
+    } else {
+      this.schedule(f.t1, () => {
