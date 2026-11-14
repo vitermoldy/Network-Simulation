@@ -19,3 +19,5 @@ const TABLES = [
     host VARCHAR(253) NOT NULL,
     source VARCHAR(32) NOT NULL,
     scenario VARCHAR(16) NOT NULL,
+    loss_rate DECIMAL(4,2) NOT NULL DEFAULT 0,
+    status ENUM('done','failed') NOT NULL,
