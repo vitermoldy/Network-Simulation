@@ -1490,3 +1490,5 @@ export class App {
     const arp = [...sim.arpCache(d.id)];
     const key = JSON.stringify([d.id, topo.rev, routes, mac, arp, sim.converging, [...sim.dnsCache]]);
     if (key === this.deviceKey) return;
+    // Never pull a form out from under someone typing in it; redraw once they leave.
+    if (box.contains(document.activeElement) && (document.activeElement as HTMLElement).matches('input, select')) {
