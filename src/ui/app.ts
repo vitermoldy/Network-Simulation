@@ -1035,3 +1035,6 @@ export class App {
     $('popover-action').focus();
   }
 
+  private popoverCancel: (() => void) | null = null;
+
+  private closePopover(): void {
