@@ -839,3 +839,5 @@ select {
   background: var(--accent-ink);
 }
 
+.switch input:focus-visible + .switch-track {
+  outline: 2px solid var(--accent);
