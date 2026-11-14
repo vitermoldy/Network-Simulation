@@ -49,3 +49,5 @@ export interface TcpHeader {
 export interface DnsBody {
   txid: number;
   question: string;
+  answer?: string;
+  rcode?: 'NOERROR' | 'NXDOMAIN';
