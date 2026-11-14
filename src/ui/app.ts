@@ -158,3 +158,5 @@ export class App {
     if (this.playing && moving) {
       sim.stepMode = $<HTMLInputElement>('stepmode').checked || this.stepOnce;
       const fast = sim.status === 'running' && sim.quiet && sim.lost.length === 0;
+      const r = sim.advance(dt * this.speed * (fast ? 6 : 1));
+      if (r === 'step') {
