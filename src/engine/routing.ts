@@ -82,3 +82,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
 
     const best = new Map<string, Route>();
     for (const a of attached.get(r.id) ?? []) {
+      best.set(a.network, { network: a.network, type: 'C', portId: a.portId, cost: 0 });
+    }
