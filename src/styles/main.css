@@ -1230,3 +1230,6 @@ select {
 
 .chip-ok {
   color: var(--ok);
+}
+
+.chip-change {
