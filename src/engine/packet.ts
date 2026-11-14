@@ -129,3 +129,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
       if (p.app.dns.rcode) f.push(['Status', p.app.dns.rcode]);
       if (p.app.dns.answer) f.push(['Jawaban', p.app.dns.answer]);
     } else {
+      p.app.lines.forEach((l, i) => f.push([i === 0 ? 'Baris awal' : 'Isi', l]));
+      if (p.app.part) f.push(['Bagian', `${p.app.part} dari ${p.app.parts}`]);
