@@ -4,3 +4,5 @@
 export type ThemeName = 'light' | 'dark';
 
 export interface SceneTheme {
+  background: number;
+  floor: number;
