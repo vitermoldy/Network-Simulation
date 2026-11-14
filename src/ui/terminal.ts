@@ -376,3 +376,5 @@ export class IosShell implements Shell {
       return [`% Invalid input detected at '^' marker.`, `  ${' '.repeat(this.prompt().length)}^`, 'Ketik ? untuk melihat perintah di mode ini.'];
     }
     if (best.length > 1) {
+      const exact = best.find((b) => b.cmd.words.every((w, i) => w === tokens[i].toLowerCase()));
+      if (!exact) return [`% Ambiguous command: "${line}"`];
