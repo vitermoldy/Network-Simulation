@@ -324,3 +324,6 @@ select {
 }
 
 .btn-danger:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--bad) 10%, transparent);
+}
+
