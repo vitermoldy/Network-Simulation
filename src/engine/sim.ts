@@ -853,3 +853,5 @@ export class Simulator {
     }
     const own = dev.ports.find((q) => q.ip === p.ip!.dst);
     if (own) {
+      this.note('info', dev.id, `${dev.name} menerima paket untuknya`, `IP tujuan ${p.ip.dst} adalah milik port ${own.name}, jadi paket ini tidak diteruskan. Router memprosesnya sendiri.`, 3, p.id);
+      this.hold(p, dev, inPort, [], TIMING.router, () => {
