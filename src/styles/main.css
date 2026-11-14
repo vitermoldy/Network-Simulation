@@ -1340,3 +1340,5 @@ select {
 }
 
 .dev-detail {
+  display: grid;
+  gap: 6px;
