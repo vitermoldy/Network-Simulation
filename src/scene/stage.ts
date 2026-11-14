@@ -317,3 +317,5 @@ export class Stage {
     for (const link of topo.links.values()) {
       lane++;
       if (this.cables.has(link.id)) continue;
+      const pa = this.portView(link.a);
+      const pb = this.portView(link.b);
