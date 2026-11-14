@@ -1132,3 +1132,5 @@ export class Simulator {
       ? `Server DNS mencari ${q.question} di catatannya dan menemukannya: ${answer}. Jawaban dikirim balik ke penanya.`
       : `Server DNS tidak punya catatan untuk ${q.question}. Jawabannya NXDOMAIN, artinya nama itu tidak ada.`, 7, p.id);
     const reply = this.newPacket({
+      flow: 'dns', label: answer ? 'DNS jawab' : 'NXDOMAIN', title: answer ? `DNS: ${q.question} = ${answer}` : `DNS: ${q.question} tidak ada`,
+      eth: { src: dev.ports[0].mac, dst: BROADCAST, type: 'IPv4' },
