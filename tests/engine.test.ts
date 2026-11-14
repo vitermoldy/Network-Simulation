@@ -126,3 +126,5 @@ describe('simulator', () => {
     expect(sim.status).toBe('done');
     expect(sim.phases.every((p) => p.status === 'done')).toBe(true);
     expect(sim.browser.state).toBe('done');
+    expect(sim.browser.parts).toEqual([true, true, true]);
+    expect(sim.log.some((l) => l.kind === 'retry')).toBe(false);
