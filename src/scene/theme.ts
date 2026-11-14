@@ -58,3 +58,5 @@ export const MATERIAL = {
   ledOff: 0x3a3e44,
   ledGreen: 0x22d36b,
   ledAmber: 0xffaa1c,
+  ledRed: 0xe0443a,
+  rocker: 0x1b1d21,
