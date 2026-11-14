@@ -772,3 +772,5 @@ export class Simulator {
   // ------------------------------------------------------------------ devices
 
   macTable(id: string): Map<string, string> {
+    let t = this.macTables.get(id);
+    if (!t) {
