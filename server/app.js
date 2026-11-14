@@ -114,3 +114,5 @@ export function createApi(getPool, database) {
     res.json({
       runs: rows.map((r) => ({
         ...r,
+        lossRate: Number(r.lossRate),
+        simSeconds: Number(r.simSeconds),
