@@ -186,3 +186,6 @@ export class App {
   // ------------------------------------------------------------------ controls
 
   private theme(): ThemeName {
+    return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+  }
+
