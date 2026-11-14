@@ -889,3 +889,5 @@ select {
   color: var(--bg);
 }
 
+.speed input:focus-visible + span {
+  outline: 2px solid var(--accent);
