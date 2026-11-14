@@ -425,3 +425,5 @@ export class Stage {
     return out;
   }
 
+  private setPointer(e: PointerEvent): void {
+    const rect = this.renderer.domElement.getBoundingClientRect();
