@@ -87,3 +87,5 @@ export class DeviceViewer {
       else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
         const off = this.camera.position.clone().sub(this.controls.target);
         off.applyAxisAngle(new THREE.Vector3(0, 1, 0), e.key === 'ArrowLeft' ? -0.25 : 0.25);
+        this.camera.position.copy(this.controls.target).add(off);
+      } else return;
