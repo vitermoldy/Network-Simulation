@@ -1003,3 +1003,5 @@ export class App {
     } else if (p.type === 'power' && topo.has(p.deviceId)) {
       const d = topo.device(p.deviceId);
       text = `Tombol power ${d.name}. Sekarang ${d.powered ? 'menyala, klik untuk mematikan' : 'mati, klik untuk menyalakan'}.`;
+    } else if (p.type === 'device' && topo.has(p.deviceId)) {
+      text = `${topo.device(p.deviceId).name}. Klik untuk mengatur, seret untuk memindahkan.`;
