@@ -829,3 +829,5 @@ export class Simulator {
       this.discard(p, dev.id, `MAC tujuan ${p.eth.dst} bukan milik port ${port.name}, frame dibuang.`);
       return;
     }
+    if (p.arp) {
+      if (p.arp.op === 'request' && port.ip && p.arp.targetIp === port.ip) {
