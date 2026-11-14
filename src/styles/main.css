@@ -2379,3 +2379,5 @@ tbody th {
     gap: 14px;
   }
 
+  .flow li {
+    flex: 1;
