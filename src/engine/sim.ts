@@ -167,3 +167,5 @@ interface Retx {
   dev: Device;
   make: (retry: number) => Packet;
   tries: number;
+  maxTries: number;
+  rto: number;
