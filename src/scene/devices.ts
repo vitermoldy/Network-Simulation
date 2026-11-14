@@ -453,3 +453,5 @@ function buildServer(dev: Device): Build {
   const hdd = led(0.02);
   hdd.position.set(0.06, h - 0.18, z + 0.01);
   group.add(hdd);
+  addPort(b, dev, 0, 0, 0.42, z, { w: 0.18, h: 0.14 });
+  b.power = { hit: button.hit, glow: button.glow, button: button.button, leds: [button.ring] };
