@@ -721,3 +721,5 @@ select {
 
 .flow li {
   position: relative;
+  display: grid;
+  padding: 6px 12px;
