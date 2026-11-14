@@ -1589,3 +1589,5 @@ export class App {
         <button type="button" class="btn btn-small ${d.powered ? 'btn-secondary' : 'btn-primary'}" data-act="power">${d.powered ? 'Matikan' : 'Nyalakan'}</button>
         <button type="button" class="btn btn-small btn-ghost" data-act="focus" ${this.stage ? '' : 'disabled'}>Lihat dari dekat</button>
         <button type="button" class="btn btn-small btn-danger" data-act="remove">Hapus perangkat</button>
+      </div>
+      <h3 class="sub">Port${editable ? ' dan IP' : ''}</h3>
