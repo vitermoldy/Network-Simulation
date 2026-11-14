@@ -1176,3 +1176,5 @@ export class App {
   // ------------------------------------------------------------------ history and saved designs
 
   private bindHistoryPanel(): void {
+    $('db-retry').addEventListener('click', () => void this.refreshDb());
+    $('layout-form').addEventListener('submit', async (e) => {
