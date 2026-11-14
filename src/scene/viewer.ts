@@ -10,3 +10,5 @@ import { buildDevice, refreshLive, signatureOf, type DeviceView, type Pick } fro
 import { SCENE_THEMES, type ThemeName } from './theme';
 
 export class DeviceViewer {
+  private renderer: THREE.WebGLRenderer;
+  private scene = new THREE.Scene();
