@@ -932,3 +932,5 @@ export class Stage {
   dispose(): void {
     this.observer.disconnect();
     this.renderer.dispose();
+  }
+}
