@@ -193,3 +193,5 @@ function buildRoundButton(deviceId: string, r = 0.075) {
   const glow = std(0x2f3237, { roughness: 0.35 });
   const button = new THREE.Group();
   button.add(mesh(new THREE.CylinderGeometry(r, r, 0.04, 32).rotateX(Math.PI / 2), glow, false));
+  const [c, ctx] = makeCanvas(96, 96);
+  ctx.strokeStyle = '#e9ecef';
