@@ -601,3 +601,5 @@ export class Topology {
   hostByIp(ip: string): Device | undefined {
     for (const d of this.devices.values()) if (isHost(d) && d.ports[0].ip === ip) return d;
     return undefined;
+  }
+}
