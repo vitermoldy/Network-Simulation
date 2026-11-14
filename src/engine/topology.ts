@@ -32,3 +32,5 @@ export interface Services {
 }
 
 export interface Device {
+  id: string;
+  kind: DeviceKind;
