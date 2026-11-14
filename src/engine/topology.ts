@@ -597,3 +597,5 @@ export class Topology {
     return out;
   }
 
+  /** The server whose port carries `ip`, if any. */
+  hostByIp(ip: string): Device | undefined {
