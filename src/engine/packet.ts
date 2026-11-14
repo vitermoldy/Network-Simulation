@@ -14,3 +14,5 @@ export interface EthHeader {
 export interface ArpBody {
   op: 'request' | 'reply';
   senderMac: string;
+  senderIp: string;
+  targetMac: string;
