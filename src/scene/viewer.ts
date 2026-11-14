@@ -7,3 +7,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import type { Simulator } from '../engine/sim';
 import { buildPlug, cableMaterial, tube } from './cables';
 import { buildDevice, refreshLive, signatureOf, type DeviceView, type Pick } from './devices';
+import { SCENE_THEMES, type ThemeName } from './theme';
+
+export class DeviceViewer {
