@@ -1320,3 +1320,5 @@ export class Simulator {
 
   private tcpClose(dev: Device): void {
     const c = this.client;
+    if (this.status !== 'running' || c.tcp !== 'established') return;
+    c.tcp = 'fin-wait';
