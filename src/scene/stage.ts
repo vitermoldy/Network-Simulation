@@ -674,3 +674,6 @@ export class Stage {
     offset.applyAxisAngle(new THREE.Vector3(0, 1, 0), angle);
     this.camera.position.copy(this.controls.target).add(offset);
     this.controls.update();
+  }
+
+  tilt(delta: number): void {
