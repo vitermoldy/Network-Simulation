@@ -524,3 +524,5 @@ export class Simulator {
     if (dev.powered === on) return;
     this.topo.setPower(deviceId, on);
     if (!on) {
+      for (const p of dev.ports) {
+        const link = this.topo.linkOf(p.id);
