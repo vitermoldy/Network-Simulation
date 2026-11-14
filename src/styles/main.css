@@ -1298,3 +1298,5 @@ select {
 }
 
 .power {
+  display: inline-flex;
+  align-items: center;
