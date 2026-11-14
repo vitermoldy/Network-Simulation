@@ -319,3 +319,5 @@ export class Stage {
       if (this.cables.has(link.id)) continue;
       const pa = this.portView(link.a);
       const pb = this.portView(link.b);
+      if (!pa || !pb) continue;
+      const curve = cableCurve(pa, pb, boxes, lane % 3);
