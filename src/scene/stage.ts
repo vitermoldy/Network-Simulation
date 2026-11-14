@@ -227,3 +227,5 @@ export class Stage {
     const h = Math.max(1, this.container.clientHeight);
     this.renderer.setSize(w, h);
     this.labels.setSize(w, h);
+    this.camera.aspect = w / h;
+    this.camera.fov = w / h < 0.9 ? 54 : w / h < 1.4 ? 44 : 38;
