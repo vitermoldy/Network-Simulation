@@ -605,3 +605,5 @@ export class App {
     if ($('devwin-sub').textContent !== sub) $('devwin-sub').textContent = sub;
     if (this.dwTab === 'fisik') {
       if (this.viewer && this.viewer.deviceId !== d.id) this.viewer.show(d.id);
+      this.renderPorts();
+    } else if (this.dwTab === 'config') this.renderDevice();
