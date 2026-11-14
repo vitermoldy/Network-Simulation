@@ -258,3 +258,5 @@ describe('simulator', () => {
     const srv = sim.addDevice('server', 12, 6);
     expect(sim.edit((t) => t.setPortIp('r4.3', '198.51.100.1', 24)).ok).toBe(true);
     sim.connect('r4.3', srv.ports[0].id);
+    expect(sim.edit((t) => t.autoAddress(srv.id)).ok).toBe(true);
+    expect(sim.edit((t) => t.setDnsRecord('dns', 'www.baru.test', srv.ports[0].ip!)).ok).toBe(true);
