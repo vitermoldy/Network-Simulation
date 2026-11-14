@@ -98,3 +98,5 @@ export function queuedRuns(): number {
 export async function saveRun(run: RunRecord): Promise<boolean> {
   try {
     await call('runs', { method: 'POST', body: JSON.stringify({ client: clientCode(), run }) });
+    return true;
+  } catch {
