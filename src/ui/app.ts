@@ -1505,3 +1505,5 @@ export class App {
       const cable = link
         ? `<button type="button" class="btn btn-small btn-danger" data-act="unplug" data-link="${link.id}">Cabut</button>`
         : `<span class="plug-row"><label class="sr-only" for="to-${p.id}">Sambungkan ${esc(p.name)} ke</label>
+            <select id="to-${p.id}"><option value="">Pilih port</option>${free.map((f) => `<option value="${f.id}">${esc(topo.portLabel(f.id))}</option>`).join('')}</select>
+            <button type="button" class="btn btn-small btn-secondary" data-act="plug" data-port="${p.id}">Pasang</button></span>`;
