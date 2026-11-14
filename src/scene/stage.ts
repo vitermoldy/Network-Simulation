@@ -36,3 +36,5 @@ interface CableView {
 interface PacketView {
   mesh: THREE.Mesh;
   mat: THREE.MeshStandardMaterial;
+  tag: CSS2DObject;
+  el: HTMLElement;
