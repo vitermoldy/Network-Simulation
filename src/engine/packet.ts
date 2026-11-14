@@ -123,3 +123,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
     rows.push({ layer, ...LAYER_NAMES[layer], proto, fields });
 
   if (p.app) {
+    const f: [string, string][] = [];
+    if (p.app.dns) {
