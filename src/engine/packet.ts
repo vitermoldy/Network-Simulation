@@ -157,3 +157,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
       ['Data', '32 byte'],
     ]);
   }
+  if (p.ip) {
+    row(3, 'IPv4', [
