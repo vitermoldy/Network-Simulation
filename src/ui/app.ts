@@ -1379,3 +1379,5 @@ export class App {
       const li = document.createElement('li');
       const chip = KIND_CHIP[l.kind];
       li.innerHTML = `<button type="button" class="entry kind-${l.kind}" data-id="${l.id}">
+        <span class="entry-head"><span class="entry-time">${num(l.t)} s</span><span class="entry-dev">${esc(this.deviceName(l.deviceId))}</span>${chip ? `<span class="chip chip-${l.kind}">${chip}</span>` : ''}</span>
+        <span class="entry-title">${esc(l.title)}</span>
