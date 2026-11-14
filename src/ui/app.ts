@@ -535,3 +535,5 @@ export class App {
     if (!dialog.open) dialog.show();
     this.deviceKey = '';
     this.portsKey = '';
+    this.desktopKey = '';
+    this.showDwTab(tab);
