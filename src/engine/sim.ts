@@ -753,3 +753,6 @@ export class Simulator {
       if (!dev.powered) return;
       then();
     });
+  }
+
+  private arrive(f: Flight): void {
