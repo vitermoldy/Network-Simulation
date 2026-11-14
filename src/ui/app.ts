@@ -1312,3 +1312,5 @@ export class App {
     this.renderedVersion = this.sim.version;
     this.renderSources();
     this.renderStatus();
+    this.renderPhases();
+    this.renderLog();
