@@ -372,3 +372,5 @@ export class Stage {
       const z1 = allZ1 + 1.4;
       const group = new THREE.Group();
       const fillGeo = new THREE.ShapeGeometry(roundedRectShape(x0, z0, x1, z1, 0.4), 8);
+      fillGeo.rotateX(-Math.PI / 2);
+      const fill = new THREE.Mesh(fillGeo, new THREE.MeshBasicMaterial({ color: this.theme.zone, transparent: true, opacity: 0.85, depthWrite: false }));
