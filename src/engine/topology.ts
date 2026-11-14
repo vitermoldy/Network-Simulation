@@ -257,3 +257,5 @@ export class Topology {
   // ------------------------------------------------------------------ devices
 
   /** Adds a device of `kind` at a spot on the bench. Names count up per kind, like Packet Tracer. */
+  addDevice(kind: DeviceKind, x: number, z: number): Device {
+    let n = 1;
