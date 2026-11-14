@@ -900,3 +900,5 @@ export class Simulator {
     if (p.arp) {
       if (p.arp.op === 'request' && p.arp.targetIp === nic.ip) {
         this.note('info', dev.id, `${dev.name} menjawab ARP`, `ARP menanyakan ${nic.ip}, IP milik ${dev.name}. Balasan berisi MAC ${nic.mac}.`, 2, p.id);
+        this.hold(p, dev, inPort, [inPort], TIMING.host, () => {
+          const reply = this.newPacket({
