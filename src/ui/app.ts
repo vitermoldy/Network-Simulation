@@ -720,3 +720,5 @@ export class App {
     desk.addEventListener('click', (e) => {
       const t = e.target as HTMLElement;
       const app = t.closest<HTMLButtonElement>('[data-app]');
+      if (app) {
+        this.desktopApp = app.dataset.app as typeof this.desktopApp;
