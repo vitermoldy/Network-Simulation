@@ -76,3 +76,5 @@ describe('topology', () => {
   });
 
   it('saves and loads the whole network', () => {
+    const t = new Topology();
+    const pc = t.addDevice('pc', -12, 7);
