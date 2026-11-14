@@ -27,3 +27,6 @@ const MAX_ARP_TRIES = 3;
 const CLIENT_PORT = 49152;
 const DNS_PORT_CLIENT = 53001;
 const CLIENT_ISS = 1000;
+const SERVER_ISS = 5000;
+const SEGMENT = 400;
+
