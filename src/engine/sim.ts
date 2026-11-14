@@ -1510,3 +1510,5 @@ export class Simulator {
 
     if (t.len > 0) {
       if (s.state === 'syn-rcvd') {
+        this.acked('synack');
+        s.state = 'established';
