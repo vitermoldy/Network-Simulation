@@ -1173,3 +1173,6 @@ export class App {
     });
   }
 
+  // ------------------------------------------------------------------ history and saved designs
+
+  private bindHistoryPanel(): void {
