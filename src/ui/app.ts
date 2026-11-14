@@ -236,3 +236,5 @@ export class App {
     });
     $('reset').addEventListener('click', () => {
       this.sim.stop();
+      this.playing = false;
+      this.selectedPacket = null;
