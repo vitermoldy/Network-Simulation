@@ -29,3 +29,5 @@ export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
   },
   dark: {
     background: 0x0f1012,
+    floor: 0x17181a,
+    zone: 0x1d1f22,
