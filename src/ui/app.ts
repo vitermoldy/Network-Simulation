@@ -736,3 +736,5 @@ export class App {
     });
     desk.addEventListener('submit', (e) => {
       e.preventDefault();
+      const form = e.target as HTMLFormElement;
+      const f = new FormData(form);
