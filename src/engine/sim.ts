@@ -393,3 +393,5 @@ export class Simulator {
     if (!dev) return;
     this.note('info', dev.id, 'Input: perintah nslookup', `${dev.name} menanyakan nama ${name} ke server DNS-nya, tanpa membuka halaman apa pun.`, 7);
     this.schedule(0.6, () => {
+      this.setPhase('input', 'done');
+      this.dnsLookup();
