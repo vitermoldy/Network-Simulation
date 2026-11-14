@@ -103,3 +103,5 @@ export const DEFAULT_RECORDS: Record<string, string> = {
   'jaringan.test': '203.0.113.80',
 };
 
+const SPECS: DeviceSpec[] = [
+  { id: 'pc', kind: 'laptop', name: 'Laptop', x: -10.9, z: 1.1, ips: { 0: ['192.168.1.10', 24] }, gateway: '192.168.1.1', dnsServer: '172.16.0.53' },
