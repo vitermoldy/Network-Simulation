@@ -1098,3 +1098,5 @@ export class App {
         if (!sel?.value) {
           this.toast('Pilih dulu port tujuan di daftar sebelah tombol Pasang.');
           sel?.focus();
+          return;
+        }
