@@ -582,3 +582,5 @@ export class App {
         },
       });
       this.viewer.setTheme(this.theme());
+      this.viewerLoading = false;
+    }
