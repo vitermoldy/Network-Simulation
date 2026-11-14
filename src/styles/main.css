@@ -1103,3 +1103,5 @@ select {
   font-size: 13px;
 }
 
+.timer-name {
+  font-family: var(--font-mono);
