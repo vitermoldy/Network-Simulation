@@ -211,3 +211,5 @@ p {
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
+.field-prefix {
+  font-family: var(--font-mono);
