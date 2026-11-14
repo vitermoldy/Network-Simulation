@@ -143,3 +143,5 @@ export function createApi(getPool, database) {
     const client = codeOf(req.body?.client)
     if (!client) return res.status(400).json({ error: 'Kode klien tidak dikenal.' })
     const name = text(req.body?.name, 60).trim().replace(/\s+/g, ' ')
+    if (!name) return res.status(400).json({ error: 'Beri nama rancangannya dulu.' })
+    const data = req.body?.data
