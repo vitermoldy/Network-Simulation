@@ -764,3 +764,5 @@ export class Simulator {
       this.loseAt(f.packet, dev.id, `${dev.name} sedang mati.`);
       return;
     }
+    if (dev.kind === 'switch') this.switchIn(dev, f.to, f.packet);
+    else if (dev.kind === 'router') this.routerIn(dev, f.to, f.packet);
