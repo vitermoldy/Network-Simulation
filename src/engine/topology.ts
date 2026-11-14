@@ -346,3 +346,5 @@ export class Topology {
       if (o.id !== portId && o.ip === clean) return { ok: false, reason: `${clean} sudah dipakai ${this.portLabel(o.id)}. Satu IP hanya untuk satu port.` };
     }
     if (dev.kind === 'router') {
+      for (const q of dev.ports) {
+        if (q.id === portId || !q.ip || q.prefix === undefined) continue;
