@@ -243,3 +243,5 @@ export class IosShell implements Shell {
         ...show, ping,
         { words: ['exit'], help: 'keluar', run: () => ['', `${this.hostname} con0 is now available`, '', 'Press RETURN to get started.'] },
       ];
+      return [...list, { words: ['?'], help: '', run: help(list) }];
+    }
