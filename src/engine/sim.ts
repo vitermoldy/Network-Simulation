@@ -456,3 +456,5 @@ export class Simulator {
     this.history.clear();
     this.trace.clear();
     this.converging = false;
+    this.srtt = 0;
+    this.phases = PHASE_SETS[this.kind].map((p) => ({ ...p, status: 'waiting' }));
