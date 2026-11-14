@@ -317,3 +317,6 @@ function buildSwitch(dev: Device): Build {
     addPort(b, dev, i, colX(i), rowY(i), z, { w: holeW, h: holeH, flip: top, act: false, ledY: top ? 0.452 : 0.048 });
     b.ports[i].link.position.x = colX(i) - 0.035;
   }
+  addPort(b, dev, 24, 1.8, 0.25, z, { w: holeW, h: holeH, act: false, ledY: 0.1 });
+  addPort(b, dev, 25, 2.04, 0.25, z, { w: holeW, h: holeH, act: false, ledY: 0.1 });
+
