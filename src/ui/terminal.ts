@@ -156,3 +156,5 @@ export class IosShell implements Shell {
     });
   }
 
+  private commands(): Command[] {
+    const d = this.dev;
