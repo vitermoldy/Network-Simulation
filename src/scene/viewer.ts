@@ -169,3 +169,5 @@ export class DeviceViewer {
       const pos = new THREE.Vector3();
       const dir = new THREE.Vector3();
       p.anchor.getWorldPosition(pos);
+      p.anchor.getWorldDirection(dir);
+      const a = pos.clone().addScaledVector(dir, 0.42);
