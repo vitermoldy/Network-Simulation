@@ -493,3 +493,5 @@ function buildPc(dev: Device): Build {
     p.text('POWER', 0.0, th - 0.3, 0.04, { color: '#2a2e35' });
     p.text('Fa0', 0, 0.5, 0.05, { mono: true, weight: 500, color: '#2a2e35' });
   });
+  panel.position.set(-0.85, th / 2, td / 2 + 0.003);
+  group.add(panel);
