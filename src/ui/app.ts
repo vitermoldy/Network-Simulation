@@ -1292,3 +1292,5 @@ export class App {
       scenario: s.kind === 'web' ? this.runScenario : s.kind === 'ping' ? 'ping' : 'lookup',
       lossRate: s.lossRate,
       status: s.status === 'done' ? 'done' : 'failed',
+      failedPhase: s.phases.find((p) => p.status === 'failed')?.id,
+      reason: s.status === 'failed' ? s.browser.message : undefined,
