@@ -27,3 +27,5 @@ export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
     arrow: '#8b929d',
     shadow: 0.16,
   },
+  dark: {
+    background: 0x0f1012,
