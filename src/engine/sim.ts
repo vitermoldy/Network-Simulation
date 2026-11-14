@@ -1294,3 +1294,5 @@ export class Simulator {
 
   private tcpConnect(dev: Device): void {
     const c = this.client;
+    c.tcp = 'syn-sent';
+    c.synSentAt = this.time;
