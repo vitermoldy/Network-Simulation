@@ -479,3 +479,5 @@ export class Simulator {
     this.arpPending.clear();
     this.status = 'idle';
     this.phases = PHASES.map((p) => ({ ...p, status: 'waiting' }));
+    this.log = [];
+    const pc = this.topo.has(this.browser.deviceId) ? this.topo.device(this.browser.deviceId) : undefined;
