@@ -5,3 +5,5 @@ import { computeRoutes, lookup } from '../src/engine/routing';
 import { Simulator, type Scenario } from '../src/engine/sim';
 import { Topology } from '../src/engine/topology';
 
+function run(sim: Simulator, host = 'www.jaringan.test', limit = 600, source = 'pc'): void {
+  sim.start(host, 3, source);
