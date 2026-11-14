@@ -2425,3 +2425,6 @@ tbody th {
   .layer dl div {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .plug-row {
