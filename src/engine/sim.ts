@@ -147,3 +147,5 @@ export interface BrowserView {
   deviceId: string;
   url: string;
   state: BrowserState;
+  parts: boolean[];
+  message?: string;
