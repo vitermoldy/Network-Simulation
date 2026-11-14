@@ -191,3 +191,5 @@ function buildRoundButton(deviceId: string, r = 0.075) {
   ring.position.z = 0.018;
   group.add(ring);
   const glow = std(0x2f3237, { roughness: 0.35 });
+  const button = new THREE.Group();
+  button.add(mesh(new THREE.CylinderGeometry(r, r, 0.04, 32).rotateX(Math.PI / 2), glow, false));
