@@ -419,3 +419,5 @@ function buildServer(dev: Device): Build {
   const body = rounded(w, h, d, shared.server, 0.05);
   body.position.y = h / 2;
   body.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
+  group.add(body);
+  const b = newBuild(group, w, h, d, body);
