@@ -25,3 +25,5 @@ export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
     label: '#0b0c0e',
     labelMuted: '#5d6470',
     arrow: '#8b929d',
+    shadow: 0.16,
+  },
