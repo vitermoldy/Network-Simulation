@@ -16,3 +16,6 @@ import express from 'express'
 const CODE = /^[A-HJ-NP-Z2-9]{12}$/
 // ping and lookup are runs started from a Command Prompt or CLI rather than a web scenario.
 const SCENARIOS = new Set(['normal', 'loss', 'router-down', 'bad-domain', 'ping', 'lookup'])
+const PHASES = new Set(['input', 'arp', 'dns', 'tcp-open', 'http-req', 'http-res', 'output', 'tcp-close', 'icmp'])
+const MAX_LAYOUT = 512 * 1024
+
