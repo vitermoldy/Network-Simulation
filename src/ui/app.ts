@@ -1235,3 +1235,5 @@ export class App {
     $('db-status').dataset.state = 'loading';
     retry.hidden = true;
     try {
+      const h = await api.health();
+      const sent = await api.flushQueue();
