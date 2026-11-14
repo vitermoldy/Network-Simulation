@@ -1558,3 +1558,5 @@ export class App {
             <button type="submit" class="btn btn-small btn-secondary">Tambah catatan</button>
             <p class="form-error" hidden></p>
           </form>`;
+      }
+    }
