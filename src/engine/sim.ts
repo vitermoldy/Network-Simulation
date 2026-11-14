@@ -562,3 +562,5 @@ export class Simulator {
   disconnect(linkId: string): void {
     const link = this.topo.links.get(linkId);
     if (!link) return;
+    const label = `${this.topo.portLabel(link.a)} ke ${this.topo.portLabel(link.b)}`;
+    this.cutLink(linkId, 'Kabel dicabut saat paket masih di dalamnya.');
