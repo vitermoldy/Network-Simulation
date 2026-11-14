@@ -160,3 +160,5 @@ export class App {
       const fast = sim.status === 'running' && sim.quiet && sim.lost.length === 0;
       const r = sim.advance(dt * this.speed * (fast ? 6 : 1));
       if (r === 'step') {
+        this.playing = false;
+        this.stepOnce = false;
