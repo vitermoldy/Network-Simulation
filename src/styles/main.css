@@ -1821,3 +1821,5 @@ tbody th {
   position: fixed;
   inset: 84px 16px 16px auto;
   width: min(640px, calc(100vw - 32px));
+  height: auto;
+  max-height: none;
