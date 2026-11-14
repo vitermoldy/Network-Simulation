@@ -802,3 +802,5 @@ export class App {
     const form = el.querySelector<HTMLFormElement>('.term-in')!;
     const input = form.querySelector('input')!;
     form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const line = input.value;
