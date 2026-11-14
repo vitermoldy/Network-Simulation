@@ -1357,3 +1357,6 @@ export class App {
       ol.innerHTML = html;
       ol.dataset.html = html;
     }
+  }
+
+  private deviceName(id?: string): string {
