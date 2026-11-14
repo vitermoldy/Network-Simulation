@@ -112,3 +112,5 @@ export class DeviceViewer {
   private cast(e: PointerEvent): Pick | null {
     if (!this.view) return null;
     const rect = this.renderer.domElement.getBoundingClientRect();
+    this.pointer.set(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1);
+    this.raycaster.setFromCamera(this.pointer, this.camera);
