@@ -154,3 +154,5 @@ export function cableMaterial(): THREE.MeshStandardMaterial {
 
 export function tube(curve: THREE.Curve<THREE.Vector3>, radius = 0.038): THREE.TubeGeometry {
   const len = curve.getLength();
+  return new THREE.TubeGeometry(curve, Math.max(24, Math.round(len * 18)), radius, 10, false);
+}
