@@ -1178,3 +1178,5 @@ export class App {
   private bindHistoryPanel(): void {
     $('db-retry').addEventListener('click', () => void this.refreshDb());
     $('layout-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const input = $<HTMLInputElement>('layout-name');
