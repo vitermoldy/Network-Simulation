@@ -1367,3 +1367,5 @@ export class App {
   private renderLog(): void {
     const ol = $('log');
     const log = this.sim.log;
+    if (log.length === 0) {
+      if (!ol.querySelector('.empty')) ol.innerHTML = '<li class="empty">Belum ada kejadian. Setiap keputusan perangkat (meneruskan, membalas, membuang, mengirim ulang) akan tercatat di sini.</li>';
