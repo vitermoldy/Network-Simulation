@@ -1190,3 +1190,5 @@ export class App {
       }
       try {
         await api.saveLayout(name, this.sim.topo.toJSON());
+        err.hidden = true;
+        input.value = '';
