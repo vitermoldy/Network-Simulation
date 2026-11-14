@@ -1142,3 +1142,5 @@ export class App {
         const gw = this.sim.edit((t) => t.setHostField(id, 'gateway', String(f.get('gateway') ?? '')));
         const dns = f.has('dns') ? this.sim.edit((t) => t.setHostField(id, 'dnsServer', String(f.get('dns') ?? ''))) : { ok: true as const };
         res = !gw.ok ? gw : dns;
+        done = 'Gateway dan DNS disimpan.';
+      } else if (kind === 'record') {
