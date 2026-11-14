@@ -274,3 +274,5 @@ export class Topology {
   removeDevice(id: string): Device | undefined {
     const d = this.devices.get(id);
     if (!d) return undefined;
+    for (const p of d.ports) {
+      const l = this.linkOf(p.id);
