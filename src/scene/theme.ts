@@ -1,0 +1,3 @@
+// Scene colours for each theme. The devices keep their own casing colours in both themes
+// (they are objects on a bench); the bench, the zones and the labels follow the page.
+
