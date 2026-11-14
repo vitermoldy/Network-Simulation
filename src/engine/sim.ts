@@ -1022,3 +1022,5 @@ export class Simulator {
     }, true);
   }
 
+  private arpResolved(dev: Device, ip: string, mac: string, packetId: number): void {
+    this.arpCache(dev.id).set(ip, mac);
