@@ -247,3 +247,5 @@ export class Simulator {
 
   private queue: Task[] = [];
   private seq = 0;
+  private nextPacket = 1;
+  private nextFlight = 1;
