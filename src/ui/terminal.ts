@@ -287,3 +287,5 @@ export class IosShell implements Shell {
         words: ['ip', 'address'], help: 'ip address <IP> <subnet mask>',
         run: (args) => {
           if (!isRouter) return ['% Port switch tidak diberi IP di simulasi ini.'];
+          if (args.length < 2) return ['% Incomplete command. Contoh: ip address 10.0.50.1 255.255.255.0'];
+          const prefix = maskToPrefix(args[1]);
