@@ -271,3 +271,5 @@ describe('simulator', () => {
     sim.start('www.jaringan.test', 3);
     while (sim.time < 6) sim.advance(0.05);
     sim.removeDevice('pc');
+    expect(sim.status).toBe('failed');
+    for (let i = 0; i < 200; i++) sim.advance(0.05);
