@@ -131,3 +131,5 @@ export class App {
       console.error(err);
       const s = $('stage-state');
       s.classList.add('is-error');
+      s.textContent = 'Browser ini tidak bisa menampilkan 3D (WebGL mati atau tidak tersedia). Simulasinya tetap berjalan: ikuti langkahnya di panel Alur, dan atur perangkat di panel Perangkat.';
+      document.querySelectorAll<HTMLButtonElement>('.palette button, .stage-tools button').forEach((b) => {
