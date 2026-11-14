@@ -599,3 +599,5 @@ export class Stage {
     const narrow = w <= 640;
     // Device name tags are fixed-size HTML, so leave room for half a tag on each side.
     const free = {
+      left: -1 + (2 * (narrow ? 52 : 150)) / w,
+      right: 1 - (2 * (narrow ? 52 : 70)) / w,
