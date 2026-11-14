@@ -1296,3 +1296,5 @@ export class Simulator {
     const c = this.client;
     c.tcp = 'syn-sent';
     c.synSentAt = this.time;
+    this.setPhase('tcp-open', 'active');
+    this.note('info', this.clientId, 'Langkah 1: SYN', `${this.cname} membuka sambungan TCP ke ${c.serverIp} port 80. Langkah 1 dari 3: kirim SYN dengan nomor urut ${CLIENT_ISS}. Kalau tidak dibalas dalam ${fmt(RTO_INIT)}, SYN dikirim ulang.`, 4);
