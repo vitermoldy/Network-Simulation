@@ -1387,3 +1387,5 @@ export class App {
     }
     this.renderedLog = log.length;
     ol.querySelectorAll('.entry.is-latest').forEach((e) => e.classList.remove('is-latest'));
+    ol.appendChild(frag);
+    ol.lastElementChild?.querySelector('.entry')?.classList.add('is-latest');
