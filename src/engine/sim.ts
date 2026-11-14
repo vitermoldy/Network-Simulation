@@ -992,3 +992,5 @@ export class Simulator {
     if (!target) {
       this.loseAt(p, dev.id, `${dev.name} tidak menemukan gateway ${nextHop}: kabelnya terputus atau router-nya mati.`);
       return;
+    }
+    p.eth = { src: nic.mac, dst: target.mac, type: 'IPv4' };
