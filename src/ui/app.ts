@@ -1304,3 +1304,7 @@ export class App {
     };
     const ok = await api.saveRun(run);
     if (ok && this.tab === 'riwayat') void this.refreshDb();
+  }
+
+  // ------------------------------------------------------------------ rendering
+
