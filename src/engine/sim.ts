@@ -171,3 +171,6 @@ interface Retx {
   rto: number;
   firedAt: number;
   timer?: Task;
+  onGiveUp: () => void;
+}
+
