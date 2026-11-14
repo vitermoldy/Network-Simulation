@@ -1147,3 +1147,5 @@ export class Simulator {
 
   private clientReceive(dev: Device, p: Packet): void {
     const c = this.client;
+    if (p.app?.dns) {
+      if (c.dnsDone || p.app.dns.txid !== c.dnsTxid) return;
