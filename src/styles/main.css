@@ -1799,3 +1799,5 @@ tbody th {
   font-weight: 600;
 }
 
+.run.is-done .run-result {
+  color: var(--ok);
