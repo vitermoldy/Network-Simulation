@@ -613,3 +613,5 @@ export function buildDevice(dev: Device): DeviceView {
     powerLeds: b.power.leds,
     busyLeds: b.busy,
     hits: b.hits,
+    tagAnchor,
+    topLocal: b.top.clone(),
