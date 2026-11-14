@@ -107,3 +107,5 @@ export async function saveRun(run: RunRecord): Promise<boolean> {
 
 export async function flushQueue(): Promise<number> {
   const list = readQueue();
+  let sent = 0;
+  for (const run of list) {
