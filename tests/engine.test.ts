@@ -240,3 +240,5 @@ describe('simulator', () => {
     const sim = withScenario('normal');
     const pc = sim.addDevice('laptop', -12, 7);
     run(sim, 'www.jaringan.test', 600, pc.id);
+    expect(sim.status).toBe('failed');
+    expect(sim.browser.message).toContain('alamat IP');
