@@ -1075,3 +1075,5 @@ export class Simulator {
     const r = this.retx.get(key);
     if (!r) return false;
     if (r.timer) r.timer.cancelled = true;
+    this.retx.delete(key);
+    return true;
