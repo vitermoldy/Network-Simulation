@@ -804,3 +804,5 @@ export class App {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const line = input.value;
+      input.value = '';
+      this.termWrite(deviceId, [`${t.shell.prompt()}${line}`]);
