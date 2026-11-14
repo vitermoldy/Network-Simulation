@@ -62,3 +62,5 @@ function roundedRectShape(x0: number, z0: number, x1: number, z1: number, r: num
   const s = new THREE.Shape();
   s.moveTo(x0 + r, -z0);
   s.lineTo(x1 - r, -z0);
+  s.quadraticCurveTo(x1, -z0, x1, -z0 - r);
+  s.lineTo(x1, -z1 + r);
