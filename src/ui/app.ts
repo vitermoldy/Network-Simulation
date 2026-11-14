@@ -1574,3 +1574,6 @@ export class App {
     }
     if (isClient(d) && d.id === sim.clientId && sim.dnsCache.size) {
       extra += `<h3 class="sub">Cache DNS</h3>${this.table(['Nama', 'IP'], [...sim.dnsCache], '')}`;
+    }
+
+    box.innerHTML = `<div class="dev-detail">
