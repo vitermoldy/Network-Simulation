@@ -1468,3 +1468,5 @@ tbody th {
 }
 
 .layer {
+  border: 1px solid var(--line);
+  border-radius: var(--r);
