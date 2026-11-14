@@ -500,3 +500,5 @@ export class Topology {
       if (!(raw.kind in KIND_LABEL)) throw new Error(`Jenis perangkat ${String(raw.kind)} tidak dikenal.`);
       seen.add(raw.id);
       const names = portNames(raw.kind);
+      const d: Device = {
+        id: raw.id, kind: raw.kind, name: String(raw.name ?? raw.id).slice(0, 32), powered: raw.powered !== false,
