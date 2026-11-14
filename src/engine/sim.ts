@@ -859,3 +859,5 @@ export class Simulator {
         if (p.icmp?.type === 'echo-request') this.icmpReply(dev, p);
         else if (p.icmp?.type === 'echo-reply' && dev.id === this.client.deviceId) this.icmpReceive(dev, p);
         else this.discard(p, dev.id, 'tidak ada layanan di router ini untuk paket tersebut.');
+      });
+      return;
