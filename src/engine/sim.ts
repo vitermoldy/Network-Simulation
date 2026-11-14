@@ -338,3 +338,6 @@ export class Simulator {
       deviceId, host, dnsTxid: 4021, dnsDone: false, tcp: 'closed', synSentAt: 0, synRetried: false,
       sndNext: CLIENT_ISS, rcvNext: 0, getLen: 0, buffer: new Map(), complete: false,
     };
+    this.servers.clear();
+  }
+
