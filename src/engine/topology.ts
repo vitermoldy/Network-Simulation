@@ -95,3 +95,6 @@ interface DeviceSpec {
   gateway?: string;
   dnsServer?: string;
   services?: Services;
+  dnsRecords?: Record<string, string>;
+}
+
