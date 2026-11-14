@@ -906,3 +906,5 @@ export class Stage {
       if (!pv) return undefined;
       pv.anchor.getWorldPosition(p);
     } else if (target.type === 'cable') {
+      const c = this.cables.get(target.id);
+      if (!c) return undefined;
