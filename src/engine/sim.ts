@@ -505,3 +505,5 @@ export class Simulator {
     this.arpPending.clear();
     if (this.kind === 'web' && this.browser.state !== 'off') {
       this.browser.state = 'error';
+      this.browser.message = reason;
+    }
