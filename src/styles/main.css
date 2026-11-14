@@ -1528,3 +1528,5 @@ tbody th {
   font-size: 13px;
 }
 
+.layer dt {
+  color: var(--muted);
