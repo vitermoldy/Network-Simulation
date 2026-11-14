@@ -184,3 +184,5 @@ export function drawDesktop(ctx: CanvasRenderingContext2D, name: string, ip: str
   const H = SCREEN_H;
   if (!on) {
     ctx.fillStyle = '#060708';
+    ctx.fillRect(0, 0, W, H);
+    return;
