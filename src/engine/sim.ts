@@ -1262,3 +1262,5 @@ export class Simulator {
       c.buffer.set(t.seq, p);
       this.note('retry', this.clientId, `Segmen ${part} datang lebih dulu`, `Segmen ${part} (SEQ ${t.seq}) datang, tapi byte ${c.rcvNext} belum ada. TCP menyimpan segmen ini dulu dan membalas ACK ${c.rcvNext} lagi (ACK duplikat) supaya server tahu bagian mana yang hilang.`, 4, p.id);
     } else {
+      this.note('info', this.clientId, `Segmen ${part} ganda`, `Segmen ${part} sudah pernah diterima. ${this.cname} cukup membalas ACK ${c.rcvNext} lagi.`, 4, p.id);
+    }
