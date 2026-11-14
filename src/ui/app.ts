@@ -154,3 +154,5 @@ export class App {
     const dt = Math.min(0.1, (now - this.last) / 1000);
     this.last = now;
     const sim = this.sim;
+    const moving = sim.status === 'running' || !sim.quiet || sim.lost.length > 0;
+    if (this.playing && moving) {
