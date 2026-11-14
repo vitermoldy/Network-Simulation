@@ -640,3 +640,5 @@ export function showPower(v: DeviceView, on: boolean): void {
  */
 export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
   const topo = sim.topo;
+  const t = sim.time;
+  const on = d.powered;
