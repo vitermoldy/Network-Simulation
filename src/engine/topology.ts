@@ -177,3 +177,6 @@ export class Topology {
       if (s.dnsRecords) d.dnsRecords = { ...s.dnsRecords };
       this.insert(d);
     }
+    for (const [a, b] of DEFAULT_LINKS) this.connect(a, b);
+  }
+
