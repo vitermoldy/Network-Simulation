@@ -62,3 +62,5 @@ Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan r
 | Tampilan Fisik memakai penampil 3D terpisah | Satu perangkat sendirian, sebesar mungkin, bisa diputar; port, LED, dan colokan kabelnya terbaca. |
 | CLI gaya IOS dan Command Prompt bergaya Windows, keluaran berbahasa Inggris | Teks yang sama dengan yang dilihat mahasiswa di Packet Tracer; penjelasan tetap berbahasa Indonesia di panel Alur. |
 | Port router baru shutdown | Langkah `no shutdown` adalah bagian penting praktikum; sakelar Aktif di tab Config memberi jalan tanpa CLI. |
+| IP otomatis meniru hasil DHCP | Mahasiswa bisa cepat menyambung PC baru; tombolnya menjelaskan apa yang ditiru. |
+| MySQL untuk riwayat dan rancangan, simulator tetap jalan tanpa server | Pola yang sama dengan proyek pemilik yang lain (Express + mysql2, kode klien 12 huruf, antrean di browser). |
