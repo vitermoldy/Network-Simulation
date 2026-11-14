@@ -411,3 +411,6 @@ select {
   text-align: center;
   color: var(--muted);
   font-size: 15px;
+}
+
+.stage-state.is-error {
