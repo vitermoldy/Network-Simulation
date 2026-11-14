@@ -956,3 +956,5 @@ select {
   font-weight: 500;
 }
 
+.tabs [role="tab"]:hover {
+  color: var(--ink);
