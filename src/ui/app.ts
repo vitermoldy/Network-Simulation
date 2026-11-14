@@ -974,3 +974,5 @@ export class App {
       this.openDevice(p.deviceId);
       return;
     }
+    if (p.type === 'packet') {
+      this.selectedPacket = p.packetId;
