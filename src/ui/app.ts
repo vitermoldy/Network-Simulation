@@ -459,3 +459,5 @@ export class App {
     this.toast(`Klik tempat kosong di meja untuk menaruh ${KIND_LABEL[kind]}. Enter menaruhnya di tengah tampilan, Esc untuk batal.`);
   }
 
+  private stopPlacing(message?: string): void {
+    if (!this.placing) return;
