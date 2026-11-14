@@ -1734,3 +1734,6 @@ tbody th {
 .layout-form {
   display: grid;
   gap: 4px;
+  margin-bottom: 8px;
+}
+
