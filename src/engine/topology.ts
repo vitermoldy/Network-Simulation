@@ -554,3 +554,5 @@ export class Topology {
     };
     const union = (x: string, y: string) => {
       const rx = find(x);
+      const ry = find(y);
+      if (rx !== ry) parent.set(rx, ry);
