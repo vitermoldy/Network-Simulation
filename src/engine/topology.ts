@@ -218,3 +218,5 @@ export class Topology {
     return this.portIndex.has(id);
   }
 
+  deviceOf(portId: string): Device {
+    return this.device(this.port(portId).deviceId);
