@@ -334,3 +334,5 @@ describe('ping and nslookup', () => {
   it('keeps a port that is shut down dark until no shutdown', () => {
     const sim = withScenario('normal');
     sim.edit((t) => t.setPortDown('r1.0', true));
+    expect(sim.topo.carrier('sw.24')).toBe(false);
+    runPing(sim, 'pc', '192.168.1.1');
