@@ -160,3 +160,5 @@ export class Stage {
     sun.castShadow = true;
     sun.shadow.mapSize.set(2048, 2048);
     const sc = sun.shadow.camera;
+    sc.left = -22;
+    sc.right = 22;
