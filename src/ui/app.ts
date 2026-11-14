@@ -1182,3 +1182,5 @@ export class App {
       const input = $<HTMLInputElement>('layout-name');
       const err = $('layout-error');
       const name = input.value.trim();
+      if (!name) {
+        err.textContent = 'Beri nama rancangannya dulu, misalnya Lab 3.';
