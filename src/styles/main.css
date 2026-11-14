@@ -1743,3 +1743,6 @@ tbody th {
   margin: 0;
   padding: 0;
   display: grid;
+  gap: 6px;
+}
+
