@@ -264,3 +264,6 @@ describe('simulator', () => {
     expect(sim.status).toBe('done');
     const syn = [...sim.history.entries()].find(([, v]) => v[0].tcp?.flags.join() === 'SYN')!;
     expect(sim.trace.get(syn[0])!.at(-1)).toBe(srv.id);
+  });
+
+  it('fails cleanly when the sending PC is removed mid-run', () => {
