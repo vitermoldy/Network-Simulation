@@ -174,3 +174,5 @@ interface Retx {
   onGiveUp: () => void;
 }
 
+interface ClientState {
+  deviceId: string;
