@@ -508,3 +508,5 @@ export class App {
     if (hit) {
       this.toast(`${d.name} tidak bisa ditaruh di atas ${hit.name}.`);
       return false;
+    }
+    this.sim.moveDevice(id, x, z);
