@@ -224,3 +224,5 @@ p {
   border: 0;
   background: transparent;
   font-family: var(--font-mono);
+  font-size: 14px;
+  padding: 0 12px 0 2px;
