@@ -1411,3 +1411,5 @@ export class App {
     const role = this.stage?.activeRole ?? this.roleFromLog();
     document.querySelectorAll<HTMLLIElement>('#flow li').forEach((li) => {
       const on = li.dataset.role === role && this.sim.status !== 'idle';
+      li.classList.toggle('is-now', on);
+      if (on) li.setAttribute('aria-current', 'step');
