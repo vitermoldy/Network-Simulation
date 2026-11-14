@@ -451,3 +451,5 @@ export class Topology {
     while (this.links.has(id)) id = `k${this.nextLink++}`;
     const link: Link = { id, a, b };
     this.links.set(link.id, link);
+    this.portLink.set(a, link.id);
+    this.portLink.set(b, link.id);
