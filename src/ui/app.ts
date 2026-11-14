@@ -379,3 +379,6 @@ export class App {
 
   private clearUrlError(): void {
     $('url-error').hidden = true;
+    $('url').removeAttribute('aria-invalid');
+  }
+
