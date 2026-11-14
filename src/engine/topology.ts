@@ -160,3 +160,6 @@ export class Topology {
 
   constructor() {
     this.loadDefaults();
+  }
+
+  private loadDefaults(): void {
