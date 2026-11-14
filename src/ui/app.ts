@@ -1593,3 +1593,6 @@ export class App {
       <h3 class="sub">Port${editable ? ' dan IP' : ''}</h3>
       <ul class="ports">${portRows}</ul>
       ${extra}
+    </div>`;
+  }
+
