@@ -524,3 +524,5 @@ export class Topology {
     }
     this.devices.clear();
     this.links.clear();
+    this.portIndex.clear();
+    this.portLink.clear();
