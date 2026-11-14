@@ -2265,3 +2265,6 @@ tbody th {
 
   .top-tools .select-wrap {
     flex: 1;
+  }
+
+  .top-tools select {
