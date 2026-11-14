@@ -254,3 +254,5 @@ describe('simulator', () => {
   });
 
   it('reaches a new web server once DNS knows its name', () => {
+    const sim = withScenario('normal');
+    const srv = sim.addDevice('server', 12, 6);
