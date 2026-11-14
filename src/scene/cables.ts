@@ -49,3 +49,5 @@ export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
   const clear = (p: V2, q: V2) => !free.some((bx) => segmentHitsBox(p, q, bx));
   if (clear(a, b)) return [a, b];
   const pad = 0.16;
+  const corners: V2[] = [];
+  for (const bx of free) {
