@@ -1089,3 +1089,5 @@ export class Simulator {
   }
 
   /** The newest header version of a packet, wherever it is. */
+  packet(packetId: number): Packet | undefined {
+    const live = this.flights.find((x) => x.packet.id === packetId)?.packet ?? this.holds.find((x) => x.packet.id === packetId)?.packet;
