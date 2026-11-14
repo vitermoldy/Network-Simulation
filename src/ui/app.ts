@@ -1371,3 +1371,5 @@ export class App {
       if (!ol.querySelector('.empty')) ol.innerHTML = '<li class="empty">Belum ada kejadian. Setiap keputusan perangkat (meneruskan, membalas, membuang, mengirim ulang) akan tercatat di sini.</li>';
       this.renderedLog = 0;
       return;
+    }
+    if (this.renderedLog === 0) ol.innerHTML = '';
