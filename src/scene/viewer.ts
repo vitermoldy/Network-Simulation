@@ -179,3 +179,5 @@ export class DeviceViewer {
       lead.castShadow = true;
       this.leads.add(lead);
     }
+    if (!this.home) {
+      const box = new THREE.Box3().setFromObject(view.group);
