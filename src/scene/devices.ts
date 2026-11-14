@@ -447,3 +447,5 @@ function buildServer(dev: Device): Build {
   });
   panel.position.set(0, h / 2, d / 2 + 0.003);
   group.add(panel);
+  const button = buildRoundButton(dev.id);
+  button.group.position.set(0.3, h - 0.18, z);
