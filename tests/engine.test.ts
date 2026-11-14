@@ -280,3 +280,6 @@ function runPing(sim: Simulator, source: string, target: string): void {
   sim.startPing(source, target, 3);
   let guard = 0;
   while (sim.status === 'running' && sim.time < 600 && guard++ < 100000) sim.advance(0.05);
+}
+
+describe('ping and nslookup', () => {
