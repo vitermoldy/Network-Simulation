@@ -934,3 +934,5 @@ export class App {
     if (!p) {
       if (this.pendingPort) {
         this.setPending(null);
+        this.toast('Pemasangan kabel dibatalkan.');
+      }
