@@ -8,3 +8,5 @@ export interface Route {
   network: string;
   /** C = connected on one of my ports, O = learned from another router. */
   type: 'C' | 'O';
+  portId: string;
+  nextHop?: string;
