@@ -1142,3 +1142,6 @@ export class Simulator {
       },
       size: answer ? 90 : 74,
     });
+    this.hostSend(dev, reply);
+  }
+
