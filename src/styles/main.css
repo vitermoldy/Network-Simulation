@@ -458,3 +458,5 @@ select {
 
 .tag-off {
   display: none;
+  color: var(--bad);
+  font-weight: 600;
