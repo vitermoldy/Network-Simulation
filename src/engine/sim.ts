@@ -1105,3 +1105,7 @@ export class Simulator {
 
   private rto(): number {
     return this.srtt ? Math.min(30, Math.max(6, this.srtt * 1.6)) : RTO_INIT;
+  }
+
+  // ------------------------------------------------------------------ the browser on the laptop
+
