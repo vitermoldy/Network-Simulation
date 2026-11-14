@@ -865,3 +865,5 @@ export class App {
       if (this.selectedDevice === id) this.selectedDevice = [...this.sim.topo.devices.keys()][0] ?? '';
       this.toast(`${d.name} dihapus.`);
       this.deviceKey = '';
+      this.renderAll();
+    });
