@@ -881,3 +881,5 @@ export class Stage {
   }
 
   private updateMarker(): void {
+    const id = this.selected.deviceId;
+    const v = id ? this.devices.get(id) : undefined;
