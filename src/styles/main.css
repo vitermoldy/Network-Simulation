@@ -1814,3 +1814,6 @@ tbody th {
   color: var(--muted);
 }
 
+/* ------------------------------------------------------------------ device window */
+
+/* A floating window over the panel column, so the bench stays in view while a ping runs. */
