@@ -435,3 +435,5 @@ export class App {
     this.runScenario = kind === 'ping' ? 'normal' : 'normal';
     this.sim.scenario = 'normal';
     if (kind === 'ping') this.sim.startPing(deviceId, target, (Math.random() * 1e9) | 0);
+    else this.sim.startLookup(deviceId, target, (Math.random() * 1e9) | 0);
+    this.beginRun();
