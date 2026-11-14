@@ -7,3 +7,5 @@ export type TcpFlag = 'SYN' | 'ACK' | 'PSH' | 'FIN' | 'RST';
 
 export interface EthHeader {
   src: string;
+  dst: string;
+  type: 'ARP' | 'IPv4';
