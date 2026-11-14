@@ -1583,3 +1583,5 @@ export function describeRouteChanges(topo: Topology, before: Map<string, Route[]
       if (r.type === 'C') continue;
       if (!o || o.portId !== r.portId || o.nextHop !== r.nextHop) {
         out.push(`${topo.device(rid).name}: ke ${r.network} sekarang lewat ${topo.device(r.viaRouter!).name}.`);
+      }
+    }
