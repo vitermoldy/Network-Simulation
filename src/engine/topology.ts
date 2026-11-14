@@ -506,3 +506,5 @@ export class Topology {
         gateway: typeof raw.gateway === 'string' && validIp(raw.gateway) ? raw.gateway : undefined,
         dnsServer: typeof raw.dnsServer === 'string' && validIp(raw.dnsServer) ? raw.dnsServer : undefined,
         ports: names.map((n, i) => {
+          const src = raw.ports?.[i];
+          const ok = src && typeof src.ip === 'string' && validIp(src.ip) && Number.isInteger(src.prefix);
