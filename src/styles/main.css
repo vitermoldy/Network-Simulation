@@ -2129,3 +2129,5 @@ tbody th {
   white-space: nowrap;
 }
 
+.term-in input {
+  flex: 1;
