@@ -902,3 +902,6 @@ export class App {
     this.selectedLink = linkId;
     this.confirm(`Kabel ${this.sim.topo.portLabel(link.a)} ke ${this.sim.topo.portLabel(link.b)}`, 'Cabut kabel', () => this.unplug(linkId), () => {
       this.selectedLink = null;
+    });
+  }
+
