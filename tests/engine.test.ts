@@ -184,3 +184,5 @@ describe('simulator', () => {
   });
 
   it('loses a packet on a cable pulled mid-flight and recovers on the other path', () => {
+    const sim = withScenario('normal');
+    sim.start('www.jaringan.test', 3);
