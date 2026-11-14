@@ -1204,3 +1204,5 @@ export class App {
       if (!b) return;
       const id = Number(b.dataset.layout);
       const name = b.dataset.name ?? '';
+      if (b.dataset.op === 'load') {
+        this.confirm(`Muat rancangan ${name}? Jaringan di meja sekarang akan diganti.`, 'Muat rancangan', async () => {
