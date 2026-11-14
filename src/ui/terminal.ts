@@ -192,3 +192,5 @@ export class IosShell implements Shell {
         words: ['show', 'version'], help: 'jenis perangkat dan jumlah port',
         run: () => [`${d.name}, ${isRouter ? 'router' : 'switch'} simulasi`, `${d.ports.length} port, MAC dasar ${d.ports[0].mac}`, `Status: ${d.powered ? 'menyala' : 'mati'}`],
       },
+    ];
+    if (isRouter) {
