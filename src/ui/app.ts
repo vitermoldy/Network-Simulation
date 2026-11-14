@@ -416,3 +416,5 @@ export class App {
     this.lastStatus = 'running';
     this.playing = true;
     this.stepOnce = step;
+    this.selectedPacket = null;
+    this.followLatest = true;
