@@ -70,3 +70,5 @@ const PHASE_SETS: Record<RunKind, Omit<Phase, 'status'>[]> = {
     { id: 'http-res', title: 'HTTP: halaman dikirim balik', layer: 'Aplikasi, TCP', role: 'output' },
     { id: 'output', title: 'Halaman tampil di layar pengirim', layer: 'Aplikasi', role: 'input' },
     { id: 'tcp-close', title: 'TCP: sambungan ditutup', layer: 'Transport', role: 'process' },
+  ],
+  ping: [
