@@ -384,3 +384,6 @@ export class App {
 
   private syncThemeButton(): void {
     $('theme').setAttribute('aria-label', this.theme() === 'dark' ? 'Pakai tema terang' : 'Pakai tema gelap');
+    $('theme').title = this.theme() === 'dark' ? 'Tema terang' : 'Tema gelap';
+  }
+
