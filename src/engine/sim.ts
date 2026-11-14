@@ -1211,3 +1211,5 @@ export class Simulator {
         if (!c.synRetried) this.srtt = this.time - c.synSentAt;
         c.rcvNext = t.seq + 1;
         c.sndNext = CLIENT_ISS + 1;
+        c.tcp = 'established';
+        this.note('ok', this.clientId, 'Langkah 3: ACK', `SYN-ACK diterima. ${this.cname} membalas ACK ${c.rcvNext} ("nomor ${t.seq} sudah kuterima"). Sambungan TCP terbuka. Waktu bolak-balik terukur ${fmt(this.srtt || this.time - c.synSentAt)}, jadi timer kirim ulang diatur ${fmt(this.rto())}.`, 4, p.id);
