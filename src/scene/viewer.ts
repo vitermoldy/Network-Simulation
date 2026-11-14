@@ -138,3 +138,5 @@ export class DeviceViewer {
     return '';
   }
 
+  /** Shows one device; called when its window opens or the device changes. */
+  show(deviceId: string): void {
