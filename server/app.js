@@ -153,3 +153,5 @@ export function createApi(getPool, database) {
       return res.status(400).json({ error: 'Rancangan bukan JSON.' })
     }
     if (parsed?.version !== 1 || !Array.isArray(parsed.devices) || !Array.isArray(parsed.links)) return res.status(400).json({ error: 'Isi rancangan tidak dikenali.' })
+    await touch(client)
+    await getPool().query(
