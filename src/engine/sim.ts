@@ -638,3 +638,5 @@ export class Simulator {
     }
     if (this.status !== 'running') {
       this.routes = computeRoutes(this.topo);
+      this.version++;
+      return;
