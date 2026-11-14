@@ -37,3 +37,6 @@ function segmentHitsBox(a: V2, b: V2, box: Box2): boolean {
     }
   }
   return true;
+}
+
+const inside = (p: V2, b: Box2) => p[0] > b.x0 && p[0] < b.x1 && p[1] > b.z0 && p[1] < b.z1;
