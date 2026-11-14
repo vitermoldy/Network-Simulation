@@ -1443,3 +1443,5 @@ export class App {
     play.setAttribute('aria-pressed', String(this.playing));
     const v = `${num(s.time)} s`;
     const cv = $('clock-value');
+    if (cv.textContent !== v) cv.textContent = v;
+    ($('step') as HTMLButtonElement).disabled = s.status !== 'idle' && s.status !== 'running' && s.quiet;
