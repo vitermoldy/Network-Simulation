@@ -712,3 +712,5 @@ select {
   left: 12px;
   bottom: 42px;
   margin: 0;
+  padding: 0;
+  list-style: none;
