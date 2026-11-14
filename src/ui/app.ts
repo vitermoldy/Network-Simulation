@@ -1323,3 +1323,5 @@ export class App {
   private renderSources(): void {
     const clients = [...this.sim.topo.devices.values()].filter(isClient);
     const key = clients.map((c) => `${c.id}:${c.name}`).join('|');
+    if (key === this.sourceKey) return;
+    this.sourceKey = key;
