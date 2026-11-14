@@ -729,3 +729,5 @@ export class Stage {
   }
 
   private updateDevices(): void {
+    const topo = this.sim.topo;
+    for (const v of this.devices.values()) {
