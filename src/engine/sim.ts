@@ -1098,3 +1098,5 @@ export class Simulator {
 
   timers(): TimerView[] {
     return [...this.retx.values()].map((r) => ({
+      key: r.key, label: r.label, deviceId: r.dev.id, rto: r.rto, tries: r.tries,
+      remaining: Math.max(0, (r.timer?.t ?? this.time) - this.time),
