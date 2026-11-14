@@ -162,3 +162,5 @@ function rockerTexture(): THREE.CanvasTexture {
   return canvasTexture(c);
 }
 
+/** A rocker switch: I (on) at the top, O (off) at the bottom. */
+function buildRocker(deviceId: string, scale = 1) {
