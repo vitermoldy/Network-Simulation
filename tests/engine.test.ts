@@ -23,3 +23,6 @@ describe('ip', () => {
     expect(networkOf('10.0.12.2', 30)).toBe('10.0.12.0/30');
     expect(inNetwork('203.0.113.80', '203.0.113.0/24')).toBe(true);
     expect(inNetwork('203.0.114.80', '203.0.113.0/24')).toBe(false);
+  });
+});
+
