@@ -88,3 +88,6 @@ function writeQueue(list: RunRecord[]): void {
   } catch {
     /* the run is lost if storage is blocked; the history is a convenience */
   }
+}
+
+export function queuedRuns(): number {
