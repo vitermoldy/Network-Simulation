@@ -1219,3 +1219,5 @@ export class Simulator {
       } else if (c.tcp === 'established') {
         this.note('info', this.clientId, 'SYN-ACK ulang', `SYN-ACK datang lagi, tanda ACK tadi tidak sampai ke server. ${this.cname} mengirim ACK sekali lagi.`, 4, p.id);
         this.sendAck(dev, 'ACK');
+      }
+      return;
