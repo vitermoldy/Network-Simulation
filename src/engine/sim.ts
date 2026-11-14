@@ -436,3 +436,5 @@ export class Simulator {
   private resetRun(label: string, sourceId: string, seed?: number): void {
     const host = label;
     if (seed !== undefined) this.rng = mulberry32(seed);
+    this.output = [];
+    this.failReason = '';
