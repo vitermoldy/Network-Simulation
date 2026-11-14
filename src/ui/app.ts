@@ -1517,3 +1517,5 @@ export class App {
             <label class="sr-only" for="pf-${p.id}">Prefix ${esc(p.name)}</label>
             <input id="pf-${p.id}" name="prefix" class="mono prefix" value="${p.prefix ?? 24}" inputmode="numeric" autocomplete="off" />
             <button type="submit" class="btn btn-small btn-ghost">Simpan</button>
+            <p class="form-error" hidden></p>
+          </form>`
