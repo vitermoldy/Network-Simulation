@@ -250,3 +250,6 @@ export class App {
     );
     $<HTMLSelectElement>('loss').addEventListener('change', (e) => {
       this.sim.lossRate = Number((e.target as HTMLSelectElement).value);
+    });
+
+    document.querySelectorAll<HTMLButtonElement>('[data-cam]').forEach((b) =>
