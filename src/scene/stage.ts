@@ -826,3 +826,5 @@ export class Stage {
       if (!dev) continue;
       const from = this.anchorPoint(h.inPort);
       if (!from) continue;
+      const v = this.ensurePacket(h.packet);
+      seen.add(h.packet.id);
