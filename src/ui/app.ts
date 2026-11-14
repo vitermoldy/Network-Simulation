@@ -964,3 +964,5 @@ export class App {
       this.setPending(p.portId);
       this.closePopover();
       this.toast(`Kabel dari ${topo.portLabel(p.portId)}. Sekarang klik port kosong di perangkat lain. Tekan Esc untuk batal.`);
+      return;
+    }
