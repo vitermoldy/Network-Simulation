@@ -1,2 +1,5 @@
 // The simulator: a discrete-event clock that moves packets over cables, lets each device make its
 // own decision when a packet arrives, and runs the small programs on the hosts (the browser on the
+// laptop, the DNS server, the web server). Decisions use the topology as it is at that moment, so
+// pulling a cable or switching a router off mid-run really loses packets and changes the route.
+
