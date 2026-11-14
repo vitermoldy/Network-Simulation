@@ -581,3 +581,5 @@ export class Topology {
   /** The port that owns `ip` inside the same broadcast domain as `fromPort`, if it is reachable. */
   findInSegment(fromPort: string, ip: string): Port | undefined {
     const seg = this.segments();
+    const mine = seg.get(fromPort);
+    if (mine === undefined) return undefined;
