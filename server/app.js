@@ -50,3 +50,5 @@ const count = (v) => (Number.isInteger(v) && v >= 0 && v < 1e6 ? v : 0)
 /** Checks a run from the browser; returns the row values or a reason. */
 function cleanRun(run) {
   if (!run || typeof run !== 'object') return { error: 'Data percobaan kosong.' }
+  const host = text(run.host, 253).toLowerCase()
+  if (!/^[a-z0-9.-]+$/.test(host)) return { error: 'Alamat web tidak sah.' }
