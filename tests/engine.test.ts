@@ -19,3 +19,5 @@ function withScenario(s: Scenario): Simulator {
 
 describe('ip', () => {
   it('works out networks and membership', () => {
+    expect(networkOf('192.168.1.10', 24)).toBe('192.168.1.0/24');
+    expect(networkOf('10.0.12.2', 30)).toBe('10.0.12.0/30');
