@@ -12,3 +12,5 @@ import type { Simulator } from '../engine/sim';
 import { canvasTexture, drawBrowser, drawDesktop, keyboardTexture, makeCanvas, printFace, SCREEN_H, SCREEN_W, type FacePrinter } from './textures';
 import { MATERIAL } from './theme';
 
+export type Pick =
+  | { type: 'port'; portId: string }
