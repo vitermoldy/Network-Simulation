@@ -1155,3 +1155,5 @@ export class Simulator {
       if (p.app.dns.rcode === 'NXDOMAIN' || !p.app.dns.answer) {
         if (this.kind === 'lookup') {
           this.say(`Server:  ${server}`);
+          this.say(`Address: ${server}`);
+          this.say('');
