@@ -1383,3 +1383,5 @@ export class Simulator {
     }
     const p = this.newPacket({
       flow: 'icmp', label: `Ping ${seq}`, title: `ICMP echo request ${seq} ke ${pg.ip}`,
+      eth: { src: '', dst: BROADCAST, type: 'IPv4' },
+      ip: { src: dev.kind === 'router' ? '' : dev.ports[0].ip!, dst: pg.ip!, ttl: dev.kind === 'router' ? 255 : 128, proto: 'ICMP' },
