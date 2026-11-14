@@ -267,3 +267,5 @@ export class Topology {
     // A router fresh out of the box has every interface shut down until someone enables it.
     if (kind === 'router') for (const p of d.ports) p.down = true;
     this.insert(d);
+    this.rev++;
+    return d;
