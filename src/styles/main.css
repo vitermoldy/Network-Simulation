@@ -1359,3 +1359,5 @@ select {
 }
 
 .dev-kind {
+  font-size: 13.5px;
+  color: var(--muted);
