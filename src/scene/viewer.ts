@@ -96,3 +96,5 @@ export class DeviceViewer {
   }
 
   setTheme(name: ThemeName): void {
+    const t = SCENE_THEMES[name];
+    this.scene.background = new THREE.Color(t.background);
