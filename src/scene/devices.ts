@@ -506,3 +506,5 @@ function buildPc(dev: Device): Build {
   const neck = mesh(new THREE.BoxGeometry(0.08, 0.45, 0.06), shared.bezel);
   neck.position.set(0.55, 0.25, 0.0);
   group.add(stand, neck);
+  const mon = rounded(1.62, 1.06, 0.07, shared.bezel, 0.02);
+  mon.position.set(0.55, 0.95, 0.05);
