@@ -651,3 +651,5 @@ export class Stage {
     if (animate) this.animateTo(target, position);
     else {
       this.controls.target.copy(target);
+      this.camera.position.copy(position);
+      this.controls.update();
