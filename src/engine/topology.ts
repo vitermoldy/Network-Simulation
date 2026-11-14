@@ -576,3 +576,6 @@ export class Topology {
       out.set(id, ids.get(root)!);
     }
     return out;
+  }
+
+  /** The port that owns `ip` inside the same broadcast domain as `fromPort`, if it is reachable. */
