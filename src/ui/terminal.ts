@@ -198,3 +198,5 @@ export class IosShell implements Shell {
         words: ['show', 'ip', 'route'], help: 'tabel routing',
         run: () => {
           const routes = sim.routes.get(d.id) ?? [];
+          const out = ['Codes: C - connected, O - OSPF (link-state di simulasi ini)', '', 'Gateway of last resort is not set', ''];
+          for (const r of routes) {
