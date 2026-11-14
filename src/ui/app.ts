@@ -345,3 +345,5 @@ export class App {
       }
       const pick = t.closest<HTMLButtonElement>('button[data-pick]');
       if (pick) this.openDevice(pick.dataset.pick!);
+    });
+    this.bindDevicePanel();
