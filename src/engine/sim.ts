@@ -690,3 +690,5 @@ export class Simulator {
     if (!this.topo.carrier(portId)) {
       this.loseAt(packet, dev.id, `${this.topo.deviceOf(to).name} di ujung kabel sedang mati, jadi tidak ada sinyal di kabel itu.`);
       return;
+    }
+    packet.hops++;
