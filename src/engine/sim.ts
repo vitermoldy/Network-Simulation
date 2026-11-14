@@ -947,3 +947,5 @@ export class Simulator {
 
   /** Port 80 closed: answer with RST, so the sender knows at once instead of waiting. */
   private refuse(dev: Device, p: Packet): void {
+    if (!p.tcp || p.tcp.flags.includes('RST')) return;
+    this.note('error', dev.id, 'Port 80 tertutup', `${dev.name} tidak menjalankan layanan HTTP. Server membalas RST, artinya "tidak ada yang menerima sambungan di port ini".`, 4, p.id);
