@@ -56,3 +56,5 @@ export class DeviceViewer {
     key.shadow.camera.bottom = -4;
     key.shadow.radius = 5;
     this.scene.add(key);
+    const fill = new THREE.DirectionalLight(0xffffff, 0.6);
+    fill.position.set(-4, 3, 6);
