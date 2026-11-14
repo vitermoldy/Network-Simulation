@@ -63,3 +63,5 @@ export type ResultOf<T> = { ok: true; value: T } | Fail;
 export const KIND_LABEL: Record<DeviceKind, string> = {
   pc: 'PC',
   laptop: 'Laptop',
+  switch: 'Switch',
+  router: 'Router',
