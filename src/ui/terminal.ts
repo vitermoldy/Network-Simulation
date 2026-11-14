@@ -142,3 +142,6 @@ export class IosShell implements Shell {
       '',
       'Press RETURN to get started!',
       '',
+    ];
+  }
+
