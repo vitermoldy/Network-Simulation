@@ -617,3 +617,5 @@ export class Simulator {
     this.version++;
   }
 
+  /**
+   * Any other settings change (IP, gateway, DNS, services, records, names) goes through here,
