@@ -197,3 +197,5 @@ export class App {
     $('url').addEventListener('input', () => this.clearUrlError());
     $('source').addEventListener('change', () => this.clearUrlError());
     $<HTMLSelectElement>('scenario').addEventListener('change', (e) => {
+      const v = (e.target as HTMLSelectElement).value as Scenario;
+      const url = $<HTMLInputElement>('url');
