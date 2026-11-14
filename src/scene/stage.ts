@@ -216,3 +216,5 @@ export class Stage {
     this.activeRole = undefined;
   }
 
+  refreshText(): void {
+    this.layoutKey = '';
