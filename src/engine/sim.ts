@@ -851,3 +851,5 @@ export class Simulator {
       this.discard(p, dev.id, 'frame tanpa paket IP tidak diteruskan router.');
       return;
     }
+    const own = dev.ports.find((q) => q.ip === p.ip!.dst);
+    if (own) {
