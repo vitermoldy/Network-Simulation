@@ -2349,3 +2349,5 @@ tbody th {
     width: calc(100% - 24px);
   }
 
+  .hint {
+    top: 132px;
