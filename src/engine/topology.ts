@@ -78,3 +78,5 @@ export function roleOf(d: Device): Role {
 export const isHost = (d: Device) => d.kind === 'pc' || d.kind === 'laptop' || d.kind === 'server';
 export const isClient = (d: Device) => d.kind === 'pc' || d.kind === 'laptop';
 
+/** Port names follow Cisco Packet Tracer: Fa0 on hosts, Fa0/1 to Fa0/24 and Gi0/1 to Gi0/2 on a switch. */
+function portNames(kind: DeviceKind): string[] {
