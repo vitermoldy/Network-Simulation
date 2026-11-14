@@ -121,3 +121,5 @@ export function createApi(getPool, database) {
     })
   })
 
+  api.get('/layouts/:client', async (req, res) => {
+    const client = codeOf(req.params.client)
