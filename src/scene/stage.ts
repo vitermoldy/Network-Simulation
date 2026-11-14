@@ -120,3 +120,5 @@ export class Stage {
   private tween?: { t: number; dur: number; fromPos: THREE.Vector3; toPos: THREE.Vector3; fromTarget: THREE.Vector3; toTarget: THREE.Vector3 };
   private observer: ResizeObserver;
 
+  hovered: Pick | null = null;
+  pendingPort: string | null = null;
