@@ -846,3 +846,5 @@ export class App {
   }
 
   /** Lines a ping or nslookup run printed since the last frame go to the terminal that started it. */
+  private streamOutput(): void {
+    const s = this.stream;
