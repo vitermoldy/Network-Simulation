@@ -15,3 +15,6 @@ export interface Port {
   ip?: string;
   prefix?: number;
   /** Administratively down ("shutdown" in the CLI). New routers start this way, as in Packet Tracer. */
+  down?: boolean;
+}
+
