@@ -407,3 +407,5 @@ select {
   inset: 0;
   display: grid;
   place-items: center;
+  padding: 24px;
+  text-align: center;
