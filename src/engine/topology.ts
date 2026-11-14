@@ -356,3 +356,5 @@ export class Topology {
       }
     }
     p.ip = clean;
+    p.prefix = prefix;
+    this.rev++;
