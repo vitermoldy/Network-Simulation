@@ -303,3 +303,5 @@ export class Topology {
   }
 
   rename(id: string, name: string): Result {
+    const clean = name.trim().replace(/\s+/g, ' ');
+    if (!clean) return { ok: false, reason: 'Nama tidak boleh kosong.' };
