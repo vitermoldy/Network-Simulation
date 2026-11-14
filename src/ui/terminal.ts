@@ -358,3 +358,5 @@ export class IosShell implements Shell {
     for (const cmd of cmds) {
       if (tokens.length < cmd.words.length) continue;
       let ok = true;
+      for (let i = 0; i < cmd.words.length; i++) {
+        const t = tokens[i].toLowerCase();
