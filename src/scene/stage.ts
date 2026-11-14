@@ -766,3 +766,5 @@ export class Stage {
   private ensurePacket(p: Packet): PacketView {
     let v = this.packets.get(p.id);
     if (v) return v;
+    const mat = new THREE.MeshStandardMaterial({ color: this.packetColor(), emissive: this.packetColor(), emissiveIntensity: 0.35, roughness: 0.35, transparent: true });
+    const mesh = new THREE.Mesh(packetGeo, mat);
