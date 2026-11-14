@@ -163,3 +163,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   if (main) {
     ctx.fillStyle = '#0b0c0e';
     ctx.font = `600 50px ${FONT_TEXT}`;
+    ctx.fillText('Halo dari Server Web', 48, body(160));
+    ctx.fillStyle = '#3b4048';
