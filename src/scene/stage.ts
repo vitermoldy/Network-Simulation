@@ -860,3 +860,5 @@ export class Stage {
       v.tag.removeFromParent();
       v.el.remove();
       this.scene.remove(v.mesh);
+      v.mat.dispose();
+      this.packets.delete(id);
