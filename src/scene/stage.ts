@@ -307,3 +307,5 @@ export class Stage {
   private rebuildCables(only?: string): void {
     const topo = this.sim.topo;
     for (const c of [...this.cables.values()]) {
+      if (only && !c.a.startsWith(`${only}.`) && !c.b.startsWith(`${only}.`)) continue;
+      this.scene.remove(c.group);
