@@ -372,3 +372,5 @@ function buildRouter(dev: Device): Build {
     p.text('ROUTER', -0.3, 0.07, 0.036, { color: '#d9dee4', weight: 650 });
     dev.ports.forEach((port, i) => p.text(port.name, portX(i), 0.47, 0.034, { color: '#d9dee4', mono: true, weight: 500 }));
     p.text('CON', 1.32, 0.47, 0.03, { color: '#7fb6e6', mono: true, weight: 600 });
+  });
+  panel.position.set(0, h / 2, d / 2 + 0.002);
