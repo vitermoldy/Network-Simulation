@@ -489,3 +489,5 @@ function buildPc(dev: Device): Build {
     p.ctx.fillRect(0, 0, (tw - 0.06) * p.scale, (th - 0.06) * p.scale);
     const [sx, sy] = p.px(-0.28, th - 0.42);
     p.ctx.fillStyle = '#2b2e33';
+    p.ctx.fillRect(sx, sy, 0.56 * p.scale, 0.06 * p.scale);
+    p.text('POWER', 0.0, th - 0.3, 0.04, { color: '#2a2e35' });
