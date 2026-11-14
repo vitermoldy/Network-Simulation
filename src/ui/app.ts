@@ -1318,3 +1318,6 @@ export class App {
     this.renderDeviceList();
     if (this.tab === 'paket') this.renderPacket();
     this.renderDeviceWindow();
+  }
+
+  private renderSources(): void {
