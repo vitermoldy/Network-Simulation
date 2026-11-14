@@ -127,3 +127,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
 
   const body = (y: number) => y + 78;
   ctx.textAlign = 'left';
+  if (view.state === 'idle') {
+    ctx.fillStyle = '#5d6470';
