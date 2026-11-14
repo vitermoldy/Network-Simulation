@@ -212,3 +212,5 @@ describe('simulator', () => {
   });
 
   it('stops after each decision in step mode', () => {
+    const sim = withScenario('normal');
+    sim.stepMode = true;
