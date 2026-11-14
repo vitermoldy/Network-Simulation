@@ -36,3 +36,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
   }
 
   // Two routers are neighbours when they have ports in one broadcast domain and one subnet.
+  const edges = new Map<string, Edge[]>();
+  for (const r of routers) {
