@@ -180,3 +180,6 @@ export class App {
     if (++this.timerTick % 6 === 0) this.renderTimers();
     this.renderFlow();
     this.renderPlaybar();
+    requestAnimationFrame((t) => this.tick(t));
+  }
+
