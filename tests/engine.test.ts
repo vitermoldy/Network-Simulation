@@ -41,3 +41,5 @@ describe('topology', () => {
 
   it('puts every port of a working switch in one broadcast domain', () => {
     const t = new Topology();
+    const seg = t.segments();
+    expect(seg.get('pc.0')).toBe(seg.get('r1.0'));
