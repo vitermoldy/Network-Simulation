@@ -86,3 +86,6 @@ export function createApi(getPool, database) {
   api.use((req, res, next) => (getPool() ? next() : res.status(503).json({ error: 'Database belum terhubung.' })))
 
   const touch = (client) => getPool().query('INSERT INTO clients (id) VALUES (?) ON DUPLICATE KEY UPDATE last_seen = CURRENT_TIMESTAMP', [client])
+  const codeOf = (raw) => (CODE.test(String(raw ?? '')) ? String(raw) : null)
+
+  api.post('/runs', async (req, res) => {
