@@ -267,3 +267,5 @@ export class App {
         }
       }),
     );
+    $('follow').addEventListener('click', () => {
+      if (!this.stage) return;
