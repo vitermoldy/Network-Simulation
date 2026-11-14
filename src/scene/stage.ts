@@ -741,3 +741,5 @@ export class Stage {
         const pending = this.pendingPort === p.id;
         const candidate = !!this.pendingPort && free && !pending && !this.pendingPort.startsWith(`${v.device.id}.`);
         p.frameMat.color.setHex(pending || hover ? this.theme.zoneActive : candidate ? 0x8a93ec : p.frameColor);
+        p.frameMat.emissive.setHex(pending || hover ? this.theme.zoneActive : 0x000000);
+        p.frameMat.emissiveIntensity = pending || hover ? 0.5 : 0;
