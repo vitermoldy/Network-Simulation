@@ -176,3 +176,5 @@ export class App {
     this.viewer?.frame();
     this.streamOutput();
     if (this.dwOpen() && this.dwTab === 'desktop' && this.desktopApp === 'browser') this.paintBrowser();
+    if (sim.version !== this.renderedVersion) this.renderAll();
+    if (++this.timerTick % 6 === 0) this.renderTimers();
