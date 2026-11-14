@@ -718,3 +718,5 @@ export class App {
     $('vw-reset').addEventListener('click', () => this.viewer?.reset());
     const desk = $('desktop');
     desk.addEventListener('click', (e) => {
+      const t = e.target as HTMLElement;
+      const app = t.closest<HTMLButtonElement>('[data-app]');
