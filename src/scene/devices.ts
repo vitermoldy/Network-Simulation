@@ -658,3 +658,5 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
   }
   for (const l of v.busyLeds) setLed(l, on && anyActive ? MATERIAL.ledAmber : on && l === v.busyLeds[0] && d.kind === 'switch' ? MATERIAL.ledGreen : null);
   if (v.screen) {
+    const b = sim.browser;
+    const mine = b.deviceId === d.id;
