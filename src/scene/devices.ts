@@ -246,3 +246,5 @@ function addPort(b: Build, dev: Device, index: number, x: number, y: number, z: 
   const frameColor = o.frame ?? MATERIAL.metal;
   const p = buildPort(port.id, o.w, o.h, frameColor, o.flip);
   p.group.position.set(x, y, z);
+  b.group.add(p.group);
+  const link = led(0.02);
