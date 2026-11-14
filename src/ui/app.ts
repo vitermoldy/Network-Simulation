@@ -1158,3 +1158,5 @@ export class App {
       if (err) err.hidden = true;
       this.toast(done);
       this.deviceDirty = false;
+      this.deviceKey = '';
+      (document.activeElement as HTMLElement | null)?.blur();
