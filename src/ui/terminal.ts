@@ -29,3 +29,6 @@ function maskToPrefix(mask: string): number | undefined {
   return undefined;
 }
 
+export const prefixToMask = (prefix: number) => intToIp(maskOf(prefix));
+const pad = (s: string, n: number) => (s.length >= n ? `${s} ` : s + ' '.repeat(n - s.length));
+
