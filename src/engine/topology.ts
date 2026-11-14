@@ -4,3 +4,6 @@
 
 import { inNetwork, ipToInt, maskOf, networkOf } from './ip';
 
+export type DeviceKind = 'pc' | 'laptop' | 'switch' | 'router' | 'server';
+export type Role = 'input' | 'process' | 'output';
+
