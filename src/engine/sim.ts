@@ -835,3 +835,5 @@ export class Simulator {
         this.note('info', dev.id, `${dev.name} menjawab ARP`, `ARP menanyakan ${p.arp.targetIp}, yaitu IP port ${port.name} milik router ini. Router membalas dengan MAC ${port.mac} dan sekalian mencatat MAC ${p.arp.senderIp}.`, 2, p.id);
         this.hold(p, dev, inPort, [inPort], TIMING.router, () => {
           const reply = this.newPacket({
+            flow: 'arp', label: 'ARP balas', title: `ARP: ${port.ip} ada di ${port.mac}`,
+            eth: { src: port.mac, dst: p.arp!.senderMac, type: 'ARP' },
