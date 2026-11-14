@@ -386,3 +386,5 @@ export class Stage {
       const tex = canvasTexture(c);
       drawZoneLabel(ctx, c.width, c.height, ZONE_TEXT[role][0], ZONE_TEXT[role][1], this.theme.label, this.theme.labelMuted);
       tex.needsUpdate = true;
+      const label = new THREE.Mesh(new THREE.PlaneGeometry(lw, lh), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false }));
+      label.rotation.x = -Math.PI / 2;
