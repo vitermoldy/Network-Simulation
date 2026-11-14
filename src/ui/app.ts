@@ -46,3 +46,6 @@ const SCENARIO_TEXT: Record<Scenario, string> = {
   'bad-domain': 'Skenario nama domain tidak ada: server DNS tidak mengenal nama yang diketik.',
 };
 
+const SCENARIO_SHORT: Record<string, string> = { normal: 'Normal', loss: 'Paket hilang', 'router-down': 'Router mati', 'bad-domain': 'Domain salah', ping: 'ping', lookup: 'nslookup' };
+
+const ICON = {
