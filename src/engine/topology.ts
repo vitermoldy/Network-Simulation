@@ -455,3 +455,6 @@ export class Topology {
     this.portLink.set(b, link.id);
     this.rev++;
     return { ok: true, value: link };
+  }
+
+  disconnect(linkId: string): Link | undefined {
