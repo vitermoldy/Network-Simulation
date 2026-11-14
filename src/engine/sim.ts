@@ -47,3 +47,6 @@ export const PAGE_PARTS: { lines: string[]; shows: string }[] = [
 const RESPONSE_LEN = SEGMENT * PAGE_PARTS.length;
 
 export type PhaseId = 'input' | 'arp' | 'dns' | 'tcp-open' | 'http-req' | 'http-res' | 'output' | 'tcp-close' | 'icmp';
+export type PhaseStatus = 'waiting' | 'active' | 'done' | 'failed' | 'skipped';
+
+export interface Phase {
