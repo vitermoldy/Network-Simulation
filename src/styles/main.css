@@ -1278,3 +1278,5 @@ select {
   transition: background-color 0.15s ease;
 }
 
+.dev-pick:hover {
+  background: var(--surface);
