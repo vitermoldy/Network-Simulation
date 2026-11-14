@@ -952,3 +952,5 @@ export class Simulator {
     this.hostSend(dev, this.tcpPacket(dev, p.ip!.src, 80, p.tcp.src, ['RST', 'ACK'], 0, p.tcp.seq + Math.max(1, p.tcp.len), 'RST', 'TCP RST: sambungan ditolak', 0));
   }
 
+  /** A host hands a packet to its network card: pick the next hop, find its MAC, send. */
+  private hostSend(dev: Device, p: Packet): void {
