@@ -105,3 +105,5 @@ export const DEFAULT_RECORDS: Record<string, string> = {
 
 const SPECS: DeviceSpec[] = [
   { id: 'pc', kind: 'laptop', name: 'Laptop', x: -10.9, z: 1.1, ips: { 0: ['192.168.1.10', 24] }, gateway: '192.168.1.1', dnsServer: '172.16.0.53' },
+  { id: 'sw', kind: 'switch', name: 'Switch Lab', x: -6.1, z: 1.2 },
+  { id: 'dns', kind: 'server', name: 'Server DNS', x: -2.9, z: -3.1, ips: { 0: ['172.16.0.53', 24] }, gateway: '172.16.0.1', services: { dns: true, http: false }, dnsRecords: { ...DEFAULT_RECORDS } },
