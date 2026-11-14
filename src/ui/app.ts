@@ -1058,3 +1058,5 @@ export class App {
   }
 
   private showTab(tab: Tab): void {
+    this.tab = tab;
+    for (const t of TABS) {
