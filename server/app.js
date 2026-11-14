@@ -159,3 +159,6 @@ export function createApi(getPool, database) {
        ON DUPLICATE KEY UPDATE data = VALUES(data), devices = VALUES(devices), links = VALUES(links), updated_at = VALUES(updated_at)`,
       [client, name, data, parsed.devices.length, parsed.links.length],
     )
+    res.json({ ok: true })
+  })
+
