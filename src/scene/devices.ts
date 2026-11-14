@@ -44,3 +44,5 @@ export interface DeviceView {
   button?: THREE.Object3D;
   powerLeds: THREE.Mesh[];
   /** Extra LEDs that blink with any traffic (SYST, ACT, HDD). */
+  busyLeds: THREE.Mesh[];
+  hits: THREE.Mesh[];
