@@ -2322,3 +2322,6 @@ tbody th {
   .ctl-source,
   .ctl-url {
     flex-basis: 100%;
+    width: 100%;
+  }
+
