@@ -163,3 +163,5 @@ export interface TimerView {
 
 interface Retx {
   key: string;
+  label: string;
+  dev: Device;
