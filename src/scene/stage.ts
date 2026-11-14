@@ -796,3 +796,5 @@ export class Stage {
     const topo = this.sim.topo;
     const seen = new Set<number>();
     const color = this.packetColor();
+    let lead: { p: Packet; rank: number; role?: Role } | undefined;
+    const consider = (p: Packet, rank: number, deviceId: string) => {
