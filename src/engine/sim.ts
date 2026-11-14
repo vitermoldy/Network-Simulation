@@ -1430,3 +1430,5 @@ export class Simulator {
     this.say('');
     this.say(`Ping statistics for ${pg.ip}:`);
     this.say(`    Packets: Sent = ${pg.sent}, Received = ${pg.received}, Lost = ${lost} (${Math.round((lost / pg.sent) * 100)}% loss),`);
+    if (pg.received) {
+      const min = Math.min(...pg.times);
