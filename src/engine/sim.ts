@@ -1562,3 +1562,5 @@ export class Simulator {
     let at = gwPort?.deviceId;
     const chain: string[] = [];
     for (let i = 0; at && i < 16; i++) {
+      const r = lookup(this.routes.get(at), clientIp);
+      if (!r || r.type === 'C' || !r.viaRouter) break;
