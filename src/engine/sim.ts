@@ -262,3 +262,5 @@ export class Simulator {
 
   constructor(topo = new Topology(), seed = 7) {
     this.topo = topo;
+    this.rng = mulberry32(seed);
+    this.routes = computeRoutes(topo);
