@@ -816,3 +816,5 @@ export class App {
         t.history.push(line);
         t.index = t.history.length;
       }
+      el.querySelector('.term-prompt')!.textContent = t.shell.prompt();
+    });
