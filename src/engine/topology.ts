@@ -70,3 +70,5 @@ export const KIND_LABEL: Record<DeviceKind, string> = {
 
 /** Where a device sits in the Input, Proses, Output story. */
 export function roleOf(d: Device): Role {
+  if (d.kind === 'pc' || d.kind === 'laptop') return 'input';
+  if (d.kind === 'server' && d.services?.http) return 'output';
