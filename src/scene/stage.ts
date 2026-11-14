@@ -408,3 +408,5 @@ export class Stage {
       arrow.rotation.x = -Math.PI / 2;
       arrow.position.set((a.x1 + b.x0) / 2, 0.006, allZ1 + 1.4 + 0.6);
       this.zones[0].group.add(arrow);
+      this.arrows.push({ ctx, tex });
+    }
