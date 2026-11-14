@@ -136,3 +136,5 @@ export function buildPlug(port: PortView, cableMat: THREE.Material): THREE.Group
   latch.position.set(0, -h * 0.55, 0.12);
   g.add(latch);
   const boot = new THREE.Mesh(new THREE.CylinderGeometry(h * 0.42, h * 0.62, 0.2, 16).rotateX(Math.PI / 2), cableMat);
+  boot.position.z = 0.31;
+  boot.castShadow = true;
