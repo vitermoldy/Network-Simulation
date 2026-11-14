@@ -176,3 +176,5 @@ function buildRocker(deviceId: string, scale = 1) {
   paddle.position.z = 0.04;
   group.add(paddle);
   const hit = hitBox(0.3 * scale, 0.36 * scale, 0.14, { type: 'power', deviceId });
+  hit.position.z = 0.05;
+  group.add(hit);
