@@ -924,3 +924,5 @@ select {
 
 .panel {
   grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
