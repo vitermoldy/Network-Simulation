@@ -18,3 +18,5 @@ export interface Port {
   down?: boolean;
 }
 
+/** Cisco-style long names for the CLI: Fa0/1 is FastEthernet0/1, G0/0 is GigabitEthernet0/0. */
+export function longPortName(name: string): string {
