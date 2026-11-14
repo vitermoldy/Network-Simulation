@@ -758,3 +758,5 @@ export class App {
           err.hidden = false;
           return;
         }
+        err.hidden = true;
+        this.toast('IP Configuration disimpan.');
