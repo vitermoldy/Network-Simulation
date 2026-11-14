@@ -1707,3 +1707,5 @@ tbody th {
   gap: 4px 18px;
 }
 
+.inline-form input {
+  flex: 1;
