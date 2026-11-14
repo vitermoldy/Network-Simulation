@@ -191,3 +191,5 @@ export class App {
 
   private bindControls(): void {
     $('request').addEventListener('submit', (e) => {
+      e.preventDefault();
+      this.send();
