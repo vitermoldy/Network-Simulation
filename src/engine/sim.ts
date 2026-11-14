@@ -667,3 +667,5 @@ export class Simulator {
     return { retry: 0, hops: 0, ...p, id: this.nextPacket++ };
   }
 
+  private record(p: Packet, deviceId: string, outgoing: boolean): void {
+    if (outgoing) {
