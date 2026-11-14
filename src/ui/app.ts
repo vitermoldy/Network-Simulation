@@ -377,3 +377,5 @@ export class App {
     });
   }
 
+  private clearUrlError(): void {
+    $('url-error').hidden = true;
