@@ -593,3 +593,5 @@ export class Stage {
     const z1 = Math.max(...boxes.map((b) => b.z1)) + 2.6;
     const corners = [x0, x1].flatMap((x) => [z0, z1].flatMap((z) => [0, 2.3].map((y) => new THREE.Vector3(x, y, z))));
     // The free part of the view, in normalised screen units: the palette covers the left edge,
+    // the camera tools the top, the flow bar the bottom.
+    const w = Math.max(1, this.container.clientWidth);
