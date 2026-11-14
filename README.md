@@ -80,3 +80,5 @@ src/engine/   mesin simulasi: alamat IP, topologi, routing link-state, paket, da
 src/scene/    meja 3D (three.js): model perangkat, kabel, paket, dan tampilan dekat satu perangkat
 src/ui/       panel, jendela perangkat, Command Prompt, dan CLI gaya IOS
 src/data/     pemanggil API MySQL dan antrean riwayat
+server/       server Express + mysql2
+tests/        tes Vitest untuk mesinnya
