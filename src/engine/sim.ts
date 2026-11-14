@@ -149,3 +149,6 @@ export interface BrowserView {
   state: BrowserState;
   parts: boolean[];
   message?: string;
+  serverIp?: string;
+}
+
