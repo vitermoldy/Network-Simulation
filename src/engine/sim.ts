@@ -499,3 +499,5 @@ export class Simulator {
     this.setPhase(phase, 'failed');
     for (const p of this.phases) if (p.status === 'active') p.status = 'failed';
     this.status = 'failed';
+    for (const r of this.retx.values()) if (r.timer) r.timer.cancelled = true;
+    this.retx.clear();
