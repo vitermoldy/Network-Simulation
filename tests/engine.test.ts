@@ -34,3 +34,5 @@ describe('topology', () => {
     expect(t.port('sw.0').name).toBe('Fa0/1');
     expect(t.port('sw.24').name).toBe('Gi0/1');
     expect(t.peer('sw.24')).toBe('r1.0');
+    expect(t.connect('sw.1', 'sw.2').ok).toBe(false);
+    expect(t.connect('pc.0', 'sw.3').ok).toBe(false);
