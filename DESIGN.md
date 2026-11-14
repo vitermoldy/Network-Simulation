@@ -58,3 +58,5 @@ Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan r
 | Zona Input, Proses, Output di lantai, dihitung dari posisi perangkat | Pemilik meminta alur input proses output; zona ikut bergeser saat perangkat dipindah atau ditambah. |
 | Bilah alur di bawah meja dan zona yang menyala kobalt | Menunjukkan di tahap mana paket berada tanpa membaca log. |
 | Paket kotak kobalt dengan label pendek (SYN, DNS?, Data 2/3) | Satu warna aksen untuk "yang sedang bergerak"; paket hilang merah, paket yang diabaikan abu, selalu dengan kata, bukan warna saja. |
+| Klik perangkat membuka jendela, bukan memindah panel | Mengikuti Packet Tracer. Jendela tidak modal dan menempel di kanan, jadi meja tetap terlihat saat ping berjalan. |
+| Tampilan Fisik memakai penampil 3D terpisah | Satu perangkat sendirian, sebesar mungkin, bisa diputar; port, LED, dan colokan kabelnya terbaca. |
