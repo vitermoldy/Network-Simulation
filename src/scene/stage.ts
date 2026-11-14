@@ -621,3 +621,5 @@ export class Stage {
         r = Math.max(r, p.x);
         b = Math.min(b, p.y);
         t = Math.max(t, p.y);
+      }
+      return { l, r, b, t };
