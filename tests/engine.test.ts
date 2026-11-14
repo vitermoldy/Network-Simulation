@@ -166,3 +166,5 @@ describe('simulator', () => {
     for (const [id] of resent) expect(sim.trace.get(id)).toContain('r3');
   });
 
+  it('stops at DNS when the name does not exist', () => {
+    const sim = withScenario('normal');
