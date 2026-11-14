@@ -100,3 +100,5 @@ export function setLed(m: THREE.Mesh, color: number | null): void {
     mat.emissiveIntensity = 0;
   } else {
     mat.color.setHex(color);
+    mat.emissive.setHex(color);
+    mat.emissiveIntensity = 1.9;
