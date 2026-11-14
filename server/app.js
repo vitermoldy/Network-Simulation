@@ -112,3 +112,5 @@ export function createApi(getPool, database) {
       [client],
     )
     res.json({
+      runs: rows.map((r) => ({
+        ...r,
