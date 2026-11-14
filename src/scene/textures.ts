@@ -194,3 +194,5 @@ export function drawDesktop(ctx: CanvasRenderingContext2D, name: string, ip: str
   ctx.fillRect(0, 0, W, H);
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
+  ctx.fillStyle = '#eef0f3';
+  ctx.font = `600 54px ${FONT_TEXT}`;
