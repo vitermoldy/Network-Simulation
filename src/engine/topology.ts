@@ -127,3 +127,5 @@ const DEFAULT_LINKS: [string, string][] = [
 
 /** Footprint half sizes, so placement can refuse overlaps before a model exists. */
 export const SIZE: Record<DeviceKind, { w: number; d: number }> = {
+  pc: { w: 2.6, d: 1.6 },
+  laptop: { w: 2.2, d: 1.9 },
