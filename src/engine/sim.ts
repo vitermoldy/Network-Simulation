@@ -186,3 +186,5 @@ interface ClientState {
   sndNext: number;
   rcvNext: number;
   getLen: number;
+  buffer: Map<number, Packet>;
+  complete: boolean;
