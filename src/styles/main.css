@@ -800,3 +800,5 @@ select {
   cursor: pointer;
 }
 
+.switch input {
+  position: absolute;
