@@ -269,3 +269,6 @@ export class Topology {
     this.insert(d);
     this.rev++;
     return d;
+  }
+
+  removeDevice(id: string): Device | undefined {
