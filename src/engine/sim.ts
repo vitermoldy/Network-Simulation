@@ -1477,3 +1477,5 @@ export class Simulator {
     if (has('ACK') && s.responded) {
       for (let i = 0; i < PAGE_PARTS.length; i++) {
         const end = SERVER_ISS + 1 + SEGMENT * (i + 1);
+        if (t.ack >= end) this.acked(`seg${i + 1}`);
+      }
