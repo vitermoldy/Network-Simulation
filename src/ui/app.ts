@@ -277,3 +277,5 @@ export class App {
       $('hint-close').focus();
     });
     $('hint-close').addEventListener('click', () => {
+      $('hint').hidden = true;
+      try {
