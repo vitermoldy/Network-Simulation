@@ -695,3 +695,6 @@ export class App {
     if (key === bc.key) return;
     bc.key = key;
     drawBrowser(bc.ctx, view);
+    bc.canvas.setAttribute('aria-label', view.state === 'done' ? 'Halaman Halo dari Server Web tampil lengkap' : view.state === 'error' ? `Halaman tidak bisa dibuka. ${view.message ?? ''}` : 'Layar browser');
+  }
+
