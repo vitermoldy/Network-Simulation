@@ -1649,3 +1649,4 @@ export class App {
       }).join('')}</ol>
       <p class="hint-text">Pengirim membungkus dari atas ke bawah: data aplikasi, lalu header transport, IP, dan Ethernet. Penerima membukanya dari bawah ke atas.</p>`;
   }
+}
