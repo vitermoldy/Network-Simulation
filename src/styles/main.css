@@ -246,3 +246,6 @@ p {
 .select-wrap {
   display: grid;
   gap: 4px;
+}
+
+select {
