@@ -305,3 +305,5 @@ export class Stage {
   }
 
   private rebuildCables(only?: string): void {
+    const topo = this.sim.topo;
+    for (const c of [...this.cables.values()]) {
