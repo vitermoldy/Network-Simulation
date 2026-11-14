@@ -693,3 +693,5 @@ select {
 }
 
 .toast {
+  position: absolute;
+  top: 12px;
