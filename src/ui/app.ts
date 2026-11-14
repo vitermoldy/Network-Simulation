@@ -1421,3 +1421,6 @@ export class App {
     else if (this.sim.status === 'running' && this.sim.quiet) text = 'Tidak ada paket di kabel. Menunggu timer, jadi waktu dipercepat.';
     else if (this.sim.status === 'done') text = 'Output sudah tampil di layar pengirim.';
     const el = $('flow-now');
+    if (el.textContent !== text) el.textContent = text;
+  }
+
