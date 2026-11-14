@@ -685,3 +685,5 @@ export class App {
   }
 
   private paintBrowser(): void {
+    const bc = this.browserCanvas;
+    if (!bc || !bc.canvas.isConnected) return;
