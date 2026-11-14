@@ -1759,3 +1759,6 @@ tbody th {
   flex: 1;
   min-width: 0;
   display: grid;
+}
+
+.layout-name {
