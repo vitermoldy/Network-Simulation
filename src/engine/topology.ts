@@ -296,3 +296,5 @@ export class Topology {
     const s = SIZE[kind];
     for (const d of this.devices.values()) {
       if (d.id === ignore) continue;
+      const o = SIZE[d.kind];
+      if (Math.abs(d.x - x) < (s.w + o.w) / 2 + 0.3 && Math.abs(d.z - z) < (s.d + o.d) / 2 + 0.3) return d;
