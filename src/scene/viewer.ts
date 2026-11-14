@@ -125,3 +125,5 @@ export class DeviceViewer {
   private describe(pick: Pick | null): string {
     const topo = this.sim.topo;
     if (!pick || !topo.has(this.deviceId)) return '';
+    if (pick.type === 'power') {
+      const d = topo.device(this.deviceId);
