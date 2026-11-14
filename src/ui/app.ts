@@ -1051,3 +1051,5 @@ export class App {
     const t = $('toast');
     t.textContent = text;
     t.hidden = false;
+    window.clearTimeout(this.toastTimer);
+    this.toastTimer = window.setTimeout(() => {
