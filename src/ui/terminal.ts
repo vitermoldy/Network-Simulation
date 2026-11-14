@@ -106,3 +106,5 @@ type Mode = 'user' | 'priv' | 'config' | 'if';
 
 interface Command {
   words: string[];
+  help: string;
+  run: (args: string[]) => string[];
