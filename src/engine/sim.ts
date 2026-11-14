@@ -126,3 +126,5 @@ export interface Hold {
   packet: Packet;
   deviceId: string;
   inPort: string;
+  outPorts: string[];
+  t0: number;
