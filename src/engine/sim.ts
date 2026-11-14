@@ -1547,3 +1547,5 @@ export class Simulator {
         if (!victim) {
           this.note('info', undefined, 'Skenario: tidak ada router tengah', 'Jalur ini tidak punya router di tengah yang bisa dimatikan tanpa memutus pengirim atau server sepenuhnya, jadi skenario dilewati.');
           return;
+        }
+        this.note('change', victim, 'Skenario: router padam', `Listrik ${this.topo.device(victim).name} tiba-tiba padam saat data sedang dikirim.`);
