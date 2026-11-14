@@ -215,3 +215,5 @@ function placeholder(ctx: CanvasRenderingContext2D, x: number, y: number, w: num
   ctx.fillStyle = '#5d6470';
   ctx.font = `500 22px ${FONT_TEXT}`;
   ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(`Menunggu segmen ${part}`, x + w / 2, y + h / 2);
