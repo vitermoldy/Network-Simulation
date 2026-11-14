@@ -353,3 +353,5 @@ select {
   stroke-linejoin: round;
 }
 
+:root:not([data-theme="dark"]) .i-sun,
+:root[data-theme="dark"] .i-moon {
