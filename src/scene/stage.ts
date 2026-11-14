@@ -193,3 +193,5 @@ export class Stage {
     let framedAspect = this.container.clientWidth > 0 ? this.camera.aspect : 0;
     this.observer = new ResizeObserver(() => {
       this.resize();
+      // Reframe on first layout and when the shape changes a lot (a phone turned sideways).
+      const a = this.camera.aspect;
