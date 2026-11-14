@@ -316,3 +316,5 @@ export class Simulator {
       }
     }
     this.time = target;
+    this.pruneLost();
+    return 'ok';
