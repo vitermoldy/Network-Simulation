@@ -398,3 +398,5 @@ select {
 
 .stage-labels {
   position: absolute;
+  inset: 0;
+  pointer-events: none;
