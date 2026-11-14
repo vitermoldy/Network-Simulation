@@ -511,3 +511,5 @@ select {
   display: flex;
   gap: 4px;
   padding: 4px;
+  background: color-mix(in srgb, var(--panel) 94%, transparent);
+  border: 1px solid var(--line);
