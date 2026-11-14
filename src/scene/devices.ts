@@ -473,3 +473,5 @@ function addScreen(b: Build, parent: THREE.Object3D, w: number, y: number, z: nu
 
 /** Packet Tracer style PC: a tower and a monitor on a stand. */
 function buildPc(dev: Device): Build {
+  const group = new THREE.Group();
+  const tw = 0.75;
