@@ -570,3 +570,5 @@ export class Topology {
     }
     const ids = new Map<string, number>();
     const out = new Map<string, number>();
+    for (const id of parent.keys()) {
+      const root = find(id);
