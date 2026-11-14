@@ -1683,3 +1683,5 @@ tbody th {
 .host-form,
 .record-form {
   display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: center;
