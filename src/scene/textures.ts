@@ -209,3 +209,5 @@ function placeholder(ctx: CanvasRenderingContext2D, x: number, y: number, w: num
   ctx.fillRect(x, y, w, h);
   ctx.strokeStyle = '#c3c8d0';
   ctx.setLineDash([10, 8]);
+  ctx.lineWidth = 2;
+  ctx.strokeRect(x + 6, y + 6, w - 12, h - 12);
