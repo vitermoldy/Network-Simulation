@@ -681,3 +681,5 @@ export class Stage {
     const s = new THREE.Spherical().setFromVector3(offset);
     s.phi = Math.min(1.42, Math.max(0.2, s.phi + delta));
     offset.setFromSpherical(s);
+    this.camera.position.copy(this.controls.target).add(offset);
+    this.controls.update();
