@@ -314,3 +314,5 @@ describe('ping and nslookup', () => {
     const sim = withScenario('normal');
     runPing(sim, 'pc', '10.99.0.1');
     expect(sim.status).toBe('failed');
+    expect(sim.output.filter((l) => l === 'Request timed out.')).toHaveLength(4);
+    expect(sim.output.some((l) => l.includes('100% loss'))).toBe(true);
