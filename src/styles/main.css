@@ -975,3 +975,6 @@ select {
 #pane-alur:not([hidden]) {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
