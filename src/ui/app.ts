@@ -622,3 +622,7 @@ export class App {
       return [p.name, p.ip ? `${p.ip}/${p.prefix}` : '-', state, peer ? topo.portLabel(peer) : '-'];
     });
     $('dw-ports').innerHTML = `<h3 class="sub">Port</h3>${this.table(['Port', 'IP', 'Status', 'Kabel ke'], rows, '')}`;
+  }
+
+  // Desktop (PC, laptop): IP Configuration, Command Prompt, Web Browser.
+
