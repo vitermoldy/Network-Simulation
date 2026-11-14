@@ -549,3 +549,5 @@ export class Simulator {
     this.topologyChanged();
   }
 
+  connect(a: string, b: string): { ok: true } | { ok: false; reason: string } {
+    const res = this.topo.connect(a, b);
