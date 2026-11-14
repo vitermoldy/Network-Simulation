@@ -177,3 +177,5 @@ describe('simulator', () => {
 
   it('gives up on ARP when the laptop cable is out', () => {
     const sim = withScenario('normal');
+    sim.disconnect(sim.topo.linkOf('pc.0')!.id);
+    run(sim);
