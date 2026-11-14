@@ -84,3 +84,5 @@ Klik-uji otomatis di Chrome headless (48 pemeriksaan): kartu cara pakai, kirim p
 selesai, tombol power 3D, pasang dan cabut kabel 3D, palet dan penempatan PC, IP otomatis, Pasang
 lewat panel, kirim dari PC baru, validasi IP router, hapus perangkat, jendela perangkat (Fisik,
 perbesar, CLI: enable, show, conf t, interface, shutdown, no shutdown, ping; Desktop: ipconfig,
+ping nama, arp -a, Web Browser), tab Paket, Riwayat saat server mati, tema gelap, kamera, kembalikan
+jaringan awal, tanpa geser samping di 390 dan 320 px, tanpa error console. Tes mesin: 31 di Vitest.
