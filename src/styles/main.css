@@ -1071,3 +1071,6 @@ select {
 
 .phase.is-active .mark,
 .phase.is-active .phase-state {
+  color: var(--accent);
+}
+
