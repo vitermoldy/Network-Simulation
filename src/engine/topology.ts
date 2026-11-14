@@ -282,3 +282,6 @@ export class Topology {
     this.devices.delete(id);
     this.rev++;
     return d;
+  }
+
+  moveDevice(id: string, x: number, z: number): void {
