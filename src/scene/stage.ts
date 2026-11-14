@@ -448,3 +448,5 @@ export class Stage {
   }
 
   private onDown(e: PointerEvent): void {
+    const pick = this.cast(e);
+    this.down = { x: e.clientX, y: e.clientY, pick, floor: this.floorPoint(e) };
