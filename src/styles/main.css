@@ -1245,3 +1245,6 @@ select {
 .note {
   font-size: 13px;
   color: var(--warn);
+  margin: 6px 0;
+}
+
