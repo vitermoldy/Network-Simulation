@@ -144,3 +144,6 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
   group.add(hit);
   const anchor = new THREE.Object3D();
   group.add(anchor);
+  return { group, anchor, frameMat, hit };
+}
+
