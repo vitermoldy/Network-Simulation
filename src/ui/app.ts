@@ -28,3 +28,5 @@ const ROLE_TEXT: Record<Role, string> = {
 };
 
 const KIND_TEXT: Record<DeviceKind, string> = {
+  pc: 'Klien. Browser di sini membuat permintaan, lalu menampilkan halaman yang datang.',
+  laptop: 'Klien. Browser di sini membuat permintaan, lalu menampilkan halaman yang datang.',
