@@ -135,3 +135,5 @@ export interface LostMark {
   packet: Packet;
   t: number;
   reason: string;
+  /** lost = damaged or nowhere to go (red); discard = a device ignored a frame not meant for it. */
+  kind: 'lost' | 'discard';
