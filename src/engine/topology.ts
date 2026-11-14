@@ -485,3 +485,6 @@ export class Topology {
         ports: d.ports.map(({ deviceId: _drop, ...p }) => ({ ...p })),
       })),
       links: [...this.links.values()].map((l) => [l.a, l.b]),
+    };
+  }
+
