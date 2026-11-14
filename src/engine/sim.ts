@@ -1145,3 +1145,5 @@ export class Simulator {
     this.hostSend(dev, reply);
   }
 
+  private clientReceive(dev: Device, p: Packet): void {
+    const c = this.client;
