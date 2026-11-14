@@ -1448,3 +1448,6 @@ export class Simulator {
   private webReceive(dev: Device, p: Packet): void {
     if (!p.tcp || p.tcp.dst !== 80) return;
     const s = this.server(dev.id);
+    const t = p.tcp;
+    const has = (f: TcpFlag) => t.flags.includes(f);
+
