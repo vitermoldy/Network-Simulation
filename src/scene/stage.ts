@@ -876,3 +876,5 @@ export class Stage {
     const selected = this.selected.packetId === p.id;
     v.mesh.scale.setScalar(selected ? 1.45 : 1);
     const text = state === 'lost' ? `${p.label} hilang` : state === 'discard' ? `${p.label} dibuang` : p.label;
+    if (v.el.textContent !== text) v.el.textContent = text;
+    v.el.className = `ptag is-${state}${selected ? ' is-selected' : ''}${p.retry ? ' is-retry' : ''}`;
