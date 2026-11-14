@@ -1210,3 +1210,5 @@ export class App {
             const saved = await api.loadLayout(id);
             this.sim.loadTopology(saved.data);
             this.afterTopologySwap(`Rancangan ${saved.name} dimuat.`);
+          } catch (ex) {
+            this.toast(`Rancangan tidak bisa dimuat: ${(ex as Error).message}`);
