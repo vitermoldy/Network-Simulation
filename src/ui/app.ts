@@ -1188,3 +1188,5 @@ export class App {
         input.focus();
         return;
       }
+      try {
+        await api.saveLayout(name, this.sim.topo.toJSON());
