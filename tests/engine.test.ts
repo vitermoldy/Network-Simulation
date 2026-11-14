@@ -207,3 +207,5 @@ describe('simulator', () => {
     const sim = withScenario('normal');
     sim.lossRate = 0.15;
     run(sim, 'www.jaringan.test', 2000);
+    expect(['done', 'failed']).toContain(sim.status);
+    expect(sim.log.some((l) => l.kind === 'loss')).toBe(true);
