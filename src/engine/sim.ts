@@ -442,3 +442,5 @@ export class Simulator {
     for (const t of this.queue) t.cancelled = true;
     this.queue = [];
     this.time = 0;
+    this.flights = [];
+    this.holds = [];
