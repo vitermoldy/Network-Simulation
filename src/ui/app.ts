@@ -1645,3 +1645,5 @@ export class App {
             const changed = before !== undefined && before !== v && r.layer !== 1;
             return `<div><dt>${esc(k)}</dt><dd>${esc(v)}${changed ? `<span class="changed">berubah, tadinya ${esc(before!)}</span>` : ''}</dd></div>`;
           }).join('')}</dl>
+        </li>`;
+      }).join('')}</ol>
