@@ -95,3 +95,5 @@ export class Stage {
   readonly camera: THREE.PerspectiveCamera;
   readonly controls: OrbitControls;
   readonly devices = new Map<string, DeviceView>();
+  private cables = new Map<string, CableView>();
+  private packets = new Map<number, PacketView>();
