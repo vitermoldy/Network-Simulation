@@ -984,3 +984,5 @@ export class Simulator {
       const why = nextHop === dst
         ? `${dst} satu jaringan dengan ${dev.name}, jadi paket dikirim langsung.`
         : `${dst} ada di jaringan lain (bukan ${nic.ip}/${nic.prefix}), jadi paket harus lewat gateway ${nextHop}.`;
+      this.note('info', dev.id, `${dev.name} butuh alamat MAC`, `${why} Kabel hanya mengenal alamat MAC, dan MAC ${nextHop} belum diketahui. ${dev.name} mengirim ARP broadcast: "siapa punya ${nextHop}?"`, 2);
+      this.sendArp(dev, nextHop);
