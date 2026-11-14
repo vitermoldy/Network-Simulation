@@ -79,3 +79,6 @@ export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
     }
   }
   return best ?? [a, b];
+}
+
+function endPoints(port: PortView): { start: THREE.Vector3; out: THREE.Vector3; drop: THREE.Vector3; floor: V2 } {
