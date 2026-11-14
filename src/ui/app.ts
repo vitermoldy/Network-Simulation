@@ -841,3 +841,5 @@ export class App {
     const el = document.querySelector<HTMLElement>(`.term[data-device="${CSS.escape(deviceId)}"] .term-out`);
     if (el && el.isConnected) {
       el.textContent = t.lines.join('\n');
+      el.scrollTop = el.scrollHeight;
+    }
