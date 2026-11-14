@@ -19,3 +19,5 @@ export const TIMING = {
 };
 
 const RTO_INIT = 16;
+const DNS_RTO = 11;
+const ARP_RTO = 5;
