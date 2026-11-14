@@ -716,3 +716,6 @@ select {
   list-style: none;
   display: flex;
   align-items: stretch;
+  gap: 18px;
+}
+
