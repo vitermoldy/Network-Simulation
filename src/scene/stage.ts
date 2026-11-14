@@ -127,3 +127,5 @@ export class Stage {
   activeRole: Role | undefined;
   leadPacket: Packet | undefined;
 
+  constructor(private container: HTMLElement, private sim: Simulator, private events: StageEvents) {
+    this.renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
