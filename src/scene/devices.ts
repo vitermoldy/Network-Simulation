@@ -16,3 +16,6 @@ export type Pick =
   | { type: 'port'; portId: string }
   | { type: 'power'; deviceId: string }
   | { type: 'device'; deviceId: string }
+  | { type: 'cable'; linkId: string }
+  | { type: 'packet'; packetId: number };
+
