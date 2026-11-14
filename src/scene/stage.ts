@@ -139,3 +139,6 @@ export class Stage {
     canvas.tabIndex = 0;
     canvas.setAttribute('role', 'img');
     canvas.setAttribute('aria-label', 'Meja lab 3D berisi perangkat jaringan yang terhubung kabel. Panah kiri dan kanan memutar, panah atas dan bawah memiringkan, plus dan minus mendekatkan.');
+    container.appendChild(canvas);
+
+    this.labels = new CSS2DRenderer();
