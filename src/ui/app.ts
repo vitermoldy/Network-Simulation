@@ -174,3 +174,5 @@ export class App {
       this.stage.frame(dt);
     }
     this.viewer?.frame();
+    this.streamOutput();
+    if (this.dwOpen() && this.dwTab === 'desktop' && this.desktopApp === 'browser') this.paintBrowser();
