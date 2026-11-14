@@ -678,3 +678,5 @@ export class App {
     const [canvas, ctx] = makeCanvas(SCREEN_W, SCREEN_H);
     canvas.className = 'browser-canvas';
     canvas.setAttribute('role', 'img');
+    canvas.setAttribute('aria-label', 'Layar browser');
+    $('browser-view').appendChild(canvas);
