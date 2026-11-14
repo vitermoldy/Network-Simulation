@@ -1437,3 +1437,5 @@ export class App {
     const play = $('play');
     let label: string;
     if (s.status === 'idle') label = 'Mulai';
+    else if ((s.status === 'done' || s.status === 'failed') && s.quiet && s.lost.length === 0) label = 'Kirim lagi';
+    else label = this.playing ? 'Jeda' : 'Lanjutkan';
