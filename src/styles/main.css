@@ -1843,3 +1843,5 @@ tbody th {
 .devwin-head {
   display: flex;
   align-items: flex-start;
+  gap: 12px;
+  padding: 14px 14px 8px 18px;
