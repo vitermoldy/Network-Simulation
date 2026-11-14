@@ -579,3 +579,5 @@ export class Simulator {
   }
 
   private replaceTopology(change: () => void): void {
+    if (this.status !== 'idle') this.stop();
+    change();
