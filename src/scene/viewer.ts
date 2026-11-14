@@ -29,3 +29,5 @@ export class DeviceViewer {
   constructor(private host: HTMLElement, private sim: Simulator, private events: { power: (id: string) => void; hover: (text: string) => void }) {
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    this.renderer.shadowMap.enabled = true;
+    this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
