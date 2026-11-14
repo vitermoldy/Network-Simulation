@@ -346,3 +346,5 @@ export class Stage {
 
   private rebuildZones(): void {
     for (const z of this.zones) {
+      this.scene.remove(z.group);
+      disposeTree(z.group);
