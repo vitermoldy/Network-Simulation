@@ -16,3 +16,5 @@ export function makeCanvas(w: number, h: number): [HTMLCanvasElement, CanvasRend
 
 export function canvasTexture(c: HTMLCanvasElement): THREE.CanvasTexture {
   const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  t.anisotropy = 4;
