@@ -321,3 +321,6 @@ export class Topology {
     this.rev++;
   }
 
+  // ------------------------------------------------------------------ IP settings
+
+  /** Sets or clears (empty ip) the address on one port, with the checks a student would get wrong. */
