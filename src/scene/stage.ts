@@ -872,3 +872,5 @@ export class Stage {
   private stylePacket(v: PacketView, p: Packet, color: number, state: 'fly' | 'hold' | 'lost' | 'discard'): void {
     v.mat.color.setHex(color);
     v.mat.emissive.setHex(color);
+    if (state === 'fly' || state === 'hold') v.mat.opacity = 1;
+    const selected = this.selected.packetId === p.id;
