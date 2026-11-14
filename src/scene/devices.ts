@@ -654,3 +654,5 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
       setLed(p.act, active ? MATERIAL.ledAmber : null);
     } else {
       setLed(p.link, active ? MATERIAL.ledAmber : carrier ? MATERIAL.ledGreen : null);
+    }
+  }
