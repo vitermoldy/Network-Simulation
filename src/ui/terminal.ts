@@ -346,3 +346,5 @@ export class IosShell implements Shell {
       const saved = this.mode;
       this.mode = 'priv';
       cmds = this.commands();
+      this.mode = saved;
+      tokens = tokens.slice(1);
