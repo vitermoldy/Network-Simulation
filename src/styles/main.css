@@ -106,3 +106,5 @@ p {
   font-family: var(--font-mono);
 }
 
+.sr-only {
+  position: absolute;
