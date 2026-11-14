@@ -14,3 +14,5 @@ export const TIMING = {
   switch: 0.3,
   router: 0.4,
   host: 0.45,
+  /** Routers need a moment to notice a change and agree on new routes. */
+  converge: 2.5,
