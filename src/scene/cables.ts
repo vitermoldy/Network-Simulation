@@ -110,3 +110,5 @@ export function cableCurve(a: PortView, b: PortView, devices: Box2[], lane = 0):
 /** A loose cable from a port to a point on the bench, while the user is choosing the other end. */
 export function danglingCurve(a: PortView, to: THREE.Vector3): THREE.CatmullRomCurve3 {
   const ea = endPoints(a);
+  const end = to.clone();
+  end.y = FLOOR_Y + 0.02;
