@@ -672,3 +672,5 @@ export class App {
         <label for="br-url" class="sr-only">Alamat</label>
         <span class="field-prefix" aria-hidden="true">http://</span>
         <input id="br-url" name="url" class="mono" value="${esc(url)}" autocomplete="off" spellcheck="false" />
+        <button type="submit" class="btn btn-primary btn-small">Go</button>
+      </form>
