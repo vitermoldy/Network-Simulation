@@ -798,3 +798,5 @@ export class Simulator {
     let outs: string[];
     let how: string;
     if (p.eth.dst === BROADCAST) {
+      outs = others;
+      how = `MAC tujuan ${BROADCAST} artinya broadcast, jadi frame disalin ke semua port yang tersambung kecuali ${inName}`;
