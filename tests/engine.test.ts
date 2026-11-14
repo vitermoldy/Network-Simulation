@@ -82,3 +82,5 @@ describe('topology', () => {
     t.autoAddress(pc.id);
     const data = JSON.parse(JSON.stringify(t.toJSON()));
     const u = new Topology();
+    u.load(data);
+    expect(u.devices.size).toBe(9);
