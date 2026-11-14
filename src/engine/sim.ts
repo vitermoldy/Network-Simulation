@@ -1360,3 +1360,5 @@ export class Simulator {
     const target = this.topo.findInSegment(route.portId, nextHop);
     if (!target) {
       this.loseAt(p, dev.id, `${dev.name} tidak menemukan ${nextHop} di port ${out.name}: kabel atau perangkat berikutnya putus.`);
+      return;
+    }
