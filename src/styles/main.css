@@ -1999,3 +1999,6 @@ tbody th {
 .app-tile:hover {
   transform: translateY(-2px);
   border-color: var(--accent);
+}
+
+.app-tile:active {
