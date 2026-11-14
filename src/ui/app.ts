@@ -1013,3 +1013,5 @@ export class App {
       if (pk) text = `${pk.title}. Klik untuk membuka header-nya.`;
     }
     if (!text) {
+      tip.hidden = true;
+      return;
