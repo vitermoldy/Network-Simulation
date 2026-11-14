@@ -151,3 +151,5 @@ function validIp(ip: string): boolean {
 export class Topology {
   readonly devices = new Map<string, Device>();
   readonly links = new Map<string, Link>();
+  private portIndex = new Map<string, Port>();
+  private portLink = new Map<string, string>();
