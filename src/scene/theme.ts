@@ -31,3 +31,5 @@ export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
     background: 0x0f1012,
     floor: 0x17181a,
     zone: 0x1d1f22,
+    zoneEdge: 0x34373c,
+    zoneActive: 0x5b8cff,
