@@ -2119,3 +2119,5 @@ tbody th {
 
 .term-in {
   display: flex;
+  align-items: center;
+  gap: 6px;
