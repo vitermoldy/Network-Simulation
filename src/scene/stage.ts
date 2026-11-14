@@ -891,3 +891,5 @@ export class Stage {
       this.marker.geometry.dispose();
       this.marker = undefined;
     }
+    if (!v) return;
+    const { x, z } = v.group.position;
