@@ -1568,3 +1568,5 @@ export class App {
       extra += `<h3 class="sub">Tabel routing</h3>${sim.converging ? '<p class="note">Router sedang menghitung ulang rute setelah ada perubahan.</p>' : ''}${this.table(['Jaringan', 'Jenis', 'Keluar', 'Lewat'],
         routes.filter((r) => topo.hasPort(r.portId)).map((r) => [r.network, r.type === 'C' ? 'Terhubung' : `Dipelajari, biaya ${r.cost}`, topo.port(r.portId).name, r.nextHop ? `${r.nextHop} (${this.deviceName(r.viaRouter)})` : 'langsung']),
         d.powered ? 'Tidak ada rute. Beri IP pada port, pasang kabelnya, dan pastikan perangkat di ujung kabel menyala.' : 'Router mati, jadi tidak punya tabel routing.')}`;
+    }
+    if (isClient(d) || d.kind === 'router') {
