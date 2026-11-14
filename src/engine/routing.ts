@@ -19,3 +19,6 @@ interface Edge {
   to: string;
   portId: string;
   nextHop: string;
+}
+
+export function computeRoutes(topo: Topology): Map<string, Route[]> {
