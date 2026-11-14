@@ -321,3 +321,5 @@ export class IosShell implements Shell {
         },
       },
       {
+        words: ['interface'], help: 'pindah ke port lain',
+        run: (args) => {
