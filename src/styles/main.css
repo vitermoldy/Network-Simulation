@@ -1608,3 +1608,5 @@ tbody th {
 
 .port-row {
   display: grid;
+  gap: 6px;
+  padding: 8px 10px;
