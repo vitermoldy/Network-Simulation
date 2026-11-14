@@ -489,3 +489,5 @@ export class App {
     }
     if (this.sim.topo.devices.size >= 60) {
       this.toast('Meja sudah penuh: paling banyak 60 perangkat.');
+      return;
+    }
