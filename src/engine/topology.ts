@@ -589,3 +589,6 @@ export class Topology {
       if (p.ip === ip) return p;
     }
     return undefined;
+  }
+
+  freePorts(): Port[] {
