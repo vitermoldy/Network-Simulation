@@ -62,3 +62,5 @@ export type RunKind = 'web' | 'ping' | 'lookup';
 
 const PHASE_SETS: Record<RunKind, Omit<Phase, 'status'>[]> = {
   web: [
+    { id: 'input', title: 'Alamat web diketik di browser', layer: 'Aplikasi', role: 'input' },
+    { id: 'arp', title: 'ARP: mencari MAC gateway', layer: 'Data link', role: 'process' },
