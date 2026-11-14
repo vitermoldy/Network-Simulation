@@ -1540,3 +1540,5 @@ export class App {
         </form>
         <p class="note-muted">IP otomatis bekerja seperti DHCP: mengambil IP kosong di jaringan port router yang terhubung, memakai port itu sebagai gateway${isClient(d) ? ', dan memakai server DNS pertama yang ada' : ''}.</p>`;
     }
+    if (d.kind === 'server') {
+      const recs = Object.entries(d.dnsRecords ?? {});
