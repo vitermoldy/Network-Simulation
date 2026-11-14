@@ -686,3 +686,5 @@ export class Simulator {
       this.loseAt(packet, dev.id, `Tidak ada kabel di port ${this.topo.port(portId).name} milik ${dev.name}, jadi paket tidak bisa keluar.`);
       return;
     }
+    const to = link.a === portId ? link.b : link.a;
+    if (!this.topo.carrier(portId)) {
