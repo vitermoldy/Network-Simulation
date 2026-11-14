@@ -189,3 +189,5 @@ export class Stage {
     canvas.addEventListener('keydown', (e) => this.onKey(e));
     // Size first, then frame the bench: the fit depends on the canvas shape.
     this.resize();
+    this.fitView(false);
+    let framedAspect = this.container.clientWidth > 0 ? this.camera.aspect : 0;
