@@ -165,3 +165,5 @@ interface Retx {
   key: string;
   label: string;
   dev: Device;
+  make: (retry: number) => Packet;
+  tries: number;
