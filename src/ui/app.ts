@@ -1389,3 +1389,6 @@ export class App {
     ol.querySelectorAll('.entry.is-latest').forEach((e) => e.classList.remove('is-latest'));
     ol.appendChild(frag);
     ol.lastElementChild?.querySelector('.entry')?.classList.add('is-latest');
+    if (nearBottom || log.length < 4) ol.scrollTop = ol.scrollHeight;
+  }
+
