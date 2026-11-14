@@ -50,3 +50,5 @@ export type PhaseId = 'input' | 'arp' | 'dns' | 'tcp-open' | 'http-req' | 'http-
 export type PhaseStatus = 'waiting' | 'active' | 'done' | 'failed' | 'skipped';
 
 export interface Phase {
+  id: PhaseId;
+  title: string;
