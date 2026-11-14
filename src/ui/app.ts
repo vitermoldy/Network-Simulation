@@ -1450,3 +1450,5 @@ export class App {
   private renderDeviceList(): void {
     const topo = this.sim.topo;
     const html = [...topo.devices.values()].map((d) => {
+      const used = d.ports.filter((p) => topo.linkOf(p.id)).length;
+      const role = roleOf(d);
