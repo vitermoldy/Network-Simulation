@@ -232,3 +232,5 @@ export class Simulator {
   lost: LostMark[] = [];
   routes = new Map<string, Route[]>();
   converging = false;
+  macTables = new Map<string, Map<string, string>>();
+  arpCaches = new Map<string, Map<string, string>>();
