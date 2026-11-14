@@ -1630,3 +1630,5 @@ tbody th {
 }
 
 .port-peer {
+  flex: 1;
+  min-width: 0;
