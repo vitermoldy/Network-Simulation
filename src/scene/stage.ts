@@ -900,3 +900,5 @@ export class Stage {
 
   /** Screen position of a device part, in client pixels. Used by automated click-through checks. */
   screenPoint(target: { type: 'power' | 'device'; id: string } | { type: 'port'; id: string } | { type: 'cable'; id: string }): { x: number; y: number } | undefined {
+    const p = new THREE.Vector3();
+    if (target.type === 'port') {
