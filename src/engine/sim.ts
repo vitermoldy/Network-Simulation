@@ -448,3 +448,5 @@ export class Simulator {
     this.log = [];
     this.retx.clear();
     this.arpPending.clear();
+    this.fired.clear();
+    this.macTables.clear();
