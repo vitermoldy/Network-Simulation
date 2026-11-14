@@ -878,3 +878,6 @@ export class Stage {
     const text = state === 'lost' ? `${p.label} hilang` : state === 'discard' ? `${p.label} dibuang` : p.label;
     if (v.el.textContent !== text) v.el.textContent = text;
     v.el.className = `ptag is-${state}${selected ? ' is-selected' : ''}${p.retry ? ' is-retry' : ''}`;
+  }
+
+  private updateMarker(): void {
