@@ -66,3 +66,7 @@ Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan r
 | MySQL untuk riwayat dan rancangan, simulator tetap jalan tanpa server | Pola yang sama dengan proyek pemilik yang lain (Express + mysql2, kode klien 12 huruf, antrean di browser). |
 | Kartu cara pakai muncul sekali | Orang baru perlu tahu bahwa meja bisa diseret dan port bisa diklik; setelah itu kartu tidak mengganggu. |
 | Bayangan hanya pada jendela perangkat | Jendela mengambang di atas panel; bayangan memisahkannya. Panel lain dipisah garis dan warna permukaan. |
+| `overflow: clip` pada halaman desktop | Halaman satu layar; clip mencegah fokus atau scrollIntoView menggeser header keluar layar. |
+
+## Aksesibilitas
+
