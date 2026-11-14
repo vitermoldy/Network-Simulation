@@ -765,3 +765,5 @@ select {
   left: 12px;
   right: 12px;
   bottom: 12px;
+  font-size: 13px;
+  color: var(--muted);
