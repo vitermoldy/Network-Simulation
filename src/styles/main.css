@@ -2117,3 +2117,5 @@ tbody th {
   font: inherit;
 }
 
+.term-in {
+  display: flex;
