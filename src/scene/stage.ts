@@ -836,3 +836,5 @@ export class Stage {
       else to = top;
       const pos = from.lerp(to, k);
       v.mesh.position.copy(pos);
+      v.last.copy(pos);
+      this.stylePacket(v, h.packet, color, 'hold');
