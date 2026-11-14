@@ -253,3 +253,5 @@ export class App {
     });
 
     document.querySelectorAll<HTMLButtonElement>('[data-cam]').forEach((b) =>
+      b.addEventListener('click', () => {
+        const s = this.stage;
