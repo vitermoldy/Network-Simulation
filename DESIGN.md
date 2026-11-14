@@ -14,3 +14,6 @@ datang dari pemilik proyek dalam tiga langkah:
    tab Physical, Config, Desktop, CLI).
 
 Design read: alat belajar jaringan (software) untuk mahasiswa praktikum, dengan bahasa meja lab dan
+perangkat Cisco, dial **ENERGY 2 / RHYTHM 2 / MOTION 2**.
+
+- ENERGY 2: meja 3D adalah pusat perhatian; panel di sekitarnya tenang supaya penjelasan mudah dibaca.
