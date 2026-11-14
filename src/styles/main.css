@@ -27,3 +27,5 @@
 
 :root[data-theme="dark"] {
   --bg: #0b0c0e;
+  --surface: #17181a;
+  --panel: #121315;
