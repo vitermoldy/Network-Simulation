@@ -1587,3 +1587,5 @@ export class App {
       <p class="dev-kind">${KIND_TEXT[d.kind]}</p>
       <div class="dev-actions">
         <button type="button" class="btn btn-small ${d.powered ? 'btn-secondary' : 'btn-primary'}" data-act="power">${d.powered ? 'Matikan' : 'Nyalakan'}</button>
+        <button type="button" class="btn btn-small btn-ghost" data-act="focus" ${this.stage ? '' : 'disabled'}>Lihat dari dekat</button>
+        <button type="button" class="btn btn-small btn-danger" data-act="remove">Hapus perangkat</button>
