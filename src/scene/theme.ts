@@ -42,3 +42,5 @@ export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
 
 /** Physical colours: casings, LEDs, metal. */
 export const MATERIAL = {
+  /** Catalyst-style switch chassis. */
+  slate: 0x3b424a,
