@@ -521,3 +521,5 @@ export class App {
 
   /** Opens a device's own window, the way a click on a device does in Packet Tracer. */
   openDevice(id: string, tab: DwTab = 'fisik'): void {
+    if (!this.sim.topo.has(id)) return;
+    const d = this.sim.topo.device(id);
