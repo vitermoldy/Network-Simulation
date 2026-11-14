@@ -150,3 +150,5 @@ export class App {
 
   // ------------------------------------------------------------------ loop
 
+  private tick(now: number): void {
+    const dt = Math.min(0.1, (now - this.last) / 1000);
