@@ -595,3 +595,5 @@ export class Stage {
     // The free part of the view, in normalised screen units: the palette covers the left edge,
     // the camera tools the top, the flow bar the bottom.
     const w = Math.max(1, this.container.clientWidth);
+    const h = Math.max(1, this.container.clientHeight);
+    const narrow = w <= 640;
