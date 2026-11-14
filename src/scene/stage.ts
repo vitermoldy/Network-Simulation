@@ -731,3 +731,5 @@ export class Stage {
   private updateDevices(): void {
     const topo = this.sim.topo;
     for (const v of this.devices.values()) {
+      refreshLive(v, v.device, this.sim);
+      const hoverPower = this.hovered?.type === 'power' && this.hovered.deviceId === v.device.id;
