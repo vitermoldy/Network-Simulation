@@ -135,3 +135,6 @@ export async function saveLayout(name: string, data: TopologyData): Promise<void
 export async function loadLayout(id: number): Promise<{ name: string; data: unknown }> {
   const res = await call<{ name: string; data: string }>(`layouts/${clientCode()}/${id}`);
   return { name: res.name, data: JSON.parse(res.data) };
+}
+
+export async function deleteLayout(id: number): Promise<void> {
