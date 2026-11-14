@@ -220,3 +220,5 @@ p {
 .field input {
   flex: 1;
   min-width: 0;
+  height: 42px;
+  border: 0;
