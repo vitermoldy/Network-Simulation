@@ -340,3 +340,6 @@ describe('ping and nslookup', () => {
     sim.edit((t) => t.setPortDown('r1.0', false));
     runPing(sim, 'pc', '192.168.1.1');
     expect(sim.status).toBe('done');
+  });
+
+  it('starts a new router with every port shut down, as Packet Tracer does', () => {
