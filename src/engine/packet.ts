@@ -131,3 +131,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
     } else {
       p.app.lines.forEach((l, i) => f.push([i === 0 ? 'Baris awal' : 'Isi', l]));
       if (p.app.part) f.push(['Bagian', `${p.app.part} dari ${p.app.parts}`]);
+    }
+    row(7, p.app.proto, f);
