@@ -249,3 +249,5 @@ describe('simulator', () => {
     sim.edit((t) => t.setServices('web', { dns: false, http: false }));
     run(sim);
     expect(sim.status).toBe('failed');
+    expect(sim.log.some((l) => l.title === 'Port 80 tertutup')).toBe(true);
+    expect(sim.browser.message).toContain('RST');
