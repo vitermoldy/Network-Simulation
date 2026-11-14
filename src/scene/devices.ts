@@ -518,3 +518,6 @@ function buildPc(dev: Device): Build {
   b.power = { hit: button.hit, glow: button.glow, button: button.button, leds: [button.ring] };
   b.tagY = 1.85;
   return b;
+}
+
+/** The laptop: open lid with a live screen, network port on the right side, power key on the deck. */
