@@ -720,3 +720,6 @@ export class Simulator {
   }
 
   private cutLink(linkId: string, reason: string): void {
+    for (const f of [...this.flights]) if (f.linkId === linkId) this.loseFlight(f, reason);
+  }
+
