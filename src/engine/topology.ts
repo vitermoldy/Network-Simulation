@@ -36,3 +36,5 @@ export interface Device {
   kind: DeviceKind;
   name: string;
   powered: boolean;
+  ports: Port[];
+  /** Hosts only. */
