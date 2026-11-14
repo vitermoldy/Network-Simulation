@@ -1577,3 +1577,5 @@ export class App {
     }
 
     box.innerHTML = `<div class="dev-detail">
+      <form class="name-form" data-form="name" novalidate>
+        <label for="name-${d.id}" class="sr-only">Nama perangkat</label>
