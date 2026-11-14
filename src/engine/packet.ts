@@ -145,3 +145,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
     ]);
   } else if (p.udp) {
     row(4, 'UDP', [
+      ['Port asal', String(p.udp.src)],
+      ['Port tujuan', String(p.udp.dst)],
