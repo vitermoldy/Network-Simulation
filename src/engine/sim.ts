@@ -581,3 +581,5 @@ export class Simulator {
   private replaceTopology(change: () => void): void {
     if (this.status !== 'idle') this.stop();
     change();
+    this.macTables.clear();
+    this.arpCaches.clear();
