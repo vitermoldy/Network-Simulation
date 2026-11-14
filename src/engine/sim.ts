@@ -894,3 +894,5 @@ export class Simulator {
   private hostIn(dev: Device, inPort: string, p: Packet): void {
     const nic = this.topo.port(inPort);
     if (p.eth.dst !== nic.mac && p.eth.dst !== BROADCAST) {
+      this.discard(p, dev.id, `MAC tujuan ${p.eth.dst} bukan milik kartu jaringannya, frame dibuang.`);
+      return;
