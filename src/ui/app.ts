@@ -1385,3 +1385,5 @@ export class App {
       </button>`;
       frag.appendChild(li);
     }
+    this.renderedLog = log.length;
+    ol.querySelectorAll('.entry.is-latest').forEach((e) => e.classList.remove('is-latest'));
