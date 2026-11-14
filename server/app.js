@@ -125,3 +125,5 @@ export function createApi(getPool, database) {
     const client = codeOf(req.params.client)
     if (!client) return res.status(400).json({ error: 'Kode klien tidak dikenal.' })
     const [rows] = await getPool().query(
+      'SELECT id, name, devices, links, updated_at AS updatedAt FROM layouts WHERE client_id = ? ORDER BY updated_at DESC, id DESC',
+      [client],
