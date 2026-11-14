@@ -781,3 +781,5 @@ export class Simulator {
   }
 
   arpCache(id: string): Map<string, string> {
+    let t = this.arpCaches.get(id);
+    if (!t) {
