@@ -177,3 +177,6 @@ export class Stage {
     const floor = new THREE.Mesh(new THREE.PlaneGeometry(140, 140), this.floorMat);
     floor.rotation.x = -Math.PI / 2;
     floor.receiveShadow = true;
+    this.scene.add(floor);
+
+    this.setTheme('light');
