@@ -787,3 +787,6 @@ export class Simulator {
       this.arpCaches.set(id, t);
     }
     return t;
+  }
+
+  private switchIn(dev: Device, inPort: string, p: Packet): void {
