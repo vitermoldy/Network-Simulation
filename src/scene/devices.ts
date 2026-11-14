@@ -636,3 +636,5 @@ export function showPower(v: DeviceView, on: boolean): void {
 
 /**
  * Everything on a model that follows the live network: power, link and activity LEDs, the
+ * busy LEDs, and the screen of a PC or laptop. Shared by the bench and the close-up viewer.
+ */
