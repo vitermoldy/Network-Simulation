@@ -94,3 +94,5 @@ export function setLed(m: THREE.Mesh, color: number | null): void {
   if (m.userData.led === key) return;
   m.userData.led = key;
   const mat = m.material as THREE.MeshStandardMaterial;
+  if (color === null) {
+    mat.color.setHex(MATERIAL.ledOff);
