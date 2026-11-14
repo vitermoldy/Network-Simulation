@@ -487,3 +487,6 @@ select {
 
 .ptag.is-lost {
   background: var(--bad);
+  color: #fff;
+}
+
