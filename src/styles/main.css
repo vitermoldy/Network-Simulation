@@ -2195,3 +2195,5 @@ tbody th {
 
 @media (max-width: 1280px) {
   .work {
+    grid-template-columns: minmax(0, 1fr) 360px;
+  }
