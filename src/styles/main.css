@@ -980,3 +980,6 @@ select {
 
 .run-status {
   font-size: 14px;
+  padding-bottom: 10px;
+}
+
