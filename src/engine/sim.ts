@@ -698,3 +698,5 @@ export class Simulator {
     const drop = this.planDrop(packet);
     if (drop) {
       this.schedule(f.t0 + (f.t1 - f.t0) * drop.u, () => {
+        if (this.flights.includes(f)) this.loseFlight(f, drop.reason);
+      }, true);
