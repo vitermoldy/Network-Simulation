@@ -1324,3 +1324,5 @@ export class Simulator {
     c.tcp = 'fin-wait';
     this.setPhase('tcp-close', 'active');
     this.note('info', this.clientId, 'Menutup sambungan', `Halaman sudah lengkap, jadi ${this.cname} menutup sambungan TCP dengan FIN.`, 4);
+    this.reliable('fin', 'FIN', dev, (retry) => this.tcpPacket(dev, c.serverIp!, CLIENT_PORT, 80, ['FIN', 'ACK'], c.sndNext, c.rcvNext, 'FIN', 'TCP FIN: selesai', retry),
+      this.rto(), MAX_TCP_TRIES, () => this.finish(`Server tidak membalas FIN. ${this.cname} tetap menutup sambungan dari sisinya.`));
