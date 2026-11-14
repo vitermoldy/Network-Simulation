@@ -640,3 +640,5 @@ export class Simulator {
       this.routes = computeRoutes(this.topo);
       this.version++;
       return;
+    }
+    if (this.convergeTask) this.convergeTask.cancelled = true;
