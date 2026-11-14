@@ -2392,3 +2392,5 @@ tbody th {
     flex: 1 1 calc(50% - 6px);
   }
 
+  .playbar .btn-ghost {
+    flex-basis: 100%;
