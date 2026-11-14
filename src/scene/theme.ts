@@ -12,3 +12,6 @@ export interface SceneTheme {
   label: string;
   labelMuted: string;
   arrow: string;
+  shadow: number;
+}
+
