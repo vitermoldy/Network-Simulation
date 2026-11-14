@@ -458,3 +458,5 @@ export class Simulator {
     this.converging = false;
     this.srtt = 0;
     this.phases = PHASE_SETS[this.kind].map((p) => ({ ...p, status: 'waiting' }));
+    this.routes = computeRoutes(this.topo);
+    this.resetApps(host, sourceId);
