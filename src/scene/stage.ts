@@ -463,3 +463,5 @@ export class Stage {
       const moved = Math.hypot(e.clientX - this.down.x, e.clientY - this.down.y);
       const v = this.devices.get(this.down.pick.deviceId);
       if (moved > 6 && v && this.down.floor) {
+        this.drag = { id: v.device.id, offset: v.group.position.clone().sub(this.down.floor), from: v.group.position.clone() };
+        this.controls.enabled = false;
