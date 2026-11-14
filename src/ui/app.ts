@@ -1152,3 +1152,5 @@ export class App {
         if (err) {
           err.textContent = res.reason ?? '';
           err.hidden = false;
+        }
+        return;
