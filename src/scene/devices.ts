@@ -634,3 +634,5 @@ export function showPower(v: DeviceView, on: boolean): void {
   if (v.button) v.button.position.z = on ? 0.022 : 0.032;
 }
 
+/**
+ * Everything on a model that follows the live network: power, link and activity LEDs, the
