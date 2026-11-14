@@ -1453,3 +1453,5 @@ export class Simulator {
 
     if (has('SYN')) {
       if (s.state === 'listen') {
+        s.state = 'syn-rcvd';
+        s.clientIp = p.ip!.src;
