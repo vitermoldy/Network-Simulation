@@ -2346,3 +2346,6 @@ tbody th {
     top: auto;
     bottom: 96px;
     max-width: calc(100% - 24px);
+    width: calc(100% - 24px);
+  }
+
