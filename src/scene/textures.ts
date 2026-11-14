@@ -141,3 +141,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     ctx.fillText('Halaman tidak bisa dibuka', 56, body(96));
     ctx.fillStyle = '#5d6470';
     ctx.font = `400 26px ${FONT_TEXT}`;
+    wrap(ctx, view.message ?? '', W - 112).slice(0, 7).forEach((l, i) => ctx.fillText(l, 56, body(160 + i * 38)));
+    return;
