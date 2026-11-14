@@ -6,3 +6,5 @@ switch, router, dan server DNS (proses), lalu server web menjawab dan halamannya
 (output). Semua perangkat ada di meja 3D yang bisa diputar, lengkap dengan port, kabel, lampu, dan
 tombol power yang benar-benar bisa dipakai.
 
+Perangkatnya mengikuti bentuk yang biasa ditemui di lab Cisco dan Packet Tracer: switch 24 port
+FastEthernet dengan 2 uplink Gigabit, router dengan port GigabitEthernet dan port console, PC tower,
