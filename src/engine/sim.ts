@@ -636,3 +636,5 @@ export class Simulator {
       }
       for (const [mac, port] of table) if (!this.topo.hasPort(port) || !this.topo.carrier(port)) table.delete(mac);
     }
+    if (this.status !== 'running') {
+      this.routes = computeRoutes(this.topo);
