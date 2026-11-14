@@ -1621,3 +1621,5 @@ export class App {
     this.packetKey = key;
     const prevRows = prev ? layersOf(prev, '') : [];
     const prevField = (layer: number, name: string) => prevRows.find((r) => r.layer === layer)?.fields.find((f) => f[0] === name)?.[1];
+    const reader = hold && this.sim.topo.has(hold.deviceId) ? this.sim.topo.device(hold.deviceId) : undefined;
+    const reads = reader ? readsUpTo(reader.kind) : undefined;
