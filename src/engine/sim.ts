@@ -1533,3 +1533,5 @@ export class Simulator {
     this.setPhase('http-res', 'active');
     PAGE_PARTS.forEach((part, i) => {
       this.schedule(this.time + i * 0.3, () => {
+        if (this.status !== 'running' || !dev.powered) return;
+        const seq = SERVER_ISS + 1 + SEGMENT * i;
