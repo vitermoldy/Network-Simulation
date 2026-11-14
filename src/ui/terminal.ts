@@ -374,3 +374,5 @@ export class IosShell implements Shell {
     }
     if (!best.length) {
       return [`% Invalid input detected at '^' marker.`, `  ${' '.repeat(this.prompt().length)}^`, 'Ketik ? untuk melihat perintah di mode ini.'];
+    }
+    if (best.length > 1) {
