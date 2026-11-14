@@ -287,3 +287,5 @@ describe('ping and nslookup', () => {
     const sim = withScenario('normal');
     runPing(sim, 'pc', '203.0.113.80');
     expect(sim.status).toBe('done');
+    expect(sim.output.filter((l) => l.startsWith('Reply from 203.0.113.80'))).toHaveLength(4);
+    expect(sim.output.some((l) => l.includes('Lost = 0 (0% loss)'))).toBe(true);
