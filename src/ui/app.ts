@@ -304,3 +304,5 @@ export class App {
       const b = $(`tab-${t}`);
       b.addEventListener('click', () => this.showTab(t));
       b.addEventListener('keydown', (e) => {
+        const dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!dir) return;
