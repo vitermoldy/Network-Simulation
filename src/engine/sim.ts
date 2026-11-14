@@ -599,3 +599,5 @@ export class Simulator {
     const dev = this.topo.device(id);
     for (const p of dev.ports) {
       const link = this.topo.linkOf(p.id);
+      if (link) this.cutLink(link.id, `${dev.name} diangkat dari meja saat paket masih di kabel.`);
+    }
