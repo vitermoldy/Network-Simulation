@@ -726,3 +726,5 @@ export class App {
         this.renderDesktop();
         (desk.querySelector('.term-in input, input, .app-tile') as HTMLElement | null)?.focus();
         return;
+      }
+      if (t.closest('[data-desk-act="dhcp"]')) {
