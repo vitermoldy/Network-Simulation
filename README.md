@@ -86,3 +86,5 @@ tests/        tes Vitest untuk mesinnya
 
 ## Batasan
 
+Ini simulasi untuk belajar, bukan emulator. Waktu diperlambat supaya paket bisa diikuti mata, satu
+segmen TCP berisi 400 byte, nomor urut TCP dimulai dari angka yang mudah dibaca, router mempelajari
