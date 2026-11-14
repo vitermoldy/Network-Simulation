@@ -1499,3 +1499,5 @@ export class App {
 
     const free = topo.freePorts().filter((p) => p.deviceId !== d.id);
     const editable = d.kind !== 'switch';
+    const portRows = d.ports.map((p) => {
+      const link = topo.linkOf(p.id);
