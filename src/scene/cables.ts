@@ -116,3 +116,6 @@ export function danglingCurve(a: PortView, to: THREE.Vector3): THREE.CatmullRomC
   if (end.distanceTo(ea.drop) > 0.2) pts.push(end);
   else pts.push(ea.drop.clone().add(new THREE.Vector3(0.05, 0, 0.05)));
   return new THREE.CatmullRomCurve3(pts, false, 'centripetal', 0.5);
+}
+
+const plugBody = new THREE.MeshStandardMaterial({ color: MATERIAL.plug, transparent: true, opacity: 0.62, roughness: 0.18 });
