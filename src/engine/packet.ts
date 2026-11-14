@@ -47,3 +47,5 @@ export interface TcpHeader {
 }
 
 export interface DnsBody {
+  txid: number;
+  question: string;
