@@ -385,3 +385,5 @@ export class Simulator {
 
   /** nslookup from a PC or laptop: only the DNS question and its answer. */
   startLookup(sourceId: string, rawName: string, seed?: number): void {
+    const name = rawName.trim().toLowerCase();
+    this.kind = 'lookup';
