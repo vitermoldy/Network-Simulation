@@ -1205,3 +1205,5 @@ export class Simulator {
       return;
     }
 
+    if (has('SYN') && has('ACK')) {
+      if (c.tcp === 'syn-sent') {
