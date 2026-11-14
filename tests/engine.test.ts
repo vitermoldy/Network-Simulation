@@ -150,3 +150,5 @@ describe('simulator', () => {
     run(sim);
     expect(sim.status).toBe('done');
     expect(sim.log.filter((l) => l.kind === 'loss')).toHaveLength(1);
+    expect(sim.log.some((l) => l.title === 'Segmen 3 datang lebih dulu')).toBe(true);
+    expect(sim.log.some((l) => l.title === 'Data 2/3 dikirim ulang')).toBe(true);
