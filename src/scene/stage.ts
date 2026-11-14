@@ -99,3 +99,5 @@ export class Stage {
   private packets = new Map<number, PacketView>();
   private zones: ZoneView[] = [];
   private zoneLabels: { ctx: CanvasRenderingContext2D; tex: THREE.CanvasTexture; w: number; h: number; role: Role }[] = [];
+  private arrows: { ctx: CanvasRenderingContext2D; tex: THREE.CanvasTexture }[] = [];
+  private tags = new Map<string, HTMLElement>();
