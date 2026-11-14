@@ -879,3 +879,5 @@ export class Simulator {
         this.loseAt(p, dev.id, 'TTL habis, paket dibuang supaya tidak berputar selamanya.');
         return;
       }
+      const target = this.topo.findInSegment(route.portId, nextHop);
+      if (!target) {
