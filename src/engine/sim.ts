@@ -52,3 +52,5 @@ export type PhaseStatus = 'waiting' | 'active' | 'done' | 'failed' | 'skipped';
 export interface Phase {
   id: PhaseId;
   title: string;
+  layer: string;
+  role: Role;
