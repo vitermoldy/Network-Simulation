@@ -33,3 +33,5 @@ export interface LayoutSummary {
   id: number;
   name: string;
   devices: number;
+  links: number;
+  updatedAt: string;
