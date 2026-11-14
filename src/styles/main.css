@@ -222,3 +222,5 @@ p {
   min-width: 0;
   height: 42px;
   border: 0;
+  background: transparent;
+  font-family: var(--font-mono);
