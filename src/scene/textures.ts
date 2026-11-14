@@ -149,3 +149,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     ctx.font = `500 30px ${FONT_TEXT}`;
     ctx.textAlign = 'center';
     ctx.fillText(view.message ?? '', W / 2, body(240));
+    return;
+  }
