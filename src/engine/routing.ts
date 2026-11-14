@@ -109,3 +109,5 @@ export function lookup(routes: Route[] | undefined, ip: string): Route | undefin
     if (!inNetwork(ip, r.network)) continue;
     if (!found || prefixOf(r.network) > prefixOf(found.network)) found = r;
   }
+  return found;
+}
