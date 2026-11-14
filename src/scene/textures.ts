@@ -161,3 +161,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     ctx.fillText('jaringan.test', 48, body(42));
   } else placeholder(ctx, 0, body(0), W, 84, 1);
   if (main) {
+    ctx.fillStyle = '#0b0c0e';
+    ctx.font = `600 50px ${FONT_TEXT}`;
