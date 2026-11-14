@@ -5,3 +5,6 @@
 
 import { sameSubnet } from './ip';
 import { BROADCAST, clonePacket, type LayerId, type Packet, type TcpFlag } from './packet';
+import { computeRoutes, lookup, type Route } from './routing';
+import { isClient, Topology, type Device, type Role } from './topology';
+
