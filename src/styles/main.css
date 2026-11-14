@@ -683,3 +683,5 @@ select {
   z-index: 7;
 }
 
+.popover p {
+  font-weight: 500;
