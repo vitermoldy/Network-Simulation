@@ -697,3 +697,5 @@ select {
   top: 12px;
   left: 50%;
   transform: translateX(-50%);
+  width: max-content;
+  max-width: min(520px, calc(100% - 140px));
