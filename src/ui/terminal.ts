@@ -263,3 +263,5 @@ export class IosShell implements Shell {
             const r = topo.rename(d.id, args.join(' '));
             this.host.changed();
             return r.ok ? [] : [`% ${r.reason}`];
+          },
+        },
