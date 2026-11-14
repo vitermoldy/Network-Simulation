@@ -710,3 +710,5 @@ export class App {
         const visible = DW_TABS.filter((x) => !$(`dwt-${x}`).hidden);
         const next = visible[(visible.indexOf(t) + dir + visible.length) % visible.length];
         this.showDwTab(next);
+        $(`dwt-${next}`).focus();
+      });
