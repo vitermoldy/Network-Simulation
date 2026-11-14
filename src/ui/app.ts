@@ -1430,3 +1430,6 @@ export class App {
       if (id && this.sim.topo.has(id)) return roleOf(this.sim.topo.device(id));
     }
     return undefined;
+  }
+
+  private renderPlaybar(): void {
