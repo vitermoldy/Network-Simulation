@@ -147,3 +147,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
   return { group, anchor, frameMat, hit };
 }
 
+let rockerTex: THREE.CanvasTexture | undefined;
+function rockerTexture(): THREE.CanvasTexture {
