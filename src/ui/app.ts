@@ -529,3 +529,5 @@ export class App {
     const client = d.kind === 'pc' || d.kind === 'laptop';
     const cli = d.kind === 'router' || d.kind === 'switch';
     $('dwt-desktop').hidden = !client;
+    $('dwt-cli').hidden = !cli;
+    if ((tab === 'desktop' && !client) || (tab === 'cli' && !cli)) tab = 'fisik';
