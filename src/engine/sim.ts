@@ -1522,3 +1522,6 @@ export class Simulator {
         this.note('info', dev.id, 'GET ganda', 'Permintaan GET ini sudah pernah diterima. Server membalas ACK saja.', 4, p.id);
         this.hostSend(dev, this.tcpPacket(dev, s.clientIp!, 80, CLIENT_PORT, ['ACK'], SERVER_ISS + 1, s.rcvNext, 'ACK', `TCP ACK ${s.rcvNext}`, 0));
       }
+    }
+  }
+
