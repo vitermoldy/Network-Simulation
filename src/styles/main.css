@@ -1942,3 +1942,6 @@ tbody th {
 .led-legend li {
   display: flex;
   align-items: center;
+  gap: 6px;
+}
+
