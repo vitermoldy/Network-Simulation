@@ -533,3 +533,5 @@ export class App {
     if ((tab === 'desktop' && !client) || (tab === 'cli' && !cli)) tab = 'fisik';
     const dialog = $<HTMLDialogElement>('devwin');
     if (!dialog.open) dialog.show();
+    this.deviceKey = '';
+    this.portsKey = '';
