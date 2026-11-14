@@ -672,3 +672,5 @@ export class Stage {
   rotate(angle: number): void {
     const offset = this.camera.position.clone().sub(this.controls.target);
     offset.applyAxisAngle(new THREE.Vector3(0, 1, 0), angle);
+    this.camera.position.copy(this.controls.target).add(offset);
+    this.controls.update();
