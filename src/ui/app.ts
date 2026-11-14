@@ -748,3 +748,5 @@ export class App {
         const mask = String(f.get('mask') ?? '').trim();
         const prefix = [...Array(23)].map((_, i) => i + 8).find((p) => prefixToMask(p) === mask);
         const ip = String(f.get('ip') ?? '');
+        let res: { ok: boolean; reason?: string } = { ok: true };
+        if (ip.trim() && prefix === undefined) res = { ok: false, reason: `${mask} bukan subnet mask yang sah. Contoh: 255.255.255.0` };
