@@ -200,3 +200,5 @@ export class Topology {
 
   device(id: string): Device {
     const d = this.devices.get(id);
+    if (!d) throw new Error(`Perangkat tidak dikenal: ${id}`);
+    return d;
