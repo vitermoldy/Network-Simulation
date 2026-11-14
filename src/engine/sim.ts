@@ -1109,3 +1109,5 @@ export class Simulator {
 
   // ------------------------------------------------------------------ the browser on the laptop
 
+  private dnsLookup(): void {
+    const pc = this.topo.device(this.clientId);
