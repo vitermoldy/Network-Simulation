@@ -2359,3 +2359,5 @@ tbody th {
     justify-content: center;
   }
 
+  .tool-label {
+    display: none;
