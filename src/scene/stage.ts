@@ -910,3 +910,5 @@ export class Stage {
       if (!c) return undefined;
       p.copy(c.curve.getPointAt(0.5));
     } else {
+      const v = this.devices.get(target.id);
+      if (!v) return undefined;
