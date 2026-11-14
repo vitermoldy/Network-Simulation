@@ -65,3 +65,5 @@ export interface AppBody {
 export interface Packet {
   id: number;
   flow: Flow;
+  /** Short tag that rides above the packet in 3D. */
+  label: string;
