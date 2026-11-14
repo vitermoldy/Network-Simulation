@@ -849,3 +849,5 @@ export class Stage {
       if (v.last.lengthSq() === 0 && l.deviceId) {
         const d = this.devices.get(l.deviceId);
         if (d) v.last.copy(d.topLocal).add(d.group.position);
+      }
+      v.mesh.position.set(v.last.x, Math.max(0.1, v.last.y - age * 0.45), v.last.z);
