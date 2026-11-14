@@ -612,3 +612,5 @@ export class Simulator {
     this.topologyChanged();
   }
 
+  moveDevice(id: string, x: number, z: number): void {
+    this.topo.moveDevice(id, x, z);
