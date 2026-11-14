@@ -509,3 +509,5 @@ select {
   top: 12px;
   right: 12px;
   display: flex;
+  gap: 4px;
+  padding: 4px;
