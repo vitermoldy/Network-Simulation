@@ -276,3 +276,6 @@ select {
 }
 
 .btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
