@@ -242,3 +242,5 @@ function newBuild(group: THREE.Group, w: number, h: number, d: number, body: THR
 }
 
 function addPort(b: Build, dev: Device, index: number, x: number, y: number, z: number, o: { w: number; h: number; frame?: number; flip?: boolean; ledY?: number; act?: boolean }): void {
+  const port = dev.ports[index];
+  const frameColor = o.frame ?? MATERIAL.metal;
