@@ -2002,3 +2002,6 @@ tbody th {
 }
 
 .app-tile:active {
+  transform: translateY(0);
+}
+
