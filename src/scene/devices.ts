@@ -42,3 +42,5 @@ export interface DeviceView {
   powerGlow: THREE.MeshStandardMaterial;
   rocker?: THREE.Object3D;
   button?: THREE.Object3D;
+  powerLeds: THREE.Mesh[];
+  /** Extra LEDs that blink with any traffic (SYST, ACT, HDD). */
