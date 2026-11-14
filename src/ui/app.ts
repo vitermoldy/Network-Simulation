@@ -401,3 +401,5 @@ export class App {
       err.textContent = host ? 'Alamat hanya boleh berisi huruf, angka, titik, dan tanda minus, misalnya www.jaringan.test.' : 'Ketik alamat web dulu, misalnya www.jaringan.test.';
       err.hidden = false;
       input.setAttribute('aria-invalid', 'true');
+      input.focus();
+      return;
