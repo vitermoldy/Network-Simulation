@@ -149,3 +149,6 @@ export function buildPlug(port: PortView, cableMat: THREE.Material): THREE.Group
 }
 
 export function cableMaterial(): THREE.MeshStandardMaterial {
+  return new THREE.MeshStandardMaterial({ color: MATERIAL.cable, roughness: 0.55, metalness: 0.05 });
+}
+
