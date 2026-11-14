@@ -161,3 +161,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
     row(3, 'IPv4', [
       ['IP asal', p.ip.src],
       ['IP tujuan', p.ip.dst],
+      ['TTL', String(p.ip.ttl)],
+      ['Protokol', p.ip.proto],
