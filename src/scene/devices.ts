@@ -60,3 +60,5 @@ const std = (color: number, extra: Partial<THREE.MeshStandardMaterialParameters>
 const shared = {
   slate: std(MATERIAL.slate, { roughness: 0.55, metalness: 0.2 }),
   graphite: std(MATERIAL.graphite, { roughness: 0.5, metalness: 0.25 }),
+  laptop: std(MATERIAL.laptop, { roughness: 0.45, metalness: 0.25 }),
+  tower: std(MATERIAL.tower),
