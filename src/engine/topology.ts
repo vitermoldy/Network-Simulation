@@ -265,3 +265,5 @@ export class Topology {
     while (this.devices.has(id)) id = `${kind}${++n}x`;
     const d = this.makeDevice(kind, id, `${KIND_LABEL[kind]} ${n}`, x, z);
     // A router fresh out of the box has every interface shut down until someone enables it.
+    if (kind === 'router') for (const p of d.ports) p.down = true;
+    this.insert(d);
