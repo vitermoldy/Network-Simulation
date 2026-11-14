@@ -1252,3 +1252,5 @@ export class App {
     }
   }
 
+  private renderLayouts(list: api.LayoutSummary[]): void {
+    const ul = $('layouts');
