@@ -145,3 +145,5 @@ export class Stage {
     this.labels.domElement.className = 'stage-labels';
     container.appendChild(this.labels.domElement);
 
+    this.camera = new THREE.PerspectiveCamera(38, 1, 0.1, 300);
+    this.controls = new OrbitControls(this.camera, canvas);
