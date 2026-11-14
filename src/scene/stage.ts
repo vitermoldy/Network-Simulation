@@ -370,3 +370,5 @@ export class Stage {
       const x1 = r.x1 + 0.75;
       const z0 = allZ0 - 0.8;
       const z1 = allZ1 + 1.4;
+      const group = new THREE.Group();
+      const fillGeo = new THREE.ShapeGeometry(roundedRectShape(x0, z0, x1, z1, 0.4), 8);
