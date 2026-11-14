@@ -503,3 +503,5 @@ export class Stage {
       this.controls.enabled = true;
       const v = this.devices.get(d.id);
       if (v && !this.events.move(d.id, v.group.position.x, v.group.position.z)) {
+        v.group.position.copy(d.from);
+        v.group.updateMatrixWorld(true);
