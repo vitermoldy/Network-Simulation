@@ -966,3 +966,5 @@ export class Simulator {
       this.loseAt(p, dev.id, `${dst} ada di jaringan lain, tapi ${dev.name} belum punya gateway.`);
       return;
     }
+    const nextHop = local ? dst : dev.gateway!;
+    if (dev.id === this.client.deviceId) {
