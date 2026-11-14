@@ -197,3 +197,5 @@ export class Stage {
       const a = this.camera.aspect;
       if (this.container.clientWidth > 0 && (!framedAspect || Math.abs(a - framedAspect) / framedAspect > 0.25)) {
         framedAspect = a;
+        this.fitView(false);
+      }
