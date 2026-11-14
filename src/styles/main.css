@@ -1841,3 +1841,5 @@ tbody th {
 }
 
 .devwin-head {
+  display: flex;
+  align-items: flex-start;
