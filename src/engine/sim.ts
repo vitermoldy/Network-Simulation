@@ -450,3 +450,5 @@ export class Simulator {
     this.arpPending.clear();
     this.fired.clear();
     this.macTables.clear();
+    this.arpCaches.clear();
+    this.dnsCache.clear();
