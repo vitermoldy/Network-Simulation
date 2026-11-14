@@ -105,3 +105,5 @@ export class App {
   private stream = { deviceId: '', printed: 0 };
   private portsKey = '';
   private desktopKey = '';
+  private browserCanvas?: { canvas: HTMLCanvasElement; ctx: CanvasRenderingContext2D; key: string };
+  private last = performance.now();
