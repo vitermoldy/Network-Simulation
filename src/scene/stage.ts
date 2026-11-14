@@ -768,3 +768,5 @@ export class Stage {
     if (v) return v;
     const mat = new THREE.MeshStandardMaterial({ color: this.packetColor(), emissive: this.packetColor(), emissiveIntensity: 0.35, roughness: 0.35, transparent: true });
     const mesh = new THREE.Mesh(packetGeo, mat);
+    mesh.castShadow = true;
+    mesh.userData.pick = { type: 'packet', packetId: p.id } satisfies Pick;
