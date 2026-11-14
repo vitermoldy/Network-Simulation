@@ -311,3 +311,5 @@ export class IosShell implements Shell {
           return [`%LINK-5-CHANGED: Interface ${longPortName(port!.name)}, changed state to administratively down`];
         },
       },
+      {
+        words: ['no', 'shutdown'], help: 'nyalakan port ini',
