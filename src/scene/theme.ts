@@ -17,3 +17,5 @@ export interface SceneTheme {
 
 export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
   light: {
+    background: 0xeef0f3,
+    floor: 0xe2e5ea,
