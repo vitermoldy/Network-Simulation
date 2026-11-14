@@ -470,3 +470,5 @@ export class App {
   /** Nearest spot to (x, z) where a device of `kind` does not sit on another one. */
   private freeSpot(kind: DeviceKind, x: number, z: number): { x: number; z: number } {
     const topo = this.sim.topo;
+    if (!topo.overlaps(kind, x, z)) return { x, z };
+    for (let r = 1; r < 30; r++) {
