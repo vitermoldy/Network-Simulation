@@ -77,3 +77,5 @@ function outlineGeometry(x0: number, z0: number, x1: number, z1: number, r: numb
   const inner = roundedRectShape(x0 + t, z0 + t, x1 - t, z1 - t, Math.max(0.01, r - t));
   outer.holes.push(new THREE.Path(inner.getPoints(8).reverse()));
   const g = new THREE.ShapeGeometry(outer, 8);
+  g.rotateX(-Math.PI / 2);
+  return g;
