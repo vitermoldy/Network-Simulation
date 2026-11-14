@@ -309,3 +309,5 @@ export class Topology {
     if ([...this.devices.values()].some((d) => d.id !== id && d.name.toLowerCase() === clean.toLowerCase())) {
       return { ok: false, reason: `Nama ${clean} sudah dipakai perangkat lain.` };
     }
+    this.device(id).name = clean;
+    this.rev++;
