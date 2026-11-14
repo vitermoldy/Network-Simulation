@@ -1233,3 +1233,6 @@ select {
 }
 
 .chip-change {
+  color: var(--muted);
+}
+
