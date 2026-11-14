@@ -51,3 +51,5 @@ export function keyboardTexture(): THREE.CanvasTexture {
   ctx.fillStyle = '#c9ced5';
   ctx.fillRect(0, 0, 1024, 420);
   // A clear band above the keys holds the power key and its label.
+  ctx.fillStyle = '#25282d';
+  ctx.beginPath();
