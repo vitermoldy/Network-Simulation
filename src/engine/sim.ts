@@ -30,3 +30,5 @@ const CLIENT_ISS = 1000;
 const SERVER_ISS = 5000;
 const SEGMENT = 400;
 
+export const PAGE_PARTS: { lines: string[]; shows: string }[] = [
+  {
