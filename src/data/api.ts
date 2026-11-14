@@ -102,3 +102,6 @@ export async function saveRun(run: RunRecord): Promise<boolean> {
   } catch {
     writeQueue([...readQueue(), run]);
     return false;
+  }
+}
+
