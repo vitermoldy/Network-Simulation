@@ -29,3 +29,5 @@ const TABLES = [
     route_changes INT NOT NULL,
     path JSON NULL,
     devices INT NOT NULL,
+    finished_at DATETIME NOT NULL,
+    INDEX runs_by_client (client_id, finished_at),
