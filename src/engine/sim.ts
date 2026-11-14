@@ -486,3 +486,5 @@ export class Simulator {
     this.version++;
   }
 
+  private setPhase(id: PhaseId, status: PhaseStatus): void {
+    const p = this.phases.find((x) => x.id === id)!;
