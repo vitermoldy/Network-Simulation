@@ -830,3 +830,6 @@ export class App {
       }
     });
     out.addEventListener('click', () => input.focus());
+  }
+
+  /** Appends lines to a device's terminal and to its open view, if any. */
