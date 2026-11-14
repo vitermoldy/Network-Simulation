@@ -860,3 +860,6 @@ select {
 }
 
 .speed label {
+  position: relative;
+}
+
