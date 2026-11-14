@@ -349,3 +349,6 @@ function buildRouter(dev: Device): Build {
   body.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
   group.add(body);
   const b = newBuild(group, w, h, d, body);
+  const z = d / 2 + 0.006;
+  const portX = (i: number) => 0.3 + i * 0.25;
+
