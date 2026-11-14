@@ -239,3 +239,6 @@ export class Topology {
     if (!peer) return false;
     if (this.port(portId).down || this.port(peer).down) return false;
     return this.deviceOf(portId).powered && this.deviceOf(peer).powered;
+  }
+
+  /** "shutdown" / "no shutdown" on one port. */
