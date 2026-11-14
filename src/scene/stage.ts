@@ -710,3 +710,5 @@ export class Stage {
       if (tw.t >= tw.dur) this.tween = undefined;
     }
     this.updateDevices();
+    this.updateCables();
+    this.updatePackets();
