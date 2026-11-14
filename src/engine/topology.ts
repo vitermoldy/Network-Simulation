@@ -488,3 +488,5 @@ export class Topology {
     };
   }
 
+  /** Replaces the whole network with a saved one. Throws with a readable reason on bad data. */
+  load(data: unknown): void {
