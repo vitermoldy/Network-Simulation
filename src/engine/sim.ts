@@ -902,3 +902,5 @@ export class Simulator {
         this.note('info', dev.id, `${dev.name} menjawab ARP`, `ARP menanyakan ${nic.ip}, IP milik ${dev.name}. Balasan berisi MAC ${nic.mac}.`, 2, p.id);
         this.hold(p, dev, inPort, [inPort], TIMING.host, () => {
           const reply = this.newPacket({
+            flow: 'arp', label: 'ARP balas', title: `ARP: ${nic.ip} ada di ${nic.mac}`,
+            eth: { src: nic.mac, dst: p.arp!.senderMac, type: 'ARP' },
