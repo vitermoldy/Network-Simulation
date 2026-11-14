@@ -83,3 +83,6 @@ export interface Packet {
   hops: number;
   /** Set on the extra copies a switch makes when it floods. */
   copyOf?: number;
+}
+
+export function clonePacket(p: Packet): Packet {
