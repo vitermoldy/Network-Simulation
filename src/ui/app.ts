@@ -1627,3 +1627,5 @@ export class App {
     const trace = (this.sim.trace.get(p.id) ?? []).map((id) => this.deviceName(id));
     box.innerHTML = `
       <div class="packet-head">
+        <p class="packet-mode">${this.followLatest ? 'Mengikuti paket terbaru' : 'Paket yang kamu pilih'}</p>
+        ${this.followLatest ? '' : '<button type="button" class="btn btn-small btn-ghost" id="follow-latest">Ikuti paket terbaru</button>'}
