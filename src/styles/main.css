@@ -1225,3 +1225,6 @@ select {
 }
 
 .chip-route {
+  color: var(--accent);
+}
+
