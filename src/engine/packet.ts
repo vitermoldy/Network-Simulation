@@ -143,3 +143,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
       ['Nomor ACK', p.tcp.flags.includes('ACK') ? String(p.tcp.ack) : '-'],
       ['Panjang data', `${p.tcp.len} byte`],
     ]);
+  } else if (p.udp) {
+    row(4, 'UDP', [
