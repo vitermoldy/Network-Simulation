@@ -402,3 +402,5 @@ export class Simulator {
   private checkSource(sourceId: string, needDns: boolean): Device | undefined {
     const dev = this.topo.has(sourceId) ? this.topo.device(sourceId) : undefined;
     const allowed = dev && (this.kind === 'ping' ? dev.kind !== 'switch' : isClient(dev));
+    if (!dev || !allowed) {
+      this.fail('input', this.kind === 'ping' ? 'Ping hanya bisa dari PC, laptop, server, atau router.' : 'Pilih PC atau laptop sebagai pengirim. Tambahkan satu dari palet perangkat kalau belum ada.');
