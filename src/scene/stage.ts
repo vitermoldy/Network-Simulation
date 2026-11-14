@@ -31,3 +31,6 @@ interface CableView {
   mesh: THREE.Mesh;
   mat: THREE.MeshStandardMaterial;
   curve: THREE.CatmullRomCurve3;
+}
+
+interface PacketView {
