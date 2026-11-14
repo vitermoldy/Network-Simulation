@@ -927,3 +927,6 @@ export class Stage {
     this.raycaster.setFromCamera(this.pointer, this.camera);
     const out = new THREE.Vector3();
     return this.raycaster.ray.intersectPlane(this.floorPlane, out) ? { x: out.x, z: out.z } : undefined;
+  }
+
+  dispose(): void {
