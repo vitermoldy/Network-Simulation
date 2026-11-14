@@ -440,3 +440,5 @@ export class App {
     return undefined;
   }
 
+  /** The Web Browser app on a PC's Desktop: same run as the header form, from that PC. */
+  private browse(deviceId: string, rawUrl: string): void {
