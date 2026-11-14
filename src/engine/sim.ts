@@ -704,3 +704,5 @@ export class Simulator {
       this.schedule(f.t1, () => {
         if (this.flights.includes(f)) this.arrive(f);
       }, true);
+    }
+    this.version++;
