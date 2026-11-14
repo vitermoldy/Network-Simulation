@@ -273,3 +273,5 @@ export class App {
       $('follow').setAttribute('aria-pressed', String(this.stage.follow));
     });
     $('help-open').addEventListener('click', () => {
+      $('hint').hidden = false;
+      $('hint-close').focus();
