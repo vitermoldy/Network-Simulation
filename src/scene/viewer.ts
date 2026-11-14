@@ -185,3 +185,5 @@ export class DeviceViewer {
       const centre = box.getCenter(new THREE.Vector3());
       const dir = new THREE.Vector3(0.18, 0.42, 1).normalize();
       const fov = (this.camera.fov * Math.PI) / 180;
+      const fitW = size.x / 2 / Math.tan(Math.atan(Math.tan(fov / 2) * this.camera.aspect));
+      const fitH = Math.max(size.y, size.z * 0.6) / 2 / Math.tan(fov / 2);
