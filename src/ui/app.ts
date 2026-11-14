@@ -636,3 +636,5 @@ export class App {
     }
     if (box.contains(document.activeElement) && (document.activeElement as HTMLElement).matches('input') && this.desktopApp === 'ip') return;
     this.desktopKey = key;
+    const back = (title: string) => `<div class="app-bar"><button type="button" class="btn btn-small btn-ghost" data-app="home">Kembali ke Desktop</button><h3>${title}</h3></div>`;
+    if (this.desktopApp === 'home') {
