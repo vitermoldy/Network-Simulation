@@ -135,3 +135,5 @@ export class Stage {
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.toneMapping = THREE.NeutralToneMapping;
     const canvas = this.renderer.domElement;
+    canvas.className = 'stage-canvas';
+    canvas.tabIndex = 0;
