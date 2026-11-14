@@ -43,3 +43,6 @@ export class PromptShell implements Shell {
 
   prompt(): string {
     return 'C:\\>';
+  }
+
+  banner(): string[] {
