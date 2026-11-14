@@ -141,3 +141,6 @@ export interface SavedDevice extends Omit<Device, 'ports'> {
 export interface TopologyData {
   version: 1;
   devices: SavedDevice[];
+  links: [string, string][];
+}
+
