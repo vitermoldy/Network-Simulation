@@ -850,3 +850,5 @@ select {
   gap: 2px;
   margin: 0;
   padding: 3px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r);
