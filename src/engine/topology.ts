@@ -574,3 +574,5 @@ export class Topology {
       const root = find(id);
       if (!ids.has(root)) ids.set(root, ids.size);
       out.set(id, ids.get(root)!);
+    }
+    return out;
