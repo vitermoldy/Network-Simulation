@@ -402,3 +402,5 @@ function buildRouter(dev: Device): Build {
   const sys = led(0.02);
   sys.position.set(-w / 2 + 0.74, 0.41, z + 0.01);
   const act = led(0.02);
+  act.position.set(-w / 2 + 0.88, 0.41, z + 0.01);
+  group.add(pwr, sys, act);
