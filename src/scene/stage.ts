@@ -597,3 +597,5 @@ export class Stage {
     const w = Math.max(1, this.container.clientWidth);
     const h = Math.max(1, this.container.clientHeight);
     const narrow = w <= 640;
+    // Device name tags are fixed-size HTML, so leave room for half a tag on each side.
+    const free = {
