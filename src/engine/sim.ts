@@ -245,3 +245,5 @@ export class Simulator {
   /** Goes up on every visible change, so the interface can redraw only when needed. */
   version = 0;
 
+  private queue: Task[] = [];
+  private seq = 0;
