@@ -1468,3 +1468,5 @@ export class Simulator {
       return;
     }
 
+    if (s.state === 'syn-rcvd' && has('ACK') && t.ack === SERVER_ISS + 1) {
+      this.acked('synack');
