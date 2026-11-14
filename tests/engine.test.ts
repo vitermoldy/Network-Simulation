@@ -214,3 +214,5 @@ describe('simulator', () => {
   it('stops after each decision in step mode', () => {
     const sim = withScenario('normal');
     sim.stepMode = true;
+    sim.start('www.jaringan.test', 3);
+    let r = sim.advance(100);
