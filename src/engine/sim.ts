@@ -366,3 +366,5 @@ export class Simulator {
     this.resetRun(target, sourceId, seed);
     this.ping = { target, ip: undefined, count, seq: 0, sent: 0, received: 0, times: [], id: 1 + Math.floor(this.rng() * 900) };
     this.setPhase('input', 'active');
+    const isIp = /^\d+\.\d+\.\d+\.\d+$/.test(target);
+    const dev = this.checkSource(sourceId, !isIp);
