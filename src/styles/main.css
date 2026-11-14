@@ -807,3 +807,5 @@ select {
   height: 1px;
 }
 
+.switch-track {
+  position: relative;
