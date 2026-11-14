@@ -487,3 +487,5 @@ export class App {
       this.toast(`Tempat itu terlalu dekat dengan ${hit.name}. Pilih tempat yang lebih lega.`);
       return;
     }
+    if (this.sim.topo.devices.size >= 60) {
+      this.toast('Meja sudah penuh: paling banyak 60 perangkat.');
