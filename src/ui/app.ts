@@ -1148,3 +1148,5 @@ export class App {
         done = 'Catatan DNS ditambahkan.';
       }
       const err = form.querySelector<HTMLElement>('.form-error');
+      if (!res.ok) {
+        if (err) {
