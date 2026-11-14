@@ -1309,3 +1309,5 @@ export class Simulator {
     if (this.status !== 'running') return;
     const lines = ['GET / HTTP/1.1', `Host: ${c.host}`, 'Accept: text/html'];
     c.getLen = lines.join('\r\n').length + 4;
+    c.sndNext = CLIENT_ISS + 1 + c.getLen;
+    this.setPhase('http-req', 'active');
