@@ -370,3 +370,5 @@ export class Topology {
     return { ok: true };
   }
 
+  setServices(id: string, services: Services): void {
+    const d = this.device(id);
