@@ -169,3 +169,5 @@ interface Retx {
   tries: number;
   maxTries: number;
   rto: number;
+  firedAt: number;
+  timer?: Task;
