@@ -92,3 +92,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
         const cand: Route = {
           network: a.network, type: 'O', portId: hop.portId, nextHop: hop.nextHop, viaRouter: hop.to, cost: d,
         };
+        if (!cur || cand.cost < cur.cost || (cand.cost === cur.cost && cur.type === 'O' && (cand.viaRouter ?? '') < (cur.viaRouter ?? ''))) {
+          best.set(a.network, cand);
