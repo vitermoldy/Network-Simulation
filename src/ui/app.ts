@@ -1186,3 +1186,5 @@ export class App {
         err.textContent = 'Beri nama rancangannya dulu, misalnya Lab 3.';
         err.hidden = false;
         input.focus();
+        return;
+      }
