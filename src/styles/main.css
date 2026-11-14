@@ -2291,3 +2291,5 @@ tbody th {
   .stage-tools {
     top: 8px;
     right: 8px;
+    left: 8px;
+    justify-content: space-between;
