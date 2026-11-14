@@ -169,3 +169,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     wrap(ctx, 'Halaman ini dikirim server web lewat switch dan router sampai ke layarmu, potong demi potong.', W - 96)
       .forEach((l, i) => ctx.fillText(l, 48, body(226 + i * 40)));
   } else placeholder(ctx, 48, body(118), W - 96, 170, 2);
+  if (footer) {
+    ctx.fillStyle = '#e4e7eb';
