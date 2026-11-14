@@ -113,3 +113,6 @@ export const LAYER_NAMES: Record<LayerId, { osi: string; tcpip: string }> = {
   4: { osi: 'Transport (lapisan 4)', tcpip: 'Transport' },
   3: { osi: 'Jaringan (lapisan 3)', tcpip: 'Internet' },
   2: { osi: 'Data link (lapisan 2)', tcpip: 'Akses jaringan' },
+  1: { osi: 'Fisik (lapisan 1)', tcpip: 'Akses jaringan' },
+};
+
