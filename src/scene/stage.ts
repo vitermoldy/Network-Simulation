@@ -438,3 +438,6 @@ export class Stage {
       while (o && !o.userData.pick) o = o.parent;
       if (o) return o.userData.pick as Pick;
     }
+    return null;
+  }
+
