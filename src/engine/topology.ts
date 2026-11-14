@@ -48,3 +48,6 @@ export interface Device {
   /** Place on the bench, in scene units. Every device faces +z. */
   x: number;
   z: number;
+}
+
+export interface Link {
