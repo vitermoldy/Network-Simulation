@@ -478,3 +478,5 @@ select {
 .ptag {
   padding: 1px 6px;
   border-radius: 5px;
+  background: var(--accent);
+  color: var(--accent-ink);
