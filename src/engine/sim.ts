@@ -1508,3 +1508,5 @@ export class Simulator {
       return;
     }
 
+    if (t.len > 0) {
+      if (s.state === 'syn-rcvd') {
