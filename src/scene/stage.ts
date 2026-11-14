@@ -764,3 +764,5 @@ export class Stage {
   }
 
   private ensurePacket(p: Packet): PacketView {
+    let v = this.packets.get(p.id);
+    if (v) return v;
