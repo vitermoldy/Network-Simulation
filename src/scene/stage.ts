@@ -263,3 +263,5 @@ export class Stage {
 
   private removeDeviceView(id: string): void {
     const v = this.devices.get(id);
+    if (!v) return;
+    v.group.traverse((o) => {
