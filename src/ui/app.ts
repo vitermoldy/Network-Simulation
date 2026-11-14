@@ -833,3 +833,5 @@ export class App {
   }
 
   /** Appends lines to a device's terminal and to its open view, if any. */
+  private termWrite(deviceId: string, lines: string[]): void {
+    if (!lines.length) return;
