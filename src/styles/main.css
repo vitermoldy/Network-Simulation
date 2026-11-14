@@ -1752,3 +1752,6 @@ tbody th {
   gap: 6px;
   padding: 6px 0 6px 10px;
   border: 1px solid var(--line);
+  border-radius: var(--r);
+}
+
