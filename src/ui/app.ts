@@ -350,3 +350,5 @@ export class App {
     this.bindDeviceWindow();
     this.bindHistoryPanel();
 
+    document.addEventListener('keydown', (e) => {
+      const typing = (e.target as HTMLElement).closest('input, select, textarea');
