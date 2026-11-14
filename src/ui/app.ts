@@ -30,3 +30,5 @@ const ROLE_TEXT: Record<Role, string> = {
 const KIND_TEXT: Record<DeviceKind, string> = {
   pc: 'Klien. Browser di sini membuat permintaan, lalu menampilkan halaman yang datang.',
   laptop: 'Klien. Browser di sini membuat permintaan, lalu menampilkan halaman yang datang.',
+  switch: 'Bekerja di lapisan 2. Switch hanya membaca alamat MAC, lalu meneruskan frame ke port yang tepat. Tabel MAC-nya terisi sendiri dari frame yang lewat. Port-nya tidak diberi IP.',
+  router: 'Bekerja di lapisan 3. Router membaca IP tujuan, mencocokkannya dengan tabel routing, lalu meneruskan paket ke router berikutnya dengan header Ethernet baru. Tiap port harus di jaringan yang berbeda.',
