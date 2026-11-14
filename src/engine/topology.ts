@@ -453,3 +453,5 @@ export class Topology {
     this.links.set(link.id, link);
     this.portLink.set(a, link.id);
     this.portLink.set(b, link.id);
+    this.rev++;
+    return { ok: true, value: link };
