@@ -83,3 +83,5 @@ export class App {
   private tab: Tab = 'alur';
   private renderedVersion = -1;
   private renderedLog = 0;
+  private openEntry: number | null = null;
+  private followLatest = true;
