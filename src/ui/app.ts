@@ -119,3 +119,5 @@ export class App {
     void this.refreshDb();
     try {
       this.stage = await createStage();
+      $('stage-state').hidden = true;
+      this.stage.setTheme(this.theme());
