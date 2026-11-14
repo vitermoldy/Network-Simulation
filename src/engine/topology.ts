@@ -427,3 +427,5 @@ export class Topology {
     if (!pick) return { ok: false, reason: `Jaringan ${networkOf(gw.ip, gw.prefix)} sudah penuh.` };
     nic.ip = pick;
     nic.prefix = gw.prefix;
+    d.gateway = gw.ip;
+    if (isClient(d)) {
