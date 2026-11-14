@@ -480,3 +480,5 @@ select {
   border-radius: 5px;
   background: var(--accent);
   color: var(--accent-ink);
+  font: 500 11px/1.5 var(--font-mono);
+  white-space: nowrap;
