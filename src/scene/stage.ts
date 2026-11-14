@@ -295,3 +295,6 @@ export class Stage {
     }
     for (const v of this.devices.values()) v.group.updateMatrixWorld(true);
     this.rebuildCables();
+  }
+
+  private footprints(): Box2[] {
