@@ -29,3 +29,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
   const attached = new Map<string, { network: string; portId: string }[]>();
   for (const r of routers) {
     const list: { network: string; portId: string }[] = [];
+    for (const p of r.ports) {
+      if (p.ip && p.prefix !== undefined && topo.carrier(p.id)) list.push({ network: networkOf(p.ip, p.prefix), portId: p.id });
