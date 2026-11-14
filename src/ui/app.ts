@@ -1641,3 +1641,5 @@ export class App {
           <div class="layer-head"><span class="layer-num">${r.layer}</span><span class="layer-name">${esc(r.osi)}</span><span class="layer-proto">${esc(r.proto)}</span></div>
           <p class="layer-tcpip">Model TCP/IP: ${esc(r.tcpip)}${read ? '. Dibaca perangkat ini.' : ''}</p>
           <dl>${r.fields.map(([k, v]) => {
+            const before = prevField(r.layer, k);
+            const changed = before !== undefined && before !== v && r.layer !== 1;
