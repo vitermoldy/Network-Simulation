@@ -29,3 +29,5 @@ export interface PortView {
   /** Missing on switch ports: Cisco switches use one LED per port for link and activity. */
   act?: THREE.Mesh;
   hit: THREE.Mesh;
+  holeW: number;
+  holeH: number;
