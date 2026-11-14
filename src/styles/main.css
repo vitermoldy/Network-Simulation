@@ -916,3 +916,5 @@ select {
 
 .clock.is-fast #clock-value::after {
   content: " (dipercepat)";
+  font-family: var(--font-text);
+  color: var(--muted);
