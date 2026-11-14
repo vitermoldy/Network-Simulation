@@ -460,3 +460,6 @@ select {
   display: none;
   color: var(--bad);
   font-weight: 600;
+}
+
+.tag.is-off .tag-off {
