@@ -843,3 +843,5 @@ export class Stage {
 
     for (const l of this.sim.lost) {
       if (seen.has(l.packet.id)) continue;
+      const v = this.ensurePacket(l.packet);
+      seen.add(l.packet.id);
