@@ -85,3 +85,5 @@ function portNames(kind: DeviceKind): string[] {
   return ['Fa0'];
 }
 
+interface DeviceSpec {
+  id: string;
