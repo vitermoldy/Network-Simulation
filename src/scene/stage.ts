@@ -483,3 +483,5 @@ export class Stage {
     this.setHover(pick, e.clientX, e.clientY);
     if (this.pendingPort) {
       const point = new THREE.Vector3();
+      if (this.raycaster.ray.intersectPlane(this.floorPlane, point)) this.drawDangling(point);
+    }
