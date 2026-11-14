@@ -34,3 +34,5 @@ export interface PortView {
 }
 
 export interface DeviceView {
+  device: Device;
+  group: THREE.Group;
