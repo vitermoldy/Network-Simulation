@@ -181,3 +181,5 @@ function buildRocker(deviceId: string, scale = 1) {
   return { group, paddle, hit, glow };
 }
 
+/** A round push button with a light ring. Local +z points out. */
+function buildRoundButton(deviceId: string, r = 0.075) {
