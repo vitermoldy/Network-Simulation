@@ -120,3 +120,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   const busy = view.state === 'resolving' || view.state === 'connecting' || view.state === 'loading';
   if (busy) {
     const done = view.parts.filter(Boolean).length;
+    const frac = view.state === 'resolving' ? 0.15 : view.state === 'connecting' ? 0.35 : 0.45 + 0.55 * (done / view.parts.length);
+    ctx.fillStyle = '#1f2de6';
