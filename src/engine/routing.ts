@@ -31,3 +31,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
     const list: { network: string; portId: string }[] = [];
     for (const p of r.ports) {
       if (p.ip && p.prefix !== undefined && topo.carrier(p.id)) list.push({ network: networkOf(p.ip, p.prefix), portId: p.id });
+    }
+    attached.set(r.id, list);
