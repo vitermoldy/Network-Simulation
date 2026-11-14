@@ -420,3 +420,5 @@ export class Stage {
       out.push(v.powerHit, ...v.hits);
       for (const p of v.ports.values()) out.push(p.hit);
     }
+    for (const c of this.cables.values()) out.push(c.group);
+    for (const p of this.packets.values()) out.push(p.mesh);
