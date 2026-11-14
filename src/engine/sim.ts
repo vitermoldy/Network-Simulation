@@ -1264,3 +1264,6 @@ export class Simulator {
     } else {
       this.note('info', this.clientId, `Segmen ${part} ganda`, `Segmen ${part} sudah pernah diterima. ${this.cname} cukup membalas ACK ${c.rcvNext} lagi.`, 4, p.id);
     }
+    this.sendAck(dev, 'ACK');
+
+    if (!c.complete && c.rcvNext >= SERVER_ISS + 1 + RESPONSE_LEN) {
