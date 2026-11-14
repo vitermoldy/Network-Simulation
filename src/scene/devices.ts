@@ -425,3 +425,5 @@ function buildServer(dev: Device): Build {
   const services = [dev.services?.dns ? 'DNS' : '', dev.services?.http ? 'HTTP' : ''].filter(Boolean).join(' + ') || 'TANPA LAYANAN';
   const panel = frontPanel(w - 0.08, h - 0.08, (p) => {
     p.ctx.fillStyle = '#c4c9cf';
+    p.ctx.fillRect(0, 0, (w - 0.08) * p.scale, (h - 0.08) * p.scale);
+    for (let i = 0; i < 3; i++) {
