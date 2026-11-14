@@ -584,3 +584,5 @@ select {
 
 .pal {
   display: grid;
+  justify-items: center;
+  gap: 2px;
