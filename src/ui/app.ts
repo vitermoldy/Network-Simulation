@@ -368,3 +368,5 @@ export class App {
         const c = this.stage.centrePoint();
         const spot = this.freeSpot(this.placing, c.x, c.z);
         this.place(this.placing, spot.x, spot.z);
+        return;
+      }
