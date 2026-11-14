@@ -2050,3 +2050,5 @@ tbody th {
   grid-column: 1 / 3;
 }
 
+.ipconf-mode {
+  display: flex;
