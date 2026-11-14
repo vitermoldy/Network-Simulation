@@ -553,3 +553,5 @@ export class Simulator {
     const res = this.topo.connect(a, b);
     if (!res.ok) return res;
     if (this.status === 'running') {
+      this.note('change', this.topo.port(a).deviceId, 'Kabel dipasang', `Kabel baru: ${this.topo.portLabel(a)} ke ${this.topo.portLabel(b)}.`, 1);
+    }
