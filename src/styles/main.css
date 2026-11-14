@@ -1253,3 +1253,5 @@ select {
 .devices {
   list-style: none;
   margin: 0 0 14px;
+  padding: 0;
+  display: grid;
