@@ -779,3 +779,5 @@ select {
   grid-row: 2;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
