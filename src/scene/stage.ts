@@ -147,3 +147,5 @@ export class Stage {
 
     this.camera = new THREE.PerspectiveCamera(38, 1, 0.1, 300);
     this.controls = new OrbitControls(this.camera, canvas);
+    this.controls.enableDamping = true;
+    this.controls.dampingFactor = 0.09;
