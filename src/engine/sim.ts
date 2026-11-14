@@ -1001,3 +1001,5 @@ export class Simulator {
     const entry = this.arpPending.get(ip);
     if (!entry) return;
     const nic = dev.ports[0];
+    const retry = entry.tries;
+    entry.tries++;
