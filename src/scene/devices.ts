@@ -475,3 +475,5 @@ function addScreen(b: Build, parent: THREE.Object3D, w: number, y: number, z: nu
 function buildPc(dev: Device): Build {
   const group = new THREE.Group();
   const tw = 0.75;
+  const th = 1.55;
+  const td = 1.5;
