@@ -614,3 +614,6 @@ export class Simulator {
 
   moveDevice(id: string, x: number, z: number): void {
     this.topo.moveDevice(id, x, z);
+    this.version++;
+  }
+
