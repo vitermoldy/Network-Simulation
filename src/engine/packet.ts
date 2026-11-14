@@ -111,3 +111,5 @@ export interface LayerRow {
 export const LAYER_NAMES: Record<LayerId, { osi: string; tcpip: string }> = {
   7: { osi: 'Aplikasi (lapisan 5 sampai 7)', tcpip: 'Aplikasi' },
   4: { osi: 'Transport (lapisan 4)', tcpip: 'Transport' },
+  3: { osi: 'Jaringan (lapisan 3)', tcpip: 'Internet' },
+  2: { osi: 'Data link (lapisan 2)', tcpip: 'Akses jaringan' },
