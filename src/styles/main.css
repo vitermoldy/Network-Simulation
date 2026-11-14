@@ -321,3 +321,6 @@ select {
   background: transparent;
   color: var(--bad);
   border-color: color-mix(in srgb, var(--bad) 55%, transparent);
+}
+
+.btn-danger:hover:not(:disabled) {
