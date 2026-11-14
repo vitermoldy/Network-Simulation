@@ -650,3 +650,5 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
     anyActive ||= active;
     const carrier = topo.hasPort(p.id) && topo.carrier(p.id);
     if (p.act) {
+      setLed(p.link, carrier ? MATERIAL.ledGreen : null);
+      setLed(p.act, active ? MATERIAL.ledAmber : null);
