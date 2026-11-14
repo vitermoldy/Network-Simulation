@@ -1496,3 +1496,5 @@ export class Simulator {
       } else if (s.state === 'last-ack') {
         const r = this.retx.get('finack');
         if (r) this.fire(r);
+      }
+      return;
