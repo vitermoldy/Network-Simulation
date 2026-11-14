@@ -40,3 +40,5 @@ export interface Device {
   /** Hosts only. */
   gateway?: string;
   /** PCs and laptops: the DNS server they ask. */
+  dnsServer?: string;
+  /** Servers only. */
