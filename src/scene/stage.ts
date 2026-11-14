@@ -492,3 +492,6 @@ export class Stage {
     this.hovered = pick;
     this.renderer.domElement.style.cursor = pick ? (pick.type === 'device' ? 'grab' : 'pointer') : '';
     if (!same || pick) this.events.hover(pick, x, y);
+  }
+
+  private onUp(e: PointerEvent): void {
