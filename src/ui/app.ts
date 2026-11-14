@@ -1166,3 +1166,5 @@ export class App {
       window.setTimeout(() => {
         if (this.deviceDirty && !box.contains(document.activeElement)) {
           this.deviceDirty = false;
+          this.deviceKey = '';
+          this.renderDevice();
