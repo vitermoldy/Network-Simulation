@@ -823,3 +823,5 @@ export class Simulator {
     });
   }
 
+  private routerIn(dev: Device, inPort: string, p: Packet): void {
+    const port = this.topo.port(inPort);
