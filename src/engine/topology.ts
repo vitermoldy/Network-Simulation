@@ -289,3 +289,6 @@ export class Topology {
     d.x = Math.round(x * 100) / 100;
     d.z = Math.round(z * 100) / 100;
     this.rev++;
+  }
+
+  /** Would a device of `kind` at (x, z) sit on top of another one? */
