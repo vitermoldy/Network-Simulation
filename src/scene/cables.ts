@@ -101,3 +101,5 @@ export function cableCurve(a: PortView, b: PortView, devices: Box2[], lane = 0):
   const ea = endPoints(a);
   const eb = endPoints(b);
   const path = planFloorPath(ea.floor, eb.floor, devices);
+  const y = FLOOR_Y + lane * 0.012;
+  const mid = path.slice(1, -1).map(([x, z]) => new THREE.Vector3(x, y, z));
