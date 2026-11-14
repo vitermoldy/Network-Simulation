@@ -1534,3 +1534,5 @@ export class App {
         <form class="host-form" data-form="host" novalidate>
           <label for="gw-${d.id}">Gateway</label><input id="gw-${d.id}" name="gateway" class="mono" value="${esc(d.gateway ?? '')}" placeholder="misalnya 192.168.1.1" inputmode="decimal" autocomplete="off" />
           ${isClient(d) ? `<label for="dns-${d.id}">Server DNS</label><input id="dns-${d.id}" name="dns" class="mono" value="${esc(d.dnsServer ?? '')}" placeholder="misalnya 172.16.0.53" inputmode="decimal" autocomplete="off" />` : ''}
+          <div class="host-actions"><button type="submit" class="btn btn-small btn-secondary">Simpan</button>
+            <button type="button" class="btn btn-small btn-ghost" data-act="auto">IP otomatis</button></div>
