@@ -762,3 +762,5 @@ export class Simulator {
     this.record(f.packet, dev.id, false);
     if (!dev.powered) {
       this.loseAt(f.packet, dev.id, `${dev.name} sedang mati.`);
+      return;
+    }
