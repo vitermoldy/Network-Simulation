@@ -408,3 +408,6 @@ function buildRouter(dev: Device): Build {
   b.power = { hit: rocker.hit, glow: rocker.glow, rocker: rocker.paddle, leds: [pwr, sys] };
   b.busy.push(act);
   return b;
+}
+
+/** Tower server: drive bays, round power button, the services it runs printed large. */
