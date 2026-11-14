@@ -310,3 +310,5 @@ export class Simulator {
       this.time = Math.max(this.time, task.t);
       task.run();
       this.version++;
+      if (this.stepMode && task.stop) {
+        this.pruneLost();
