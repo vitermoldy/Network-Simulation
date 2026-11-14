@@ -417,3 +417,5 @@ function buildServer(dev: Device): Build {
   const d = 1.6;
   const group = new THREE.Group();
   const body = rounded(w, h, d, shared.server, 0.05);
+  body.position.y = h / 2;
+  body.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
