@@ -9,3 +9,5 @@ export const FONT_MONO = '"JetBrains Mono Variable", "JetBrains Mono", ui-monosp
 
 export function makeCanvas(w: number, h: number): [HTMLCanvasElement, CanvasRenderingContext2D] {
   const c = document.createElement('canvas');
+  c.width = w;
+  c.height = h;
