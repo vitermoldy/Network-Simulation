@@ -58,3 +58,6 @@ dan rancangan tersimpan.
    ```
 
    Server membuat database `network_simulation` dan tabelnya sendiri saat pertama kali tersambung.
+   Selama `npm run dev` jalan, alamat `/api` diteruskan ke server ini (port 8797).
+
+Kalau server mati, simulator tetap bisa dipakai. Percobaan yang selesai disimpan dulu di browser dan
