@@ -1202,3 +1202,5 @@ export class App {
     $('layouts').addEventListener('click', async (e) => {
       const b = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-layout]');
       if (!b) return;
+      const id = Number(b.dataset.layout);
+      const name = b.dataset.name ?? '';
