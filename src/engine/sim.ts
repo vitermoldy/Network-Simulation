@@ -98,3 +98,6 @@ export interface LogEntry {
   packetId?: number;
   layer?: LayerId;
   title: string;
+  text: string;
+}
+
