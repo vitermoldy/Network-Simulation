@@ -466,3 +466,6 @@ export class Simulator {
     this.outputDevice = sourceId;
     this.status = 'running';
     this.version++;
+  }
+
+  /** Stops everything and brings the scene back to rest. */
