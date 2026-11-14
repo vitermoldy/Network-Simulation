@@ -1383,3 +1383,5 @@ export class App {
         <span class="entry-title">${esc(l.title)}</span>
         <span class="entry-text">${esc(l.text)}</span>
       </button>`;
+      frag.appendChild(li);
+    }
