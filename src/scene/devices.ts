@@ -543,3 +543,5 @@ function buildLaptop(dev: Device): Build {
   const lid = rounded(w, lidH, 0.05, shared.laptop, 0.02);
   lid.position.set(0, lidH / 2, 0);
   lid.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
+  hinge.add(lid);
+  const bezel = mesh(new THREE.PlaneGeometry(w - 0.06, lidH - 0.06), shared.bezel, false);
