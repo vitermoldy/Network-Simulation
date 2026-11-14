@@ -66,3 +66,5 @@ function cleanRun(run) {
       PHASES.has(run.failedPhase) ? run.failedPhase : null,
       run.reason ? text(run.reason, 400) : null,
       Math.min(99999, Math.max(0, Number(run.simSeconds) || 0)),
+      count(run.packetsLost),
+      count(run.resends),
