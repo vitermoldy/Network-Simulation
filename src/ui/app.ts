@@ -911,3 +911,5 @@ export class App {
     const text = `Kabel ${this.sim.topo.portLabel(link.a)} ke ${this.sim.topo.portLabel(link.b)} dicabut.`;
     this.sim.disconnect(linkId);
     this.selectedLink = null;
+    this.toast(text);
+    this.deviceKey = '';
