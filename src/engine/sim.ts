@@ -1226,3 +1226,5 @@ export class Simulator {
     if (has('FIN')) {
       if (c.tcp === 'fin-wait' || c.tcp === 'time-wait') {
         const first = c.tcp === 'fin-wait';
+        this.acked('fin');
+        c.rcvNext = t.seq + 1;
