@@ -483,3 +483,5 @@ function buildPc(dev: Device): Build {
   group.add(tower);
   const b = newBuild(group, 2.6, th, 1.6, tower);
   b.top.set(-0.85, th + 0.15, 0);
+  const z = td / 2 + 0.006;
+  const panel = frontPanel(tw - 0.06, th - 0.06, (p) => {
