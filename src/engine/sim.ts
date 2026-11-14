@@ -603,3 +603,5 @@ export class Simulator {
     }
     for (const h of [...this.holds]) if (h.deviceId === id) this.loseHold(h, `${dev.name} diangkat dari meja.`);
     this.lost = this.lost.filter((l) => l.deviceId !== id);
+    this.macTables.delete(id);
+    this.arpCaches.delete(id);
