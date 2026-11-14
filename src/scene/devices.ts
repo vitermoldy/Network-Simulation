@@ -595,3 +595,5 @@ export function buildDevice(dev: Device): DeviceView {
       : dev.kind === 'server' ? buildServer(dev)
         : dev.kind === 'switch' ? buildSwitch(dev)
           : buildRouter(dev);
+  b.group.position.set(dev.x, 0, dev.z);
+  b.group.userData.deviceId = dev.id;
