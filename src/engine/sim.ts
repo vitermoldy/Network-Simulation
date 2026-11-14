@@ -1113,3 +1113,5 @@ export class Simulator {
     const pc = this.topo.device(this.clientId);
     const c = this.client;
     this.setPhase('dns', 'active');
+    this.note('info', this.clientId, `${pc.name} bertanya ke DNS`, `${pc.name} menanyakan "berapa IP ${c.host}?" ke server DNS ${pc.dnsServer}. Pertanyaan DNS dibungkus UDP ke port 53, lalu IP, lalu Ethernet.`, 7);
+    this.reliable('dns', 'DNS?', pc, (retry) => this.newPacket({
