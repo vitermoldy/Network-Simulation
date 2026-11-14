@@ -555,3 +555,5 @@ select {
   white-space: nowrap;
 }
 
+.tool[aria-pressed="true"] {
+  background: var(--accent);
