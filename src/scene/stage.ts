@@ -457,3 +457,5 @@ export class Stage {
       const p = this.floorPoint(e);
       if (p) this.ghost.group.position.set(Math.round(p.x * 5) / 5, 0, Math.round(p.z * 5) / 5);
       this.renderer.domElement.style.cursor = 'copy';
+      return;
+    }
