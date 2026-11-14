@@ -812,3 +812,5 @@ export class App {
       } else {
         this.termWrite(deviceId, t.shell.exec(line));
       }
+      if (line.trim()) {
+        t.history.push(line);
