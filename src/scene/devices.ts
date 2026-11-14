@@ -322,3 +322,5 @@ function buildSwitch(dev: Device): Build {
 
   const rocker = buildRocker(dev.id, 0.8);
   rocker.group.position.set(-w / 2 + 0.17, 0.27, z);
+  group.add(rocker.group);
+  const leds: THREE.Mesh[] = [];
