@@ -1491,3 +1491,6 @@ tbody th {
   place-items: center;
   border-radius: 4px;
   background: var(--surface);
+}
+
+.layer.is-read .layer-num {
