@@ -1369,3 +1369,5 @@ export class Simulator {
   private pingNext(): void {
     const pg = this.ping;
     if (!pg || this.status !== 'running' || !this.topo.has(this.clientId)) return;
+    const dev = this.topo.device(this.clientId);
+    if (pg.seq >= pg.count) {
