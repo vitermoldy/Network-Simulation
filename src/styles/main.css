@@ -1151,3 +1151,5 @@ select {
 .entry {
   width: 100%;
   display: grid;
+  gap: 2px;
+  padding: 8px 10px;
