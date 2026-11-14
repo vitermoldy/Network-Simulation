@@ -1269,3 +1269,5 @@ export class App {
   private renderRuns(runs: api.SavedRun[]): void {
     const box = $('runs');
     if (!runs.length) {
+      box.innerHTML = '<p class="empty">Belum ada percobaan tersimpan. Setiap permintaan yang selesai atau gagal akan dicatat di sini.</p>';
+      return;
