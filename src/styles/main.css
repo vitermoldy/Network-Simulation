@@ -663,3 +663,5 @@ select {
   background: var(--tip-bg);
   color: var(--tip-ink);
   font-size: 13px;
+  line-height: 1.4;
+  pointer-events: none;
