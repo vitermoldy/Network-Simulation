@@ -102,3 +102,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     ctx.fillStyle = '#060708';
     ctx.fillRect(0, 0, W, H);
     return;
+  }
+  ctx.fillStyle = '#ffffff';
