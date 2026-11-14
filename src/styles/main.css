@@ -1555,3 +1555,5 @@ tbody th {
 /* device settings */
 
 .name-form {
+  display: flex;
+  flex-wrap: wrap;
