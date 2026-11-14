@@ -139,3 +139,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
       ['Port asal', String(p.tcp.src)],
       ['Port tujuan', String(p.tcp.dst)],
       ['Flag', p.tcp.flags.join(', ')],
+      ['Nomor urut (SEQ)', String(p.tcp.seq)],
+      ['Nomor ACK', p.tcp.flags.includes('ACK') ? String(p.tcp.ack) : '-'],
