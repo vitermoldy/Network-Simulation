@@ -269,3 +269,5 @@ export class App {
     );
     $('follow').addEventListener('click', () => {
       if (!this.stage) return;
+      this.stage.follow = !this.stage.follow;
+      $('follow').setAttribute('aria-pressed', String(this.stage.follow));
