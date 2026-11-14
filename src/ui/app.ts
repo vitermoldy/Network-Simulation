@@ -99,3 +99,5 @@ export class App {
   // Device window.
   private dwTab: DwTab = 'fisik';
   private viewer: DeviceViewer | null = null;
+  private viewerLoading = false;
+  private desktopApp: 'home' | 'ip' | 'prompt' | 'browser' = 'home';
