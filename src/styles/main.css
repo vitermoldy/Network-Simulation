@@ -199,3 +199,5 @@ p {
   flex: 1;
   display: flex;
   align-items: center;
+  min-height: 44px;
+  background: var(--panel);
