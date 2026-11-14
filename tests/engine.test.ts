@@ -216,3 +216,5 @@ describe('simulator', () => {
     sim.stepMode = true;
     sim.start('www.jaringan.test', 3);
     let r = sim.advance(100);
+    expect(r).toBe('step');
+    expect(sim.time).toBeLessThan(1);
