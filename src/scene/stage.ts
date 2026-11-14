@@ -467,3 +467,5 @@ export class Stage {
         this.controls.enabled = false;
         this.renderer.domElement.style.cursor = 'grabbing';
       }
+    }
+    if (this.drag) {
