@@ -392,3 +392,5 @@ export class Topology {
     if (!d.dnsRecords) return;
     const next = { ...d.dnsRecords };
     delete next[name];
+    d.dnsRecords = next;
+    this.rev++;
