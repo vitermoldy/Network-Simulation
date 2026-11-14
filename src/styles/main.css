@@ -439,3 +439,5 @@ select {
   color: var(--muted);
 }
 
+.tag-ip:empty {
+  display: none;
