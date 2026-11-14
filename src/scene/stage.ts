@@ -635,3 +635,5 @@ export class Stage {
         const fits = bb.r - bb.l <= free.right - free.left && bb.t - bb.b <= free.top - free.bottom;
         if (fits) hi = mid;
         else lo = mid;
+      }
+      dist = hi;
