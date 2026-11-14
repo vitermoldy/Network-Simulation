@@ -138,3 +138,5 @@ export function buildPlug(port: PortView, cableMat: THREE.Material): THREE.Group
   const boot = new THREE.Mesh(new THREE.CylinderGeometry(h * 0.42, h * 0.62, 0.2, 16).rotateX(Math.PI / 2), cableMat);
   boot.position.z = 0.31;
   boot.castShadow = true;
+  g.add(boot);
+  const pos = new THREE.Vector3();
