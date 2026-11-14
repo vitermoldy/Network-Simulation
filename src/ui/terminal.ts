@@ -281,3 +281,5 @@ export class IosShell implements Shell {
       return [...list, { words: ['?'], help: '', run: help(list) }];
     }
     // Interface mode.
+    const port = this.iface ? topo.port(this.iface) : undefined;
+    const list: Command[] = [
