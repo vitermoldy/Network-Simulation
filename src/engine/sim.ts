@@ -1197,3 +1197,6 @@ export class Simulator {
     }
     if (!p.tcp) return;
     const t = p.tcp;
+    const has = (f: TcpFlag) => t.flags.includes(f);
+
+    if (has('RST')) {
