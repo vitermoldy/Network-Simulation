@@ -512,3 +512,5 @@ export class Simulator {
     this.note('error', deviceId, 'Gagal', reason);
   }
 
+  private note(kind: LogKind, deviceId: string | undefined, title: string, text: string, layer?: LayerId, packetId?: number): void {
+    this.log.push({ id: this.nextLog++, t: this.time, kind, deviceId, packetId, layer, title, text });
