@@ -889,3 +889,5 @@ export class App {
   }
 
   private togglePower(id: string): void {
+    const dev = this.sim.topo.device(id);
+    this.sim.setPower(id, !dev.powered);
