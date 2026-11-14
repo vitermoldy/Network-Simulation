@@ -1001,3 +1001,5 @@ export class App {
           ? `${topo.portLabel(p.portId)}${ip}. Klik untuk memasang ujung kabel di sini.`
           : `${topo.portLabel(p.portId)} kosong${ip}. Klik untuk mulai memasang kabel dari sini.`;
     } else if (p.type === 'power' && topo.has(p.deviceId)) {
+      const d = topo.device(p.deviceId);
+      text = `Tombol power ${d.name}. Sekarang ${d.powered ? 'menyala, klik untuk mematikan' : 'mati, klik untuk menyalakan'}.`;
