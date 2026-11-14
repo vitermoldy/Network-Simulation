@@ -361,3 +361,5 @@ export class Topology {
     return { ok: true };
   }
 
+  setHostField(id: string, field: 'gateway' | 'dnsServer', ip: string): Result {
+    const d = this.device(id);
