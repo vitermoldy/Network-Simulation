@@ -19,3 +19,5 @@ export interface ArpBody {
   targetIp: string;
 }
 
+export interface IpHeader {
+  src: string;
