@@ -254,3 +254,6 @@ export class Topology {
     return `${this.device(p.deviceId).name} ${p.name}`;
   }
 
+  // ------------------------------------------------------------------ devices
+
+  /** Adds a device of `kind` at a spot on the bench. Names count up per kind, like Packet Tracer. */
