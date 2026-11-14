@@ -841,3 +841,5 @@ export class Simulator {
             size: 42,
           });
           this.emit(inPort, reply);
+        });
+      } else {
