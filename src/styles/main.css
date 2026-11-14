@@ -857,3 +857,6 @@ select {
 .speed legend {
   float: left;
   padding: 0 8px 0 6px;
+}
+
+.speed label {
