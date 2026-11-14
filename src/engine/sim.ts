@@ -1032,3 +1032,5 @@ export class Simulator {
     this.note('ok', dev.id, 'MAC gateway diketahui', `Balasan ARP: ${ip} ada di ${mac}. ${dev.name} menyimpannya di cache ARP, lalu mengirim paket yang tadi menunggu.`, 2, packetId);
     const nic = dev.ports[0];
     entry.packets.forEach((p, i) => {
+      this.schedule(this.time + i * 0.25, () => {
+        if (!dev.powered || this.status !== 'running') return;
