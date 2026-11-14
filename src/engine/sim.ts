@@ -1373,3 +1373,5 @@ export class Simulator {
     if (pg.seq >= pg.count) {
       this.pingDone();
       return;
+    }
+    pg.seq++;
