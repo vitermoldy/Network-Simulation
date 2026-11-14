@@ -344,3 +344,5 @@ export class Topology {
     if (n === bcast) return { ok: false, reason: `${clean} adalah alamat broadcast jaringan ${networkOf(clean, prefix)}, tidak bisa dipakai perangkat.` };
     for (const o of this.portIndex.values()) {
       if (o.id !== portId && o.ip === clean) return { ok: false, reason: `${clean} sudah dipakai ${this.portLabel(o.id)}. Satu IP hanya untuk satu port.` };
+    }
+    if (dev.kind === 'router') {
