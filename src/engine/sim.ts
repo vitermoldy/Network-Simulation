@@ -64,3 +64,5 @@ const PHASE_SETS: Record<RunKind, Omit<Phase, 'status'>[]> = {
   web: [
     { id: 'input', title: 'Alamat web diketik di browser', layer: 'Aplikasi', role: 'input' },
     { id: 'arp', title: 'ARP: mencari MAC gateway', layer: 'Data link', role: 'process' },
+    { id: 'dns', title: 'DNS: menanyakan alamat IP', layer: 'Aplikasi, UDP', role: 'process' },
+    { id: 'tcp-open', title: 'TCP: jabat tangan 3 langkah', layer: 'Transport', role: 'process' },
