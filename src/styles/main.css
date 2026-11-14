@@ -532,3 +532,6 @@ select {
 }
 
 .tool:active {
+  transform: translateY(1px);
+}
+
