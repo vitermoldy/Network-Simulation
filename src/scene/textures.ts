@@ -73,3 +73,6 @@ export function keyboardTexture(): THREE.CanvasTexture {
   ctx.roundRect(392, 332, 240, 76, 12);
   ctx.fill();
   ctx.stroke();
+  return canvasTexture(c);
+}
+
