@@ -64,3 +64,5 @@ const shared = {
   tower: std(MATERIAL.tower),
   server: std(MATERIAL.server),
   bezel: std(MATERIAL.bezel, { roughness: 0.5 }),
+  hole: new THREE.MeshStandardMaterial({ color: MATERIAL.hole, roughness: 0.95 }),
+  pin: std(MATERIAL.pin, { metalness: 0.9, roughness: 0.3 }),
