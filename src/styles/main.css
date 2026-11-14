@@ -665,3 +665,6 @@ select {
   font-size: 13px;
   line-height: 1.4;
   pointer-events: none;
+  z-index: 6;
+}
+
