@@ -13,3 +13,5 @@ export interface RunRecord {
   source: string;
   scenario: string;
   lossRate: number;
+  status: 'done' | 'failed';
+  failedPhase?: string;
