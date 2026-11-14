@@ -105,3 +105,5 @@ export function setLed(m: THREE.Mesh, color: number | null): void {
   }
 }
 
+function led(r = 0.022): THREE.Mesh {
+  const g = new THREE.CylinderGeometry(r, r, 0.022, 14);
