@@ -857,3 +857,5 @@ export class App {
 
   private askRemove(id: string): void {
     const d = this.sim.topo.device(id);
+    const cables = d.ports.filter((p) => this.sim.topo.linkOf(p.id)).length;
+    this.confirm(`Hapus ${d.name} dari meja?${cables ? ` ${cables} kabelnya ikut dicabut.` : ''}`, 'Hapus perangkat', () => {
