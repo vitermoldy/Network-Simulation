@@ -471,3 +471,7 @@ export class Topology {
   reset(): void {
     this.loadDefaults();
     this.rev++;
+  }
+
+  // ------------------------------------------------------------------ save and load
+
