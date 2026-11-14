@@ -264,3 +264,6 @@ export class Simulator {
     this.topo = topo;
     this.rng = mulberry32(seed);
     this.routes = computeRoutes(topo);
+    this.resetApps('www.jaringan.test', 'pc');
+  }
+
