@@ -1341,3 +1341,5 @@ export class Simulator {
 
   /** Sends from whatever the device is: a host through its card, a router through its routing table. */
   private sendFrom(dev: Device, p: Packet): void {
+    if (dev.kind === 'router') this.routerOriginate(dev, p);
+    else this.hostSend(dev, p);
