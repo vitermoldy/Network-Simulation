@@ -146,3 +146,6 @@ export function buildPlug(port: PortView, cableMat: THREE.Material): THREE.Group
   g.position.copy(pos);
   g.quaternion.copy(quat);
   return g;
+}
+
+export function cableMaterial(): THREE.MeshStandardMaterial {
