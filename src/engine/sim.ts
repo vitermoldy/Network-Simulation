@@ -490,3 +490,5 @@ export class Simulator {
     const p = this.phases.find((x) => x.id === id)!;
     if (p.status === status) return;
     if (p.status === 'done' && status === 'active') return;
+    p.status = status;
+    this.version++;
