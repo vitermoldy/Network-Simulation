@@ -966,3 +966,5 @@ export class App {
       this.toast(`Kabel dari ${topo.portLabel(p.portId)}. Sekarang klik port kosong di perangkat lain. Tekan Esc untuk batal.`);
       return;
     }
+    if (p.type === 'cable') {
+      this.askUnplug(p.linkId);
