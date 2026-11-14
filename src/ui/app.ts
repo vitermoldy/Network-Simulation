@@ -463,3 +463,5 @@ export class App {
     if (!this.placing) return;
     this.placing = null;
     this.stage?.setPlacing(null);
+    document.querySelectorAll<HTMLButtonElement>('[data-add]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
+    if (message) this.toast(message);
