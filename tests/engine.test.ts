@@ -188,3 +188,5 @@ describe('simulator', () => {
     sim.start('www.jaringan.test', 3);
     let pulled = false;
     while (sim.status === 'running' && sim.time < 600) {
+      sim.advance(0.05);
+      if (!pulled) {
