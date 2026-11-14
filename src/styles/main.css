@@ -1981,3 +1981,5 @@ tbody th {
   border: 1px solid var(--line);
   border-radius: var(--r);
   background: var(--bg);
+  font-size: 13.5px;
+  font-weight: 500;
