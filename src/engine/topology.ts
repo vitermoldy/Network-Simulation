@@ -65,3 +65,6 @@ export const KIND_LABEL: Record<DeviceKind, string> = {
   laptop: 'Laptop',
   switch: 'Switch',
   router: 'Router',
+  server: 'Server',
+};
+
