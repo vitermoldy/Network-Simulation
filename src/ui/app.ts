@@ -1258,3 +1258,5 @@ export class App {
       ul.innerHTML = '<li class="empty">Belum ada rancangan. Susun jaringan di meja, beri nama, lalu tekan Simpan rancangan.</li>';
       return;
     }
+    ul.innerHTML = list.map((l) => `<li>
+      <div class="layout-info"><span class="layout-name">${esc(l.name)}</span>
