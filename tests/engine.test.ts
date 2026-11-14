@@ -312,3 +312,5 @@ describe('ping and nslookup', () => {
 
   it('times out four times when there is no route', () => {
     const sim = withScenario('normal');
+    runPing(sim, 'pc', '10.99.0.1');
+    expect(sim.status).toBe('failed');
