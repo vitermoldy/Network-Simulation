@@ -1282,3 +1282,5 @@ export class App {
   }
 
   private async recordRun(): Promise<void> {
+    const s = this.sim;
+    const topo = s.topo;
