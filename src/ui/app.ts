@@ -472,3 +472,5 @@ export class App {
     const topo = this.sim.topo;
     if (!topo.overlaps(kind, x, z)) return { x, z };
     for (let r = 1; r < 30; r++) {
+      for (let a = 0; a < 12; a++) {
+        const px = x + Math.cos((a / 12) * Math.PI * 2) * r * 1.2;
