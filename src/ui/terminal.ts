@@ -228,3 +228,5 @@ export class IosShell implements Shell {
     }
     const ping: Command = {
       words: ['ping'], help: 'ping <alamat IP>',
+      run: (args) => {
+        if (!isRouter) return ['% Switch di simulasi ini tidak punya alamat IP, jadi tidak bisa ping. Coba dari router atau PC.'];
