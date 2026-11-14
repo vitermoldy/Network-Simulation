@@ -615,3 +615,5 @@ export function buildDevice(dev: Device): DeviceView {
     hits: b.hits,
     tagAnchor,
     topLocal: b.top.clone(),
+    half: b.half,
+    screen: b.screen,
