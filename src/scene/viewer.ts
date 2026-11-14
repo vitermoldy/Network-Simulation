@@ -75,3 +75,5 @@ export class DeviceViewer {
       const pick = this.cast(e);
       if (pick?.type === 'power') this.events.power(pick.deviceId);
     });
+    canvas.addEventListener('pointermove', (e) => {
+      const pick = this.cast(e);
