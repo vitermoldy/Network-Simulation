@@ -1287,3 +1287,5 @@ export class Simulator {
     });
   }
 
+  private sendAck(dev: Device, label: string): void {
+    const c = this.client;
