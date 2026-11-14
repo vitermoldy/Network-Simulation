@@ -1071,3 +1071,6 @@ export class App {
     this.renderAll();
   }
 
+  // ------------------------------------------------------------------ device panel
+
+  private bindDevicePanel(): void {
