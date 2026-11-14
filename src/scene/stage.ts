@@ -302,3 +302,6 @@ export class Stage {
       const { x, z } = v.group.position;
       return { x0: x - v.half.x, x1: x + v.half.x, z0: z + v.half.z0, z1: z + v.half.z1 };
     });
+  }
+
+  private rebuildCables(only?: string): void {
