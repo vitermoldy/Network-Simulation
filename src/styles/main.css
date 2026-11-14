@@ -468,3 +468,6 @@ select {
 
 .tag.is-off .tag-name {
   color: var(--muted);
+}
+
+.tag.is-selected {
