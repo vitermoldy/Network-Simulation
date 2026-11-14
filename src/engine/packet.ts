@@ -56,3 +56,5 @@ export interface DnsBody {
 export interface AppBody {
   proto: 'DNS' | 'HTTP';
   lines: string[];
+  dns?: DnsBody;
+  /** HTTP response segments: which part of the page this one carries (1-based). */
