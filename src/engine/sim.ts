@@ -1151,3 +1151,5 @@ export class Simulator {
       if (c.dnsDone || p.app.dns.txid !== c.dnsTxid) return;
       c.dnsDone = true;
       this.acked('dns');
+      const server = this.topo.device(this.clientId).dnsServer ?? '';
+      if (p.app.dns.rcode === 'NXDOMAIN' || !p.app.dns.answer) {
