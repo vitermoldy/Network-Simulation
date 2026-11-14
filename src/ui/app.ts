@@ -728,3 +728,5 @@ export class App {
         return;
       }
       if (t.closest('[data-desk-act="dhcp"]')) {
+        const r = this.sim.edit((tp) => tp.autoAddress(this.selectedDevice));
+        this.toast(r.ok ? `DHCP: ${r.value}.` : r.reason);
