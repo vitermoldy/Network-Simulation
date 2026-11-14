@@ -1889,3 +1889,6 @@ tbody th {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+}
+
+.viewer {
