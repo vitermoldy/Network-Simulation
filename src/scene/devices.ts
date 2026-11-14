@@ -328,3 +328,5 @@ function buildSwitch(dev: Device): Build {
     const l = led(0.019);
     l.position.set(-w / 2 + 0.47 + i * 0.13, 0.33, z + 0.01);
     group.add(l);
+    if (i === 0) leds.push(l);
+    else b.busy.push(l);
