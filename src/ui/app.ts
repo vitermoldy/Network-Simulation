@@ -626,3 +626,5 @@ export class App {
 
   // Desktop (PC, laptop): IP Configuration, Command Prompt, Web Browser.
 
+  private renderDesktop(): void {
+    const box = $('desktop');
