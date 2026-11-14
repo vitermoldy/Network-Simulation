@@ -517,3 +517,6 @@ export class Simulator {
     this.version++;
   }
 
+  // ------------------------------------------------------------------ hands-on changes
+
+  setPower(deviceId: string, on: boolean): void {
