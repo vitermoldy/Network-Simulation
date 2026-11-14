@@ -1233,3 +1233,5 @@ export class App {
     const retry = $('db-retry');
     text.textContent = 'Menghubungi server MySQL';
     $('db-status').dataset.state = 'loading';
+    retry.hidden = true;
+    try {
