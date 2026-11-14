@@ -77,3 +77,6 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
           dist.set(e.to, nd);
           first.set(e.to, hop);
         }
+      }
+    }
+
