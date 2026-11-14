@@ -114,3 +114,5 @@ function led(r = 0.022): THREE.Mesh {
 /** An RJ45 socket. Local +z points out of the device. `flip` puts the latch slot on top. */
 function buildPort(portId: string, holeW: number, holeH: number, frameColor: number, flip = false) {
   const group = new THREE.Group();
+  const t = 0.02;
+  const frameMat = std(frameColor, { metalness: 0.7, roughness: 0.32 });
