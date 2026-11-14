@@ -932,3 +932,5 @@ export class App {
   private onPick(p: Pick | null): void {
     $('tooltip').hidden = true;
     if (!p) {
+      if (this.pendingPort) {
+        this.setPending(null);
