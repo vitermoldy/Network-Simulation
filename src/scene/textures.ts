@@ -38,3 +38,5 @@ export function printFace(w: number, h: number, draw: (p: FacePrinter) => void):
     const [cx, cy] = px(x, y);
     ctx.fillStyle = opts.color ?? '#2a2e35';
     ctx.textAlign = opts.align ?? 'center';
+    ctx.textBaseline = 'middle';
+    ctx.font = `${opts.weight ?? 600} ${Math.round(size * scale)}px ${opts.mono ? FONT_MONO : FONT_TEXT}`;
