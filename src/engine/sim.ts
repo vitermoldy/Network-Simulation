@@ -36,3 +36,5 @@ export const PAGE_PARTS: { lines: string[]; shows: string }[] = [
     shows: 'kepala halaman',
   },
   {
+    lines: ['<h1>Halo dari Server Web</h1>', '<p>Halaman ini dikirim server web lewat jaringan sampai ke layarmu.</p>'],
+    shows: 'judul dan isi',
