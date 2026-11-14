@@ -601,3 +601,5 @@ export class App {
     const title = $('devwin-title');
     if (title.textContent !== d.name) title.textContent = d.name;
     const used = d.ports.filter((p) => topo.linkOf(p.id)).length;
+    const sub = `${KIND_LABEL[d.kind]}, ${roleOf(d) === 'input' ? 'input' : roleOf(d) === 'output' ? 'output' : 'proses'}. ${used} dari ${d.ports.length} port berkabel. ${d.powered ? 'Menyala' : 'Mati'}.`;
+    if ($('devwin-sub').textContent !== sub) $('devwin-sub').textContent = sub;
