@@ -599,3 +599,5 @@ export class Topology {
 
   /** The server whose port carries `ip`, if any. */
   hostByIp(ip: string): Device | undefined {
+    for (const d of this.devices.values()) if (isHost(d) && d.ports[0].ip === ip) return d;
+    return undefined;
