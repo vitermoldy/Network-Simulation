@@ -129,3 +129,6 @@ export function createApi(getPool, database) {
       [client],
     )
     res.json({ layouts: rows })
+  })
+
+  api.get('/layouts/:client/:id', async (req, res) => {
