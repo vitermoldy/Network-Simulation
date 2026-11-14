@@ -63,3 +63,5 @@ describe('topology', () => {
   });
 
   it('adds and names devices like Packet Tracer, and refuses overlaps', () => {
+    const t = new Topology();
+    const a = t.addDevice('pc', -12, 7);
