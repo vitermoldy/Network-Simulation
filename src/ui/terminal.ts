@@ -283,3 +283,5 @@ export class IosShell implements Shell {
     // Interface mode.
     const port = this.iface ? topo.port(this.iface) : undefined;
     const list: Command[] = [
+      {
+        words: ['ip', 'address'], help: 'ip address <IP> <subnet mask>',
