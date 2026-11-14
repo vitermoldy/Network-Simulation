@@ -800,3 +800,5 @@ export class Simulator {
     if (p.eth.dst === BROADCAST) {
       outs = others;
       how = `MAC tujuan ${BROADCAST} artinya broadcast, jadi frame disalin ke semua port yang tersambung kecuali ${inName}`;
+    } else if (table.has(p.eth.dst)) {
+      const o = table.get(p.eth.dst)!;
