@@ -106,3 +106,5 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
   ctx.fillStyle = '#ffffff';
   ctx.fillRect(0, 0, W, H);
   // Toolbar with the address.
+  ctx.fillStyle = '#e4e7eb';
+  ctx.fillRect(0, 0, W, 78);
