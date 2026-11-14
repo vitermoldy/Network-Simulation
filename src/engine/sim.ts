@@ -806,3 +806,5 @@ export class Simulator {
       how = `MAC tujuan ${p.eth.dst} sudah ada di tabel MAC (port ${this.topo.port(o).name}), jadi frame hanya diteruskan ke port itu`;
     } else {
       outs = others;
+      how = `MAC tujuan ${p.eth.dst} belum ada di tabel MAC, jadi frame disebar (flooding) ke semua port lain`;
+    }
