@@ -1654,3 +1654,6 @@ tbody th {
   background: var(--bg);
   font-size: 13px;
   min-width: 0;
+}
+
+.ip-form input {
