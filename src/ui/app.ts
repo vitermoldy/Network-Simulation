@@ -814,3 +814,5 @@ export class App {
       }
       if (line.trim()) {
         t.history.push(line);
+        t.index = t.history.length;
+      }
