@@ -85,3 +85,5 @@ export class App {
   private renderedLog = 0;
   private openEntry: number | null = null;
   private followLatest = true;
+  private selectedPacket: number | null = null;
+  private selectedDevice = 'r1';
