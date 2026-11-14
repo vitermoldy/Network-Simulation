@@ -2302,3 +2302,6 @@ tbody th {
     right: 8px;
     transform: none;
     display: flex;
+    justify-content: space-between;
+  }
+
