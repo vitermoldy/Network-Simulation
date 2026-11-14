@@ -1364,3 +1364,6 @@ export class Simulator {
     }
     p.eth = { src: out.mac, dst: target.mac, type: 'IPv4' };
     this.emit(route.portId, p);
+  }
+
+  private pingNext(): void {
