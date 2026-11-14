@@ -2263,3 +2263,5 @@ tbody th {
     order: 2;
   }
 
+  .top-tools .select-wrap {
+    flex: 1;
