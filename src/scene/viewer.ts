@@ -165,3 +165,5 @@ export class DeviceViewer {
     const mat = cableMaterial();
     for (const p of view.ports.values()) {
       if (!topo.linkOf(p.id)) continue;
+      this.leads.add(buildPlug(p, mat));
+      const pos = new THREE.Vector3();
