@@ -123,3 +123,5 @@ export class DeviceViewer {
   }
 
   private describe(pick: Pick | null): string {
+    const topo = this.sim.topo;
+    if (!pick || !topo.has(this.deviceId)) return '';
