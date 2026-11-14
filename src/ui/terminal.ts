@@ -35,3 +35,6 @@ const pad = (s: string, n: number) => (s.length >= n ? `${s} ` : s + ' '.repeat(
 // ------------------------------------------------------------------ Command Prompt (PC, laptop)
 
 export class PromptShell implements Shell {
+  constructor(private deviceId: string, private host: ShellHost) {}
+
+  private get dev(): Device {
