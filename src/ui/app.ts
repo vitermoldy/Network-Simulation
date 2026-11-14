@@ -1074,3 +1074,5 @@ export class App {
   // ------------------------------------------------------------------ device panel
 
   private bindDevicePanel(): void {
+    const box = $('device');
+    box.addEventListener('click', (e) => {
