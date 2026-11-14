@@ -804,3 +804,5 @@ export class Simulator {
       const o = table.get(p.eth.dst)!;
       outs = o === inPort ? [] : [o];
       how = `MAC tujuan ${p.eth.dst} sudah ada di tabel MAC (port ${this.topo.port(o).name}), jadi frame hanya diteruskan ke port itu`;
+    } else {
+      outs = others;
