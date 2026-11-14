@@ -522,3 +522,5 @@ select {
   min-width: 44px;
   height: 44px;
   border: 0;
+  border-radius: var(--r);
+  background: transparent;
