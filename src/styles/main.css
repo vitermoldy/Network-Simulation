@@ -1337,3 +1337,6 @@ select {
 .power.is-off {
   color: var(--muted);
   border-style: dashed;
+}
+
+.dev-detail {
