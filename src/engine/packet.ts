@@ -151,3 +151,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
   }
   if (p.icmp) {
     row(3, 'ICMP', [
+      ['Jenis', p.icmp.type === 'echo-request' ? 'Echo request (type 8)' : 'Echo reply (type 0)'],
+      ['Identifier', String(p.icmp.id)],
