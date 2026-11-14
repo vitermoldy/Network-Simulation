@@ -76,3 +76,7 @@ Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan r
 - Tab memakai pola tablist dengan panah kiri dan kanan; dialog dan popover tertutup dengan Esc.
 - Status selalu dengan kata atau bentuk, bukan warna saja (selesai, gagal, shutdown, Mati).
 - `prefers-reduced-motion` mematikan transisi antarmuka.
+- Target sentuh minimal 44 px di luar teks.
+
+## Verifikasi
+
