@@ -2087,3 +2087,5 @@ tbody th {
 }
 
 .browser-canvas {
+  display: block;
+  width: 100%;
