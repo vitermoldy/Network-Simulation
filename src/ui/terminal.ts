@@ -380,3 +380,5 @@ export class IosShell implements Shell {
       if (!exact) return [`% Ambiguous command: "${line}"`];
       best = [exact];
     }
+    const { cmd, used } = best[0];
+    return cmd.run(tokens.slice(used));
