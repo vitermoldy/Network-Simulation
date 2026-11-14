@@ -1603,3 +1603,5 @@ export class App {
 
   private renderPacket(): void {
     const box = $('packet');
+    const p = this.currentPacket();
+    if (!p) {
