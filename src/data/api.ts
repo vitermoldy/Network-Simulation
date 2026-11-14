@@ -130,3 +130,6 @@ export async function listLayouts(): Promise<LayoutSummary[]> {
 
 export async function saveLayout(name: string, data: TopologyData): Promise<void> {
   await call('layouts', { method: 'PUT', body: JSON.stringify({ client: clientCode(), name, data: JSON.stringify(data) }) });
+}
+
+export async function loadLayout(id: number): Promise<{ name: string; data: unknown }> {
