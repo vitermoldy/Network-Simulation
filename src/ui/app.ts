@@ -563,3 +563,6 @@ export class App {
     this.portsKey = '';
     this.desktopKey = '';
     this.renderDeviceWindow();
+    if (tab === 'cli') this.renderTerm($('cli-term'), this.selectedDevice);
+  }
+
