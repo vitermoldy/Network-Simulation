@@ -713,3 +713,5 @@ export class Simulator {
       this.fired.add('loss');
       return { u: 0.55, reason: 'Segmen 2 rusak oleh gangguan di kabel. Router penerima menghitung ulang FCS (cek kesalahan di ujung frame), hasilnya tidak cocok, jadi frame dibuang.' };
     }
+    if (this.lossRate > 0 && this.rng() < this.lossRate) {
+      return { u: 0.3 + this.rng() * 0.4, reason: 'Gangguan acak merusak frame ini di kabel. Cek FCS di penerima gagal, jadi frame dibuang.' };
