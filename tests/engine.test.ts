@@ -135,3 +135,5 @@ describe('simulator', () => {
 
   it('sends the SYN along laptop, switch, router kampus, router A, pusat data, server', () => {
     const sim = withScenario('normal');
+    run(sim);
+    const syn = [...sim.history.entries()].find(([, v]) => v[0].tcp?.flags.join() === 'SYN')!;
