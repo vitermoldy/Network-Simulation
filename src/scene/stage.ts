@@ -530,3 +530,6 @@ export class Stage {
     else if (k === '-' || k === '_') this.zoom(1.25);
     else return;
     e.preventDefault();
+  }
+
+  private drawDangling(point: THREE.Vector3): void {
