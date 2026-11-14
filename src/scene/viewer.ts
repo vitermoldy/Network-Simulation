@@ -83,3 +83,5 @@ export class DeviceViewer {
     canvas.addEventListener('pointerleave', () => this.events.hover(''));
     canvas.addEventListener('keydown', (e) => {
       if (e.key === '+' || e.key === '=') this.zoom(0.8);
+      else if (e.key === '-') this.zoom(1.25);
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
