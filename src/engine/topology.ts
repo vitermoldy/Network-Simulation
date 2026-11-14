@@ -354,3 +354,5 @@ export class Topology {
           return { ok: false, reason: `Jaringan ${mine} bertumpuk dengan ${theirs} di port ${q.name}. Tiap port router harus di jaringan yang berbeda.` };
         }
       }
+    }
+    p.ip = clean;
