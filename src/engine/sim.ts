@@ -1207,3 +1207,5 @@ export class Simulator {
 
     if (has('SYN') && has('ACK')) {
       if (c.tcp === 'syn-sent') {
+        this.acked('syn');
+        if (!c.synRetried) this.srtt = this.time - c.synSentAt;
