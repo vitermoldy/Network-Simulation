@@ -682,3 +682,6 @@ export class App {
     $('browser-view').appendChild(canvas);
     this.browserCanvas = { canvas, ctx, key: '' };
     this.paintBrowser();
+  }
+
+  private paintBrowser(): void {
