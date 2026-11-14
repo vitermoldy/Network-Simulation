@@ -1489,3 +1489,5 @@ tbody th {
   height: 22px;
   display: inline-grid;
   place-items: center;
+  border-radius: 4px;
+  background: var(--surface);
