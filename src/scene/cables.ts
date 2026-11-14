@@ -45,3 +45,5 @@ const dist = (a: V2, b: V2) => Math.hypot(a[0] - b[0], a[1] - b[1]);
 /** Shortest of: straight, one corner, two corners, around the expanded device boxes. */
 export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
   const boxes = devices.map((d) => ({ x0: d.x0 - MARGIN, x1: d.x1 + MARGIN, z0: d.z0 - MARGIN, z1: d.z1 + MARGIN }));
+  const free = boxes.filter((bx) => !inside(a, bx) && !inside(b, bx));
+  const clear = (p: V2, q: V2) => !free.some((bx) => segmentHitsBox(p, q, bx));
