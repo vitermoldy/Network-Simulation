@@ -118,3 +118,5 @@ export const LAYER_NAMES: Record<LayerId, { osi: string; tcpip: string }> = {
 
 /** Headers from the top of the stack down, the way the sender wraps them. */
 export function layersOf(p: Packet, wire: string): LayerRow[] {
+  const rows: LayerRow[] = [];
+  const row = (layer: LayerId, proto: string, fields: [string, string][]) =>
