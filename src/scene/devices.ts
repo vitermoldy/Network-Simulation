@@ -109,3 +109,6 @@ function led(r = 0.022): THREE.Mesh {
   const g = new THREE.CylinderGeometry(r, r, 0.022, 14);
   g.rotateX(Math.PI / 2);
   return mesh(g, ledMaterial(), false);
+}
+
+/** An RJ45 socket. Local +z points out of the device. `flip` puts the latch slot on top. */
