@@ -723,3 +723,5 @@ export class Simulator {
     for (const f of [...this.flights]) if (f.linkId === linkId) this.loseFlight(f, reason);
   }
 
+  private loseFlight(f: Flight, reason: string): void {
+    this.flights = this.flights.filter((x) => x !== f);
