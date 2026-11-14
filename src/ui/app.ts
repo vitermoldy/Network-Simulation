@@ -1130,3 +1130,5 @@ export class App {
       const kind = form.dataset.form;
       let res: { ok: boolean; reason?: string } = { ok: true };
       let done = '';
+      if (kind === 'name') {
+        res = this.sim.edit((t) => t.rename(id, String(f.get('name') ?? '')));
