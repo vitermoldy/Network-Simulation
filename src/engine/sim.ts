@@ -814,3 +814,5 @@ export class Simulator {
     this.hold(p, dev, inPort, outs, TIMING.switch, () => {
       if (!outs.length) {
         this.discard(p, dev.id, 'tidak ada port lain yang tersambung untuk frame ini.');
+        return;
+      }
