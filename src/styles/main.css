@@ -546,3 +546,5 @@ select {
 }
 
 .tool-text {
+  display: flex;
+  align-items: center;
