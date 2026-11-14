@@ -549,3 +549,5 @@ export class App {
     (document.querySelector('.stage-canvas') as HTMLElement | null)?.focus();
   }
 
+  private showDwTab(tab: DwTab): void {
+    this.dwTab = tab;
