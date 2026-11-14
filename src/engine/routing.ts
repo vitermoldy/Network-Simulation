@@ -55,3 +55,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
     edges.set(r.id, list);
   }
 
+  const tables = new Map<string, Route[]>();
+  for (const r of routers) {
