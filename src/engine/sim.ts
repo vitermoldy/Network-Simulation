@@ -960,3 +960,5 @@ export class Simulator {
     if (!nic.ip || nic.prefix === undefined) {
       this.loseAt(p, dev.id, `${dev.name} belum punya alamat IP, jadi tidak bisa mengirim paket IP.`);
       return;
+    }
+    const local = sameSubnet(nic.ip, dst, nic.prefix);
