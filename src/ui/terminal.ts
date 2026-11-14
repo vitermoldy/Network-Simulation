@@ -382,3 +382,6 @@ export class IosShell implements Shell {
     }
     const { cmd, used } = best[0];
     return cmd.run(tokens.slice(used));
+  }
+}
+
