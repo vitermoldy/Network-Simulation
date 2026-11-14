@@ -205,3 +205,5 @@ describe('simulator', () => {
 
   it('recovers from random loss on every cable', () => {
     const sim = withScenario('normal');
+    sim.lossRate = 0.15;
+    run(sim, 'www.jaringan.test', 2000);
