@@ -1136,3 +1136,5 @@ export class Simulator {
       eth: { src: dev.ports[0].mac, dst: BROADCAST, type: 'IPv4' },
       ip: { src: dev.ports[0].ip!, dst: p.ip!.src, ttl: 64, proto: 'UDP' },
       udp: { src: 53, dst: p.udp.src },
+      app: {
+        proto: 'DNS', lines: [answer ? `Jawaban: ${q.question} A ${answer}` : `Jawaban: ${q.question} tidak ada`],
