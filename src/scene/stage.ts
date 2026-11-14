@@ -13,3 +13,6 @@ import { roleOf, type DeviceKind, type Role } from '../engine/topology';
 import { buildPlug, cableCurve, cableMaterial, danglingCurve, tube, type Box2 } from './cables';
 import { buildDevice, buildGhost, footprintOf, refreshLive, signatureOf, type DeviceView, type Pick, type PortView } from './devices';
 import { canvasTexture, drawArrow, drawZoneLabel, makeCanvas } from './textures';
+import { MATERIAL, SCENE_THEMES, type SceneTheme, type ThemeName } from './theme';
+
+export interface StageEvents {
