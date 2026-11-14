@@ -752,3 +752,5 @@ export class App {
         if (ip.trim() && prefix === undefined) res = { ok: false, reason: `${mask} bukan subnet mask yang sah. Contoh: 255.255.255.0` };
         if (res.ok) res = this.sim.edit((t) => t.setPortIp(this.sim.topo.device(id).ports[0].id, ip, prefix ?? 24));
         if (res.ok) res = this.sim.edit((t) => t.setHostField(id, 'gateway', String(f.get('gateway') ?? '')));
+        if (res.ok) res = this.sim.edit((t) => t.setHostField(id, 'dnsServer', String(f.get('dns') ?? '')));
+        if (!res.ok) {
