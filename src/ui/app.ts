@@ -559,3 +559,5 @@ export class App {
     }
     if (this.viewer) this.viewer.active = tab === 'fisik';
     if (tab === 'fisik') void this.ensureViewer();
+    this.deviceKey = '';
+    this.portsKey = '';
