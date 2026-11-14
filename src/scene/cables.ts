@@ -21,3 +21,5 @@ function segmentHitsBox(a: V2, b: V2, box: Box2): boolean {
   // Slab test on the segment a..b.
   let t0 = 0;
   let t1 = 1;
+  const d = [b[0] - a[0], b[1] - a[1]];
+  const lo = [box.x0, box.z0];
