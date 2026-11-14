@@ -1168,3 +1168,5 @@ export class App {
           this.deviceDirty = false;
           this.deviceKey = '';
           this.renderDevice();
+        }
+      }, 0);
