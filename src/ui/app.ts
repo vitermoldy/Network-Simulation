@@ -972,3 +972,5 @@ export class App {
     }
     if (p.type === 'device') {
       this.openDevice(p.deviceId);
+      return;
+    }
