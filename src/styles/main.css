@@ -365,3 +365,5 @@ select {
   grid-template-columns: minmax(0, 1fr) 400px;
   grid-template-rows: minmax(0, 1fr) auto;
   gap: 12px;
+  padding: 0 var(--gutter) 12px;
+  min-height: 0;
