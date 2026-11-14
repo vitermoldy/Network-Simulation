@@ -1238,3 +1238,5 @@ select {
 
 .empty {
   color: var(--muted);
+  font-size: 14px;
+  padding: 8px 2px;
