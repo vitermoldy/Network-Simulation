@@ -1071,3 +1071,5 @@ export class Simulator {
     this.fire(r);
   }
 
+  private acked(key: string): boolean {
+    const r = this.retx.get(key);
