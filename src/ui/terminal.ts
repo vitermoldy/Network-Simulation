@@ -136,3 +136,5 @@ export class IosShell implements Shell {
     const d = this.dev;
     const kind = d.kind === 'router' ? `${d.ports.length} port GigabitEthernet` : '24 port FastEthernet dan 2 port GigabitEthernet';
     return [
+      `Simulasi Jaringan, CLI gaya IOS`,
+      `Perangkat ${d.name}: ${d.kind === 'router' ? 'router' : 'switch'} dengan ${kind}.`,
