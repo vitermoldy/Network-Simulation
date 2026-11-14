@@ -1318,3 +1318,5 @@ export class Simulator {
       this.rto(), MAX_TCP_TRIES, () => this.fail('http-req', 'Permintaan GET tidak pernah dibalas server.', this.clientId));
   }
 
+  private tcpClose(dev: Device): void {
+    const c = this.client;
