@@ -722,3 +722,5 @@ export class App {
       const app = t.closest<HTMLButtonElement>('[data-app]');
       if (app) {
         this.desktopApp = app.dataset.app as typeof this.desktopApp;
+        this.desktopKey = '';
+        this.renderDesktop();
