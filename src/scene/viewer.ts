@@ -212,3 +212,5 @@ export class DeviceViewer {
     const topo = this.sim.topo;
     if (topo.has(this.deviceId)) {
       const live = topo.device(this.deviceId);
+      const key = `${topo.rev}|${signatureOf(live)}`;
+      if (key !== this.key) this.rebuild();
