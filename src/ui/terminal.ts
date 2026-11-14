@@ -303,3 +303,5 @@ export class IosShell implements Shell {
           return [];
         },
       },
+      {
+        words: ['shutdown'], help: 'matikan port ini secara administratif',
