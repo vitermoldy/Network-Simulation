@@ -47,3 +47,6 @@ describe('topology', () => {
     t.setPower('sw', false);
     const off = t.segments();
     expect(off.has('sw.0')).toBe(false);
+    expect(off.get('pc.0')).not.toBe(off.get('r1.0'));
+  });
+
