@@ -344,3 +344,5 @@ export class Stage {
 
   // ------------------------------------------------------------------ zones
 
+  private rebuildZones(): void {
+    for (const z of this.zones) {
