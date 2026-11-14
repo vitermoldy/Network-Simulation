@@ -1404,3 +1404,6 @@ export class App {
         <span class="timer-left">sisa ${num(t.remaining)} s</span></li>`;
     }).join('');
     const ul = $('timer-list');
+    if (ul.innerHTML !== html) ul.innerHTML = html;
+  }
+
