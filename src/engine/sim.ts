@@ -60,3 +60,5 @@ export interface Phase {
 /** What a run does: open a web page, ping an address, or only ask DNS for a name. */
 export type RunKind = 'web' | 'ping' | 'lookup';
 
+const PHASE_SETS: Record<RunKind, Omit<Phase, 'status'>[]> = {
+  web: [
