@@ -1377,3 +1377,5 @@ export class Simulator {
     pg.seq++;
     pg.sent++;
     this.setPhase('icmp', 'active');
+    const seq = pg.seq;
+    if (seq === 1) {
