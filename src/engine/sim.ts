@@ -1093,3 +1093,6 @@ export class Simulator {
     const live = this.flights.find((x) => x.packet.id === packetId)?.packet ?? this.holds.find((x) => x.packet.id === packetId)?.packet;
     if (live) return live;
     const versions = this.history.get(packetId);
+    return versions?.[versions.length - 1] ?? this.lost.find((l) => l.packet.id === packetId)?.packet;
+  }
+
