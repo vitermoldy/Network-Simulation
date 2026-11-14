@@ -39,3 +39,5 @@ const STATUS_WORD: Record<PhaseStatus, string> = { waiting: 'menunggu', active: 
 
 const KIND_CHIP: Partial<Record<LogEntry['kind'], string>> = { loss: 'Hilang', retry: 'Ulang', route: 'Rute', ok: 'Beres', error: 'Gagal', change: 'Diubah' };
 
+const SCENARIO_TEXT: Record<Scenario, string> = {
+  normal: 'Skenario normal: semua kabel dan perangkat bekerja.',
