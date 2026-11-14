@@ -427,3 +427,5 @@ function buildServer(dev: Device): Build {
     p.ctx.fillStyle = '#c4c9cf';
     p.ctx.fillRect(0, 0, (w - 0.08) * p.scale, (h - 0.08) * p.scale);
     for (let i = 0; i < 3; i++) {
+      const [bx, by] = p.px(-0.38, h - 0.42 - i * 0.2);
+      p.ctx.fillStyle = '#2b2e33';
