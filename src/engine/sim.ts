@@ -560,3 +560,5 @@ export class Simulator {
   }
 
   disconnect(linkId: string): void {
+    const link = this.topo.links.get(linkId);
+    if (!link) return;
