@@ -174,3 +174,5 @@ export class IosShell implements Shell {
         ],
       },
       {
+        words: ['show', 'running-config'], help: 'konfigurasi yang sedang dipakai',
+        run: () => {
