@@ -273,3 +273,5 @@ function buildSwitch(dev: Device): Build {
   body.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
   group.add(body);
   const b = newBuild(group, w, h, d, body);
+  const z = d / 2 + 0.006;
+  const sysEnd = -w / 2 + 1.05;
