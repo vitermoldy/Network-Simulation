@@ -1432,3 +1432,5 @@ export class Simulator {
     this.say(`    Packets: Sent = ${pg.sent}, Received = ${pg.received}, Lost = ${lost} (${Math.round((lost / pg.sent) * 100)}% loss),`);
     if (pg.received) {
       const min = Math.min(...pg.times);
+      const max = Math.max(...pg.times);
+      const avg = Math.round((pg.times.reduce((a, b) => a + b, 0) / pg.times.length) * 10) / 10;
