@@ -403,3 +403,5 @@ export class App {
       input.setAttribute('aria-invalid', 'true');
       input.focus();
       return;
+    }
+    const scenario = $<HTMLSelectElement>('scenario').value as Scenario;
