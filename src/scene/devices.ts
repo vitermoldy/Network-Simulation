@@ -40,3 +40,5 @@ export interface DeviceView {
   ports: Map<string, PortView>;
   powerHit: THREE.Mesh;
   powerGlow: THREE.MeshStandardMaterial;
+  rocker?: THREE.Object3D;
+  button?: THREE.Object3D;
