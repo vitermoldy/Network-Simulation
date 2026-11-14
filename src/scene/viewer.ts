@@ -79,3 +79,5 @@ export class DeviceViewer {
       const pick = this.cast(e);
       canvas.style.cursor = pick?.type === 'power' ? 'pointer' : 'grab';
       this.events.hover(this.describe(pick));
+    });
+    canvas.addEventListener('pointerleave', () => this.events.hover(''));
