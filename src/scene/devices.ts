@@ -551,3 +551,6 @@ function buildLaptop(dev: Device): Build {
   b.hits.push(lid);
   b.half = { x: w / 2, z0: -d / 2 - 0.3, z1: d / 2 };
   b.top.set(0, baseH + 0.2, 0.1);
+  b.tagY = 1.8;
+  addScreen(b, hinge, w - 0.2, lidH / 2 + 0.02, 0.028, dev);
+
