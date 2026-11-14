@@ -320,3 +320,5 @@ function buildSwitch(dev: Device): Build {
   addPort(b, dev, 24, 1.8, 0.25, z, { w: holeW, h: holeH, act: false, ledY: 0.1 });
   addPort(b, dev, 25, 2.04, 0.25, z, { w: holeW, h: holeH, act: false, ledY: 0.1 });
 
+  const rocker = buildRocker(dev.id, 0.8);
+  rocker.group.position.set(-w / 2 + 0.17, 0.27, z);
