@@ -568,3 +568,5 @@ select {
   display: grid;
   gap: 4px;
   padding: 6px;
+  background: color-mix(in srgb, var(--panel) 94%, transparent);
+  border: 1px solid var(--line);
