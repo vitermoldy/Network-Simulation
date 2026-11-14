@@ -49,3 +49,6 @@ perintah CLI mengikuti kebiasaan Cisco supaya terasa akrab bagi mahasiswa yang m
 Keputusan yang sengaja menyimpang dari perangkat asli: tombol power switch dan router ada di depan
 (aslinya di belakang atau tidak ada pada switch), karena pemilik meminta tombol on/off yang jelas.
 
+## Keputusan dan alasan (R-31)
+
+| Keputusan | Alasan |
