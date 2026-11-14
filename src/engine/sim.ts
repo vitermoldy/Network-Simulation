@@ -1195,3 +1195,5 @@ export class Simulator {
       this.icmpReceive(dev, p);
       return;
     }
+    if (!p.tcp) return;
+    const t = p.tcp;
