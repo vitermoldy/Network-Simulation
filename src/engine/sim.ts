@@ -1256,3 +1256,5 @@ export class Simulator {
       const extra = delivered.length > 1 ? ` Segmen ${delivered.slice(1).join(' dan ')} yang tadi disimpan sekarang ikut disusun.` : '';
       this.note('ok', this.clientId, `Segmen ${part} diterima`, `Segmen ${part} dari ${PAGE_PARTS.length} datang sesuai urutan (SEQ ${t.seq}), jadi ${PAGE_PARTS[part - 1].shows} langsung tampil.${extra} ${this.cname} membalas ACK ${c.rcvNext}.`, 4, p.id);
       this.browser.state = 'loading';
+      this.browser.message = `Memuat ${this.browser.parts.filter(Boolean).length} dari ${PAGE_PARTS.length} bagian`;
+      this.setPhase('output', 'active');
