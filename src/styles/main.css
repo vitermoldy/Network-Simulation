@@ -1421,3 +1421,5 @@ tbody th {
 
 /* packet */
 
+.packet-head {
+  display: flex;
