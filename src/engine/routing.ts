@@ -50,3 +50,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
           list.push({ to: o.id, portId: p.id, nextHop: q.ip });
         }
       }
+    }
+    list.sort((a, b) => a.to.localeCompare(b.to));
