@@ -191,3 +191,5 @@ interface ClientState {
 }
 
 interface ServerState {
+  state: 'listen' | 'syn-rcvd' | 'established' | 'last-ack' | 'closed';
+  rcvNext: number;
