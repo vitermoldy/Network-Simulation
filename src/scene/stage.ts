@@ -461,3 +461,5 @@ export class Stage {
     }
     if (this.down && !this.drag && this.down.pick?.type === 'device' && e.buttons === 1) {
       const moved = Math.hypot(e.clientX - this.down.x, e.clientY - this.down.y);
+      const v = this.devices.get(this.down.pick.deviceId);
+      if (moved > 6 && v && this.down.floor) {
