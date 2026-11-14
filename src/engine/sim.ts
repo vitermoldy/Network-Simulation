@@ -1371,3 +1371,5 @@ export class Simulator {
     if (!pg || this.status !== 'running' || !this.topo.has(this.clientId)) return;
     const dev = this.topo.device(this.clientId);
     if (pg.seq >= pg.count) {
+      this.pingDone();
+      return;
