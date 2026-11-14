@@ -374,3 +374,5 @@ select {
   grid-column: 1;
   grid-row: 1;
   min-height: 420px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
