@@ -57,3 +57,5 @@ export function keyboardTexture(): THREE.CanvasTexture {
   ctx.fill();
   const rows = [14, 14, 13, 12];
   rows.forEach((n, r) => {
+    const kw = 860 / 14;
+    const off = (14 - n) * kw / 2;
