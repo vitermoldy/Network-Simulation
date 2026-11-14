@@ -269,3 +269,5 @@ function buildSwitch(dev: Device): Build {
   const d = 1.5;
   const group = new THREE.Group();
   const body = rounded(w, h, d, shared.slate, 0.03);
+  body.position.y = h / 2;
+  body.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
