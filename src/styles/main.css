@@ -1228,3 +1228,5 @@ select {
   color: var(--accent);
 }
 
+.chip-ok {
+  color: var(--ok);
