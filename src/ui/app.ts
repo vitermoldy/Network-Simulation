@@ -916,3 +916,5 @@ export class App {
     this.renderAll();
   }
 
+  private plug(a: string, b: string): void {
+    const res = this.sim.connect(a, b);
