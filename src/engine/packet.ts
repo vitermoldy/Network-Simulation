@@ -38,3 +38,5 @@ export interface UdpHeader {
 }
 
 export interface TcpHeader {
+  src: number;
+  dst: number;
