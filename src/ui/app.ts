@@ -1249,3 +1249,6 @@ export class App {
       retry.hidden = false;
       $('layouts').innerHTML = '';
       $('runs').innerHTML = '<p class="empty">Riwayat tampil di sini setelah server tersambung. Simulasinya tetap bisa dipakai tanpa server.</p>';
+    }
+  }
+
