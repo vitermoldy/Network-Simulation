@@ -433,3 +433,6 @@ export class Topology {
       d.dnsServer = dns?.ports[0].ip ?? d.dnsServer;
     }
     this.rev++;
+    return { ok: true, value: `${pick}/${gw.prefix}, gateway ${gw.ip}${isClient(d) && d.dnsServer ? `, DNS ${d.dnsServer}` : ''}` };
+  }
+
