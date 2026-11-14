@@ -7,3 +7,6 @@ import type { Stage } from './scene/stage';
 import { App } from './ui/app';
 
 const sim = new Simulator(new Topology(), (Math.random() * 1e9) | 0);
+const app = new App(sim);
+let stage: Stage | undefined;
+
