@@ -38,3 +38,6 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
 
 ## Menjalankan
 
+Butuh Node.js 22 atau lebih baru.
+
+```bash
