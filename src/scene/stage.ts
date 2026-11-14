@@ -151,3 +151,6 @@ export class Stage {
     this.controls.dampingFactor = 0.09;
     this.controls.minDistance = 3;
     this.controls.maxDistance = 60;
+    this.controls.maxPolarAngle = 1.42;
+    this.controls.screenSpacePanning = true;
+
