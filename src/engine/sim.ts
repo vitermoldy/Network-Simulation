@@ -274,3 +274,6 @@ export class Simulator {
 
   private get cname(): string {
     return this.topo.has(this.client.deviceId) ? this.topo.device(this.client.deviceId).name : 'Pengirim';
+  }
+
+  private server(id: string): ServerState {
