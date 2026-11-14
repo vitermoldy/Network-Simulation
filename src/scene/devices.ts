@@ -581,3 +581,5 @@ function buildLaptop(dev: Device): Build {
     group.add(m);
   };
   label('POWER', w / 2 - 0.62, -0.52, 0.5);
+  label('Fa0', w / 2 - 0.3, 0.5, 0.36);
+  return b;
