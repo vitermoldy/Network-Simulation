@@ -1427,3 +1427,6 @@ tbody th {
   justify-content: space-between;
   gap: 8px;
   min-height: 44px;
+}
+
+.packet-mode {
