@@ -661,3 +661,6 @@ export class Simulator {
     return this.phases.find((p) => p.status === 'active')?.id;
   }
 
+  // ------------------------------------------------------------------ wire
+
+  private newPacket(p: Omit<Packet, 'id' | 'retry' | 'hops'> & { retry?: number }): Packet {
