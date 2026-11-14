@@ -10,3 +10,5 @@ import { isClient, Topology, type Device, type Role } from './topology';
 
 export const TIMING = {
   /** Seconds a frame spends on one cable at speed 1. */
+  hop: 0.7,
+  switch: 0.3,
