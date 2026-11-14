@@ -1921,3 +1921,6 @@ tbody th {
   background: var(--tip-bg);
   color: var(--tip-ink);
   font-size: 13px;
+  pointer-events: none;
+}
+
