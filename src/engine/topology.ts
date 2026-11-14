@@ -326,3 +326,5 @@ export class Topology {
   /** Sets or clears (empty ip) the address on one port, with the checks a student would get wrong. */
   setPortIp(portId: string, ip: string, prefix: number): Result {
     const p = this.port(portId);
+    const dev = this.device(p.deviceId);
+    if (dev.kind === 'switch') return { ok: false, reason: 'Port switch tidak diberi IP: switch bekerja dengan alamat MAC.' };
