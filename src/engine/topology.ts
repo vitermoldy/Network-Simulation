@@ -272,3 +272,5 @@ export class Topology {
   }
 
   removeDevice(id: string): Device | undefined {
+    const d = this.devices.get(id);
+    if (!d) return undefined;
