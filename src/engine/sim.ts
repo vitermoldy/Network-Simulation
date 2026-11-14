@@ -34,3 +34,5 @@ export const PAGE_PARTS: { lines: string[]; shows: string }[] = [
   {
     lines: ['HTTP/1.1 200 OK', 'Content-Type: text/html', 'Content-Length: 1200', '<header>jaringan.test</header>'],
     shows: 'kepala halaman',
+  },
+  {
