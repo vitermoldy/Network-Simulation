@@ -1494,3 +1494,6 @@ export class App {
     if (box.contains(document.activeElement) && (document.activeElement as HTMLElement).matches('input, select')) {
       this.deviceDirty = true;
       return;
+    }
+    this.deviceKey = key;
+
