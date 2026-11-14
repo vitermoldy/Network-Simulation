@@ -267,3 +267,5 @@ export class Stage {
     v.group.traverse((o) => {
       if (o instanceof CSS2DObject) o.element.remove();
     });
+    this.scene.remove(v.group);
+    disposeTree(v.group);
