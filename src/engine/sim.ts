@@ -896,3 +896,5 @@ export class Simulator {
     if (p.eth.dst !== nic.mac && p.eth.dst !== BROADCAST) {
       this.discard(p, dev.id, `MAC tujuan ${p.eth.dst} bukan milik kartu jaringannya, frame dibuang.`);
       return;
+    }
+    if (p.arp) {
