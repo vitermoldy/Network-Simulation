@@ -1717,3 +1717,5 @@ tbody th {
   display: grid;
   gap: 8px;
   justify-items: start;
+  padding: 10px 12px;
+  border-radius: var(--r);
