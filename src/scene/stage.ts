@@ -276,3 +276,5 @@ export class Stage {
   private rebuildDevice(id: string): void {
     const dev = this.sim.topo.devices.get(id);
     this.removeDeviceView(id);
+    if (!dev) return;
+    const view = buildDevice(dev);
