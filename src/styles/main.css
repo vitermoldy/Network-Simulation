@@ -383,3 +383,6 @@ select {
 .stage {
   position: absolute;
   inset: 0;
+}
+
+.stage-canvas {
