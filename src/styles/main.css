@@ -466,3 +466,5 @@ select {
   display: inline;
 }
 
+.tag.is-off .tag-name {
+  color: var(--muted);
