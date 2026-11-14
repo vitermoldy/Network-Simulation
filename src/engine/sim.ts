@@ -368,3 +368,5 @@ export class Simulator {
     this.setPhase('input', 'active');
     const isIp = /^\d+\.\d+\.\d+\.\d+$/.test(target);
     const dev = this.checkSource(sourceId, !isIp);
+    if (!dev) return;
+    if (dev.kind === 'router') this.setPhase('arp', 'skipped');
