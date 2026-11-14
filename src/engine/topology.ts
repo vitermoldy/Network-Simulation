@@ -374,3 +374,6 @@ export class Topology {
     const d = this.device(id);
     d.services = { ...services };
     d.dnsRecords ??= {};
+    this.rev++;
+  }
+
