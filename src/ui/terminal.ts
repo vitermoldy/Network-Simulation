@@ -208,3 +208,5 @@ export class IosShell implements Shell {
           if (sim.converging) out.push('', '% Rute sedang dihitung ulang setelah ada perubahan.');
           return out;
         },
+      });
+      show.push({
