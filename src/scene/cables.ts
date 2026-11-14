@@ -84,3 +84,5 @@ export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
 function endPoints(port: PortView): { start: THREE.Vector3; out: THREE.Vector3; drop: THREE.Vector3; floor: V2 } {
   const pos = new THREE.Vector3();
   const dir = new THREE.Vector3();
+  port.anchor.getWorldPosition(pos);
+  port.anchor.getWorldDirection(dir);
