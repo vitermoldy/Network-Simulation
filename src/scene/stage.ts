@@ -154,3 +154,5 @@ export class Stage {
     this.controls.maxPolarAngle = 1.42;
     this.controls.screenSpacePanning = true;
 
+    this.scene.add(new THREE.HemisphereLight(0xffffff, 0xc4c9d0, 1.45));
+    const sun = new THREE.DirectionalLight(0xffffff, 1.45);
