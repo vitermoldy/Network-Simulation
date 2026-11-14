@@ -1365,3 +1365,5 @@ export class App {
   }
 
   private renderLog(): void {
+    const ol = $('log');
+    const log = this.sim.log;
