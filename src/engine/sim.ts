@@ -1134,3 +1134,5 @@ export class Simulator {
     const reply = this.newPacket({
       flow: 'dns', label: answer ? 'DNS jawab' : 'NXDOMAIN', title: answer ? `DNS: ${q.question} = ${answer}` : `DNS: ${q.question} tidak ada`,
       eth: { src: dev.ports[0].mac, dst: BROADCAST, type: 'IPv4' },
+      ip: { src: dev.ports[0].ip!, dst: p.ip!.src, ttl: 64, proto: 'UDP' },
+      udp: { src: 53, dst: p.udp.src },
