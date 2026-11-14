@@ -817,3 +817,5 @@ export class Stage {
       const flat = new THREE.Vector3(tan.x, 0, tan.z);
       if (flat.lengthSq() > 1e-6) v.mesh.lookAt(pos.clone().add(flat.normalize()));
       v.last.copy(pos);
+      this.stylePacket(v, f.packet, color, 'fly');
+      if (topo.hasPort(f.to)) consider(f.packet, f.id, topo.port(f.to).deviceId);
