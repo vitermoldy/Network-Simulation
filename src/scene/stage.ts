@@ -526,3 +526,5 @@ export class Stage {
     else if (k === 'ArrowRight') this.rotate(0.22);
     else if (k === 'ArrowUp') this.tilt(-0.12);
     else if (k === 'ArrowDown') this.tilt(0.12);
+    else if (k === '+' || k === '=') this.zoom(0.8);
+    else if (k === '-' || k === '_') this.zoom(1.25);
