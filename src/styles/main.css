@@ -932,3 +932,6 @@ select {
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
   overflow: hidden;
+}
+
+.panel:focus {
