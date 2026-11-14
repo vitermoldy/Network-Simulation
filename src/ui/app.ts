@@ -580,3 +580,5 @@ export class App {
           const el = $('viewer-hover');
           if (el.textContent !== text) el.textContent = text;
         },
+      });
+      this.viewer.setTheme(this.theme());
