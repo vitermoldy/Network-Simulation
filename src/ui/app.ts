@@ -1218,3 +1218,5 @@ export class App {
         this.confirm(`Hapus rancangan ${name} dari MySQL?`, 'Hapus rancangan', async () => {
           try {
             await api.deleteLayout(id);
+            this.toast(`Rancangan ${name} dihapus.`);
+            void this.refreshDb();
