@@ -1601,3 +1601,5 @@ export class App {
     return this.stage?.leadPacket ?? this.sim.flights[this.sim.flights.length - 1]?.packet ?? this.sim.holds[this.sim.holds.length - 1]?.packet;
   }
 
+  private renderPacket(): void {
+    const box = $('packet');
