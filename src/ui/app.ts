@@ -687,3 +687,5 @@ export class App {
   private paintBrowser(): void {
     const bc = this.browserCanvas;
     if (!bc || !bc.canvas.isConnected) return;
+    const d = this.sim.topo.device(this.selectedDevice);
+    const b = this.sim.browser;
