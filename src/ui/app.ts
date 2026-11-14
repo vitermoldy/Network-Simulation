@@ -308,3 +308,5 @@ export class App {
         if (!dir) return;
         e.preventDefault();
         const next = TABS[(i + dir + TABS.length) % TABS.length];
+        this.showTab(next);
+        $(`tab-${next}`).focus();
