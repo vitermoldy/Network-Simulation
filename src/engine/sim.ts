@@ -1003,3 +1003,5 @@ export class Simulator {
     const nic = dev.ports[0];
     const retry = entry.tries;
     entry.tries++;
+    const p = this.newPacket({
+      flow: 'arp', label: retry ? 'ARP? (ulang)' : 'ARP?', title: `ARP: siapa punya ${ip}?`,
