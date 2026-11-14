@@ -347,3 +347,5 @@ function buildRouter(dev: Device): Build {
   const body = rounded(w, h, d, shared.graphite, 0.035);
   body.position.y = h / 2;
   body.userData.pick = { type: 'device', deviceId: dev.id } satisfies Pick;
+  group.add(body);
+  const b = newBuild(group, w, h, d, body);
