@@ -170,3 +170,5 @@ describe('simulator', () => {
     const sim = withScenario('normal');
     run(sim, 'www.tidakada.test');
     expect(sim.status).toBe('failed');
+    expect(sim.phases.find((p) => p.id === 'dns')!.status).toBe('failed');
+    expect(sim.browser.state).toBe('error');
