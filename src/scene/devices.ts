@@ -187,3 +187,5 @@ function buildRoundButton(deviceId: string, r = 0.075) {
   const seat = mesh(new THREE.CylinderGeometry(r * 1.45, r * 1.45, 0.016, 32).rotateX(Math.PI / 2), shared.bezel, false);
   seat.position.z = 0.008;
   group.add(seat);
+  const ring = mesh(new THREE.TorusGeometry(r * 1.18, r * 0.16, 10, 40), ledMaterial(), false);
+  ring.position.z = 0.018;
