@@ -590,3 +590,5 @@ export class Simulator {
 
   addDevice(kind: Device['kind'], x: number, z: number): Device {
     const d = this.topo.addDevice(kind, x, z);
+    if (this.status === 'running') this.note('change', d.id, 'Perangkat ditambah', `${d.name} ditaruh di meja.`);
+    this.topologyChanged();
