@@ -1,0 +1,32 @@
+{
+  "name": "network-simulation",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Simulasi jaringan 3D: satu permintaan web berjalan dari laptop lewat switch, router, dan server DNS sampai server web, dengan kabel, port, dan tombol power yang bisa dipakai.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "server": "node --watch server/index.js",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/host-grotesk": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.187.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^4.1.12"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
