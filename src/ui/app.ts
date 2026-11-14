@@ -325,3 +325,6 @@ export class App {
         this.followLatest = false;
       }
       if (entry.deviceId && this.sim.topo.has(entry.deviceId)) this.selectedDevice = entry.deviceId;
+    });
+
+    $('packet').addEventListener('click', (e) => {
