@@ -502,3 +502,5 @@ export class App {
     this.toast(`${d.name} ditaruh di meja. ${next}`);
   }
 
+  private move(id: string, x: number, z: number): boolean {
+    const d = this.sim.topo.device(id);
