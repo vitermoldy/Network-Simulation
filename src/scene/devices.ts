@@ -263,3 +263,5 @@ function addPort(b: Build, dev: Device, index: number, x: number, y: number, z: 
 }
 
 /** Catalyst-style access switch: steel-blue system panel, 24 ports in three blocks, two uplinks. */
+function buildSwitch(dev: Device): Build {
+  const w = 4.4;
