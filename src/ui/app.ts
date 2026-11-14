@@ -1084,3 +1084,5 @@ export class App {
       else if (act === 'focus') this.stage?.focusDevice(id);
       else if (act === 'remove') this.askRemove(id);
       else if (act === 'unplug') this.askUnplug(b.dataset.link!);
+      else if (act === 'auto') {
+        const r = this.sim.edit((t) => t.autoAddress(id));
