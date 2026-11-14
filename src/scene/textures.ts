@@ -190,3 +190,5 @@ export function drawDesktop(ctx: CanvasRenderingContext2D, name: string, ip: str
   const g = ctx.createLinearGradient(0, 0, 0, H);
   g.addColorStop(0, '#2a3a52');
   g.addColorStop(1, '#16202e');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, W, H);
