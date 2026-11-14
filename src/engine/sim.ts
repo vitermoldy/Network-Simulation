@@ -1302,3 +1302,6 @@ export class Simulator {
       if (retry) c.synRetried = true;
       return this.tcpPacket(dev, c.serverIp!, CLIENT_PORT, 80, ['SYN'], CLIENT_ISS, 0, 'SYN', 'TCP SYN: minta sambungan', retry);
     }, RTO_INIT, MAX_TCP_TRIES, () => this.fail('tcp-open', `Server web tidak membalas SYN setelah ${MAX_TCP_TRIES} kali. Mungkin server mati atau tidak ada jalur ke sana.`, this.clientId));
+  }
+
+  private sendGet(dev: Device): void {
