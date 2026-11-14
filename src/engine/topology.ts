@@ -171,3 +171,5 @@ export class Topology {
     for (const s of SPECS) {
       const d = this.makeDevice(s.kind, s.id, s.name, s.x, s.z);
       for (const [i, [ip, prefix]] of Object.entries(s.ips ?? {})) Object.assign(d.ports[Number(i)], { ip, prefix });
+      d.gateway = s.gateway;
+      d.dnsServer = s.dnsServer;
