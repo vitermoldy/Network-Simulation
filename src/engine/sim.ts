@@ -497,3 +497,5 @@ export class Simulator {
   private fail(phase: PhaseId, reason: string, deviceId?: string): void {
     if (this.status !== 'running') return;
     this.setPhase(phase, 'failed');
+    for (const p of this.phases) if (p.status === 'active') p.status = 'failed';
+    this.status = 'failed';
