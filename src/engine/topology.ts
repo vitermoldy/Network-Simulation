@@ -56,3 +56,5 @@ export interface Link {
   b: string;
 }
 
+export type Fail = { ok: false; reason: string };
+export type Result = { ok: true } | Fail;
