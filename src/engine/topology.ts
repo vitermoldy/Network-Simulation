@@ -11,3 +11,5 @@ export interface Port {
   id: string;
   deviceId: string;
   name: string;
+  mac: string;
+  ip?: string;
