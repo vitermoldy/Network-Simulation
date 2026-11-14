@@ -1314,3 +1314,5 @@ export class App {
     this.renderStatus();
     this.renderPhases();
     this.renderLog();
+    this.renderTimers();
+    this.renderDeviceList();
