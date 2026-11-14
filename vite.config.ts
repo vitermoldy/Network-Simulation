@@ -5,3 +5,6 @@ import { defineConfig } from 'vite';
 // modules never load twice.
 const root = fileURLToPath(new URL('.', import.meta.url)).replace(/^[a-z]:/, (d) => d.toUpperCase());
 // The MySQL server (npm run server) keeps run history and saved designs; dev and preview forward /api to it.
+const api = { '/api': { target: `http://localhost:${process.env.PORT ?? 8797}` } };
+
+export default defineConfig({
