@@ -52,3 +52,5 @@ describe('topology', () => {
 
   it('checks IP settings the way a lab assistant would', () => {
     const t = new Topology();
+    expect(t.setPortIp('r2.2', '10.9.0.0', 24).ok).toBe(false);
+    expect(t.setPortIp('r2.2', '10.9.0.255', 24).ok).toBe(false);
