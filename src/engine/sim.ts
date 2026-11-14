@@ -1479,3 +1479,5 @@ export class Simulator {
         const end = SERVER_ISS + 1 + SEGMENT * (i + 1);
         if (t.ack >= end) this.acked(`seg${i + 1}`);
       }
+      const waiting = [...this.retx.keys()].some((k) => k.startsWith('seg'));
+      if (t.len === 0 && t.ack === s.lastAck && waiting) {
