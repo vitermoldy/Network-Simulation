@@ -91,3 +91,5 @@ export class DeviceViewer {
       } else return;
       e.preventDefault();
     });
+    this.observer = new ResizeObserver(() => this.resize());
+    this.observer.observe(host);
