@@ -702,3 +702,5 @@ export class App {
     $('devwin-close').addEventListener('click', () => this.closeDevice());
     DW_TABS.forEach((t) => {
       const b = $(`dwt-${t}`);
+      b.addEventListener('click', () => this.showDwTab(t));
+      b.addEventListener('keydown', (e) => {
