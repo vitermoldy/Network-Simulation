@@ -110,3 +110,5 @@ export function createApi(getPool, database) {
         sim_seconds AS simSeconds, packets_lost AS packetsLost, resends, route_changes AS routeChanges, path, devices,
         finished_at AS finishedAt FROM runs WHERE client_id = ? ORDER BY finished_at DESC, id DESC LIMIT 50`,
       [client],
+    )
+    res.json({
