@@ -189,3 +189,5 @@ export class App {
     return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
   }
 
+  private bindControls(): void {
+    $('request').addEventListener('submit', (e) => {
