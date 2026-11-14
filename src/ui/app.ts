@@ -668,3 +668,5 @@ export class App {
     }
     const url = this.sim.browser.deviceId === d.id ? this.sim.browser.url : $<HTMLInputElement>('url').value;
     box.innerHTML = `${back('Web Browser')}
+      <form class="browser-bar" data-desk="browse" novalidate>
+        <label for="br-url" class="sr-only">Alamat</label>
