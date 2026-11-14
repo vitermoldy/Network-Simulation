@@ -1560,3 +1560,5 @@ export class Simulator {
     if (!clientIp || !server.gateway) return undefined;
     const gwPort = this.topo.findInSegment(server.ports[0].id, server.gateway);
     let at = gwPort?.deviceId;
+    const chain: string[] = [];
+    for (let i = 0; at && i < 16; i++) {
