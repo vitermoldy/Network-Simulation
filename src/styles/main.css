@@ -1535,3 +1535,5 @@ tbody th {
 .layer dd {
   margin: 0;
   font-family: var(--font-mono);
+  font-size: 12.5px;
+  overflow-wrap: anywhere;
