@@ -681,3 +681,4 @@ export function buildGhost(kind: Device['kind']): THREE.Group {
   m.position.y = h / 2;
   g.add(m);
   return g;
+}
