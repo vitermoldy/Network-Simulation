@@ -589,3 +589,5 @@ export function signatureOf(dev: Device): string {
   return JSON.stringify([dev.kind, dev.services, dev.ports.map((p) => p.ip ?? '')]);
 }
 
+export function buildDevice(dev: Device): DeviceView {
+  const b = dev.kind === 'laptop' ? buildLaptop(dev)
