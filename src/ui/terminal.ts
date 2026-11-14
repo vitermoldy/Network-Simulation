@@ -342,3 +342,5 @@ export class IosShell implements Shell {
     // "do show ..." from configuration modes, as in IOS.
     let tokens = line.split(/\s+/);
     let cmds = this.commands();
+    if ((this.mode === 'config' || this.mode === 'if') && tokens[0].toLowerCase() === 'do') {
+      const saved = this.mode;
