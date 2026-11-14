@@ -188,3 +188,5 @@ export function layersOf(p: Packet, wire: string): LayerRow[] {
 
 /** How far up the stack a device opens a packet to make its decision. */
 export function readsUpTo(kind: string): LayerId {
+  if (kind === 'switch') return 2;
+  if (kind === 'router') return 3;
