@@ -774,3 +774,5 @@ export class Stage {
     el.className = 'ptag';
     const tag = new CSS2DObject(el);
     tag.position.set(0, 0.34, 0);
+    mesh.add(tag);
+    this.scene.add(mesh);
