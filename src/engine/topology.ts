@@ -75,3 +75,6 @@ export function roleOf(d: Device): Role {
   return 'process';
 }
 
+export const isHost = (d: Device) => d.kind === 'pc' || d.kind === 'laptop' || d.kind === 'server';
+export const isClient = (d: Device) => d.kind === 'pc' || d.kind === 'laptop';
+
