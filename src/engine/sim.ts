@@ -976,3 +976,5 @@ export class Simulator {
       }
       const pending = this.arpPending.get(nextHop);
       if (pending) {
+        pending.packets.push(p);
+        return;
