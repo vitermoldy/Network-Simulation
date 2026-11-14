@@ -619,3 +619,5 @@ export class Simulator {
 
   /**
    * Any other settings change (IP, gateway, DNS, services, records, names) goes through here,
+   * so routers recompute their tables the same way they do after a cable change.
+   */
