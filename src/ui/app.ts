@@ -859,3 +859,5 @@ export class App {
     const d = this.sim.topo.device(id);
     const cables = d.ports.filter((p) => this.sim.topo.linkOf(p.id)).length;
     this.confirm(`Hapus ${d.name} dari meja?${cables ? ` ${cables} kabelnya ikut dicabut.` : ''}`, 'Hapus perangkat', () => {
+      if (this.dwOpen() && this.selectedDevice === id) this.closeDevice();
+      this.sim.removeDevice(id);
