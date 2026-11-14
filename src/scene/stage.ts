@@ -9,3 +9,5 @@ import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.j
 import { CSS2DObject, CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import type { Packet } from '../engine/packet';
 import type { Simulator } from '../engine/sim';
+import { roleOf, type DeviceKind, type Role } from '../engine/topology';
+import { buildPlug, cableCurve, cableMaterial, danglingCurve, tube, type Box2 } from './cables';
