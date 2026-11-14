@@ -1051,3 +1051,5 @@ export class Simulator {
   }
 
   private fire(r: Retx): void {
+    const p = r.make(r.tries);
+    r.tries++;
