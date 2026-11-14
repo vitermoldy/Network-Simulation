@@ -226,3 +226,5 @@ export class App {
       this.playing = !this.playing;
       this.stepOnce = false;
     });
+    $('step').addEventListener('click', () => {
+      if (this.sim.status === 'idle') {
