@@ -413,3 +413,5 @@ export class Topology {
       return { ok: false, reason: 'Tidak ada port router ber-IP di jaringan yang sama. Pastikan kabelnya sampai ke router, dan port router itu sudah diberi IP.' };
     }
     const used = new Set([...this.portIndex.values()].map((p) => p.ip).filter(Boolean));
+    const net = (ipToInt(gw.ip) & maskOf(gw.prefix)) >>> 0;
+    const size = 2 ** (32 - gw.prefix);
