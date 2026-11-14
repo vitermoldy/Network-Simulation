@@ -280,3 +280,5 @@ export class Topology {
       this.portIndex.delete(p.id);
     }
     this.devices.delete(id);
+    this.rev++;
+    return d;
