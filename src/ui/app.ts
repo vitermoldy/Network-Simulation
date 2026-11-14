@@ -1501,3 +1501,5 @@ export class App {
     const editable = d.kind !== 'switch';
     const portRows = d.ports.map((p) => {
       const link = topo.linkOf(p.id);
+      const peer = topo.peer(p.id);
+      const cable = link
