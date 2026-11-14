@@ -720,3 +720,5 @@ export class Stage {
         const delta = view.last.clone().sub(this.controls.target).multiplyScalar(Math.min(1, dt * 3));
         delta.y *= 0.3;
         this.controls.target.add(delta);
+        this.camera.position.add(delta);
+      }
