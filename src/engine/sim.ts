@@ -1252,3 +1252,5 @@ export class Simulator {
         const bp = b.app?.part ?? 0;
         this.browser.parts[bp - 1] = true;
         delivered.push(bp);
+      }
+      const extra = delivered.length > 1 ? ` Segmen ${delivered.slice(1).join(' dan ')} yang tadi disimpan sekarang ikut disusun.` : '';
