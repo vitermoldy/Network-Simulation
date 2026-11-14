@@ -1769,3 +1769,6 @@ tbody th {
 .layout-meta {
   font-size: 12px;
   color: var(--muted);
+}
+
+.layouts .btn:last-child {
