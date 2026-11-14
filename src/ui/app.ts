@@ -1082,3 +1082,5 @@ export class App {
       const act = b.dataset.act;
       if (act === 'power') this.togglePower(id);
       else if (act === 'focus') this.stage?.focusDevice(id);
+      else if (act === 'remove') this.askRemove(id);
+      else if (act === 'unplug') this.askUnplug(b.dataset.link!);
