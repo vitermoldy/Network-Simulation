@@ -280,3 +280,6 @@ export class Stage {
     const view = buildDevice(dev);
     this.devices.set(id, view);
     this.scene.add(view.group);
+    this.addTag(view);
+  }
+
