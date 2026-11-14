@@ -754,3 +754,5 @@ export class App {
         if (res.ok) res = this.sim.edit((t) => t.setHostField(id, 'gateway', String(f.get('gateway') ?? '')));
         if (res.ok) res = this.sim.edit((t) => t.setHostField(id, 'dnsServer', String(f.get('dns') ?? '')));
         if (!res.ok) {
+          err.textContent = res.reason ?? '';
+          err.hidden = false;
