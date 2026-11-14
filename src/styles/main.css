@@ -314,3 +314,6 @@ select {
 
 .btn-ghost:hover:not(:disabled) {
   border-color: var(--line-strong);
+  background: var(--surface);
+}
+
