@@ -24,3 +24,6 @@ export class DeviceViewer {
   private down?: { x: number; y: number };
   private observer: ResizeObserver;
   deviceId = '';
+  active = false;
+
+  constructor(private host: HTMLElement, private sim: Simulator, private events: { power: (id: string) => void; hover: (text: string) => void }) {
