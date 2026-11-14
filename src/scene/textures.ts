@@ -34,3 +34,5 @@ export function printFace(w: number, h: number, draw: (p: FacePrinter) => void):
   const scale = Math.min(420, 1600 / w);
   const [c, ctx] = makeCanvas(Math.round(w * scale), Math.round(h * scale));
   const px = (x: number, y: number): [number, number] => [(x + w / 2) * scale, (h - y) * scale];
+  const text: FacePrinter['text'] = (s, x, y, size, opts = {}) => {
+    const [cx, cy] = px(x, y);
