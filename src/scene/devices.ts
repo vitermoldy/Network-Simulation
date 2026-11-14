@@ -38,3 +38,5 @@ export interface DeviceView {
   group: THREE.Group;
   height: number;
   ports: Map<string, PortView>;
+  powerHit: THREE.Mesh;
+  powerGlow: THREE.MeshStandardMaterial;
