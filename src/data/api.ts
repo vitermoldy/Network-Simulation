@@ -39,3 +39,5 @@ export interface LayoutSummary {
 
 let memoryCode: string | undefined;
 
+function makeCode(): string {
+  const bytes = crypto.getRandomValues(new Uint8Array(12));
