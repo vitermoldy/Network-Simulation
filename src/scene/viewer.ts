@@ -159,3 +159,5 @@ export class DeviceViewer {
     const live = topo.device(this.deviceId);
     const view = buildDevice({ ...live, x: 0, z: 0 });
     this.view = view;
+    this.scene.add(view.group);
+    view.group.updateMatrixWorld(true);
