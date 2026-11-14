@@ -471,3 +471,5 @@ export class Simulator {
   /** Stops everything and brings the scene back to rest. */
   stop(): void {
     for (const t of this.queue) t.cancelled = true;
+    this.queue = [];
+    this.flights = [];
