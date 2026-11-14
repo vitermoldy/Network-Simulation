@@ -1005,3 +1005,5 @@ export class App {
       text = `Tombol power ${d.name}. Sekarang ${d.powered ? 'menyala, klik untuk mematikan' : 'mati, klik untuk menyalakan'}.`;
     } else if (p.type === 'device' && topo.has(p.deviceId)) {
       text = `${topo.device(p.deviceId).name}. Klik untuk mengatur, seret untuk memindahkan.`;
+    } else if (p.type === 'cable') {
+      const l = topo.links.get(p.linkId);
