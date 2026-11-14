@@ -1192,3 +1192,5 @@ export class App {
         await api.saveLayout(name, this.sim.topo.toJSON());
         err.hidden = true;
         input.value = '';
+        this.toast(`Rancangan ${name} disimpan di MySQL.`);
+        void this.refreshDb();
