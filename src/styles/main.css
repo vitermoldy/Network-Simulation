@@ -2165,3 +2165,5 @@ tbody th {
 }
 
 @media (max-width: 1100px) {
+  .devwin {
+    inset: 8px;
