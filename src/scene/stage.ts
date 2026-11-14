@@ -311,3 +311,5 @@ export class Stage {
       this.scene.remove(c.group);
       disposeTree(c.group);
       this.cables.delete(c.linkId);
+    }
+    const boxes = this.footprints();
