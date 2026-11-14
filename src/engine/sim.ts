@@ -334,3 +334,5 @@ export class Simulator {
   // ------------------------------------------------------------------ run control
 
   private resetApps(host: string, deviceId: string): void {
+    this.client = {
+      deviceId, host, dnsTxid: 4021, dnsDone: false, tcp: 'closed', synSentAt: 0, synRetried: false,
