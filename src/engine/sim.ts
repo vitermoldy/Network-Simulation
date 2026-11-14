@@ -1556,3 +1556,5 @@ export class Simulator {
 
   /** A router on the current path back to the client that is neither end's own gateway. */
   private middleRouter(server: Device): string | undefined {
+    const clientIp = this.topo.has(this.clientId) ? this.topo.device(this.clientId).ports[0].ip : undefined;
+    if (!clientIp || !server.gateway) return undefined;
