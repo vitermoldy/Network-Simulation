@@ -627,3 +627,5 @@ export function footprintOf(v: DeviceView): { x0: number; x1: number; z0: number
   return { x0: x - v.half.x, x1: x + v.half.x, z0: z + v.half.z0, z1: z + v.half.z1 };
 }
 
+/** Power state on the device itself: LEDs, the rocker's tilt, the button's travel. */
+export function showPower(v: DeviceView, on: boolean): void {
