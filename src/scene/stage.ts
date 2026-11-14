@@ -572,3 +572,6 @@ export class Stage {
 
   /** Where a new device would land if placed from the keyboard: the middle of the view. */
   centrePoint(): { x: number; z: number } {
+    return { x: this.controls.target.x, z: this.controls.target.z };
+  }
+
