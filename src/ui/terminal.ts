@@ -387,3 +387,5 @@ export class IosShell implements Shell {
 
 /** Router port network, for messages. */
 export function networkLabel(p: Port): string {
+  return p.ip && p.prefix !== undefined ? networkOf(p.ip, p.prefix) : 'tanpa IP';
+}
