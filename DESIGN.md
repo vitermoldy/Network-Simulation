@@ -9,3 +9,5 @@ datang dari pemilik proyek dalam tiga langkah:
    bisa diputar."
 2. Palet A dari dealer taste-skill (meja lab abu terang, aksen kobalt), dipilih pemilik pada 14 November
    2026 dari tiga palet yang ditawarkan.
+3. "Lihat Cisco": perangkat bergaya Cisco dan Packet Tracer, perangkat bisa ditambah dan dikurangi,
+   dan klik perangkat membuka tampilan dekatnya (dengan tangkapan layar Packet Tracer sebagai acuan:
