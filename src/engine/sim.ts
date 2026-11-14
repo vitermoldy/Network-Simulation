@@ -302,3 +302,5 @@ export class Simulator {
   }
 
   /** Moves the clock forward. Returns 'step' when step mode stopped it at a decision. */
+  advance(dt: number): 'ok' | 'step' {
+    const target = this.time + dt;
