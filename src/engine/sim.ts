@@ -90,3 +90,5 @@ const PING_RTO = 18;
 
 export type LogKind = 'info' | 'route' | 'loss' | 'retry' | 'ok' | 'error' | 'change';
 
+export interface LogEntry {
+  id: number;
