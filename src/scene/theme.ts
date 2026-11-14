@@ -48,3 +48,5 @@ export const MATERIAL = {
   graphite: 0x2c3137,
   plate: 0x9aa3ad,
   tower: 0xd6dadf,
+  laptop: 0xc9ced5,
+  keyboard: 0x2a2d32,
