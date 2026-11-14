@@ -675,3 +675,6 @@ export class Simulator {
     }
     const tr = this.trace.get(p.id) ?? [];
     if (tr[tr.length - 1] !== deviceId) tr.push(deviceId);
+    this.trace.set(p.id, tr);
+  }
+
