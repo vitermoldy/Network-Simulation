@@ -764,3 +764,6 @@ export class App {
         (document.activeElement as HTMLElement | null)?.blur();
         this.renderAll();
       }
+    });
+  }
+
