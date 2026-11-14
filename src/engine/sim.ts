@@ -251,3 +251,5 @@ export class Simulator {
   private nextFlight = 1;
   private nextLog = 1;
   private rng: () => number;
+  private convergeTask?: Task;
+  private retx = new Map<string, Retx>();
