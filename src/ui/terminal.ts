@@ -305,3 +305,5 @@ export class IosShell implements Shell {
       },
       {
         words: ['shutdown'], help: 'matikan port ini secara administratif',
+        run: () => {
+          topo.setPortDown(port!.id, true);
