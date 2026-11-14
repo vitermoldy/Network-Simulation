@@ -2273,3 +2273,6 @@ tbody th {
 
   .request-row {
     flex-wrap: wrap;
+  }
+
+  .request-row .field {
