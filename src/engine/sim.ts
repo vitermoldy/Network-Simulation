@@ -534,3 +534,5 @@ export class Simulator {
       this.macTables.delete(deviceId);
       this.arpCaches.delete(deviceId);
       if (deviceId === this.browser.deviceId) {
+        this.browser.state = 'off';
+        this.browser.message = undefined;
