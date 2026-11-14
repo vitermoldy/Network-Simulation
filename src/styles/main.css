@@ -557,3 +557,6 @@ select {
 
 .tool[aria-pressed="true"] {
   background: var(--accent);
+  color: var(--accent-ink);
+}
+
