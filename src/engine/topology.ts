@@ -441,3 +441,5 @@ export class Topology {
   connect(a: string, b: string): ResultOf<Link> {
     if (a === b) return { ok: false, reason: 'Pilih port lain: ujung kabel tidak bisa masuk ke port yang sama.' };
     const pa = this.port(a);
+    const pb = this.port(b);
+    if (pa.deviceId === pb.deviceId) {
