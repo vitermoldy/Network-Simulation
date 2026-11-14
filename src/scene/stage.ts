@@ -246,3 +246,5 @@ export class Stage {
   private updateTag(view: DeviceView): void {
     const el = this.tags.get(view.device.id);
     if (!el) return;
+    const d = view.device;
+    const role = roleOf(d);
