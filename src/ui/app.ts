@@ -525,3 +525,5 @@ export class App {
     const d = this.sim.topo.device(id);
     const changed = this.selectedDevice !== id;
     this.selectedDevice = id;
+    if (changed) this.desktopApp = 'home';
+    const client = d.kind === 'pc' || d.kind === 'laptop';
