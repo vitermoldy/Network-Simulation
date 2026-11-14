@@ -454,3 +454,5 @@ export class Simulator {
     this.dnsCache.clear();
     this.activity.clear();
     this.history.clear();
+    this.trace.clear();
+    this.converging = false;
