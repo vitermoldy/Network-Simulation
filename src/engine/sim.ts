@@ -1426,3 +1426,5 @@ export class Simulator {
 
   private pingDone(): void {
     const pg = this.ping!;
+    const lost = pg.sent - pg.received;
+    this.say('');
