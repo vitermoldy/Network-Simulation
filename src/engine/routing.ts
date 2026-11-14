@@ -52,3 +52,6 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
       }
     }
     list.sort((a, b) => a.to.localeCompare(b.to));
+    edges.set(r.id, list);
+  }
+
