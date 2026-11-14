@@ -867,3 +867,6 @@ export class App {
       this.deviceKey = '';
       this.renderAll();
     });
+  }
+
+  private afterTopologySwap(message: string): void {
