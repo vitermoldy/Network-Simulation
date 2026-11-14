@@ -712,3 +712,5 @@ export class App {
         this.showDwTab(next);
         $(`dwt-${next}`).focus();
       });
+    });
+    $('vw-in').addEventListener('click', () => this.viewer?.zoom(0.75));
