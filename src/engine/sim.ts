@@ -1228,3 +1228,5 @@ export class Simulator {
         const first = c.tcp === 'fin-wait';
         this.acked('fin');
         c.rcvNext = t.seq + 1;
+        c.tcp = 'time-wait';
+        this.note(first ? 'ok' : 'info', this.clientId, first ? 'Langkah terakhir: ACK' : 'FIN ulang', first
