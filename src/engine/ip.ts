@@ -18,3 +18,6 @@ export function maskOf(prefix: number): number {
 
 /** "192.168.1.10", 24 -> "192.168.1.0/24" */
 export function networkOf(ip: string, prefix: number): string {
+  return `${intToIp((ipToInt(ip) & maskOf(prefix)) >>> 0)}/${prefix}`;
+}
+
