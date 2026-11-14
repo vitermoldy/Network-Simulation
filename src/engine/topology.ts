@@ -536,3 +536,5 @@ export class Topology {
   // ------------------------------------------------------------------ broadcast domains
 
   /**
+   * Broadcast domains: ports joined by live cables, and every port of a switch that is on.
+   * Returns a segment number per port; ports of devices that are off get none.
