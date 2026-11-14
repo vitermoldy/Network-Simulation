@@ -1214,3 +1214,5 @@ export class App {
             this.toast(`Rancangan tidak bisa dimuat: ${(ex as Error).message}`);
           }
         });
+      } else if (b.dataset.op === 'delete') {
+        this.confirm(`Hapus rancangan ${name} dari MySQL?`, 'Hapus rancangan', async () => {
