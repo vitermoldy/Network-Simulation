@@ -323,3 +323,5 @@ export class App {
       if (entry.packetId) {
         this.selectedPacket = entry.packetId;
         this.followLatest = false;
+      }
+      if (entry.deviceId && this.sim.topo.has(entry.deviceId)) this.selectedDevice = entry.deviceId;
