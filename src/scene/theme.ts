@@ -40,3 +40,5 @@ export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
   },
 };
 
+/** Physical colours: casings, LEDs, metal. */
+export const MATERIAL = {
