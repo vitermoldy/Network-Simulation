@@ -4,3 +4,5 @@
 import { inNetwork, networkOf, prefixOf } from './ip';
 import type { Topology } from './topology';
 
+export interface Route {
+  network: string;
