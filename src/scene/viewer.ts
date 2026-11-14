@@ -218,3 +218,6 @@ export class DeviceViewer {
     }
     this.controls.update();
     this.renderer.render(this.scene, this.camera);
+  }
+
+  dispose(): void {
