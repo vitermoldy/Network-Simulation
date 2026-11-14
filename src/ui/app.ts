@@ -193,3 +193,5 @@ export class App {
     $('request').addEventListener('submit', (e) => {
       e.preventDefault();
       this.send();
+    });
+    $('url').addEventListener('input', () => this.clearUrlError());
