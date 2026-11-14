@@ -415,3 +415,5 @@ export class Topology {
     const used = new Set([...this.portIndex.values()].map((p) => p.ip).filter(Boolean));
     const net = (ipToInt(gw.ip) & maskOf(gw.prefix)) >>> 0;
     const size = 2 ** (32 - gw.prefix);
+    let pick: string | undefined;
+    for (let i = 10; i < size - 1 && !pick; i++) {
