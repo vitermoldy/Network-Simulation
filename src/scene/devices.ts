@@ -288,3 +288,5 @@ function buildSwitch(dev: Device): Build {
     const [x0] = p.px(-w / 2, 0);
     const [x1] = p.px(sysEnd, 0);
     const [x2] = p.px(w / 2, 0);
+    p.ctx.fillStyle = '#8b9aaa';
+    p.ctx.fillRect(x0, 0, x1 - x0, h * p.scale);
