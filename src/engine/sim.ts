@@ -988,3 +988,5 @@ export class Simulator {
       this.sendArp(dev, nextHop);
       return;
     }
+    const target = this.topo.findInSegment(nic.id, nextHop);
+    if (!target) {
