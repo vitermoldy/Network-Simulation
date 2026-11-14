@@ -19,3 +19,7 @@ perangkat Cisco, dial **ENERGY 2 / RHYTHM 2 / MOTION 2**.
 - ENERGY 2: meja 3D adalah pusat perhatian; panel di sekitarnya tenang supaya penjelasan mudah dibaca.
 - RHYTHM 2: tata letak tetap (meja, bilah kendali, panel) dengan satu jendela perangkat yang mengambang.
 - MOTION 2: gerak hanya untuk makna: paket berjalan di kabel, lampu port berkedip saat data lewat,
+  kamera berpindah saat perangkat difokuskan. Tidak ada animasi hiasan.
+
+## Deal taste-skill 2.5.1
+
