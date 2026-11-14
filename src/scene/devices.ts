@@ -404,3 +404,5 @@ function buildRouter(dev: Device): Build {
   const act = led(0.02);
   act.position.set(-w / 2 + 0.88, 0.41, z + 0.01);
   group.add(pwr, sys, act);
+  rocker.group.position.y = 0.24;
+  b.power = { hit: rocker.hit, glow: rocker.glow, rocker: rocker.paddle, leds: [pwr, sys] };
