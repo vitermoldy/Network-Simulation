@@ -1126,3 +1126,5 @@ export class App {
       e.preventDefault();
       const form = e.target as HTMLFormElement;
       const id = this.selectedDevice;
+      const f = new FormData(form);
+      const kind = form.dataset.form;
