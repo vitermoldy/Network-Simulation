@@ -115,3 +115,5 @@ describe('routing', () => {
     const t = new Topology();
     t.setPower('r2', false);
     t.setPower('r3', false);
+    expect(lookup(computeRoutes(t).get('r1'), '203.0.113.80')).toBeUndefined();
+  });
