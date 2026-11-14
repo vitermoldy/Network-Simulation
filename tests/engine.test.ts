@@ -336,3 +336,5 @@ describe('ping and nslookup', () => {
     sim.edit((t) => t.setPortDown('r1.0', true));
     expect(sim.topo.carrier('sw.24')).toBe(false);
     runPing(sim, 'pc', '192.168.1.1');
+    expect(sim.status).toBe('failed');
+    sim.edit((t) => t.setPortDown('r1.0', false));
