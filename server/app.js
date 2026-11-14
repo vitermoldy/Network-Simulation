@@ -99,3 +99,6 @@ export function createApi(getPool, database) {
         packets_lost, resends, route_changes, path, devices, finished_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [client, ...row],
     )
+    res.json({ ok: true, id: r.insertId })
+  })
+
