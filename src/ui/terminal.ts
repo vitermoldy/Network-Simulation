@@ -245,3 +245,5 @@ export class IosShell implements Shell {
       ];
       return [...list, { words: ['?'], help: '', run: help(list) }];
     }
+    if (this.mode === 'priv') {
+      const list: Command[] = [
