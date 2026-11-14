@@ -9,3 +9,5 @@ import { isClient, KIND_LABEL, roleOf, type DeviceKind, type Role } from '../eng
 import type { Pick } from '../scene/devices';
 import type { Stage, StageEvents } from '../scene/stage';
 import type { DeviceViewer } from '../scene/viewer';
+import { drawBrowser, makeCanvas, SCREEN_H, SCREEN_W } from '../scene/textures';
+import { IosShell, prefixToMask, PromptShell, type Shell } from './terminal';
