@@ -401,3 +401,5 @@ export class Topology {
    * the router port it can reach, that router port as gateway, and the first DNS server found.
    */
   autoAddress(id: string): ResultOf<string> {
+    const d = this.device(id);
+    const nic = d.ports[0];
