@@ -163,3 +163,5 @@ export class DeviceViewer {
     view.group.updateMatrixWorld(true);
     // Short leads from every plugged socket, curving down and away toward the bench.
     const mat = cableMaterial();
+    for (const p of view.ports.values()) {
+      if (!topo.linkOf(p.id)) continue;
