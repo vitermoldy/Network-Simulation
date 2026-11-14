@@ -372,3 +372,5 @@ export class App {
       }
       if ((e.key === 'Delete' || e.key === 'Backspace') && $('popover').hidden) {
         if (this.selectedLink) this.askUnplug(this.selectedLink);
+        else if (this.selectedDevice && this.sim.topo.has(this.selectedDevice) && (e.target as HTMLElement).closest('.stage-wrap')) this.askRemove(this.selectedDevice);
+      }
