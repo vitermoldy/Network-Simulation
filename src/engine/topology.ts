@@ -348,3 +348,5 @@ export class Topology {
     if (dev.kind === 'router') {
       for (const q of dev.ports) {
         if (q.id === portId || !q.ip || q.prefix === undefined) continue;
+        const mine = networkOf(clean, prefix);
+        const theirs = networkOf(q.ip, q.prefix);
