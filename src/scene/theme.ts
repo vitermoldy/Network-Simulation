@@ -15,3 +15,5 @@ export interface SceneTheme {
   shadow: number;
 }
 
+export const SCENE_THEMES: Record<ThemeName, SceneTheme> = {
+  light: {
