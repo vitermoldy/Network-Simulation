@@ -116,3 +116,5 @@ const SPECS: DeviceSpec[] = [
 
 const DEFAULT_LINKS: [string, string][] = [
   ['pc.0', 'sw.0'],
+  ['sw.24', 'r1.0'],
+  ['r1.3', 'dns.0'],
