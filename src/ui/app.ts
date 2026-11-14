@@ -1619,3 +1619,5 @@ export class App {
     const key = JSON.stringify([p.id, where, p.eth, p.ip, this.followLatest, versions.length, hold?.deviceId]);
     if (key === this.packetKey) return;
     this.packetKey = key;
+    const prevRows = prev ? layersOf(prev, '') : [];
+    const prevField = (layer: number, name: string) => prevRows.find((r) => r.layer === layer)?.fields.find((f) => f[0] === name)?.[1];
