@@ -103,3 +103,5 @@ export class App {
   private desktopApp: 'home' | 'ip' | 'prompt' | 'browser' = 'home';
   private terms = new Map<string, TermState>();
   private stream = { deviceId: '', printed: 0 };
+  private portsKey = '';
+  private desktopKey = '';
