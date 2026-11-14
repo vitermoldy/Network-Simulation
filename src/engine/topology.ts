@@ -111,3 +111,6 @@ const SPECS: DeviceSpec[] = [
   { id: 'r2', kind: 'router', name: 'Router A', x: 2.9, z: -3.0, ips: { 0: ['10.0.12.2', 30], 1: ['10.0.24.1', 30] } },
   { id: 'r3', kind: 'router', name: 'Router B', x: 2.9, z: 5.3, ips: { 0: ['10.0.13.2', 30], 1: ['10.0.34.1', 30] } },
   { id: 'r4', kind: 'router', name: 'Router Pusat Data', x: 6.7, z: 1.3, ips: { 0: ['10.0.24.2', 30], 1: ['10.0.34.2', 30], 2: ['203.0.113.1', 24] } },
+  { id: 'web', kind: 'server', name: 'Server Web', x: 10.6, z: 1.1, ips: { 0: ['203.0.113.80', 24] }, gateway: '203.0.113.1', services: { dns: false, http: true } },
+];
+
