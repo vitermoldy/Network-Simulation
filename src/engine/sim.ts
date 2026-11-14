@@ -571,3 +571,6 @@ export class Simulator {
 
   resetTopology(): void {
     this.replaceTopology(() => this.topo.reset());
+  }
+
+  /** Swaps in a saved network. A run in progress stops, since its devices may be gone. */
