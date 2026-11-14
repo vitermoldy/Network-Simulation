@@ -1329,3 +1329,5 @@ export class App {
     const keep = sel.value;
     sel.innerHTML = clients.length
       ? clients.map((c) => `<option value="${c.id}">${esc(c.name)}</option>`).join('')
+      : '<option value="">Belum ada PC</option>';
+    if (clients.some((c) => c.id === keep)) sel.value = keep;
