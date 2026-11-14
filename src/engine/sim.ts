@@ -488,3 +488,5 @@ export class Simulator {
 
   private setPhase(id: PhaseId, status: PhaseStatus): void {
     const p = this.phases.find((x) => x.id === id)!;
+    if (p.status === status) return;
+    if (p.status === 'done' && status === 'active') return;
