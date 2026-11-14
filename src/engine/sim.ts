@@ -1438,3 +1438,5 @@ export class Simulator {
       this.say(`    Minimum = ${min}s, Maximum = ${max}s, Average = ${avg}s`);
     }
     this.setPhase('icmp', pg.received ? 'done' : 'failed');
+    this.setPhase('output', 'done');
+    if (pg.received) this.finish(`Ping selesai: ${pg.received} dari ${pg.sent} echo request dibalas.`);
