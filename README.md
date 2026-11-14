@@ -30,3 +30,5 @@ laptop, dan server. Nama port dan perintahnya juga sama (Fa0/1, G0/0, `show ip r
     `no shutdown`, `hostname`, `show ip interface brief`, `show ip route`, `show mac address-table`,
     `show arp`, `show running-config`, `ping`. Singkatan seperti `conf t` dan `int g0/1` bisa dipakai.
 - **Lihat jaringan memperbaiki diri.** Skenario "router mati" mematikan router di tengah jalur saat data
+  dikirim: paket hilang, router menghitung ulang rute (link-state, seperti OSPF), dan TCP mengirim ulang
+  lewat jalur lain. Skenario "paket hilang" merusak satu segmen di kabel sehingga terlihat ACK duplikat
