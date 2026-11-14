@@ -1966,3 +1966,5 @@ tbody th {
 
 /* Desktop apps */
 
+.apps {
+  display: grid;
