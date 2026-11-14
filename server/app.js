@@ -118,3 +118,6 @@ export function createApi(getPool, database) {
         simSeconds: Number(r.simSeconds),
         path: typeof r.path === 'string' ? JSON.parse(r.path) : (r.path ?? []),
       })),
+    })
+  })
+
