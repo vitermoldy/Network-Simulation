@@ -75,3 +75,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
         const old = dist.get(e.to);
         if (old === undefined || nd < old || (nd === old && hop.to < first.get(e.to)!.to)) {
           dist.set(e.to, nd);
+          first.set(e.to, hop);
+        }
