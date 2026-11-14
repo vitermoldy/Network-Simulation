@@ -376,3 +376,5 @@ export class Stage {
       const fill = new THREE.Mesh(fillGeo, new THREE.MeshBasicMaterial({ color: this.theme.zone, transparent: true, opacity: 0.85, depthWrite: false }));
       fill.position.y = 0.002;
       group.add(fill);
+      const edge = new THREE.MeshBasicMaterial({ color: this.theme.zoneEdge });
+      const edgeMesh = new THREE.Mesh(outlineGeometry(x0, z0, x1, z1, 0.4, 0.045), edge);
