@@ -538,3 +538,5 @@ export class Simulator {
         this.browser.message = undefined;
         if (this.status === 'running') this.fail(this.activePhase() ?? 'input', `${dev.name} dimatikan di tengah proses, jadi permintaan berhenti.`, deviceId);
       }
+    } else if (deviceId === this.browser.deviceId && this.browser.state === 'off') {
+      this.browser.state = 'idle';
