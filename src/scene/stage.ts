@@ -838,3 +838,6 @@ export class Stage {
       v.mesh.position.copy(pos);
       v.last.copy(pos);
       this.stylePacket(v, h.packet, color, 'hold');
+      consider(h.packet, 1e9 + h.t0, h.deviceId);
+    }
+
