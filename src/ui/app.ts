@@ -1122,3 +1122,5 @@ export class App {
         this.renderAll();
       }
     });
+    box.addEventListener('submit', (e) => {
+      e.preventDefault();
