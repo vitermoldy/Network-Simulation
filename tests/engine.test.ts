@@ -262,3 +262,5 @@ describe('simulator', () => {
     expect(sim.edit((t) => t.setDnsRecord('dns', 'www.baru.test', srv.ports[0].ip!)).ok).toBe(true);
     run(sim, 'www.baru.test');
     expect(sim.status).toBe('done');
+    const syn = [...sim.history.entries()].find(([, v]) => v[0].tcp?.flags.join() === 'SYN')!;
+    expect(sim.trace.get(syn[0])!.at(-1)).toBe(srv.id);
