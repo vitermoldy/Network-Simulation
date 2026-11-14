@@ -481,3 +481,5 @@ export class App {
     return { x, z: z + 8 };
   }
 
+  private place(kind: DeviceKind, x: number, z: number): void {
+    const hit = this.sim.topo.overlaps(kind, x, z);
