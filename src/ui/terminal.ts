@@ -87,3 +87,5 @@ export class PromptShell implements Shell {
     }
     if (c === 'ping') {
       if (!args[0]) return ['Gunakan: ping <alamat IP atau nama>, misalnya ping 192.168.1.1'];
+      const why = this.host.run('ping', d.id, args[0]);
+      return why ? [why] : [''];
