@@ -869,3 +869,5 @@ export class Simulator {
       return;
     }
     const ttl = p.ip.ttl - 1;
+    const out = this.topo.port(route.portId);
+    const nextHop = route.nextHop ?? p.ip.dst;
