@@ -372,3 +372,5 @@ select {
 .stage-wrap {
   position: relative;
   grid-column: 1;
+  grid-row: 1;
+  min-height: 420px;
