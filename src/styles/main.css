@@ -434,3 +434,5 @@ select {
 }
 
 .tag-ip {
+  font-family: var(--font-mono);
+  font-size: 11px;
