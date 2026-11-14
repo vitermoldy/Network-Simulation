@@ -249,3 +249,5 @@ export class Simulator {
   private seq = 0;
   private nextPacket = 1;
   private nextFlight = 1;
+  private nextLog = 1;
+  private rng: () => number;
