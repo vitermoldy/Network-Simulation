@@ -35,3 +35,5 @@ export class DeviceViewer {
     this.renderer.toneMapping = THREE.NeutralToneMapping;
     const canvas = this.renderer.domElement;
     canvas.className = 'viewer-canvas';
+    canvas.tabIndex = 0;
+    canvas.setAttribute('role', 'img');
