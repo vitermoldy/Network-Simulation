@@ -56,3 +56,5 @@ export const MATERIAL = {
   hole: 0x050607,
   pin: 0xc9a54a,
   ledOff: 0x3a3e44,
+  ledGreen: 0x22d36b,
+  ledAmber: 0xffaa1c,
