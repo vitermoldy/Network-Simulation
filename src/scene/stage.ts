@@ -414,3 +414,5 @@ export class Stage {
 
   // ------------------------------------------------------------------ input
 
+  private pickables(): THREE.Object3D[] {
+    const out: THREE.Object3D[] = [];
