@@ -751,3 +751,5 @@ select {
   color: var(--muted);
 }
 
+.flow li.is-now {
+  border-color: var(--accent);
