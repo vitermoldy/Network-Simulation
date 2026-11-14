@@ -694,3 +694,5 @@ export class Simulator {
     packet.hops++;
     const f: Flight = { id: this.nextFlight++, packet, linkId: link.id, from: portId, to, t0: this.time, t1: this.time + TIMING.hop };
     this.flights.push(f);
+    this.activity.set(portId, this.time);
+    const drop = this.planDrop(packet);
