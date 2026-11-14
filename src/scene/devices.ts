@@ -211,3 +211,7 @@ function buildRoundButton(deviceId: string, r = 0.075) {
   hit.position.z = 0.05;
   group.add(hit);
   return { group, button, ring, hit, glow };
+}
+
+const rounded = (w: number, h: number, d: number, mat: THREE.Material, r = 0.04) => mesh(new RoundedBoxGeometry(w, h, d, 3, r), mat);
+
