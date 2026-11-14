@@ -752,3 +752,5 @@ export class Stage {
     const busy = new Set(this.sim.flights.map((f) => f.linkId));
     for (const c of this.cables.values()) {
       const selected = this.selected.linkId === c.linkId;
+      const hover = this.hovered?.type === 'cable' && this.hovered.linkId === c.linkId;
+      c.mat.color.setHex(selected ? this.theme.zoneActive : hover ? 0x5d6470 : busy.has(c.linkId) ? 0x4a515c : MATERIAL.cable);
