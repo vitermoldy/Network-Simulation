@@ -134,3 +134,5 @@ export const SIZE: Record<DeviceKind, { w: number; d: number }> = {
   server: { w: 1.1, d: 1.6 },
 };
 
+export interface SavedDevice extends Omit<Device, 'ports'> {
+  ports: Omit<Port, 'deviceId'>[];
