@@ -1267,3 +1267,5 @@ select {
 
 .dev-pick {
   flex: 1;
+  display: grid;
+  gap: 0;
