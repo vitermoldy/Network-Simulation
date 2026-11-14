@@ -378,3 +378,6 @@ select {
   border-radius: var(--r-lg);
   overflow: hidden;
   background: var(--bg);
+}
+
+.stage {
