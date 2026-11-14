@@ -23,3 +23,5 @@ export interface StageEvents {
   move: (deviceId: string, x: number, z: number) => boolean;
 }
 
+interface CableView {
+  linkId: string;
