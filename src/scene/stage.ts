@@ -770,3 +770,5 @@ export class Stage {
     const mesh = new THREE.Mesh(packetGeo, mat);
     mesh.castShadow = true;
     mesh.userData.pick = { type: 'packet', packetId: p.id } satisfies Pick;
+    const el = document.createElement('div');
+    el.className = 'ptag';
