@@ -86,3 +86,5 @@ function endPoints(port: PortView): { start: THREE.Vector3; out: THREE.Vector3; 
   const dir = new THREE.Vector3();
   port.anchor.getWorldPosition(pos);
   port.anchor.getWorldDirection(dir);
+  dir.y = 0;
+  dir.normalize();
