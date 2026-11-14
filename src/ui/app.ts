@@ -95,3 +95,5 @@ export class App {
   private deviceDirty = false;
   private packetKey = '';
   private sourceKey = '';
+  private toastTimer = 0;
+  // Device window.
