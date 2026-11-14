@@ -134,3 +134,5 @@ export class IosShell implements Shell {
 
   banner(): string[] {
     const d = this.dev;
+    const kind = d.kind === 'router' ? `${d.ports.length} port GigabitEthernet` : '24 port FastEthernet dan 2 port GigabitEthernet';
+    return [
