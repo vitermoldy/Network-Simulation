@@ -1577,3 +1577,5 @@ export class Simulator {
 export function describeRouteChanges(topo: Topology, before: Map<string, Route[]>, after: Map<string, Route[]>): string[] {
   const out: string[] = [];
   for (const [rid, routes] of after) {
+    const old = new Map((before.get(rid) ?? []).map((r) => [r.network, r]));
+    for (const r of routes) {
