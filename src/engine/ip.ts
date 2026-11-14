@@ -13,3 +13,6 @@ export function intToIp(n: number): string {
 }
 
 export function maskOf(prefix: number): number {
+  return prefix === 0 ? 0 : (0xffffffff << (32 - prefix)) >>> 0;
+}
+
