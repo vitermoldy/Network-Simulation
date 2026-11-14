@@ -1279,3 +1279,6 @@ export class App {
       ${r.path.length ? `<p class="run-path">Jalur SYN: ${esc(r.path.join(', '))}</p>` : ''}
       ${r.status === 'failed' && r.reason ? `<p class="run-reason">${esc(r.reason)}</p>` : ''}
     </li>`).join('')}</ol>`;
+  }
+
+  private async recordRun(): Promise<void> {
