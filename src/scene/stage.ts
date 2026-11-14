@@ -841,3 +841,5 @@ export class Stage {
       consider(h.packet, 1e9 + h.t0, h.deviceId);
     }
 
+    for (const l of this.sim.lost) {
+      if (seen.has(l.packet.id)) continue;
