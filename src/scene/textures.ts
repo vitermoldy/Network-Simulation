@@ -213,3 +213,5 @@ function placeholder(ctx: CanvasRenderingContext2D, x: number, y: number, w: num
   ctx.strokeRect(x + 6, y + 6, w - 12, h - 12);
   ctx.setLineDash([]);
   ctx.fillStyle = '#5d6470';
+  ctx.font = `500 22px ${FONT_TEXT}`;
+  ctx.textAlign = 'center';
