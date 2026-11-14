@@ -1786,3 +1786,5 @@ tbody th {
 
 .run-head {
   display: flex;
+  justify-content: space-between;
+  gap: 8px;
