@@ -199,3 +199,5 @@ export class Stage {
         framedAspect = a;
         this.fitView(false);
       }
+    });
+    this.observer.observe(container);
