@@ -1433,3 +1433,5 @@ export class App {
   }
 
   private renderPlaybar(): void {
+    const s = this.sim;
+    const play = $('play');
