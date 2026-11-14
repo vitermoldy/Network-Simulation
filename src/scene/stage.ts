@@ -895,3 +895,6 @@ export class Stage {
     const { x, z } = v.group.position;
     this.marker = new THREE.Mesh(outlineGeometry(x - v.half.x - 0.22, z + v.half.z0 - 0.22, x + v.half.x + 0.22, z + v.half.z1 + 0.22, 0.18, 0.05), this.markerMat);
     this.marker.position.y = 0.008;
+    this.scene.add(this.marker);
+  }
+
