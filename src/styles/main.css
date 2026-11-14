@@ -894,3 +894,5 @@ select {
   outline-offset: 1px;
 }
 
+.select-inline {
+  display: flex;
