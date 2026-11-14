@@ -1550,3 +1550,5 @@ export class App {
       if (d.services?.dns) {
         extra += `<h3 class="sub">Catatan DNS</h3>
           ${recs.length ? `<div class="table-wrap"><table><thead><tr><th scope="col">Nama</th><th scope="col">IP</th><th scope="col"><span class="sr-only">Aksi</span></th></tr></thead><tbody>
+            ${recs.map(([n, ip]) => `<tr><td class="mono">${esc(n)}</td><td class="mono">${esc(ip)}</td><td><button type="button" class="btn btn-small btn-ghost" data-act="del-record" data-name="${esc(n)}">Hapus</button></td></tr>`).join('')}
+          </tbody></table></div>` : '<p class="empty">Belum ada catatan. Tambahkan nama dan IP server web di bawah.</p>'}
