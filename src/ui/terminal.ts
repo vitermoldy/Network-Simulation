@@ -160,3 +160,5 @@ export class IosShell implements Shell {
     const d = this.dev;
     const sim = this.host.sim;
     const topo = sim.topo;
+    const isRouter = d.kind === 'router';
+    const show: Command[] = [
