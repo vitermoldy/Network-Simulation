@@ -31,3 +31,5 @@
   --panel: #121315;
   --ink: #eef0f3;
   --muted: #a8acb3;
+  --line: rgba(238, 240, 243, 0.12);
+  --line-strong: rgba(238, 240, 243, 0.26);
