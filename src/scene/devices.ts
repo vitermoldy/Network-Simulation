@@ -68,3 +68,5 @@ const shared = {
   pin: std(MATERIAL.pin, { metalness: 0.9, roughness: 0.3 }),
   rocker: std(MATERIAL.rocker, { roughness: 0.4 }),
   plate: std(MATERIAL.plate, { metalness: 0.6, roughness: 0.35 }),
+  screw: std(0x6c737c, { metalness: 0.8, roughness: 0.3 }),
+  invisible: new THREE.MeshBasicMaterial({ visible: false }),
