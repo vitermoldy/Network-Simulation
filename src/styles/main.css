@@ -1061,3 +1061,5 @@ select {
   color: var(--muted);
 }
 
+.phase.is-waiting .phase-title {
+  font-weight: 400;
