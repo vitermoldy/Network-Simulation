@@ -422,3 +422,6 @@ export class Stage {
     }
     for (const c of this.cables.values()) out.push(c.group);
     for (const p of this.packets.values()) out.push(p.mesh);
+    return out;
+  }
+
