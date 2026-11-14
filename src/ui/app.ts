@@ -1631,3 +1631,5 @@ export class App {
         ${this.followLatest ? '' : '<button type="button" class="btn btn-small btn-ghost" id="follow-latest">Ikuti paket terbaru</button>'}
       </div>
       <h2 class="packet-title">${esc(p.title)}</h2>
+      <p class="packet-where"><span class="label">Posisi</span> ${esc(where)}</p>
+      ${trace.length ? `<p class="packet-where"><span class="label">Sudah lewat</span> ${esc(trace.join(', '))}</p>` : ''}
