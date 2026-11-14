@@ -945,3 +945,5 @@ export class Simulator {
     });
   }
 
+  /** Port 80 closed: answer with RST, so the sender knows at once instead of waiting. */
+  private refuse(dev: Device, p: Packet): void {
