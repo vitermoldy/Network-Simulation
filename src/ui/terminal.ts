@@ -220,3 +220,5 @@ export class IosShell implements Shell {
       show.push({
         words: ['show', 'mac', 'address-table'], help: 'tabel MAC switch',
         run: () => {
+          const table = [...sim.macTable(d.id)].filter(([, p]) => topo.hasPort(p));
+          return ['          Mac Address Table', '-------------------------------------------', '', 'Vlan    Mac Address       Type        Ports', '----    -----------       --------    -----',
