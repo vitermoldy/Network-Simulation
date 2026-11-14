@@ -203,3 +203,5 @@ function buildRoundButton(deviceId: string, r = 0.075) {
   ctx.lineTo(48, 50);
   ctx.stroke();
   const symbol = new THREE.Mesh(new THREE.CircleGeometry(r * 0.8, 24), new THREE.MeshBasicMaterial({ map: canvasTexture(c), transparent: true }));
+  symbol.position.z = 0.0205;
+  button.add(symbol);
