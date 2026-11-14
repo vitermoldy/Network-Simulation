@@ -1509,3 +1509,5 @@ tbody th {
   color: var(--muted);
 }
 
+.layer-tcpip {
+  font-size: 12px;
