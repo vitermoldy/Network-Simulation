@@ -426,3 +426,6 @@ export class App {
     this.setPending(null);
     this.stopPlacing();
     this.showTab('alur');
+    this.renderAll();
+  }
+
