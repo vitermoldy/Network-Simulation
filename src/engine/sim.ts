@@ -760,3 +760,5 @@ export class Simulator {
     this.activity.set(f.to, this.time);
     const dev = this.topo.deviceOf(f.to);
     this.record(f.packet, dev.id, false);
+    if (!dev.powered) {
+      this.loseAt(f.packet, dev.id, `${dev.name} sedang mati.`);
