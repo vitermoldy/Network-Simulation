@@ -267,3 +267,5 @@ export class Simulator {
     this.resetApps('www.jaringan.test', 'pc');
   }
 
+  /** The PC or laptop that sends the request in this run. */
+  get clientId(): string {
