@@ -1699,3 +1699,6 @@ tbody th {
 .host-form .form-error,
 .record-form .form-error {
   grid-column: 1 / 3;
+}
+
+.services {
