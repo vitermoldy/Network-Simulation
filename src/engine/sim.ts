@@ -119,3 +119,6 @@ export interface Flight {
   from: string;
   to: string;
   t0: number;
+  t1: number;
+}
+
