@@ -1242,3 +1242,5 @@ export class Simulator {
 
     const part = p.app?.part ?? 0;
     if (t.seq === c.rcvNext) {
+      c.rcvNext += t.len;
+      this.browser.parts[part - 1] = true;
