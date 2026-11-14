@@ -1112,3 +1112,5 @@ export class App {
         this.deviceKey = '';
         this.renderAll();
         return;
+      }
+      if (input.dataset.service) {
