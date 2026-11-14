@@ -161,3 +161,5 @@ export class DeviceViewer {
     this.view = view;
     this.scene.add(view.group);
     view.group.updateMatrixWorld(true);
+    // Short leads from every plugged socket, curving down and away toward the bench.
+    const mat = cableMaterial();
