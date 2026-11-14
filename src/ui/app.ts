@@ -599,3 +599,5 @@ export class App {
     }
     const d = topo.device(this.selectedDevice);
     const title = $('devwin-title');
+    if (title.textContent !== d.name) title.textContent = d.name;
+    const used = d.ports.filter((p) => topo.linkOf(p.id)).length;
