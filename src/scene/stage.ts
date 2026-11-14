@@ -180,3 +180,6 @@ export class Stage {
     this.scene.add(floor);
 
     this.setTheme('light');
+    this.syncTopology();
+
+    canvas.addEventListener('pointermove', (e) => this.onMove(e));
