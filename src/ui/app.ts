@@ -67,3 +67,6 @@ interface TermState {
   lines: string[];
   history: string[];
   index: number;
+}
+
+const APP_ICONS = {
