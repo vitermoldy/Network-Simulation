@@ -870,3 +870,5 @@ export class App {
   }
 
   private afterTopologySwap(message: string): void {
+    this.closeDevice();
+    this.terms.clear();
