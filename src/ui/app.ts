@@ -708,3 +708,5 @@ export class App {
         if (!dir) return;
         e.preventDefault();
         const visible = DW_TABS.filter((x) => !$(`dwt-${x}`).hidden);
+        const next = visible[(visible.indexOf(t) + dir + visible.length) % visible.length];
+        this.showDwTab(next);
