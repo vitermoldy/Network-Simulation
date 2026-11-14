@@ -1498,3 +1498,6 @@ export class Simulator {
         if (r) this.fire(r);
       }
       return;
+    }
+
+    if (s.state === 'last-ack' && has('ACK') && t.ack === SERVER_ISS + 2 + RESPONSE_LEN) {
