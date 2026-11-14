@@ -388,3 +388,5 @@ export class Topology {
   }
 
   removeDnsRecord(id: string, name: string): void {
+    const d = this.device(id);
+    if (!d.dnsRecords) return;
