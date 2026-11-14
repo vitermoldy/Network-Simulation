@@ -246,3 +246,6 @@ export class Topology {
     const p = this.port(portId);
     if (!!p.down === down) return;
     p.down = down || undefined;
+    this.rev++;
+  }
+
