@@ -99,3 +99,5 @@ function endPoints(port: PortView): { start: THREE.Vector3; out: THREE.Vector3; 
 /** The centre line of a cable from port a to port b. */
 export function cableCurve(a: PortView, b: PortView, devices: Box2[], lane = 0): THREE.CatmullRomCurve3 {
   const ea = endPoints(a);
+  const eb = endPoints(b);
+  const path = planFloorPath(ea.floor, eb.floor, devices);
