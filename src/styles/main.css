@@ -623,3 +623,5 @@ select {
 }
 
 .hint {
+  position: absolute;
+  top: 12px;
