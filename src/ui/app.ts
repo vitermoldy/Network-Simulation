@@ -918,3 +918,5 @@ export class App {
 
   private plug(a: string, b: string): void {
     const res = this.sim.connect(a, b);
+    if (res.ok) this.toast(`Kabel terpasang: ${this.sim.topo.portLabel(a)} ke ${this.sim.topo.portLabel(b)}.`);
+    else this.toast(res.reason);
