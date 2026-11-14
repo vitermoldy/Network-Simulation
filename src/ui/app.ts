@@ -767,3 +767,6 @@ export class App {
     });
   }
 
+  // Terminals: the Command Prompt on PCs and laptops, the CLI on routers and switches.
+
+  private term(deviceId: string): TermState {
