@@ -2038,3 +2038,5 @@ tbody th {
   font-size: 13.5px;
 }
 
+.ipconf input:focus {
+  outline: none;
