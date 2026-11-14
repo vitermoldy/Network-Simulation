@@ -744,3 +744,5 @@ export class App {
         return;
       }
       if (form.dataset.desk === 'ip') {
+        const err = form.querySelector<HTMLElement>('.form-error')!;
+        const mask = String(f.get('mask') ?? '').trim();
