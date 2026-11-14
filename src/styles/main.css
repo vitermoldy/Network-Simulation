@@ -180,3 +180,5 @@ p {
   gap: 8px;
 }
 
+.ctl {
+  display: grid;
