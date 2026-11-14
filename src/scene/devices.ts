@@ -668,3 +668,6 @@ export function refreshLive(v: DeviceView, d: Device, sim: Simulator): void {
       v.screen.texture.needsUpdate = true;
     }
   }
+}
+
+/** A see-through stand-in that follows the pointer while a new device is being placed. */
