@@ -242,3 +242,5 @@ export class App {
       this.renderedLog = 0;
       $('log').innerHTML = '';
       this.renderAll();
+    });
+    document.querySelectorAll<HTMLInputElement>('input[name="speed"]').forEach((r) =>
