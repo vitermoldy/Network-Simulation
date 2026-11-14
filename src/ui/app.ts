@@ -75,3 +75,5 @@ const APP_ICONS = {
   browser: '<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16"/><path d="M8 24h32M24 8c5 4.5 7 10 7 16s-2 11.5-7 16c-5-4.5-7-10-7-16s2-11.5 7-16Z"/></svg>',
 };
 
+export class App {
+  private stage: Stage | null = null;
