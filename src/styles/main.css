@@ -1657,3 +1657,5 @@ tbody th {
 }
 
 .ip-form input {
+  flex: 1;
+  max-width: 170px;
