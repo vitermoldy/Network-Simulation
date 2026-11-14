@@ -954,3 +954,5 @@ export class Simulator {
 
   /** A host hands a packet to its network card: pick the next hop, find its MAC, send. */
   private hostSend(dev: Device, p: Packet): void {
+    if (!dev.powered || this.status !== 'running') return;
+    const nic = dev.ports[0];
