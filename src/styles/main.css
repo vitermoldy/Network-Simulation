@@ -2007,3 +2007,5 @@ tbody th {
 
 .app-bar {
   display: flex;
+  align-items: center;
+  gap: 12px;
