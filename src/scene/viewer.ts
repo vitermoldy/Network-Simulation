@@ -107,3 +107,6 @@ export class DeviceViewer {
     this.renderer.setSize(w, h);
     this.camera.aspect = w / h;
     this.camera.updateProjectionMatrix();
+  }
+
+  private cast(e: PointerEvent): Pick | null {
