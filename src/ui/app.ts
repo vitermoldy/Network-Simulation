@@ -1088,3 +1088,5 @@ export class App {
         const r = this.sim.edit((t) => t.autoAddress(id));
         this.toast(r.ok ? `IP otomatis: ${r.value}.` : r.reason);
         this.deviceKey = '';
+        this.renderAll();
+      } else if (act === 'del-record') {
