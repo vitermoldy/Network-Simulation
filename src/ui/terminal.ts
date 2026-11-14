@@ -216,3 +216,5 @@ export class IosShell implements Shell {
           return ['Protocol  Address          Hardware Addr       Interface', ...cache.map(([ip, mac]) => `Internet  ${pad(ip, 17)}${pad(mac, 20)}-`), ...(cache.length ? [] : ['(kosong)'])];
         },
       });
+    } else {
+      show.push({
