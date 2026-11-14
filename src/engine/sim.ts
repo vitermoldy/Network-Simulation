@@ -769,3 +769,6 @@ export class Simulator {
     else this.hostIn(dev, f.to, f.packet);
   }
 
+  // ------------------------------------------------------------------ devices
+
+  macTable(id: string): Map<string, string> {
