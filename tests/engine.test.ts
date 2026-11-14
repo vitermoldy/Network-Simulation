@@ -223,3 +223,5 @@ describe('simulator', () => {
   });
 
   it('runs from a PC added by hand that got its address automatically', () => {
+    const sim = withScenario('normal');
+    const pc = sim.addDevice('pc', -12, 7);
