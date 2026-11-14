@@ -1513,3 +1513,5 @@ export class App {
         ? `<form class="ip-form" data-form="ip" data-port="${p.id}" novalidate>
             <label class="sr-only" for="ip-${p.id}">IP ${esc(p.name)}</label>
             <input id="ip-${p.id}" name="ip" class="mono" value="${esc(p.ip ?? '')}" placeholder="kosong" inputmode="decimal" autocomplete="off" />
+            <span class="slash" aria-hidden="true">/</span>
+            <label class="sr-only" for="pf-${p.id}">Prefix ${esc(p.name)}</label>
