@@ -1402,3 +1402,5 @@ export class Simulator {
   private icmpReply(dev: Device, p: Packet): void {
     const req = p.icmp!;
     this.note('info', dev.id, `${dev.name} membalas ping`, `Echo request ${req.seq} dari ${p.ip!.src} sampai. ${dev.name} membalas dengan echo reply bernomor sama.`, 3, p.id);
+    const reply = this.newPacket({
+      flow: 'icmp', label: `Balas ${req.seq}`, title: `ICMP echo reply ${req.seq} ke ${p.ip!.src}`,
