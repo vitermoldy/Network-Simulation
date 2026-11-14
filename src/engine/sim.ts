@@ -281,3 +281,5 @@ export class Simulator {
     if (!s) {
       s = { state: 'listen', rcvNext: 0, synAckAt: 0, lastAck: 0, responded: false };
       this.servers.set(id, s);
+    }
+    return s;
