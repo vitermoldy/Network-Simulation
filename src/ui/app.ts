@@ -1564,3 +1564,5 @@ export class App {
       extra += `<h3 class="sub">Tabel MAC</h3>${this.table(['MAC', 'Port'], mac.filter(([, port]) => topo.hasPort(port)).map(([m, port]) => [m, topo.port(port).name]),
         'Masih kosong. Switch mengisinya sendiri dari alamat MAC asal setiap frame yang masuk.')}`;
     }
+    if (d.kind === 'router') {
+      extra += `<h3 class="sub">Tabel routing</h3>${sim.converging ? '<p class="note">Router sedang menghitung ulang rute setelah ada perubahan.</p>' : ''}${this.table(['Jaringan', 'Jenis', 'Keluar', 'Lewat'],
