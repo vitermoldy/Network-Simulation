@@ -1570,3 +1570,5 @@ export class App {
         d.powered ? 'Tidak ada rute. Beri IP pada port, pasang kabelnya, dan pastikan perangkat di ujung kabel menyala.' : 'Router mati, jadi tidak punya tabel routing.')}`;
     }
     if (isClient(d) || d.kind === 'router') {
+      extra += `<h3 class="sub">Cache ARP</h3>${this.table(['IP', 'MAC'], arp, isClient(d) ? 'Kosong sampai perangkat ini bertanya lewat ARP.' : 'Kosong. Router mencatat MAC yang bertanya ARP kepadanya.')}`;
+    }
