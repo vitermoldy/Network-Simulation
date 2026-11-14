@@ -2183,3 +2183,5 @@ tbody th {
 
 @media (min-width: 1101px) {
   /* One screen tall on desktop; clip (not hidden) so focus and scrollIntoView can never shift it. */
+  html,
+  body {
