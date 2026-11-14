@@ -407,3 +407,5 @@ export class Topology {
     const seg = this.segments();
     const mine = seg.get(nic.id);
     if (mine === undefined) return { ok: false, reason: `${d.name} sedang mati.` };
+    const gw = [...seg].map(([pid, s]) => (s === mine ? this.port(pid) : undefined))
+      .find((p) => p && p.ip && p.prefix !== undefined && this.deviceOf(p.id).kind === 'router');
