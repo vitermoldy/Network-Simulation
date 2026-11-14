@@ -144,3 +144,5 @@ export class App {
       pick: (p) => this.onPick(p),
       hover: (p, x, y) => this.onHover(p, x, y),
       place: (kind, x, z) => this.place(kind, x, z),
+      move: (id, x, z) => this.move(id, x, z),
+    };
