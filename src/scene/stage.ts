@@ -647,3 +647,5 @@ export class Stage {
       target.z += (dy * halfH) / dir.y;
     }
     dist *= 1.03;
+    const position = target.clone().addScaledVector(dir, dist);
+    if (animate) this.animateTo(target, position);
