@@ -570,3 +570,5 @@ export class Stage {
     this.renderer.domElement.style.cursor = kind ? 'copy' : '';
   }
 
+  /** Where a new device would land if placed from the keyboard: the middle of the view. */
+  centrePoint(): { x: number; z: number } {
