@@ -343,3 +343,5 @@ export class Simulator {
 
   /** Opens a web page from a PC or laptop: ARP, DNS, TCP, HTTP, and the page on its screen. */
   start(rawHost: string, seed?: number, sourceId = 'pc'): void {
+    const host = rawHost.trim().replace(/^https?:\/\//i, '').replace(/\/.*$/, '').toLowerCase() || 'www.jaringan.test';
+    this.kind = 'web';
