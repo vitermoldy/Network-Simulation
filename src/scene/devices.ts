@@ -239,3 +239,6 @@ function newBuild(group: THREE.Group, w: number, h: number, d: number, body: THR
     group, height: h, ports: [], busy: [], hits: [body], tagY: h + 0.45, top: new THREE.Vector3(0, h + 0.15, 0),
     power: { hit: body, glow: shared.slate, leds: [] }, half: { x: w / 2, z0: -d / 2, z1: d / 2 },
   };
+}
+
+function addPort(b: Build, dev: Device, index: number, x: number, y: number, z: number, o: { w: number; h: number; frame?: number; flip?: boolean; ledY?: number; act?: boolean }): void {
