@@ -794,3 +794,5 @@ export class App {
     el.dataset.device = deviceId;
     el.innerHTML = `<pre class="term-out" role="log" aria-live="polite" aria-label="Keluaran"></pre>
       <form class="term-in"><label class="term-prompt" for="term-input-${deviceId}"></label>
+        <input id="term-input-${deviceId}" autocomplete="off" spellcheck="false" autocapitalize="off" aria-label="Ketik perintah" /></form>`;
+    const out = el.querySelector<HTMLElement>('.term-out')!;
