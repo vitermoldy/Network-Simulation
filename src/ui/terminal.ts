@@ -83,3 +83,5 @@ export class PromptShell implements Shell {
       if (args[0] !== '-a') return ['Gunakan: arp -a'];
       const cache = [...this.host.sim.arpCache(d.id)];
       if (!cache.length) return ['No ARP Entries Found'];
+      return ['  Internet Address      Physical Address      Type', ...cache.map(([ip, mac]) => `  ${pad(ip, 22)}${pad(mac.replace(/:/g, '-'), 22)}dynamic`)];
+    }
