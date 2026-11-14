@@ -1017,3 +1017,5 @@ export class App {
       return;
     }
     tip.textContent = text;
+    tip.hidden = false;
+    const host = tip.parentElement!.getBoundingClientRect();
