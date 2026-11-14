@@ -612,3 +612,5 @@ export class App {
 
   private renderPorts(): void {
     const topo = this.sim.topo;
+    const d = topo.device(this.selectedDevice);
+    const key = JSON.stringify([d.id, topo.rev]);
