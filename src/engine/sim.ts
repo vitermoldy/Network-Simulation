@@ -555,3 +555,5 @@ export class Simulator {
     if (this.status === 'running') {
       this.note('change', this.topo.port(a).deviceId, 'Kabel dipasang', `Kabel baru: ${this.topo.portLabel(a)} ke ${this.topo.portLabel(b)}.`, 1);
     }
+    this.topologyChanged();
+    return { ok: true };
