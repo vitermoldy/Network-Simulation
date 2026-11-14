@@ -940,3 +940,5 @@ export class Simulator {
         else this.discard(p, dev.id, 'layanan DNS tidak aktif di server ini, jadi pertanyaan DNS tidak dijawab.');
       } else if (p.tcp?.dst === 80) {
         if (dev.services?.http) this.webReceive(dev, p);
+        else this.refuse(dev, p);
+      }
