@@ -758,3 +758,6 @@ select {
 
 .flow li.is-now .flow-name {
   color: var(--accent);
+}
+
+.flow-now {
