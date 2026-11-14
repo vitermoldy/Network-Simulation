@@ -427,3 +427,5 @@ export class Stage {
 
   private setPointer(e: PointerEvent): void {
     const rect = this.renderer.domElement.getBoundingClientRect();
+    this.pointer.set(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1);
+    this.raycaster.setFromCamera(this.pointer, this.camera);
