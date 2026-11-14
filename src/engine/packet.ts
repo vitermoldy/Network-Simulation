@@ -58,3 +58,5 @@ export interface AppBody {
   lines: string[];
   dns?: DnsBody;
   /** HTTP response segments: which part of the page this one carries (1-based). */
+  part?: number;
+  parts?: number;
