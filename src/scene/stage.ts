@@ -325,3 +325,5 @@ export class Stage {
       const tubeMesh = new THREE.Mesh(tube(curve), mat);
       tubeMesh.castShadow = true;
       tubeMesh.receiveShadow = true;
+      const pick: Pick = { type: 'cable', linkId: link.id };
+      const group = new THREE.Group();
