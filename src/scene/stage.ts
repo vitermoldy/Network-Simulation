@@ -490,3 +490,5 @@ export class Stage {
   private setHover(pick: Pick | null, x: number, y: number): void {
     const same = JSON.stringify(pick) === JSON.stringify(this.hovered);
     this.hovered = pick;
+    this.renderer.domElement.style.cursor = pick ? (pick.type === 'device' ? 'grab' : 'pointer') : '';
+    if (!same || pick) this.events.hover(pick, x, y);
