@@ -572,3 +572,5 @@ export class Topology {
     const out = new Map<string, number>();
     for (const id of parent.keys()) {
       const root = find(id);
+      if (!ids.has(root)) ids.set(root, ids.size);
+      out.set(id, ids.get(root)!);
