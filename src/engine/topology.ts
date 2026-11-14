@@ -180,3 +180,5 @@ export class Topology {
     for (const [a, b] of DEFAULT_LINKS) this.connect(a, b);
   }
 
+  private makeDevice(kind: DeviceKind, id: string, name: string, x: number, z: number): Device {
+    const base = (this.nextMac++).toString(16).padStart(2, '0');
