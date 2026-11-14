@@ -96,3 +96,5 @@ export function queuedRuns(): number {
 
 /** Sends a run now, or keeps it for later when the server does not answer. */
 export async function saveRun(run: RunRecord): Promise<boolean> {
+  try {
+    await call('runs', { method: 'POST', body: JSON.stringify({ client: clientCode(), run }) });
