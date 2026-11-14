@@ -1434,3 +1434,5 @@ export class Simulator {
       const min = Math.min(...pg.times);
       const max = Math.max(...pg.times);
       const avg = Math.round((pg.times.reduce((a, b) => a + b, 0) / pg.times.length) * 10) / 10;
+      this.say('Approximate round trip times in simulation seconds:');
+      this.say(`    Minimum = ${min}s, Maximum = ${max}s, Average = ${avg}s`);
