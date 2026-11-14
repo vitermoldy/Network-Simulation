@@ -548,3 +548,5 @@ export class Stage {
   setPending(portId: string | null): void {
     this.pendingPort = portId;
     if (!portId && this.dangling) {
+      this.scene.remove(this.dangling);
+      this.dangling.geometry.dispose();
