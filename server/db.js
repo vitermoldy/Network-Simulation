@@ -25,3 +25,5 @@ const TABLES = [
     reason VARCHAR(400) NULL,
     sim_seconds DECIMAL(7,1) NOT NULL,
     packets_lost INT NOT NULL,
+    resends INT NOT NULL,
+    route_changes INT NOT NULL,
