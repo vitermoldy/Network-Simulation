@@ -699,3 +699,5 @@ select {
   transform: translateX(-50%);
   width: max-content;
   max-width: min(520px, calc(100% - 140px));
+  padding: 10px 14px;
+  border-radius: var(--r);
