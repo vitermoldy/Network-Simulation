@@ -97,3 +97,5 @@ describe('routing', () => {
     const r1 = lookup(routes.get('r1'), '203.0.113.80')!;
     expect(r1.type).toBe('O');
     expect(r1.viaRouter).toBe('r2');
+    expect(r1.cost).toBe(2);
+    expect(lookup(routes.get('r1'), '192.168.1.10')!.type).toBe('C');
