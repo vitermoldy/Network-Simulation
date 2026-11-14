@@ -848,3 +848,5 @@ export class App {
   /** Lines a ping or nslookup run printed since the last frame go to the terminal that started it. */
   private streamOutput(): void {
     const s = this.stream;
+    if (!s.deviceId || this.sim.outputDevice !== s.deviceId || this.sim.kind === 'web') return;
+    if (this.sim.output.length > s.printed) {
