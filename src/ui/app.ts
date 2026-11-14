@@ -578,3 +578,5 @@ export class App {
         power: (id) => this.togglePower(id),
         hover: (text) => {
           const el = $('viewer-hover');
+          if (el.textContent !== text) el.textContent = text;
+        },
