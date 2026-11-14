@@ -109,3 +109,7 @@ export class App {
   private last = performance.now();
   private timerTick = 0;
   private lastStatus: Simulator['status'] = 'idle';
+  private runScenario: Scenario = 'normal';
+
+  constructor(private sim: Simulator) {}
+
