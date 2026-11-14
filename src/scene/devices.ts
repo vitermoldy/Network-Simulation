@@ -533,3 +533,5 @@ function buildLaptop(dev: Device): Build {
   const deck = new THREE.Mesh(new THREE.PlaneGeometry(w - 0.08, d - 0.08), new THREE.MeshStandardMaterial({ map: keyboardTexture(), roughness: 0.6 }));
   deck.rotation.x = -Math.PI / 2;
   deck.position.set(0, baseH + 0.001, 0.02);
+  deck.receiveShadow = true;
+  group.add(deck);
