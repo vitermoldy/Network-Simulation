@@ -1300,3 +1300,5 @@ export class App {
       routeChanges: s.log.filter((l) => l.kind === 'route' && l.title === 'Rute dihitung ulang').length,
       path,
       devices: topo.devices.size,
+      finishedAt: new Date().toISOString(),
+    };
