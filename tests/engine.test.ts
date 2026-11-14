@@ -86,3 +86,5 @@ describe('topology', () => {
     expect(u.devices.size).toBe(9);
     expect(u.links.size).toBe(9);
     expect(u.device(pc.id).ports[0].ip).toBe(t.device(pc.id).ports[0].ip);
+    expect(() => u.load({ version: 2 })).toThrow();
+  });
