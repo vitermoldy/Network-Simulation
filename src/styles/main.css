@@ -232,3 +232,5 @@ p {
   outline: none;
 }
 
+.field-error {
+  color: var(--bad);
