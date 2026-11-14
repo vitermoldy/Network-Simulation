@@ -1424,3 +1424,5 @@ export class Simulator {
     this.schedule(this.time + 0.8, () => this.pingNext());
   }
 
+  private pingDone(): void {
+    const pg = this.ping!;
