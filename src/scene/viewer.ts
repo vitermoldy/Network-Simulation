@@ -118,3 +118,5 @@ export class DeviceViewer {
     for (const h of this.raycaster.intersectObjects(targets, false)) {
       const pick = h.object.userData.pick as Pick | undefined;
       if (pick) return pick;
+    }
+    return null;
