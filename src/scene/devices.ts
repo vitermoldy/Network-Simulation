@@ -354,3 +354,5 @@ function buildRouter(dev: Device): Build {
 
   const panel = frontPanel(w, h, (p) => {
     p.ctx.fillStyle = '#17191c';
+    p.ctx.fillRect(0, 0, w * p.scale, h * p.scale);
+    // Honeycomb vents on the left.
