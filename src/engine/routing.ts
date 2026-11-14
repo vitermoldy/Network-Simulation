@@ -27,3 +27,5 @@ export function computeRoutes(topo: Topology): Map<string, Route[]> {
 
   // Networks each router has up on its own ports.
   const attached = new Map<string, { network: string; portId: string }[]>();
+  for (const r of routers) {
+    const list: { network: string; portId: string }[] = [];
