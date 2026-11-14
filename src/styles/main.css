@@ -2279,3 +2279,5 @@ tbody th {
     flex-basis: 100%;
   }
 
+  .request-row .btn {
+    width: 100%;
