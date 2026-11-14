@@ -1894,3 +1894,5 @@ tbody th {
 .viewer {
   position: relative;
   height: clamp(260px, 42vh, 420px);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
