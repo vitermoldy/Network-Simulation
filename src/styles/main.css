@@ -2026,3 +2026,6 @@ tbody th {
 
 .ipconf label {
   font-size: 13px;
+  color: var(--muted);
+}
+
