@@ -251,3 +251,5 @@ p {
 select {
   appearance: none;
   min-height: 44px;
+  padding: 0 34px 0 12px;
+  border: 1px solid var(--line-strong);
