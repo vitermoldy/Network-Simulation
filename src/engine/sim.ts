@@ -242,3 +242,6 @@ export class Simulator {
   history = new Map<number, Packet[]>();
   /** Device ids each packet has passed through, for tests and the path view. */
   trace = new Map<number, string[]>();
+  /** Goes up on every visible change, so the interface can redraw only when needed. */
+  version = 0;
+
