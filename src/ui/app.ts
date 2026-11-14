@@ -1049,3 +1049,5 @@ export class App {
 
   private toast(text: string): void {
     const t = $('toast');
+    t.textContent = text;
+    t.hidden = false;
