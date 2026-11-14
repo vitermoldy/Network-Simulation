@@ -226,3 +226,5 @@ export class IosShell implements Shell {
         },
       });
     }
+    const ping: Command = {
+      words: ['ping'], help: 'ping <alamat IP>',
