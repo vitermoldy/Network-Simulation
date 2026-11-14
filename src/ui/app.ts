@@ -704,3 +704,5 @@ export class App {
       const b = $(`dwt-${t}`);
       b.addEventListener('click', () => this.showDwTab(t));
       b.addEventListener('keydown', (e) => {
+        const dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!dir) return;
