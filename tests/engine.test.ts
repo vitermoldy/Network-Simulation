@@ -175,3 +175,5 @@ describe('simulator', () => {
     expect(sim.browser.message).toContain('NXDOMAIN');
   });
 
+  it('gives up on ARP when the laptop cable is out', () => {
+    const sim = withScenario('normal');
