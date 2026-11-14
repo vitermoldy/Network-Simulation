@@ -77,3 +77,5 @@ function readQueue(): RunRecord[] {
     const raw = localStorage.getItem(QUEUE_KEY);
     const list = raw ? (JSON.parse(raw) as RunRecord[]) : [];
     return Array.isArray(list) ? list : [];
+  } catch {
+    return [];
