@@ -537,3 +537,5 @@ export class Stage {
     if (!port) return;
     const geo = tube(danglingCurve(port, point), 0.034);
     if (!this.dangling) {
+      this.dangling = new THREE.Mesh(geo, this.danglingMat);
+      this.scene.add(this.dangling);
