@@ -1521,3 +1521,5 @@ tbody th {
   gap: 2px;
 }
 
+.layer dl div {
+  display: grid;
