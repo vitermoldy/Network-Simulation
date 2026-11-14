@@ -683,3 +683,6 @@ export class Stage {
     offset.setFromSpherical(s);
     this.camera.position.copy(this.controls.target).add(offset);
     this.controls.update();
+  }
+
+  zoom(factor: number): void {
