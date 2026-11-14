@@ -14,3 +14,6 @@ export interface Box2 {
 
 type V2 = [number, number];
 
+const FLOOR_Y = 0.045;
+const MARGIN = 0.28;
+
