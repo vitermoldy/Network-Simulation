@@ -660,3 +660,5 @@ export class App {
           <p class="form-error" hidden></p>
         </form>`;
       return;
+    }
+    if (this.desktopApp === 'prompt') {
