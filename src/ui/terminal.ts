@@ -323,3 +323,5 @@ export class IosShell implements Shell {
       {
         words: ['interface'], help: 'pindah ke port lain',
         run: (args) => {
+          const p = this.findPort(args.join(''));
+          if (!p) return ['% Port tidak dikenal.'];
