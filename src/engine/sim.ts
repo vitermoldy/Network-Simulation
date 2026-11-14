@@ -1179,3 +1179,5 @@ export class Simulator {
         this.finish(`Selesai. ${c.host} adalah ${c.serverIp}.`);
         return;
       }
+      if (this.kind === 'ping') {
+        this.ping!.ip = c.serverIp;
