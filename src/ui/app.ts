@@ -60,3 +60,6 @@ const ICON = {
 type Tab = 'alur' | 'paket' | 'perangkat' | 'riwayat';
 const TABS: Tab[] = ['alur', 'paket', 'perangkat', 'riwayat'];
 type DwTab = 'fisik' | 'config' | 'desktop' | 'cli';
+const DW_TABS: DwTab[] = ['fisik', 'config', 'desktop', 'cli'];
+
+interface TermState {
