@@ -889,3 +889,5 @@ export class Stage {
     if (this.marker) {
       this.scene.remove(this.marker);
       this.marker.geometry.dispose();
+      this.marker = undefined;
+    }
