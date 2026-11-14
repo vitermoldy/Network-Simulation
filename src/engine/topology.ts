@@ -475,3 +475,5 @@ export class Topology {
 
   // ------------------------------------------------------------------ save and load
 
+  toJSON(): TopologyData {
+    return {
