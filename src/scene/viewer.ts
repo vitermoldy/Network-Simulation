@@ -216,3 +216,5 @@ export class DeviceViewer {
       if (key !== this.key) this.rebuild();
       if (this.view) refreshLive(this.view, live, this.sim);
     }
+    this.controls.update();
+    this.renderer.render(this.scene, this.camera);
