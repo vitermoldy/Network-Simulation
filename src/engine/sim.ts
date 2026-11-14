@@ -431,3 +431,6 @@ export class Simulator {
   private say(line: string): void {
     this.output.push(line);
     this.version++;
+  }
+
+  private resetRun(label: string, sourceId: string, seed?: number): void {
