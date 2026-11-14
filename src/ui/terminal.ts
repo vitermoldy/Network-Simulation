@@ -182,3 +182,5 @@ export class IosShell implements Shell {
             if (p.ip && p.prefix !== undefined) out.push(` ip address ${p.ip} ${prefixToMask(p.prefix)}`);
             else if (isRouter) out.push(' no ip address');
             if (p.down) out.push(' shutdown');
+            out.push('!');
+          }
