@@ -982,3 +982,5 @@ export class Simulator {
       this.arpPending.set(nextHop, { packets: [p], tries: 0 });
       this.setPhase('arp', 'active');
       const why = nextHop === dst
+        ? `${dst} satu jaringan dengan ${dev.name}, jadi paket dikirim langsung.`
+        : `${dst} ada di jaringan lain (bukan ${nic.ip}/${nic.prefix}), jadi paket harus lewat gateway ${nextHop}.`;
