@@ -138,3 +138,5 @@ export class IosShell implements Shell {
     return [
       `Simulasi Jaringan, CLI gaya IOS`,
       `Perangkat ${d.name}: ${d.kind === 'router' ? 'router' : 'switch'} dengan ${kind}.`,
+      'Ketik ? untuk melihat perintah di mode ini. Singkatan seperti en, conf t, int g0/1, no shut bisa dipakai.',
+      '',
