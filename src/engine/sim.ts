@@ -422,3 +422,5 @@ export class Simulator {
     const missing = !nic.ip ? 'alamat IP' : !dev.gateway ? 'gateway' : needDns && !dev.dnsServer ? 'server DNS' : '';
     if (missing) {
       this.fail('input', `${dev.name} belum punya ${missing}. Isi di tab Config, atau tekan IP otomatis.`, dev.id);
+      return undefined;
+    }
