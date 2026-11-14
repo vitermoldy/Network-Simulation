@@ -347,3 +347,6 @@ describe('ping and nslookup', () => {
     const r = t.addDevice('router', 20, 20);
     expect(r.ports.every((p) => p.down)).toBe(true);
     expect(t.addDevice('switch', 30, 20).ports.some((p) => p.down)).toBe(false);
+  });
+});
+
