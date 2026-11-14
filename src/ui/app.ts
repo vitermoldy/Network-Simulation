@@ -287,3 +287,5 @@ export class App {
     document.querySelectorAll<HTMLButtonElement>('[data-add]').forEach((b) =>
       b.addEventListener('click', () => this.startPlacing(b.dataset.add as DeviceKind)),
     );
+    $('popover-action').addEventListener('click', () => {
+      const act = this.popoverAction;
