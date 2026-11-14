@@ -76,3 +76,5 @@ npm run typecheck
 ## Struktur
 
 ```
+src/engine/   mesin simulasi: alamat IP, topologi, routing link-state, paket, dan simulator berbasis event
+src/scene/    meja 3D (three.js): model perangkat, kabel, paket, dan tampilan dekat satu perangkat
