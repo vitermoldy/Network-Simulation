@@ -310,3 +310,6 @@ function buildSwitch(dev: Device): Build {
     p.text('10/100', 0.35, 0.25, 0.022, { color: 'rgba(201,208,216,0.55)', weight: 500 });
   });
   panel.position.set(0, h / 2, d / 2 + 0.002);
+  group.add(panel);
+
+  for (let i = 0; i < 24; i++) {
