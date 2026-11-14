@@ -1692,3 +1692,5 @@ tbody th {
 .record-form .btn {
   grid-column: 2;
   display: flex;
+  gap: 6px;
+  justify-self: start;
