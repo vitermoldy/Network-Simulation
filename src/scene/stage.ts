@@ -902,3 +902,5 @@ export class Stage {
   screenPoint(target: { type: 'power' | 'device'; id: string } | { type: 'port'; id: string } | { type: 'cable'; id: string }): { x: number; y: number } | undefined {
     const p = new THREE.Vector3();
     if (target.type === 'port') {
+      const pv = this.portView(target.id);
+      if (!pv) return undefined;
