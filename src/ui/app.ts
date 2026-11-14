@@ -603,3 +603,5 @@ export class App {
     const used = d.ports.filter((p) => topo.linkOf(p.id)).length;
     const sub = `${KIND_LABEL[d.kind]}, ${roleOf(d) === 'input' ? 'input' : roleOf(d) === 'output' ? 'output' : 'proses'}. ${used} dari ${d.ports.length} port berkabel. ${d.powered ? 'Menyala' : 'Mati'}.`;
     if ($('devwin-sub').textContent !== sub) $('devwin-sub').textContent = sub;
+    if (this.dwTab === 'fisik') {
+      if (this.viewer && this.viewer.deviceId !== d.id) this.viewer.show(d.id);
