@@ -1184,3 +1184,5 @@ export class App {
       const name = input.value.trim();
       if (!name) {
         err.textContent = 'Beri nama rancangannya dulu, misalnya Lab 3.';
+        err.hidden = false;
+        input.focus();
