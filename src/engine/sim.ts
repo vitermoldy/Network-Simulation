@@ -1275,3 +1275,6 @@ export class Simulator {
       this.note('ok', this.clientId, 'Output: halaman tampil', `Semua ${RESPONSE_LEN} byte sudah lengkap dan urut. Browser menyusun HTML-nya, dan halaman ${c.host} tampil di layar ${this.cname}.`, 7);
       this.schedule(this.time + 1.2, () => this.tcpClose(dev));
     }
+  }
+
+  private tcpPacket(from: Device, toIp: string, srcPort: number, dstPort: number, flags: TcpFlag[], seq: number, ack: number, label: string, title: string, retry: number, app?: Packet['app'], len = 0): Packet {
