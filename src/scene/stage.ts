@@ -213,3 +213,6 @@ export class Stage {
     this.markerMat.color.setHex(this.theme.zoneActive);
     this.danglingMat.color.setHex(this.theme.zoneActive);
     this.layoutKey = '';
+    this.activeRole = undefined;
+  }
+
