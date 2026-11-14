@@ -102,3 +102,5 @@ export function createApi(getPool, database) {
     res.json({ ok: true, id: r.insertId })
   })
 
+  api.get('/runs/:client', async (req, res) => {
+    const client = codeOf(req.params.client)
