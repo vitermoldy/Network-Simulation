@@ -535,3 +535,5 @@ select {
   transform: translateY(1px);
 }
 
+.tool svg {
+  width: 20px;
