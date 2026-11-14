@@ -766,3 +766,6 @@ export class Simulator {
     }
     if (dev.kind === 'switch') this.switchIn(dev, f.to, f.packet);
     else if (dev.kind === 'router') this.routerIn(dev, f.to, f.packet);
+    else this.hostIn(dev, f.to, f.packet);
+  }
+
