@@ -2240,3 +2240,5 @@ tbody th {
     overflow: visible;
   }
 
+  .log {
+    max-height: 60vh;
