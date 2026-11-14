@@ -502,3 +502,5 @@ function buildPc(dev: Device): Build {
 
   // Monitor.
   const stand = mesh(new THREE.BoxGeometry(0.5, 0.03, 0.4), shared.bezel);
+  stand.position.set(0.55, 0.015, 0.1);
+  const neck = mesh(new THREE.BoxGeometry(0.08, 0.45, 0.06), shared.bezel);
