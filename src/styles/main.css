@@ -1494,3 +1494,5 @@ tbody th {
 }
 
 .layer.is-read .layer-num {
+  background: var(--accent);
+  color: var(--accent-ink);
