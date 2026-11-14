@@ -896,3 +896,5 @@ export class App {
     this.renderAll();
   }
 
+  private askUnplug(linkId: string): void {
+    const link = this.sim.topo.links.get(linkId);
