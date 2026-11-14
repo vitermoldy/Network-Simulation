@@ -1157,3 +1157,5 @@ export class Simulator {
           this.say(`Server:  ${server}`);
           this.say(`Address: ${server}`);
           this.say('');
+          this.say(`*** ${server} can't find ${c.host}: Non-existent domain`);
+          this.setPhase('output', 'done');
