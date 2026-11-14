@@ -227,3 +227,5 @@ describe('simulator', () => {
     const pc = sim.addDevice('pc', -12, 7);
     expect(sim.connect(pc.ports[0].id, 'sw.1').ok).toBe(true);
     const r = sim.edit((t) => t.autoAddress(pc.id));
+    expect(r.ok).toBe(true);
+    expect(pc.ports[0].ip).toBe('192.168.1.11');
