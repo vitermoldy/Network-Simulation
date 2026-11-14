@@ -516,3 +516,6 @@ export class App {
   // ------------------------------------------------------------------ device window
 
   private dwOpen(): boolean {
+    return $<HTMLDialogElement>('devwin').open;
+  }
+
