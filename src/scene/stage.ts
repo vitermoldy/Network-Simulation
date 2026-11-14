@@ -455,3 +455,5 @@ export class Stage {
   private onMove(e: PointerEvent): void {
     if (this.ghost) {
       const p = this.floorPoint(e);
+      if (p) this.ghost.group.position.set(Math.round(p.x * 5) / 5, 0, Math.round(p.z * 5) / 5);
+      this.renderer.domElement.style.cursor = 'copy';
