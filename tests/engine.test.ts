@@ -323,3 +323,5 @@ describe('ping and nslookup', () => {
     sim.startLookup('pc', 'www.jaringan.test', 3);
     while (sim.status === 'running' && sim.time < 200) sim.advance(0.05);
     expect(sim.status).toBe('done');
+    expect(sim.output).toContain('Address: 203.0.113.80');
+    const sim2 = withScenario('normal');
