@@ -1417,3 +1417,5 @@ export class Simulator {
     if (!pg || p.icmp?.type !== 'echo-reply' || p.icmp.id !== pg.id || p.icmp.seq !== pg.seq || this.status !== 'running') return;
     if (pg.timer) pg.timer.cancelled = true;
     pg.received++;
+    const rtt = Math.round((this.time - (pg.sentAt ?? this.time)) * 10) / 10;
+    pg.times.push(rtt);
