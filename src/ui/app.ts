@@ -1375,3 +1375,5 @@ export class App {
     if (this.renderedLog === 0) ol.innerHTML = '';
     const nearBottom = ol.scrollHeight - ol.scrollTop - ol.clientHeight < 80;
     const frag = document.createDocumentFragment();
+    for (const l of log.slice(this.renderedLog)) {
+      const li = document.createElement('li');
