@@ -516,3 +516,5 @@ select {
   border-radius: 12px;
 }
 
+.tool {
+  display: grid;
