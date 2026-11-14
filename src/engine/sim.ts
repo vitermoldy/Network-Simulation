@@ -980,3 +980,5 @@ export class Simulator {
         return;
       }
       this.arpPending.set(nextHop, { packets: [p], tries: 0 });
+      this.setPhase('arp', 'active');
+      const why = nextHop === dst
