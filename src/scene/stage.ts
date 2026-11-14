@@ -329,3 +329,5 @@ export class Stage {
       const group = new THREE.Group();
       group.add(tubeMesh);
       for (const p of [pa, pb]) group.add(buildPlug(p, mat));
+      group.traverse((o) => {
+        o.userData.pick = pick;
