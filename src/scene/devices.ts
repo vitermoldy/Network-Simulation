@@ -189,3 +189,5 @@ function buildRoundButton(deviceId: string, r = 0.075) {
   group.add(seat);
   const ring = mesh(new THREE.TorusGeometry(r * 1.18, r * 0.16, 10, 40), ledMaterial(), false);
   ring.position.z = 0.018;
+  group.add(ring);
+  const glow = std(0x2f3237, { roughness: 0.35 });
