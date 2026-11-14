@@ -1294,3 +1294,5 @@ export class App {
       status: s.status === 'done' ? 'done' : 'failed',
       failedPhase: s.phases.find((p) => p.status === 'failed')?.id,
       reason: s.status === 'failed' ? s.browser.message : undefined,
+      simSeconds: Math.round(s.time * 10) / 10,
+      packetsLost: s.log.filter((l) => l.kind === 'loss').length,
