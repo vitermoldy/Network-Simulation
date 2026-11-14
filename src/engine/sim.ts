@@ -122,3 +122,5 @@ export interface Flight {
   t1: number;
 }
 
+export interface Hold {
+  packet: Packet;
