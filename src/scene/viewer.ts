@@ -155,3 +155,5 @@ export class DeviceViewer {
     }
     this.leads.clear();
     const topo = this.sim.topo;
+    if (!topo.has(this.deviceId)) return;
+    const live = topo.device(this.deviceId);
