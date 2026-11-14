@@ -1144,3 +1144,5 @@ export class App {
         res = !gw.ok ? gw : dns;
         done = 'Gateway dan DNS disimpan.';
       } else if (kind === 'record') {
+        res = this.sim.edit((t) => t.setDnsRecord(id, String(f.get('name') ?? ''), String(f.get('ip') ?? '')));
+        done = 'Catatan DNS ditambahkan.';
