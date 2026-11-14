@@ -1094,3 +1094,5 @@ export class App {
         this.deviceKey = '';
         this.renderAll();
       } else if (act === 'plug') {
+        const sel = document.getElementById(`to-${b.dataset.port!}`) as HTMLSelectElement | null;
+        if (!sel?.value) {
