@@ -1945,3 +1945,5 @@ tbody th {
   gap: 6px;
 }
 
+.led {
+  width: 10px;
