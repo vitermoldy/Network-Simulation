@@ -380,3 +380,5 @@ export class Stage {
       const edgeMesh = new THREE.Mesh(outlineGeometry(x0, z0, x1, z1, 0.4, 0.045), edge);
       edgeMesh.position.y = 0.004;
       group.add(edgeMesh);
+      const lw = Math.min(x1 - x0 - 0.3, 4.2);
+      const lh = lw * 0.3;
