@@ -410,3 +410,7 @@ export class Stage {
       this.zones[0].group.add(arrow);
       this.arrows.push({ ctx, tex });
     }
+  }
+
+  // ------------------------------------------------------------------ input
+
