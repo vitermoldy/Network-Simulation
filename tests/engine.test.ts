@@ -130,3 +130,6 @@ describe('simulator', () => {
     expect(sim.log.some((l) => l.kind === 'retry')).toBe(false);
     expect(sim.log.some((l) => l.kind === 'loss')).toBe(false);
     expect(sim.arpCache('pc').get('192.168.1.1')).toBe(sim.topo.port('r1.0').mac);
+    expect(sim.macTable('sw').get(sim.topo.port('pc.0').mac)).toBe('sw.0');
+  });
+
