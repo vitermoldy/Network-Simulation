@@ -158,3 +158,5 @@ export class Topology {
   /** Goes up on every change; views rebuild when it moves. */
   rev = 0;
 
+  constructor() {
+    this.loadDefaults();
