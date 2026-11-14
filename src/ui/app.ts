@@ -531,3 +531,5 @@ export class App {
     $('dwt-desktop').hidden = !client;
     $('dwt-cli').hidden = !cli;
     if ((tab === 'desktop' && !client) || (tab === 'cli' && !cli)) tab = 'fisik';
+    const dialog = $<HTMLDialogElement>('devwin');
+    if (!dialog.open) dialog.show();
