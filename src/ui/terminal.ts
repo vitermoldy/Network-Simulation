@@ -19,3 +19,6 @@ export interface Shell {
   prompt(): string;
   exec(line: string): string[];
   banner(): string[];
+}
+
+function maskToPrefix(mask: string): number | undefined {
