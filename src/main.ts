@@ -14,3 +14,6 @@ let stage: Stage | undefined;
 // automated click-through check. Nothing changes for normal visitors.
 if (new URLSearchParams(location.search).has('debug')) {
   (window as unknown as { __netsim: unknown }).__netsim = { sim, app, stage: () => stage };
+}
+
+void app.init(async () => {
