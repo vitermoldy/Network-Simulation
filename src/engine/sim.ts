@@ -625,3 +625,6 @@ export class Simulator {
     const out = change(this.topo);
     this.topologyChanged();
     return out;
+  }
+
+  private topologyChanged(): void {
