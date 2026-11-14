@@ -1387,3 +1387,5 @@ export class Simulator {
       ip: { src: dev.kind === 'router' ? '' : dev.ports[0].ip!, dst: pg.ip!, ttl: dev.kind === 'router' ? 255 : 128, proto: 'ICMP' },
       icmp: { type: 'echo-request', id: pg.id, seq },
       size: 74,
+    });
+    pg.sentAt = this.time;
