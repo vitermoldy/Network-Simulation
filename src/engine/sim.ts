@@ -1202,3 +1202,6 @@ export class Simulator {
     if (has('RST')) {
       const from = this.topo.hostByIp(p.ip!.src)?.name ?? p.ip!.src;
       this.fail(this.activePhase() ?? 'tcp-open', `Sambungan ditolak. ${from} membalas RST karena layanan HTTP di port 80 tidak aktif. Nyalakan layanan HTTP di panel Perangkat, atau arahkan nama ini ke server lain di catatan DNS.`, this.clientId);
+      return;
+    }
+
