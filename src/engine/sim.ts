@@ -44,3 +44,6 @@ export const PAGE_PARTS: { lines: string[]; shows: string }[] = [
     shows: 'kaki halaman',
   },
 ];
+const RESPONSE_LEN = SEGMENT * PAGE_PARTS.length;
+
+export type PhaseId = 'input' | 'arp' | 'dns' | 'tcp-open' | 'http-req' | 'http-res' | 'output' | 'tcp-close' | 'icmp';
