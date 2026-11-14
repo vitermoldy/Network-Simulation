@@ -1539,3 +1539,5 @@ export class Simulator {
           { proto: 'HTTP', lines: part.lines, part: i + 1, parts: PAGE_PARTS.length }, SEGMENT),
         this.rto(), MAX_TCP_TRIES, () => this.fail('http-res', `Segmen ${i + 1} tidak pernah sampai setelah ${MAX_TCP_TRIES} kali dikirim. Jalur ke ${this.cname} putus.`, dev.id));
       });
+    });
+    if (this.scenario === 'router-down' && !this.fired.has('router-down')) {
