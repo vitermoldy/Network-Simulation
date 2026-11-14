@@ -676,3 +676,5 @@ export class App {
       </form>
       <div class="browser-view" id="browser-view"></div>`;
     const [canvas, ctx] = makeCanvas(SCREEN_W, SCREEN_H);
+    canvas.className = 'browser-canvas';
+    canvas.setAttribute('role', 'img');
