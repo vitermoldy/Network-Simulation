@@ -522,3 +522,5 @@ export class Stage {
 
   private onKey(e: KeyboardEvent): void {
     const k = e.key;
+    if (k === 'ArrowLeft') this.rotate(-0.22);
+    else if (k === 'ArrowRight') this.rotate(0.22);
