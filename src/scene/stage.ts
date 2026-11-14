@@ -86,3 +86,6 @@ function disposeTree(o: THREE.Object3D): void {
     const m = c as THREE.Mesh;
     if (m.geometry && m.geometry !== packetGeo) m.geometry.dispose();
   });
+}
+
+export class Stage {
