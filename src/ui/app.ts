@@ -1132,3 +1132,5 @@ export class App {
       let done = '';
       if (kind === 'name') {
         res = this.sim.edit((t) => t.rename(id, String(f.get('name') ?? '')));
+        done = 'Nama disimpan.';
+        this.sourceKey = '';
