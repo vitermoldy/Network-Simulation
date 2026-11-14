@@ -57,3 +57,5 @@ export function planFloorPath(a: V2, b: V2, devices: Box2[]): V2[] {
   }
   let best: V2[] | undefined;
   let bestLen = Infinity;
+  for (const c of corners) {
+    if (clear(a, c) && clear(c, b)) {
