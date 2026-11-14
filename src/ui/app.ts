@@ -125,3 +125,5 @@ export class App {
       try {
         if (!localStorage.getItem('netsim-hint-seen')) $('hint').hidden = false;
       } catch {
+        $('hint').hidden = false;
+      }
