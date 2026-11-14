@@ -819,3 +819,6 @@ export class Stage {
       v.last.copy(pos);
       this.stylePacket(v, f.packet, color, 'fly');
       if (topo.hasPort(f.to)) consider(f.packet, f.id, topo.port(f.to).deviceId);
+    }
+
+    for (const h of this.sim.holds) {
