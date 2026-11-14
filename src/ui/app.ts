@@ -956,3 +956,5 @@ export class App {
         this.plug(from, p.portId);
         return;
       }
+      const link = topo.linkOf(p.portId);
+      if (link) {
