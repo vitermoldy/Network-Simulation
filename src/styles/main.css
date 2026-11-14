@@ -291,3 +291,6 @@ select {
 
 .btn-primary {
   background: var(--accent);
+  color: var(--accent-ink);
+}
+
