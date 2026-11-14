@@ -444,3 +444,6 @@ export class App {
   private browse(deviceId: string, rawUrl: string): void {
     $<HTMLSelectElement>('source').value = deviceId;
     $<HTMLInputElement>('url').value = rawUrl.trim().replace(/^https?:\/\//i, '').replace(/\/.*$/, '');
+    this.send();
+  }
+
