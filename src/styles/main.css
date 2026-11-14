@@ -548,3 +548,5 @@ select {
 .tool-text {
   display: flex;
   align-items: center;
+  gap: 6px;
+  padding: 0 12px;
