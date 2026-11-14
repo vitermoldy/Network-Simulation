@@ -209,3 +209,5 @@ function buildRoundButton(deviceId: string, r = 0.075) {
   group.add(button);
   const hit = hitBox(r * 3.6, r * 3.6, 0.14, { type: 'power', deviceId });
   hit.position.z = 0.05;
+  group.add(hit);
+  return { group, button, ring, hit, glow };
