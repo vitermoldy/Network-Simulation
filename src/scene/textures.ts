@@ -175,3 +175,6 @@ export function drawBrowser(ctx: CanvasRenderingContext2D, view: BrowserView): v
     ctx.fillStyle = '#5d6470';
     ctx.font = `500 24px ${FONT_TEXT}`;
     ctx.fillText(`Dikirim dalam ${PAGE_PARTS.length} segmen TCP`, 48, H - 38);
+  } else placeholder(ctx, 0, H - 76, W, 76, 3);
+}
+
