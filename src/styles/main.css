@@ -1667,3 +1667,5 @@ tbody th {
 }
 
 .ip-form input:focus,
+.host-form input:focus,
+.record-form input:focus,
