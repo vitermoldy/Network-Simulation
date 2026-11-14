@@ -2415,3 +2415,6 @@ tbody th {
   }
 
   .select-inline select {
+    flex: 1;
+  }
+
