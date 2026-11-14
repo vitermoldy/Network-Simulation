@@ -125,3 +125,6 @@ export async function listRuns(): Promise<SavedRun[]> {
 }
 
 export async function listLayouts(): Promise<LayoutSummary[]> {
+  return (await call<{ layouts: LayoutSummary[] }>(`layouts/${clientCode()}`)).layouts;
+}
+
