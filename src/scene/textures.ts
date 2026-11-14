@@ -40,3 +40,5 @@ export function printFace(w: number, h: number, draw: (p: FacePrinter) => void):
     ctx.textAlign = opts.align ?? 'center';
     ctx.textBaseline = 'middle';
     ctx.font = `${opts.weight ?? 600} ${Math.round(size * scale)}px ${opts.mono ? FONT_MONO : FONT_TEXT}`;
+    ctx.fillText(s, cx, cy);
+  };
