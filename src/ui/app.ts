@@ -927,3 +927,6 @@ export class App {
   private setPending(port: string | null): void {
     this.pendingPort = port;
     this.stage?.setPending(port);
+  }
+
+  private onPick(p: Pick | null): void {
