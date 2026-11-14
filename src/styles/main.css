@@ -1110,3 +1110,5 @@ select {
 
 .timer-dev {
   grid-column: 1;
+  color: var(--muted);
+  font-size: 12px;
