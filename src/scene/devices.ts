@@ -138,3 +138,5 @@ function buildPort(portId: string, holeW: number, holeH: number, frameColor: num
   }
   const slot = mesh(new THREE.BoxGeometry(holeW * 0.38, holeH * 0.16, 0.004), std(0x1a1c20), false);
   slot.position.set(0, -s * holeH * 0.36, 0.006);
+  group.add(slot);
+  const hit = hitBox(holeW + 0.06, holeH + 0.06, 0.1, { type: 'port', portId });
