@@ -586,3 +586,6 @@ function buildLaptop(dev: Device): Build {
 }
 
 export function signatureOf(dev: Device): string {
+  return JSON.stringify([dev.kind, dev.services, dev.ports.map((p) => p.ip ?? '')]);
+}
+
