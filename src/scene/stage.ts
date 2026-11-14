@@ -350,3 +350,5 @@ export class Stage {
       disposeTree(z.group);
     }
     this.zones = [];
+    this.zoneLabels = [];
+    this.arrows = [];
