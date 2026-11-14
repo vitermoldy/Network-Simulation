@@ -70,3 +70,6 @@ function roundedRectShape(x0: number, z0: number, x1: number, z1: number, r: num
   s.lineTo(x0, -z0 - r);
   s.quadraticCurveTo(x0, -z0, x0 + r, -z0);
   return s;
+}
+
+function outlineGeometry(x0: number, z0: number, x1: number, z1: number, r: number, t: number): THREE.ShapeGeometry {
