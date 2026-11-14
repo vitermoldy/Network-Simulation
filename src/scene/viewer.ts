@@ -27,3 +27,5 @@ export class DeviceViewer {
   active = false;
 
   constructor(private host: HTMLElement, private sim: Simulator, private events: { power: (id: string) => void; hover: (text: string) => void }) {
+    this.renderer = new THREE.WebGLRenderer({ antialias: true });
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
