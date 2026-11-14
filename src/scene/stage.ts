@@ -362,3 +362,5 @@ export class Stage {
     if (!rects.size) return;
     const allZ1 = Math.max(...[...rects.values()].map((r) => r.z1));
     const allZ0 = Math.min(...[...rects.values()].map((r) => r.z0));
+    const order: Role[] = ['input', 'process', 'output'];
+    for (const role of order) {
