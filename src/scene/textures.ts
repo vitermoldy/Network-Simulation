@@ -67,3 +67,5 @@ export function keyboardTexture(): THREE.CanvasTexture {
     }
   });
   ctx.fillStyle = '#bfc4cb';
+  ctx.strokeStyle = '#aeb3ba';
+  ctx.lineWidth = 3;
