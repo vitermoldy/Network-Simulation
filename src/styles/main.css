@@ -1825,3 +1825,5 @@ tbody th {
   max-height: none;
   margin: 0;
   padding: 0;
+  display: none;
+  flex-direction: column;
