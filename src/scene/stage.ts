@@ -209,3 +209,5 @@ export class Stage {
     this.themeName = name;
     this.theme = SCENE_THEMES[name];
     this.scene.background = new THREE.Color(this.theme.background);
+    this.floorMat.color.setHex(this.theme.floor);
+    this.markerMat.color.setHex(this.theme.zoneActive);
