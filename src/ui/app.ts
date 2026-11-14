@@ -1615,3 +1615,5 @@ export class App {
     const hold = this.sim.holds.find((h) => h.packet.id === p.id);
     const where = this.sim.whereIs(p.id);
     const versions = this.sim.history.get(p.id) ?? [];
+    const prev = versions.length > 1 ? versions[versions.length - 2] : undefined;
+    const key = JSON.stringify([p.id, where, p.eth, p.ip, this.followLatest, versions.length, hold?.deviceId]);
