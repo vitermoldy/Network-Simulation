@@ -492,3 +492,6 @@ select {
 
 :root[data-theme="dark"] .ptag.is-lost {
   color: #0b0c0e;
+}
+
+.ptag.is-discard {
