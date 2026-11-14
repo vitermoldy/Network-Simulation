@@ -798,3 +798,5 @@ export class Stage {
     const color = this.packetColor();
     let lead: { p: Packet; rank: number; role?: Role } | undefined;
     const consider = (p: Packet, rank: number, deviceId: string) => {
+      const r = this.selected.packetId === p.id ? 1e12 : rank;
+      if (!lead || r > lead.rank) lead = { p, rank: r, role: topo.has(deviceId) ? roleOf(topo.device(deviceId)) : undefined };
