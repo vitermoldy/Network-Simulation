@@ -654,3 +654,5 @@ export class App {
             <span class="note-muted">atau isi manual (Static):</span></div>
           <label for="ic-ip">IPv4 Address</label><input id="ic-ip" name="ip" class="mono" value="${esc(nic.ip ?? '')}" inputmode="decimal" autocomplete="off" />
           <label for="ic-mask">Subnet Mask</label><input id="ic-mask" name="mask" class="mono" value="${nic.prefix !== undefined ? prefixToMask(nic.prefix) : '255.255.255.0'}" inputmode="decimal" autocomplete="off" />
+          <label for="ic-gw">Default Gateway</label><input id="ic-gw" name="gateway" class="mono" value="${esc(d.gateway ?? '')}" inputmode="decimal" autocomplete="off" />
+          <label for="ic-dns">DNS Server</label><input id="ic-dns" name="dns" class="mono" value="${esc(d.dnsServer ?? '')}" inputmode="decimal" autocomplete="off" />
