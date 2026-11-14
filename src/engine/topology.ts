@@ -38,3 +38,5 @@ export interface Device {
   powered: boolean;
   ports: Port[];
   /** Hosts only. */
+  gateway?: string;
+  /** PCs and laptops: the DNS server they ask. */
