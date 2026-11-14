@@ -990,3 +990,5 @@ export class Simulator {
     }
     const target = this.topo.findInSegment(nic.id, nextHop);
     if (!target) {
+      this.loseAt(p, dev.id, `${dev.name} tidak menemukan gateway ${nextHop}: kabelnya terputus atau router-nya mati.`);
+      return;
