@@ -2155,3 +2155,5 @@ tbody th {
   height: 18px;
 }
 
+.switch-small .switch-track::after {
+  width: 12px;
