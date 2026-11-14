@@ -1366,3 +1366,5 @@ select {
 .dev-actions {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0 2px;
