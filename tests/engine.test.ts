@@ -113,3 +113,5 @@ describe('routing', () => {
 
   it('has no route when both middle routers are gone', () => {
     const t = new Topology();
+    t.setPower('r2', false);
+    t.setPower('r3', false);
