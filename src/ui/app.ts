@@ -944,3 +944,5 @@ export class App {
       return;
     }
     if (p.type === 'port') {
+      const topo = this.sim.topo;
+      if (this.pendingPort) {
