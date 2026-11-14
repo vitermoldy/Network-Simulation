@@ -325,3 +325,5 @@ describe('ping and nslookup', () => {
     expect(sim.status).toBe('done');
     expect(sim.output).toContain('Address: 203.0.113.80');
     const sim2 = withScenario('normal');
+    sim2.startLookup('pc', 'www.tidakada.test', 3);
+    while (sim2.status === 'running' && sim2.time < 200) sim2.advance(0.05);
