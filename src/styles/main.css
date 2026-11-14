@@ -2334,3 +2334,6 @@ tbody th {
   .record-form .btn,
   .host-form .form-error,
   .record-form .form-error {
+    grid-column: 1;
+  }
+
