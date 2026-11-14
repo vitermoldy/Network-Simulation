@@ -874,3 +874,5 @@ select {
   display: grid;
   place-items: center;
   min-width: 44px;
+  height: 36px;
+  padding: 0 6px;
