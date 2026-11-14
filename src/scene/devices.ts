@@ -277,3 +277,5 @@ function buildSwitch(dev: Device): Build {
   const sysEnd = -w / 2 + 1.05;
   const holeW = 0.15;
   const holeH = 0.115;
+  const colX = (i: number) => {
+    const block = Math.floor(i / 8);
