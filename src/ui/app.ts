@@ -644,3 +644,5 @@ export class App {
         <button type="button" class="app-tile" data-app="browser">${APP_ICONS.browser}<span>Web Browser</span></button>
       </div>
       <p class="note-muted">Desktop ${esc(d.name)}. Aplikasi di sini memakai jaringan yang sama dengan meja 3D, jadi paketnya terlihat berjalan di kabel.</p>`;
+      return;
+    }
