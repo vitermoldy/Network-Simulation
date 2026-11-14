@@ -767,3 +767,5 @@ select {
   bottom: 12px;
   font-size: 13px;
   color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
