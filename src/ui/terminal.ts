@@ -172,3 +172,5 @@ export class IosShell implements Shell {
             return `${pad(longPortName(p.name), 23)}${pad(p.ip ?? 'unassigned', 16)}YES ${pad(p.ip ? 'manual' : 'unset', 7)}${pad(status, 22)}${proto}`;
           }),
         ],
+      },
+      {
