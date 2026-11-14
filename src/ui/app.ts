@@ -238,3 +238,5 @@ export class App {
       this.sim.stop();
       this.playing = false;
       this.selectedPacket = null;
+      this.followLatest = true;
+      this.renderedLog = 0;
